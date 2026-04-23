@@ -1,0 +1,62 @@
+==============================================================================
+LLM Cognitive Probe — Analysis Summary
+==============================================================================
+Generated (local): 2026-04-16T21:27:31
+
+[Input]
+  results_file: /Users/lvlei/Documents/llm_cognitive/probe_results.jsonl
+  records (non-empty JSONL lines): 475
+
+[Merge]
+  merge_method: none
+  refresh_merge: False
+  chart_top_n: 30
+
+[Counts]
+  raw_unique_names: 464
+  raw_total_mentions: 1405
+  canonical_unique_names: 464
+  canonical_total_mentions: 1405
+
+[Output artifacts]
+  merge_map.json: no
+  merge_map.embeddings.json: no
+  model_law_frequency.png: yes
+  model_law_wordcloud.png: yes
+  cluster_dendrogram.png: no
+  cluster_scatter.png: no
+
+[Top 30 names — merge_method=none（无归并，与原始一致）]
+  rank   count  name
+     1     101  attachment theory
+     2      91  social exchange theory
+     3      72  cognitive dissonance theory
+     4      39  family systems theory
+     5      38  self determination theory
+     6      35  social identity theory
+     7      23  intermittent reinforcement
+     8      21  systems theory
+     9      21  cognitive behavioral theory
+    10      19  dual process theory
+    11      17  attribution theory
+    12      16  social penetration theory
+    13      15  cognitive load theory
+    14      15  learned helplessness
+    15      15  prospect theory
+    16      13  relational dialectics theory
+    17      13  operant conditioning
+    18      12  uncertainty reduction theory
+    19      12  game theory
+    20      10  polyvagal theory
+    21      10  cognitive behavioral therapy
+    22      10  information asymmetry
+    23       9  system justification theory
+    24       9  boundary theory
+    25       9  trauma bonding
+    26       9  allostatic load
+    27       9  interdependence theory
+    28       8  transaction cost economics
+    29       8  social learning theory
+    30       7  interpersonal neurobiology
+
+==============================================================================

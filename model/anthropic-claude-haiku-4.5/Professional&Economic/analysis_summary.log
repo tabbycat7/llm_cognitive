@@ -1,0 +1,1415 @@
+==============================================================================
+LLM Cognitive Probe — Analysis Summary
+==============================================================================
+Generated (local): 2026-04-22T20:10:16
+
+[Input]
+  results_file: E:\college\postgraduate\llm_cognitive\anthropic-claude-haiku-4.5\Professional&Economic\probe_results.jsonl
+  records (non-empty JSONL lines): 500
+
+[Merge]
+  merge_method: llm
+  refresh_merge: True
+  name_source: step3
+  chart_top_n: 30
+
+[Counts]
+  raw_unique_names: 1149
+  raw_total_mentions: 1474
+  canonical_unique_names: 1092
+  canonical_total_mentions: 1474
+  distinct_label_reduction: 1149 raw → 1092 canonical (5.0% fewer labels)
+
+[Output artifacts]
+  merge_map.json: yes
+  merge_map.embeddings.json: no
+  model_law_frequency.png: yes
+  model_law_wordcloud.png: yes
+  cluster_dendrogram.png: no
+  cluster_scatter.png: no
+
+[Top 30 raw names — before merge / 归并前（原始标签频次）]
+  rank   count  name
+     1      28  spence signaling model
+     2      26  real options theory
+     3      24  optimal stopping problem
+     4      20  signaling theory
+     5      14  real options valuation
+     6      13  optimal stopping theory
+     7      12  signal detection theory
+     8      11  rubinstein bargaining model
+     9      11  bayesian inference
+    10       9  stochastic dynamic programming
+    11       8  bayesian belief updating
+    12       7  bayesian information updating
+    13       6  principal agent problem
+    14       6  value of information
+    15       5  bayesian sequential decision making
+    16       5  feedback control system
+    17       5  costly signaling equilibrium
+    18       5  portfolio theory
+    19       5  information asymmetry resolution
+    20       5  intertemporal budget constraint optimization
+    21       5  bayesian updating
+    22       4  revelation principle
+    23       4  constrained optimization with binding constraints
+    24       4  signaling game
+    25       4  dynamic programming with constraint relaxation
+    26       4  modern portfolio theory
+    27       3  subgame perfect equilibrium
+    28       3  hyperbolic discounting with commitment devices
+    29       3  two stage stochastic programming
+    30       3  bayesian information update
+
+[Top 30 canonical names — after merge / 归并后（代表名频次）]
+  rank   count  name
+     1      72  signaling theory
+     2      54  real options theory
+     3      52  bayesian inference
+     4      39  optimal stopping theory
+     5      17  stochastic dynamic programming
+     6      17  modern portfolio theory
+     7      14  constrained optimization
+     8      12  signal detection theory
+     9      11  rubinstein bargaining model
+    10      10  principal agent problem
+    11      10  nash bargaining solution
+    12       9  information asymmetry resolution
+    13       8  hyperbolic discounting with commitment devices
+    14       8  feedback control system
+    15       8  intertemporal budget constraint optimization
+    16       6  revelation principle
+    17       6  value of information
+    18       6  constraint relaxation
+    19       5  compound interest model
+    20       4  dynamic programming with constraint relaxation
+    21       3  subgame perfect equilibrium
+    22       3  cognitive load theory
+    23       3  revealed preference theory
+    24       3  stackelberg game with information revelation
+    25       2  sequential probability ratio test
+    26       2  lyapunov stability theory
+    27       2  stochastic programming with recourse
+    28       2  screening mechanism
+    29       2  greedy algorithm for weighted debt minimization
+    30       2  constraint satisfaction problem
+
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 16 clusters]
+  [#1] representative: bayesian inference  ·  12 members
+      · bayesian belief updating
+      · bayesian inference  [代表]
+      · bayesian inference with signal extraction
+      · bayesian inference with signal quality
+      · bayesian information asymmetry reversal
+      · bayesian information update
+      · bayesian information updating
+      · bayesian information updating with signal extraction
+      · bayesian sequential decision making
+      · bayesian updating
+      · bayesian updating with information asymmetry resolution
+      · information revelation and bayesian updating
+  [#2] representative: signaling theory  ·  11 members
+      · bayesian signaling
+      · costly signaling equilibrium
+      · signaling equilibrium
+      · signaling equilibrium in asymmetric information games
+      · signaling equilibrium under information asymmetry
+      · signaling game
+      · signaling game with costly signals
+      · signaling game with costly verification
+      · signaling game with information revelation
+      · signaling theory  [代表]
+      · spence signaling model
+  [#3] representative: real options theory  ·  8 members
+      · american option pricing model
+      · option value theory
+      · option value under uncertainty
+      · real options analysis
+      · real options theory  [代表]
+      · real options theory with irreversibility
+      · real options theory with irreversible investment
+      · real options valuation
+  [#4] representative: constrained optimization  ·  6 members
+      · constrained multi objective optimization
+      · constrained optimization  [代表]
+      · constrained optimization with binding constraints
+      · constrained optimization with lagrange multipliers
+      · constrained optimization with pareto efficiency
+      · constrained optimization with time horizon
+  [#5] representative: modern portfolio theory  ·  5 members
+      · mean variance optimization
+      · mean variance portfolio optimization
+      · modern portfolio theory  [代表]
+      · portfolio optimization under uncertainty
+      · portfolio theory
+  [#6] representative: nash bargaining solution  ·  4 members
+      · nash bargaining solution  [代表]
+      · nash bargaining solution with outside option
+      · nash bargaining solution with outside options
+      · outside option principle
+  [#7] representative: stochastic dynamic programming  ·  4 members
+      · dynamic programming with state space expansion
+      · stochastic dynamic programming  [代表]
+      · stochastic dynamic programming with state dependent constraints
+      · two stage stochastic programming
+  [#8] representative: constraint relaxation  ·  3 members
+      · constraint relaxation in linear programming
+      · constraint relaxation via decomposition
+      · sequential constraint relaxation
+  [#9] representative: hyperbolic discounting with commitment devices  ·  3 members
+      · commitment device
+      · hyperbolic discounting with commitment devices  [代表]
+      · mechanism design with commitment devices
+  [#10] representative: information asymmetry resolution  ·  3 members
+      · adverse selection under information asymmetry
+      · information asymmetry model
+      · information asymmetry resolution  [代表]
+  [#11] representative: optimal stopping theory  ·  3 members
+      · job search theory
+      · optimal stopping problem
+      · optimal stopping theory  [代表]
+  [#12] representative: principal agent problem  ·  3 members
+      · principal agent problem  [代表]
+      · principal agent problem with information asymmetry resolution
+      · principal agent problem with moral hazard
+  [#13] representative: compound interest model  ·  2 members
+      · compound interest model  [代表]
+      · exponential growth model
+  [#14] representative: feedback control system  ·  2 members
+      · feedback control system  [代表]
+      · negative feedback control system
+  [#15] representative: intertemporal budget constraint optimization  ·  2 members
+      · intertemporal budget constraint
+      · intertemporal budget constraint optimization  [代表]
+  [#16] representative: revelation principle  ·  2 members
+      · mechanism design with revelation principle
+      · revelation principle  [代表]
+
+[Merge map: raw → canonical where label changed (58 pairs)]
+  bayesian belief updating  →  bayesian inference
+  bayesian inference with signal extraction  →  bayesian inference
+  bayesian inference with signal quality  →  bayesian inference
+  bayesian information asymmetry reversal  →  bayesian inference
+  bayesian information update  →  bayesian inference
+  bayesian information updating  →  bayesian inference
+  bayesian information updating with signal extraction  →  bayesian inference
+  bayesian sequential decision making  →  bayesian inference
+  bayesian updating  →  bayesian inference
+  bayesian updating with information asymmetry resolution  →  bayesian inference
+  information revelation and bayesian updating  →  bayesian inference
+  exponential growth model  →  compound interest model
+  constrained multi objective optimization  →  constrained optimization
+  constrained optimization with binding constraints  →  constrained optimization
+  constrained optimization with lagrange multipliers  →  constrained optimization
+  constrained optimization with pareto efficiency  →  constrained optimization
+  constrained optimization with time horizon  →  constrained optimization
+  constraint relaxation in linear programming  →  constraint relaxation
+  constraint relaxation via decomposition  →  constraint relaxation
+  sequential constraint relaxation  →  constraint relaxation
+  negative feedback control system  →  feedback control system
+  commitment device  →  hyperbolic discounting with commitment devices
+  mechanism design with commitment devices  →  hyperbolic discounting with commitment devices
+  adverse selection under information asymmetry  →  information asymmetry resolution
+  information asymmetry model  →  information asymmetry resolution
+  intertemporal budget constraint  →  intertemporal budget constraint optimization
+  mean variance optimization  →  modern portfolio theory
+  mean variance portfolio optimization  →  modern portfolio theory
+  portfolio optimization under uncertainty  →  modern portfolio theory
+  portfolio theory  →  modern portfolio theory
+  nash bargaining solution with outside option  →  nash bargaining solution
+  nash bargaining solution with outside options  →  nash bargaining solution
+  outside option principle  →  nash bargaining solution
+  job search theory  →  optimal stopping theory
+  optimal stopping problem  →  optimal stopping theory
+  principal agent problem with information asymmetry resolution  →  principal agent problem
+  principal agent problem with moral hazard  →  principal agent problem
+  american option pricing model  →  real options theory
+  option value theory  →  real options theory
+  option value under uncertainty  →  real options theory
+  real options analysis  →  real options theory
+  real options theory with irreversibility  →  real options theory
+  real options theory with irreversible investment  →  real options theory
+  real options valuation  →  real options theory
+  mechanism design with revelation principle  →  revelation principle
+  bayesian signaling  →  signaling theory
+  costly signaling equilibrium  →  signaling theory
+  signaling equilibrium  →  signaling theory
+  signaling equilibrium in asymmetric information games  →  signaling theory
+  signaling equilibrium under information asymmetry  →  signaling theory
+  signaling game  →  signaling theory
+  signaling game with costly signals  →  signaling theory
+  signaling game with costly verification  →  signaling theory
+  signaling game with information revelation  →  signaling theory
+  spence signaling model  →  signaling theory
+  dynamic programming with state space expansion  →  stochastic dynamic programming
+  stochastic dynamic programming with state dependent constraints  →  stochastic dynamic programming
+  two stage stochastic programming  →  stochastic dynamic programming
+
+[Merge cluster details / 归并簇完整明细（共 1092 簇，其中 16 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: bayesian inference  ·  12 条
+      · bayesian belief updating
+      · bayesian inference  [代表]
+      · bayesian inference with signal extraction
+      · bayesian inference with signal quality
+      · bayesian information asymmetry reversal
+      · bayesian information update
+      · bayesian information updating
+      · bayesian information updating with signal extraction
+      · bayesian sequential decision making
+      · bayesian updating
+      · bayesian updating with information asymmetry resolution
+      · information revelation and bayesian updating
+  [2] 代表名: signaling theory  ·  11 条
+      · bayesian signaling
+      · costly signaling equilibrium
+      · signaling equilibrium
+      · signaling equilibrium in asymmetric information games
+      · signaling equilibrium under information asymmetry
+      · signaling game
+      · signaling game with costly signals
+      · signaling game with costly verification
+      · signaling game with information revelation
+      · signaling theory  [代表]
+      · spence signaling model
+  [3] 代表名: real options theory  ·  8 条
+      · american option pricing model
+      · option value theory
+      · option value under uncertainty
+      · real options analysis
+      · real options theory  [代表]
+      · real options theory with irreversibility
+      · real options theory with irreversible investment
+      · real options valuation
+  [4] 代表名: constrained optimization  ·  6 条
+      · constrained multi objective optimization
+      · constrained optimization  [代表]
+      · constrained optimization with binding constraints
+      · constrained optimization with lagrange multipliers
+      · constrained optimization with pareto efficiency
+      · constrained optimization with time horizon
+  [5] 代表名: modern portfolio theory  ·  5 条
+      · mean variance optimization
+      · mean variance portfolio optimization
+      · modern portfolio theory  [代表]
+      · portfolio optimization under uncertainty
+      · portfolio theory
+  [6] 代表名: nash bargaining solution  ·  4 条
+      · nash bargaining solution  [代表]
+      · nash bargaining solution with outside option
+      · nash bargaining solution with outside options
+      · outside option principle
+  [7] 代表名: stochastic dynamic programming  ·  4 条
+      · dynamic programming with state space expansion
+      · stochastic dynamic programming  [代表]
+      · stochastic dynamic programming with state dependent constraints
+      · two stage stochastic programming
+  [8] 代表名: constraint relaxation  ·  3 条
+      · constraint relaxation in linear programming
+      · constraint relaxation via decomposition
+      · sequential constraint relaxation
+  [9] 代表名: hyperbolic discounting with commitment devices  ·  3 条
+      · commitment device
+      · hyperbolic discounting with commitment devices  [代表]
+      · mechanism design with commitment devices
+  [10] 代表名: information asymmetry resolution  ·  3 条
+      · adverse selection under information asymmetry
+      · information asymmetry model
+      · information asymmetry resolution  [代表]
+  [11] 代表名: optimal stopping theory  ·  3 条
+      · job search theory
+      · optimal stopping problem
+      · optimal stopping theory  [代表]
+  [12] 代表名: principal agent problem  ·  3 条
+      · principal agent problem  [代表]
+      · principal agent problem with information asymmetry resolution
+      · principal agent problem with moral hazard
+  [13] 代表名: compound interest model  ·  2 条
+      · compound interest model  [代表]
+      · exponential growth model
+  [14] 代表名: feedback control system  ·  2 条
+      · feedback control system  [代表]
+      · negative feedback control system
+  [15] 代表名: intertemporal budget constraint optimization  ·  2 条
+      · intertemporal budget constraint
+      · intertemporal budget constraint optimization  [代表]
+  [16] 代表名: revelation principle  ·  2 条
+      · mechanism design with revelation principle
+      · revelation principle  [代表]
+  [17] （单条）accelerating depreciation model
+  [18] （单条）adaptive control and system identification
+  [19] （单条）adaptive control with feedback
+  [20] （单条）additive value decomposition
+  [21] （单条）adverse selection
+  [22] （单条）adverse selection and information asymmetry reduction
+  [23] （单条）adverse selection and signaling equilibrium
+  [24] （单条）adverse selection model
+  [25] （单条）adverse selection screening
+  [26] （单条）adverse selection with contingency contracting
+  [27] （单条）adverse selection with ex ante screening
+  [28] （单条）adverse selection with screening
+  [29] （单条）adverse selection with screening mechanism
+  [30] （单条）adverse selection with signaling
+  [31] （单条）alternating offer bargaining model
+  [32] （单条）american option pricing framework
+  [33] （单条）american option pricing under state dependent exercise
+  [34] （单条）anchoring and adjustment
+  [35] （单条）anchoring and adjustment heuristic with temporal priming
+  [36] （单条）anchoring and adjustment model
+  [37] （单条）anchoring and framing effects
+  [38] （单条）anchoring as a commitment device
+  [39] （单条）anchoring effect with bounded rationality
+  [40] （单条）anchoring with justification constraint
+  [41] （单条）arbitrage pricing theory
+  [42] （单条）assortative matching
+  [43] （单条）asymmetric cost inversion
+  [44] （单条）asymmetric loss function optimization
+  [45] （单条）attention allocation theory
+  [46] （单条）attractor basin escape
+  [47] （单条）attribute weighting in multi attribute utility theory
+  [48] （单条）automaticity theory
+  [49] （单条）availability heuristic with signal salience manipulation
+  [50] （单条）backward induction on constraint satisfaction
+  [51] （单条）backward induction with commitment
+  [52] （单条）backwards induction elimination
+  [53] （单条）bargaining with incomplete information and outside option
+  [54] （单条）bayesian belief revision under evidence incompatibility
+  [55] （单条）bayesian belief updating model
+  [56] （单条）bayesian belief updating with information acquisition
+  [57] （单条）bayesian belief updating with narrative framing
+  [58] （单条）bayesian belief updating with preference revelation
+  [59] （单条）bayesian consistency condition
+  [60] （单条）bayesian decision theory
+  [61] （单条）bayesian decision theory with information acquisition
+  [62] （单条）bayesian decision tree with path dependent outcomes
+  [63] （单条）bayesian frame dependence
+  [64] （单条）bayesian game with information asymmetry resolution
+  [65] （单条）bayesian hypothesis testing with sequential sampling
+  [66] （单条）bayesian inference with asymmetric information
+  [67] （单条）bayesian inference with asymmetric information reversal
+  [68] （单条）bayesian inference with causal conditioning
+  [69] （单条）bayesian inference with evidence documentation
+  [70] （单条）bayesian inference with evidence updating
+  [71] （单条）bayesian inference with incomplete information
+  [72] （单条）bayesian inference with incomplete information and strategic payoff restructuring
+  [73] （单条）bayesian inference with information value
+  [74] （单条）bayesian inference with likelihood respecification
+  [75] （单条）bayesian inference with posterior updating
+  [76] （单条）bayesian inference with prior correction
+  [77] （单条）bayesian inference with sequential evidence updating
+  [78] （单条）bayesian inference with signal accumulation
+  [79] （单条）bayesian inference with signal detection
+  [80] （单条）bayesian inference with signal manipulation
+  [81] （单条）bayesian inference with signal precision
+  [82] （单条）bayesian inference with signal quality optimization
+  [83] （单条）bayesian inference with signal separation
+  [84] （单条）bayesian inference with signal updating
+  [85] （单条）bayesian inference with temporal signal consistency
+  [86] （单条）bayesian inference with value of information
+  [87] （单条）bayesian information asymmetry reduction
+  [88] （单条）bayesian information reduction
+  [89] （单条）bayesian information revelation
+  [90] （单条）bayesian information updating through market signals
+  [91] （单条）bayesian information updating with forward looking signals
+  [92] （单条）bayesian learning with information asymmetry
+  [93] （单条）bayesian liability cascade
+  [94] （单条）bayesian optimal stopping
+  [95] （单条）bayesian optimal stopping problem
+  [96] （单条）bayesian persuasion
+  [97] （单条）bayesian persuasion with cost asymmetry
+  [98] （单条）bayesian persuasion with evidence accumulation
+  [99] （单条）bayesian persuasion with information asymmetry resolution
+  [100] （单条）bayesian persuasion with verifiable evidence
+  [101] （单条）bayesian posterior update with multiple evidence sources
+  [102] （单条）bayesian posterior update with selective prior
+  [103] （单条）bayesian screening with costly signaling
+  [104] （单条）bayesian screening with signal revelation
+  [105] （单条）bayesian screening with signaling
+  [106] （单条）bayesian sequential updating
+  [107] （单条）bayesian sequential updating with stopping rule
+  [108] （单条）bayesian signal detection theory
+  [109] （单条）bayesian signal detection with prior update
+  [110] （单条）bayesian signal filtering
+  [111] （单条）bayesian signal integration with prior updating
+  [112] （单条）bayesian signal learning in credit markets
+  [113] （单条）bayesian signal separation
+  [114] （单条）bayesian signal updating
+  [115] （单条）bayesian signaling and screening
+  [116] （单条）bayesian signaling with asymmetric information
+  [117] （单条）bayesian signaling with cheap talk
+  [118] （单条）bayesian signaling with cost of lying
+  [119] （单条）bayesian signaling with cost of replacement updating
+  [120] （单条）bayesian signaling with heuristic switching
+  [121] （单条）bayesian signaling with information asymmetry reduction
+  [122] （单条）bayesian signaling with information revelation
+  [123] （单条）bayesian signaling with sequential updating
+  [124] （单条）bayesian updating of default probability
+  [125] （单条）bayesian updating with asymmetric evidence
+  [126] （单条）bayesian updating with competing signals
+  [127] （单条）bayesian updating with costly signaling
+  [128] （单条）bayesian updating with credible signaling
+  [129] （单条）bayesian updating with evidence hierarchies
+  [130] （单条）bayesian updating with information asymmetry
+  [131] （单条）bayesian updating with information structure
+  [132] （单条）bayesian updating with information value
+  [133] （单条）bayesian updating with sample size effect
+  [134] （单条）bayesian updating with signal accumulation
+  [135] （单条）bayesian updating with signal credibility
+  [136] （单条）bayesian updating with signal degradation
+  [137] （单条）bayesian updating with signal manipulation
+  [138] （单条）bayesian updating with signal ordering
+  [139] （单条）bayesian updating with source credibility weighting
+  [140] （单条）bayesian updating with threshold decision rule
+  [141] （单条）bayesian updating with value of information
+  [142] （单条）bayesian verification under model uncertainty
+  [143] （单条）bellman equation for sequential decision making
+  [144] （单条）bellman equation option value
+  [145] （单条）bifurcation analysis
+  [146] （单条）bifurcation analysis with critical threshold crossing
+  [147] （单条）bifurcation and threshold dynamics
+  [148] （单条）bifurcation theory
+  [149] （单条）bifurcation theory with metric regime switching
+  [150] （单条）bifurcation theory with time forcing
+  [151] （单条）bifurcation via parameter perturbation
+  [152] （单条）bilateral monopoly model with information asymmetry resolution
+  [153] （单条）bilateral monopoly with endogenous outside option
+  [154] （单条）binding constraint removal
+  [155] （单条）birthday problem inverse formulation
+  [156] （单条）bistable dynamical system with hysteresis
+  [157] （单条）blame diffusion through institutional layering
+  [158] （单条）break even analysis
+  [159] （单条）budget constraint modification
+  [160] （单条）budget constraint reframing via fungibility
+  [161] （单条）burden of proof reversal
+  [162] （单条）burden of proof reversal through documentation
+  [163] （单条）burden of proof reversal under strict liability framework
+  [164] （单条）burden of proof reversal via bayesian prior shift
+  [165] （单条）capital structure optimization
+  [166] （单条）cascade failure model with redundancy
+  [167] （单条）cash flow timing mismatch resolution through temporal disaggregation
+  [168] （单条）causal attribution theory with bayesian inference
+  [169] （单条）causal attribution through bayesian updating
+  [170] （单条）causal attribution timeline locking
+  [171] （单条）causal decomposition under confounding
+  [172] （单条）causal identification through mechanism separation
+  [173] （单条）causal identification under incomplete information
+  [174] （单条）causal inference via randomized intervention
+  [175] （单条）causal inference with temporal trajectory
+  [176] （单条）certainty equivalent analysis under dual return sources
+  [177] （单条）change of basis in vector space
+  [178] （单条）change of game participants and payoff structure
+  [179] （单条）cheap talk elimination
+  [180] （单条）choice set restriction via pre commitment
+  [181] （单条）coalition formation in cooperative game theory
+  [182] （单条）coase bargaining with endogenous transaction cost reduction
+  [183] （单条）cognitive load minimization under attention constraints
+  [184] （单条）cognitive load reduction via system decomposition
+  [185] （单条）cognitive load theory
+  [186] （单条）cognitive load theory with dimensionality reduction
+  [187] （单条）commitment cost asymmetry model
+  [188] （单条）commitment device framework
+  [189] （单条）commitment device through documentation
+  [190] （单条）commitment device through mechanism design
+  [191] （单条）commitment device via irreversible allocation
+  [192] （单条）commitment device with automatic penalty function
+  [193] （单条）commitment device with irreversible action threshold
+  [194] （单条）commitment device with observable cost
+  [195] （单条）commitment device with path dependency
+  [196] （单条）commitment device with temporal decoupling
+  [197] （单条）common knowledge equilibrium
+  [198] （单条）comparative advantage
+  [199] （单条）comparative advantage and market segmentation
+  [200] （单条）comparative advantage reallocation
+  [201] （单条）comparative exponential growth rate analysis
+  [202] （单条）competing dynamics with hard deadline
+  [203] （单条）competing exponential processes with rate modulation
+  [204] （单条）competing hazards model
+  [205] （单条）competing risks model
+  [206] （单条）compound growth dynamics with path dependency
+  [207] （单条）compound growth model with capital reinvestment
+  [208] （单条）compound growth with delayed initiation cost
+  [209] （单条）compound interest dynamics
+  [210] （单条）compound interest growth model
+  [211] （单条）compound interest model with geometric series
+  [212] （单条）compound interest optimization with constrained cash flow allocation
+  [213] （单条）compound interest with multiplicative fee drag
+  [214] （单条）computational complexity reduction via indexing
+  [215] （单条）conditional expectation under regime switching
+  [216] （单条）condorcet jury theorem
+  [217] （单条）condorcet jury theorem with heterogeneous signal reliability
+  [218] （单条）constrained capital allocation under liquidity hierarchy
+  [219] （单条）constrained dynamic programming with interest rate arbitrage
+  [220] （单条）constrained dynamic programming with state dependent feasible region
+  [221] （单条）constrained market segmentation
+  [222] （单条）constrained optimization under binding deadline
+  [223] （单条）constrained optimization under fixed boundary conditions
+  [224] （单条）constrained optimization under parameter restructuring
+  [225] （单条）constrained optimization under regime identification
+  [226] （单条）constrained optimization under resource scarcity
+  [227] （单条）constrained optimization under uncertainty
+  [228] （单条）constrained optimization via linear programming
+  [229] （单条）constrained optimization with binding allocation rules
+  [230] （单条）constrained optimization with binding constraint
+  [231] （单条）constrained optimization with binding constraint identification
+  [232] （单条）constrained optimization with binding constraint relaxation
+  [233] （单条）constrained optimization with binding constraints relaxation
+  [234] （单条）constrained optimization with budget constraint
+  [235] （单条）constrained optimization with budget constraint relaxation
+  [236] （单条）constrained optimization with constraint relaxation
+  [237] （单条）constrained optimization with dual feasibility
+  [238] （单条）constrained optimization with dynamic constraints
+  [239] （单条）constrained optimization with feasible region expansion
+  [240] （单条）constrained optimization with hard deadlines
+  [241] （单条）constrained optimization with irreversibility
+  [242] （单条）constrained optimization with lagrange multiplier relaxation
+  [243] （单条）constrained optimization with lower bound constraints
+  [244] （单条）constrained optimization with multiple binding constraints
+  [245] （单条）constrained optimization with multiple objective functions
+  [246] （单条）constrained optimization with multiplier effect
+  [247] （单条）constrained optimization with objective function reframing
+  [248] （单条）constrained optimization with parameter restructuring
+  [249] （单条）constrained optimization with penalty method
+  [250] （单条）constrained optimization with piecewise linear constraints
+  [251] （单条）constrained optimization with revealed binding constraint
+  [252] （单条）constrained optimization with tax arbitrage
+  [253] （单条）constrained optimization with threshold conditions
+  [254] （单条）constrained parameter identification under progressive taxation
+  [255] （单条）constrained portfolio optimization with binding contribution limits
+  [256] （单条）constraint binding analysis via lagrangian duality
+  [257] （单条）constraint decomposition in multi objective optimization
+  [258] （单条）constraint decomposition via lagrangian relaxation
+  [259] （单条）constraint duality and feasible region separation
+  [260] （单条）constraint hierarchy in feasibility analysis
+  [261] （单条）constraint hierarchy with slack variable allocation
+  [262] （单条）constraint programming with feasible region modification
+  [263] （单条）constraint qualification and feasible set revision
+  [264] （单条）constraint relaxation and bandwidth optimization
+  [265] （单条）constraint relaxation and feasibility recovery
+  [266] （单条）constraint relaxation and objective function minimization
+  [267] （单条）constraint relaxation in convex optimization
+  [268] （单条）constraint relaxation in dynamic programming
+  [269] （单条）constraint relaxation in feasible action space
+  [270] （单条）constraint relaxation in nonlinear programming
+  [271] （单条）constraint relaxation in search space
+  [272] （单条）constraint relaxation in sequential decision making
+  [273] （单条）constraint relaxation in stochastic dynamic programming
+  [274] （单条）constraint relaxation model
+  [275] （单条）constraint relaxation optimization
+  [276] （单条）constraint relaxation through dual problem decomposition
+  [277] （单条）constraint relaxation through legitimacy
+  [278] （单条）constraint relaxation through mechanism design
+  [279] （单条）constraint relaxation under stochastic optimization
+  [280] （单条）constraint relaxation via hierarchical leverage
+  [281] （单条）constraint relaxation via option value expansion
+  [282] （单条）constraint relaxation via problem reformulation
+  [283] （单条）constraint relaxation via resource augmentation
+  [284] （单条）constraint relaxation via resource substitution
+  [285] （单条）constraint relaxation via satisfiability analysis
+  [286] （单条）constraint relaxation via sequential information acquisition
+  [287] （单条）constraint relaxation via strategic compliance
+  [288] （单条）constraint relaxation via temporal decomposition
+  [289] （单条）constraint repackaging via category manipulation
+  [290] （单条）constraint satisfaction ordering in linear programming
+  [291] （单条）constraint satisfaction problem
+  [292] （单条）constraint satisfaction problem with incomplete information
+  [293] （单条）constraint satisfaction through discrete choice set design
+  [294] （单条）constraint satisfaction under uncertainty
+  [295] （单条）constraint satisfaction with option value
+  [296] （单条）constraint set convexification
+  [297] （单条）constraint set expansion via information asymmetry resolution
+  [298] （单条）constraint set manipulation
+  [299] （单条）constraint substitution via environmental design
+  [300] （单条）contingent information acquisition strategy
+  [301] （单条）continuous compound interest optimization
+  [302] （单条）continuous compounding versus discrete optimization cycles
+  [303] （单条）convex cost function optimization
+  [304] （单条）convex cost function with state dependent productivity
+  [305] （单条）convex optimization under trajectory analysis
+  [306] （单条）convex optimization with budget constraints
+  [307] （单条）convex optimization with slack variables
+  [308] （单条）convex optimization with tax liability minimization
+  [309] （单条）convex payoff dynamics
+  [310] （单条）convex risk measure framework
+  [311] （单条）convex time budget allocation
+  [312] （单条）coordination game with information sharing
+  [313] （单条）copula based risk aggregation
+  [314] （单条）correlation risk reduction
+  [315] （单条）cosine similarity matching in high dimensional feature space
+  [316] （单条）cost allocation under information asymmetry reduction
+  [317] （单条）cost asymmetry inversion
+  [318] （单条）cost dynamics and capital conversion
+  [319] （单条）cost externalization through institutional choice
+  [320] （单条）cost function discontinuity via institutional constraint
+  [321] （单条）cost function restructuring
+  [322] （单条）cost minimization problem with constraint activation
+  [323] （单条）cost minimization under alternative production technologies
+  [324] （单条）cost minimization under feasibility constraints
+  [325] （单条）cost of capital minimization
+  [326] （单条）costly signaling
+  [327] （单条）costly signaling theory
+  [328] （单条）costly signaling with penalty function
+  [329] （单条）costly signaling with temporal constraints
+  [330] （单条）costly signaling with threshold commitment
+  [331] （单条）costly signaling with verifiable commitment
+  [332] （单条）coupled linear dynamical systems with priority ordered activation
+  [333] （单条）credible commitment problem
+  [334] （单条）creditor enforcement hierarchy
+  [335] （单条）critical juncture theory
+  [336] （单条）critical load threshold model
+  [337] （单条）critical path method
+  [338] （单条）curriculum learning
+  [339] （单条）debt avalanche algorithm
+  [340] （单条）debt consolidation and sequencing optimization
+  [341] （单条）debt service capacity constraint with feedback stability
+  [342] （单条）debt service coverage ratio constraint
+  [343] （单条）debt snowball with dynamic cash flow reallocation
+  [344] （单条）debt to income ratio dynamics with income growth
+  [345] （单条）decision factorization
+  [346] （单条）decoupled system dynamics
+  [347] （单条）decoupling of coupled dynamical systems
+  [348] （单条）denominator expansion in rate metrics
+  [349] （单条）denominator expansion under fixed numerator constraint
+  [350] （单条）deterministic accumulation with path independence
+  [351] （单条）difference in differences estimation
+  [352] （单条）differential equation model of debt dynamics
+  [353] （单条）differential equations
+  [354] （单条）dimensional decomposition via temporal separation
+  [355] （单条）dimensionality and feature separation
+  [356] （单条）dimensionality and separability in feature space
+  [357] （单条）dimensionality reduction through orthogonal decomposition
+  [358] （单条）dimensionality reduction via basis transformation
+  [359] （单条）discontinuous constraint relaxation
+  [360] （单条）discrete time compounding interruption
+  [361] （单条）distributed problem solving with task decomposition
+  [362] （单条）dollar cost averaging variance reduction
+  [363] （单条）dynamic programming
+  [364] （单条）dynamic programming state transition
+  [365] （单条）dynamic programming with budget constraint
+  [366] （单条）dynamic programming with constraint relaxation
+  [367] （单条）dynamic programming with discounted cumulative utility
+  [368] （单条）dynamic programming with endogenous constraint evolution
+  [369] （单条）dynamic programming with information acquisition cost
+  [370] （单条）dynamic programming with information revelation
+  [371] （单条）dynamic programming with irreversible decisions
+  [372] （单条）dynamic programming with optimal stopping
+  [373] （单条）dynamic programming with path dependency
+  [374] （单条）dynamic programming with sequential constraint relaxation
+  [375] （单条）dynamic programming with state decomposition
+  [376] （单条）dynamic programming with state dependent policy
+  [377] （单条）dynamic programming with state partitioning
+  [378] （单条）dynamic programming with state reallocation
+  [379] （单条）dynamic programming with state variables
+  [380] （单条）dynamic programming with time discounting
+  [381] （单条）dynamic programming with time horizon extension
+  [382] （单条）dynamic programming with time varying constraints
+  [383] （单条）dynamical system bifurcation via parameter perturbation
+  [384] （单条）dynamical systems with positive feedback loop
+  [385] （单条）efficiency frontier analysis
+  [386] （单条）effort allocation under constraints
+  [387] （单条）endogenous preference revelation prior to exogenous signal processing
+  [388] （单条）equilibrium selection
+  [389] （单条）equilibrium selection in signaling games
+  [390] （单条）equilibrium selection through information revelation
+  [391] （单条）exit as information signal
+  [392] （单条）expectation alignment model
+  [393] （单条）expected utility maximization under detection risk
+  [394] （单条）expected utility maximization under uncertainty
+  [395] （单条）expected utility theory under uncertainty resolution
+  [396] （单条）expected value cost minimization under uncertainty
+  [397] （单条）expected value maximization with filtering
+  [398] （单条）expected value under asymmetric loss
+  [399] （单条）explicit target setting with feedback control
+  [400] （单条）exploration exploitation tradeoff
+  [401] （单条）explore exploit tradeoff
+  [402] （单条）explore exploit tradeoff with bayesian updating
+  [403] （单条）exponential amplification of marginal cost reduction
+  [404] （单条）exponential decay model
+  [405] （单条）exponential decay model with parameter substitution
+  [406] （单条）exponential decay timing optimization
+  [407] （单条）exponential decay with optimized decay constant
+  [408] （单条）exponential decay with parameter optimization
+  [409] （单条）exponential decay with retrieval interruption
+  [410] （单条）exponential decay with source term model
+  [411] （单条）exponential decay with staggered phase shifts
+  [412] （单条）exponential discounting with threshold trigger
+  [413] （单条）exponential growth model with linear constraint
+  [414] （单条）exponential growth model with time dependent elasticity
+  [415] （单条）exponential growth versus linear optimization trade off
+  [416] （单条）exponential growth with friction optimization
+  [417] （单条）exponential growth with initial condition sensitivity
+  [418] （单条）exponential growth with parameter optimization
+  [419] （单条）extensive form game restructuring via move elimination
+  [420] （单条）extensive form game with credible commitment
+  [421] （单条）extinction through reinforcement removal
+  [422] （单条）factor analysis
+  [423] （单条）feasibility analysis under linear constraints
+  [424] （单条）feasibility constrained prescriptive optimization
+  [425] （单条）feasibility problem in linear programming
+  [426] （单条）feasibility region expansion via constraint relaxation
+  [427] （单条）feasible set restructuring via liability partition
+  [428] （单条）feature representation and classification boundary
+  [429] （单条）feature space transformation
+  [430] （单条）feedback amplification and signal separation
+  [431] （单条）feedback control system rebalancing
+  [432] （单条）feedback control system with state transition
+  [433] （单条）feedback control system with time delay
+  [434] （单条）feedback control systems
+  [435] （单条）feedback control theory
+  [436] （单条）feedback control with measurement noise filtering
+  [437] （单条）feedback delay reduction in control systems
+  [438] （单条）feedback loop activation under constraint
+  [439] （单条）feedback loop breaking with leverage point identification
+  [440] （单条）feedback loop decoupling
+  [441] （单条）feedback loop reversal and attractor basin transition
+  [442] （单条）feedback loop reversal via constraint elimination
+  [443] （单条）feedback loop stability analysis
+  [444] （单条）feedback loop stabilization via hard constraints
+  [445] （单条）feedforward control
+  [446] （单条）finite horizon commitment with stopping rule
+  [447] （单条）finite horizon cost minimization with irreversible state transition
+  [448] （单条）finite horizon dynamic game
+  [449] （单条）finite horizon effect
+  [450] （单条）finite horizon sequential bargaining with credible commitment
+  [451] （单条）finite horizon stopping time problem
+  [452] （单条）finite time horizon optimization with stopping rule
+  [453] （单条）first mover advantage in sequential games
+  [454] （单条）first mover advantage in ultimatum bargaining
+  [455] （单条）first order linear differential equation
+  [456] （单条）first order linear differential equation with parameter optimization
+  [457] （单条）fixed cost allocation and economies of scale reversal
+  [458] （单条）focal point equilibrium
+  [459] （单条）fractional knapsack problem with nonlinear value function
+  [460] （单条）framing effect with option proliferation
+  [461] （单条）frequency and recency weighting in ranking
+  [462] （单条）function specification and verification
+  [463] （单条）funnel conversion model
+  [464] （单条）gambler's ruin problem
+  [465] （单条）gambler's ruin problem with fixed withdrawal rate
+  [466] （单条）gambler's ruin with absorbing barriers
+  [467] （单条）geometric brownian motion with positive drift coefficient
+  [468] （单条）geometric compounding with heterogeneous discount rates
+  [469] （单条）geometric progression with constant periodic additions
+  [470] （单条）geometric series accumulation with friction term
+  [471] （单条）geometric series with multiplicative feedback loop
+  [472] （单条）greedy algorithm for debt minimization
+  [473] （单条）greedy algorithm for debt reduction
+  [474] （单条）greedy algorithm for weighted cost minimization
+  [475] （单条）greedy algorithm for weighted debt minimization
+  [476] （单条）hazard rate model
+  [477] （单条）heterogeneous cost rate prioritization
+  [478] （单条）hidden markov model
+  [479] （单条）hidden markov model reduction
+  [480] （单条）hidden markov model with bayesian inference
+  [481] （单条）hierarchical constraint priority ordering
+  [482] （单条）hierarchical constraint satisfaction
+  [483] （单条）hierarchical decomposition of coupled constraints
+  [484] （单条）hierarchical labor market segmentation with strategic matching
+  [485] （单条）hold up problem
+  [486] （单条）hotelling model of spatial competition
+  [487] （单条）human capital accumulation model
+  [488] （单条）human capital accumulation with skill depreciation
+  [489] （单条）human capital depreciation model
+  [490] （单条）human capital portfolio optimization
+  [491] （单条）hyperbolic discounting constraint
+  [492] （单条）hyperbolic discounting correction
+  [493] （单条）hyperbolic discounting with cognitive load
+  [494] （单条）hyperbolic discounting with precommitment
+  [495] （单条）immunization theory
+  [496] （单条）importance sampling with market segmentation
+  [497] （单条）incomplete contract theory with ex post renegotiation
+  [498] （单条）independent trials model
+  [499] （单条）information asymmetry and strategic disclosure timing
+  [500] （单条）information asymmetry equilibrium
+  [501] （单条）information asymmetry reduction
+  [502] （单条）information asymmetry reduction and bilateral bargaining with outside option
+  [503] （单条）information asymmetry reduction and market equilibrium restoration
+  [504] （单条）information asymmetry reduction through price transparency
+  [505] （单条）information asymmetry reduction through temporal control
+  [506] （单条）information asymmetry reduction via active inquiry
+  [507] （单条）information asymmetry reduction via documentation
+  [508] （单条）information asymmetry reduction via market signal
+  [509] （单条）information asymmetry reduction with credible signaling
+  [510] （单条）information asymmetry resolution in bilateral bargaining
+  [511] （单条）information asymmetry resolution in constrained optimization
+  [512] （单条）information asymmetry resolution model
+  [513] （单条）information asymmetry reversal
+  [514] （单条）information asymmetry with verification
+  [515] （单条）information cascade model
+  [516] （单条）information completeness model
+  [517] （单条）information decay model
+  [518] （单条）information dimensionality principle
+  [519] （单条）information gain maximization
+  [520] （单条）information reduction via sequential decision making
+  [521] （单条）information redundancy elimination
+  [522] （单条）information refinement and state space discretization
+  [523] （单条）information revelation and belief updating
+  [524] （单条）information revelation and constraint relaxation
+  [525] （单条）information revelation and constraint visibility model
+  [526] （单条）information revelation and optimal stopping
+  [527] （单条）information revelation in incomplete information games
+  [528] （单条）information revelation mechanism
+  [529] （单条）information revelation principle
+  [530] （单条）information revelation through sequential signaling
+  [531] （单条）information revelation timing model
+  [532] （单条）information set compression
+  [533] （单条）information set expansion and feasible set enlargement
+  [534] （单条）information state representation
+  [535] （单条）information theoretic channel capacity
+  [536] （单条）information theoretic matching
+  [537] （单条）information theory rate distortion
+  [538] （单条）information theory signal redundancy and channel capacity
+  [539] （单条）information value of experimentation
+  [540] （单条）institutional hierarchy shift via formal channel routing
+  [541] （单条）institutional memory effect with evidence crystallization
+  [542] （单条）interest cost minimization via temporal deferral
+  [543] （单条）intertemporal arbitrage model
+  [544] （单条）intertemporal budget constraint with agency cost
+  [545] （单条）intertemporal budget constraint with liquidity preference
+  [546] （单条）intertemporal capital accumulation
+  [547] （单条）intertemporal capital allocation with heterogeneous discount rates
+  [548] （单条）intertemporal choice under irreversible constraints
+  [549] （单条）intertemporal choice with present bias correction
+  [550] （单条）intertemporal choice with switching costs
+  [551] （单条）intertemporal consumption smoothing under nonlinear taxation
+  [552] （单条）intertemporal consumption smoothing under progressive taxation
+  [553] （单条）intertemporal cost minimization with tax deferral option
+  [554] （单条）intertemporal optimization with separable objectives
+  [555] （单条）intertemporal substitution with human capital investment
+  [556] （单条）intertemporal tax arbitrage under uncertain future tax rates
+  [557] （单条）intertemporal tax arbitrage with progressive taxation
+  [558] （单条）intertemporal utility maximization with exponential discounting
+  [559] （单条）inventory buffer model for stochastic demand
+  [560] （单条）irreversibility effect
+  [561] （单条）irreversibility premium in sequential decision making
+  [562] （单条）jensen inequality for convex functions
+  [563] （单条）kelly criterion
+  [564] （单条）knapsack optimization with time dependent weights
+  [565] （单条）knapsack problem with constraint relaxation
+  [566] （单条）knapsack problem with cost minimization
+  [567] （单条）knapsack problem with debt restructuring
+  [568] （单条）knapsack problem with heterogeneous values
+  [569] （单条）knapsack problem with opportunity cost
+  [570] （单条）knapsack problem with revealed constraints
+  [571] （单条）knapsack problem with time dependent utility
+  [572] （单条）knightian uncertainty reduction
+  [573] （单条）knightian uncertainty with information acquisition
+  [574] （单条）knightian uncertainty with state dependent risk assessment
+  [575] （单条）kolmogorov complexity reduction
+  [576] （单条）labor market signaling equilibrium
+  [577] （单条）lagrange multiplier method with constraint identification
+  [578] （单条）lagrangian relaxation
+  [579] （单条）law of large numbers
+  [580] （单条）least cost avoider principle
+  [581] （单条）leverage equity tradeoff
+  [582] （单条）lexicographic optimization with constraint hierarchy
+  [583] （单条）lexicographic preference ordering
+  [584] （单条）liability matching model
+  [585] （单条）life cycle consumption and asset location model
+  [586] （单条）likelihood ratio test
+  [587] （单条）linear accumulation model
+  [588] （单条）linear constraint satisfaction with objective function optimization
+  [589] （单条）linear feasibility problem
+  [590] （单条）linear programming allocation problem
+  [591] （单条）linear programming constraint relaxation
+  [592] （单条）linear programming feasibility problem
+  [593] （单条）linear programming with binding constraints
+  [594] （单条）linear programming with competing constraints
+  [595] （单条）linear programming with constraint tightening
+  [596] （单条）linear programming with resource constraints
+  [597] （单条）linear superposition of tax liabilities
+  [598] （单条）liquidity constraint binding problem
+  [599] （单条）liquidity constraint optimization
+  [600] （单条）liquidity ladder model
+  [601] （单条）liquidity preference under depreciation heterogeneity
+  [602] （单条）loss harvesting as negative income shock offset
+  [603] （单条）lyapunov stability theory
+  [604] （单条）marginal incidence optimization
+  [605] （单条）marginal rate of return arbitrage
+  [606] （单条）marginal rate of return equalization
+  [607] （单条）marginal rate optimization under progressive taxation
+  [608] （单条）marginal return optimization
+  [609] （单条）market clearing dynamics
+  [610] （单条）market segmentation by information regime
+  [611] （单条）markov chain absorbing state avoidance
+  [612] （单条）markov chain state space restructuring
+  [613] （单条）markov decision process
+  [614] （单条）markov decision process with partial observability
+  [615] （单条）mean variance optimization with constraint reduction
+  [616] （单条）mean variance optimization with option value
+  [617] （单条）mean variance optimization with time horizon constraint
+  [618] （单条）mean variance portfolio optimization with liquidity tiers
+  [619] （单条）mean variance portfolio optimization with rate regime uncertainty
+  [620] （单条）mean variance portfolio selection
+  [621] （单条）measurement and verification problem
+  [622] （单条）mechanism design
+  [623] （单条）mechanism design via revelation principle
+  [624] （单条）mechanism design with asymmetric information
+  [625] （单条）mechanism design with collateral
+  [626] （单条）mechanism design with communication constraints
+  [627] （单条）mechanism design with cost asymmetry
+  [628] （单条）mechanism design with costly enforcement
+  [629] （单条）mechanism design with external enforcer
+  [630] （单条）mechanism design with incomplete information
+  [631] （单条）mechanism design with information revelation
+  [632] （单条）mechanism design with penalty functions
+  [633] （单条）mechanism design with verifiable information
+  [634] （单条）mechanism design with verifiable outcomes
+  [635] （单条）mental accounting
+  [636] （单条）mental accounting model
+  [637] （单条）metric remapping and frame reinterpretation
+  [638] （单条）minimax optimization under uncertainty
+  [639] （单条）minimax regret under incomplete information
+  [640] （单条）monopsony wage suppression model
+  [641] （单条）monte carlo path sampling for stochastic process
+  [642] （单条）moral hazard under monitoring
+  [643] （单条）moral hazard with monitoring
+  [644] （单条）multi agent constraint competition
+  [645] （单条）multi armed bandit exploration under hidden feasibility
+  [646] （单条）multi armed bandit problem
+  [647] （单条）multi armed bandit problem with exploration budget
+  [648] （单条）multi armed bandit with information acquisition
+  [649] （单条）multi armed bandit with information cost
+  [650] （单条）multi attribute utility theory
+  [651] （单条）multi criteria decision analysis
+  [652] （单条）multi dimensional local optimality testing
+  [653] （单条）multi objective optimization under constraint
+  [654] （单条）nash equilibrium perturbation
+  [655] （单条）negative equity trap escape through principal acceleration threshold
+  [656] （单条）negative feedback control loop
+  [657] （单条）negative feedback control with external observation
+  [658] （单条）negative feedback loop control
+  [659] （单条）negative feedback loop interruption via constraint binding
+  [660] （单条）negative feedback loop with threshold dynamics
+  [661] （单条）negative reinforcement loop disruption
+  [662] （单条）net present value
+  [663] （单条）net present value comparison with spread elimination
+  [664] （单条）net present value optimization
+  [665] （单条）net present value timing arbitrage
+  [666] （单条）net present value under uncertainty
+  [667] （单条）net present value with exponential discounting
+  [668] （单条）net present value with opportunity cost discounting
+  [669] （单条）network centrality improvement through strategic positioning
+  [670] （单条）network flow model with weak ties
+  [671] （单条）network topology shift in incomplete information games
+  [672] （单条）niche differentiation via orthogonal capability vectors
+  [673] （单条）observability and control in dynamical systems
+  [674] （单条）operant conditioning with extinction
+  [675] （单条）operating leverage model
+  [676] （单条）opportunity cost principle
+  [677] （单条）optimal control theory
+  [678] （单条）optimal control theory with state feedback
+  [679] （单条）optimal control under constraints
+  [680] （单条）optimal control with behavioral constraint
+  [681] （单条）optimal portfolio allocation under time constraint
+  [682] （单条）optimal portfolio allocation with liquidity constraints
+  [683] （单条）optimal resource allocation under scarcity
+  [684] （单条）optimal stopping
+  [685] （单条）optimal stopping and queue position dynamics
+  [686] （单条）optimal stopping problem with accelerating cost function
+  [687] （单条）optimal stopping problem with behavioral feedback
+  [688] （单条）optimal stopping problem with credential accumulation
+  [689] （单条）optimal stopping problem with increasing liability
+  [690] （单条）optimal stopping problem with increasing penalty
+  [691] （单条）optimal stopping problem with information revelation
+  [692] （单条）optimal stopping problem with irreversible exit
+  [693] （单条）optimal stopping problem with opportunity cost
+  [694] （单条）optimal stopping problem with option value
+  [695] （单条）optimal stopping problem with portfolio reallocation
+  [696] （单条）optimal stopping problem with sequential constraints
+  [697] （单条）optimal stopping problem with state dependent constraints
+  [698] （单条）optimal stopping problem with state dependent payoffs
+  [699] （单条）optimal stopping problem with switching costs
+  [700] （单条）optimal stopping problem with time varying utility
+  [701] （单条）optimal stopping theory with heterogeneous stopping costs
+  [702] （单条）optimal stopping theory with irreversible investment
+  [703] （单条）optimal stopping theory with sequential resource allocation
+  [704] （单条）optimal stopping under resource constraint relaxation
+  [705] （单条）optimal stopping under uncertain future states
+  [706] （单条）optimal stopping with deadline constraint
+  [707] （单条）optimal stopping with piecewise linear reward functions
+  [708] （单条）optimal stopping with staged liquidity
+  [709] （单条）option exercise under binding constraint
+  [710] （单条）option pricing with time decay and irreversible hiring
+  [711] （单条）option value expansion via time indexed information revelation
+  [712] （单条）option value maximization
+  [713] （单条）option value preservation
+  [714] （单条）option value theory with irreversible investment
+  [715] （单条）option value threshold model
+  [716] （单条）option value under irreversible investment
+  [717] （单条）outside option credibility enhancement
+  [718] （单条）outside option expansion via bargaining theory
+  [719] （单条）outside option principle in bilateral bargaining
+  [720] （单条）outside option value
+  [721] （单条）parallel positive feedback acceleration
+  [722] （单条）parallel search model
+  [723] （单条）parallel stochastic process racing
+  [724] （单条）parameter identification and observability augmentation
+  [725] （单条）parametric constrained optimization
+  [726] （单条）pareto efficiency frontier under budget constraint
+  [727] （单条）pareto efficiency reallocation
+  [728] （单条）pareto frontier expansion
+  [729] （单条）pareto frontier optimization
+  [730] （单条）pareto optimality in multi objective optimization
+  [731] （单条）path dependence
+  [732] （单条）path dependence and lock in
+  [733] （单条）path dependence and lock in effects
+  [734] （单条）path dependence and lock in reversal
+  [735] （单条）path dependence with critical windows
+  [736] （单条）path dependency and equilibrium escape
+  [737] （单条）path dependency and non commutative portfolio growth
+  [738] （单条）path dependency breaking via discrete reset
+  [739] （单条）path dependency breaking via documentation lock in
+  [740] （单条）path dependency with absorbing states
+  [741] （单条）path dependency with irreversible state transitions
+  [742] （单条）path dependent dynamics
+  [743] （单条）path redundancy principle
+  [744] （单条）perfect information game theory
+  [745] （单条）piecewise linear cash flow dynamics with structural phase transition
+  [746] （单条）poisson process and law of large numbers
+  [747] （单条）portfolio allocation under dual constraints
+  [748] （单条）portfolio optimization under incomplete information
+  [749] （单条）portfolio optimization under time constraint
+  [750] （单条）portfolio optimization with competing constraints
+  [751] （单条）portfolio optimization with constraint aggregation
+  [752] （单条）portfolio optimization with constraint binding
+  [753] （单条）portfolio rebalancing under liquidity constraints
+  [754] （单条）portfolio resource allocation model
+  [755] （单条）portfolio theory with independent trials
+  [756] （单条）positive feedback dynamics in coupled difference equations
+  [757] （单条）positive feedback dynamics with critical threshold
+  [758] （单条）positive feedback loop activation
+  [759] （单条）positive feedback loop dynamics with time dependent acceleration
+  [760] （单条）positive feedback loop interruption
+  [761] （单条）positive feedback with state dependent rate
+  [762] （单条）power asymmetry model
+  [763] （单条）precautionary savings theory
+  [764] （单条）precommitment device with verification
+  [765] （单条）precommitment mechanism
+  [766] （单条）precommitment mechanism under hyperbolic discounting
+  [767] （单条）precommitment mechanism with forced automation
+  [768] （单条）predictive feedforward control
+  [769] （单条）preference revelation mechanism
+  [770] （单条）preferential attachment in information search
+  [771] （单条）present value minimization with liquidity allocation
+  [772] （单条）present value of growth opportunities
+  [773] （单条）present value optimization
+  [774] （单条）present value optimization with tax arbitrage
+  [775] （单条）principal agent accountability via decision visibility
+  [776] （单条）principal agent model
+  [777] （单条）principal agent problem resolution through structural separation
+  [778] （单条）principal agent problem with adverse selection
+  [779] （单条）principal agent problem with adverse selection resolution
+  [780] （单条）principal agent problem with commitment device
+  [781] （单条）principal agent problem with contingent transfers
+  [782] （单条）principal agent problem with costly monitoring
+  [783] （单条）principal agent problem with endogenous effort supply
+  [784] （单条）principal agent problem with external enforcement
+  [785] （单条）principal agent problem with information asymmetry
+  [786] （单条）principal agent problem with information asymmetry reduction
+  [787] （单条）principal agent problem with institutional escalation
+  [788] （单条）principal agent problem with institutional mediation
+  [789] （单条）principal agent problem with institutional monitoring
+  [790] （单条）principal agent problem with monitoring
+  [791] （单条）principal agent problem with moral hazard mitigation
+  [792] （单条）principal agent problem with verifiable performance metrics
+  [793] （单条）principal component analysis
+  [794] （单条）priority queue optimization
+  [795] （单条）problem decomposition via constraint relaxation
+  [796] （单条）production function with factor substitution
+  [797] （单条）production possibilities frontier
+  [798] （单条）progressive tax arbitrage with time sensitive window
+  [799] （单条）projection onto convex constraint set
+  [800] （单条）proportional cost allocation by tenure ratio
+  [801] （单条）prospect theory
+  [802] （单条）prospect theory reference dependence
+  [803] （单条）prospect theory reference point shift
+  [804] （单条）prospect theory with probability weighting
+  [805] （单条）prospect theory with probability weighting correction
+  [806] （单条）prospect theory with reference point manipulation
+  [807] （单条）queueing theory with capacity constraints
+  [808] （单条）real option value
+  [809] （单条）real options framework
+  [810] （单条）real options pricing model
+  [811] （单条）real options theory with employment switching
+  [812] （单条）real options theory with option expiration
+  [813] （单条）real options theory with symmetric exercise windows
+  [814] （单条）real options valuation under geometric brownian motion
+  [815] （单条）real options valuation with embedded flexibility
+  [816] （单条）real options valuation with irreversible commitment
+  [817] （单条）redundancy and fault tolerance
+  [818] （单条）redundant channel coding
+  [819] （单条）reference point shift in loss aversion
+  [820] （单条）reference point theory
+  [821] （单条）regime switching model
+  [822] （单条）regret minimization in exploration exploitation tradeoff
+  [823] （单条）reinforcement learning with delayed vs immediate feedback
+  [824] （单条）reinforcement learning with exploration and exploitation
+  [825] （单条）reinforcing feedback loop
+  [826] （单条）rent growth arbitrage
+  [827] （单条）rent seeking model
+  [828] （单条）representativeness heuristic correction via likelihood salience
+  [829] （单条）representativeness heuristic debiasing
+  [830] （单条）reputation dynamics model
+  [831] （单条）reservation price adjustment via outside option
+  [832] （单条）reservation price theory
+  [833] （单条）reservation wage mechanism
+  [834] （单条）resilience theory with buffer stock
+  [835] （单条）resilience through buffering and shock absorption capacity
+  [836] （单条）resource allocation under information asymmetry
+  [837] （单条）resource regeneration rate differential
+  [838] （单条）revealed preference theory
+  [839] （单条）revealed preference theory with constraint misspecification
+  [840] （单条）revealed preference through choice set expansion
+  [841] （单条）revelation principle with costly falsification
+  [842] （单条）revelation principle with verifiable commitment
+  [843] （单条）reward function insertion into fixed state system
+  [844] （单条）risk decomposition via institutional intermediation
+  [845] （单条）robust decision making under model uncertainty
+  [846] （单条）robust optimization under parametric uncertainty
+  [847] （单条）robust optimization under uncertainty
+  [848] （单条）rubinstein bargaining model
+  [849] （单条）rubinstein bargaining model with incomplete information
+  [850] （单条）rubinstein bargaining model with outside options
+  [851] （单条）ruin probability minimization through buffer accumulation and variance reduction
+  [852] （单条）ruin theory
+  [853] （单条）safety stock model
+  [854] （单条）satisficing
+  [855] （单条）satisficing under bounded rationality
+  [856] （单条）satisficing under time constraint
+  [857] （单条）schelling point selection
+  [858] （单条）schelling point with commitment device
+  [859] （单条）screening and separating equilibrium
+  [860] （单条）screening and signaling equilibrium
+  [861] （单条）screening contract with separating equilibrium
+  [862] （单条）screening mechanism
+  [863] （单条）screening model
+  [864] （单条）screening under asymmetric information
+  [865] （单条）search and matching model
+  [866] （单条）search and matching theory
+  [867] （单条）search space concentration with local optimization
+  [868] （单条）self selection
+  [869] （单条）sensitivity analysis with scenario decomposition
+  [870] （单条）separability of decision variables
+  [871] （单条）separating equilibrium in adverse selection
+  [872] （单条）separating equilibrium in signaling games
+  [873] （单条）separation theorem with behavioral cost function
+  [874] （单条）sequence of returns risk elimination
+  [875] （单条）sequence of returns risk under convex withdrawal schedule
+  [876] （单条）sequential bargaining model
+  [877] （单条）sequential bargaining with incomplete information
+  [878] （单条）sequential bayesian decision making under resource constraint
+  [879] （单条）sequential bayesian updating
+  [880] （单条）sequential cost uncertainty with escalation commitment
+  [881] （单条）sequential decision making under incomplete information
+  [882] （单条）sequential decision making under uncertainty
+  [883] （单条）sequential decision making under uncertainty with information revelation
+  [884] （单条）sequential decision making under uncertainty with optimal stopping
+  [885] （单条）sequential decision making under uncertainty with option value
+  [886] （单条）sequential decision making with bayesian information updating
+  [887] （单条）sequential decision simplification under cognitive constraints
+  [888] （单条）sequential decision tree with conditional probability branching
+  [889] （单条）sequential game equilibrium with information timing
+  [890] （单条）sequential game equilibrium with payoff reframing
+  [891] （单条）sequential game with information control
+  [892] （单条）sequential game with information structure reversal
+  [893] （单条）sequential hypothesis testing with adaptive strategy revision
+  [894] （单条）sequential hypothesis testing with irreversible actions
+  [895] （单条）sequential hypothesis testing with predetermined stopping rules
+  [896] （单条）sequential move advantage in incomplete information games
+  [897] （单条）sequential optimization with feasibility constraint relaxation
+  [898] （单条）sequential probability ratio test
+  [899] （单条）sequential screening with strategic information revelation
+  [900] （单条）sequential signaling game
+  [901] （单条）sequential signaling game with endogenous decision timing
+  [902] （单条）serial system bottleneck analysis
+  [903] （单条）series parallel system reliability
+  [904] （单条）shannon information channel capacity model
+  [905] （单条）shannon information theory channel model
+  [906] （单条）shapley bargaining model
+  [907] （单条）shortfall risk minimization
+  [908] （单条）signal averaging through independent channels
+  [909] （单条）signal decay model
+  [910] （单条）signal decomposition and redundant pathway architecture
+  [911] （单条）signal detection theory
+  [912] （单条）signal detection theory with noise reduction
+  [913] （单条）signal detection theory with sufficient statistics
+  [914] （单条）signal extraction problem
+  [915] （单条）signal extraction with transient noise
+  [916] （单条）signal to noise ratio optimization
+  [917] （单条）signaling and screening under asymmetric information
+  [918] （单条）signaling and screening under information asymmetry
+  [919] （单条）signaling equilibrium in labor markets
+  [920] （单条）signaling equilibrium under incomplete information
+  [921] （单条）signaling equilibrium with costly credentials
+  [922] （单条）signaling equilibrium with costly revelation
+  [923] （单条）signaling equilibrium with credible commitment
+  [924] （单条）signaling game separating equilibrium
+  [925] （单条）signaling game with asymmetric information
+  [926] （单条）signaling game with channel selection
+  [927] （单条）signaling game with cheap talk elimination
+  [928] （单条）signaling game with commitment constraints
+  [929] （单条）signaling game with costly action
+  [930] （单条）signaling game with costly revelation
+  [931] （单条）signaling game with hidden cost
+  [932] （单条）signaling game with information disclosure
+  [933] （单条）signaling game with outside option
+  [934] （单条）signaling game with pooling equilibrium separation
+  [935] （单条）signaling game with separating equilibrium
+  [936] （单条）signaling game with type inference
+  [937] （单条）signaling games with separating equilibrium
+  [938] （单条）signaling games with sunk cost commitment
+  [939] （单条）signaling theory under adverse selection
+  [940] （单条）signaling theory with costly signal production
+  [941] （单条）signaling theory with costly signals
+  [942] （单条）signaling theory with costly verification
+  [943] （单条）signaling theory with credibility enhancement
+  [944] （单条）signaling theory with information asymmetry reduction
+  [945] （单条）signaling theory with multiple emitters
+  [946] （单条）signaling through state variable improvement
+  [947] （单条）signaling with commitment device
+  [948] （单条）skill accumulation under constraint binding
+  [949] （单条）slack variable elimination in resource constraints
+  [950] （单条）spence signaling
+  [951] （单条）spence signaling model with cost of signaling
+  [952] （单条）stackelberg commitment game with information revelation
+  [953] （单条）stackelberg commitment model
+  [954] （单条）stackelberg competition
+  [955] （单条）stackelberg competition with commitment device
+  [956] （单条）stackelberg competition with commitment signaling
+  [957] （单条）stackelberg competition with information revelation
+  [958] （单条）stackelberg game
+  [959] （单条）stackelberg game equilibrium reversal
+  [960] （单条）stackelberg game to symmetric information game
+  [961] （单条）stackelberg game with enforcement multiplier
+  [962] （单条）stackelberg game with information revelation
+  [963] （单条）stackelberg game with payment floor negotiation
+  [964] （单条）stackelberg game with regulatory third party
+  [965] （单条）stackelberg game with third party enforcement
+  [966] （单条）stackelberg sequential game with escalating cost structure
+  [967] （单条）state contingent portfolio optimization
+  [968] （单条）state dependent markov decision process
+  [969] （单条）state machine with time dependent decay dynamics
+  [970] （单条）state space dimensionality reduction
+  [971] （单条）state space expansion via savings rate optimization
+  [972] （单条）state space partitioning with hard constraints
+  [973] （单条）state space reachability with path minimization
+  [974] （单条）state space search with deadline constraint
+  [975] （单条）statistical pattern detection
+  [976] （单条）stochastic barrier model with absorbing threshold
+  [977] （单条）stochastic cash flow variance reduction via asset substitution
+  [978] （单条）stochastic constraint satisfaction with feasibility maximization
+  [979] （单条）stochastic consumption smoothing model
+  [980] （单条）stochastic control with absorbing barriers
+  [981] （单条）stochastic control with human capital constraint
+  [982] （单条）stochastic dominance with regime change risk
+  [983] （单条）stochastic dominance with sequential risk reduction
+  [984] （单条）stochastic dominance with tax arbitrage
+  [985] （单条）stochastic dynamic programming with capacity constraints
+  [986] （单条）stochastic dynamic programming with certainty equivalence
+  [987] （单条）stochastic dynamic programming with heterogeneous discount rates
+  [988] （单条）stochastic dynamic programming with incomplete information
+  [989] （单条）stochastic dynamic programming with information revelation
+  [990] （单条）stochastic dynamic programming with state separation
+  [991] （单条）stochastic gradient estimation via active sampling
+  [992] （单条）stochastic liquidity management
+  [993] （单条）stochastic programming with recourse
+  [994] （单条）stochastic volatility reduction
+  [995] （单条）stock accumulation with threshold constraint
+  [996] （单条）stock and flow dynamics with constraint reversal
+  [997] （单条）stock and flow dynamics with threshold crossing
+  [998] （单条）stock flow consistency model
+  [999] （单条）stopping time problem
+  [1000] （单条）strategic framing shift from signaling game to coordination problem
+  [1001] （单条）stratified sampling with heterogeneous success probabilities
+  [1002] （单条）stratified sampling with pre filtered population characteristics
+  [1003] （单条）subgame perfect equilibrium
+  [1004] （单条）sunk cost decoupling via information structure isolation
+  [1005] （单条）sunk cost effect with constrained optimization
+  [1006] （单条）sunk cost fallacy elimination via decision restructuring
+  [1007] （单条）sunk cost fallacy prevention through option value preservation
+  [1008] （单条）supply demand mismatch resolution model
+  [1009] （单条）system decomposition and constraint decoupling
+  [1010] （单条）task switching overhead model
+  [1011] （单条）tax arbitrage through account heterogeneity
+  [1012] （单条）tax location optimization model
+  [1013] （单条）temporal anchoring via documentary evidence
+  [1014] （单条）temporal arbitrage in decentralized withholding systems
+  [1015] （单条）temporal arbitrage model
+  [1016] （单条）temporal bargaining model
+  [1017] （单条）temporal commitment device via institutional procedure
+  [1018] （单条）temporal commitment device with external anchoring
+  [1019] （单条）temporal constraint arbitrage
+  [1020] （单条）temporal constraint decomposition
+  [1021] （单条）temporal constraint reduction of search space
+  [1022] （单条）temporal cost asymmetry optimization
+  [1023] （单条）temporal decay function
+  [1024] （单条）temporal decoupling of fixed costs from variable returns
+  [1025] （单条）temporal difference learning with feedback loop interruption
+  [1026] （单条）temporal discounting and dynamic programming optimization
+  [1027] （单条）temporal discounting with commitment devices
+  [1028] （单条）temporal discounting with hard constraints
+  [1029] （单条）temporal mechanism design
+  [1030] （单条）temporal mismatch elimination via commitment device
+  [1031] （单条）temporal opportunity window exploitation
+  [1032] （单条）temporal optimization in task queue dynamics
+  [1033] （单条）temporal precedence with documentary lock in
+  [1034] （单条）temporal preference reversal with commitment devices
+  [1035] （单条）temporal resource allocation problem
+  [1036] （单条）temporal separation of conflicting objectives
+  [1037] （单条）temporal separation of income signal and spending decision
+  [1038] （单条）temporal threshold mechanism in state transition
+  [1039] （单条）third party enforcement with penalty multiplication
+  [1040] （单条）threat point shift in cooperative bargaining
+  [1041] （单条）threshold arbitrage across market segments
+  [1042] （单条）threshold autoregressive model for type inference
+  [1043] （单条）threshold based resource allocation with state dependent utility maximization
+  [1044] （单条）threshold based state transition model
+  [1045] （单条）threshold crossing dynamics
+  [1046] （单条）threshold crossing in parameter space
+  [1047] （单条）threshold crossing model
+  [1048] （单条）threshold crossing model with market segmentation
+  [1049] （单条）threshold crossing with intermediate steps
+  [1050] （单条）threshold decision model
+  [1051] （单条）threshold decision rule
+  [1052] （单条）threshold dynamics with phase transitions
+  [1053] （单条）threshold dynamics with state dependent transitions
+  [1054] （单条）threshold effects in cost minimization
+  [1055] （单条）threshold exceedance avoidance
+  [1056] （单条）threshold model
+  [1057] （单条）threshold model of resource allocation
+  [1058] （单条）threshold model with absorbing states
+  [1059] （单条）threshold model with cost discontinuity
+  [1060] （单条）threshold model with state bifurcation
+  [1061] （单条）threshold model with state dependent constraints
+  [1062] （单条）threshold response function
+  [1063] （单条）time dependent optimization
+  [1064] （单条）tipping point dynamics with hysteresis
+  [1065] （单条）topological sorting with precedence constraints
+  [1066] （单条）trajectory based inference
+  [1067] （单条）two sector equilibrium model
+  [1068] （单条）two sided matching with endogenous search order
+  [1069] （单条）two sided matching with preference heterogeneity
+  [1070] （单条）two sided matching with search friction
+  [1071] （单条）ultimatum game with binary constraint
+  [1072] （单条）ultimatum game with commitment mechanism
+  [1073] （单条）ultimatum game with credible commitment
+  [1074] （单条）ultimatum game with information revelation
+  [1075] （单条）ultimatum game with sunk cost asymmetry
+  [1076] （单条）ulysses contract
+  [1077] （单条）ulysses contract with irreversible option elimination
+  [1078] （单条）value at risk
+  [1079] （单条）value at risk minimization
+  [1080] （单条）value of information
+  [1081] （单条）value of information in irreversible decisions
+  [1082] （单条）value of information in sequential decision making
+  [1083] （单条）value of information under binary state
+  [1084] （单条）variable decoupling via constraint imposition
+  [1085] （单条）variance reduction through conditional commitment
+  [1086] （单条）variance reduction through repeated sampling with improved base rate
+  [1087] （单条）volatility convexity lemma in continuous compounding
+  [1088] （单条）weighted linear scoring model with time decay
+  [1089] （单条）working capital cycle compression
+  [1090] （单条）worst case analysis with constraint binding
+  [1091] （单条）wright learning curve model
+  [1092] （单条）zero sum versus positive sum resource reallocation
+
+==============================================================================

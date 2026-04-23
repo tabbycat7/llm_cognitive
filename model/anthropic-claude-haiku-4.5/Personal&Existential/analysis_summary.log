@@ -1,0 +1,1499 @@
+==============================================================================
+LLM Cognitive Probe — Analysis Summary
+==============================================================================
+Generated (local): 2026-04-22T20:10:03
+
+[Input]
+  results_file: E:\college\postgraduate\llm_cognitive\anthropic-claude-haiku-4.5\Personal&Existential\probe_results.jsonl
+  records (non-empty JSONL lines): 500
+
+[Merge]
+  merge_method: llm
+  refresh_merge: True
+  name_source: step3
+  chart_top_n: 30
+
+[Counts]
+  raw_unique_names: 1213
+  raw_total_mentions: 1476
+  canonical_unique_names: 1148
+  canonical_total_mentions: 1476
+  distinct_label_reduction: 1213 raw → 1148 canonical (5.4% fewer labels)
+
+[Output artifacts]
+  merge_map.json: yes
+  merge_map.embeddings.json: no
+  model_law_frequency.png: yes
+  model_law_wordcloud.png: yes
+  cluster_dendrogram.png: no
+  cluster_scatter.png: no
+
+[Top 30 raw names — before merge / 归并前（原始标签频次）]
+  rank   count  name
+     1      37  negative feedback control system
+     2      21  bayesian belief updating
+     3      13  bifurcation theory
+     4      13  feedback control theory
+     5      11  signal detection theory
+     6       9  feedback control system
+     7       8  temporal difference learning
+     8       8  information asymmetry resolution
+     9       8  principal agent problem with information asymmetry resolution
+    10       7  bayesian inference
+    11       6  constraint satisfaction problem
+    12       6  principal agent problem with information asymmetry
+    13       6  bayesian model selection
+    14       5  principal agent problem with monitoring
+    15       5  bayesian belief updating with evidence accumulation
+    16       5  hidden markov model
+    17       5  information asymmetry reduction
+    18       5  bayesian belief update
+    19       5  kalman filter
+    20       4  constraint relaxation in optimization
+    21       4  optimal stopping problem
+    22       4  feedback control system stabilization
+    23       4  optimal stopping theory
+    24       4  state space factorization
+    25       4  markov decision process
+    26       3  portfolio theory
+    27       3  constrained optimization with feasible region expansion
+    28       3  partially observable markov decision process
+    29       3  signal detection theory with noise reduction
+    30       3  bistable dynamical system with hysteresis
+
+[Top 30 canonical names — after merge / 归并后（代表名频次）]
+  rank   count  name
+     1      79  feedback control system
+     2      58  bayesian inference
+     3      51  principal agent problem
+     4      23  bifurcation theory
+     5      15  constraint relaxation
+     6      14  signal detection theory
+     7      12  bistable dynamical system
+     8      12  attractor state transition
+     9      10  temporal difference learning
+    10       9  kalman filter
+    11       8  optimal stopping theory
+    12       7  markov decision process
+    13       7  hyperbolic discounting
+    14       6  constraint satisfaction problem
+    15       6  state space factorization
+    16       5  hidden markov model
+    17       3  portfolio theory
+    18       3  cognitive load theory
+    19       3  extinction learning
+    20       3  threshold model of collective behavior
+    21       2  sequential probability ratio test
+    22       2  value of information
+    23       2  commitment device
+    24       2  information asymmetry reduction via bayesian updating
+    25       2  parallel redundancy model
+    26       2  coupled oscillator damping
+    27       2  critical path method
+    28       2  utility function decomposition
+    29       2  latent class analysis
+    30       2  constrained resource allocation model
+
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 16 clusters]
+  [#1] representative: principal agent problem  ·  13 members
+      · information asymmetry and principal agent problem
+      · information asymmetry reduction
+      · information asymmetry resolution
+      · principal agent problem  [代表]
+      · principal agent problem with adverse selection
+      · principal agent problem with capacity constraint
+      · principal agent problem with commitment device
+      · principal agent problem with commitment devices
+      · principal agent problem with information asymmetry
+      · principal agent problem with information asymmetry resolution
+      · principal agent problem with monitoring
+      · principal agent problem with multiple principals
+      · principal agent theory with information asymmetry resolution
+  [#2] representative: bayesian inference  ·  12 members
+      · bayesian belief revision
+      · bayesian belief update
+      · bayesian belief update with information asymmetry resolution
+      · bayesian belief update with likelihood correction
+      · bayesian belief updating
+      · bayesian belief updating with evidence accumulation
+      · bayesian belief updating with evidence integration
+      · bayesian belief updating with prior revision
+      · bayesian decision theory
+      · bayesian hypothesis testing
+      · bayesian inference  [代表]
+      · bayesian model selection
+  [#3] representative: feedback control system  ·  11 members
+      · feedback control system  [代表]
+      · feedback control system stabilization
+      · feedback control system with gain reduction
+      · feedback control system with loop breaking
+      · feedback control system with stability analysis
+      · feedback control theory
+      · feedback loop gain reduction
+      · negative feedback control
+      · negative feedback control system
+      · positive feedback loop destabilization via gain reduction
+      · positive feedback loop interruption
+  [#4] representative: attractor state transition  ·  8 members
+      · absorbing state escape via intervention cascade
+      · activation barrier reduction via exogenous constraint imposition
+      · activation energy barrier model
+      · activation energy barrier reduction in state transition dynamics
+      · attractor basin escape via external forcing
+      · attractor state transition in nonlinear dynamical systems
+      · dynamical systems attractor escape
+      · dynamical systems destabilization via external forcing
+  [#5] representative: bifurcation theory  ·  6 members
+      · bifurcation control in nonlinear dynamical systems
+      · bifurcation theory  [代表]
+      · bifurcation theory with hysteresis
+      · dynamical systems bifurcation theory
+      · dynamical systems theory with bifurcation
+      · dynamical systems with bifurcation analysis
+  [#6] representative: constraint relaxation  ·  6 members
+      · constrained optimization with binding constraint relaxation
+      · constrained optimization with feasible region expansion
+      · constrained optimization with feasible set expansion
+      · constraint relaxation  [代表]
+      · constraint relaxation in optimization
+      · convex optimization with constraint relaxation
+  [#7] representative: bistable dynamical system  ·  5 members
+      · bistable dynamical system with basin of attraction
+      · bistable dynamical system with hysteresis
+      · bistable dynamical system with parameter perturbation
+      · bistable dynamics with hysteresis
+      · bistable switch model
+  [#8] representative: hyperbolic discounting  ·  3 members
+      · hyperbolic discounting  [代表]
+      · hyperbolic discounting with commitment device
+      · temporal discounting model
+  [#9] representative: kalman filter  ·  3 members
+      · kalman filter  [代表]
+      · kalman filter framework
+      · kalman filter principle
+  [#10] representative: cognitive load theory  ·  2 members
+      · cognitive load theory  [代表]
+      · cognitive load theory with resource reallocation
+  [#11] representative: extinction learning  ·  2 members
+      · extinction learning  [代表]
+      · extinction learning in classical conditioning
+  [#12] representative: markov decision process  ·  2 members
+      · markov decision process  [代表]
+      · partially observable markov decision process
+  [#13] representative: optimal stopping theory  ·  2 members
+      · optimal stopping problem
+      · optimal stopping theory  [代表]
+  [#14] representative: signal detection theory  ·  2 members
+      · signal detection theory  [代表]
+      · signal detection theory with noise reduction
+  [#15] representative: state space factorization  ·  2 members
+      · state space decoupling
+      · state space factorization  [代表]
+  [#16] representative: temporal difference learning  ·  2 members
+      · temporal difference learning  [代表]
+      · temporal difference learning with extinction
+
+[Merge map: raw → canonical where label changed (70 pairs)]
+  active learning with utility maximization  →  active learning
+  adaptation dynamics with time constant compression  →  adaptation dynamics
+  absorbing state escape via intervention cascade  →  attractor state transition
+  activation barrier reduction via exogenous constraint imposition  →  attractor state transition
+  activation energy barrier model  →  attractor state transition
+  activation energy barrier reduction in state transition dynamics  →  attractor state transition
+  attractor basin escape via external forcing  →  attractor state transition
+  attractor state transition in nonlinear dynamical systems  →  attractor state transition
+  dynamical systems attractor escape  →  attractor state transition
+  dynamical systems destabilization via external forcing  →  attractor state transition
+  bayesian belief revision  →  bayesian inference
+  bayesian belief update  →  bayesian inference
+  bayesian belief update with information asymmetry resolution  →  bayesian inference
+  bayesian belief update with likelihood correction  →  bayesian inference
+  bayesian belief updating  →  bayesian inference
+  bayesian belief updating with evidence accumulation  →  bayesian inference
+  bayesian belief updating with evidence integration  →  bayesian inference
+  bayesian belief updating with prior revision  →  bayesian inference
+  bayesian decision theory  →  bayesian inference
+  bayesian hypothesis testing  →  bayesian inference
+  bayesian model selection  →  bayesian inference
+  bifurcation control in nonlinear dynamical systems  →  bifurcation theory
+  bifurcation theory with hysteresis  →  bifurcation theory
+  dynamical systems bifurcation theory  →  bifurcation theory
+  dynamical systems theory with bifurcation  →  bifurcation theory
+  dynamical systems with bifurcation analysis  →  bifurcation theory
+  bistable dynamical system with basin of attraction  →  bistable dynamical system
+  bistable dynamical system with hysteresis  →  bistable dynamical system
+  bistable dynamical system with parameter perturbation  →  bistable dynamical system
+  bistable dynamics with hysteresis  →  bistable dynamical system
+  bistable switch model  →  bistable dynamical system
+  cognitive load theory with resource reallocation  →  cognitive load theory
+  commitment device with external enforcement  →  commitment device
+  constrained optimization with binding constraint relaxation  →  constraint relaxation
+  constrained optimization with feasible region expansion  →  constraint relaxation
+  constrained optimization with feasible set expansion  →  constraint relaxation
+  constraint relaxation in optimization  →  constraint relaxation
+  convex optimization with constraint relaxation  →  constraint relaxation
+  extinction learning in classical conditioning  →  extinction learning
+  feedback control system stabilization  →  feedback control system
+  feedback control system with gain reduction  →  feedback control system
+  feedback control system with loop breaking  →  feedback control system
+  feedback control system with stability analysis  →  feedback control system
+  feedback control theory  →  feedback control system
+  feedback loop gain reduction  →  feedback control system
+  negative feedback control  →  feedback control system
+  negative feedback control system  →  feedback control system
+  positive feedback loop destabilization via gain reduction  →  feedback control system
+  positive feedback loop interruption  →  feedback control system
+  hyperbolic discounting with commitment device  →  hyperbolic discounting
+  temporal discounting model  →  hyperbolic discounting
+  kalman filter framework  →  kalman filter
+  kalman filter principle  →  kalman filter
+  partially observable markov decision process  →  markov decision process
+  optimal stopping problem  →  optimal stopping theory
+  information asymmetry and principal agent problem  →  principal agent problem
+  information asymmetry reduction  →  principal agent problem
+  information asymmetry resolution  →  principal agent problem
+  principal agent problem with adverse selection  →  principal agent problem
+  principal agent problem with capacity constraint  →  principal agent problem
+  principal agent problem with commitment device  →  principal agent problem
+  principal agent problem with commitment devices  →  principal agent problem
+  principal agent problem with information asymmetry  →  principal agent problem
+  principal agent problem with information asymmetry resolution  →  principal agent problem
+  principal agent problem with monitoring  →  principal agent problem
+  principal agent problem with multiple principals  →  principal agent problem
+  principal agent theory with information asymmetry resolution  →  principal agent problem
+  signal detection theory with noise reduction  →  signal detection theory
+  state space decoupling  →  state space factorization
+  temporal difference learning with extinction  →  temporal difference learning
+
+[Merge cluster details / 归并簇完整明细（共 1148 簇，其中 16 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: principal agent problem  ·  13 条
+      · information asymmetry and principal agent problem
+      · information asymmetry reduction
+      · information asymmetry resolution
+      · principal agent problem  [代表]
+      · principal agent problem with adverse selection
+      · principal agent problem with capacity constraint
+      · principal agent problem with commitment device
+      · principal agent problem with commitment devices
+      · principal agent problem with information asymmetry
+      · principal agent problem with information asymmetry resolution
+      · principal agent problem with monitoring
+      · principal agent problem with multiple principals
+      · principal agent theory with information asymmetry resolution
+  [2] 代表名: bayesian inference  ·  12 条
+      · bayesian belief revision
+      · bayesian belief update
+      · bayesian belief update with information asymmetry resolution
+      · bayesian belief update with likelihood correction
+      · bayesian belief updating
+      · bayesian belief updating with evidence accumulation
+      · bayesian belief updating with evidence integration
+      · bayesian belief updating with prior revision
+      · bayesian decision theory
+      · bayesian hypothesis testing
+      · bayesian inference  [代表]
+      · bayesian model selection
+  [3] 代表名: feedback control system  ·  11 条
+      · feedback control system  [代表]
+      · feedback control system stabilization
+      · feedback control system with gain reduction
+      · feedback control system with loop breaking
+      · feedback control system with stability analysis
+      · feedback control theory
+      · feedback loop gain reduction
+      · negative feedback control
+      · negative feedback control system
+      · positive feedback loop destabilization via gain reduction
+      · positive feedback loop interruption
+  [4] 代表名: attractor state transition  ·  8 条
+      · absorbing state escape via intervention cascade
+      · activation barrier reduction via exogenous constraint imposition
+      · activation energy barrier model
+      · activation energy barrier reduction in state transition dynamics
+      · attractor basin escape via external forcing
+      · attractor state transition in nonlinear dynamical systems
+      · dynamical systems attractor escape
+      · dynamical systems destabilization via external forcing
+  [5] 代表名: bifurcation theory  ·  6 条
+      · bifurcation control in nonlinear dynamical systems
+      · bifurcation theory  [代表]
+      · bifurcation theory with hysteresis
+      · dynamical systems bifurcation theory
+      · dynamical systems theory with bifurcation
+      · dynamical systems with bifurcation analysis
+  [6] 代表名: constraint relaxation  ·  6 条
+      · constrained optimization with binding constraint relaxation
+      · constrained optimization with feasible region expansion
+      · constrained optimization with feasible set expansion
+      · constraint relaxation  [代表]
+      · constraint relaxation in optimization
+      · convex optimization with constraint relaxation
+  [7] 代表名: bistable dynamical system  ·  5 条
+      · bistable dynamical system with basin of attraction
+      · bistable dynamical system with hysteresis
+      · bistable dynamical system with parameter perturbation
+      · bistable dynamics with hysteresis
+      · bistable switch model
+  [8] 代表名: hyperbolic discounting  ·  3 条
+      · hyperbolic discounting  [代表]
+      · hyperbolic discounting with commitment device
+      · temporal discounting model
+  [9] 代表名: kalman filter  ·  3 条
+      · kalman filter  [代表]
+      · kalman filter framework
+      · kalman filter principle
+  [10] 代表名: cognitive load theory  ·  2 条
+      · cognitive load theory  [代表]
+      · cognitive load theory with resource reallocation
+  [11] 代表名: extinction learning  ·  2 条
+      · extinction learning  [代表]
+      · extinction learning in classical conditioning
+  [12] 代表名: markov decision process  ·  2 条
+      · markov decision process  [代表]
+      · partially observable markov decision process
+  [13] 代表名: optimal stopping theory  ·  2 条
+      · optimal stopping problem
+      · optimal stopping theory  [代表]
+  [14] 代表名: signal detection theory  ·  2 条
+      · signal detection theory  [代表]
+      · signal detection theory with noise reduction
+  [15] 代表名: state space factorization  ·  2 条
+      · state space decoupling
+      · state space factorization  [代表]
+  [16] 代表名: temporal difference learning  ·  2 条
+      · temporal difference learning  [代表]
+      · temporal difference learning with extinction
+  [17] （单条）active learning with utility maximization
+  [18] （单条）adaptation dynamics with time constant compression
+  [19] （单条）adaptive control
+  [20] （单条）adaptive control with discrete decision points
+  [21] （单条）adaptive control with feedback monitoring
+  [22] （单条）additive decomposition model
+  [23] （单条）adverse selection and separating equilibrium
+  [24] （单条）adverse selection mitigation through cost externalization
+  [25] （单条）adverse selection with screening
+  [26] （单条）akrasia resolution via commitment device and information revelation
+  [27] （单条）associative learning model with extinction
+  [28] （单条）asymmetric information equilibrium
+  [29] （单条）asymmetric information model
+  [30] （单条）attractor basin competition in dynamical systems
+  [31] （单条）attractor basin dynamics
+  [32] （单条）attractor basin escape via external constraint
+  [33] （单条）attractor basin perturbation in nonlinear dynamical systems
+  [34] （单条）attractor basin restructuring
+  [35] （单条）attractor basin restructuring in dynamical systems
+  [36] （单条）attractor basin restructuring via constraint imposition
+  [37] （单条）attractor basin stability analysis
+  [38] （单条）attractor basin transition in dynamical systems
+  [39] （单条）attractor basin transition in nonlinear dynamical systems
+  [40] （单条）attractor competition in nonlinear dynamical systems
+  [41] （单条）attractor dynamics with bifurcation
+  [42] （单条）attractor dynamics with bifurcation control
+  [43] （单条）attractor escape via external perturbation in nonlinear dynamical systems
+  [44] （单条）attractor landscape bifurcation
+  [45] （单条）attractor landscape dynamics
+  [46] （单条）attractor landscape dynamics in threat response systems
+  [47] （单条）attractor landscape shift in nonlinear dynamical systems
+  [48] （单条）attractor landscape transition in nonlinear dynamical systems
+  [49] （单条）attractor reconstruction via trajectory forcing
+  [50] （单条）attractor restoration in nonlinear dynamical systems
+  [51] （单条）attractor state destabilization
+  [52] （单条）attractor state dynamics
+  [53] （单条）attractor state escape via external forcing
+  [54] （单条）attractor state transition via parameter perturbation
+  [55] （单条）attractor switching in dynamical systems
+  [56] （单条）attribution theory
+  [57] （单条）availability heuristic in institutional decision making
+  [58] （单条）availability heuristic reversal through documentation protocol
+  [59] （单条）backward induction with irreversible commitment
+  [60] （单条）barrier function minimization
+  [61] （单条）basin of attraction escape via parameter space expansion
+  [62] （单条）bayesian belief revision under cognitive impairment
+  [63] （单条）bayesian belief revision with expert signal
+  [64] （单条）bayesian belief update via expert information
+  [65] （单条）bayesian belief update with evidence anchoring
+  [66] （单条）bayesian belief update with evidence generation
+  [67] （单条）bayesian belief update with evidence integration
+  [68] （单条）bayesian belief update with expert priors
+  [69] （单条）bayesian belief update with external information source
+  [70] （单条）bayesian belief update with external signal injection
+  [71] （单条）bayesian belief update with parameter shift detection
+  [72] （单条）bayesian belief update with prior revision
+  [73] （单条）bayesian belief updating under incomplete information
+  [74] （单条）bayesian belief updating under misspecified models
+  [75] （单条）bayesian belief updating under model uncertainty
+  [76] （单条）bayesian belief updating under uncertainty aversion
+  [77] （单条）bayesian belief updating under uncertainty reduction
+  [78] （单条）bayesian belief updating via disconfirming evidence
+  [79] （单条）bayesian belief updating with base rate correction
+  [80] （单条）bayesian belief updating with causal attribution
+  [81] （单条）bayesian belief updating with channel credibility weighting
+  [82] （单条）bayesian belief updating with cognitive bias correction
+  [83] （单条）bayesian belief updating with commitment forced evidence accumulation
+  [84] （单条）bayesian belief updating with corrupted priors
+  [85] （单条）bayesian belief updating with evidence collection
+  [86] （单条）bayesian belief updating with evidence generation
+  [87] （单条）bayesian belief updating with evidence partitioning
+  [88] （单条）bayesian belief updating with evidence precision weighting
+  [89] （单条）bayesian belief updating with evidence suppression
+  [90] （单条）bayesian belief updating with evidence weighting
+  [91] （单条）bayesian belief updating with expert authority
+  [92] （单条）bayesian belief updating with expert information source
+  [93] （单条）bayesian belief updating with expert signal
+  [94] （单条）bayesian belief updating with expert signal injection
+  [95] （单条）bayesian belief updating with expert testimony
+  [96] （单条）bayesian belief updating with external evidence
+  [97] （单条）bayesian belief updating with external evidence source
+  [98] （单条）bayesian belief updating with external information source
+  [99] （单条）bayesian belief updating with external information sources
+  [100] （单条）bayesian belief updating with external likelihood correction
+  [101] （单条）bayesian belief updating with hidden state inference
+  [102] （单条）bayesian belief updating with identity contingent priors
+  [103] （单条）bayesian belief updating with incomplete information
+  [104] （单条）bayesian belief updating with information acquisition
+  [105] （单条）bayesian belief updating with information asymmetry resolution
+  [106] （单条）bayesian belief updating with information disclosure
+  [107] （单条）bayesian belief updating with institutional priors
+  [108] （单条）bayesian belief updating with likelihood dominance
+  [109] （单条）bayesian belief updating with likelihood ratio convergence
+  [110] （单条）bayesian belief updating with likelihood ratio correction
+  [111] （单条）bayesian belief updating with likelihood ratio testing
+  [112] （单条）bayesian belief updating with low cost evidence collection
+  [113] （单条）bayesian belief updating with measurement error correction
+  [114] （单条）bayesian belief updating with misspecified priors
+  [115] （单条）bayesian belief updating with model misspecification
+  [116] （单条）bayesian belief updating with multiple evidence sources
+  [117] （单条）bayesian belief updating with objective decomposition
+  [118] （单条）bayesian belief updating with observation selection bias
+  [119] （单条）bayesian belief updating with observer bias correction
+  [120] （单条）bayesian belief updating with prediction error correction
+  [121] （单条）bayesian belief updating with prediction error minimization
+  [122] （单条）bayesian belief updating with prior correction
+  [123] （单条）bayesian belief updating with prior miscalibration
+  [124] （单条）bayesian belief updating with prior misspecification
+  [125] （单条）bayesian belief updating with professional signal
+  [126] （单条）bayesian belief updating with repeated disconfirmation
+  [127] （单条）bayesian belief updating with shortened evaluation windows
+  [128] （单条）bayesian belief updating with signaling
+  [129] （单条）bayesian belief updating with uncertainty reduction
+  [130] （单条）bayesian causal inference with likelihood reweighting
+  [131] （单条）bayesian decision theory with competing loss functions
+  [132] （单条）bayesian diagnostic inference with specialist signal processing
+  [133] （单条）bayesian diagnostic updating with multiple agents
+  [134] （单条）bayesian experimental design for parameter identification
+  [135] （单条）bayesian filtering
+  [136] （单条）bayesian filtering with bias correction
+  [137] （单条）bayesian game with incomplete information resolution
+  [138] （单条）bayesian game with information revelation
+  [139] （单条）bayesian hierarchical inference
+  [140] （单条）bayesian hypothesis testing via sequential likelihood accumulation
+  [141] （单条）bayesian hypothesis testing with sequential evidence accumulation
+  [142] （单条）bayesian hypothesis testing with sequential updating
+  [143] （单条）bayesian hypothesis updating with model comparison
+  [144] （单条）bayesian inference under uncertainty reduction
+  [145] （单条）bayesian inference with external calibration
+  [146] （单条）bayesian inference with external priors
+  [147] （单条）bayesian inference with hidden state estimation
+  [148] （单条）bayesian inference with information asymmetry resolution
+  [149] （单条）bayesian inference with likelihood dominance
+  [150] （单条）bayesian inference with likelihood ratio updating
+  [151] （单条）bayesian inference with model correction
+  [152] （单条）bayesian inference with prior revision
+  [153] （单条）bayesian inference with sample size correction
+  [154] （单条）bayesian inference with signal precision optimization
+  [155] （单条）bayesian information asymmetry and signaling theory
+  [156] （单条）bayesian information fusion
+  [157] （单条）bayesian information revelation
+  [158] （单条）bayesian information revision
+  [159] （单条）bayesian information update
+  [160] （单条）bayesian information update with belief revision
+  [161] （单条）bayesian information update with costly signaling
+  [162] （单条）bayesian information updating
+  [163] （单条）bayesian information updating in strategic interaction
+  [164] （单条）bayesian information updating under incomplete information
+  [165] （单条）bayesian information updating with common knowledge
+  [166] （单条）bayesian information updating with multiple observers
+  [167] （单条）bayesian information value framework
+  [168] （单条）bayesian latent variable model
+  [169] （单条）bayesian likelihood ratio updating
+  [170] （单条）bayesian model comparison
+  [171] （单条）bayesian model comparison with evidence updating
+  [172] （单条）bayesian model comparison with misspecified priors
+  [173] （单条）bayesian model comparison with multiple hypothesis testing
+  [174] （单条）bayesian model comparison with prior reweighting
+  [175] （单条）bayesian model revision under uncertainty
+  [176] （单条）bayesian model selection under affect dependent evidence
+  [177] （单条）bayesian model selection under competing hypotheses
+  [178] （单条）bayesian model selection via nested hypothesis testing
+  [179] （单条）bayesian model selection with active learning
+  [180] （单条）bayesian model selection with adaptive diagnostic revision
+  [181] （单条）bayesian model selection with evidence accumulation
+  [182] （单条）bayesian model selection with information acquisition
+  [183] （单条）bayesian model selection with latent variable inference
+  [184] （单条）bayesian model selection with likelihood dominance
+  [185] （单条）bayesian model selection with nested hypothesis testing
+  [186] （单条）bayesian model selection with sequential hypothesis elimination
+  [187] （单条）bayesian model updating with adaptive hypothesis testing
+  [188] （单条）bayesian model updating with expert information
+  [189] （单条）bayesian model updating with information cost
+  [190] （单条）bayesian model updating with information entropy reduction
+  [191] （单条）bayesian nash equilibrium with information asymmetry reduction
+  [192] （单条）bayesian network decomposition
+  [193] （单条）bayesian parameter estimation with bounded observation window
+  [194] （单条）bayesian posterior update via prediction error
+  [195] （单条）bayesian prior recalibration
+  [196] （单条）bayesian screening
+  [197] （单条）bayesian sequential hypothesis testing
+  [198] （单条）bayesian sequential inference with stopping rule
+  [199] （单条）bayesian signaling game equilibrium
+  [200] （单条）bayesian state estimation
+  [201] （单条）bayesian state estimation and hypothesis updating
+  [202] （单条）bayesian state estimation with model selection
+  [203] （单条）bayesian updating
+  [204] （单条）bayesian updating under information asymmetry
+  [205] （单条）bayesian updating with information acquisition
+  [206] （单条）bayesian updating with information asymmetry resolution
+  [207] （单条）bayesian updating with sample diversity
+  [208] （单条）behavioral extinction and stimulus substitution model
+  [209] （单条）belief updating under bayesian revision
+  [210] （单条）bifurcation analysis with attractor basin expansion
+  [211] （单条）bifurcation and attractor basin switching
+  [212] （单条）bifurcation and attractor basin transition
+  [213] （单条）bifurcation and attractor dynamics
+  [214] （单条）bifurcation and attractor transition
+  [215] （单条）bifurcation and critical transition prevention
+  [216] （单条）bifurcation control in dynamical systems
+  [217] （单条）bifurcation control via parameter elimination
+  [218] （单条）bifurcation control via parameter modulation
+  [219] （单条）bifurcation theory in dynamical systems
+  [220] （单条）bifurcation theory in nonlinear dynamical systems
+  [221] （单条）bifurcation theory in pharmacological dose response
+  [222] （单条）bifurcation theory with parameter dependent threshold crossing
+  [223] （单条）bifurcation theory with phase forcing in coupled nonlinear oscillators
+  [224] （单条）bifurcation theory with stochastic perturbation
+  [225] （单条）bifurcation with basin of attraction shift
+  [226] （单条）bifurcation with basin of attraction switching
+  [227] （单条）binary hypothesis testing with cost asymmetry resolution
+  [228] （单条）binding constraint analysis
+  [229] （单条）bistability and basin of attraction shift
+  [230] （单条）bistability and hysteresis in coupled nonlinear dynamical systems
+  [231] （单条）bistability and hysteresis in nonlinear dynamical systems
+  [232] （单条）bistability with hysteresis
+  [233] （单条）bistable dynamical system with attractor basin
+  [234] （单条）bistable dynamical system with attractor basin restructuring
+  [235] （单条）bistable dynamical system with attractor destabilization
+  [236] （单条）bistable dynamical system with attractor reconfiguration
+  [237] （单条）bistable dynamical system with attractor shift
+  [238] （单条）bistable dynamical system with attractor switching
+  [239] （单条）bistable dynamical system with basin crossing
+  [240] （单条）bistable dynamical system with basin of attraction shift
+  [241] （单条）bistable dynamical system with basin of attraction switching
+  [242] （单条）bistable dynamical system with basin switching
+  [243] （单条）bistable dynamical system with constraint removal
+  [244] （单条）bistable dynamical system with external forcing
+  [245] （单条）bistable dynamical system with external parameter control
+  [246] （单条）bistable dynamical system with forced perturbation
+  [247] （单条）bistable dynamical system with parameter dependent attractor shift
+  [248] （单条）bistable dynamical system with potential barrier
+  [249] （单条）bistable dynamical system with separatrix crossing
+  [250] （单条）bistable dynamical system with state bifurcation
+  [251] （单条）bistable dynamical system with state space perturbation
+  [252] （单条）bistable dynamical systems with attractor escape
+  [253] （单条）bistable dynamical systems with basin escape
+  [254] （单条）bistable dynamical systems with noise induced transitions
+  [255] （单条）bistable dynamical systems with potential energy landscape shift
+  [256] （单条）bistable dynamics with attractor basin transition
+  [257] （单条）bistable dynamics with barrier elevation
+  [258] （单条）bistable dynamics with potential landscape modification
+  [259] （单条）bistable dynamics with threshold shift
+  [260] （单条）bistable switching dynamics with hysteresis
+  [261] （单条）bistable system state transition via external forcing
+  [262] （单条）bistable system transition
+  [263] （单条）bistable system transition via controlled perturbation
+  [264] （单条）bistable system transition with landscape restructuring
+  [265] （单条）bistable system with barrier reduction
+  [266] （单条）bistable system with bifurcation
+  [267] （单条）bounded rationality constraint relaxation
+  [268] （单条）bounded rationality with cognitive overload resolution
+  [269] （单条）bounded rationality with cognitive resource depletion and utility function distortion
+  [270] （单条）bounded search with sequential sampling
+  [271] （单条）capability intent model of suicide
+  [272] （单条）capacity constraint dynamics
+  [273] （单条）capacity constraint model
+  [274] （单条）cascading failure prevention through redundant safeguards
+  [275] （单条）causal attribution boundary shift
+  [276] （单条）causal attribution reversal via diagnostic reframing
+  [277] （单条）causal decomposition via orthogonal interventions
+  [278] （单条）causal decoupling via variable substitution
+  [279] （单条）causal discovery from intervention response patterns
+  [280] （单条）causal factor decomposition
+  [281] （单条）causal graphical model with confounder adjustment
+  [282] （单条）causal identifiability and confounding variable separation
+  [283] （单条）causal identifiability via isolation
+  [284] （单条）causal identification through parametric variation
+  [285] （单条）causal identification through treatment heterogeneity
+  [286] （单条）causal identification under confounding
+  [287] （单条）causal identification under confounding via temporal stratification
+  [288] （单条）causal identification via confounder control
+  [289] （单条）causal inference and graphical model correction
+  [290] （单条）causal inference and identifiability framework
+  [291] （单条）causal inference reset via instrumental variable introduction
+  [292] （单条）causal inference through confounder identification and stratification
+  [293] （单条）causal inference through experimental separation
+  [294] （单条）causal inference through intervention
+  [295] （单条）causal inference via backdoor criterion
+  [296] （单条）causal inference via counterfactual framework
+  [297] （单条）causal inference via graphical models
+  [298] （单条）causal inference via instrumental variable
+  [299] （单条）causal inference via instrumental variables and confounding control
+  [300] （单条）causal inference via intervention and confounding variable isolation
+  [301] （单条）causal inference via intervention outcome correlation
+  [302] （单条）causal inference with confounding variable removal
+  [303] （单条）causal inference with instrumental variable estimation
+  [304] （单条）causal intervention and backdoor criterion adjustment
+  [305] （单条）causal mechanism isolation via pathway blocking
+  [306] （单条）causal model competition
+  [307] （单条）causal model identification
+  [308] （单条）change of basis in state space representation
+  [309] （单条）classical test theory with signal detection theory
+  [310] （单条）closed loop control theory
+  [311] （单条）closed loop feedback control with external actuator
+  [312] （单条）cognitive load theory with problem decomposition
+  [313] （单条）cognitive load theory with resource bottleneck model
+  [314] （单条）commitment device with external enforcement
+  [315] （单条）commitment device and ulysses contract framework
+  [316] （单条）commitment device theory
+  [317] （单条）commitment device via irreversible information transfer
+  [318] （单条）commitment device via irrevocable constraint
+  [319] （单条）commitment device with forced trajectory
+  [320] （单条）commitment device with information ratcheting
+  [321] （单条）commitment device with third party monitoring
+  [322] （单条）complementarity and coordination failure resolution
+  [323] （单条）conditional independence and heterogeneous treatment effects
+  [324] （单条）confounding variable elimination in causal identification
+  [325] （单条）constrained multi objective optimization
+  [326] （单条）constrained multi objective optimization with adaptive parameter search
+  [327] （单条）constrained multi objective optimization with constraint relaxation
+  [328] （单条）constrained nonlinear optimization with individual tolerance thresholds
+  [329] （单条）constrained optimization
+  [330] （单条）constrained optimization problem
+  [331] （单条）constrained optimization with active constraint relaxation
+  [332] （单条）constrained optimization with binding constraints
+  [333] （单条）constrained optimization with binding resource scarcity
+  [334] （单条）constrained optimization with constraint relaxation
+  [335] （单条）constrained optimization with continuous budget allocation
+  [336] （单条）constrained optimization with expanded feasible region
+  [337] （单条）constrained optimization with expanded feasible set
+  [338] （单条）constrained optimization with external enforcement
+  [339] （单条）constrained optimization with feasible set restructuring
+  [340] （单条）constrained optimization with hard constraints
+  [341] （单条）constrained optimization with infeasible constraint set
+  [342] （单条）constrained optimization with information asymmetry
+  [343] （单条）constrained optimization with misspecified objective
+  [344] （单条）constrained optimization with multiple control variables
+  [345] （单条）constrained optimization with objective function recalibration
+  [346] （单条）constrained optimization with objective function respecification
+  [347] （单条）constrained optimization with parameter modulation
+  [348] （单条）constrained optimization with penalty method
+  [349] （单条）constrained optimization with reduced action space
+  [350] （单条）constrained optimization with resource reallocation
+  [351] （单条）constrained optimization with sequential decision making
+  [352] （单条）constrained optimization with time sensitive leverage
+  [353] （单条）constrained optimization with variable substitution
+  [354] （单条）constrained resource allocation model
+  [355] （单条）constrained resource allocation under competing objectives
+  [356] （单条）constrained trajectory optimization with feasible region restructuring
+  [357] （单条）constraint based behavior modification
+  [358] （单条）constraint based optimization with exogenous control
+  [359] （单条）constraint binding analysis
+  [360] （单条）constraint identification in hierarchical systems
+  [361] （单条）constraint induced therapy via external forcing function
+  [362] （单条）constraint maintained equilibrium
+  [363] （单条）constraint relaxation and feasibility restoration
+  [364] （单条）constraint relaxation and feasible region expansion
+  [365] （单条）constraint relaxation and objective decomposition
+  [366] （单条）constraint relaxation and parameter space expansion
+  [367] （单条）constraint relaxation and system decoupling
+  [368] （单条）constraint relaxation in constrained optimization
+  [369] （单条）constraint relaxation in convex optimization
+  [370] （单条）constraint relaxation in decision space
+  [371] （单条）constraint relaxation in feasible region expansion
+  [372] （单条）constraint relaxation in feasible set expansion
+  [373] （单条）constraint relaxation in local equilibrium selection
+  [374] （单条）constraint relaxation in multi objective optimization
+  [375] （单条）constraint relaxation in optimization problems
+  [376] （单条）constraint relaxation in optimization theory
+  [377] （单条）constraint relaxation via feasible set expansion
+  [378] （单条）constraint relaxation via fixed cost absorption
+  [379] （单条）constraint relaxation via hierarchical system activation
+  [380] （单条）constraint relaxation via information revelation
+  [381] （单条）constraint relaxation via problem reformulation
+  [382] （单条）constraint satisfaction and bottleneck removal
+  [383] （单条）constraint satisfaction and feasible region restriction
+  [384] （单条）constraint satisfaction hierarchy
+  [385] （单条）constraint satisfaction problem
+  [386] （单条）constraint satisfaction problem decomposition
+  [387] （单条）constraint satisfaction problem with bottleneck removal
+  [388] （单条）constraint satisfaction problem with external enforcement
+  [389] （单条）constraint satisfaction problem with feasibility region rescaling
+  [390] （单条）constraint satisfaction problem with iterative feasibility refinement
+  [391] （单条）constraint satisfaction problem with parameter perturbation
+  [392] （单条）constraint satisfaction through temporal decomposition
+  [393] （单条）constraint satisfaction under motivation deficit
+  [394] （单条）constraint satisfaction via multi agent coupling
+  [395] （单条）constraint satisfaction with decoupled subsystems
+  [396] （单条）constraint satisfaction with reduced feasible action space
+  [397] （单条）constraint satisfaction with sequential relaxation
+  [398] （单条）constraint satisfaction with solution space expansion
+  [399] （单条）constraint set relaxation through hybrid strategy
+  [400] （单条）context dependent memory encoding model
+  [401] （单条）control system decoupling
+  [402] （单条）control system stability and bandwidth limitation
+  [403] （单条）control systems theory with state space representation
+  [404] （单条）control theoretic reformulation of objective function
+  [405] （单条）control theory stability analysis
+  [406] （单条）controllability and observability framework
+  [407] （单条）controllability rank augmentation
+  [408] （单条）controlled dynamical systems with negative feedback
+  [409] （单条）convex cost function with decomposition
+  [410] （单条）convex optimization problem reformulation
+  [411] （单条）convex relaxation
+  [412] （单条）coordination game equilibrium selection
+  [413] （单条）cost augmented decision model
+  [414] （单条）cost benefit analysis
+  [415] （单条）cost function restructuring
+  [416] （单条）cost minimization with constraint relaxation
+  [417] （单条）cost minimization with temporal trade offs
+  [418] （单条）costly signaling with observer effects
+  [419] （单条）counterfactual reasoning with empirical resolution
+  [420] （单条）coupled bistable systems with cascade destabilization
+  [421] （单条）coupled dynamical systems
+  [422] （单条）coupled dynamical systems with bifurcation
+  [423] （单条）coupled dynamical systems with convergence to attractor
+  [424] （单条）coupled dynamical systems with feedback control
+  [425] （单条）coupled dynamical systems with state synchronization
+  [426] （单条）coupled feedback control system
+  [427] （单条）coupled feedback loop disruption
+  [428] （单条）coupled feedback system decomposition
+  [429] （单条）coupled nonlinear dynamical systems with state dependent lyapunov stability
+  [430] （单条）coupled nonlinear feedback system stabilization
+  [431] （单条）coupled nonlinear feedback systems with gain reduction
+  [432] （单条）coupled oscillator damping
+  [433] （单条）coupled oscillator decoupling via constraint removal
+  [434] （单条）coupled oscillator decoupling via external forcing
+  [435] （单条）coupled oscillator decoupling via parameter intervention
+  [436] （单条）coupled oscillator decoupling with attractor basin escape
+  [437] （单条）coupled oscillator desynchronization and decoupling
+  [438] （单条）coupled oscillator model
+  [439] （单条）coupled oscillator model with heterogeneous damping
+  [440] （单条）coupled oscillator synchronization
+  [441] （单条）coupled state space intervention in multidimensional dynamical systems
+  [442] （单条）critical path method
+  [443] （单条）critical transition and hysteresis in adaptive systems
+  [444] （单条）critical transition and time window optimization
+  [445] （单条）critical transition detection via leading indicators
+  [446] （单条）critical window dynamics
+  [447] （单条）cumulative contact model
+  [448] （单条）curie point transition in bistable systems
+  [449] （单条）cusp catastrophe model
+  [450] （单条）cybernetic control system
+  [451] （单条）cybernetic feedback control
+  [452] （单条）damped dynamical systems
+  [453] （单条）damped harmonic oscillator with external forcing
+  [454] （单条）decoupling of state variables
+  [455] （单条）decoupling via temporal and functional separation
+  [456] （单条）delayed negative feedback control system
+  [457] （单条）delays and feedback loops in system dynamics
+  [458] （单条）dimensional decoupling via orthogonalization
+  [459] （单条）dimensionality expansion via basis transformation
+  [460] （单条）dimensionality reduction via external constraint
+  [461] （单条）discrete time linear dynamical system with state observation
+  [462] （单条）distributed control systems
+  [463] （单条）distributed monitoring and control system
+  [464] （单条）dopamine regulation dynamics with threshold adaptation
+  [465] （单条）driven dynamical systems
+  [466] （单条）dual process bayesian inference with salience weighting
+  [467] （单条）dynamic programming with state space expansion
+  [468] （单条）dynamical systems attractor escape via nonequilibrium perturbation
+  [469] （单条）dynamical systems attractor transition
+  [470] （单条）dynamical systems bifurcation
+  [471] （单条）dynamical systems bifurcation control
+  [472] （单条）dynamical systems bifurcation model
+  [473] （单条）dynamical systems stability analysis
+  [474] （单条）dynamical systems stability analysis with feedback control
+  [475] （单条）dynamical systems stability and basin of attraction
+  [476] （单条）dynamical systems stability and bifurcation theory
+  [477] （单条）dynamical systems stability via state space augmentation
+  [478] （单条）dynamical systems theory with attractor basin escape
+  [479] （单条）dynamical systems theory with attractor basin modification
+  [480] （单条）dynamical systems theory with attractor basin switching
+  [481] （单条）dynamical systems theory with attractor basin transitions
+  [482] （单条）dynamical systems theory with attractor basins
+  [483] （单条）dynamical systems theory with attractor competition
+  [484] （单条）dynamical systems theory with basin of attraction switching
+  [485] （单条）dynamical systems theory with bifurcation analysis
+  [486] （单条）dynamical systems theory with bistable equilibria
+  [487] （单条）dynamical systems theory with feedback stabilization
+  [488] （单条）dynamical systems theory with multiple equilibria
+  [489] （单条）dynamical systems theory with state dependent equilibria
+  [490] （单条）dynamical systems with attractor basin restructuring
+  [491] （单条）dynamical systems with external forcing and damping
+  [492] （单条）dynamical systems with feedback control
+  [493] （单条）dynamical systems with hysteresis and attractor destabilization
+  [494] （单条）dynamical systems with increased dimensionality
+  [495] （单条）dynamical systems with positive feedback loop destabilization
+  [496] （单条）dynamical systems with positive feedback loops
+  [497] （单条）dynamical systems with state dependent feedback
+  [498] （单条）early warning signal detection in dynamical systems
+  [499] （单条）effort cost discounting model
+  [500] （单条）ego depletion and resource constraint optimization
+  [501] （单条）ego depletion model with environmental constraint substitution
+  [502] （单条）ego depletion model with environmental stress threshold
+  [503] （单条）ego depletion model with resource constraint relaxation
+  [504] （单条）ego depletion with pre commitment mechanism
+  [505] （单条）energy conservation with state distribution
+  [506] （单条）expected utility theory with incomplete information
+  [507] （单条）exploration exploitation trade off in multi armed bandit with exhausted arms
+  [508] （单条）exponential cost discounting with path dependence
+  [509] （单条）exponential decay model with intervention timing
+  [510] （单条）exponential decay with lag phase and critical duration threshold
+  [511] （单条）extensive form game with commitment and sequential information revelation
+  [512] （单条）extinction learning in associative networks
+  [513] （单条）extinction learning in reinforcement learning
+  [514] （单条）extinction learning with reconsolidation window
+  [515] （单条）extinction learning with stimulus generalization control
+  [516] （单条）factor analysis
+  [517] （单条）fault tolerance through redundancy
+  [518] （单条）fault tolerance through redundancy and failover mechanisms
+  [519] （单条）fault tolerant redundancy in distributed systems
+  [520] （单条）feasible set expansion under constraint relaxation
+  [521] （单条）feedback amplification in dynamical systems
+  [522] （单条）feedback control and self regulation
+  [523] （单条）feedback control in nonlinear dynamical systems
+  [524] （单条）feedback control loop
+  [525] （单条）feedback control stabilization
+  [526] （单条）feedback control system destabilization
+  [527] （单条）feedback control system redesign
+  [528] （单条）feedback control system stability
+  [529] （单条）feedback control system theory
+  [530] （单条）feedback control system with attractor escape
+  [531] （单条）feedback control system with attractor state transitions
+  [532] （单条）feedback control system with bistable equilibrium
+  [533] （单条）feedback control system with error signal
+  [534] （单条）feedback control system with external authority
+  [535] （单条）feedback control system with lyapunov stability
+  [536] （单条）feedback control system with multiple feedback loops
+  [537] （单条）feedback control system with multiple timescale regulation
+  [538] （单条）feedback control system with negative feedback loop
+  [539] （单条）feedback control system with parameter bifurcation
+  [540] （单条）feedback control system with state constraints
+  [541] （单条）feedback control system with state dependent forcing
+  [542] （单条）feedback control system with state dependent gain modulation
+  [543] （单条）feedback control systems theory
+  [544] （单条）feedback control systems with state monitoring
+  [545] （单条）feedback control theory with attractor basin switching
+  [546] （单条）feedback control theory with hysteresis
+  [547] （单条）feedback control theory with loop gain reduction
+  [548] （单条）feedback control with adaptive threshold replacement
+  [549] （单条）feedback control with external observer
+  [550] （单条）feedback control with gain reduction
+  [551] （单条）feedback control with load dependent stability
+  [552] （单条）feedback control with loop gain reduction
+  [553] （单条）feedback control with observer injection
+  [554] （单条）feedback control with state observation
+  [555] （单条）feedback decoupling in coupled systems
+  [556] （单条）feedback inhibition with hierarchical control
+  [557] （单条）feedback loop damping via perturbation of loop driver
+  [558] （单条）feedback loop decoupling via exogenous parameter substitution
+  [559] （单条）feedback loop destabilization
+  [560] （单条）feedback loop destabilization and attractor shift
+  [561] （单条）feedback loop destabilization and negative feedback introduction
+  [562] （单条）feedback loop destabilization through compensatory signal removal
+  [563] （单条）feedback loop destabilization through multi point gain reduction
+  [564] （单条）feedback loop displacement via competing attractors
+  [565] （单条）feedback loop gain modulation
+  [566] （单条）feedback loop gain reduction with loop breaking
+  [567] （单条）feedback loop gain stabilization
+  [568] （单条）feedback loop interference
+  [569] （单条）feedback loop interruption
+  [570] （单条）feedback loop interruption via constraint imposition
+  [571] （单条）feedback loop interruption via external agent
+  [572] （单条）feedback loop interruption via external ground truth
+  [573] （单条）feedback loop interruption via external information injection
+  [574] （单条）feedback loop interruption via state separation
+  [575] （单条）feedback loop interruption via state space transformation
+  [576] （单条）feedback loop inversion via competing attractor states
+  [577] （单条）feedback loop polarity reversal
+  [578] （单条）feedback loop restructuring and attractor basin shift
+  [579] （单条）feedback loop restructuring via constraint elimination
+  [580] （单条）feedback loop reversal in dynamical systems
+  [581] （单条）feedback loop reversal via stability transition
+  [582] （单条）feedback loop stabilization through autonomous control
+  [583] （单条）feedback loop stabilization via external control
+  [584] （单条）feedback sign reversal in nonlinear dynamical systems
+  [585] （单条）feedback stabilization and eigenvalue placement
+  [586] （单条）feedforward control system design
+  [587] （单条）first order decay dynamics with forced duration
+  [588] （单条）first order linear system dynamics
+  [589] （单条）first order linear system response
+  [590] （单条）first order system response with time constant estimation
+  [591] （单条）first passage time problem
+  [592] （单条）fixed point theorem in self referential systems
+  [593] （单条）forced nonlinear oscillator with basin of attraction shift
+  [594] （单条）forced perturbation of dynamical system attractors
+  [595] （单条）gradient descent in non convex optimization
+  [596] （单条）habituation exponential decay
+  [597] （单条）hazard rate model
+  [598] （单条）hedonic adaptation setpoint theory
+  [599] （单条）hedonic treadmill with compounding returns model
+  [600] （单条）heterogeneous treatment effects
+  [601] （单条）hidden markov model
+  [602] （单条）hidden markov model inference
+  [603] （单条）hidden markov model state prediction
+  [604] （单条）hidden markov model with delayed observation
+  [605] （单条）hidden markov model with observation bias correction
+  [606] （单条）hidden state feedback loop with information asymmetry resolution
+  [607] （单条）hidden state observability restoration
+  [608] （单条）hidden state recovery
+  [609] （单条）hierarchical bayesian inference with epistemic delegation
+  [610] （单条）hierarchical constraint satisfaction problem
+  [611] （单条）hierarchical constraint satisfaction with precedence dependencies
+  [612] （单条）hierarchical control systems with nested feedback loops
+  [613] （单条）hierarchical control with authority delegation
+  [614] （单条）hierarchical control with bandwidth constraint mitigation
+  [615] （单条）hierarchical control with stability precondition
+  [616] （单条）hierarchical linear model
+  [617] （单条）hierarchical reinforcement learning
+  [618] （单条）hierarchical reinforcement learning with shared value function
+  [619] （单条）homeostatic plasticity with threshold recalibration
+  [620] （单条）hyperbolic discounting and delay reduction
+  [621] （单条）hyperbolic discounting correction
+  [622] （单条）hyperbolic discounting correction model
+  [623] （单条）hyperbolic discounting correction via commitment device
+  [624] （单条）hyperbolic discounting correction via precommitment
+  [625] （单条）hyperbolic discounting correction with constraint relaxation
+  [626] （单条）hyperbolic discounting reversal
+  [627] （单条）hyperbolic discounting with activation cost modulation
+  [628] （单条）hyperbolic discounting with choice architecture constraint
+  [629] （单条）hyperbolic discounting with commitment devices
+  [630] （单条）hyperbolic discounting with commitment mechanism
+  [631] （单条）hyperbolic discounting with commitment mechanisms
+  [632] （单条）hyperbolic discounting with frame dependent cost weighting
+  [633] （单条）hypothesis space expansion via external generation
+  [634] （单条）hysteresis and bistability in coupled feedback systems
+  [635] （单条）hysteresis and bistable system recovery
+  [636] （单条）hysteresis and state dependent feedback control
+  [637] （单条）hysteresis and state transition threshold
+  [638] （单条）hysteresis in bistable dynamical systems
+  [639] （单条）hysteresis in dynamical systems
+  [640] （单条）hysteresis in nonlinear dynamical systems
+  [641] （单条）hysteresis loop with state constraint relaxation
+  [642] （单条）hysteresis with external reference frame
+  [643] （单条）illusion of control disconfirmation via action decoupling
+  [644] （单条）information acquisition under uncertainty
+  [645] （单条）information aggregation mechanism
+  [646] （单条）information asymmetry and costly signaling
+  [647] （单条）information asymmetry and screening
+  [648] （单条）information asymmetry and signaling model
+  [649] （单条）information asymmetry model
+  [650] （单条）information asymmetry reduction in distributed monitoring systems
+  [651] （单条）information asymmetry reduction via bayesian updating
+  [652] （单条）information asymmetry reduction via disclosure
+  [653] （单条）information asymmetry reduction via revealed preference
+  [654] （单条）information asymmetry reduction via transparency
+  [655] （单条）information asymmetry reduction with causal attribution correction
+  [656] （单条）information asymmetry reduction with multi agent monitoring
+  [657] （单条）information asymmetry reduction with principal agent framework
+  [658] （单条）information asymmetry resolution in bayesian equilibrium
+  [659] （单条）information asymmetry resolution through controlled experimentation
+  [660] （单条）information asymmetry resolution through signaling
+  [661] （单条）information asymmetry resolution through third party verification
+  [662] （单条）information asymmetry resolution via cost structure modification
+  [663] （单条）information asymmetry resolution via credible signaling
+  [664] （单条）information asymmetry resolution via disclosure
+  [665] （单条）information asymmetry resolution via expert assessment
+  [666] （单条）information bottleneck principle
+  [667] （单条）information cascades correction
+  [668] （单条）information channel redundancy and gap reduction
+  [669] （单条）information channel separation
+  [670] （单条）information entropy reduction
+  [671] （单条）information entropy reduction in bayesian belief updating
+  [672] （单条）information feedback amplification loop
+  [673] （单条）information geometry and state space reconstruction
+  [674] （单条）information geometry in belief dynamics
+  [675] （单条）information integration theory
+  [676] （单条）information reduction through experimental design
+  [677] （单条）information refinement in constrained optimization
+  [678] （单条）information revelation and commitment device framework
+  [679] （单条）information separation and sequential processing
+  [680] （单条）information theoretic redundancy collapse
+  [681] （单条）information theory and bayesian decision making
+  [682] （单条）information theory with recoding strategy
+  [683] （单条）input output mismatch model
+  [684] （单条）interrupted time series design
+  [685] （单条）inverse reinforcement learning
+  [686] （单条）inverse reinforcement learning loss function correction
+  [687] （单条）ironic process theory with dynamical systems reframing
+  [688] （单条）kalman filter and linear quadratic regulator framework
+  [689] （单条）kalman filter with external reference signal correction
+  [690] （单条）lag structure in first order systems
+  [691] （单条）lagrangian relaxation
+  [692] （单条）latent class analysis
+  [693] （单条）latent variable decomposition with measurement error model
+  [694] （单条）latent variable identification and mechanism substitution
+  [695] （单条）latent variable inference
+  [696] （单条）limit cycle disruption via external forcing in nonlinear dynamical systems
+  [697] （单条）limit cycle dynamics in nonlinear systems
+  [698] （单条）limit cycle escape via external forcing
+  [699] （单条）limit cycle extinction via parameter removal in nonlinear dynamical systems
+  [700] （单条）limit cycle perturbation and basin of attraction shift
+  [701] （单条）limit cycle with parameter modulation
+  [702] （单条）linear complementarity problem with constraint activation
+  [703] （单条）linear control theory stabilization
+  [704] （单条）linear feedback control system with external forcing
+  [705] （单条）linear feedback control with state stabilization
+  [706] （单条）linear feedback system with external forcing
+  [707] （单条）linear programming feasibility analysis
+  [708] （单条）linear stability analysis of mood regulation system
+  [709] （单条）linear system state space model with input diversity
+  [710] （单条）linear time invariant system stabilization
+  [711] （单条）linear time invariant system with gain attenuation
+  [712] （单条）load balancing in distributed systems
+  [713] （单条）local optimization with bounded search space
+  [714] （单条）locus of control redistribution
+  [715] （单条）loss function respecification
+  [716] （单条）low pass filter or temporal averaging
+  [717] （单条）lyapunov stability analysis
+  [718] （单条）lyapunov stability and attractor basin escape
+  [719] （单条）lyapunov stability and attractor basin manipulation
+  [720] （单条）lyapunov stability and attractor destabilization in nonlinear dynamical systems
+  [721] （单条）lyapunov stability and attractor dynamics
+  [722] （单条）lyapunov stability and basin of attraction control
+  [723] （单条）lyapunov stability and eigenvalue repositioning
+  [724] （单条）lyapunov stability and feedback loop control
+  [725] （单条）lyapunov stability and feedback loop destabilization
+  [726] （单条）lyapunov stability in multidimensional state spaces
+  [727] （单条）lyapunov stability theory
+  [728] （单条）lyapunov stability theory with external constraint forcing
+  [729] （单条）lyapunov stability theory with state space decoupling
+  [730] （单条）lyapunov stability theory with time delayed control
+  [731] （单条）lyapunov stability with exogenous control input
+  [732] （单条）lyapunov stability with exogenous forcing
+  [733] （单条）lyapunov stability with external observer feedback
+  [734] （单条）m m c queueing model with load balancing
+  [735] （单条）markov chain with absorbing state acceleration
+  [736] （单条）markov decision process reward function restructuring
+  [737] （单条）markov decision process with epsilon greedy strategy
+  [738] （单条）markov decision process with reward function modification
+  [739] （单条）markov decision process with reward function redesign
+  [740] （单条）markov decision process with state decoupling
+  [741] （单条）markov decision process with state observation cost
+  [742] （单条）markov decision process with state space reduction
+  [743] （单条）markov decision process with state space restriction
+  [744] （单条）markov decision process with state transition probability manipulation
+  [745] （单条）measurement and feedback control loop
+  [746] （单条）measurement error model
+  [747] （单条）measurement induced causal reattribution
+  [748] （单条）mechanism design
+  [749] （单条）mechanism design via binding constraint
+  [750] （单条）mechanism design via information externalization
+  [751] （单条）mechanism design with complete information revelation
+  [752] （单条）mechanism design with cost revelation
+  [753] （单条）mechanism design with costly signaling and external enforcement
+  [754] （单条）mechanism design with external enforcer
+  [755] （单条）mechanism design with information asymmetry
+  [756] （单条）mechanism design with information asymmetry resolution
+  [757] （单条）model selection and causal model switching
+  [758] （单条）model selection via exhaustive search versus greedy optimization
+  [759] （单条）model specification testing
+  [760] （单条）model theoretic falsifiability testing
+  [761] （单条）modern portfolio theory
+  [762] （单条）monod kinetics with competitive inhibition and environmental constraint
+  [763] （单条）monotone operator theory
+  [764] （单条）multi agent commitment mechanism
+  [765] （单条）multi agent constraint satisfaction
+  [766] （单条）multi agent coordination game with information asymmetry resolution
+  [767] （单条）multi agent observability restoration
+  [768] （单条）multi armed bandit with exploration and exploitation
+  [769] （单条）multi armed bandit with exploration bonus and context dependent reward restructuring
+  [770] （单条）multi armed bandit with exploration exploitation tradeoff
+  [771] （单条）multi armed bandit with information asymmetry
+  [772] （单条）multi channel redundancy with cross validation
+  [773] （单条）multi level constraint restoration in self regulation systems
+  [774] （单条）multi objective optimization with constraint relaxation
+  [775] （单条）multi objective optimization with objective independence
+  [776] （单条）multi timescale hierarchical control architecture
+  [777] （单条）multiple timescale analysis
+  [778] （单条）multiscale dynamical systems
+  [779] （单条）multiscale dynamical systems stabilization
+  [780] （单条）multiscale dynamical systems with timescale separation
+  [781] （单条）multistable dynamical system with attractor restructuring
+  [782] （单条）negative feedback control in dynamical systems
+  [783] （单条）negative feedback control system with signal suppression
+  [784] （单条）negative feedback control systems
+  [785] （单条）negative feedback control with broken feedback pathway
+  [786] （单条）negative feedback control with stability margin
+  [787] （单条）negative feedback loop breaking through forced state transition
+  [788] （单条）negative feedback loop disruption via attribution restructuring
+  [789] （单条）negative feedback loop disruption via external forcing
+  [790] （单条）negative feedback loop disruption via external perturbation
+  [791] （单条）negative feedback loop gain reduction
+  [792] （单条）negative feedback regulation
+  [793] （单条）negative feedback regulation with hysteresis removal
+  [794] （单条）negative feedback stabilization
+  [795] （单条）negative feedback stabilization via external control
+  [796] （单条）negative reinforcement learning with extinction dynamics
+  [797] （单条）network flow with bottleneck elimination
+  [798] （单条）network redundancy and fault tolerance
+  [799] （单条）network resilience and node centrality reduction
+  [800] （单条）network resilience through path redundancy
+  [801] （单条）network resilience through redundancy
+  [802] （单条）network resilience through redundant pathways
+  [803] （单条）nonlinear dynamical systems bifurcation control
+  [804] （单条）nonlinear dynamical systems with attractor basin escape
+  [805] （单条）nonlinear dynamical systems with attractor destabilization
+  [806] （单条）nonlinear dynamical systems with attractor landscapes
+  [807] （单条）nonlinear dynamical systems with bistability
+  [808] （单条）nonlinear dynamical systems with critical intervention timing
+  [809] （单条）nonlinear dynamical systems with forced state transitions
+  [810] （单条）nonlinear dynamical systems with positive feedback loops
+  [811] （单条）nonlinear dynamical systems with positive feedback loops and attractor basin escape
+  [812] （单条）nonlinear dynamical systems with state dependent bifurcation
+  [813] （单条）nonlinear feedback control with gain reduction
+  [814] （单条）nyquist sampling theorem with feedback control loop
+  [815] （单条）objective function redesign in reinforcement learning
+  [816] （单条）objective function restructuring
+  [817] （单条）objective function substitution in stochastic optimization
+  [818] （单条）observability and controllability enhancement in dynamical system
+  [819] （单条）observability and controllability in linear dynamical systems
+  [820] （单条）observability and controllability in linear systems theory
+  [821] （单条）observability and state estimation in dynamical systems
+  [822] （单条）observability in discrete time dynamical systems
+  [823] （单条）observable and controllable canonical form in control theory
+  [824] （单条）observable state space reconstruction
+  [825] （单条）observable state space recovery
+  [826] （单条）observer based state estimation with redundant feedback channels
+  [827] （单条）observer dependent state collapse with authority transfer
+  [828] （单条）observer independence in feedback systems
+  [829] （单条）open loop control system with exogenous reference signal
+  [830] （单条）open loop control versus closed loop feedback control
+  [831] （单条）operant conditioning with contingency reversal
+  [832] （单条）operant conditioning with schedule of reinforcement
+  [833] （单条）operant conditioning with stimulus discrimination
+  [834] （单条）operant extinction
+  [835] （单条）opponent process theory
+  [836] （单条）optimal control of state trajectories
+  [837] （单条）optimal control theory
+  [838] （单条）optimal control with cost function reduction
+  [839] （单条）optimal control with state dependent parameters
+  [840] （单条）optimal control with state feedback
+  [841] （单条）optimal stopping and information revelation
+  [842] （单条）optimal stopping and sequential decision making
+  [843] （单条）optimal stopping problem with information revelation
+  [844] （单条）optimal stopping problem with time dependent hazard rate
+  [845] （单条）optimal stopping with bayesian belief updating
+  [846] （单条）option value preservation under uncertainty
+  [847] （单条）option value theory
+  [848] （单条）orthogonal decomposition
+  [849] （单条）parallel pathway redundancy in constrained systems
+  [850] （单条）parallel redundancy architecture in fault tolerance
+  [851] （单条）parallel redundancy model
+  [852] （单条）parameter decoupling and value function reconstruction
+  [853] （单条）parameter modification via pharmacological intervention
+  [854] （单条）pareto optimality
+  [855] （单条）pareto optimality under resource constraints
+  [856] （单条）pareto optimization
+  [857] （单条）path dependence and lock in
+  [858] （单条）path dependence and lock in effects
+  [859] （单条）path dependence with lock in escape
+  [860] （单条）path dependence with momentum accumulation
+  [861] （单条）pavlovian extinction and reconditioning
+  [862] （单条）pavlovian extinction learning
+  [863] （单条）periodic time varying system identification and phase dependent optimal control
+  [864] （单条）perturbation theory for nonlinear dynamical systems
+  [865] （单条）perturbation theory with control feedback
+  [866] （单条）phase response curve model
+  [867] （单条）phase transition in coupled dynamical systems
+  [868] （单条）portfolio diversification in reward systems
+  [869] （单条）portfolio diversification model
+  [870] （单条）portfolio diversification principle
+  [871] （单条）portfolio theory
+  [872] （单条）positive and negative feedback loop model
+  [873] （单条）positive feedback loop decoupling
+  [874] （单条）positive feedback loop destabilization
+  [875] （单条）positive feedback loop destabilization via information injection and state decoupling
+  [876] （单条）positive feedback loop destabilization via state space reduction
+  [877] （单条）positive feedback loop disruption via environmental constraint removal
+  [878] （单条）positive feedback loop disruption via external forcing function
+  [879] （单条）positive feedback loop disruption via external input
+  [880] （单条）positive feedback loop disruption via extinction dynamics
+  [881] （单条）positive feedback loop disruption via loop gain reduction
+  [882] （单条）positive feedback loop disruption via state space restructuring
+  [883] （单条）positive feedback loop interrupt
+  [884] （单条）positive feedback loop interruption via exogenous forcing
+  [885] （单条）positive feedback loop interruption via forced state traversal
+  [886] （单条）positive feedback loop interruption via state space redirection
+  [887] （单条）positive feedback loop stabilization via acceleration
+  [888] （单条）positive feedback loop with bistable equilibrium
+  [889] （单条）positive feedback loop with external control parameter
+  [890] （单条）positive feedback loop with time delayed response
+  [891] （单条）potential barrier model with state space accessibility
+  [892] （单条）potential energy landscape model
+  [893] （单条）potential function dynamics in state space
+  [894] （单条）potential landscape theory with bistable attractor dynamics
+  [895] （单条）potential outcomes framework
+  [896] （单条）precommitment mechanism under time inconsistent preferences
+  [897] （单条）prediction error driven learning
+  [898] （单条）prediction error minimization
+  [899] （单条）predictive processing
+  [900] （单条）predictive processing with prediction error minimization
+  [901] （单条）preference revelation through constraint modification
+  [902] （单条）preference revelation through parameter restoration
+  [903] （单条）prerequisite state ordering in sequential decision problems
+  [904] （单条）principal agent alignment through institutional intermediaries
+  [905] （单条）principal agent constraint removal
+  [906] （单条）principal agent delegation under cognitive constraint
+  [907] （单条）principal agent model
+  [908] （单条）principal agent model with commitment device
+  [909] （单条）principal agent model with information asymmetry resolution
+  [910] （单条）principal agent model with monitoring
+  [911] （单条）principal agent model with moral hazard
+  [912] （单条）principal agent problem resolution via fiduciary intermediary
+  [913] （单条）principal agent problem with asymmetric information
+  [914] （单条）principal agent problem with asymmetric information and commitment devices
+  [915] （单条）principal agent problem with competitive verification
+  [916] （单条）principal agent problem with constraint enforcement via external authority
+  [917] （单条）principal agent problem with exit option
+  [918] （单条）principal agent problem with institutional mandate
+  [919] （单条）principal agent problem with mechanism design
+  [920] （单条）principal agent problem with perfect information
+  [921] （单条）problem reformulation via constraint relaxation
+  [922] （单条）prospect theory
+  [923] （单条）prospect theory with certainty effect reversal
+  [924] （单条）prospect theory with cognitive bias correction
+  [925] （单条）prospect theory with reference point recalibration
+  [926] （单条）queueing theory
+  [927] （单条）range adaptation model
+  [928] （单条）rational choice theory with cognitive constraints
+  [929] （单条）real options theory
+  [930] （单条）real options valuation
+  [931] （单条）receiver operating characteristic optimization
+  [932] （单条）redundancy and fault tolerance architecture
+  [933] （单条）redundancy and modularity in system reliability
+  [934] （单条）redundancy and system reliability model
+  [935] （单条）redundant control system with independent failure modes
+  [936] （单条）redundant system architecture
+  [937] （单条）reference dependence model
+  [938] （单条）reference dependent utility theory
+  [939] （单条）regularization in constrained optimization
+  [940] （单条）regularization via explicit constraint formulation
+  [941] （单条）reinforcement learning
+  [942] （单条）reinforcement learning equilibrium destabilization
+  [943] （单条）reinforcement learning generalization
+  [944] （单条）reinforcement learning signal recovery
+  [945] （单条）reinforcement learning value function reconstruction
+  [946] （单条）reinforcement learning with exploration
+  [947] （单条）reinforcement learning with external reward signal
+  [948] （单条）reinforcement learning with modified reward function
+  [949] （单条）reinforcement learning with policy gradient
+  [950] （单条）reinforcement learning with reward function substitution
+  [951] （单条）reinforcement schedule theory
+  [952] （单条）reliability theory with redundancy
+  [953] （单条）repeated game reputation equilibrium
+  [954] （单条）repeated game with imperfect monitoring
+  [955] （单条）rescorla wagner learning model
+  [956] （单条）rescorla wagner model
+  [957] （单条）resilience through redundancy in coupled oscillator networks
+  [958] （单条）resource allocation model under uncertainty
+  [959] （单条）resource allocation optimization
+  [960] （单条）resource allocation optimization under constraint
+  [961] （单条）resource allocation under binding constraint with competing objectives
+  [962] （单条）resource allocation under capacity constraint
+  [963] （单条）resource allocation under capacity constraints
+  [964] （单条）resource allocation under competing objectives
+  [965] （单条）resource allocation under constraint
+  [966] （单条）resource allocation under scarcity
+  [967] （单条）resource allocation under scarcity with competing objectives
+  [968] （单条）resource competition model
+  [969] （单条）reversibility principle in dynamical systems
+  [970] （单条）reward function inversion in reinforcement learning
+  [971] （单条）reward hacking
+  [972] （单条）reward prediction error recalibration
+  [973] （单条）reward shaping
+  [974] （单条）reward shaping in markov decision processes
+  [975] （单条）risk concentration and portfolio theory
+  [976] （单条）robust control via open loop scheduling against noisy state feedback
+  [977] （单条）salience and framing in budget constraints
+  [978] （单条）sampled data control and switching system
+  [979] （单条）satisficing under bounded rationality
+  [980] （单条）self determination theory intrinsic motivation
+  [981] （单条）self determination theory operationalized as dual process reward architecture
+  [982] （单条）self directed belief updating via action
+  [983] （单条）sequential analysis with fixed stopping rule
+  [984] （单条）sequential analysis with stopping rule
+  [985] （单条）sequential bayesian updating with option value
+  [986] （单条）sequential constraint elimination
+  [987] （单条）sequential constraint relaxation
+  [988] （单条）sequential constraint relaxation in multi agent systems
+  [989] （单条）sequential constraint relaxation with load bearing structure diversification
+  [990] （单条）sequential constraint satisfaction
+  [991] （单条）sequential decision making under incomplete information
+  [992] （单条）sequential decision making under resource constraints
+  [993] （单条）sequential decision making under uncertainty with irreversible commitment
+  [994] （单条）sequential decision making under uncertainty with option value
+  [995] （单条）sequential game with endogenous preference revelation
+  [996] （单条）sequential hypothesis testing
+  [997] （单条）sequential hypothesis testing and decision updating
+  [998] （单条）sequential hypothesis testing with adaptive stopping
+  [999] （单条）sequential hypothesis testing with information gain maximization
+  [1000] （单条）sequential hypothesis testing with optimal stopping
+  [1001] （单条）sequential hypothesis testing with pre specified stopping rules
+  [1002] （单条）sequential hypothesis testing with stopping rule
+  [1003] （单条）sequential information acquisition under incomplete information
+  [1004] （单条）sequential probability ratio test
+  [1005] （单条）sequential revelation mechanism design
+  [1006] （单条）series parallel reliability model
+  [1007] （单条）series parallel system reliability
+  [1008] （单条）series parallel system transformation
+  [1009] （单条）series system reliability model
+  [1010] （单条）shannon redundancy coding with channel capacity
+  [1011] （单条）shock removal in autoregressive process
+  [1012] （单条）signal calibration against external reference
+  [1013] （单条）signal correction in feedback loop
+  [1014] （单条）signal detection against noise floor
+  [1015] （单条）signal detection theory with criterion shift
+  [1016] （单条）signal detection theory with dynamic threshold
+  [1017] （单条）signal detection theory with feedback amplification
+  [1018] （单条）signal detection theory with noise calibration
+  [1019] （单条）signal detection theory with observer bias correction
+  [1020] （单条）signal detection theory with sensitivity index
+  [1021] （单条）signal detection theory with threshold dynamics
+  [1022] （单条）signal detection theory with threshold modulation
+  [1023] （单条）signal to noise ratio optimization
+  [1024] （单条）signal to noise ratio optimization in stochastic systems
+  [1025] （单条）signal to noise ratio optimization through constraint reduction
+  [1026] （单条）signaling equilibrium under information asymmetry
+  [1027] （单条）signaling equilibrium with credible information revelation
+  [1028] （单条）signaling game equilibrium selection
+  [1029] （单条）signaling game with costly action
+  [1030] （单条）signaling game with incomplete information
+  [1031] （单条）signaling game with pooling equilibrium collapse
+  [1032] （单条）signaling game with separating equilibrium
+  [1033] （单条）signaling theory
+  [1034] （单条）signaling theory with frame dependent utility
+  [1035] （单条）signaling theory with information asymmetry resolution
+  [1036] （单条）signaling under asymmetric information
+  [1037] （单条）slow fast decomposition
+  [1038] （单条）slow fast dynamics separation
+  [1039] （单条）sparse allocation under constraints
+  [1040] （单条）stabilization via negative feedback control
+  [1041] （单条）stackelberg game with commitment
+  [1042] （单条）stackelberg game with information asymmetry
+  [1043] （单条）state dependent utility function separation
+  [1044] （单条）state dependent utility function with parameter degradation
+  [1045] （单条）state dependent utility model
+  [1046] （单条）state estimation and indirect control
+  [1047] （单条）state observability and hidden state estimation in partially observable systems
+  [1048] （单条）state space constraint satisfaction
+  [1049] （单条）state space decomposition with output decoupling
+  [1050] （单条）state space decoupling in control systems
+  [1051] （单条）state space dimensionality expansion
+  [1052] （单条）state space dynamics with capacity constraints
+  [1053] （单条）state space expansion with observability analysis
+  [1054] （单条）state space model
+  [1055] （单条）state space model with parameter modulation
+  [1056] （单条）state space observability and external regulation
+  [1057] （单条）state space observability and output feedback control
+  [1058] （单条）state space reconstruction and observability
+  [1059] （单条）state space reconstruction with parameter identification
+  [1060] （单条）state space reduction via symptom attenuation
+  [1061] （单条）state space reduction via temporal gating
+  [1062] （单条）state space representation and controllability
+  [1063] （单条）state space representation with hidden state estimation
+  [1064] （单条）state space representation with observability analysis
+  [1065] （单条）state space separation and observability
+  [1066] （单条）statistical inference under small sample bias and search space expansion
+  [1067] （单条）stimulus control and conditioned suppression
+  [1068] （单条）stimulus generalization gradient reversal
+  [1069] （单条）stochastic bistable dynamical system with parameter modulation and feedback inhibition
+  [1070] （单条）stochastic differential equations with noise reduction and lyapunov stabilization
+  [1071] （单条）stochastic dynamical systems with state dependent threshold crossing
+  [1072] （单条）stochastic escape from local minimum
+  [1073] （单条）stochastic potential landscape with noise driven transitions
+  [1074] （单条）stochastic resonance and barrier crossing
+  [1075] （单条）stochastic resonance with external forcing
+  [1076] （单条）stock and flow model with threshold dynamics
+  [1077] （单条）structural overconstrain via redundant control variables
+  [1078] （单条）subgame perfect equilibrium with commitment devices
+  [1079] （单条）sunk cost fallacy interruption via agent substitution
+  [1080] （单条）sunk cost irreversibility and switching cost minimization
+  [1081] （单条）supervised classification with expert feature engineering
+  [1082] （单条）system decomposition via pathway decoupling
+  [1083] （单条）system identification with latent state variables
+  [1084] （单条）system reliability through redundant monitoring channels
+  [1085] （单条）takens embedding theorem applied to symptom dynamics
+  [1086] （单条）temporal decomposition of coupled constraints
+  [1087] （单条）temporal decoupling of coupled decision variables
+  [1088] （单条）temporal difference learning with dopaminergic reward prediction error
+  [1089] （单条）temporal difference learning with model correction
+  [1090] （单条）temporal difference learning with model mismatch
+  [1091] （单条）temporal difference learning with policy gradient reversal
+  [1092] （单条）temporal difference learning with policy replacement
+  [1093] （单条）temporal difference learning with policy retraining
+  [1094] （单条）temporal difference learning with prediction error reset
+  [1095] （单条）temporal difference learning with reward prediction error correction
+  [1096] （单条）temporal difference learning with value function retraining
+  [1097] （单条）temporal difference reinforcement learning
+  [1098] （单条）temporal discounting and barrier reduction
+  [1099] （单条）temporal discounting and hyperbolic discounting
+  [1100] （单条）temporal discounting and hyperbolic preference reversal
+  [1101] （单条）temporal discounting and state space restructuring in dynamical systems
+  [1102] （单条）temporal discounting collapse prevention
+  [1103] （单条）temporal discounting correction via present moment cost externalization
+  [1104] （单条）temporal discounting in reinforcement learning with state valuation
+  [1105] （单条）temporal discounting reframing
+  [1106] （单条）temporal discounting restructuring via constraint
+  [1107] （单条）temporal discounting reversal
+  [1108] （单条）temporal discounting with commitment devices
+  [1109] （单条）temporal discounting with constraint optimization
+  [1110] （单条）temporal discounting with cost augmentation
+  [1111] （单条）temporal discounting with hyperbolic discounting function
+  [1112] （单条）temporal discounting with intervention window optimization
+  [1113] （单条）temporal discounting with option value preservation
+  [1114] （单条）temporal discounting with reward immediacy
+  [1115] （单条）temporal inconsistency model
+  [1116] （单条）temporal inconsistency with commitment devices
+  [1117] （单条）temporal reversal in reward contingency
+  [1118] （单条）theory of constraints with constraint hierarchy
+  [1119] （单条）threshold based stopping rule
+  [1120] （单条）threshold dynamics in recovery systems
+  [1121] （单条）threshold dynamics with early intervention
+  [1122] （单条）threshold dynamics with hysteresis
+  [1123] （单条）threshold dynamics with phase gating
+  [1124] （单条）threshold exceedance model
+  [1125] （单条）threshold exceedance model with capacity augmentation
+  [1126] （单条）threshold model of collective behavior
+  [1127] （单条）threshold triggered cascade activation
+  [1128] （单条）time bounded intervention protocol with state verification
+  [1129] （单条）time delayed dynamical systems
+  [1130] （单条）time varying optimal control with multiple time constants
+  [1131] （单条）time window dependent feasibility constraint
+  [1132] （单条）timescale separation
+  [1133] （单条）timescale separation and adiabatic elimination
+  [1134] （单条）transition rate model with activation energy barrier
+  [1135] （单条）two sided matching with heterogeneous quality
+  [1136] （单条）ulysses contract framework
+  [1137] （单条）ulysses contract with hyperbolic discounting
+  [1138] （单条）uncertainty reduction theory
+  [1139] （单条）uncertainty reduction via information acquisition
+  [1140] （单条）utility function decomposition
+  [1141] （单条）utility function decomposition and orthogonal objective decoupling
+  [1142] （单条）utility function reorientation via instrumental coupling
+  [1143] （单条）value function decomposition
+  [1144] （单条）value function recalibration
+  [1145] （单条）value of information
+  [1146] （单条）value of information framework
+  [1147] （单条）variable ratio reinforcement schedule extinction
+  [1148] （单条）veto player theory
+
+==============================================================================

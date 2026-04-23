@@ -1,0 +1,479 @@
+==============================================================================
+LLM Cognitive Probe — Analysis Summary
+==============================================================================
+Generated (local): 2026-04-22T20:10:19
+
+[Input]
+  results_file: E:\college\postgraduate\llm_cognitive\openai-gpt-5.4-mini\Societal&Ethical\probe_results.jsonl
+  records (non-empty JSONL lines): 500
+
+[Merge]
+  merge_method: llm
+  refresh_merge: True
+  name_source: step3
+  chart_top_n: 30
+
+[Counts]
+  raw_unique_names: 232
+  raw_total_mentions: 1428
+  canonical_unique_names: 193
+  canonical_total_mentions: 1428
+  distinct_label_reduction: 232 raw → 193 canonical (16.8% fewer labels)
+
+[Output artifacts]
+  merge_map.json: yes
+  merge_map.embeddings.json: no
+  model_law_frequency.png: yes
+  model_law_wordcloud.png: yes
+  cluster_dendrogram.png: no
+  cluster_scatter.png: no
+
+[Top 30 raw names — before merge / 归并前（原始标签频次）]
+  rank   count  name
+     1     158  bayesian inference
+     2     158  signaling game
+     3      81  markov decision process
+     4      71  constrained optimization
+     5      64  threshold model
+     6      51  expected utility theory
+     7      48  bayesian updating
+     8      47  repeated game
+     9      47  principal agent problem
+    10      42  bayesian decision theory
+    11      39  optimal stopping
+    12      25  principal agent model
+    13      25  mechanism design
+    14      24  signal detection theory
+    15      21  sequential game
+    16      19  sequential probability ratio test
+    17      18  dynamic programming
+    18      16  constraint satisfaction problem
+    19      15  nash bargaining solution
+    20      15  nash equilibrium
+    21      13  feedback control
+    22      13  bayesian game
+    23      13  subgame perfect equilibrium
+    24      12  state space model
+    25       9  burden of proof
+    26       9  bayes theorem
+    27       7  stackelberg competition
+    28       7  minimax regret
+    29       6  absorbing markov chain
+    30       6  dynamic game
+
+[Top 30 canonical names — after merge / 归并后（代表名频次）]
+  rank   count  name
+     1     259  bayesian inference
+     2     166  signaling game
+     3      86  markov decision process
+     4      72  principal agent model
+     5      71  constrained optimization
+     6      68  expected utility theory
+     7      68  threshold model
+     8      53  optimal stopping
+     9      52  repeated game
+    10      36  sequential game
+    11      25  mechanism design
+    12      24  signal detection theory
+    13      23  sequential probability ratio test
+    14      22  feedback control
+    15      19  nash bargaining solution
+    16      18  bayesian game
+    17      18  dynamic programming
+    18      17  state space model
+    19      16  absorbing markov chain
+    20      16  constraint satisfaction problem
+    21      15  nash equilibrium
+    22      13  subgame perfect equilibrium
+    23      11  minimax regret
+    24      10  stackelberg competition
+    25       9  burden of proof
+    26       7  dynamical systems
+    27       6  optimal control
+    28       6  survival analysis
+    29       6  sequential decision making
+    30       5  option value
+
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 22 clusters]
+  [#1] representative: bayesian inference  ·  5 members
+      · bayes theorem
+      · bayes' theorem
+      · bayesian decision theory
+      · bayesian inference  [代表]
+      · bayesian updating
+  [#2] representative: expected utility theory  ·  4 members
+      · expected utility
+      · expected utility hypothesis
+      · expected utility maximization
+      · expected utility theory  [代表]
+  [#3] representative: feedback control  ·  4 members
+      · feedback control  [代表]
+      · feedback control system
+      · negative feedback
+      · positive feedback
+  [#4] representative: optimal stopping  ·  4 members
+      · optimal stopping  [代表]
+      · optimal stopping problem
+      · optimal stopping theory
+      · stopping time
+  [#5] representative: sequential game  ·  4 members
+      · dynamic game
+      · dynamic games
+      · extensive form game
+      · sequential game  [代表]
+  [#6] representative: absorbing markov chain  ·  3 members
+      · absorbing markov chain  [代表]
+      · markov chain
+      · markov process
+  [#7] representative: minimax regret  ·  3 members
+      · minimax
+      · minimax decision rule
+      · minimax regret  [代表]
+  [#8] representative: nash bargaining solution  ·  3 members
+      · nash bargaining model
+      · nash bargaining problem
+      · nash bargaining solution  [代表]
+  [#9] representative: repeated game  ·  3 members
+      · repeated game  [代表]
+      · repeated prisoner dilemma
+      · repeated prisoners dilemma
+  [#10] representative: signaling game  ·  3 members
+      · signaling game  [代表]
+      · signaling model
+      · signaling theory
+  [#11] representative: threshold model  ·  3 members
+      · threshold model  [代表]
+      · threshold model of collective behavior
+      · threshold model of diffusion
+  [#12] representative: bayesian game  ·  2 members
+      · bayesian game  [代表]
+      · incomplete information game
+  [#13] representative: dynamical systems  ·  2 members
+      · dynamic systems
+      · dynamical systems  [代表]
+  [#14] representative: information asymmetry  ·  2 members
+      · adverse selection
+      · information asymmetry  [代表]
+  [#15] representative: markov decision process  ·  2 members
+      · markov decision process  [代表]
+      · partially observable markov decision process
+  [#16] representative: optimal control  ·  2 members
+      · optimal control  [代表]
+      · stochastic control
+  [#17] representative: option value  ·  2 members
+      · option value  [代表]
+      · real options theory
+  [#18] representative: principal agent model  ·  2 members
+      · principal agent model  [代表]
+      · principal agent problem
+  [#19] representative: sequential decision making  ·  2 members
+      · sequential decision making  [代表]
+      · sequential decision process
+  [#20] representative: sequential probability ratio test  ·  2 members
+      · sequential hypothesis testing
+      · sequential probability ratio test  [代表]
+  [#21] representative: stackelberg competition  ·  2 members
+      · stackelberg competition  [代表]
+      · stackelberg game
+  [#22] representative: state space model  ·  2 members
+      · hidden markov model
+      · state space model  [代表]
+
+[Merge map: raw → canonical where label changed (39 pairs)]
+  markov chain  →  absorbing markov chain
+  markov process  →  absorbing markov chain
+  incomplete information game  →  bayesian game
+  bayes theorem  →  bayesian inference
+  bayes' theorem  →  bayesian inference
+  bayesian decision theory  →  bayesian inference
+  bayesian updating  →  bayesian inference
+  dynamic systems  →  dynamical systems
+  expected utility  →  expected utility theory
+  expected utility hypothesis  →  expected utility theory
+  expected utility maximization  →  expected utility theory
+  feedback control system  →  feedback control
+  negative feedback  →  feedback control
+  positive feedback  →  feedback control
+  adverse selection  →  information asymmetry
+  partially observable markov decision process  →  markov decision process
+  minimax  →  minimax regret
+  minimax decision rule  →  minimax regret
+  nash bargaining model  →  nash bargaining solution
+  nash bargaining problem  →  nash bargaining solution
+  stochastic control  →  optimal control
+  optimal stopping problem  →  optimal stopping
+  optimal stopping theory  →  optimal stopping
+  stopping time  →  optimal stopping
+  real options theory  →  option value
+  principal agent problem  →  principal agent model
+  repeated prisoner dilemma  →  repeated game
+  repeated prisoners dilemma  →  repeated game
+  sequential decision process  →  sequential decision making
+  dynamic game  →  sequential game
+  dynamic games  →  sequential game
+  extensive form game  →  sequential game
+  sequential hypothesis testing  →  sequential probability ratio test
+  signaling model  →  signaling game
+  signaling theory  →  signaling game
+  stackelberg game  →  stackelberg competition
+  hidden markov model  →  state space model
+  threshold model of collective behavior  →  threshold model
+  threshold model of diffusion  →  threshold model
+
+[Merge cluster details / 归并簇完整明细（共 193 簇，其中 22 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: bayesian inference  ·  5 条
+      · bayes theorem
+      · bayes' theorem
+      · bayesian decision theory
+      · bayesian inference  [代表]
+      · bayesian updating
+  [2] 代表名: expected utility theory  ·  4 条
+      · expected utility
+      · expected utility hypothesis
+      · expected utility maximization
+      · expected utility theory  [代表]
+  [3] 代表名: feedback control  ·  4 条
+      · feedback control  [代表]
+      · feedback control system
+      · negative feedback
+      · positive feedback
+  [4] 代表名: optimal stopping  ·  4 条
+      · optimal stopping  [代表]
+      · optimal stopping problem
+      · optimal stopping theory
+      · stopping time
+  [5] 代表名: sequential game  ·  4 条
+      · dynamic game
+      · dynamic games
+      · extensive form game
+      · sequential game  [代表]
+  [6] 代表名: absorbing markov chain  ·  3 条
+      · absorbing markov chain  [代表]
+      · markov chain
+      · markov process
+  [7] 代表名: minimax regret  ·  3 条
+      · minimax
+      · minimax decision rule
+      · minimax regret  [代表]
+  [8] 代表名: nash bargaining solution  ·  3 条
+      · nash bargaining model
+      · nash bargaining problem
+      · nash bargaining solution  [代表]
+  [9] 代表名: repeated game  ·  3 条
+      · repeated game  [代表]
+      · repeated prisoner dilemma
+      · repeated prisoners dilemma
+  [10] 代表名: signaling game  ·  3 条
+      · signaling game  [代表]
+      · signaling model
+      · signaling theory
+  [11] 代表名: threshold model  ·  3 条
+      · threshold model  [代表]
+      · threshold model of collective behavior
+      · threshold model of diffusion
+  [12] 代表名: bayesian game  ·  2 条
+      · bayesian game  [代表]
+      · incomplete information game
+  [13] 代表名: dynamical systems  ·  2 条
+      · dynamic systems
+      · dynamical systems  [代表]
+  [14] 代表名: information asymmetry  ·  2 条
+      · adverse selection
+      · information asymmetry  [代表]
+  [15] 代表名: markov decision process  ·  2 条
+      · markov decision process  [代表]
+      · partially observable markov decision process
+  [16] 代表名: optimal control  ·  2 条
+      · optimal control  [代表]
+      · stochastic control
+  [17] 代表名: option value  ·  2 条
+      · option value  [代表]
+      · real options theory
+  [18] 代表名: principal agent model  ·  2 条
+      · principal agent model  [代表]
+      · principal agent problem
+  [19] 代表名: sequential decision making  ·  2 条
+      · sequential decision making  [代表]
+      · sequential decision process
+  [20] 代表名: sequential probability ratio test  ·  2 条
+      · sequential hypothesis testing
+      · sequential probability ratio test  [代表]
+  [21] 代表名: stackelberg competition  ·  2 条
+      · stackelberg competition  [代表]
+      · stackelberg game
+  [22] 代表名: state space model  ·  2 条
+      · hidden markov model
+      · state space model  [代表]
+  [23] （单条）aggregation rule
+  [24] （单条）all pay auction
+  [25] （单条）attractor dynamics
+  [26] （单条）attribution theory
+  [27] （单条）availability heuristic
+  [28] （单条）bargaining problem
+  [29] （单条）bargaining theory
+  [30] （单条）bayes decision rule
+  [31] （单条）bayes decision theory
+  [32] （单条）bayesian hypothesis testing
+  [33] （单条）bayesian persuasion
+  [34] （单条）belief propagation
+  [35] （单条）belief revision
+  [36] （单条）best response
+  [37] （单条）binary classification
+  [38] （单条）branching process
+  [39] （单条）burden of proof
+  [40] （单条）cascading failure model
+  [41] （单条）causal inference
+  [42] （单条）cheap talk
+  [43] （单条）classification theory
+  [44] （单条）commitment device
+  [45] （单条）commitment problem
+  [46] （单条）competing attractors model
+  [47] （单条）conjunctive normal form
+  [48] （单条）consensus algorithm
+  [49] （单条）constrained markov decision process
+  [50] （单条）constrained optimal control
+  [51] （单条）constrained optimization
+  [52] （单条）constraint satisfaction
+  [53] （单条）constraint satisfaction problem
+  [54] （单条）contagion model
+  [55] （单条）continuous time markov chain
+  [56] （单条）contract theory
+  [57] （单条）control theory
+  [58] （单条）convex optimization
+  [59] （单条）coordination game
+  [60] （单条）cost benefit analysis
+  [61] （单条）cost minimization
+  [62] （单条）critical mass theory
+  [63] （单条）cumulative advantage
+  [64] （单条）deadline model
+  [65] （单条）decision rule
+  [66] （单条）decision theory
+  [67] （单条）decision tree
+  [68] （单条）dempster shafer theory
+  [69] （单条）deterrence theory
+  [70] （单条）diffusion of innovations
+  [71] （单条）discounted utility
+  [72] （单条）discrete choice model
+  [73] （单条）dynamic bayesian game
+  [74] （单条）dynamic bayesian network
+  [75] （单条）dynamic inconsistency
+  [76] （单条）dynamic optimization
+  [77] （单条）dynamic programming
+  [78] （单条）dynamic signaling game
+  [79] （单条）dynamic system
+  [80] （单条）ejectment
+  [81] （单条）error correcting code
+  [82] （单条）evolutionary game theory
+  [83] （单条）expected value of perfect information
+  [84] （单条）extinction
+  [85] （单条）fault tree analysis
+  [86] （单条）finite state machine
+  [87] （单条）fixed point iteration
+  [88] （单条）flow network
+  [89] （单条）framing effect
+  [90] （单条）graph cut
+  [91] （单条）hazard model
+  [92] （单条）hitting time
+  [93] （单条）hopf bifurcation
+  [94] （单条）hypothesis testing
+  [95] （单条）incentive compatibility
+  [96] （单条）incentive compatibility constraint
+  [97] （单条）incomplete contract
+  [98] （单条）incomplete information bargaining
+  [99] （单条）information bottleneck
+  [100] （单条）information cascade
+  [101] （单条）information theory
+  [102] （单条）lagrangian optimization
+  [103] （单条）linear dynamical system
+  [104] （单条）linear programming
+  [105] （单条）liquidated damages
+  [106] （单条）martingale
+  [107] （单条）maximum entropy principle
+  [108] （单条）mechanism design
+  [109] （单条）mediation analysis
+  [110] （单条）minimax optimization
+  [111] （单条）minimum cost flow
+  [112] （单条）minimum description length
+  [113] （单条）minimum expected loss
+  [114] （单条）minimum variance unbiased estimator
+  [115] （单条）mitigation of damages
+  [116] （单条）nash equilibrium
+  [117] （单条）network flow
+  [118] （单条）network interdiction
+  [119] （单条）network intervention
+  [120] （单条）neyman pearson lemma
+  [121] （单条）no suitable mapping
+  [122] （单条）nonlinear dynamical system
+  [123] （单条）occam's razor
+  [124] （单条）operant conditioning
+  [125] （单条）opinion dynamics
+  [126] （单条）outside option
+  [127] （单条）participation constraint
+  [128] （单条）partition
+  [129] （单条）path dependence
+  [130] （单条）percolation theory
+  [131] （单条）perfect bayesian equilibrium
+  [132] （单条）pigovian tax
+  [133] （单条）poisson process
+  [134] （单条）positive feedback loop
+  [135] （单条）potential game
+  [136] （单条）priority of claims
+  [137] （单条）pro rata rule
+  [138] （单条）public signal
+  [139] （单条）queueing theory
+  [140] （单条）real options
+  [141] （单条）reinforcement learning
+  [142] （单条）reliability block diagram
+  [143] （单条）reliability theory
+  [144] （单条）repeated prisoner s dilemma
+  [145] （单条）repeated prisoner’s dilemma
+  [146] （单条）replicator dynamics
+  [147] （单条）reputation game
+  [148] （单条）reputation model
+  [149] （单条）reservation value
+  [150] （单条）risk management
+  [151] （单条）risk minimization
+  [152] （单条）robust optimization
+  [153] （单条）rubinstein bargaining model
+  [154] （单条）rumor propagation model
+  [155] （单条）sampling bias
+  [156] （单条）screening model
+  [157] （单条）separating equilibrium
+  [158] （单条）sequential bargaining model
+  [159] （单条）sequential bayesian game
+  [160] （单条）sequential bayesian updating
+  [161] （单条）sequential equilibrium
+  [162] （单条）sequential games
+  [163] （单条）signal detection theory
+  [164] （单条）signal to noise ratio
+  [165] （单条）signaling
+  [166] （单条）sir model
+  [167] （单条）social learning theory
+  [168] （单条）spence signaling model
+  [169] （单条）stability in dynamical systems
+  [170] （单条）stag hunt
+  [171] （单条）state contingent contract
+  [172] （单条）state dependent markov chain
+  [173] （单条）state feedback control
+  [174] （单条）state space reduction
+  [175] （单条）state transition system
+  [176] （单条）stochastic game
+  [177] （单条）stochastic optimization
+  [178] （单条）stochastic process
+  [179] （单条）structural causal model
+  [180] （单条）structural equation model
+  [181] （单条）structural equation modeling
+  [182] （单条）subgame perfect equilibrium
+  [183] （单条）subset selection
+  [184] （单条）survival analysis
+  [185] （单条）tipping point
+  [186] （单条）transaction cost economics
+  [187] （单条）trigger strategy
+  [188] （单条）ultimatum game
+  [189] （单条）value of information
+  [190] （单条）voidable transaction
+  [191] （单条）weighted evidence accumulation
+  [192] （单条）weighted least squares
+  [193] （单条）weighted linear model
+
+==============================================================================

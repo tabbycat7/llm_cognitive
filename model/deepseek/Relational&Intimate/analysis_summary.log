@@ -1,0 +1,681 @@
+==============================================================================
+LLM Cognitive Probe — Analysis Summary
+==============================================================================
+Generated (local): 2026-04-22T20:10:18
+
+[Input]
+  results_file: E:\college\postgraduate\llm_cognitive\deepseek\Relational&Intimate\probe_results.jsonl
+  records (non-empty JSONL lines): 500
+
+[Merge]
+  merge_method: llm
+  refresh_merge: True
+  name_source: step3
+  chart_top_n: 30
+
+[Counts]
+  raw_unique_names: 435
+  raw_total_mentions: 1194
+  canonical_unique_names: 391
+  canonical_total_mentions: 1194
+  distinct_label_reduction: 435 raw → 391 canonical (10.1% fewer labels)
+
+[Output artifacts]
+  merge_map.json: yes
+  merge_map.embeddings.json: no
+  model_law_frequency.png: yes
+  model_law_wordcloud.png: yes
+  cluster_dendrogram.png: no
+  cluster_scatter.png: no
+
+[Top 30 raw names — before merge / 归并前（原始标签频次）]
+  rank   count  name
+     1      96  signaling game
+     2      78  dynamical systems theory
+     3      39  nash equilibrium
+     4      30  bifurcation theory
+     5      28  extinction
+     6      25  operant conditioning
+     7      22  bayesian updating
+     8      22  dual process theory
+     9      15  subgame perfect equilibrium
+    10      14  cognitive load theory
+    11      14  optimal stopping problem
+    12      13  bayesian belief updating
+    13      12  optimal stopping
+    14      12  bayesian inference
+    15      12  operant conditioning extinction
+    16      12  ultimatum game
+    17      11  attractor dynamics
+    18      11  cognitive dissonance theory
+    19      10  mechanism design
+    20       9  revelation principle
+    21       9  reinforcement learning
+    22       9  folk theorem
+    23       8  negative feedback control
+    24       8  negative feedback loop
+    25       8  variable ratio reinforcement schedule
+    26       7  prospect theory
+    27       7  correlated equilibrium
+    28       7  system dynamics
+    29       7  markov decision process
+    30       6  threshold model
+
+[Top 30 canonical names — after merge / 归并后（代表名频次）]
+  rank   count  name
+     1     119  dynamical systems theory
+     2     105  signaling game
+     3      56  bayesian updating
+     4      52  extinction
+     5      39  nash equilibrium
+     6      32  bifurcation theory
+     7      30  optimal stopping
+     8      28  negative feedback control
+     9      25  operant conditioning
+    10      22  dual process theory
+    11      21  reinforcement learning
+    12      19  mechanism design
+    13      17  prospect theory
+    14      15  subgame perfect equilibrium
+    15      14  cognitive load theory
+    16      13  constrained optimization
+    17      12  trigger strategy
+    18      12  ultimatum game
+    19      11  variable ratio reinforcement schedule
+    20      11  cognitive dissonance theory
+    21      10  expected utility theory
+    22       9  folk theorem
+    23       8  control theory
+    24       7  revealed preference
+    25       7  correlated equilibrium
+    26       7  contract theory
+    27       6  threshold model
+    28       6  classical conditioning
+    29       6  hyperbolic discounting
+    30       6  nash bargaining solution
+
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 18 clusters]
+  [#1] representative: dynamical systems theory  ·  11 members
+      · attractor
+      · attractor dynamics
+      · attractor dynamics in dynamical systems
+      · attractor dynamics in nonlinear dynamical systems
+      · attractor network model
+      · basin of attraction
+      · dynamical systems theory  [代表]
+      · dynamical systems theory with bifurcation
+      · dynamical systems theory with bifurcation control
+      · multistability in dynamical systems
+      · system dynamics
+  [#2] representative: bayesian updating  ·  6 members
+      · bayesian belief updating
+      · bayesian decision theory
+      · bayesian hypothesis testing
+      · bayesian inference
+      · bayesian learning
+      · bayesian updating  [代表]
+  [#3] representative: extinction  ·  5 members
+      · extinction  [代表]
+      · extinction in classical conditioning
+      · extinction learning
+      · operant conditioning extinction
+      · operant extinction
+  [#4] representative: negative feedback control  ·  5 members
+      · feedback control
+      · feedback control theory
+      · feedback loop control
+      · negative feedback control  [代表]
+      · negative feedback loop
+  [#5] representative: prospect theory  ·  4 members
+      · framing effect
+      · mental accounting
+      · prospect theory  [代表]
+      · reference dependent preferences
+  [#6] representative: constrained optimization  ·  3 members
+      · constrained optimization  [代表]
+      · portfolio optimization
+      · resource allocation model
+  [#7] representative: optimal stopping  ·  3 members
+      · optimal stopping  [代表]
+      · optimal stopping problem
+      · optimal stopping theory
+  [#8] representative: reinforcement learning  ·  3 members
+      · markov decision process
+      · reinforcement learning  [代表]
+      · temporal difference learning
+  [#9] representative: signaling game  ·  3 members
+      · signaling game  [代表]
+      · signaling game with costly signals
+      · signaling theory
+  [#10] representative: trigger strategy  ·  3 members
+      · repeated game with trigger strategy
+      · trigger strategy  [代表]
+      · trigger strategy in repeated games
+  [#11] representative: bifurcation theory  ·  2 members
+      · bifurcation control
+      · bifurcation theory  [代表]
+  [#12] representative: classical conditioning  ·  2 members
+      · classical conditioning  [代表]
+      · classical conditioning extinction
+  [#13] representative: contract theory  ·  2 members
+      · contract theory  [代表]
+      · principal agent problem
+  [#14] representative: control theory  ·  2 members
+      · control theory  [代表]
+      · open loop control
+  [#15] representative: expected utility theory  ·  2 members
+      · expected utility theory  [代表]
+      · multi attribute utility theory
+  [#16] representative: mechanism design  ·  2 members
+      · mechanism design  [代表]
+      · revelation principle
+  [#17] representative: revealed preference  ·  2 members
+      · revealed preference  [代表]
+      · revealed preference theory
+  [#18] representative: variable ratio reinforcement schedule  ·  2 members
+      · intermittent reinforcement
+      · variable ratio reinforcement schedule  [代表]
+
+[Merge map: raw → canonical where label changed (45 pairs)]
+  bayesian belief updating  →  bayesian updating
+  bayesian decision theory  →  bayesian updating
+  bayesian hypothesis testing  →  bayesian updating
+  bayesian inference  →  bayesian updating
+  bayesian learning  →  bayesian updating
+  bifurcation control  →  bifurcation theory
+  classical conditioning extinction  →  classical conditioning
+  portfolio optimization  →  constrained optimization
+  resource allocation model  →  constrained optimization
+  principal agent problem  →  contract theory
+  open loop control  →  control theory
+  attractor  →  dynamical systems theory
+  attractor dynamics  →  dynamical systems theory
+  attractor dynamics in dynamical systems  →  dynamical systems theory
+  attractor dynamics in nonlinear dynamical systems  →  dynamical systems theory
+  attractor network model  →  dynamical systems theory
+  basin of attraction  →  dynamical systems theory
+  dynamical systems theory with bifurcation  →  dynamical systems theory
+  dynamical systems theory with bifurcation control  →  dynamical systems theory
+  multistability in dynamical systems  →  dynamical systems theory
+  system dynamics  →  dynamical systems theory
+  multi attribute utility theory  →  expected utility theory
+  extinction in classical conditioning  →  extinction
+  extinction learning  →  extinction
+  operant conditioning extinction  →  extinction
+  operant extinction  →  extinction
+  revelation principle  →  mechanism design
+  feedback control  →  negative feedback control
+  feedback control theory  →  negative feedback control
+  feedback loop control  →  negative feedback control
+  negative feedback loop  →  negative feedback control
+  optimal stopping problem  →  optimal stopping
+  optimal stopping theory  →  optimal stopping
+  proportional–integral–derivative controller  →  proportional-integral-derivative controller
+  framing effect  →  prospect theory
+  mental accounting  →  prospect theory
+  reference dependent preferences  →  prospect theory
+  markov decision process  →  reinforcement learning
+  temporal difference learning  →  reinforcement learning
+  revealed preference theory  →  revealed preference
+  signaling game with costly signals  →  signaling game
+  signaling theory  →  signaling game
+  repeated game with trigger strategy  →  trigger strategy
+  trigger strategy in repeated games  →  trigger strategy
+  intermittent reinforcement  →  variable ratio reinforcement schedule
+
+[Merge cluster details / 归并簇完整明细（共 391 簇，其中 18 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: dynamical systems theory  ·  11 条
+      · attractor
+      · attractor dynamics
+      · attractor dynamics in dynamical systems
+      · attractor dynamics in nonlinear dynamical systems
+      · attractor network model
+      · basin of attraction
+      · dynamical systems theory  [代表]
+      · dynamical systems theory with bifurcation
+      · dynamical systems theory with bifurcation control
+      · multistability in dynamical systems
+      · system dynamics
+  [2] 代表名: bayesian updating  ·  6 条
+      · bayesian belief updating
+      · bayesian decision theory
+      · bayesian hypothesis testing
+      · bayesian inference
+      · bayesian learning
+      · bayesian updating  [代表]
+  [3] 代表名: extinction  ·  5 条
+      · extinction  [代表]
+      · extinction in classical conditioning
+      · extinction learning
+      · operant conditioning extinction
+      · operant extinction
+  [4] 代表名: negative feedback control  ·  5 条
+      · feedback control
+      · feedback control theory
+      · feedback loop control
+      · negative feedback control  [代表]
+      · negative feedback loop
+  [5] 代表名: prospect theory  ·  4 条
+      · framing effect
+      · mental accounting
+      · prospect theory  [代表]
+      · reference dependent preferences
+  [6] 代表名: constrained optimization  ·  3 条
+      · constrained optimization  [代表]
+      · portfolio optimization
+      · resource allocation model
+  [7] 代表名: optimal stopping  ·  3 条
+      · optimal stopping  [代表]
+      · optimal stopping problem
+      · optimal stopping theory
+  [8] 代表名: reinforcement learning  ·  3 条
+      · markov decision process
+      · reinforcement learning  [代表]
+      · temporal difference learning
+  [9] 代表名: signaling game  ·  3 条
+      · signaling game  [代表]
+      · signaling game with costly signals
+      · signaling theory
+  [10] 代表名: trigger strategy  ·  3 条
+      · repeated game with trigger strategy
+      · trigger strategy  [代表]
+      · trigger strategy in repeated games
+  [11] 代表名: bifurcation theory  ·  2 条
+      · bifurcation control
+      · bifurcation theory  [代表]
+  [12] 代表名: classical conditioning  ·  2 条
+      · classical conditioning  [代表]
+      · classical conditioning extinction
+  [13] 代表名: contract theory  ·  2 条
+      · contract theory  [代表]
+      · principal agent problem
+  [14] 代表名: control theory  ·  2 条
+      · control theory  [代表]
+      · open loop control
+  [15] 代表名: expected utility theory  ·  2 条
+      · expected utility theory  [代表]
+      · multi attribute utility theory
+  [16] 代表名: mechanism design  ·  2 条
+      · mechanism design  [代表]
+      · revelation principle
+  [17] 代表名: revealed preference  ·  2 条
+      · revealed preference  [代表]
+      · revealed preference theory
+  [18] 代表名: variable ratio reinforcement schedule  ·  2 条
+      · intermittent reinforcement
+      · variable ratio reinforcement schedule  [代表]
+  [19] （单条）absorbing markov chain
+  [20] （单条）active information acquisition
+  [21] （单条）algorithmic decision theory
+  [22] （单条）anchoring and adjustment heuristic
+  [23] （单条）anchoring bias
+  [24] （单条）associative network theory of memory and cognition
+  [25] （单条）attention economics
+  [26] （单条）attentional bias modification
+  [27] （单条）attentional blink
+  [28] （单条）attentional control theory
+  [29] （单条）attractor dynamics in coupled oscillator systems
+  [30] （单条）attractor landscape model
+  [31] （单条）attractor network
+  [32] （单条）attractor switching in dynamical systems
+  [33] （单条）attractor theory
+  [34] （单条）attribution theory
+  [35] （单条）backward induction
+  [36] （单条）bayesian belief update
+  [37] （单条）bayesian belief updating with an unbiased signal
+  [38] （单条）bayesian experimental design
+  [39] （单条）bayesian filtering
+  [40] （单条）bayesian game
+  [41] （单条）bayesian inference with strong prior
+  [42] （单条）bayesian model comparison
+  [43] （单条）bayesian nash equilibrium
+  [44] （单条）bayesian persuasion
+  [45] （单条）bayesian persuasion with cheap talk
+  [46] （单条）bayesian updating with decision threshold
+  [47] （单条）bayesian updating with observable actions
+  [48] （单条）behavioral activation
+  [49] （单条）bifurcation control in dynamical systems
+  [50] （单条）bistability
+  [51] （单条）bistable dynamical system with a separatrix
+  [52] （单条）bistable potential well model
+  [53] （单条）bistable system
+  [54] （单条）bistable system with hysteresis
+  [55] （单条）bounded rationality
+  [56] （单条）bounded rationality with satisficing
+  [57] （单条）capacity model of attention
+  [58] （单条）catastrophe theory
+  [59] （单条）causal graph intervention
+  [60] （单条）ceteris paribus
+  [61] （单条）cheap talk
+  [62] （单条）cheap talk coordination game
+  [63] （单条）cheap talk game
+  [64] （单条）closed loop control
+  [65] （单条）closed loop control system
+  [66] （单条）coalitional game
+  [67] （单条）cognitive appraisal theory
+  [68] （单条）cognitive behavioral therapy
+  [69] （单条）cognitive dissonance reduction
+  [70] （单条）cognitive dissonance theory
+  [71] （单条）cognitive load theory
+  [72] （单条）cognitive network model
+  [73] （单条）cognitive reappraisal
+  [74] （单条）cognitive resource allocation
+  [75] （单条）cognitive resource allocation model
+  [76] （单条）cognitive restructuring
+  [77] （单条）cold war
+  [78] （单条）commitment device
+  [79] （单条）commitment device in sequential game
+  [80] （单条）commitment strategy
+  [81] （单条）common knowledge
+  [82] （单条）competitive network dynamics
+  [83] （单条）competitive neural network
+  [84] （单条）confirmation bias
+  [85] （单条）constrained optimization with barrier methods
+  [86] （单条）constrained optimization with slater's condition
+  [87] （单条）constraint optimization
+  [88] （单条）constraint satisfaction and decomposition
+  [89] （单条）constraint satisfaction problem
+  [90] （单条）control theory with external stabilizing feedback
+  [91] （单条）control theory with negative feedback
+  [92] （单条）control theory with setpoint adjustment
+  [93] （单条）control theory with time delay and feedback attenuation
+  [94] （单条）cooperative game theory
+  [95] （单条）cooperative risk management
+  [96] （单条）coordination game
+  [97] （单条）coordination game with correlated equilibrium
+  [98] （单条）coordination game with multiple equilibria
+  [99] （单条）correlated equilibrium
+  [100] （单条）cost benefit analysis
+  [101] （单条）costly signaling theory
+  [102] （单条）coupled oscillator decoupling
+  [103] （单条）coupled oscillator model
+  [104] （单条）credible commitment
+  [105] （单条）credible commitment in game theory
+  [106] （单条）damped harmonic oscillator
+  [107] （单条）damped oscillation
+  [108] （单条）damped oscillator model
+  [109] （单条）decentralized control with external stabilizer
+  [110] （单条）decoupled dynamical systems
+  [111] （单条）decoupling
+  [112] （单条）delay of gratification
+  [113] （单条）deterrence theory
+  [114] （单条）differential equation model of negative feedback loop
+  [115] （单条）dimensionality reduction
+  [116] （单条）discrete choice model
+  [117] （单条）double well potential model
+  [118] （单条）drift diffusion model
+  [119] （单条）dual process control theory
+  [120] （单条）dual process theory
+  [121] （单条）dual process theory with cognitive reappraisal
+  [122] （单条）dual process theory with decisional balance sheet
+  [123] （单条）dynamic decision theory
+  [124] （单条）dynamic network formation
+  [125] （单条）dynamic programming
+  [126] （单条）dynamical system with multiple attractors
+  [127] （单条）dynamical systems theory with attractor landscapes
+  [128] （单条）dynamical systems theory with attractor states
+  [129] （单条）dynamical systems theory with control input
+  [130] （单条）dynamical systems theory with controlled perturbations
+  [131] （单条）dynamical systems with bifurcation
+  [132] （单条）dynamical systems with feedback control
+  [133] （单条）equilibrium selection
+  [134] （单条）equilibrium selection in game theory
+  [135] （单条）equilibrium selection via constraint relaxation
+  [136] （单条）evolutionarily stable strategy
+  [137] （单条）evolutionary game dynamics
+  [138] （单条）evolutionary game theory
+  [139] （单条）evolutionary stable strategy
+  [140] （单条）exponential decay
+  [141] （单条）exponential decay model
+  [142] （单条）exponential decay model of extinction
+  [143] （单条）extensive form game
+  [144] （单条）extinction in operant conditioning
+  [145] （单条）feedback control system
+  [146] （单条）feedback control with time delay
+  [147] （单条）feedback decoupling
+  [148] （单条）feedback disruption in dynamic systems
+  [149] （单条）feedback loop disruption
+  [150] （单条）feedback loop disruption and state transition
+  [151] （单条）feedback loop disruption in dynamical systems
+  [152] （单条）fictitious play
+  [153] （单条）finitely repeated game with a known horizon
+  [154] （单条）focal point
+  [155] （单条）folk theorem
+  [156] （单条）folk theorem with imperfect public monitoring
+  [157] （单条）folk theorem with renegotiation
+  [158] （单条）folk theorem with trigger strategy
+  [159] （单条）fuzzy c means clustering
+  [160] （单条）game theoretic model of incomplete information
+  [161] （单条）game theory
+  [162] （单条）game theory with commitment and correlated equilibrium
+  [163] （单条）game theory with incomplete information
+  [164] （单条）granger causality test
+  [165] （单条）graph cut
+  [166] （单条）grim trigger strategy
+  [167] （单条）hebbian learning
+  [168] （单条）hedonic adaptation
+  [169] （单条）heuristic
+  [170] （单条）homeostatic control
+  [171] （单条）hot cold empathy gap
+  [172] （单条）hyperbolic discounting
+  [173] （单条）hyperbolic discounting with salient milestone
+  [174] （单条）hysteresis
+  [175] （单条）hysteresis and state transition in dynamical systems
+  [176] （单条）hysteresis in dynamical systems
+  [177] （单条）implementation intention
+  [178] （单条）incentive design mechanism
+  [179] （单条）incomplete contract theory
+  [180] （单条）information asymmetry correction
+  [181] （单条）information cascade
+  [182] （单条）information cascade control
+  [183] （单条）information entropy
+  [184] （单条）information revelation game
+  [185] （单条）information theory
+  [186] （单条）input output decoupling
+  [187] （单条）institutional triggering
+  [188] （单条）interrupted time series design
+  [189] （单条）intertemporal choice
+  [190] （单条）isolation effect
+  [191] （单条）iterated prisoner's dilemma with tit for tat
+  [192] （单条）kalman filter
+  [193] （单条）latent variable model
+  [194] （单条）limit cycle
+  [195] （单条）limit cycle attractor
+  [196] （单条）limit cycle disruption via bifurcation control
+  [197] （单条）limited capacity model of attention
+  [198] （单条）linear programming
+  [199] （单条）loss aversion
+  [200] （单条）low pass filter
+  [201] （单条）lyapunov stability
+  [202] （单条）markov decision process with absorbing state
+  [203] （单条）markov decision process with absorbing states
+  [204] （单条）matching law with extinction
+  [205] （单条）matching market theory
+  [206] （单条）matching theory
+  [207] （单条）mechanism design with precommitment
+  [208] （单条）memory consolidation and reconsolidation
+  [209] （单条）memory reconsolidation
+  [210] （单条）memory reconsolidation theory
+  [211] （单条）metagame theory
+  [212] （单条）metastable state transition in dynamical systems
+  [213] （单条）model based reinforcement learning
+  [214] （单条）model predictive control
+  [215] （单条）moral hazard
+  [216] （单条）multi armed bandit
+  [217] （单条）multi armed bandit problem with contextual information
+  [218] （单条）multi armed bandit with contextual information
+  [219] （单条）multi armed bandit with exploration exploitation tradeoff
+  [220] （单条）multi armed bandit with softmax exploration
+  [221] （单条）multi objective optimization
+  [222] （单条）multi stable dynamical system
+  [223] （单条）multiattribute utility theory
+  [224] （单条）multiobjective optimization with constraints
+  [225] （单条）multistable dynamical systems
+  [226] （单条）nash bargaining solution
+  [227] （单条）nash equilibrium
+  [228] （单条）nash equilibrium in repeated games
+  [229] （单条）nash equilibrium refinement
+  [230] （单条）negative feedback loop with a set point
+  [231] （单条）network decomposition and reconstruction
+  [232] （单条）network disintegration
+  [233] （单条）network isolation
+  [234] （单条）network resilience
+  [235] （单条）network resilience enhancement
+  [236] （单条）network robustness
+  [237] （单条）network robustness optimization
+  [238] （单条）network robustness theory
+  [239] （单条）network theory
+  [240] （单条）network topology optimization
+  [241] （单条）network topology restructuring
+  [242] （单条）nudge theory
+  [243] （单条）objective function reformulation
+  [244] （单条）observability
+  [245] （单条）one shot game with incomplete information
+  [246] （单条）operant conditioning
+  [247] （单条）opportunity cost
+  [248] （单条）opportunity cost optimization
+  [249] （单条）optimal control
+  [250] （单条）optimal control theory
+  [251] （单条）optimal control with state estimation and disturbance rejection
+  [252] （单条）optimal resource allocation
+  [253] （单条）optimal resource allocation under uncertainty
+  [254] （单条）optimal stopping problem with asymmetric information
+  [255] （单条）option value
+  [256] （单条）option value theory
+  [257] （单条）pareto efficiency
+  [258] （单条）pareto optimization
+  [259] （单条）pareto optimization with sequential decomposition
+  [260] （单条）partial reinforcement extinction effect
+  [261] （单条）partially observable markov decision process
+  [262] （单条）pavlovian extinction
+  [263] （单条）perturbation analysis
+  [264] （单条）perturbation analysis of dynamical systems
+  [265] （单条）perturbation of dynamical system attractors
+  [266] （单条）perturbation theory
+  [267] （单条）phase transition
+  [268] （单条）phase transition in dynamical systems
+  [269] （单条）phase transition induced by boundary condition
+  [270] （单条）phase transition with bifurcation
+  [271] （单条）poincaré map
+  [272] （单条）positive feedback loop
+  [273] （单条）potential function minimization in dynamical systems
+  [274] （单条）potential game
+  [275] （单条）potential well
+  [276] （单条）potential well model
+  [277] （单条）precommitment strategy
+  [278] （单条）prediction error minimization
+  [279] （单条）preemptive control in dynamical systems
+  [280] （单条）preference reversal
+  [281] （单条）preferential attachment with exploration
+  [282] （单条）principal agent model
+  [283] （单条）principal agent model with moral hazard
+  [284] （单条）principal agent problem with monitoring
+  [285] （单条）principal agent problem with moral hazard
+  [286] （单条）principal agent problem with signaling
+  [287] （单条）prisoner's dilemma
+  [288] （单条）proportional integral derivative control
+  [289] （单条）proportional–integral–derivative controller
+  [290] （单条）real options analysis
+  [291] （单条）reciprocal altruism
+  [292] （单条）reference dependent choice
+  [293] （单条）reframing
+  [294] （单条）regret minimization
+  [295] （单条）reinforcement extinction
+  [296] （单条）reinforcement learning with policy gradient
+  [297] （单条）reinforcement learning with reward shaping
+  [298] （单条）relational contract theory
+  [299] （单条）relaxation to equilibrium
+  [300] （单条）repeated game
+  [301] （单条）repeated game theory
+  [302] （单条）repeated game with a cooling off period
+  [303] （单条）repeated game with contract enforcement
+  [304] （单条）repeated game with imperfect monitoring
+  [305] （单条）repeated game with incomplete information
+  [306] （单条）repeated game with third party enforcement
+  [307] （单条）repeated game with tit for tat
+  [308] （单条）repeated prisoner's dilemma with tit for tat
+  [309] （单条）rescorla wagner model
+  [310] （单条）resilience engineering
+  [311] （单条）resource allocation in convex optimization
+  [312] （单条）resource allocation optimization
+  [313] （单条）resource allocation theory
+  [314] （单条）resource competition model
+  [315] （单条）resource depletion and recovery model
+  [316] （单条）revealing preference
+  [317] （单条）revealing preference mechanism
+  [318] （单条）scaffolding
+  [319] （单条）schelling focal point
+  [320] （单条）schelling point
+  [321] （单条）schema theory
+  [322] （单条）screening
+  [323] （单条）screening equilibrium
+  [324] （单条）screening game
+  [325] （单条）screening mechanism
+  [326] （单条）self determination theory
+  [327] （单条）self enforcing contract
+  [328] （单条）separation principle
+  [329] （单条）sequential bayesian decision making
+  [330] （单条）sequential decision making
+  [331] （单条）sequential decision making under uncertainty
+  [332] （单条）sequential equilibrium
+  [333] （单条）sequential game with commitment
+  [334] （单条）sequential game with observable actions
+  [335] （单条）sequential game with perfect information
+  [336] （单条）sequential probability ratio test
+  [337] （单条）sequential sampling model
+  [338] （单条）sequential search model with deadline
+  [339] （单条）signal detection theory
+  [340] （单条）signal extraction
+  [341] （单条）signaling game with commitment
+  [342] （单条）signaling game with commitment devices
+  [343] （单条）signaling game with cooling off period
+  [344] （单条）signaling game with costly commitment
+  [345] （单条）signaling game with costly monitoring
+  [346] （单条）signaling game with costly signaling
+  [347] （单条）signaling game with costly verification
+  [348] （单条）signaling game with termination rule
+  [349] （单条）sor model
+  [350] （单条）spreading activation model
+  [351] （单条）stability perturbation in dynamical systems
+  [352] （单条）stability theory
+  [353] （单条）state dependent delay differential equation
+  [354] （单条）state dependent strategy
+  [355] （单条）state space representation
+  [356] （单条）stochastic differential equation with delay feedback
+  [357] （单条）stochastic resonance in bistable systems
+  [358] （单条）stochastic tipping point model
+  [359] （单条）strategic substitution
+  [360] （单条）structural equation modeling
+  [361] （单条）structural reinforcement
+  [362] （单条）structural stability theory
+  [363] （单条）subgame perfect equilibrium
+  [364] （单条）subgame perfect nash equilibrium
+  [365] （单条）sunk cost fallacy
+  [366] （单条）supervised learning in pattern classification
+  [367] （单条）system decoupling in dynamical systems
+  [368] （单条）system dynamics modeling
+  [369] （单条）system dynamics with delayed feedback
+  [370] （单条）system dynamics with feedback loop disruption
+  [371] （单条）temporal difference learning with epsilon decay
+  [372] （单条）temporal discounting with hyperbolic function
+  [373] （单条）third party enforcement
+  [374] （单条）third party enforcement game
+  [375] （单条）threshold decision model
+  [376] （单条）threshold model
+  [377] （单条）tit for tat
+  [378] （单条）tit for tat with a nice start
+  [379] （单条）tit for tat with forgiveness
+  [380] （单条）tit for tat with grim trigger
+  [381] （单条）tit for tat with permanent defection
+  [382] （单条）tit for tat with trigger strategy
+  [383] （单条）transcritical bifurcation
+  [384] （单条）transition state theory
+  [385] （单条）trust game with signaling
+  [386] （单条）two stage game with commitment
+  [387] （单条）ultimatum game
+  [388] （单条）unilateral exit strategy in repeated games
+  [389] （单条）utility maximization
+  [390] （单条）value of information
+  [391] （单条）zeigarnik effect
+
+==============================================================================

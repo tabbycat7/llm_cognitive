@@ -1,0 +1,969 @@
+==============================================================================
+LLM Cognitive Probe — Analysis Summary
+==============================================================================
+Generated (local): 2026-04-22T20:10:01
+
+[Input]
+  results_file: E:\college\postgraduate\llm_cognitive\kimi-k2.6\Professional&Economic\probe_results.jsonl
+  records (non-empty JSONL lines): 500
+
+[Merge]
+  merge_method: llm
+  refresh_merge: True
+  name_source: step3
+  chart_top_n: 30
+
+[Counts]
+  raw_unique_names: 668
+  raw_total_mentions: 1421
+  canonical_unique_names: 611
+  canonical_total_mentions: 1421
+  distinct_label_reduction: 668 raw → 611 canonical (8.5% fewer labels)
+
+[Output artifacts]
+  merge_map.json: yes
+  merge_map.embeddings.json: no
+  model_law_frequency.png: yes
+  model_law_wordcloud.png: yes
+  cluster_dendrogram.png: no
+  cluster_scatter.png: no
+
+[Top 30 raw names — before merge / 归并前（原始标签频次）]
+  rank   count  name
+     1      57  spence signaling model
+     2      48  real options analysis
+     3      43  real options theory
+     4      43  signaling game
+     5      39  optimal stopping
+     6      28  hyperbolic discounting
+     7      27  nash bargaining solution
+     8      24  optimal control theory
+     9      23  optimal stopping theory
+    10      18  modern portfolio theory
+    11      17  prospect theory
+    12      15  optimal stopping problem
+    13      13  signaling equilibrium
+    14      13  ramsey cass koopmans model
+    15      12  mental accounting
+    16      12  principal agent model with moral hazard
+    17      12  multi armed bandit
+    18      11  compound interest
+    19      11  buffer stock saving model
+    20      10  principal agent model
+    21      10  mechanism design
+    22      10  stochastic dynamic programming
+    23      10  real options valuation
+    24       9  rubinstein bargaining model
+    25       9  mean variance optimization
+    26       8  anchoring and adjustment heuristic
+    27       8  signaling theory
+    28       8  kelly criterion
+    29       7  absorbing markov chain
+    30       7  rubinstein bargaining model with outside options
+
+[Top 30 canonical names — after merge / 归并后（代表名频次）]
+  rank   count  name
+     1     108  real options theory
+     2      79  optimal stopping
+     3      71  signaling game
+     4      64  spence signaling model
+     5      48  principal agent model
+     6      38  hyperbolic discounting
+     7      34  modern portfolio theory
+     8      30  nash bargaining solution
+     9      28  optimal control theory
+    10      27  ramsey cass koopmans model
+    11      25  prospect theory
+    12      20  stochastic dynamic programming
+    13      19  multi armed bandit
+    14      17  compound interest
+    15      16  rubinstein bargaining model
+    16      15  bayesian updating
+    17      15  mechanism design
+    18      14  anchoring and adjustment heuristic
+    19      14  absorbing markov chain
+    20      12  mental accounting
+    21      12  structural holes theory
+    22      10  subgame perfect equilibrium
+    23      10  ben porath human capital model
+    24       9  capital asset pricing model
+    25       8  bayesian persuasion
+    26       8  kelly criterion
+    27       7  commitment device
+    28       7  catastrophe theory
+    29       5  expected utility theory
+    30       5  constrained optimization
+
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 28 clusters]
+  [#1] representative: principal agent model  ·  9 members
+      · adverse selection
+      · hold up problem
+      · principal agent model  [代表]
+      · principal agent model with hidden information
+      · principal agent model with moral hazard
+      · principal agent model with third party enforcement
+      · screening
+      · screening mechanism
+      · screening model
+  [#2] representative: real options theory  ·  5 members
+      · real options
+      · real options analysis
+      · real options model
+      · real options theory  [代表]
+      · real options valuation
+  [#3] representative: signaling game  ·  5 members
+      · signaling equilibrium
+      · signaling game  [代表]
+      · signaling game equilibrium
+      · signaling games
+      · signaling theory
+  [#4] representative: compound interest  ·  4 members
+      · compound interest  [代表]
+      · compound interest equation
+      · compound interest model
+      · compound interest with fee drag
+  [#5] representative: hyperbolic discounting  ·  4 members
+      · beta delta model
+      · hyperbolic discounting  [代表]
+      · hyperbolic discounting model
+      · quasi hyperbolic discounting
+  [#6] representative: optimal stopping  ·  4 members
+      · bayesian learning in optimal stopping
+      · optimal stopping  [代表]
+      · optimal stopping problem
+      · optimal stopping theory
+  [#7] representative: absorbing markov chain  ·  3 members
+      · absorbing markov chain  [代表]
+      · first passage time
+      · gambler's ruin problem
+  [#8] representative: bayesian updating  ·  3 members
+      · bayesian belief updating
+      · bayesian updating  [代表]
+      · kalman filter
+  [#9] representative: ben porath human capital model  ·  3 members
+      · ben porath human capital model  [代表]
+      · ben porath model
+      · human capital theory
+  [#10] representative: modern portfolio theory  ·  3 members
+      · mean variance optimization
+      · merton portfolio problem
+      · modern portfolio theory  [代表]
+  [#11] representative: multi armed bandit  ·  3 members
+      · gittins index
+      · gittins index theorem
+      · multi armed bandit  [代表]
+  [#12] representative: prospect theory  ·  3 members
+      · cumulative prospect theory
+      · prospect theory  [代表]
+      · prospect theory reference dependence
+  [#13] representative: ramsey cass koopmans model  ·  3 members
+      · buffer stock saving model
+      · life cycle hypothesis
+      · ramsey cass koopmans model  [代表]
+  [#14] representative: spence signaling model  ·  3 members
+      · costly signaling
+      · signaling model
+      · spence signaling model  [代表]
+  [#15] representative: stochastic dynamic programming  ·  3 members
+      · dynamic programming
+      · markov decision process
+      · stochastic dynamic programming  [代表]
+  [#16] representative: structural holes theory  ·  3 members
+      · betweenness centrality
+      · strength of weak ties
+      · structural holes theory  [代表]
+  [#17] representative: anchoring and adjustment heuristic  ·  2 members
+      · anchoring and adjustment heuristic  [代表]
+      · anchoring effect
+  [#18] representative: avalanche method  ·  2 members
+      · avalanche method  [代表]
+      · debt avalanche method
+  [#19] representative: bayesian persuasion  ·  2 members
+      · bayesian persuasion  [代表]
+      · crawford sobel model
+  [#20] representative: capital asset pricing model  ·  2 members
+      · arbitrage pricing theory
+      · capital asset pricing model  [代表]
+  [#21] representative: catastrophe theory  ·  2 members
+      · catastrophe theory  [代表]
+      · cusp catastrophe model
+  [#22] representative: commitment device  ·  2 members
+      · commitment device  [代表]
+      · credible commitment
+  [#23] representative: constrained optimization  ·  2 members
+      · constrained optimization  [代表]
+      · linear programming
+  [#24] representative: mechanism design  ·  2 members
+      · mechanism design  [代表]
+      · revelation principle
+  [#25] representative: nash bargaining solution  ·  2 members
+      · nash bargaining solution  [代表]
+      · nash bargaining solution with outside options
+  [#26] representative: optimal control theory  ·  2 members
+      · optimal control theory  [代表]
+      · stochastic optimal control
+  [#27] representative: rubinstein bargaining model  ·  2 members
+      · rubinstein bargaining model  [代表]
+      · rubinstein bargaining model with outside options
+  [#28] representative: subgame perfect equilibrium  ·  2 members
+      · perfect bayesian equilibrium
+      · subgame perfect equilibrium  [代表]
+
+[Merge map: raw → canonical where label changed (57 pairs)]
+  first passage time  →  absorbing markov chain
+  gambler's ruin problem  →  absorbing markov chain
+  anchoring effect  →  anchoring and adjustment heuristic
+  debt avalanche method  →  avalanche method
+  crawford sobel model  →  bayesian persuasion
+  bayesian belief updating  →  bayesian updating
+  kalman filter  →  bayesian updating
+  ben porath model  →  ben porath human capital model
+  human capital theory  →  ben porath human capital model
+  arbitrage pricing theory  →  capital asset pricing model
+  cusp catastrophe model  →  catastrophe theory
+  credible commitment  →  commitment device
+  compound interest equation  →  compound interest
+  compound interest model  →  compound interest
+  compound interest with fee drag  →  compound interest
+  linear programming  →  constrained optimization
+  beta delta model  →  hyperbolic discounting
+  hyperbolic discounting model  →  hyperbolic discounting
+  quasi hyperbolic discounting  →  hyperbolic discounting
+  revelation principle  →  mechanism design
+  mean variance optimization  →  modern portfolio theory
+  merton portfolio problem  →  modern portfolio theory
+  gittins index  →  multi armed bandit
+  gittins index theorem  →  multi armed bandit
+  nash bargaining solution with outside options  →  nash bargaining solution
+  stochastic optimal control  →  optimal control theory
+  bayesian learning in optimal stopping  →  optimal stopping
+  optimal stopping problem  →  optimal stopping
+  optimal stopping theory  →  optimal stopping
+  adverse selection  →  principal agent model
+  hold up problem  →  principal agent model
+  principal agent model with hidden information  →  principal agent model
+  principal agent model with moral hazard  →  principal agent model
+  principal agent model with third party enforcement  →  principal agent model
+  screening  →  principal agent model
+  screening mechanism  →  principal agent model
+  screening model  →  principal agent model
+  cumulative prospect theory  →  prospect theory
+  prospect theory reference dependence  →  prospect theory
+  buffer stock saving model  →  ramsey cass koopmans model
+  life cycle hypothesis  →  ramsey cass koopmans model
+  real options  →  real options theory
+  real options analysis  →  real options theory
+  real options model  →  real options theory
+  real options valuation  →  real options theory
+  rubinstein bargaining model with outside options  →  rubinstein bargaining model
+  signaling equilibrium  →  signaling game
+  signaling game equilibrium  →  signaling game
+  signaling games  →  signaling game
+  signaling theory  →  signaling game
+  costly signaling  →  spence signaling model
+  signaling model  →  spence signaling model
+  dynamic programming  →  stochastic dynamic programming
+  markov decision process  →  stochastic dynamic programming
+  betweenness centrality  →  structural holes theory
+  strength of weak ties  →  structural holes theory
+  perfect bayesian equilibrium  →  subgame perfect equilibrium
+
+[Merge cluster details / 归并簇完整明细（共 611 簇，其中 28 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: principal agent model  ·  9 条
+      · adverse selection
+      · hold up problem
+      · principal agent model  [代表]
+      · principal agent model with hidden information
+      · principal agent model with moral hazard
+      · principal agent model with third party enforcement
+      · screening
+      · screening mechanism
+      · screening model
+  [2] 代表名: real options theory  ·  5 条
+      · real options
+      · real options analysis
+      · real options model
+      · real options theory  [代表]
+      · real options valuation
+  [3] 代表名: signaling game  ·  5 条
+      · signaling equilibrium
+      · signaling game  [代表]
+      · signaling game equilibrium
+      · signaling games
+      · signaling theory
+  [4] 代表名: compound interest  ·  4 条
+      · compound interest  [代表]
+      · compound interest equation
+      · compound interest model
+      · compound interest with fee drag
+  [5] 代表名: hyperbolic discounting  ·  4 条
+      · beta delta model
+      · hyperbolic discounting  [代表]
+      · hyperbolic discounting model
+      · quasi hyperbolic discounting
+  [6] 代表名: optimal stopping  ·  4 条
+      · bayesian learning in optimal stopping
+      · optimal stopping  [代表]
+      · optimal stopping problem
+      · optimal stopping theory
+  [7] 代表名: absorbing markov chain  ·  3 条
+      · absorbing markov chain  [代表]
+      · first passage time
+      · gambler's ruin problem
+  [8] 代表名: bayesian updating  ·  3 条
+      · bayesian belief updating
+      · bayesian updating  [代表]
+      · kalman filter
+  [9] 代表名: ben porath human capital model  ·  3 条
+      · ben porath human capital model  [代表]
+      · ben porath model
+      · human capital theory
+  [10] 代表名: modern portfolio theory  ·  3 条
+      · mean variance optimization
+      · merton portfolio problem
+      · modern portfolio theory  [代表]
+  [11] 代表名: multi armed bandit  ·  3 条
+      · gittins index
+      · gittins index theorem
+      · multi armed bandit  [代表]
+  [12] 代表名: prospect theory  ·  3 条
+      · cumulative prospect theory
+      · prospect theory  [代表]
+      · prospect theory reference dependence
+  [13] 代表名: ramsey cass koopmans model  ·  3 条
+      · buffer stock saving model
+      · life cycle hypothesis
+      · ramsey cass koopmans model  [代表]
+  [14] 代表名: spence signaling model  ·  3 条
+      · costly signaling
+      · signaling model
+      · spence signaling model  [代表]
+  [15] 代表名: stochastic dynamic programming  ·  3 条
+      · dynamic programming
+      · markov decision process
+      · stochastic dynamic programming  [代表]
+  [16] 代表名: structural holes theory  ·  3 条
+      · betweenness centrality
+      · strength of weak ties
+      · structural holes theory  [代表]
+  [17] 代表名: anchoring and adjustment heuristic  ·  2 条
+      · anchoring and adjustment heuristic  [代表]
+      · anchoring effect
+  [18] 代表名: avalanche method  ·  2 条
+      · avalanche method  [代表]
+      · debt avalanche method
+  [19] 代表名: bayesian persuasion  ·  2 条
+      · bayesian persuasion  [代表]
+      · crawford sobel model
+  [20] 代表名: capital asset pricing model  ·  2 条
+      · arbitrage pricing theory
+      · capital asset pricing model  [代表]
+  [21] 代表名: catastrophe theory  ·  2 条
+      · catastrophe theory  [代表]
+      · cusp catastrophe model
+  [22] 代表名: commitment device  ·  2 条
+      · commitment device  [代表]
+      · credible commitment
+  [23] 代表名: constrained optimization  ·  2 条
+      · constrained optimization  [代表]
+      · linear programming
+  [24] 代表名: mechanism design  ·  2 条
+      · mechanism design  [代表]
+      · revelation principle
+  [25] 代表名: nash bargaining solution  ·  2 条
+      · nash bargaining solution  [代表]
+      · nash bargaining solution with outside options
+  [26] 代表名: optimal control theory  ·  2 条
+      · optimal control theory  [代表]
+      · stochastic optimal control
+  [27] 代表名: rubinstein bargaining model  ·  2 条
+      · rubinstein bargaining model  [代表]
+      · rubinstein bargaining model with outside options
+  [28] 代表名: subgame perfect equilibrium  ·  2 条
+      · perfect bayesian equilibrium
+      · subgame perfect equilibrium  [代表]
+  [29] （单条）actuarial present value
+  [30] （单条）adaptive control of thought
+  [31] （单条）additive decomposition of time decaying score functions
+  [32] （单条）admission control in queueing systems
+  [33] （单条）adverse selection with signaling
+  [34] （单条）adverse selection with signaling and screening
+  [35] （单条）affective forecasting
+  [36] （单条）after tax asset location optimization
+  [37] （单条）after tax terminal wealth maximization
+  [38] （单条）akerlof lemons model
+  [39] （单条）alternating offers bargaining with outside options
+  [40] （单条）american option
+  [41] （单条）american option optimal stopping
+  [42] （单条）american option pricing
+  [43] （单条）american option pricing theory
+  [44] （单条）amortization schedule
+  [45] （单条）approximate nearest neighbor search
+  [46] （单条）arbitrage pricing
+  [47] （单条）arithmetic of active management
+  [48] （单条）arthur increasing returns
+  [49] （单条）ascending clock auction
+  [50] （单条）attribution theory
+  [51] （单条）austrian capital theory
+  [52] （单条）b tree
+  [53] （单条）backward induction in finitely repeated games
+  [54] （单条）bang bang control
+  [55] （单条）base stock policy
+  [56] （单条）bass diffusion model
+  [57] （单条）batna
+  [58] （单条）bayesian belief updating with confirmation bias correction via forced evidence aggregation
+  [59] （单条）bayesian evidentiary compounding with credibility anchoring
+  [60] （单条）bayesian multi armed bandit with thompson sampling
+  [61] （单条）bayesian updating with independent signals
+  [62] （单条）bayesian updating with partition dependence
+  [63] （单条）becker human capital model
+  [64] （单条）ben porath human capital investment model
+  [65] （单条）ben porath model of human capital investment
+  [66] （单条）bertrand price competition
+  [67] （单条）beta delta discounting
+  [68] （单条）bilateral monopoly
+  [69] （单条）bilateral monopoly with outside options
+  [70] （单条）binomial options pricing model
+  [71] （单条）bipartite graph matching model
+  [72] （单条）black scholes model
+  [73] （单条）bond percolation model
+  [74] （单条）bonding equilibrium
+  [75] （单条）bottleneck model of dual task interference
+  [76] （单条）bounded rationality with attention scarcity
+  [77] （单条）breakeven analysis
+  [78] （单条）bucket portfolio optimization
+  [79] （单条）bucket strategy withdrawal model
+  [80] （单条）buffer stock saving
+  [81] （单条）bunching at kinks
+  [82] （单条）c mu rule
+  [83] （单条）capital depreciation and replacement model
+  [84] （单条）capital rationing
+  [85] （单条）carry trade
+  [86] （单条）cascading failure
+  [87] （单条）cash flow sensitivity model
+  [88] （单条）catastrophe theory fold bifurcation
+  [89] （单条）category adjustment model
+  [90] （单条）causal temporal filtering
+  [91] （单条）certainty equivalent return comparison
+  [92] （单条）cheap talk
+  [93] （单条）cheap talk with biased senders
+  [94] （单条）choice overload
+  [95] （单条）classifier ensemble with threshold optimization
+  [96] （单条）clock auction
+  [97] （单条）coase theorem
+  [98] （单条）coase theorem with transaction costs
+  [99] （单条）cognitive dissonance
+  [100] （单条）cognitive load theory
+  [101] （单条）collective action problem
+  [102] （单条）collective action threshold model
+  [103] （单条）commitment device in intertemporal choice
+  [104] （单条）commitment device model
+  [105] （单条）commitment strategy in dynamic games
+  [106] （单条）commitment strategy in extensive form games
+  [107] （单条）commitment strategy in sequential bargaining with irreversible actions
+  [108] （单条）common knowledge cascade
+  [109] （单条）common knowledge generation via hard information injection
+  [110] （单条）comparative advantage
+  [111] （单条）compound interest law
+  [112] （单条）compound interest with periodic contributions
+  [113] （单条）compound real options
+  [114] （单条）concave utility maximization
+  [115] （单条）conditional independence
+  [116] （单条）condorcet jury theorem
+  [117] （单条）constant proportion portfolio insurance
+  [118] （单条）consumption savings model with borrowing constraints
+  [119] （单条）context switching cost model
+  [120] （单条）continuous approximation
+  [121] （单条）continuous compounding with expense ratio drag
+  [122] （单条）control theory
+  [123] （单条）convexity and antifragility
+  [124] （单条）copula model
+  [125] （单条）core in cooperative game theory
+  [126] （单条）correspondence bias
+  [127] （单条）costly signaling equilibrium
+  [128] （单条）costly signaling in multi period adverse selection
+  [129] （单条）credible commitment mechanism
+  [130] （单条）creditrisk plus model
+  [131] （单条）critical path method
+  [132] （单条）critical slowing down
+  [133] （单条）cybernetic control theory
+  [134] （单条）day count apportionment
+  [135] （单条）debt dynamics model
+  [136] （单条）debt maturity structure optimization
+  [137] （单条）debt refinancing arbitrage
+  [138] （单条）debt sustainability analysis
+  [139] （单条）decision tree analysis
+  [140] （单条）dedicated portfolio theory
+  [141] （单条）default effect
+  [142] （单条）degroot learning model
+  [143] （单条）delegated monitoring
+  [144] （单条）delegation principle
+  [145] （单条）delegation with commitment
+  [146] （单条）deterrence model
+  [147] （单条）diamond mortensen pissarides model
+  [148] （单条）differential game
+  [149] （单条）differential wealth accumulation dynamics
+  [150] （单条）discounted utility model
+  [151] （单条）distributed ledger consensus
+  [152] （单条）dollar cost averaging
+  [153] （单条）double marginalization
+  [154] （单条）drift diffusion model
+  [155] （单条）dual process theory
+  [156] （单条）dual self model
+  [157] （单条）dunning kruger effect
+  [158] （单条）duration matching
+  [159] （单条）dynamic programming with state dependent cash flow constraints
+  [160] （单条）dynamical systems bifurcation theory
+  [161] （单条）economies of scale
+  [162] （单条）effective duration
+  [163] （单条）elastic shakedown
+  [164] （单条）endogenous default barrier model
+  [165] （单条）endowment effect
+  [166] （单条）entropy maximization principle
+  [167] （单条）epstein zin preferences
+  [168] （单条）escape from a potential well
+  [169] （单条）exit voice loyalty
+  [170] （单条）expanding spaced retrieval
+  [171] （单条）expected utility theory
+  [172] （单条）expense ratio drag model
+  [173] （单条）exponential growth differential equation
+  [174] （单条）exponential smoothing
+  [175] （单条）fama french three factor model
+  [176] （单条）finite horizon optimization
+  [177] （单条）finite state machine
+  [178] （单条）first passage time with absorbing barriers
+  [179] （单条）first price sealed bid auction
+  [180] （单条）fisher equation
+  [181] （单条）fisher separation theorem
+  [182] （单条）flow theory
+  [183] （单条）folk theorem
+  [184] （单条）folk theorem with imperfect monitoring
+  [185] （单条）framing effect
+  [186] （单条）future value of annuity
+  [187] （单条）gale shapley algorithm
+  [188] （单条）geometric brownian motion
+  [189] （单条）gift exchange model
+  [190] （单条）global games
+  [191] （单条）glosten milgrom model
+  [192] （单条）golden eggs model
+  [193] （单条）granovetter strength of weak ties
+  [194] （单条）granovetter strength of weak ties with structural holes
+  [195] （单条）granovetter weak ties theory
+  [196] （单条）graph theory
+  [197] （单条）greedy submodular optimization
+  [198] （单条）grossman zhou model
+  [199] （单条）hamilton jacobi bellman equation
+  [200] （单条）hard parameter sharing in multi task learning
+  [201] （单条）hirshleifer effect
+  [202] （单条）holmstrom milgrom model
+  [203] （单条）hopf bifurcation
+  [204] （单条）hotelling model
+  [205] （单条）hotelling spatial competition model
+  [206] （单条）hub and spoke model
+  [207] （单条）hub and spoke network design
+  [208] （单条）hub and spoke network with cross subsidization
+  [209] （单条）human capital depreciation
+  [210] （单条）human capital depreciation and optimal investment timing
+  [211] （单条）human capital hedging
+  [212] （单条）human capital investment model
+  [213] （单条）human capital portfolio optimization
+  [214] （单条）human capital portfolio theory
+  [215] （单条）human capital transferability model
+  [216] （单条）hyperbolic discounting quasi hyperbolic model beta delta
+  [217] （单条）image constrained equilibrium
+  [218] （单条）impulse control theory
+  [219] （单条）incomplete contracting model
+  [220] （单条）incomplete contracts model with relational contracting and external enforcement
+  [221] （单条）increasing returns
+  [222] （单条）increasing returns to skill specificity in complex systems
+  [223] （单条）independent cascade model
+  [224] （单条）information theory
+  [225] （单条）inspection paradox
+  [226] （单条）instrumental variables
+  [227] （单条）integral control with deadband
+  [228] （单条）internal model principle
+  [229] （单条）intertemporal budget constraint optimization
+  [230] （单条）intertemporal budget constraint with liquidity constraints
+  [231] （单条）intertemporal capital asset pricing model
+  [232] （单条）intertemporal choice model
+  [233] （单条）intertemporal optimization
+  [234] （单条）intertemporal tax arbitrage
+  [235] （单条）intertemporal tax rate arbitrage
+  [236] （单条）inventory theory
+  [237] （单条）inverse problem for piecewise linear systems
+  [238] （单条）jackson network
+  [239] （单条）jackson network with feedback control
+  [240] （单条）jackson wolinsky connections model
+  [241] （单条）jensen's inequality
+  [242] （单条）job search model
+  [243] （单条）jovanovic model of job matching
+  [244] （单条）katz centrality
+  [245] （单条）kelley covariation model
+  [246] （单条）kelly criterion
+  [247] （单条）kiefer wolfowitz stochastic approximation
+  [248] （单条）kirznerian entrepreneurial discovery
+  [249] （单条）klein crawford alchian model
+  [250] （单条）knock in barrier option pricing
+  [251] （单条）kolmogorov forward equation
+  [252] （单条）kramers escape problem
+  [253] （单条）kuramoto model
+  [254] （单条）lagrange multiplier method
+  [255] （单条）laibson golden eggs model
+  [256] （单条）lattice path model
+  [257] （单条）law of one price arbitrage
+  [258] （单条）leland model
+  [259] （单条）lexicographic multi objective optimization
+  [260] （单条）libertarian paternalism
+  [261] （单条）life annuity valuation
+  [262] （单条）life cycle model of saving and portfolio choice
+  [263] （单条）life cycle model of saving and retirement
+  [264] （单条）life cycle model with bequest motive
+  [265] （单条）lifecycle hypothesis
+  [266] （单条）linear compensator design
+  [267] （单条）linear programming duality
+  [268] （单条）linear programming feasibility
+  [269] （单条）linear quadratic gaussian control
+  [270] （单条）linear tax model
+  [271] （单条）linear time invariant system with delayed feedback
+  [272] （单条）liquidity buffer optimization
+  [273] （单条）liquidity constrained portfolio choice model
+  [274] （单条）liquidity constraint optimization
+  [275] （单条）liquidity management model
+  [276] （单条）liquidity preference
+  [277] （单条）liquidity preference and precautionary savings
+  [278] （单条）liquidity preference theory
+  [279] （单条）load balancing
+  [280] （单条）loan amortization with prepayment and interest rate differential
+  [281] （单条）logistic growth model
+  [282] （单条）logistic regression
+  [283] （单条）loss aversion
+  [284] （单条）lotka volterra competition model
+  [285] （单条）marginal analysis
+  [286] （单条）marginal analysis of capital allocation under uncertainty
+  [287] （单条）marginal value theorem
+  [288] （单条）market for lemons with repeated interaction
+  [289] （单条）markov chain
+  [290] （单条）markov decision process with absorbing states
+  [291] （单条）markov decision process with non stationary policy and state dependent barrier functions
+  [292] （单条）markov decision process with state space reduction
+  [293] （单条）markov perfect equilibrium
+  [294] （单条）markowitz mean variance optimization
+  [295] （单条）markowitz portfolio theory
+  [296] （单条）matching market theory
+  [297] （单条）matching market with signaling submarkets
+  [298] （单条）matching theory with endogenous types
+  [299] （单条）matrix analytic methods in queueing theory
+  [300] （单条）maximin criterion under knightian uncertainty
+  [301] （单条）maximum flow with node capacities
+  [302] （单条）mccall model
+  [303] （单条）mccall model of job search
+  [304] （单条）mcdonald siegel model
+  [305] （单条）mcnamara search model
+  [306] （单条）mean reversion
+  [307] （单条）mechanism design with asymmetric information
+  [308] （单条）mechanism design with asymmetric information and contractual incompleteness
+  [309] （单条）mechanism design with multi dimensional screening
+  [310] （单条）mechanism design with screening
+  [311] （单条）mechanism design with screening and participation constraints
+  [312] （单条）mechanism design with third party verification
+  [313] （单条）mechanism design with verification
+  [314] （单条）mental accounting
+  [315] （单条）merton portfolio problem with liquidity preference
+  [316] （单条）merton portfolio selection model
+  [317] （单条）merton's portfolio problem
+  [318] （单条）minimax regret
+  [319] （单条）modigliani miller theorem
+  [320] （单条）modigliani miller theorem with liquidity constraints and real options
+  [321] （单条）modigliani miller theorem with taxes and financial distress costs
+  [322] （单条）modularity in network resilience
+  [323] （单条）monopsony model
+  [324] （单条）monte carlo retirement simulation
+  [325] （单条）monte carlo simulation
+  [326] （单条）montgomery social network labor market matching model
+  [327] （单条）mortensen pissarides matching model
+  [328] （单条）multi armed bandit with costly information acquisition
+  [329] （单条）multi armed bandit with information acquisition
+  [330] （单条）multi armed bandit with thompson sampling
+  [331] （单条）multi attribute utility theory
+  [332] （单条）multi class priority queueing theory
+  [333] （单条）multi goal stochastic portfolio optimization
+  [334] （单条）multi objective pareto optimization
+  [335] （单条）multi period liability driven investment
+  [336] （单条）multiattribute utility theory
+  [337] （单条）multiple selves model
+  [338] （单条）multitask principal agent model
+  [339] （单条）myerson optimal auction
+  [340] （单条）myerson optimal auction design
+  [341] （单条）myerson optimal auction theory
+  [342] （单条）n modular redundancy
+  [343] （单条）nash bargaining model
+  [344] （单条）nash bargaining model with outside options
+  [345] （单条）nash bargaining with endogenous outside options
+  [346] （单条）nash equilibrium
+  [347] （单条）negative carry trade
+  [348] （单条）negative duration dependence
+  [349] （单条）net present value
+  [350] （单条）network contagion model
+  [351] （单条）network externalities
+  [352] （单条）network externality coordination game
+  [353] （单条）network externality model
+  [354] （单条）network percolation threshold
+  [355] （单条）newsvendor model with multiple products and capacity reservation
+  [356] （单条）operant conditioning
+  [357] （单条）operant extinction
+  [358] （单条）operating leverage optimization
+  [359] （单条）optimal batching with setup time minimization
+  [360] （单条）optimal capital structure modigliani miller framework with personal bankruptcy constraints
+  [361] （单条）optimal contract theory
+  [362] （单条）optimal contract theory with limited commitment
+  [363] （单条）optimal control
+  [364] （单条）optimal control problem
+  [365] （单条）optimal control theory with preemptive intervention
+  [366] （单条）optimal control with state constraints
+  [367] （单条）optimal control with switching costs
+  [368] （单条）optimal control with threshold constraints
+  [369] （单条）optimal delegation model
+  [370] （单条）optimal foraging theory
+  [371] （单条）optimal leverage ratio model
+  [372] （单条）optimal liquidity buffer model
+  [373] （单条）optimal mechanism design
+  [374] （单条）optimal portfolio choice with irreversible investment and option value of waiting
+  [375] （单条）optimal portfolio theory with liquidity constraints
+  [376] （单条）optimal search theory
+  [377] （单条）optimal stopping and switching control
+  [378] （单条）optimal stopping model
+  [379] （单条）optimal stopping with absorbing barrier
+  [380] （单条）optimal stopping with bayesian information acquisition
+  [381] （单条）optimal stopping with bayesian learning
+  [382] （单条）optimal stopping with bayesian updating
+  [383] （单条）optimal stopping with controlled diffusion
+  [384] （单条）optimal stopping with costly information acquisition
+  [385] （单条）optimal stopping with recall
+  [386] （单条）optimal stopping with search costs
+  [387] （单条）optimal stopping with threshold strategy
+  [388] （单条）optimal tax theory with phase outs
+  [389] （单条）optimal tax timing
+  [390] （单条）optimal tax timing model
+  [391] （单条）option theory of tax deferred accounts
+  [392] （单条）optionality in tax deferred portfolios
+  [393] （单条）ordinary credit method
+  [394] （单条）ornstein uhlenbeck process
+  [395] （单条）outside option principle
+  [396] （单条）overlapping generations model
+  [397] （单条）pagerank
+  [398] （单条）pandora's box problem
+  [399] （单条）parallel redundancy channel model
+  [400] （单条）parallel redundancy optimization
+  [401] （单条）parallel redundant channel reliability
+  [402] （单条）partially observable markov decision process
+  [403] （单条）path dependence
+  [404] （单条）path dependence and critical transitions
+  [405] （单条）percolation theory
+  [406] （单条）permanent income hypothesis
+  [407] （单条）persuasion game
+  [408] （单条）pharmacokinetic first order elimination model
+  [409] （单条）poisson process with variable rate parameter
+  [410] （单条）polya urn process
+  [411] （单条）pontryagin maximum principle
+  [412] （单条）pontryagin's maximum principle
+  [413] （单条）portfolio diversification of income streams
+  [414] （单条）positive feedback loop
+  [415] （单条）positive feedback loop disruption
+  [416] （单条）positive feedback loop dynamics
+  [417] （单条）positive feedback loop elimination in system dynamics
+  [418] （单条）positive feedback model
+  [419] （单条）precautionary saving model
+  [420] （单条）precautionary savings with liquidity constraints
+  [421] （单条）precommitment strategy
+  [422] （单条）preferential attachment dynamics
+  [423] （单条）preferential attachment network formation
+  [424] （单条）principal agent model with adverse selection
+  [425] （单条）principal agent model with career concerns
+  [426] （单条）principal agent model with commitment device
+  [427] （单条）principal agent model with hidden action and threat of exit
+  [428] （单条）principal agent model with implicit contracts
+  [429] （单条）principal agent model with limited commitment
+  [430] （单条）principal agent model with limited liability
+  [431] （单条）principal agent model with monitoring costs
+  [432] （单条）principal agent model with moral hazard and adverse selection
+  [433] （单条）principal agent model with moral hazard and auditing
+  [434] （单条）principal agent model with moral hazard and hidden information
+  [435] （单条）principal agent model with moral hazard and limited liability
+  [436] （单条）principal agent model with multilateral reputation externalities
+  [437] （单条）principal agent model with third party monitoring
+  [438] （单条）principal agent problem
+  [439] （单条）principal agent problem with moral hazard
+  [440] （单条）principal component analysis
+  [441] （单条）probability of ruin model
+  [442] （单条）progressive tax bracket optimization
+  [443] （单条）projection bias
+  [444] （单条）property rights theory
+  [445] （单条）prospect theory framing effect
+  [446] （单条）prospect theory reference point shift
+  [447] （单条）prospect theory value function
+  [448] （单条）queueing theory
+  [449] （单条）ramsey cass koopmans model with liquidity constraints
+  [450] （单条）ramsey growth model
+  [451] （单条）ramsey model
+  [452] （单条）ramsey model of optimal growth
+  [453] （单条）ramsey model of optimal taxation
+  [454] （单条）ramsey tax smoothing
+  [455] （单条）ramsey taxation model
+  [456] （单条）rate distortion theory
+  [457] （单条）ratio optimization with frozen denominator
+  [458] （单条）real option
+  [459] （单条）real options model of human capital investment
+  [460] （单条）redundancy allocation problem
+  [461] （单条）reference dependence with endogenous reference points
+  [462] （单条）regression discontinuity design
+  [463] （单条）relational contract theory
+  [464] （单条）reliability block diagram
+  [465] （单条）repeated game
+  [466] （单条）repeated game with imperfect monitoring
+  [467] （单条）repeated game with renegotiation proof equilibrium
+  [468] （单条）repeated game with reputation
+  [469] （单条）repeated game with third party enforcement
+  [470] （单条）repeated game with trigger strategy
+  [471] （单条）repeated games with imperfect monitoring
+  [472] （单条）repeated games with imperfect public monitoring
+  [473] （单条）reputational bargaining model
+  [474] （单条）rescorla wagner model
+  [475] （单条）resilience engineering model
+  [476] （单条）resilience theory
+  [477] （单条）robust optimization
+  [478] （单条）roth tax arbitrage
+  [479] （单条）roy model
+  [480] （单条）ruin theory
+  [481] （单条）saddle node bifurcation
+  [482] （单条）saddle node bifurcation model
+  [483] （单条）saddle point dynamics
+  [484] （单条）safety first criterion
+  [485] （单条）sampled data control system
+  [486] （单条）samuelson auerbach tax exempt bond equivalence
+  [487] （单条）samuelson inequality
+  [488] （单条）satisficing
+  [489] （单条）satisficing with aspiration levels
+  [490] （单条）schelling commitment
+  [491] （单条）schelling commitment strategy
+  [492] （单条）schelling point
+  [493] （单条）scholes williams beta estimation
+  [494] （单条）screening and signaling in monopsonistic labor markets
+  [495] （单条）screening equilibrium with asymmetric information
+  [496] （单条）screening game
+  [497] （单条）screening models
+  [498] （单条）search and matching model with adverse selection
+  [499] （单条）search and matching theory
+  [500] （单条）search cost model
+  [501] （单条）search theory
+  [502] （单条）second order cybernetics
+  [503] （单条）secretary problem
+  [504] （单条）secretary problem with recall and deadlines
+  [505] （单条）self fulfilling prophecy dynamics
+  [506] （单条）separation theorem
+  [507] （单条）sequential bargaining with incomplete contracts
+  [508] （单条）sequential bayesian decision theory
+  [509] （单条）sequential decision making under uncertainty
+  [510] （单条）sequential equilibrium
+  [511] （单条）sequential search with recall and network externalities
+  [512] （单条）signal detection theory
+  [513] （单条）signal extraction
+  [514] （单条）signal processing in adverse selection
+  [515] （单条）signaling equilibrium in screening games
+  [516] （单条）signaling game separating equilibrium
+  [517] （单条）signaling game with bayesian updating
+  [518] （单条）signaling game with belief manipulation
+  [519] （单条）signaling game with costly signaling
+  [520] （单条）signaling game with separating equilibrium
+  [521] （单条）signaling game with verifiable types
+  [522] （单条）signaling games with costly signaling
+  [523] （单条）signaling model of adverse selection
+  [524] （单条）signaling model of education
+  [525] （单条）signaling model under asymmetric information
+  [526] （单条）singular control problem
+  [527] （单条）sinking fund model
+  [528] （单条）slaving principle
+  [529] （单条）slutsky equation
+  [530] （单条）small world network theory
+  [531] （单条）smith's rule
+  [532] （单条）social capital theory
+  [533] （单条）social loafing
+  [534] （单条）social network diffusion on graphs
+  [535] （单条）social network structural holes theory
+  [536] （单条）soft budget constraint
+  [537] （单条）sovereign debt renegotiation model with heterogeneous creditors
+  [538] （单条）spacing effect
+  [539] （单条）spatial mismatch hypothesis
+  [540] （单条）spence signaling model with multi dimensional signal space
+  [541] （单条）stability analysis of fixed points
+  [542] （单条）stackelberg differential game
+  [543] （单条）stackelberg leadership model
+  [544] （单条）stackelberg leadership model with credible commitment
+  [545] （单条）stackelberg leadership with commitment
+  [546] （单条）state contingent debt contract
+  [547] （单条）state feedback control with saturation
+  [548] （单条）state space dimensionality reduction
+  [549] （单条）stochastic control
+  [550] （单条）stochastic control with reflecting barriers
+  [551] （单条）stochastic control with regime switching
+  [552] （单条）stochastic cusp catastrophe
+  [553] （单条）stochastic inventory control
+  [554] （单条）stochastic inventory control with reorder point policy
+  [555] （单条）stochastic optimal control with absorbing barriers
+  [556] （单条）stochastic optimal control with pre commitment constraints
+  [557] （单条）stochastic optimal control with threshold policy
+  [558] （单条）stochastic programming
+  [559] （单条）stochastic resonance
+  [560] （单条）stochastic stability analysis
+  [561] （单条）strategic classification
+  [562] （单条）strategic default and exemption adjusted bankruptcy model
+  [563] （单条）strategic information disclosure
+  [564] （单条）structural causal model with d separation
+  [565] （单条）structural credit risk model
+  [566] （单条）structural holes
+  [567] （单条）sum of the years' digits depreciation
+  [568] （单条）sunk cost fallacy
+  [569] （单条）sunk cost signal as commitment device
+  [570] （单条）superstar theory
+  [571] （单条）support theory
+  [572] （单条）switched system control
+  [573] （单条）system dynamics policy resistance
+  [574] （单条）tarski vaught hierarchy
+  [575] （单条）tax adjusted compound growth model
+  [576] （单条）tax adjusted return model
+  [577] （单条）tax alpha
+  [578] （单条）tax bracket arbitrage
+  [579] （单条）tax rate arbitrage equivalence
+  [580] （单条）taxable equivalent yield
+  [581] （单条）technology diffusion model
+  [582] （单条）theory of constraints
+  [583] （单条）thompson sampling
+  [584] （单条）time allocation model
+  [585] （单条）tit for tat
+  [586] （单条）tobin separation theorem
+  [587] （单条）tobin's separation theorem
+  [588] （单条）tobins q
+  [589] （单条）tournament theory
+  [590] （单条）trade off theory of capital structure
+  [591] （单条）tradeoff theory of capital structure
+  [592] （单条）transfer pricing model
+  [593] （单条）triadic power balancing
+  [594] （单条）trust game
+  [595] （单条）two sided market platform pricing
+  [596] （单条）two sided matching market
+  [597] （单条）ultimatum game
+  [598] （单条）ultimatum game with incomplete information
+  [599] （单条）ultimatum game with outside option
+  [600] （单条）value of information
+  [601] （单条）value of information in optimal stopping
+  [602] （单条）vertex cut
+  [603] （单条）vickrey clarke groves mechanism
+  [604] （单条）wald sequential probability ratio test
+  [605] （单条）war of attrition
+  [606] （单条）water filling algorithm
+  [607] （单条）watts strogatz small world network model
+  [608] （单条）weibull proportional hazards model with imperfect inspection
+  [609] （单条）weitzman optimal search model
+  [610] （单条）winner's curse
+  [611] （单条）zeigarnik effect
+
+==============================================================================

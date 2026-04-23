@@ -1,0 +1,466 @@
+==============================================================================
+LLM Cognitive Probe — Analysis Summary
+==============================================================================
+Generated (local): 2026-04-22T20:10:15
+
+[Input]
+  results_file: E:\college\postgraduate\llm_cognitive\openai-gpt-5.4-mini\Relational&Intimate\probe_results.jsonl
+  records (non-empty JSONL lines): 500
+
+[Merge]
+  merge_method: llm
+  refresh_merge: True
+  name_source: step3
+  chart_top_n: 30
+
+[Counts]
+  raw_unique_names: 199
+  raw_total_mentions: 1442
+  canonical_unique_names: 152
+  canonical_total_mentions: 1442
+  distinct_label_reduction: 199 raw → 152 canonical (23.6% fewer labels)
+
+[Output artifacts]
+  merge_map.json: yes
+  merge_map.embeddings.json: no
+  model_law_frequency.png: yes
+  model_law_wordcloud.png: yes
+  cluster_dendrogram.png: no
+  cluster_scatter.png: no
+
+[Top 30 raw names — before merge / 归并前（原始标签频次）]
+  rank   count  name
+     1     105  repeated game
+     2      85  signaling game
+     3      69  bayesian updating
+     4      52  threshold model
+     5      52  reinforcement learning
+     6      50  optimal stopping
+     7      48  repeated prisoners dilemma
+     8      47  dynamical systems
+     9      47  negative feedback
+    10      46  markov decision process
+    11      46  sequential probability ratio test
+    12      44  bayesian inference
+    13      40  nash equilibrium
+    14      36  feedback control
+    15      29  constrained optimization
+    16      26  operant conditioning
+    17      22  intermittent reinforcement
+    18      19  subgame perfect equilibrium
+    19      16  repeated prisoner's dilemma
+    20      16  attractor dynamics
+    21      16  principal agent problem
+    22      16  bayesian decision theory
+    23      16  optimal stopping theory
+    24      15  positive feedback
+    25      14  signaling theory
+    26      14  state space model
+    27      13  hysteresis
+    28      13  extinction
+    29      12  feedback loop
+    30      11  stag hunt
+
+[Top 30 canonical names — after merge / 归并后（代表名频次）]
+  rank   count  name
+     1     116  bayesian inference
+     2     105  repeated game
+     3      86  feedback
+     4      85  signaling game
+     5      75  optimal stopping
+     6      75  repeated prisoner's dilemma
+     7      67  dynamical system
+     8      60  operant conditioning
+     9      52  feedback control
+    10      52  threshold model
+    11      52  reinforcement learning
+    12      52  sequential probability ratio test
+    13      51  markov decision process
+    14      40  nash equilibrium
+    15      29  attractor dynamics
+    16      29  constrained optimization
+    17      22  subgame perfect equilibrium
+    18      22  markov chain
+    19      20  signaling theory
+    20      16  principal agent problem
+    21      16  bayesian decision theory
+    22      16  state space model
+    23      14  delay discounting
+    24      14  expected utility theory
+    25      13  hysteresis
+    26      13  extinction
+    27      11  stag hunt
+    28      11  dynamic game
+    29      10  dynamic programming
+    30      10  mechanism design
+
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 23 clusters]
+  [#1] representative: dynamical system  ·  5 members
+      · discrete time dynamical system
+      · dynamical system  [代表]
+      · dynamical systems
+      · dynamical systems theory
+      · nonlinear dynamical system
+  [#2] representative: feedback  ·  5 members
+      · feedback loop
+      · negative feedback
+      · negative feedback loop
+      · positive feedback
+      · positive feedback loop
+  [#3] representative: operant conditioning  ·  5 members
+      · intermittent reinforcement
+      · operant conditioning  [代表]
+      · partial reinforcement extinction effect
+      · variable ratio reinforcement
+      · variable ratio schedule
+  [#4] representative: repeated prisoner's dilemma  ·  5 members
+      · repeated prisoner dilemma
+      · repeated prisoner s dilemma
+      · repeated prisoner's dilemma  [代表]
+      · repeated prisoners dilemma
+      · repeated prisoner’s dilemma
+  [#5] representative: feedback control  ·  4 members
+      · delayed feedback control
+      · feedback control  [代表]
+      · feedback control system
+      · negative feedback control
+  [#6] representative: optimal stopping  ·  4 members
+      · optimal stopping  [代表]
+      · optimal stopping problem
+      · optimal stopping theory
+      · stopping time
+  [#7] representative: attractor dynamics  ·  3 members
+      · attractor dynamics  [代表]
+      · attractor network
+      · attractor state
+  [#8] representative: bayesian inference  ·  3 members
+      · bayes theorem
+      · bayesian inference  [代表]
+      · bayesian updating
+  [#9] representative: bistability  ·  3 members
+      · bistability  [代表]
+      · bistable dynamical system
+      · bistable system
+  [#10] representative: delay discounting  ·  3 members
+      · delay discounting  [代表]
+      · delayed gratification
+      · hyperbolic discounting
+  [#11] representative: expected utility theory  ·  3 members
+      · expected utility
+      · expected utility maximization
+      · expected utility theory  [代表]
+  [#12] representative: markov chain  ·  3 members
+      · absorbing markov chain
+      · markov chain  [代表]
+      · markov process
+  [#13] representative: sequential probability ratio test  ·  3 members
+      · sequential analysis
+      · sequential hypothesis testing
+      · sequential probability ratio test  [代表]
+  [#14] representative: signaling theory  ·  3 members
+      · screening model
+      · signaling theory  [代表]
+      · spence signaling model
+  [#15] representative: best response dynamics  ·  2 members
+      · best response dynamics  [代表]
+      · replicator dynamics
+  [#16] representative: control theory  ·  2 members
+      · control theory  [代表]
+      · optimal control
+  [#17] representative: damped harmonic oscillator  ·  2 members
+      · coupled oscillator model
+      · damped harmonic oscillator  [代表]
+  [#18] representative: dynamic game  ·  2 members
+      · dynamic game  [代表]
+      · sequential game
+  [#19] representative: markov decision process  ·  2 members
+      · markov decision process  [代表]
+      · partially observable markov decision process
+  [#20] representative: mechanism design  ·  2 members
+      · incentive compatibility
+      · mechanism design  [代表]
+  [#21] representative: resource allocation  ·  2 members
+      · resource allocation  [代表]
+      · resource allocation model
+  [#22] representative: state space model  ·  2 members
+      · kalman filter
+      · state space model  [代表]
+  [#23] representative: subgame perfect equilibrium  ·  2 members
+      · subgame perfect equilibrium  [代表]
+      · subgame perfect nash equilibrium
+
+[Merge map: raw → canonical where label changed (48 pairs)]
+  attractor network  →  attractor dynamics
+  attractor state  →  attractor dynamics
+  bayes theorem  →  bayesian inference
+  bayesian updating  →  bayesian inference
+  replicator dynamics  →  best response dynamics
+  bistable dynamical system  →  bistability
+  bistable system  →  bistability
+  optimal control  →  control theory
+  coupled oscillator model  →  damped harmonic oscillator
+  delayed gratification  →  delay discounting
+  hyperbolic discounting  →  delay discounting
+  sequential game  →  dynamic game
+  discrete time dynamical system  →  dynamical system
+  dynamical systems  →  dynamical system
+  dynamical systems theory  →  dynamical system
+  nonlinear dynamical system  →  dynamical system
+  expected utility  →  expected utility theory
+  expected utility maximization  →  expected utility theory
+  feedback loop  →  feedback
+  negative feedback  →  feedback
+  negative feedback loop  →  feedback
+  positive feedback  →  feedback
+  positive feedback loop  →  feedback
+  delayed feedback control  →  feedback control
+  feedback control system  →  feedback control
+  negative feedback control  →  feedback control
+  absorbing markov chain  →  markov chain
+  markov process  →  markov chain
+  partially observable markov decision process  →  markov decision process
+  incentive compatibility  →  mechanism design
+  intermittent reinforcement  →  operant conditioning
+  partial reinforcement extinction effect  →  operant conditioning
+  variable ratio reinforcement  →  operant conditioning
+  variable ratio schedule  →  operant conditioning
+  optimal stopping problem  →  optimal stopping
+  optimal stopping theory  →  optimal stopping
+  stopping time  →  optimal stopping
+  repeated prisoner dilemma  →  repeated prisoner's dilemma
+  repeated prisoner s dilemma  →  repeated prisoner's dilemma
+  repeated prisoners dilemma  →  repeated prisoner's dilemma
+  repeated prisoner’s dilemma  →  repeated prisoner's dilemma
+  resource allocation model  →  resource allocation
+  sequential analysis  →  sequential probability ratio test
+  sequential hypothesis testing  →  sequential probability ratio test
+  screening model  →  signaling theory
+  spence signaling model  →  signaling theory
+  kalman filter  →  state space model
+  subgame perfect nash equilibrium  →  subgame perfect equilibrium
+
+[Merge cluster details / 归并簇完整明细（共 152 簇，其中 23 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: dynamical system  ·  5 条
+      · discrete time dynamical system
+      · dynamical system  [代表]
+      · dynamical systems
+      · dynamical systems theory
+      · nonlinear dynamical system
+  [2] 代表名: feedback  ·  5 条
+      · feedback loop
+      · negative feedback
+      · negative feedback loop
+      · positive feedback
+      · positive feedback loop
+  [3] 代表名: operant conditioning  ·  5 条
+      · intermittent reinforcement
+      · operant conditioning  [代表]
+      · partial reinforcement extinction effect
+      · variable ratio reinforcement
+      · variable ratio schedule
+  [4] 代表名: repeated prisoner's dilemma  ·  5 条
+      · repeated prisoner dilemma
+      · repeated prisoner s dilemma
+      · repeated prisoner's dilemma  [代表]
+      · repeated prisoners dilemma
+      · repeated prisoner’s dilemma
+  [5] 代表名: feedback control  ·  4 条
+      · delayed feedback control
+      · feedback control  [代表]
+      · feedback control system
+      · negative feedback control
+  [6] 代表名: optimal stopping  ·  4 条
+      · optimal stopping  [代表]
+      · optimal stopping problem
+      · optimal stopping theory
+      · stopping time
+  [7] 代表名: attractor dynamics  ·  3 条
+      · attractor dynamics  [代表]
+      · attractor network
+      · attractor state
+  [8] 代表名: bayesian inference  ·  3 条
+      · bayes theorem
+      · bayesian inference  [代表]
+      · bayesian updating
+  [9] 代表名: bistability  ·  3 条
+      · bistability  [代表]
+      · bistable dynamical system
+      · bistable system
+  [10] 代表名: delay discounting  ·  3 条
+      · delay discounting  [代表]
+      · delayed gratification
+      · hyperbolic discounting
+  [11] 代表名: expected utility theory  ·  3 条
+      · expected utility
+      · expected utility maximization
+      · expected utility theory  [代表]
+  [12] 代表名: markov chain  ·  3 条
+      · absorbing markov chain
+      · markov chain  [代表]
+      · markov process
+  [13] 代表名: sequential probability ratio test  ·  3 条
+      · sequential analysis
+      · sequential hypothesis testing
+      · sequential probability ratio test  [代表]
+  [14] 代表名: signaling theory  ·  3 条
+      · screening model
+      · signaling theory  [代表]
+      · spence signaling model
+  [15] 代表名: best response dynamics  ·  2 条
+      · best response dynamics  [代表]
+      · replicator dynamics
+  [16] 代表名: control theory  ·  2 条
+      · control theory  [代表]
+      · optimal control
+  [17] 代表名: damped harmonic oscillator  ·  2 条
+      · coupled oscillator model
+      · damped harmonic oscillator  [代表]
+  [18] 代表名: dynamic game  ·  2 条
+      · dynamic game  [代表]
+      · sequential game
+  [19] 代表名: markov decision process  ·  2 条
+      · markov decision process  [代表]
+      · partially observable markov decision process
+  [20] 代表名: mechanism design  ·  2 条
+      · incentive compatibility
+      · mechanism design  [代表]
+  [21] 代表名: resource allocation  ·  2 条
+      · resource allocation  [代表]
+      · resource allocation model
+  [22] 代表名: state space model  ·  2 条
+      · kalman filter
+      · state space model  [代表]
+  [23] 代表名: subgame perfect equilibrium  ·  2 条
+      · subgame perfect equilibrium  [代表]
+      · subgame perfect nash equilibrium
+  [24] （单条）absorbing state
+  [25] （单条）absorbing state markov chain
+  [26] （单条）active learning
+  [27] （单条）adaptive dynamics
+  [28] （单条）allais effect
+  [29] （单条）approach avoidance conflict
+  [30] （单条）asymmetric information
+  [31] （单条）attractor
+  [32] （单条）attractor landscape
+  [33] （单条）attractor network model
+  [34] （单条）attractors in dynamical systems
+  [35] （单条）bargaining problem
+  [36] （单条）bayes decision rule
+  [37] （单条）bayes' theorem
+  [38] （单条）bayesian decision theory
+  [39] （单条）bayesian game
+  [40] （单条）bayesian update
+  [41] （单条）best response
+  [42] （单条）bifurcation theory
+  [43] （单条）cheap talk
+  [44] （单条）classical conditioning
+  [45] （单条）commitment device
+  [46] （单条）constrained optimization
+  [47] （单条）constraint satisfaction problem
+  [48] （单条）control barrier function
+  [49] （单条）coordination game
+  [50] （单条）credible commitment
+  [51] （单条）delay differential equation
+  [52] （单条）delayed discounting
+  [53] （单条）delayed feedback
+  [54] （单条）deterrence theory
+  [55] （单条）disappointment feedback loop
+  [56] （单条）discrete dynamical system
+  [57] （单条）diversity of portfolio
+  [58] （单条）dual process theory
+  [59] （单条）dynamic inconsistency
+  [60] （单条）dynamic optimization
+  [61] （单条）dynamic programming
+  [62] （单条）dynamic systems theory
+  [63] （单条）expected utility hypothesis
+  [64] （单条）exponential decay
+  [65] （单条）exponential decay model
+  [66] （单条）extensive form game
+  [67] （单条）externality
+  [68] （单条）extinction
+  [69] （单条）feedback control theory
+  [70] （单条）finite horizon game
+  [71] （单条）fixed point
+  [72] （单条）fixed point iteration
+  [73] （单条）fixed point theorem
+  [74] （单条）folk theorem
+  [75] （单条）game of chicken
+  [76] （单条）game theory
+  [77] （单条）habituation
+  [78] （单条）hidden markov model
+  [79] （单条）hirschman’s exit voice loyalty
+  [80] （单条）homeostatic control
+  [81] （单条）hybrid dynamical system
+  [82] （单条）hysteresis
+  [83] （单条）incentive compatible mechanism
+  [84] （单条）incomplete information
+  [85] （单条）incomplete information game
+  [86] （单条）leaky integrator
+  [87] （单条）linear dynamical system
+  [88] （单条）linear time invariant system
+  [89] （单条）logistic choice model
+  [90] （单条）logistic regression
+  [91] （单条）lotka volterra model
+  [92] （单条）multi armed bandit
+  [93] （单条）nash bargaining solution
+  [94] （单条）nash equilibrium
+  [95] （单条）network contagion
+  [96] （单条）network diffusion
+  [97] （单条）network percolation
+  [98] （单条）network robustness
+  [99] （单条）nonlinear control theory
+  [100] （单条）opportunity cost model of attention
+  [101] （单条）option value
+  [102] （单条）outside option model
+  [103] （单条）pareto optimality
+  [104] （单条）perfect bayesian equilibrium
+  [105] （单条）piecewise linear dynamical system
+  [106] （单条）portfolio diversification
+  [107] （单条）portfolio theory
+  [108] （单条）potential game
+  [109] （单条）potential well model
+  [110] （单条）predictive coding
+  [111] （单条）principal agent problem
+  [112] （单条）prospect theory
+  [113] （单条）rational expectations
+  [114] （单条）real options theory
+  [115] （单条）reinforcement learning
+  [116] （单条）relaxation oscillator
+  [117] （单条）repeated game
+  [118] （单条）rescorla wagner model
+  [119] （单条）reservation utility
+  [120] （单条）reservation wage model
+  [121] （单条）reward maximization
+  [122] （单条）reward prediction error
+  [123] （单条）risk homeostasis
+  [124] （单条）risk minimization
+  [125] （单条）robust optimization
+  [126] （单条）sequential decision making
+  [127] （单条）sequential screening
+  [128] （单条）shannon feedback communication model
+  [129] （单条）shannon's communication theory
+  [130] （单条）signal detection theory
+  [131] （单条）signaling game
+  [132] （单条）social network centrality
+  [133] （单条）stability theory
+  [134] （单条）stackelberg competition
+  [135] （单条）stag hunt
+  [136] （单条）stag hunt game
+  [137] （单条）state transition model
+  [138] （单条）stochastic control
+  [139] （单条）stochastic stability
+  [140] （单条）stopping rule
+  [141] （单条）structural causal model
+  [142] （单条）sunk cost fallacy
+  [143] （单条）switched dynamical systems
+  [144] （单条）temporal discounting
+  [145] （单条）threshold model
+  [146] （单条）tit for tat
+  [147] （单条）trigger strategy
+  [148] （单条）trust game
+  [149] （单条）ultimatum game
+  [150] （单条）utility maximization
+  [151] （单条）variable ratio reinforcement schedule
+  [152] （单条）war of attrition
+
+==============================================================================

@@ -1,0 +1,35 @@
+==============================================================================
+LLM Cognitive Probe — Analysis Summary
+==============================================================================
+Generated (local): 2026-04-21T14:46:18
+
+[Input]
+  results_file: E:\college\postgraduate\llm_cognitive\probe_results.jsonl
+  records (non-empty JSONL lines): 3
+
+[Merge]
+  merge_method: none
+  refresh_merge: False
+  name_source: step3
+  chart_top_n: 30
+
+[Counts]
+  raw_unique_names: 2
+  raw_total_mentions: 6
+  canonical_unique_names: 2
+  canonical_total_mentions: 6
+
+[Output artifacts]
+  merge_map.json: no
+  merge_map.embeddings.json: no
+  model_law_frequency.png: yes
+  model_law_wordcloud.png: yes
+  cluster_dendrogram.png: yes
+  cluster_scatter.png: yes
+
+[Top 30 names — merge_method=none（无归并，与原始一致）]
+  rank   count  name
+     1       3  边际效用递减
+     2       3  纳什均衡
+
+==============================================================================

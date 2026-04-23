@@ -1,0 +1,7266 @@
+{
+  "generated_at_local": "2026-04-22T20:10:31",
+  "root": "E:\\college\\postgraduate\\llm_cognitive",
+  "export_phase": "after_merge",
+  "phase_description_zh": "归并后（canonical 代表名频次）",
+  "top_k": 50,
+  "merge_method": "llm",
+  "name_source": "step3",
+  "refresh_merge": true,
+  "partial": false,
+  "failed_probe_paths": [],
+  "items": [
+    {
+      "model": "anthropic-claude-haiku-4.5",
+      "category": "Personal&Existential",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\anthropic-claude-haiku-4.5\\Personal&Existential\\probe_results.jsonl",
+      "unique_names": 1148,
+      "total_mentions": 1476,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "feedback control system",
+          "count": 79
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 58
+        },
+        {
+          "rank": 3,
+          "name": "principal agent theory",
+          "count": 51
+        },
+        {
+          "rank": 4,
+          "name": "bifurcation theory",
+          "count": 23
+        },
+        {
+          "rank": 5,
+          "name": "constraint relaxation",
+          "count": 15
+        },
+        {
+          "rank": 6,
+          "name": "signal detection theory",
+          "count": 14
+        },
+        {
+          "rank": 7,
+          "name": "bistable dynamical system",
+          "count": 12
+        },
+        {
+          "rank": 8,
+          "name": "attractor state transition",
+          "count": 12
+        },
+        {
+          "rank": 9,
+          "name": "temporal difference learning",
+          "count": 10
+        },
+        {
+          "rank": 10,
+          "name": "kalman filter",
+          "count": 9
+        },
+        {
+          "rank": 11,
+          "name": "optimal stopping theory",
+          "count": 8
+        },
+        {
+          "rank": 12,
+          "name": "markov decision process",
+          "count": 7
+        },
+        {
+          "rank": 13,
+          "name": "hyperbolic discounting",
+          "count": 7
+        },
+        {
+          "rank": 14,
+          "name": "constraint satisfaction problem",
+          "count": 6
+        },
+        {
+          "rank": 15,
+          "name": "state space factorization",
+          "count": 6
+        },
+        {
+          "rank": 16,
+          "name": "hidden markov model",
+          "count": 5
+        },
+        {
+          "rank": 17,
+          "name": "portfolio theory",
+          "count": 3
+        },
+        {
+          "rank": 18,
+          "name": "cognitive load theory",
+          "count": 3
+        },
+        {
+          "rank": 19,
+          "name": "extinction learning",
+          "count": 3
+        },
+        {
+          "rank": 20,
+          "name": "threshold model of collective behavior",
+          "count": 3
+        },
+        {
+          "rank": 21,
+          "name": "sequential probability ratio test",
+          "count": 2
+        },
+        {
+          "rank": 22,
+          "name": "value of information",
+          "count": 2
+        },
+        {
+          "rank": 23,
+          "name": "commitment device",
+          "count": 2
+        },
+        {
+          "rank": 24,
+          "name": "information asymmetry reduction via bayesian updating",
+          "count": 2
+        },
+        {
+          "rank": 25,
+          "name": "parallel redundancy model",
+          "count": 2
+        },
+        {
+          "rank": 26,
+          "name": "coupled oscillator damping",
+          "count": 2
+        },
+        {
+          "rank": 27,
+          "name": "critical path method",
+          "count": 2
+        },
+        {
+          "rank": 28,
+          "name": "utility function decomposition",
+          "count": 2
+        },
+        {
+          "rank": 29,
+          "name": "latent class analysis",
+          "count": 2
+        },
+        {
+          "rank": 30,
+          "name": "constrained resource allocation model",
+          "count": 2
+        },
+        {
+          "rank": 31,
+          "name": "rescorla wagner model",
+          "count": 2
+        },
+        {
+          "rank": 32,
+          "name": "information entropy reduction",
+          "count": 2
+        },
+        {
+          "rank": 33,
+          "name": "optimal control theory",
+          "count": 2
+        },
+        {
+          "rank": 34,
+          "name": "lyapunov stability theory",
+          "count": 2
+        },
+        {
+          "rank": 35,
+          "name": "bistable dynamical systems with potential energy landscape shift",
+          "count": 1
+        },
+        {
+          "rank": 36,
+          "name": "negative feedback loop disruption via external forcing",
+          "count": 1
+        },
+        {
+          "rank": 37,
+          "name": "constrained optimization with parameter modulation",
+          "count": 1
+        },
+        {
+          "rank": 38,
+          "name": "cybernetic control system",
+          "count": 1
+        },
+        {
+          "rank": 39,
+          "name": "bistable dynamics with barrier elevation",
+          "count": 1
+        },
+        {
+          "rank": 40,
+          "name": "positive feedback loop disruption via external input",
+          "count": 1
+        },
+        {
+          "rank": 41,
+          "name": "bayesian belief update via expert information",
+          "count": 1
+        },
+        {
+          "rank": 42,
+          "name": "principal agent delegation under cognitive constraint",
+          "count": 1
+        },
+        {
+          "rank": 43,
+          "name": "hedonic adaptation setpoint theory",
+          "count": 1
+        },
+        {
+          "rank": 44,
+          "name": "multiscale dynamical systems",
+          "count": 1
+        },
+        {
+          "rank": 45,
+          "name": "state dependent utility function with parameter degradation",
+          "count": 1
+        },
+        {
+          "rank": 46,
+          "name": "coupled nonlinear feedback system stabilization",
+          "count": 1
+        },
+        {
+          "rank": 47,
+          "name": "sequential hypothesis testing with adaptive stopping",
+          "count": 1
+        },
+        {
+          "rank": 48,
+          "name": "signal detection theory with threshold dynamics",
+          "count": 1
+        },
+        {
+          "rank": 49,
+          "name": "hierarchical linear model",
+          "count": 1
+        },
+        {
+          "rank": 50,
+          "name": "bayesian hierarchical inference",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "anthropic-claude-haiku-4.5",
+      "category": "Professional&Economic",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\anthropic-claude-haiku-4.5\\Professional&Economic\\probe_results.jsonl",
+      "unique_names": 1092,
+      "total_mentions": 1474,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling theory",
+          "count": 72
+        },
+        {
+          "rank": 2,
+          "name": "real options theory",
+          "count": 54
+        },
+        {
+          "rank": 3,
+          "name": "bayesian inference",
+          "count": 52
+        },
+        {
+          "rank": 4,
+          "name": "optimal stopping theory",
+          "count": 39
+        },
+        {
+          "rank": 5,
+          "name": "stochastic dynamic programming",
+          "count": 17
+        },
+        {
+          "rank": 6,
+          "name": "modern portfolio theory",
+          "count": 17
+        },
+        {
+          "rank": 7,
+          "name": "constrained optimization",
+          "count": 14
+        },
+        {
+          "rank": 8,
+          "name": "signal detection theory",
+          "count": 12
+        },
+        {
+          "rank": 9,
+          "name": "rubinstein bargaining model",
+          "count": 11
+        },
+        {
+          "rank": 10,
+          "name": "principal agent theory",
+          "count": 10
+        },
+        {
+          "rank": 11,
+          "name": "nash bargaining solution",
+          "count": 10
+        },
+        {
+          "rank": 12,
+          "name": "information asymmetry resolution",
+          "count": 9
+        },
+        {
+          "rank": 13,
+          "name": "hyperbolic discounting with commitment devices",
+          "count": 8
+        },
+        {
+          "rank": 14,
+          "name": "feedback control system",
+          "count": 8
+        },
+        {
+          "rank": 15,
+          "name": "intertemporal budget constraint optimization",
+          "count": 8
+        },
+        {
+          "rank": 16,
+          "name": "revelation principle",
+          "count": 6
+        },
+        {
+          "rank": 17,
+          "name": "value of information",
+          "count": 6
+        },
+        {
+          "rank": 18,
+          "name": "constraint relaxation",
+          "count": 6
+        },
+        {
+          "rank": 19,
+          "name": "compound interest model",
+          "count": 5
+        },
+        {
+          "rank": 20,
+          "name": "dynamic programming with constraint relaxation",
+          "count": 4
+        },
+        {
+          "rank": 21,
+          "name": "subgame perfect equilibrium",
+          "count": 3
+        },
+        {
+          "rank": 22,
+          "name": "cognitive load theory",
+          "count": 3
+        },
+        {
+          "rank": 23,
+          "name": "revealed preference theory",
+          "count": 3
+        },
+        {
+          "rank": 24,
+          "name": "stackelberg game with information revelation",
+          "count": 3
+        },
+        {
+          "rank": 25,
+          "name": "sequential probability ratio test",
+          "count": 2
+        },
+        {
+          "rank": 26,
+          "name": "lyapunov stability theory",
+          "count": 2
+        },
+        {
+          "rank": 27,
+          "name": "stochastic programming with recourse",
+          "count": 2
+        },
+        {
+          "rank": 28,
+          "name": "screening mechanism",
+          "count": 2
+        },
+        {
+          "rank": 29,
+          "name": "greedy algorithm for weighted debt minimization",
+          "count": 2
+        },
+        {
+          "rank": 30,
+          "name": "constraint satisfaction problem",
+          "count": 2
+        },
+        {
+          "rank": 31,
+          "name": "lexicographic preference ordering",
+          "count": 2
+        },
+        {
+          "rank": 32,
+          "name": "shortfall risk minimization",
+          "count": 2
+        },
+        {
+          "rank": 33,
+          "name": "ulysses contract",
+          "count": 2
+        },
+        {
+          "rank": 34,
+          "name": "signal to noise ratio optimization",
+          "count": 2
+        },
+        {
+          "rank": 35,
+          "name": "threshold model",
+          "count": 2
+        },
+        {
+          "rank": 36,
+          "name": "gambler's ruin problem",
+          "count": 2
+        },
+        {
+          "rank": 37,
+          "name": "stock flow consistency model",
+          "count": 2
+        },
+        {
+          "rank": 38,
+          "name": "pareto efficiency reallocation",
+          "count": 2
+        },
+        {
+          "rank": 39,
+          "name": "reference point theory",
+          "count": 2
+        },
+        {
+          "rank": 40,
+          "name": "markov decision process with partial observability",
+          "count": 2
+        },
+        {
+          "rank": 41,
+          "name": "law of large numbers",
+          "count": 2
+        },
+        {
+          "rank": 42,
+          "name": "critical path method",
+          "count": 2
+        },
+        {
+          "rank": 43,
+          "name": "value of information in irreversible decisions",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "search and matching model",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "path dependence and lock in effects",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "sequential decision making under uncertainty",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "two sided matching with search friction",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "optimal control theory",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "kelly criterion",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "stackelberg game",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "anthropic-claude-haiku-4.5",
+      "category": "Relational&Intimate",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\anthropic-claude-haiku-4.5\\Relational&Intimate\\probe_results.jsonl",
+      "unique_names": 1098,
+      "total_mentions": 1475,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 55
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 47
+        },
+        {
+          "rank": 3,
+          "name": "extinction in operant conditioning",
+          "count": 43
+        },
+        {
+          "rank": 4,
+          "name": "costly signaling theory",
+          "count": 31
+        },
+        {
+          "rank": 5,
+          "name": "optimal stopping theory",
+          "count": 29
+        },
+        {
+          "rank": 6,
+          "name": "bifurcation theory",
+          "count": 18
+        },
+        {
+          "rank": 7,
+          "name": "bayesian inference",
+          "count": 17
+        },
+        {
+          "rank": 8,
+          "name": "revealed preference theory",
+          "count": 13
+        },
+        {
+          "rank": 9,
+          "name": "principal agent theory",
+          "count": 13
+        },
+        {
+          "rank": 10,
+          "name": "signal detection theory",
+          "count": 11
+        },
+        {
+          "rank": 11,
+          "name": "coupled oscillator decoupling",
+          "count": 10
+        },
+        {
+          "rank": 12,
+          "name": "negative feedback control system",
+          "count": 9
+        },
+        {
+          "rank": 13,
+          "name": "hyperbolic discounting",
+          "count": 8
+        },
+        {
+          "rank": 14,
+          "name": "constraint satisfaction problem",
+          "count": 6
+        },
+        {
+          "rank": 15,
+          "name": "attractor basin transition in dynamical systems",
+          "count": 4
+        },
+        {
+          "rank": 16,
+          "name": "bistable dynamical system with hysteresis",
+          "count": 4
+        },
+        {
+          "rank": 17,
+          "name": "causal inference under confounding",
+          "count": 4
+        },
+        {
+          "rank": 18,
+          "name": "rescorla wagner model",
+          "count": 4
+        },
+        {
+          "rank": 19,
+          "name": "bayesian games",
+          "count": 4
+        },
+        {
+          "rank": 20,
+          "name": "mechanism design for incentive compatibility",
+          "count": 4
+        },
+        {
+          "rank": 21,
+          "name": "bayesian model selection",
+          "count": 4
+        },
+        {
+          "rank": 22,
+          "name": "bayesian information revelation",
+          "count": 3
+        },
+        {
+          "rank": 23,
+          "name": "markov chain with absorbing states",
+          "count": 3
+        },
+        {
+          "rank": 24,
+          "name": "bayesian information asymmetry resolution",
+          "count": 3
+        },
+        {
+          "rank": 25,
+          "name": "incentive compatibility constraint",
+          "count": 3
+        },
+        {
+          "rank": 26,
+          "name": "portfolio theory",
+          "count": 3
+        },
+        {
+          "rank": 27,
+          "name": "bayesian hypothesis testing",
+          "count": 3
+        },
+        {
+          "rank": 28,
+          "name": "real options theory",
+          "count": 3
+        },
+        {
+          "rank": 29,
+          "name": "subgame perfect equilibrium",
+          "count": 3
+        },
+        {
+          "rank": 30,
+          "name": "threshold model of collective behavior",
+          "count": 3
+        },
+        {
+          "rank": 31,
+          "name": "feedback loop destabilization",
+          "count": 3
+        },
+        {
+          "rank": 32,
+          "name": "revelation principle",
+          "count": 3
+        },
+        {
+          "rank": 33,
+          "name": "nash equilibrium disruption",
+          "count": 2
+        },
+        {
+          "rank": 34,
+          "name": "ultimatum game with credible commitment",
+          "count": 2
+        },
+        {
+          "rank": 35,
+          "name": "signaling equilibrium",
+          "count": 2
+        },
+        {
+          "rank": 36,
+          "name": "operant conditioning extinction model",
+          "count": 2
+        },
+        {
+          "rank": 37,
+          "name": "state space expansion",
+          "count": 2
+        },
+        {
+          "rank": 38,
+          "name": "multi objective optimization with constraint relaxation",
+          "count": 2
+        },
+        {
+          "rank": 39,
+          "name": "signaling theory with separating equilibrium",
+          "count": 2
+        },
+        {
+          "rank": 40,
+          "name": "constrained optimization with binding constraints",
+          "count": 2
+        },
+        {
+          "rank": 41,
+          "name": "lotka volterra competition model",
+          "count": 2
+        },
+        {
+          "rank": 42,
+          "name": "reference point shift in prospect theory",
+          "count": 2
+        },
+        {
+          "rank": 43,
+          "name": "stackelberg game with commitment device",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "stackelberg game with commitment",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "operant extinction",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "signaling game with costly revelation",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "lyapunov stability analysis",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "information entropy reduction model",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "variable ratio reinforcement schedule and extinction",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "cognitive load theory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "anthropic-claude-haiku-4.5",
+      "category": "Societal&Ethical",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\anthropic-claude-haiku-4.5\\Societal&Ethical\\probe_results.jsonl",
+      "unique_names": 1098,
+      "total_mentions": 1466,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling theory",
+          "count": 51
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 49
+        },
+        {
+          "rank": 3,
+          "name": "signaling game",
+          "count": 47
+        },
+        {
+          "rank": 4,
+          "name": "principal agent theory",
+          "count": 40
+        },
+        {
+          "rank": 5,
+          "name": "information asymmetry resolution",
+          "count": 26
+        },
+        {
+          "rank": 6,
+          "name": "optimal stopping theory",
+          "count": 22
+        },
+        {
+          "rank": 7,
+          "name": "constraint satisfaction problem",
+          "count": 15
+        },
+        {
+          "rank": 8,
+          "name": "mechanism design",
+          "count": 15
+        },
+        {
+          "rank": 9,
+          "name": "burden of proof reversal",
+          "count": 13
+        },
+        {
+          "rank": 10,
+          "name": "signal detection theory",
+          "count": 9
+        },
+        {
+          "rank": 11,
+          "name": "expected utility maximization",
+          "count": 9
+        },
+        {
+          "rank": 12,
+          "name": "real options theory",
+          "count": 8
+        },
+        {
+          "rank": 13,
+          "name": "value of information",
+          "count": 8
+        },
+        {
+          "rank": 14,
+          "name": "bayesian persuasion",
+          "count": 6
+        },
+        {
+          "rank": 15,
+          "name": "threshold model",
+          "count": 6
+        },
+        {
+          "rank": 16,
+          "name": "commitment device theory",
+          "count": 4
+        },
+        {
+          "rank": 17,
+          "name": "absorbing markov chain",
+          "count": 4
+        },
+        {
+          "rank": 18,
+          "name": "sequential game with information revelation",
+          "count": 4
+        },
+        {
+          "rank": 19,
+          "name": "state space partitioning",
+          "count": 3
+        },
+        {
+          "rank": 20,
+          "name": "incentive compatibility constraint",
+          "count": 3
+        },
+        {
+          "rank": 21,
+          "name": "information revelation principle",
+          "count": 3
+        },
+        {
+          "rank": 22,
+          "name": "revealed preference theory",
+          "count": 3
+        },
+        {
+          "rank": 23,
+          "name": "bayesian information revelation",
+          "count": 3
+        },
+        {
+          "rank": 24,
+          "name": "signaling game with costly commitment",
+          "count": 2
+        },
+        {
+          "rank": 25,
+          "name": "screening under adverse selection",
+          "count": 2
+        },
+        {
+          "rank": 26,
+          "name": "constrained optimization",
+          "count": 2
+        },
+        {
+          "rank": 27,
+          "name": "pareto optimality",
+          "count": 2
+        },
+        {
+          "rank": 28,
+          "name": "threshold dynamics",
+          "count": 2
+        },
+        {
+          "rank": 29,
+          "name": "cheap talk elimination via documentation",
+          "count": 2
+        },
+        {
+          "rank": 30,
+          "name": "stackelberg game with commitment",
+          "count": 2
+        },
+        {
+          "rank": 31,
+          "name": "dominant strategy elimination",
+          "count": 2
+        },
+        {
+          "rank": 32,
+          "name": "sequential game with commitment device",
+          "count": 2
+        },
+        {
+          "rank": 33,
+          "name": "sequential game with commitment",
+          "count": 2
+        },
+        {
+          "rank": 34,
+          "name": "adverse selection",
+          "count": 2
+        },
+        {
+          "rank": 35,
+          "name": "stackelberg commitment model",
+          "count": 2
+        },
+        {
+          "rank": 36,
+          "name": "sequential bargaining with outside option",
+          "count": 2
+        },
+        {
+          "rank": 37,
+          "name": "stackelberg game",
+          "count": 2
+        },
+        {
+          "rank": 38,
+          "name": "temporal commitment device",
+          "count": 2
+        },
+        {
+          "rank": 39,
+          "name": "bifurcation theory",
+          "count": 2
+        },
+        {
+          "rank": 40,
+          "name": "threshold dynamics with absorbing barrier",
+          "count": 2
+        },
+        {
+          "rank": 41,
+          "name": "signaling game with costly litigation",
+          "count": 2
+        },
+        {
+          "rank": 42,
+          "name": "threshold dynamics with state transition",
+          "count": 2
+        },
+        {
+          "rank": 43,
+          "name": "signaling theory with information asymmetry resolution",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "signaling theory under information asymmetry",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "signal to noise ratio optimization",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "parallel redundancy model",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "screening and revelation",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "sequential game with incomplete information",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "deterrence theory",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "screening and signaling equilibrium",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "deepseek",
+      "category": "Personal&Existential",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\deepseek\\Personal&Existential\\probe_results.jsonl",
+      "unique_names": 389,
+      "total_mentions": 1188,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "dynamical systems theory",
+          "count": 126
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 105
+        },
+        {
+          "rank": 3,
+          "name": "reinforcement learning",
+          "count": 51
+        },
+        {
+          "rank": 4,
+          "name": "feedback control",
+          "count": 49
+        },
+        {
+          "rank": 5,
+          "name": "control theory",
+          "count": 44
+        },
+        {
+          "rank": 6,
+          "name": "attractor dynamics",
+          "count": 41
+        },
+        {
+          "rank": 7,
+          "name": "bifurcation theory",
+          "count": 34
+        },
+        {
+          "rank": 8,
+          "name": "operant conditioning",
+          "count": 31
+        },
+        {
+          "rank": 9,
+          "name": "markov decision process",
+          "count": 23
+        },
+        {
+          "rank": 10,
+          "name": "dual process theory",
+          "count": 22
+        },
+        {
+          "rank": 11,
+          "name": "bistable system",
+          "count": 19
+        },
+        {
+          "rank": 12,
+          "name": "temporal difference learning",
+          "count": 18
+        },
+        {
+          "rank": 13,
+          "name": "rescorla wagner model",
+          "count": 18
+        },
+        {
+          "rank": 14,
+          "name": "signaling game",
+          "count": 17
+        },
+        {
+          "rank": 15,
+          "name": "constrained optimization",
+          "count": 16
+        },
+        {
+          "rank": 16,
+          "name": "hyperbolic discounting",
+          "count": 13
+        },
+        {
+          "rank": 17,
+          "name": "kalman filter",
+          "count": 10
+        },
+        {
+          "rank": 18,
+          "name": "bayesian decision theory",
+          "count": 9
+        },
+        {
+          "rank": 19,
+          "name": "positive feedback loop",
+          "count": 8
+        },
+        {
+          "rank": 20,
+          "name": "nash equilibrium",
+          "count": 8
+        },
+        {
+          "rank": 21,
+          "name": "threshold model",
+          "count": 8
+        },
+        {
+          "rank": 22,
+          "name": "expected utility theory",
+          "count": 7
+        },
+        {
+          "rank": 23,
+          "name": "resource allocation model",
+          "count": 7
+        },
+        {
+          "rank": 24,
+          "name": "commitment device",
+          "count": 7
+        },
+        {
+          "rank": 25,
+          "name": "coupled oscillator model",
+          "count": 7
+        },
+        {
+          "rank": 26,
+          "name": "multi armed bandit",
+          "count": 6
+        },
+        {
+          "rank": 27,
+          "name": "hysteresis",
+          "count": 6
+        },
+        {
+          "rank": 28,
+          "name": "memory reconsolidation",
+          "count": 6
+        },
+        {
+          "rank": 29,
+          "name": "habit formation model",
+          "count": 5
+        },
+        {
+          "rank": 30,
+          "name": "prospect theory",
+          "count": 5
+        },
+        {
+          "rank": 31,
+          "name": "cognitive load theory",
+          "count": 5
+        },
+        {
+          "rank": 32,
+          "name": "hebbian learning",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "satisficing",
+          "count": 5
+        },
+        {
+          "rank": 34,
+          "name": "second order cybernetics",
+          "count": 5
+        },
+        {
+          "rank": 35,
+          "name": "predictive coding",
+          "count": 5
+        },
+        {
+          "rank": 36,
+          "name": "game theory",
+          "count": 5
+        },
+        {
+          "rank": 37,
+          "name": "constraint satisfaction problem",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "dynamic programming",
+          "count": 4
+        },
+        {
+          "rank": 39,
+          "name": "signal detection theory",
+          "count": 4
+        },
+        {
+          "rank": 40,
+          "name": "nudge theory",
+          "count": 4
+        },
+        {
+          "rank": 41,
+          "name": "phase response curve",
+          "count": 4
+        },
+        {
+          "rank": 42,
+          "name": "rational choice theory",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "implementation intention",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "bayesian optimization",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "dimensionality reduction",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "attribution theory",
+          "count": 3
+        },
+        {
+          "rank": 47,
+          "name": "hopfield network",
+          "count": 3
+        },
+        {
+          "rank": 48,
+          "name": "system dynamics",
+          "count": 3
+        },
+        {
+          "rank": 49,
+          "name": "mechanism design",
+          "count": 3
+        },
+        {
+          "rank": 50,
+          "name": "reference dependent preferences",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "model": "deepseek",
+      "category": "Professional&Economic",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\deepseek\\Professional&Economic\\probe_results.jsonl",
+      "unique_names": 445,
+      "total_mentions": 1111,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 145
+        },
+        {
+          "rank": 2,
+          "name": "modern portfolio theory",
+          "count": 32
+        },
+        {
+          "rank": 3,
+          "name": "net present value",
+          "count": 30
+        },
+        {
+          "rank": 4,
+          "name": "bayesian inference",
+          "count": 27
+        },
+        {
+          "rank": 5,
+          "name": "optimal stopping problem",
+          "count": 25
+        },
+        {
+          "rank": 6,
+          "name": "dynamic programming",
+          "count": 24
+        },
+        {
+          "rank": 7,
+          "name": "nash bargaining solution",
+          "count": 24
+        },
+        {
+          "rank": 8,
+          "name": "real options analysis",
+          "count": 23
+        },
+        {
+          "rank": 9,
+          "name": "debt avalanche method",
+          "count": 23
+        },
+        {
+          "rank": 10,
+          "name": "signaling theory",
+          "count": 23
+        },
+        {
+          "rank": 11,
+          "name": "constrained optimization",
+          "count": 21
+        },
+        {
+          "rank": 12,
+          "name": "bayesian decision theory",
+          "count": 19
+        },
+        {
+          "rank": 13,
+          "name": "expected utility theory",
+          "count": 18
+        },
+        {
+          "rank": 14,
+          "name": "optimal control theory",
+          "count": 15
+        },
+        {
+          "rank": 15,
+          "name": "commitment device",
+          "count": 14
+        },
+        {
+          "rank": 16,
+          "name": "anchoring and adjustment heuristic",
+          "count": 14
+        },
+        {
+          "rank": 17,
+          "name": "linear programming",
+          "count": 10
+        },
+        {
+          "rank": 18,
+          "name": "principal agent theory",
+          "count": 9
+        },
+        {
+          "rank": 19,
+          "name": "multi armed bandit",
+          "count": 9
+        },
+        {
+          "rank": 20,
+          "name": "subgame perfect equilibrium",
+          "count": 9
+        },
+        {
+          "rank": 21,
+          "name": "compound interest model",
+          "count": 8
+        },
+        {
+          "rank": 22,
+          "name": "nash equilibrium",
+          "count": 8
+        },
+        {
+          "rank": 23,
+          "name": "mechanism design",
+          "count": 8
+        },
+        {
+          "rank": 24,
+          "name": "mental accounting",
+          "count": 8
+        },
+        {
+          "rank": 25,
+          "name": "markov decision process",
+          "count": 8
+        },
+        {
+          "rank": 26,
+          "name": "constraint relaxation",
+          "count": 7
+        },
+        {
+          "rank": 27,
+          "name": "life cycle hypothesis",
+          "count": 7
+        },
+        {
+          "rank": 28,
+          "name": "incomplete contracts theory",
+          "count": 7
+        },
+        {
+          "rank": 29,
+          "name": "prospect theory",
+          "count": 6
+        },
+        {
+          "rank": 30,
+          "name": "feature space transformation",
+          "count": 6
+        },
+        {
+          "rank": 31,
+          "name": "constraint satisfaction problem",
+          "count": 6
+        },
+        {
+          "rank": 32,
+          "name": "bifurcation theory",
+          "count": 6
+        },
+        {
+          "rank": 33,
+          "name": "capital asset pricing model",
+          "count": 5
+        },
+        {
+          "rank": 34,
+          "name": "arbitrage",
+          "count": 5
+        },
+        {
+          "rank": 35,
+          "name": "framing effect",
+          "count": 5
+        },
+        {
+          "rank": 36,
+          "name": "buffer stock model",
+          "count": 5
+        },
+        {
+          "rank": 37,
+          "name": "third party enforcement game",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "hyperbolic discounting",
+          "count": 4
+        },
+        {
+          "rank": 39,
+          "name": "cash flow matching",
+          "count": 4
+        },
+        {
+          "rank": 40,
+          "name": "cost benefit analysis",
+          "count": 4
+        },
+        {
+          "rank": 41,
+          "name": "weak tie theory",
+          "count": 4
+        },
+        {
+          "rank": 42,
+          "name": "dollar cost averaging",
+          "count": 4
+        },
+        {
+          "rank": 43,
+          "name": "efficient market hypothesis",
+          "count": 4
+        },
+        {
+          "rank": 44,
+          "name": "folk theorem",
+          "count": 4
+        },
+        {
+          "rank": 45,
+          "name": "nudge theory",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "salience theory",
+          "count": 3
+        },
+        {
+          "rank": 47,
+          "name": "tax efficient asset location",
+          "count": 3
+        },
+        {
+          "rank": 48,
+          "name": "simulated annealing",
+          "count": 3
+        },
+        {
+          "rank": 49,
+          "name": "focal point",
+          "count": 3
+        },
+        {
+          "rank": 50,
+          "name": "threshold model",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "model": "deepseek",
+      "category": "Relational&Intimate",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\deepseek\\Relational&Intimate\\probe_results.jsonl",
+      "unique_names": 391,
+      "total_mentions": 1194,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "dynamical systems theory",
+          "count": 119
+        },
+        {
+          "rank": 2,
+          "name": "signaling game",
+          "count": 105
+        },
+        {
+          "rank": 3,
+          "name": "bayesian inference",
+          "count": 56
+        },
+        {
+          "rank": 4,
+          "name": "extinction",
+          "count": 52
+        },
+        {
+          "rank": 5,
+          "name": "nash equilibrium",
+          "count": 39
+        },
+        {
+          "rank": 6,
+          "name": "bifurcation theory",
+          "count": 32
+        },
+        {
+          "rank": 7,
+          "name": "optimal stopping",
+          "count": 30
+        },
+        {
+          "rank": 8,
+          "name": "negative feedback control",
+          "count": 28
+        },
+        {
+          "rank": 9,
+          "name": "operant conditioning",
+          "count": 25
+        },
+        {
+          "rank": 10,
+          "name": "dual process theory",
+          "count": 22
+        },
+        {
+          "rank": 11,
+          "name": "reinforcement learning",
+          "count": 21
+        },
+        {
+          "rank": 12,
+          "name": "mechanism design",
+          "count": 19
+        },
+        {
+          "rank": 13,
+          "name": "prospect theory",
+          "count": 17
+        },
+        {
+          "rank": 14,
+          "name": "subgame perfect equilibrium",
+          "count": 15
+        },
+        {
+          "rank": 15,
+          "name": "cognitive load theory",
+          "count": 14
+        },
+        {
+          "rank": 16,
+          "name": "constrained optimization",
+          "count": 13
+        },
+        {
+          "rank": 17,
+          "name": "trigger strategy",
+          "count": 12
+        },
+        {
+          "rank": 18,
+          "name": "ultimatum game",
+          "count": 12
+        },
+        {
+          "rank": 19,
+          "name": "variable ratio reinforcement schedule",
+          "count": 11
+        },
+        {
+          "rank": 20,
+          "name": "cognitive dissonance theory",
+          "count": 11
+        },
+        {
+          "rank": 21,
+          "name": "expected utility theory",
+          "count": 10
+        },
+        {
+          "rank": 22,
+          "name": "folk theorem",
+          "count": 9
+        },
+        {
+          "rank": 23,
+          "name": "control theory",
+          "count": 8
+        },
+        {
+          "rank": 24,
+          "name": "revealed preference",
+          "count": 7
+        },
+        {
+          "rank": 25,
+          "name": "correlated equilibrium",
+          "count": 7
+        },
+        {
+          "rank": 26,
+          "name": "contract theory",
+          "count": 7
+        },
+        {
+          "rank": 27,
+          "name": "threshold model",
+          "count": 6
+        },
+        {
+          "rank": 28,
+          "name": "classical conditioning",
+          "count": 6
+        },
+        {
+          "rank": 29,
+          "name": "hyperbolic discounting",
+          "count": 6
+        },
+        {
+          "rank": 30,
+          "name": "nash bargaining solution",
+          "count": 6
+        },
+        {
+          "rank": 31,
+          "name": "hebbian learning",
+          "count": 5
+        },
+        {
+          "rank": 32,
+          "name": "feedback loop disruption",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "common knowledge",
+          "count": 5
+        },
+        {
+          "rank": 34,
+          "name": "schelling point",
+          "count": 5
+        },
+        {
+          "rank": 35,
+          "name": "rescorla wagner model",
+          "count": 5
+        },
+        {
+          "rank": 36,
+          "name": "tit for tat",
+          "count": 5
+        },
+        {
+          "rank": 37,
+          "name": "sequential equilibrium",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "hysteresis",
+          "count": 4
+        },
+        {
+          "rank": 39,
+          "name": "real options analysis",
+          "count": 4
+        },
+        {
+          "rank": 40,
+          "name": "perturbation analysis",
+          "count": 3
+        },
+        {
+          "rank": 41,
+          "name": "extensive form game",
+          "count": 3
+        },
+        {
+          "rank": 42,
+          "name": "commitment device",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "sunk cost fallacy",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "sequential decision making under uncertainty",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "game theory",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "phase transition",
+          "count": 3
+        },
+        {
+          "rank": 47,
+          "name": "network theory",
+          "count": 3
+        },
+        {
+          "rank": 48,
+          "name": "screening game",
+          "count": 3
+        },
+        {
+          "rank": 49,
+          "name": "exponential decay",
+          "count": 3
+        },
+        {
+          "rank": 50,
+          "name": "coordination game",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "model": "deepseek",
+      "category": "Societal&Ethical",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\deepseek\\Societal&Ethical\\probe_results.jsonl",
+      "unique_names": 355,
+      "total_mentions": 1048,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 179
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 44
+        },
+        {
+          "rank": 3,
+          "name": "nash equilibrium",
+          "count": 43
+        },
+        {
+          "rank": 4,
+          "name": "principal agent theory",
+          "count": 35
+        },
+        {
+          "rank": 5,
+          "name": "expected utility theory",
+          "count": 33
+        },
+        {
+          "rank": 6,
+          "name": "mechanism design",
+          "count": 24
+        },
+        {
+          "rank": 7,
+          "name": "bayesian inference",
+          "count": 22
+        },
+        {
+          "rank": 8,
+          "name": "subgame perfect equilibrium",
+          "count": 21
+        },
+        {
+          "rank": 9,
+          "name": "third party enforcement game",
+          "count": 18
+        },
+        {
+          "rank": 10,
+          "name": "deterrence theory",
+          "count": 17
+        },
+        {
+          "rank": 11,
+          "name": "constrained optimization",
+          "count": 16
+        },
+        {
+          "rank": 12,
+          "name": "optimal stopping theory",
+          "count": 15
+        },
+        {
+          "rank": 13,
+          "name": "bayesian persuasion",
+          "count": 14
+        },
+        {
+          "rank": 14,
+          "name": "threshold model",
+          "count": 12
+        },
+        {
+          "rank": 15,
+          "name": "nash bargaining solution",
+          "count": 10
+        },
+        {
+          "rank": 16,
+          "name": "feedback control",
+          "count": 9
+        },
+        {
+          "rank": 17,
+          "name": "bayesian decision theory",
+          "count": 8
+        },
+        {
+          "rank": 18,
+          "name": "folk theorem",
+          "count": 8
+        },
+        {
+          "rank": 19,
+          "name": "cost benefit analysis",
+          "count": 8
+        },
+        {
+          "rank": 20,
+          "name": "markov decision process",
+          "count": 8
+        },
+        {
+          "rank": 21,
+          "name": "common knowledge",
+          "count": 8
+        },
+        {
+          "rank": 22,
+          "name": "bayesian nash equilibrium",
+          "count": 8
+        },
+        {
+          "rank": 23,
+          "name": "sequential equilibrium",
+          "count": 8
+        },
+        {
+          "rank": 24,
+          "name": "sequential game",
+          "count": 8
+        },
+        {
+          "rank": 25,
+          "name": "repeated game with trigger strategy",
+          "count": 8
+        },
+        {
+          "rank": 26,
+          "name": "bargaining model",
+          "count": 7
+        },
+        {
+          "rank": 27,
+          "name": "bifurcation theory",
+          "count": 7
+        },
+        {
+          "rank": 28,
+          "name": "decision tree",
+          "count": 6
+        },
+        {
+          "rank": 29,
+          "name": "coase theorem",
+          "count": 6
+        },
+        {
+          "rank": 30,
+          "name": "game theory",
+          "count": 6
+        },
+        {
+          "rank": 31,
+          "name": "absorbing markov chain",
+          "count": 6
+        },
+        {
+          "rank": 32,
+          "name": "focal point",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "prospect theory",
+          "count": 5
+        },
+        {
+          "rank": 34,
+          "name": "framing effect",
+          "count": 5
+        },
+        {
+          "rank": 35,
+          "name": "sequential game with perfect information",
+          "count": 5
+        },
+        {
+          "rank": 36,
+          "name": "control theory",
+          "count": 5
+        },
+        {
+          "rank": 37,
+          "name": "complete information game",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "sequential game with imperfect information",
+          "count": 4
+        },
+        {
+          "rank": 39,
+          "name": "correlated equilibrium",
+          "count": 4
+        },
+        {
+          "rank": 40,
+          "name": "signal detection theory",
+          "count": 4
+        },
+        {
+          "rank": 41,
+          "name": "coordination game",
+          "count": 4
+        },
+        {
+          "rank": 42,
+          "name": "commitment device",
+          "count": 4
+        },
+        {
+          "rank": 43,
+          "name": "screening game",
+          "count": 4
+        },
+        {
+          "rank": 44,
+          "name": "credible commitment",
+          "count": 4
+        },
+        {
+          "rank": 45,
+          "name": "bayesian game",
+          "count": 4
+        },
+        {
+          "rank": 46,
+          "name": "dynamic programming",
+          "count": 4
+        },
+        {
+          "rank": 47,
+          "name": "bounded rationality",
+          "count": 3
+        },
+        {
+          "rank": 48,
+          "name": "operant conditioning",
+          "count": 3
+        },
+        {
+          "rank": 49,
+          "name": "anchoring and adjustment heuristic",
+          "count": 3
+        },
+        {
+          "rank": 50,
+          "name": "constraint satisfaction problem",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "model": "doubao-seed-2-0-lite-260215",
+      "category": "Personal&Existential",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\doubao-seed-2-0-lite-260215\\Personal&Existential\\probe_results.jsonl",
+      "unique_names": 172,
+      "total_mentions": 1023,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "positive feedback loop",
+          "count": 323
+        },
+        {
+          "rank": 2,
+          "name": "negative feedback loop",
+          "count": 105
+        },
+        {
+          "rank": 3,
+          "name": "bayesian inference",
+          "count": 96
+        },
+        {
+          "rank": 4,
+          "name": "constrained optimization",
+          "count": 82
+        },
+        {
+          "rank": 5,
+          "name": "gradient descent",
+          "count": 70
+        },
+        {
+          "rank": 6,
+          "name": "attractor dynamics",
+          "count": 28
+        },
+        {
+          "rank": 7,
+          "name": "reinforcement learning",
+          "count": 27
+        },
+        {
+          "rank": 8,
+          "name": "multiple equilibria",
+          "count": 18
+        },
+        {
+          "rank": 9,
+          "name": "multi armed bandit",
+          "count": 12
+        },
+        {
+          "rank": 10,
+          "name": "path dependence",
+          "count": 11
+        },
+        {
+          "rank": 11,
+          "name": "multistability",
+          "count": 9
+        },
+        {
+          "rank": 12,
+          "name": "sequential hypothesis testing",
+          "count": 7
+        },
+        {
+          "rank": 13,
+          "name": "asymmetric information",
+          "count": 7
+        },
+        {
+          "rank": 14,
+          "name": "threshold model",
+          "count": 7
+        },
+        {
+          "rank": 15,
+          "name": "confirmation bias",
+          "count": 7
+        },
+        {
+          "rank": 16,
+          "name": "stock and flow model",
+          "count": 6
+        },
+        {
+          "rank": 17,
+          "name": "constraint relaxation",
+          "count": 6
+        },
+        {
+          "rank": 18,
+          "name": "signaling model",
+          "count": 6
+        },
+        {
+          "rank": 19,
+          "name": "absorbing markov chain",
+          "count": 4
+        },
+        {
+          "rank": 20,
+          "name": "limited capacity model",
+          "count": 4
+        },
+        {
+          "rank": 21,
+          "name": "anchoring",
+          "count": 4
+        },
+        {
+          "rank": 22,
+          "name": "hyperbolic discounting",
+          "count": 4
+        },
+        {
+          "rank": 23,
+          "name": "bounded rationality",
+          "count": 4
+        },
+        {
+          "rank": 24,
+          "name": "simulated annealing",
+          "count": 4
+        },
+        {
+          "rank": 25,
+          "name": "ironic process theory",
+          "count": 3
+        },
+        {
+          "rank": 26,
+          "name": "minimum energy principle",
+          "count": 3
+        },
+        {
+          "rank": 27,
+          "name": "cumulative risk model",
+          "count": 3
+        },
+        {
+          "rank": 28,
+          "name": "incremental optimization",
+          "count": 3
+        },
+        {
+          "rank": 29,
+          "name": "local optimum",
+          "count": 2
+        },
+        {
+          "rank": 30,
+          "name": "dynamic programming",
+          "count": 2
+        },
+        {
+          "rank": 31,
+          "name": "matching theory",
+          "count": 2
+        },
+        {
+          "rank": 32,
+          "name": "hebbian learning",
+          "count": 2
+        },
+        {
+          "rank": 33,
+          "name": "adiabatic approximation",
+          "count": 2
+        },
+        {
+          "rank": 34,
+          "name": "sandpile model",
+          "count": 2
+        },
+        {
+          "rank": 35,
+          "name": "free energy principle",
+          "count": 2
+        },
+        {
+          "rank": 36,
+          "name": "allostatic load model",
+          "count": 2
+        },
+        {
+          "rank": 37,
+          "name": "feedback loop",
+          "count": 2
+        },
+        {
+          "rank": 38,
+          "name": "reference dependence",
+          "count": 2
+        },
+        {
+          "rank": 39,
+          "name": "fitness landscape",
+          "count": 2
+        },
+        {
+          "rank": 40,
+          "name": "damped harmonic oscillator",
+          "count": 2
+        },
+        {
+          "rank": 41,
+          "name": "greedy algorithm",
+          "count": 2
+        },
+        {
+          "rank": 42,
+          "name": "zeigarnik effect",
+          "count": 2
+        },
+        {
+          "rank": 43,
+          "name": "hedonic treadmill",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "marginal analysis",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "dynamic equilibrium",
+          "count": 1
+        },
+        {
+          "rank": 46,
+          "name": "fixed point attractor",
+          "count": 1
+        },
+        {
+          "rank": 47,
+          "name": "real option",
+          "count": 1
+        },
+        {
+          "rank": 48,
+          "name": "successive approximation",
+          "count": 1
+        },
+        {
+          "rank": 49,
+          "name": "capacity model of attention",
+          "count": 1
+        },
+        {
+          "rank": 50,
+          "name": "all or nothing bias",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "doubao-seed-2-0-lite-260215",
+      "category": "Professional&Economic",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\doubao-seed-2-0-lite-260215\\Professional&Economic\\probe_results.jsonl",
+      "unique_names": 276,
+      "total_mentions": 1020,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling model",
+          "count": 136
+        },
+        {
+          "rank": 2,
+          "name": "constrained optimization",
+          "count": 90
+        },
+        {
+          "rank": 3,
+          "name": "real options",
+          "count": 46
+        },
+        {
+          "rank": 4,
+          "name": "bayesian inference",
+          "count": 44
+        },
+        {
+          "rank": 5,
+          "name": "compound interest",
+          "count": 44
+        },
+        {
+          "rank": 6,
+          "name": "nash bargaining solution",
+          "count": 36
+        },
+        {
+          "rank": 7,
+          "name": "modern portfolio theory",
+          "count": 33
+        },
+        {
+          "rank": 8,
+          "name": "net present value",
+          "count": 32
+        },
+        {
+          "rank": 9,
+          "name": "positive feedback loop",
+          "count": 19
+        },
+        {
+          "rank": 10,
+          "name": "roy safety first criterion",
+          "count": 19
+        },
+        {
+          "rank": 11,
+          "name": "principal agent theory",
+          "count": 19
+        },
+        {
+          "rank": 12,
+          "name": "expected utility theory",
+          "count": 18
+        },
+        {
+          "rank": 13,
+          "name": "buffer stock model",
+          "count": 18
+        },
+        {
+          "rank": 14,
+          "name": "anchoring heuristic",
+          "count": 16
+        },
+        {
+          "rank": 15,
+          "name": "multi armed bandit",
+          "count": 15
+        },
+        {
+          "rank": 16,
+          "name": "debt avalanche method",
+          "count": 15
+        },
+        {
+          "rank": 17,
+          "name": "search theory",
+          "count": 13
+        },
+        {
+          "rank": 18,
+          "name": "minimax regret",
+          "count": 13
+        },
+        {
+          "rank": 19,
+          "name": "intertemporal optimization",
+          "count": 12
+        },
+        {
+          "rank": 20,
+          "name": "matching theory",
+          "count": 12
+        },
+        {
+          "rank": 21,
+          "name": "cash flow matching",
+          "count": 12
+        },
+        {
+          "rank": 22,
+          "name": "dynamic programming",
+          "count": 7
+        },
+        {
+          "rank": 23,
+          "name": "comparative advantage",
+          "count": 6
+        },
+        {
+          "rank": 24,
+          "name": "outside option principle",
+          "count": 6
+        },
+        {
+          "rank": 25,
+          "name": "path dependence",
+          "count": 6
+        },
+        {
+          "rank": 26,
+          "name": "exponential growth",
+          "count": 6
+        },
+        {
+          "rank": 27,
+          "name": "greedy algorithm",
+          "count": 6
+        },
+        {
+          "rank": 28,
+          "name": "pareto principle",
+          "count": 5
+        },
+        {
+          "rank": 29,
+          "name": "negative feedback loop",
+          "count": 5
+        },
+        {
+          "rank": 30,
+          "name": "sequential bargaining",
+          "count": 5
+        },
+        {
+          "rank": 31,
+          "name": "sequential decision making",
+          "count": 5
+        },
+        {
+          "rank": 32,
+          "name": "optimal stopping theory",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "constraint satisfaction problem",
+          "count": 4
+        },
+        {
+          "rank": 34,
+          "name": "kelly criterion",
+          "count": 4
+        },
+        {
+          "rank": 35,
+          "name": "efficient market hypothesis",
+          "count": 4
+        },
+        {
+          "rank": 36,
+          "name": "reference dependence",
+          "count": 3
+        },
+        {
+          "rank": 37,
+          "name": "signal detection theory",
+          "count": 3
+        },
+        {
+          "rank": 38,
+          "name": "queueing theory",
+          "count": 3
+        },
+        {
+          "rank": 39,
+          "name": "hotelling model",
+          "count": 3
+        },
+        {
+          "rank": 40,
+          "name": "capital rationing",
+          "count": 3
+        },
+        {
+          "rank": 41,
+          "name": "revelation principle",
+          "count": 3
+        },
+        {
+          "rank": 42,
+          "name": "fico scoring model",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "screening model",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "tax arbitrage",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "mental accounting",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "sequential optimization",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "threshold model",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "time value of money",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "risk return tradeoff",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "linear additive model",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "doubao-seed-2-0-lite-260215",
+      "category": "Relational&Intimate",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\doubao-seed-2-0-lite-260215\\Relational&Intimate\\probe_results.jsonl",
+      "unique_names": 167,
+      "total_mentions": 962,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "positive feedback loop",
+          "count": 199
+        },
+        {
+          "rank": 2,
+          "name": "signaling game",
+          "count": 112
+        },
+        {
+          "rank": 3,
+          "name": "bayesian inference",
+          "count": 92
+        },
+        {
+          "rank": 4,
+          "name": "optimal stopping",
+          "count": 54
+        },
+        {
+          "rank": 5,
+          "name": "screening model",
+          "count": 29
+        },
+        {
+          "rank": 6,
+          "name": "exponential decay",
+          "count": 26
+        },
+        {
+          "rank": 7,
+          "name": "path dependence",
+          "count": 24
+        },
+        {
+          "rank": 8,
+          "name": "coordination game",
+          "count": 24
+        },
+        {
+          "rank": 9,
+          "name": "sunk cost fallacy",
+          "count": 23
+        },
+        {
+          "rank": 10,
+          "name": "asymmetric information",
+          "count": 21
+        },
+        {
+          "rank": 11,
+          "name": "ultimatum game",
+          "count": 18
+        },
+        {
+          "rank": 12,
+          "name": "negative feedback loop",
+          "count": 18
+        },
+        {
+          "rank": 13,
+          "name": "nash equilibrium",
+          "count": 16
+        },
+        {
+          "rank": 14,
+          "name": "credible commitment",
+          "count": 15
+        },
+        {
+          "rank": 15,
+          "name": "constrained optimization",
+          "count": 15
+        },
+        {
+          "rank": 16,
+          "name": "minimax regret",
+          "count": 11
+        },
+        {
+          "rank": 17,
+          "name": "revelation principle",
+          "count": 11
+        },
+        {
+          "rank": 18,
+          "name": "extinction",
+          "count": 10
+        },
+        {
+          "rank": 19,
+          "name": "zeigarnik effect",
+          "count": 10
+        },
+        {
+          "rank": 20,
+          "name": "trigger strategy",
+          "count": 9
+        },
+        {
+          "rank": 21,
+          "name": "nash bargaining solution",
+          "count": 7
+        },
+        {
+          "rank": 22,
+          "name": "multi armed bandit",
+          "count": 7
+        },
+        {
+          "rank": 23,
+          "name": "option value",
+          "count": 6
+        },
+        {
+          "rank": 24,
+          "name": "intermittent reinforcement",
+          "count": 6
+        },
+        {
+          "rank": 25,
+          "name": "modern portfolio theory",
+          "count": 6
+        },
+        {
+          "rank": 26,
+          "name": "incentive compatibility",
+          "count": 5
+        },
+        {
+          "rank": 27,
+          "name": "anchoring effect",
+          "count": 5
+        },
+        {
+          "rank": 28,
+          "name": "common knowledge",
+          "count": 5
+        },
+        {
+          "rank": 29,
+          "name": "reinforcement learning",
+          "count": 5
+        },
+        {
+          "rank": 30,
+          "name": "cheap talk",
+          "count": 5
+        },
+        {
+          "rank": 31,
+          "name": "expected utility maximization",
+          "count": 4
+        },
+        {
+          "rank": 32,
+          "name": "pareto improvement",
+          "count": 4
+        },
+        {
+          "rank": 33,
+          "name": "graph cut",
+          "count": 3
+        },
+        {
+          "rank": 34,
+          "name": "binary choice model",
+          "count": 3
+        },
+        {
+          "rank": 35,
+          "name": "absorbing markov chain",
+          "count": 3
+        },
+        {
+          "rank": 36,
+          "name": "stable matching",
+          "count": 3
+        },
+        {
+          "rank": 37,
+          "name": "habituation",
+          "count": 3
+        },
+        {
+          "rank": 38,
+          "name": "hyperbolic discounting",
+          "count": 2
+        },
+        {
+          "rank": 39,
+          "name": "gradient descent",
+          "count": 2
+        },
+        {
+          "rank": 40,
+          "name": "attractor dynamics",
+          "count": 2
+        },
+        {
+          "rank": 41,
+          "name": "phase transition",
+          "count": 2
+        },
+        {
+          "rank": 42,
+          "name": "availability heuristic",
+          "count": 2
+        },
+        {
+          "rank": 43,
+          "name": "finite horizon game",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "information disclosure",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "stop loss rule",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "ironic process theory",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "signal to noise ratio",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "free rider problem",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "structural balance theory",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "sequential hypothesis testing",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "doubao-seed-2-0-lite-260215",
+      "category": "Societal&Ethical",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\doubao-seed-2-0-lite-260215\\Societal&Ethical\\probe_results.jsonl",
+      "unique_names": 258,
+      "total_mentions": 903,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 141
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 108
+        },
+        {
+          "rank": 3,
+          "name": "principal agent theory",
+          "count": 50
+        },
+        {
+          "rank": 4,
+          "name": "expected utility theory",
+          "count": 35
+        },
+        {
+          "rank": 5,
+          "name": "minimax",
+          "count": 31
+        },
+        {
+          "rank": 6,
+          "name": "nash bargaining solution",
+          "count": 29
+        },
+        {
+          "rank": 7,
+          "name": "subgame perfect equilibrium",
+          "count": 26
+        },
+        {
+          "rank": 8,
+          "name": "constrained optimization",
+          "count": 26
+        },
+        {
+          "rank": 9,
+          "name": "positive feedback loop",
+          "count": 19
+        },
+        {
+          "rank": 10,
+          "name": "constraint satisfaction problem",
+          "count": 19
+        },
+        {
+          "rank": 11,
+          "name": "asymmetric information",
+          "count": 13
+        },
+        {
+          "rank": 12,
+          "name": "sequential game",
+          "count": 13
+        },
+        {
+          "rank": 13,
+          "name": "deterrence model",
+          "count": 12
+        },
+        {
+          "rank": 14,
+          "name": "signal detection theory",
+          "count": 10
+        },
+        {
+          "rank": 15,
+          "name": "threshold model",
+          "count": 9
+        },
+        {
+          "rank": 16,
+          "name": "nash equilibrium",
+          "count": 9
+        },
+        {
+          "rank": 17,
+          "name": "decision tree analysis",
+          "count": 8
+        },
+        {
+          "rank": 18,
+          "name": "credible commitment",
+          "count": 8
+        },
+        {
+          "rank": 19,
+          "name": "coase theorem",
+          "count": 7
+        },
+        {
+          "rank": 20,
+          "name": "hypothesis testing",
+          "count": 7
+        },
+        {
+          "rank": 21,
+          "name": "shortest path problem",
+          "count": 7
+        },
+        {
+          "rank": 22,
+          "name": "real option",
+          "count": 6
+        },
+        {
+          "rank": 23,
+          "name": "sir model",
+          "count": 6
+        },
+        {
+          "rank": 24,
+          "name": "sequential decision making",
+          "count": 5
+        },
+        {
+          "rank": 25,
+          "name": "dynamic programming",
+          "count": 5
+        },
+        {
+          "rank": 26,
+          "name": "absorbing markov chain",
+          "count": 5
+        },
+        {
+          "rank": 27,
+          "name": "information cascade",
+          "count": 5
+        },
+        {
+          "rank": 28,
+          "name": "priority queueing model",
+          "count": 5
+        },
+        {
+          "rank": 29,
+          "name": "path dependence",
+          "count": 5
+        },
+        {
+          "rank": 30,
+          "name": "optimal stopping",
+          "count": 5
+        },
+        {
+          "rank": 31,
+          "name": "bayesian decision theory",
+          "count": 5
+        },
+        {
+          "rank": 32,
+          "name": "markov decision process",
+          "count": 4
+        },
+        {
+          "rank": 33,
+          "name": "contingent contract",
+          "count": 4
+        },
+        {
+          "rank": 34,
+          "name": "dempster shafer theory",
+          "count": 4
+        },
+        {
+          "rank": 35,
+          "name": "cost benefit analysis",
+          "count": 4
+        },
+        {
+          "rank": 36,
+          "name": "pareto improvement",
+          "count": 4
+        },
+        {
+          "rank": 37,
+          "name": "prisoner's dilemma",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "queueing theory",
+          "count": 3
+        },
+        {
+          "rank": 39,
+          "name": "replicator dynamics",
+          "count": 3
+        },
+        {
+          "rank": 40,
+          "name": "public goods game",
+          "count": 3
+        },
+        {
+          "rank": 41,
+          "name": "error correction model",
+          "count": 3
+        },
+        {
+          "rank": 42,
+          "name": "first mover advantage",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "rubinstein bargaining model",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "repeated game",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "state elimination",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "structural causal model",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "median voter theorem",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "audit game",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "risk pooling",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "coordination game",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "google-gemini-2.5-flash",
+      "category": "Personal&Existential",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\google-gemini-2.5-flash\\Personal&Existential\\probe_results.jsonl",
+      "unique_names": 303,
+      "total_mentions": 1395,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "control theory",
+          "count": 221
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 181
+        },
+        {
+          "rank": 3,
+          "name": "dynamical systems theory",
+          "count": 163
+        },
+        {
+          "rank": 4,
+          "name": "reinforcement learning",
+          "count": 158
+        },
+        {
+          "rank": 5,
+          "name": "optimization theory",
+          "count": 37
+        },
+        {
+          "rank": 6,
+          "name": "expected utility theory",
+          "count": 31
+        },
+        {
+          "rank": 7,
+          "name": "operant conditioning",
+          "count": 27
+        },
+        {
+          "rank": 8,
+          "name": "social network theory",
+          "count": 26
+        },
+        {
+          "rank": 9,
+          "name": "cognitive bias modification",
+          "count": 25
+        },
+        {
+          "rank": 10,
+          "name": "signaling game",
+          "count": 19
+        },
+        {
+          "rank": 11,
+          "name": "decision theory",
+          "count": 18
+        },
+        {
+          "rank": 12,
+          "name": "cognitive behavioral model",
+          "count": 17
+        },
+        {
+          "rank": 13,
+          "name": "prospect theory",
+          "count": 15
+        },
+        {
+          "rank": 14,
+          "name": "self efficacy theory",
+          "count": 13
+        },
+        {
+          "rank": 15,
+          "name": "information asymmetry",
+          "count": 12
+        },
+        {
+          "rank": 16,
+          "name": "hyperbolic discounting",
+          "count": 12
+        },
+        {
+          "rank": 17,
+          "name": "markov decision process",
+          "count": 10
+        },
+        {
+          "rank": 18,
+          "name": "homeostasis",
+          "count": 10
+        },
+        {
+          "rank": 19,
+          "name": "classical conditioning",
+          "count": 10
+        },
+        {
+          "rank": 20,
+          "name": "feedback loop",
+          "count": 9
+        },
+        {
+          "rank": 21,
+          "name": "game theory",
+          "count": 8
+        },
+        {
+          "rank": 22,
+          "name": "cognitive biases and heuristics",
+          "count": 8
+        },
+        {
+          "rank": 23,
+          "name": "cognitive appraisal theory",
+          "count": 8
+        },
+        {
+          "rank": 24,
+          "name": "information theory",
+          "count": 7
+        },
+        {
+          "rank": 25,
+          "name": "cognitive dissonance theory",
+          "count": 5
+        },
+        {
+          "rank": 26,
+          "name": "hebbian learning",
+          "count": 5
+        },
+        {
+          "rank": 27,
+          "name": "social cognitive theory",
+          "count": 5
+        },
+        {
+          "rank": 28,
+          "name": "self determination theory",
+          "count": 4
+        },
+        {
+          "rank": 29,
+          "name": "social support theory",
+          "count": 4
+        },
+        {
+          "rank": 30,
+          "name": "dynamic programming",
+          "count": 4
+        },
+        {
+          "rank": 31,
+          "name": "threshold model",
+          "count": 4
+        },
+        {
+          "rank": 32,
+          "name": "activation energy model",
+          "count": 3
+        },
+        {
+          "rank": 33,
+          "name": "expectancy value theory",
+          "count": 3
+        },
+        {
+          "rank": 34,
+          "name": "optimal stopping problem",
+          "count": 3
+        },
+        {
+          "rank": 35,
+          "name": "transaction cost economics",
+          "count": 3
+        },
+        {
+          "rank": 36,
+          "name": "circadian rhythm entrainment",
+          "count": 3
+        },
+        {
+          "rank": 37,
+          "name": "principal agent theory",
+          "count": 3
+        },
+        {
+          "rank": 38,
+          "name": "signaling theory",
+          "count": 2
+        },
+        {
+          "rank": 39,
+          "name": "monoamine hypothesis of depression",
+          "count": 2
+        },
+        {
+          "rank": 40,
+          "name": "signaling game theory",
+          "count": 2
+        },
+        {
+          "rank": 41,
+          "name": "system dynamics feedback loops",
+          "count": 2
+        },
+        {
+          "rank": 42,
+          "name": "dynamic system theory",
+          "count": 2
+        },
+        {
+          "rank": 43,
+          "name": "resource allocation model",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "nonlinear dynamical systems",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "learned helplessness model",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "utility maximization theory",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "behavioral economics",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "phase transition",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "social learning theory",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "predictive coding",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "google-gemini-2.5-flash",
+      "category": "Professional&Economic",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\google-gemini-2.5-flash\\Professional&Economic\\probe_results.jsonl",
+      "unique_names": 339,
+      "total_mentions": 1326,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 113
+        },
+        {
+          "rank": 2,
+          "name": "signaling theory",
+          "count": 70
+        },
+        {
+          "rank": 3,
+          "name": "compound interest",
+          "count": 51
+        },
+        {
+          "rank": 4,
+          "name": "modern portfolio theory",
+          "count": 42
+        },
+        {
+          "rank": 5,
+          "name": "bargaining game theory",
+          "count": 40
+        },
+        {
+          "rank": 6,
+          "name": "human capital theory",
+          "count": 40
+        },
+        {
+          "rank": 7,
+          "name": "bayesian inference",
+          "count": 38
+        },
+        {
+          "rank": 8,
+          "name": "expected utility theory",
+          "count": 38
+        },
+        {
+          "rank": 9,
+          "name": "portfolio optimization",
+          "count": 32
+        },
+        {
+          "rank": 10,
+          "name": "resource allocation optimization",
+          "count": 31
+        },
+        {
+          "rank": 11,
+          "name": "dynamic programming",
+          "count": 28
+        },
+        {
+          "rank": 12,
+          "name": "information asymmetry",
+          "count": 28
+        },
+        {
+          "rank": 13,
+          "name": "optimal stopping problem",
+          "count": 26
+        },
+        {
+          "rank": 14,
+          "name": "game theory",
+          "count": 25
+        },
+        {
+          "rank": 15,
+          "name": "cost benefit analysis",
+          "count": 24
+        },
+        {
+          "rank": 16,
+          "name": "control theory",
+          "count": 23
+        },
+        {
+          "rank": 17,
+          "name": "net present value",
+          "count": 23
+        },
+        {
+          "rank": 18,
+          "name": "decision theory",
+          "count": 19
+        },
+        {
+          "rank": 19,
+          "name": "network theory",
+          "count": 16
+        },
+        {
+          "rank": 20,
+          "name": "principal agent theory",
+          "count": 16
+        },
+        {
+          "rank": 21,
+          "name": "markov decision process",
+          "count": 15
+        },
+        {
+          "rank": 22,
+          "name": "real options theory",
+          "count": 14
+        },
+        {
+          "rank": 23,
+          "name": "risk management",
+          "count": 14
+        },
+        {
+          "rank": 24,
+          "name": "debt avalanche method",
+          "count": 13
+        },
+        {
+          "rank": 25,
+          "name": "constrained optimization",
+          "count": 13
+        },
+        {
+          "rank": 26,
+          "name": "anchoring and adjustment heuristic",
+          "count": 12
+        },
+        {
+          "rank": 27,
+          "name": "marginal utility theory",
+          "count": 12
+        },
+        {
+          "rank": 28,
+          "name": "matching theory",
+          "count": 11
+        },
+        {
+          "rank": 29,
+          "name": "information theory",
+          "count": 11
+        },
+        {
+          "rank": 30,
+          "name": "multi attribute utility theory",
+          "count": 10
+        },
+        {
+          "rank": 31,
+          "name": "multi objective optimization",
+          "count": 10
+        },
+        {
+          "rank": 32,
+          "name": "multi armed bandit problem",
+          "count": 10
+        },
+        {
+          "rank": 33,
+          "name": "optimization problem",
+          "count": 9
+        },
+        {
+          "rank": 34,
+          "name": "dollar cost averaging",
+          "count": 9
+        },
+        {
+          "rank": 35,
+          "name": "utility maximization",
+          "count": 9
+        },
+        {
+          "rank": 36,
+          "name": "time value of money",
+          "count": 8
+        },
+        {
+          "rank": 37,
+          "name": "credit scoring model",
+          "count": 7
+        },
+        {
+          "rank": 38,
+          "name": "intertemporal choice",
+          "count": 7
+        },
+        {
+          "rank": 39,
+          "name": "prospect theory",
+          "count": 7
+        },
+        {
+          "rank": 40,
+          "name": "opportunity cost",
+          "count": 7
+        },
+        {
+          "rank": 41,
+          "name": "cash flow optimization",
+          "count": 6
+        },
+        {
+          "rank": 42,
+          "name": "reinforcement learning",
+          "count": 6
+        },
+        {
+          "rank": 43,
+          "name": "bounded rationality",
+          "count": 6
+        },
+        {
+          "rank": 44,
+          "name": "risk aversion",
+          "count": 6
+        },
+        {
+          "rank": 45,
+          "name": "linear programming",
+          "count": 5
+        },
+        {
+          "rank": 46,
+          "name": "greedy algorithm",
+          "count": 5
+        },
+        {
+          "rank": 47,
+          "name": "mental accounting",
+          "count": 4
+        },
+        {
+          "rank": 48,
+          "name": "mechanism design",
+          "count": 4
+        },
+        {
+          "rank": 49,
+          "name": "search theory",
+          "count": 4
+        },
+        {
+          "rank": 50,
+          "name": "efficient market hypothesis",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "model": "google-gemini-2.5-flash",
+      "category": "Relational&Intimate",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\google-gemini-2.5-flash\\Relational&Intimate\\probe_results.jsonl",
+      "unique_names": 318,
+      "total_mentions": 1322,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 200
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 98
+        },
+        {
+          "rank": 3,
+          "name": "feedback control system",
+          "count": 58
+        },
+        {
+          "rank": 4,
+          "name": "reinforcement learning",
+          "count": 43
+        },
+        {
+          "rank": 5,
+          "name": "operant conditioning",
+          "count": 43
+        },
+        {
+          "rank": 6,
+          "name": "nash equilibrium",
+          "count": 37
+        },
+        {
+          "rank": 7,
+          "name": "feedback loop interruption",
+          "count": 32
+        },
+        {
+          "rank": 8,
+          "name": "control theory",
+          "count": 31
+        },
+        {
+          "rank": 9,
+          "name": "repeated game theory",
+          "count": 27
+        },
+        {
+          "rank": 10,
+          "name": "game theory",
+          "count": 27
+        },
+        {
+          "rank": 11,
+          "name": "dynamical systems theory",
+          "count": 25
+        },
+        {
+          "rank": 12,
+          "name": "expected utility theory",
+          "count": 24
+        },
+        {
+          "rank": 13,
+          "name": "information asymmetry",
+          "count": 23
+        },
+        {
+          "rank": 14,
+          "name": "optimal stopping problem",
+          "count": 21
+        },
+        {
+          "rank": 15,
+          "name": "cognitive dissonance theory",
+          "count": 21
+        },
+        {
+          "rank": 16,
+          "name": "resource allocation optimization",
+          "count": 21
+        },
+        {
+          "rank": 17,
+          "name": "prospect theory",
+          "count": 19
+        },
+        {
+          "rank": 18,
+          "name": "principal agent theory",
+          "count": 17
+        },
+        {
+          "rank": 19,
+          "name": "utility maximization",
+          "count": 15
+        },
+        {
+          "rank": 20,
+          "name": "sunk cost fallacy",
+          "count": 13
+        },
+        {
+          "rank": 21,
+          "name": "bayesian decision theory",
+          "count": 12
+        },
+        {
+          "rank": 22,
+          "name": "classical conditioning extinction",
+          "count": 11
+        },
+        {
+          "rank": 23,
+          "name": "signaling theory",
+          "count": 11
+        },
+        {
+          "rank": 24,
+          "name": "information theory",
+          "count": 11
+        },
+        {
+          "rank": 25,
+          "name": "contract theory",
+          "count": 11
+        },
+        {
+          "rank": 26,
+          "name": "hyperbolic discounting",
+          "count": 10
+        },
+        {
+          "rank": 27,
+          "name": "markov decision process",
+          "count": 9
+        },
+        {
+          "rank": 28,
+          "name": "cost benefit analysis",
+          "count": 8
+        },
+        {
+          "rank": 29,
+          "name": "bayesian game",
+          "count": 8
+        },
+        {
+          "rank": 30,
+          "name": "tit for tat strategy",
+          "count": 7
+        },
+        {
+          "rank": 31,
+          "name": "cognitive restructuring",
+          "count": 7
+        },
+        {
+          "rank": 32,
+          "name": "bifurcation theory",
+          "count": 7
+        },
+        {
+          "rank": 33,
+          "name": "dynamic programming",
+          "count": 6
+        },
+        {
+          "rank": 34,
+          "name": "scarcity principle",
+          "count": 6
+        },
+        {
+          "rank": 35,
+          "name": "commitment device",
+          "count": 6
+        },
+        {
+          "rank": 36,
+          "name": "markov chain",
+          "count": 6
+        },
+        {
+          "rank": 37,
+          "name": "portfolio theory",
+          "count": 6
+        },
+        {
+          "rank": 38,
+          "name": "constrained optimization",
+          "count": 6
+        },
+        {
+          "rank": 39,
+          "name": "nash bargaining solution",
+          "count": 5
+        },
+        {
+          "rank": 40,
+          "name": "optimal control theory",
+          "count": 5
+        },
+        {
+          "rank": 41,
+          "name": "real options theory",
+          "count": 5
+        },
+        {
+          "rank": 42,
+          "name": "rational choice theory",
+          "count": 5
+        },
+        {
+          "rank": 43,
+          "name": "ultimatum game",
+          "count": 5
+        },
+        {
+          "rank": 44,
+          "name": "threshold model",
+          "count": 5
+        },
+        {
+          "rank": 45,
+          "name": "attractor theory",
+          "count": 4
+        },
+        {
+          "rank": 46,
+          "name": "positive feedback loop",
+          "count": 4
+        },
+        {
+          "rank": 47,
+          "name": "framing effect",
+          "count": 4
+        },
+        {
+          "rank": 48,
+          "name": "phase transition",
+          "count": 4
+        },
+        {
+          "rank": 49,
+          "name": "catastrophe theory",
+          "count": 4
+        },
+        {
+          "rank": 50,
+          "name": "social network theory",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "model": "google-gemini-2.5-flash",
+      "category": "Societal&Ethical",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\google-gemini-2.5-flash\\Societal&Ethical\\probe_results.jsonl",
+      "unique_names": 302,
+      "total_mentions": 1261,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 166
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 118
+        },
+        {
+          "rank": 3,
+          "name": "expected utility theory",
+          "count": 88
+        },
+        {
+          "rank": 4,
+          "name": "principal agent theory",
+          "count": 68
+        },
+        {
+          "rank": 5,
+          "name": "information asymmetry",
+          "count": 61
+        },
+        {
+          "rank": 6,
+          "name": "nash equilibrium",
+          "count": 54
+        },
+        {
+          "rank": 7,
+          "name": "decision theory",
+          "count": 36
+        },
+        {
+          "rank": 8,
+          "name": "game theory",
+          "count": 36
+        },
+        {
+          "rank": 9,
+          "name": "cost benefit analysis",
+          "count": 23
+        },
+        {
+          "rank": 10,
+          "name": "feedback control system",
+          "count": 22
+        },
+        {
+          "rank": 11,
+          "name": "decision tree analysis",
+          "count": 22
+        },
+        {
+          "rank": 12,
+          "name": "mechanism design",
+          "count": 22
+        },
+        {
+          "rank": 13,
+          "name": "bargaining game",
+          "count": 19
+        },
+        {
+          "rank": 14,
+          "name": "signaling theory",
+          "count": 18
+        },
+        {
+          "rank": 15,
+          "name": "constrained optimization",
+          "count": 17
+        },
+        {
+          "rank": 16,
+          "name": "bayesian game",
+          "count": 14
+        },
+        {
+          "rank": 17,
+          "name": "deterrence theory",
+          "count": 12
+        },
+        {
+          "rank": 18,
+          "name": "control theory",
+          "count": 12
+        },
+        {
+          "rank": 19,
+          "name": "information theory",
+          "count": 11
+        },
+        {
+          "rank": 20,
+          "name": "coase theorem",
+          "count": 10
+        },
+        {
+          "rank": 21,
+          "name": "risk aversion",
+          "count": 10
+        },
+        {
+          "rank": 22,
+          "name": "threshold model",
+          "count": 9
+        },
+        {
+          "rank": 23,
+          "name": "state transition system",
+          "count": 9
+        },
+        {
+          "rank": 24,
+          "name": "markov decision process",
+          "count": 9
+        },
+        {
+          "rank": 25,
+          "name": "stackelberg game",
+          "count": 8
+        },
+        {
+          "rank": 26,
+          "name": "incentive theory",
+          "count": 8
+        },
+        {
+          "rank": 27,
+          "name": "rational choice theory",
+          "count": 8
+        },
+        {
+          "rank": 28,
+          "name": "social learning theory",
+          "count": 8
+        },
+        {
+          "rank": 29,
+          "name": "bounded rationality",
+          "count": 7
+        },
+        {
+          "rank": 30,
+          "name": "repeated game theory",
+          "count": 7
+        },
+        {
+          "rank": 31,
+          "name": "constraint satisfaction problem",
+          "count": 5
+        },
+        {
+          "rank": 32,
+          "name": "cooperative game theory",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "multi objective optimization",
+          "count": 5
+        },
+        {
+          "rank": 34,
+          "name": "adverse selection",
+          "count": 5
+        },
+        {
+          "rank": 35,
+          "name": "catastrophe theory",
+          "count": 5
+        },
+        {
+          "rank": 36,
+          "name": "reinforcement learning",
+          "count": 4
+        },
+        {
+          "rank": 37,
+          "name": "subgame perfect equilibrium",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "dynamic programming",
+          "count": 4
+        },
+        {
+          "rank": 39,
+          "name": "collective action problem",
+          "count": 4
+        },
+        {
+          "rank": 40,
+          "name": "cognitive dissonance theory",
+          "count": 4
+        },
+        {
+          "rank": 41,
+          "name": "social norms theory",
+          "count": 3
+        },
+        {
+          "rank": 42,
+          "name": "system dynamics",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "credible threat",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "moral hazard",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "coordination game",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "information cascade",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "risk management model",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "loss aversion",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "optimization theory",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "confirmation bias",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "kimi-k2.6",
+      "category": "Personal&Existential",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\kimi-k2.6\\Personal&Existential\\probe_results.jsonl",
+      "unique_names": 620,
+      "total_mentions": 1399,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "catastrophe theory",
+          "count": 86
+        },
+        {
+          "rank": 2,
+          "name": "dynamical systems theory",
+          "count": 77
+        },
+        {
+          "rank": 3,
+          "name": "hyperbolic discounting",
+          "count": 64
+        },
+        {
+          "rank": 4,
+          "name": "rescorla wagner model",
+          "count": 59
+        },
+        {
+          "rank": 5,
+          "name": "bayesian inference",
+          "count": 44
+        },
+        {
+          "rank": 6,
+          "name": "stochastic resonance",
+          "count": 30
+        },
+        {
+          "rank": 7,
+          "name": "predictive coding",
+          "count": 30
+        },
+        {
+          "rank": 8,
+          "name": "kalman filter",
+          "count": 30
+        },
+        {
+          "rank": 9,
+          "name": "control theory",
+          "count": 28
+        },
+        {
+          "rank": 10,
+          "name": "signaling game",
+          "count": 26
+        },
+        {
+          "rank": 11,
+          "name": "principal agent theory",
+          "count": 23
+        },
+        {
+          "rank": 12,
+          "name": "active inference",
+          "count": 20
+        },
+        {
+          "rank": 13,
+          "name": "percolation theory",
+          "count": 19
+        },
+        {
+          "rank": 14,
+          "name": "kramers escape problem",
+          "count": 16
+        },
+        {
+          "rank": 15,
+          "name": "markov decision process",
+          "count": 15
+        },
+        {
+          "rank": 16,
+          "name": "multi armed bandit",
+          "count": 13
+        },
+        {
+          "rank": 17,
+          "name": "kuramoto model",
+          "count": 13
+        },
+        {
+          "rank": 18,
+          "name": "hopf bifurcation",
+          "count": 13
+        },
+        {
+          "rank": 19,
+          "name": "real options theory",
+          "count": 13
+        },
+        {
+          "rank": 20,
+          "name": "partially observable markov decision process",
+          "count": 12
+        },
+        {
+          "rank": 21,
+          "name": "optimal stopping",
+          "count": 11
+        },
+        {
+          "rank": 22,
+          "name": "damped harmonic oscillator",
+          "count": 10
+        },
+        {
+          "rank": 23,
+          "name": "mechanism design",
+          "count": 10
+        },
+        {
+          "rank": 24,
+          "name": "prospect theory",
+          "count": 9
+        },
+        {
+          "rank": 25,
+          "name": "subgame perfect equilibrium",
+          "count": 8
+        },
+        {
+          "rank": 26,
+          "name": "memory reconsolidation",
+          "count": 8
+        },
+        {
+          "rank": 27,
+          "name": "reinforcement learning",
+          "count": 7
+        },
+        {
+          "rank": 28,
+          "name": "operant conditioning",
+          "count": 7
+        },
+        {
+          "rank": 29,
+          "name": "redundancy allocation problem",
+          "count": 7
+        },
+        {
+          "rank": 30,
+          "name": "dual process theory",
+          "count": 6
+        },
+        {
+          "rank": 31,
+          "name": "satisficing",
+          "count": 6
+        },
+        {
+          "rank": 32,
+          "name": "modern portfolio theory",
+          "count": 6
+        },
+        {
+          "rank": 33,
+          "name": "temporal difference learning",
+          "count": 6
+        },
+        {
+          "rank": 34,
+          "name": "commitment device",
+          "count": 6
+        },
+        {
+          "rank": 35,
+          "name": "linear quadratic regulator",
+          "count": 5
+        },
+        {
+          "rank": 36,
+          "name": "matching law",
+          "count": 5
+        },
+        {
+          "rank": 37,
+          "name": "synergetics",
+          "count": 5
+        },
+        {
+          "rank": 38,
+          "name": "simulated annealing",
+          "count": 5
+        },
+        {
+          "rank": 39,
+          "name": "hidden markov model",
+          "count": 4
+        },
+        {
+          "rank": 40,
+          "name": "strength of weak ties",
+          "count": 4
+        },
+        {
+          "rank": 41,
+          "name": "signal detection theory",
+          "count": 4
+        },
+        {
+          "rank": 42,
+          "name": "bayesian experimental design",
+          "count": 4
+        },
+        {
+          "rank": 43,
+          "name": "luenberger observer",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "opponent process theory",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "karush kuhn tucker conditions",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "state feedback control",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "internal working model",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "global workspace theory",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "reinforcing feedback loop",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "cognitive dissonance theory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "kimi-k2.6",
+      "category": "Professional&Economic",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\kimi-k2.6\\Professional&Economic\\probe_results.jsonl",
+      "unique_names": 611,
+      "total_mentions": 1421,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "real options theory",
+          "count": 108
+        },
+        {
+          "rank": 2,
+          "name": "optimal stopping",
+          "count": 79
+        },
+        {
+          "rank": 3,
+          "name": "signaling game",
+          "count": 71
+        },
+        {
+          "rank": 4,
+          "name": "spence signaling model",
+          "count": 64
+        },
+        {
+          "rank": 5,
+          "name": "principal agent theory",
+          "count": 48
+        },
+        {
+          "rank": 6,
+          "name": "hyperbolic discounting",
+          "count": 38
+        },
+        {
+          "rank": 7,
+          "name": "modern portfolio theory",
+          "count": 34
+        },
+        {
+          "rank": 8,
+          "name": "nash bargaining solution",
+          "count": 30
+        },
+        {
+          "rank": 9,
+          "name": "optimal control theory",
+          "count": 28
+        },
+        {
+          "rank": 10,
+          "name": "ramsey cass koopmans model",
+          "count": 27
+        },
+        {
+          "rank": 11,
+          "name": "prospect theory",
+          "count": 25
+        },
+        {
+          "rank": 12,
+          "name": "stochastic dynamic programming",
+          "count": 20
+        },
+        {
+          "rank": 13,
+          "name": "multi armed bandit",
+          "count": 19
+        },
+        {
+          "rank": 14,
+          "name": "compound interest",
+          "count": 17
+        },
+        {
+          "rank": 15,
+          "name": "rubinstein bargaining model",
+          "count": 16
+        },
+        {
+          "rank": 16,
+          "name": "bayesian inference",
+          "count": 15
+        },
+        {
+          "rank": 17,
+          "name": "mechanism design",
+          "count": 15
+        },
+        {
+          "rank": 18,
+          "name": "anchoring and adjustment heuristic",
+          "count": 14
+        },
+        {
+          "rank": 19,
+          "name": "absorbing markov chain",
+          "count": 14
+        },
+        {
+          "rank": 20,
+          "name": "mental accounting",
+          "count": 12
+        },
+        {
+          "rank": 21,
+          "name": "structural holes theory",
+          "count": 12
+        },
+        {
+          "rank": 22,
+          "name": "subgame perfect equilibrium",
+          "count": 10
+        },
+        {
+          "rank": 23,
+          "name": "ben porath human capital model",
+          "count": 10
+        },
+        {
+          "rank": 24,
+          "name": "capital asset pricing model",
+          "count": 9
+        },
+        {
+          "rank": 25,
+          "name": "bayesian persuasion",
+          "count": 8
+        },
+        {
+          "rank": 26,
+          "name": "kelly criterion",
+          "count": 8
+        },
+        {
+          "rank": 27,
+          "name": "commitment device",
+          "count": 7
+        },
+        {
+          "rank": 28,
+          "name": "catastrophe theory",
+          "count": 7
+        },
+        {
+          "rank": 29,
+          "name": "expected utility theory",
+          "count": 5
+        },
+        {
+          "rank": 30,
+          "name": "constrained optimization",
+          "count": 5
+        },
+        {
+          "rank": 31,
+          "name": "avalanche method",
+          "count": 5
+        },
+        {
+          "rank": 32,
+          "name": "percolation theory",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "ultimatum game",
+          "count": 5
+        },
+        {
+          "rank": 34,
+          "name": "modigliani miller theorem",
+          "count": 4
+        },
+        {
+          "rank": 35,
+          "name": "dual process theory",
+          "count": 3
+        },
+        {
+          "rank": 36,
+          "name": "folk theorem",
+          "count": 3
+        },
+        {
+          "rank": 37,
+          "name": "ramsey tax smoothing",
+          "count": 3
+        },
+        {
+          "rank": 38,
+          "name": "base stock policy",
+          "count": 3
+        },
+        {
+          "rank": 39,
+          "name": "optimal foraging theory",
+          "count": 3
+        },
+        {
+          "rank": 40,
+          "name": "fisher separation theorem",
+          "count": 2
+        },
+        {
+          "rank": 41,
+          "name": "optimal contract theory",
+          "count": 2
+        },
+        {
+          "rank": 42,
+          "name": "signal detection theory",
+          "count": 2
+        },
+        {
+          "rank": 43,
+          "name": "trade off theory of capital structure",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "search and matching theory",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "theory of constraints",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "duration matching",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "signaling game with separating equilibrium",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "optimal stopping with bayesian learning",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "permanent income hypothesis",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "inventory theory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "kimi-k2.6",
+      "category": "Relational&Intimate",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\kimi-k2.6\\Relational&Intimate\\probe_results.jsonl",
+      "unique_names": 531,
+      "total_mentions": 1414,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 111
+        },
+        {
+          "rank": 2,
+          "name": "operant conditioning",
+          "count": 64
+        },
+        {
+          "rank": 3,
+          "name": "rescorla wagner model",
+          "count": 63
+        },
+        {
+          "rank": 4,
+          "name": "optimal stopping",
+          "count": 63
+        },
+        {
+          "rank": 5,
+          "name": "catastrophe theory",
+          "count": 62
+        },
+        {
+          "rank": 6,
+          "name": "hyperbolic discounting",
+          "count": 43
+        },
+        {
+          "rank": 7,
+          "name": "bayesian inference",
+          "count": 42
+        },
+        {
+          "rank": 8,
+          "name": "mechanism design",
+          "count": 42
+        },
+        {
+          "rank": 9,
+          "name": "dynamical systems theory",
+          "count": 34
+        },
+        {
+          "rank": 10,
+          "name": "nash bargaining solution",
+          "count": 32
+        },
+        {
+          "rank": 11,
+          "name": "prospect theory",
+          "count": 25
+        },
+        {
+          "rank": 12,
+          "name": "extinction",
+          "count": 18
+        },
+        {
+          "rank": 13,
+          "name": "bifurcation theory",
+          "count": 17
+        },
+        {
+          "rank": 14,
+          "name": "subgame perfect equilibrium",
+          "count": 17
+        },
+        {
+          "rank": 15,
+          "name": "real options theory",
+          "count": 16
+        },
+        {
+          "rank": 16,
+          "name": "nash equilibrium",
+          "count": 15
+        },
+        {
+          "rank": 17,
+          "name": "principal agent theory",
+          "count": 15
+        },
+        {
+          "rank": 18,
+          "name": "percolation theory",
+          "count": 12
+        },
+        {
+          "rank": 19,
+          "name": "predictive coding",
+          "count": 11
+        },
+        {
+          "rank": 20,
+          "name": "folk theorem",
+          "count": 11
+        },
+        {
+          "rank": 21,
+          "name": "sunk cost fallacy",
+          "count": 11
+        },
+        {
+          "rank": 22,
+          "name": "kalman filter",
+          "count": 10
+        },
+        {
+          "rank": 23,
+          "name": "damped harmonic oscillator",
+          "count": 9
+        },
+        {
+          "rank": 24,
+          "name": "adverse selection",
+          "count": 9
+        },
+        {
+          "rank": 25,
+          "name": "ultimatum game",
+          "count": 9
+        },
+        {
+          "rank": 26,
+          "name": "commitment device",
+          "count": 9
+        },
+        {
+          "rank": 27,
+          "name": "stackelberg competition",
+          "count": 9
+        },
+        {
+          "rank": 28,
+          "name": "dual process theory",
+          "count": 7
+        },
+        {
+          "rank": 29,
+          "name": "kuramoto model",
+          "count": 7
+        },
+        {
+          "rank": 30,
+          "name": "absorbing markov chain",
+          "count": 7
+        },
+        {
+          "rank": 31,
+          "name": "bayesian persuasion",
+          "count": 6
+        },
+        {
+          "rank": 32,
+          "name": "cognitive dissonance theory",
+          "count": 6
+        },
+        {
+          "rank": 33,
+          "name": "stag hunt",
+          "count": 6
+        },
+        {
+          "rank": 34,
+          "name": "multi armed bandit",
+          "count": 5
+        },
+        {
+          "rank": 35,
+          "name": "simulated annealing",
+          "count": 5
+        },
+        {
+          "rank": 36,
+          "name": "temporal difference learning",
+          "count": 4
+        },
+        {
+          "rank": 37,
+          "name": "stochastic resonance",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "bayesian experimental design",
+          "count": 4
+        },
+        {
+          "rank": 39,
+          "name": "tragedy of the commons",
+          "count": 4
+        },
+        {
+          "rank": 40,
+          "name": "positive feedback loop disruption",
+          "count": 4
+        },
+        {
+          "rank": 41,
+          "name": "bang bang control",
+          "count": 4
+        },
+        {
+          "rank": 42,
+          "name": "coase theorem",
+          "count": 4
+        },
+        {
+          "rank": 43,
+          "name": "second order cybernetics",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "hold up problem",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "haken kelso bunz model",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "kramers escape problem",
+          "count": 3
+        },
+        {
+          "rank": 47,
+          "name": "lotka volterra equations",
+          "count": 3
+        },
+        {
+          "rank": 48,
+          "name": "signal detection theory",
+          "count": 3
+        },
+        {
+          "rank": 49,
+          "name": "markov decision process",
+          "count": 3
+        },
+        {
+          "rank": 50,
+          "name": "negative feedback control",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "model": "kimi-k2.6",
+      "category": "Societal&Ethical",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\kimi-k2.6\\Societal&Ethical\\probe_results.jsonl",
+      "unique_names": 603,
+      "total_mentions": 1393,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 116
+        },
+        {
+          "rank": 2,
+          "name": "principal agent theory",
+          "count": 80
+        },
+        {
+          "rank": 3,
+          "name": "optimal stopping",
+          "count": 69
+        },
+        {
+          "rank": 4,
+          "name": "mechanism design",
+          "count": 61
+        },
+        {
+          "rank": 5,
+          "name": "catastrophe theory",
+          "count": 44
+        },
+        {
+          "rank": 6,
+          "name": "nash bargaining solution",
+          "count": 42
+        },
+        {
+          "rank": 7,
+          "name": "real options analysis",
+          "count": 36
+        },
+        {
+          "rank": 8,
+          "name": "bayesian inference",
+          "count": 32
+        },
+        {
+          "rank": 9,
+          "name": "markov decision process",
+          "count": 32
+        },
+        {
+          "rank": 10,
+          "name": "bayesian persuasion",
+          "count": 25
+        },
+        {
+          "rank": 11,
+          "name": "subgame perfect equilibrium",
+          "count": 24
+        },
+        {
+          "rank": 12,
+          "name": "nash equilibrium",
+          "count": 19
+        },
+        {
+          "rank": 13,
+          "name": "perfect bayesian equilibrium",
+          "count": 18
+        },
+        {
+          "rank": 14,
+          "name": "percolation theory",
+          "count": 15
+        },
+        {
+          "rank": 15,
+          "name": "absorbing markov chain",
+          "count": 13
+        },
+        {
+          "rank": 16,
+          "name": "stackelberg competition",
+          "count": 13
+        },
+        {
+          "rank": 17,
+          "name": "redundancy allocation problem",
+          "count": 12
+        },
+        {
+          "rank": 18,
+          "name": "collective action problem",
+          "count": 11
+        },
+        {
+          "rank": 19,
+          "name": "hyperbolic discounting",
+          "count": 10
+        },
+        {
+          "rank": 20,
+          "name": "expected utility theory",
+          "count": 9
+        },
+        {
+          "rank": 21,
+          "name": "constrained optimization",
+          "count": 8
+        },
+        {
+          "rank": 22,
+          "name": "multi armed bandit",
+          "count": 7
+        },
+        {
+          "rank": 23,
+          "name": "coase theorem",
+          "count": 7
+        },
+        {
+          "rank": 24,
+          "name": "stag hunt",
+          "count": 6
+        },
+        {
+          "rank": 25,
+          "name": "prospect theory",
+          "count": 6
+        },
+        {
+          "rank": 26,
+          "name": "information cascade",
+          "count": 5
+        },
+        {
+          "rank": 27,
+          "name": "global games",
+          "count": 5
+        },
+        {
+          "rank": 28,
+          "name": "deterrence theory",
+          "count": 4
+        },
+        {
+          "rank": 29,
+          "name": "hidden markov model",
+          "count": 4
+        },
+        {
+          "rank": 30,
+          "name": "constraint satisfaction problem",
+          "count": 4
+        },
+        {
+          "rank": 31,
+          "name": "ultimatum game",
+          "count": 4
+        },
+        {
+          "rank": 32,
+          "name": "control theory",
+          "count": 4
+        },
+        {
+          "rank": 33,
+          "name": "commitment device",
+          "count": 4
+        },
+        {
+          "rank": 34,
+          "name": "focal point",
+          "count": 4
+        },
+        {
+          "rank": 35,
+          "name": "war of attrition",
+          "count": 4
+        },
+        {
+          "rank": 36,
+          "name": "prisoner's dilemma",
+          "count": 3
+        },
+        {
+          "rank": 37,
+          "name": "operant extinction",
+          "count": 3
+        },
+        {
+          "rank": 38,
+          "name": "path dependence",
+          "count": 3
+        },
+        {
+          "rank": 39,
+          "name": "minimax",
+          "count": 3
+        },
+        {
+          "rank": 40,
+          "name": "stochastic resonance",
+          "count": 3
+        },
+        {
+          "rank": 41,
+          "name": "value of information",
+          "count": 3
+        },
+        {
+          "rank": 42,
+          "name": "byzantine fault tolerance",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "screening equilibrium",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "colonel blotto game",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "modern portfolio theory",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "real options",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "state feedback control",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "ising model",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "signaling game with threshold strategies",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "support vector machine",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "MiniMax-M2.5",
+      "category": "Personal&Existential",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\MiniMax-M2.5\\Personal&Existential\\probe_results.jsonl",
+      "unique_names": 547,
+      "total_mentions": 1298,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "negative feedback loop",
+          "count": 178
+        },
+        {
+          "rank": 2,
+          "name": "reinforcement learning",
+          "count": 80
+        },
+        {
+          "rank": 3,
+          "name": "attractor dynamics",
+          "count": 71
+        },
+        {
+          "rank": 4,
+          "name": "bayesian inference",
+          "count": 42
+        },
+        {
+          "rank": 5,
+          "name": "positive feedback loop",
+          "count": 34
+        },
+        {
+          "rank": 6,
+          "name": "hebbian learning",
+          "count": 27
+        },
+        {
+          "rank": 7,
+          "name": "operant conditioning",
+          "count": 24
+        },
+        {
+          "rank": 8,
+          "name": "cognitive restructuring",
+          "count": 20
+        },
+        {
+          "rank": 9,
+          "name": "homeostasis",
+          "count": 20
+        },
+        {
+          "rank": 10,
+          "name": "extinction learning",
+          "count": 14
+        },
+        {
+          "rank": 11,
+          "name": "hyperbolic discounting",
+          "count": 12
+        },
+        {
+          "rank": 12,
+          "name": "percolation theory",
+          "count": 12
+        },
+        {
+          "rank": 13,
+          "name": "threshold model",
+          "count": 11
+        },
+        {
+          "rank": 14,
+          "name": "commitment device",
+          "count": 10
+        },
+        {
+          "rank": 15,
+          "name": "predictive coding",
+          "count": 10
+        },
+        {
+          "rank": 16,
+          "name": "memory reconsolidation",
+          "count": 10
+        },
+        {
+          "rank": 17,
+          "name": "allostatic load model",
+          "count": 9
+        },
+        {
+          "rank": 18,
+          "name": "multi armed bandit",
+          "count": 9
+        },
+        {
+          "rank": 19,
+          "name": "signaling game",
+          "count": 9
+        },
+        {
+          "rank": 20,
+          "name": "catastrophe theory",
+          "count": 8
+        },
+        {
+          "rank": 21,
+          "name": "markov chain",
+          "count": 8
+        },
+        {
+          "rank": 22,
+          "name": "bifurcation theory",
+          "count": 8
+        },
+        {
+          "rank": 23,
+          "name": "dynamical systems theory",
+          "count": 7
+        },
+        {
+          "rank": 24,
+          "name": "rescorla wagner model",
+          "count": 7
+        },
+        {
+          "rank": 25,
+          "name": "hysteresis",
+          "count": 7
+        },
+        {
+          "rank": 26,
+          "name": "habit loop",
+          "count": 7
+        },
+        {
+          "rank": 27,
+          "name": "limit cycle oscillator",
+          "count": 7
+        },
+        {
+          "rank": 28,
+          "name": "classical conditioning",
+          "count": 6
+        },
+        {
+          "rank": 29,
+          "name": "cognitive dissonance theory",
+          "count": 6
+        },
+        {
+          "rank": 30,
+          "name": "state space model",
+          "count": 5
+        },
+        {
+          "rank": 31,
+          "name": "goal gradient effect",
+          "count": 5
+        },
+        {
+          "rank": 32,
+          "name": "means restriction",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "graph connectivity",
+          "count": 4
+        },
+        {
+          "rank": 34,
+          "name": "network diffusion",
+          "count": 4
+        },
+        {
+          "rank": 35,
+          "name": "constraint satisfaction",
+          "count": 4
+        },
+        {
+          "rank": 36,
+          "name": "constraint relaxation",
+          "count": 4
+        },
+        {
+          "rank": 37,
+          "name": "signal detection theory",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "hill equation",
+          "count": 3
+        },
+        {
+          "rank": 39,
+          "name": "dual process theory",
+          "count": 3
+        },
+        {
+          "rank": 40,
+          "name": "system identification",
+          "count": 3
+        },
+        {
+          "rank": 41,
+          "name": "hopfield network",
+          "count": 3
+        },
+        {
+          "rank": 42,
+          "name": "time series analysis",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "attribution theory",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "open system theory",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "michaelis menten kinetics",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "habituation",
+          "count": 3
+        },
+        {
+          "rank": 47,
+          "name": "two process model of sleep regulation",
+          "count": 3
+        },
+        {
+          "rank": 48,
+          "name": "intrinsic motivation",
+          "count": 3
+        },
+        {
+          "rank": 49,
+          "name": "pharmacokinetic pharmacodynamic model",
+          "count": 3
+        },
+        {
+          "rank": 50,
+          "name": "error driven learning",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "model": "MiniMax-M2.5",
+      "category": "Professional&Economic",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\MiniMax-M2.5\\Professional&Economic\\probe_results.jsonl",
+      "unique_names": 557,
+      "total_mentions": 1219,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 133
+        },
+        {
+          "rank": 2,
+          "name": "constrained optimization",
+          "count": 46
+        },
+        {
+          "rank": 3,
+          "name": "compound interest",
+          "count": 44
+        },
+        {
+          "rank": 4,
+          "name": "bayesian inference",
+          "count": 30
+        },
+        {
+          "rank": 5,
+          "name": "time value of money",
+          "count": 25
+        },
+        {
+          "rank": 6,
+          "name": "real options",
+          "count": 20
+        },
+        {
+          "rank": 7,
+          "name": "mean variance optimization",
+          "count": 20
+        },
+        {
+          "rank": 8,
+          "name": "commitment device",
+          "count": 19
+        },
+        {
+          "rank": 9,
+          "name": "mechanism design",
+          "count": 19
+        },
+        {
+          "rank": 10,
+          "name": "bargaining model",
+          "count": 18
+        },
+        {
+          "rank": 11,
+          "name": "principal agent theory",
+          "count": 18
+        },
+        {
+          "rank": 12,
+          "name": "anchoring effect",
+          "count": 17
+        },
+        {
+          "rank": 13,
+          "name": "batna",
+          "count": 17
+        },
+        {
+          "rank": 14,
+          "name": "amortization",
+          "count": 14
+        },
+        {
+          "rank": 15,
+          "name": "expected utility theory",
+          "count": 13
+        },
+        {
+          "rank": 16,
+          "name": "information asymmetry",
+          "count": 13
+        },
+        {
+          "rank": 17,
+          "name": "buffer stock model",
+          "count": 13
+        },
+        {
+          "rank": 18,
+          "name": "optimal stopping",
+          "count": 13
+        },
+        {
+          "rank": 19,
+          "name": "arbitrage",
+          "count": 12
+        },
+        {
+          "rank": 20,
+          "name": "debt avalanche method",
+          "count": 12
+        },
+        {
+          "rank": 21,
+          "name": "feedback loop",
+          "count": 12
+        },
+        {
+          "rank": 22,
+          "name": "markov decision process",
+          "count": 11
+        },
+        {
+          "rank": 23,
+          "name": "dynamic programming",
+          "count": 9
+        },
+        {
+          "rank": 24,
+          "name": "multi armed bandit",
+          "count": 8
+        },
+        {
+          "rank": 25,
+          "name": "mental accounting",
+          "count": 6
+        },
+        {
+          "rank": 26,
+          "name": "dollar cost averaging",
+          "count": 6
+        },
+        {
+          "rank": 27,
+          "name": "human capital theory",
+          "count": 6
+        },
+        {
+          "rank": 28,
+          "name": "opportunity cost",
+          "count": 6
+        },
+        {
+          "rank": 29,
+          "name": "screening equilibrium",
+          "count": 6
+        },
+        {
+          "rank": 30,
+          "name": "nash equilibrium",
+          "count": 6
+        },
+        {
+          "rank": 31,
+          "name": "constraint relaxation",
+          "count": 5
+        },
+        {
+          "rank": 32,
+          "name": "credit utilization ratio",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "burden of proof",
+          "count": 5
+        },
+        {
+          "rank": 34,
+          "name": "stackelberg game",
+          "count": 4
+        },
+        {
+          "rank": 35,
+          "name": "priority queue",
+          "count": 4
+        },
+        {
+          "rank": 36,
+          "name": "cash flow matching",
+          "count": 4
+        },
+        {
+          "rank": 37,
+          "name": "liquidity constraint",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "multi objective optimization",
+          "count": 4
+        },
+        {
+          "rank": 39,
+          "name": "reference dependent preferences",
+          "count": 3
+        },
+        {
+          "rank": 40,
+          "name": "reinforcement learning",
+          "count": 3
+        },
+        {
+          "rank": 41,
+          "name": "search theory",
+          "count": 3
+        },
+        {
+          "rank": 42,
+          "name": "value of information",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "threshold model",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "intertemporal choice",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "signal detection theory",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "liquidity preference theory",
+          "count": 3
+        },
+        {
+          "rank": 47,
+          "name": "learning curve",
+          "count": 3
+        },
+        {
+          "rank": 48,
+          "name": "seci model",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "progressive marginal taxation",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "schema theory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "MiniMax-M2.5",
+      "category": "Relational&Intimate",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\MiniMax-M2.5\\Relational&Intimate\\probe_results.jsonl",
+      "unique_names": 519,
+      "total_mentions": 1259,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 139
+        },
+        {
+          "rank": 2,
+          "name": "feedback loop",
+          "count": 78
+        },
+        {
+          "rank": 3,
+          "name": "extinction",
+          "count": 65
+        },
+        {
+          "rank": 4,
+          "name": "commitment device",
+          "count": 49
+        },
+        {
+          "rank": 5,
+          "name": "bayesian inference",
+          "count": 49
+        },
+        {
+          "rank": 6,
+          "name": "attractor dynamics",
+          "count": 35
+        },
+        {
+          "rank": 7,
+          "name": "mechanism design",
+          "count": 33
+        },
+        {
+          "rank": 8,
+          "name": "nash equilibrium",
+          "count": 29
+        },
+        {
+          "rank": 9,
+          "name": "variable ratio reinforcement schedule",
+          "count": 18
+        },
+        {
+          "rank": 10,
+          "name": "threshold model",
+          "count": 18
+        },
+        {
+          "rank": 11,
+          "name": "bifurcation",
+          "count": 17
+        },
+        {
+          "rank": 12,
+          "name": "principal agent theory",
+          "count": 15
+        },
+        {
+          "rank": 13,
+          "name": "hysteresis",
+          "count": 13
+        },
+        {
+          "rank": 14,
+          "name": "phase transition",
+          "count": 13
+        },
+        {
+          "rank": 15,
+          "name": "stackelberg game",
+          "count": 11
+        },
+        {
+          "rank": 16,
+          "name": "markov decision process",
+          "count": 10
+        },
+        {
+          "rank": 17,
+          "name": "repeated game",
+          "count": 10
+        },
+        {
+          "rank": 18,
+          "name": "reinforcement learning",
+          "count": 10
+        },
+        {
+          "rank": 19,
+          "name": "rescorla wagner model",
+          "count": 9
+        },
+        {
+          "rank": 20,
+          "name": "subgame perfect equilibrium",
+          "count": 9
+        },
+        {
+          "rank": 21,
+          "name": "hebbian learning",
+          "count": 8
+        },
+        {
+          "rank": 22,
+          "name": "ultimatum game",
+          "count": 7
+        },
+        {
+          "rank": 23,
+          "name": "information asymmetry",
+          "count": 7
+        },
+        {
+          "rank": 24,
+          "name": "attribution theory",
+          "count": 6
+        },
+        {
+          "rank": 25,
+          "name": "graph theory",
+          "count": 5
+        },
+        {
+          "rank": 26,
+          "name": "markov chain",
+          "count": 5
+        },
+        {
+          "rank": 27,
+          "name": "memory reconsolidation",
+          "count": 5
+        },
+        {
+          "rank": 28,
+          "name": "bargaining model",
+          "count": 4
+        },
+        {
+          "rank": 29,
+          "name": "operant conditioning",
+          "count": 4
+        },
+        {
+          "rank": 30,
+          "name": "habituation",
+          "count": 4
+        },
+        {
+          "rank": 31,
+          "name": "optimal stopping theory",
+          "count": 4
+        },
+        {
+          "rank": 32,
+          "name": "signal detection theory",
+          "count": 4
+        },
+        {
+          "rank": 33,
+          "name": "exponential decay",
+          "count": 4
+        },
+        {
+          "rank": 34,
+          "name": "best response dynamics",
+          "count": 4
+        },
+        {
+          "rank": 35,
+          "name": "sequential equilibrium",
+          "count": 4
+        },
+        {
+          "rank": 36,
+          "name": "common knowledge",
+          "count": 4
+        },
+        {
+          "rank": 37,
+          "name": "cognitive dissonance",
+          "count": 4
+        },
+        {
+          "rank": 38,
+          "name": "sequential game",
+          "count": 3
+        },
+        {
+          "rank": 39,
+          "name": "chicken game",
+          "count": 3
+        },
+        {
+          "rank": 40,
+          "name": "path dependence",
+          "count": 3
+        },
+        {
+          "rank": 41,
+          "name": "coordination game",
+          "count": 3
+        },
+        {
+          "rank": 42,
+          "name": "sequential probability ratio test",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "cognitive restructuring",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "multi armed bandit",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "stackelberg leadership model",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "metastability",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "negative reinforcement loop",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "information equilibrium",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "self referential processing",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "redundancy allocation",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "MiniMax-M2.5",
+      "category": "Societal&Ethical",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\MiniMax-M2.5\\Societal&Ethical\\probe_results.jsonl",
+      "unique_names": 513,
+      "total_mentions": 1191,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "signaling game",
+          "count": 131
+        },
+        {
+          "rank": 2,
+          "name": "mechanism design",
+          "count": 75
+        },
+        {
+          "rank": 3,
+          "name": "bayesian inference",
+          "count": 72
+        },
+        {
+          "rank": 4,
+          "name": "principal agent theory",
+          "count": 63
+        },
+        {
+          "rank": 5,
+          "name": "burden of proof",
+          "count": 35
+        },
+        {
+          "rank": 6,
+          "name": "information asymmetry",
+          "count": 26
+        },
+        {
+          "rank": 7,
+          "name": "commitment device",
+          "count": 23
+        },
+        {
+          "rank": 8,
+          "name": "markov decision process",
+          "count": 19
+        },
+        {
+          "rank": 9,
+          "name": "expected utility theory",
+          "count": 18
+        },
+        {
+          "rank": 10,
+          "name": "constraint satisfaction problem",
+          "count": 16
+        },
+        {
+          "rank": 11,
+          "name": "threshold model",
+          "count": 16
+        },
+        {
+          "rank": 12,
+          "name": "stackelberg game",
+          "count": 16
+        },
+        {
+          "rank": 13,
+          "name": "nash equilibrium",
+          "count": 14
+        },
+        {
+          "rank": 14,
+          "name": "nash bargaining solution",
+          "count": 13
+        },
+        {
+          "rank": 15,
+          "name": "deterrence theory",
+          "count": 11
+        },
+        {
+          "rank": 16,
+          "name": "finite state machine",
+          "count": 11
+        },
+        {
+          "rank": 17,
+          "name": "optimal stopping",
+          "count": 9
+        },
+        {
+          "rank": 18,
+          "name": "sequential game",
+          "count": 9
+        },
+        {
+          "rank": 19,
+          "name": "negative feedback loop",
+          "count": 9
+        },
+        {
+          "rank": 20,
+          "name": "information revelation",
+          "count": 9
+        },
+        {
+          "rank": 21,
+          "name": "real options",
+          "count": 7
+        },
+        {
+          "rank": 22,
+          "name": "credible threat",
+          "count": 7
+        },
+        {
+          "rank": 23,
+          "name": "subgame perfect equilibrium",
+          "count": 6
+        },
+        {
+          "rank": 24,
+          "name": "verification game",
+          "count": 6
+        },
+        {
+          "rank": 25,
+          "name": "zero sum game",
+          "count": 5
+        },
+        {
+          "rank": 26,
+          "name": "audit trail",
+          "count": 5
+        },
+        {
+          "rank": 27,
+          "name": "statute of limitations",
+          "count": 5
+        },
+        {
+          "rank": 28,
+          "name": "game of chicken",
+          "count": 5
+        },
+        {
+          "rank": 29,
+          "name": "percolation theory",
+          "count": 5
+        },
+        {
+          "rank": 30,
+          "name": "backward induction",
+          "count": 4
+        },
+        {
+          "rank": 31,
+          "name": "constrained optimization",
+          "count": 4
+        },
+        {
+          "rank": 32,
+          "name": "collective action problem",
+          "count": 4
+        },
+        {
+          "rank": 33,
+          "name": "decision tree",
+          "count": 3
+        },
+        {
+          "rank": 34,
+          "name": "framing effect",
+          "count": 3
+        },
+        {
+          "rank": 35,
+          "name": "counterfactual reasoning",
+          "count": 3
+        },
+        {
+          "rank": 36,
+          "name": "repeated game",
+          "count": 3
+        },
+        {
+          "rank": 37,
+          "name": "bayesian persuasion",
+          "count": 3
+        },
+        {
+          "rank": 38,
+          "name": "bayesian game",
+          "count": 3
+        },
+        {
+          "rank": 39,
+          "name": "dynamic programming",
+          "count": 3
+        },
+        {
+          "rank": 40,
+          "name": "coordination game",
+          "count": 3
+        },
+        {
+          "rank": 41,
+          "name": "risk pooling",
+          "count": 3
+        },
+        {
+          "rank": 42,
+          "name": "common knowledge",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "signal detection theory",
+          "count": 3
+        },
+        {
+          "rank": 44,
+          "name": "information cascade",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "third party enforcement mechanism",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "information acquisition",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "pareto improvement",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "procedural due process",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "reputation dynamics",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "markov chain",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "openai-gpt-5.4-mini",
+      "category": "Personal&Existential",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\openai-gpt-5.4-mini\\Personal&Existential\\probe_results.jsonl",
+      "unique_names": 145,
+      "total_mentions": 1445,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "markov decision process",
+          "count": 202
+        },
+        {
+          "rank": 2,
+          "name": "bayesian inference",
+          "count": 132
+        },
+        {
+          "rank": 3,
+          "name": "dynamical systems",
+          "count": 128
+        },
+        {
+          "rank": 4,
+          "name": "feedback control",
+          "count": 120
+        },
+        {
+          "rank": 5,
+          "name": "reinforcement learning",
+          "count": 88
+        },
+        {
+          "rank": 6,
+          "name": "state space model",
+          "count": 84
+        },
+        {
+          "rank": 7,
+          "name": "constrained optimization",
+          "count": 74
+        },
+        {
+          "rank": 8,
+          "name": "threshold model",
+          "count": 71
+        },
+        {
+          "rank": 9,
+          "name": "survival analysis",
+          "count": 53
+        },
+        {
+          "rank": 10,
+          "name": "control theory",
+          "count": 50
+        },
+        {
+          "rank": 11,
+          "name": "attractor dynamics",
+          "count": 41
+        },
+        {
+          "rank": 12,
+          "name": "hyperbolic discounting",
+          "count": 35
+        },
+        {
+          "rank": 13,
+          "name": "negative feedback",
+          "count": 31
+        },
+        {
+          "rank": 14,
+          "name": "operant conditioning",
+          "count": 28
+        },
+        {
+          "rank": 15,
+          "name": "expected utility theory",
+          "count": 26
+        },
+        {
+          "rank": 16,
+          "name": "feedback loop",
+          "count": 22
+        },
+        {
+          "rank": 17,
+          "name": "optimal stopping",
+          "count": 18
+        },
+        {
+          "rank": 18,
+          "name": "markov chain",
+          "count": 17
+        },
+        {
+          "rank": 19,
+          "name": "drift diffusion model",
+          "count": 13
+        },
+        {
+          "rank": 20,
+          "name": "dynamic programming",
+          "count": 11
+        },
+        {
+          "rank": 21,
+          "name": "positive feedback",
+          "count": 11
+        },
+        {
+          "rank": 22,
+          "name": "hawkes process",
+          "count": 11
+        },
+        {
+          "rank": 23,
+          "name": "principal agent theory",
+          "count": 8
+        },
+        {
+          "rank": 24,
+          "name": "bounded rationality",
+          "count": 6
+        },
+        {
+          "rank": 25,
+          "name": "multi armed bandit",
+          "count": 6
+        },
+        {
+          "rank": 26,
+          "name": "repeated game",
+          "count": 6
+        },
+        {
+          "rank": 27,
+          "name": "predictive coding",
+          "count": 5
+        },
+        {
+          "rank": 28,
+          "name": "stochastic differential equation",
+          "count": 5
+        },
+        {
+          "rank": 29,
+          "name": "habit formation",
+          "count": 5
+        },
+        {
+          "rank": 30,
+          "name": "behavioral economics",
+          "count": 4
+        },
+        {
+          "rank": 31,
+          "name": "sequential decision making",
+          "count": 4
+        },
+        {
+          "rank": 32,
+          "name": "resource allocation",
+          "count": 3
+        },
+        {
+          "rank": 33,
+          "name": "feedback control theory",
+          "count": 3
+        },
+        {
+          "rank": 34,
+          "name": "bifurcation theory",
+          "count": 2
+        },
+        {
+          "rank": 35,
+          "name": "exposure therapy",
+          "count": 2
+        },
+        {
+          "rank": 36,
+          "name": "signaling theory",
+          "count": 2
+        },
+        {
+          "rank": 37,
+          "name": "stress buffering model",
+          "count": 2
+        },
+        {
+          "rank": 38,
+          "name": "means restriction",
+          "count": 2
+        },
+        {
+          "rank": 39,
+          "name": "reliability theory",
+          "count": 2
+        },
+        {
+          "rank": 40,
+          "name": "stochastic approximation",
+          "count": 2
+        },
+        {
+          "rank": 41,
+          "name": "viability theory",
+          "count": 2
+        },
+        {
+          "rank": 42,
+          "name": "network theory",
+          "count": 2
+        },
+        {
+          "rank": 43,
+          "name": "queueing theory",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "forced oscillator",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "routine activity theory",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "no free lunch theorem",
+          "count": 1
+        },
+        {
+          "rank": 47,
+          "name": "threshold model of collective behavior",
+          "count": 1
+        },
+        {
+          "rank": 48,
+          "name": "fault tree analysis",
+          "count": 1
+        },
+        {
+          "rank": 49,
+          "name": "theory of planned behavior",
+          "count": 1
+        },
+        {
+          "rank": 50,
+          "name": "forced oscillation",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "openai-gpt-5.4-mini",
+      "category": "Professional&Economic",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\openai-gpt-5.4-mini\\Professional&Economic\\probe_results.jsonl",
+      "unique_names": 267,
+      "total_mentions": 1434,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "bayesian inference",
+          "count": 123
+        },
+        {
+          "rank": 2,
+          "name": "constrained optimization",
+          "count": 116
+        },
+        {
+          "rank": 3,
+          "name": "signaling game",
+          "count": 105
+        },
+        {
+          "rank": 4,
+          "name": "dynamic programming",
+          "count": 96
+        },
+        {
+          "rank": 5,
+          "name": "markov decision process",
+          "count": 74
+        },
+        {
+          "rank": 6,
+          "name": "optimal stopping",
+          "count": 71
+        },
+        {
+          "rank": 7,
+          "name": "expected utility theory",
+          "count": 57
+        },
+        {
+          "rank": 8,
+          "name": "nash bargaining solution",
+          "count": 46
+        },
+        {
+          "rank": 9,
+          "name": "mean variance optimization",
+          "count": 46
+        },
+        {
+          "rank": 10,
+          "name": "real options theory",
+          "count": 42
+        },
+        {
+          "rank": 11,
+          "name": "principal agent theory",
+          "count": 40
+        },
+        {
+          "rank": 12,
+          "name": "repeated game",
+          "count": 31
+        },
+        {
+          "rank": 13,
+          "name": "precautionary saving",
+          "count": 29
+        },
+        {
+          "rank": 14,
+          "name": "stochastic control",
+          "count": 28
+        },
+        {
+          "rank": 15,
+          "name": "job search model",
+          "count": 22
+        },
+        {
+          "rank": 16,
+          "name": "net present value",
+          "count": 22
+        },
+        {
+          "rank": 17,
+          "name": "linear programming",
+          "count": 20
+        },
+        {
+          "rank": 18,
+          "name": "threshold model",
+          "count": 16
+        },
+        {
+          "rank": 19,
+          "name": "intertemporal choice",
+          "count": 16
+        },
+        {
+          "rank": 20,
+          "name": "multi armed bandit",
+          "count": 16
+        },
+        {
+          "rank": 21,
+          "name": "inventory theory",
+          "count": 15
+        },
+        {
+          "rank": 22,
+          "name": "signal detection theory",
+          "count": 13
+        },
+        {
+          "rank": 23,
+          "name": "anchoring effect",
+          "count": 12
+        },
+        {
+          "rank": 24,
+          "name": "sequential decision making",
+          "count": 9
+        },
+        {
+          "rank": 25,
+          "name": "feedback control",
+          "count": 9
+        },
+        {
+          "rank": 26,
+          "name": "compound interest",
+          "count": 8
+        },
+        {
+          "rank": 27,
+          "name": "discrete time dynamical system",
+          "count": 8
+        },
+        {
+          "rank": 28,
+          "name": "debt avalanche method",
+          "count": 7
+        },
+        {
+          "rank": 29,
+          "name": "liquidity constraint model",
+          "count": 7
+        },
+        {
+          "rank": 30,
+          "name": "state space model",
+          "count": 6
+        },
+        {
+          "rank": 31,
+          "name": "queueing theory",
+          "count": 6
+        },
+        {
+          "rank": 32,
+          "name": "sequential probability ratio test",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "asset liability management",
+          "count": 5
+        },
+        {
+          "rank": 34,
+          "name": "nash equilibrium",
+          "count": 5
+        },
+        {
+          "rank": 35,
+          "name": "knapsack problem",
+          "count": 5
+        },
+        {
+          "rank": 36,
+          "name": "markov chain",
+          "count": 5
+        },
+        {
+          "rank": 37,
+          "name": "robust optimization",
+          "count": 5
+        },
+        {
+          "rank": 38,
+          "name": "greedy algorithm",
+          "count": 5
+        },
+        {
+          "rank": 39,
+          "name": "stochastic optimization",
+          "count": 4
+        },
+        {
+          "rank": 40,
+          "name": "mechanism design",
+          "count": 4
+        },
+        {
+          "rank": 41,
+          "name": "path dependence",
+          "count": 4
+        },
+        {
+          "rank": 42,
+          "name": "sunk cost fallacy",
+          "count": 3
+        },
+        {
+          "rank": 43,
+          "name": "sequential decision theory",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "bernoulli trial",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "cost benefit analysis",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "precautionary savings",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "optimization problem",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "stackelberg competition",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "logistic regression",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "percolation theory",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "openai-gpt-5.4-mini",
+      "category": "Relational&Intimate",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\openai-gpt-5.4-mini\\Relational&Intimate\\probe_results.jsonl",
+      "unique_names": 152,
+      "total_mentions": 1442,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "bayesian inference",
+          "count": 116
+        },
+        {
+          "rank": 2,
+          "name": "repeated game",
+          "count": 105
+        },
+        {
+          "rank": 3,
+          "name": "feedback",
+          "count": 86
+        },
+        {
+          "rank": 4,
+          "name": "signaling game",
+          "count": 85
+        },
+        {
+          "rank": 5,
+          "name": "optimal stopping",
+          "count": 75
+        },
+        {
+          "rank": 6,
+          "name": "repeated prisoner's dilemma",
+          "count": 75
+        },
+        {
+          "rank": 7,
+          "name": "dynamical system",
+          "count": 67
+        },
+        {
+          "rank": 8,
+          "name": "operant conditioning",
+          "count": 60
+        },
+        {
+          "rank": 9,
+          "name": "feedback control",
+          "count": 52
+        },
+        {
+          "rank": 10,
+          "name": "threshold model",
+          "count": 52
+        },
+        {
+          "rank": 11,
+          "name": "reinforcement learning",
+          "count": 52
+        },
+        {
+          "rank": 12,
+          "name": "sequential probability ratio test",
+          "count": 52
+        },
+        {
+          "rank": 13,
+          "name": "markov decision process",
+          "count": 51
+        },
+        {
+          "rank": 14,
+          "name": "nash equilibrium",
+          "count": 40
+        },
+        {
+          "rank": 15,
+          "name": "attractor dynamics",
+          "count": 29
+        },
+        {
+          "rank": 16,
+          "name": "constrained optimization",
+          "count": 29
+        },
+        {
+          "rank": 17,
+          "name": "subgame perfect equilibrium",
+          "count": 22
+        },
+        {
+          "rank": 18,
+          "name": "markov chain",
+          "count": 22
+        },
+        {
+          "rank": 19,
+          "name": "signaling theory",
+          "count": 20
+        },
+        {
+          "rank": 20,
+          "name": "principal agent theory",
+          "count": 16
+        },
+        {
+          "rank": 21,
+          "name": "bayesian decision theory",
+          "count": 16
+        },
+        {
+          "rank": 22,
+          "name": "state space model",
+          "count": 16
+        },
+        {
+          "rank": 23,
+          "name": "delay discounting",
+          "count": 14
+        },
+        {
+          "rank": 24,
+          "name": "expected utility theory",
+          "count": 14
+        },
+        {
+          "rank": 25,
+          "name": "hysteresis",
+          "count": 13
+        },
+        {
+          "rank": 26,
+          "name": "extinction",
+          "count": 13
+        },
+        {
+          "rank": 27,
+          "name": "stag hunt",
+          "count": 11
+        },
+        {
+          "rank": 28,
+          "name": "dynamic game",
+          "count": 11
+        },
+        {
+          "rank": 29,
+          "name": "dynamic programming",
+          "count": 10
+        },
+        {
+          "rank": 30,
+          "name": "mechanism design",
+          "count": 10
+        },
+        {
+          "rank": 31,
+          "name": "control theory",
+          "count": 9
+        },
+        {
+          "rank": 32,
+          "name": "rescorla wagner model",
+          "count": 9
+        },
+        {
+          "rank": 33,
+          "name": "bistability",
+          "count": 9
+        },
+        {
+          "rank": 34,
+          "name": "sequential decision making",
+          "count": 8
+        },
+        {
+          "rank": 35,
+          "name": "damped harmonic oscillator",
+          "count": 7
+        },
+        {
+          "rank": 36,
+          "name": "sunk cost fallacy",
+          "count": 7
+        },
+        {
+          "rank": 37,
+          "name": "classical conditioning",
+          "count": 6
+        },
+        {
+          "rank": 38,
+          "name": "bifurcation theory",
+          "count": 6
+        },
+        {
+          "rank": 39,
+          "name": "ultimatum game",
+          "count": 5
+        },
+        {
+          "rank": 40,
+          "name": "best response dynamics",
+          "count": 5
+        },
+        {
+          "rank": 41,
+          "name": "coordination game",
+          "count": 4
+        },
+        {
+          "rank": 42,
+          "name": "resource allocation",
+          "count": 4
+        },
+        {
+          "rank": 43,
+          "name": "nash bargaining solution",
+          "count": 4
+        },
+        {
+          "rank": 44,
+          "name": "stability theory",
+          "count": 3
+        },
+        {
+          "rank": 45,
+          "name": "signal detection theory",
+          "count": 3
+        },
+        {
+          "rank": 46,
+          "name": "commitment device",
+          "count": 3
+        },
+        {
+          "rank": 47,
+          "name": "exponential decay",
+          "count": 3
+        },
+        {
+          "rank": 48,
+          "name": "multi armed bandit",
+          "count": 3
+        },
+        {
+          "rank": 49,
+          "name": "state transition model",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "option value",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "model": "openai-gpt-5.4-mini",
+      "category": "Societal&Ethical",
+      "probe_results": "E:\\college\\postgraduate\\llm_cognitive\\openai-gpt-5.4-mini\\Societal&Ethical\\probe_results.jsonl",
+      "unique_names": 193,
+      "total_mentions": 1428,
+      "top_names": [
+        {
+          "rank": 1,
+          "name": "bayesian inference",
+          "count": 259
+        },
+        {
+          "rank": 2,
+          "name": "signaling game",
+          "count": 166
+        },
+        {
+          "rank": 3,
+          "name": "markov decision process",
+          "count": 86
+        },
+        {
+          "rank": 4,
+          "name": "principal agent theory",
+          "count": 72
+        },
+        {
+          "rank": 5,
+          "name": "constrained optimization",
+          "count": 71
+        },
+        {
+          "rank": 6,
+          "name": "expected utility theory",
+          "count": 68
+        },
+        {
+          "rank": 7,
+          "name": "threshold model",
+          "count": 68
+        },
+        {
+          "rank": 8,
+          "name": "optimal stopping",
+          "count": 53
+        },
+        {
+          "rank": 9,
+          "name": "repeated game",
+          "count": 52
+        },
+        {
+          "rank": 10,
+          "name": "sequential game",
+          "count": 36
+        },
+        {
+          "rank": 11,
+          "name": "mechanism design",
+          "count": 25
+        },
+        {
+          "rank": 12,
+          "name": "signal detection theory",
+          "count": 24
+        },
+        {
+          "rank": 13,
+          "name": "sequential probability ratio test",
+          "count": 23
+        },
+        {
+          "rank": 14,
+          "name": "feedback control",
+          "count": 22
+        },
+        {
+          "rank": 15,
+          "name": "nash bargaining solution",
+          "count": 19
+        },
+        {
+          "rank": 16,
+          "name": "bayesian game",
+          "count": 18
+        },
+        {
+          "rank": 17,
+          "name": "dynamic programming",
+          "count": 18
+        },
+        {
+          "rank": 18,
+          "name": "state space model",
+          "count": 17
+        },
+        {
+          "rank": 19,
+          "name": "absorbing markov chain",
+          "count": 16
+        },
+        {
+          "rank": 20,
+          "name": "constraint satisfaction problem",
+          "count": 16
+        },
+        {
+          "rank": 21,
+          "name": "nash equilibrium",
+          "count": 15
+        },
+        {
+          "rank": 22,
+          "name": "subgame perfect equilibrium",
+          "count": 13
+        },
+        {
+          "rank": 23,
+          "name": "minimax regret",
+          "count": 11
+        },
+        {
+          "rank": 24,
+          "name": "stackelberg competition",
+          "count": 10
+        },
+        {
+          "rank": 25,
+          "name": "burden of proof",
+          "count": 9
+        },
+        {
+          "rank": 26,
+          "name": "dynamical systems",
+          "count": 7
+        },
+        {
+          "rank": 27,
+          "name": "optimal control",
+          "count": 6
+        },
+        {
+          "rank": 28,
+          "name": "survival analysis",
+          "count": 6
+        },
+        {
+          "rank": 29,
+          "name": "sequential decision making",
+          "count": 6
+        },
+        {
+          "rank": 30,
+          "name": "option value",
+          "count": 5
+        },
+        {
+          "rank": 31,
+          "name": "poisson process",
+          "count": 5
+        },
+        {
+          "rank": 32,
+          "name": "deterrence theory",
+          "count": 5
+        },
+        {
+          "rank": 33,
+          "name": "information asymmetry",
+          "count": 4
+        },
+        {
+          "rank": 34,
+          "name": "framing effect",
+          "count": 4
+        },
+        {
+          "rank": 35,
+          "name": "decision tree",
+          "count": 4
+        },
+        {
+          "rank": 36,
+          "name": "perfect bayesian equilibrium",
+          "count": 3
+        },
+        {
+          "rank": 37,
+          "name": "bayesian persuasion",
+          "count": 3
+        },
+        {
+          "rank": 38,
+          "name": "coordination game",
+          "count": 3
+        },
+        {
+          "rank": 39,
+          "name": "replicator dynamics",
+          "count": 3
+        },
+        {
+          "rank": 40,
+          "name": "commitment device",
+          "count": 3
+        },
+        {
+          "rank": 41,
+          "name": "control theory",
+          "count": 2
+        },
+        {
+          "rank": 42,
+          "name": "convex optimization",
+          "count": 2
+        },
+        {
+          "rank": 43,
+          "name": "diffusion of innovations",
+          "count": 2
+        },
+        {
+          "rank": 44,
+          "name": "percolation theory",
+          "count": 2
+        },
+        {
+          "rank": 45,
+          "name": "path dependence",
+          "count": 2
+        },
+        {
+          "rank": 46,
+          "name": "robust optimization",
+          "count": 2
+        },
+        {
+          "rank": 47,
+          "name": "causal inference",
+          "count": 2
+        },
+        {
+          "rank": 48,
+          "name": "attribution theory",
+          "count": 2
+        },
+        {
+          "rank": 49,
+          "name": "evolutionary game theory",
+          "count": 2
+        },
+        {
+          "rank": 50,
+          "name": "rubinstein bargaining model",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

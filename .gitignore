@@ -1,0 +1,8 @@
+# Do not track secrets or large local datasets (per project policy)
+.env
+data/
+subreddits.jsonl
+# Cursor local history copies (often contain .env snapshots)
+.history/
+
+__pycache__/

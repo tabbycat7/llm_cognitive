@@ -1,0 +1,634 @@
+==============================================================================
+LLM Cognitive Probe — Analysis Summary
+==============================================================================
+Generated (local): 2026-04-22T20:09:57
+
+[Input]
+  results_file: E:\college\postgraduate\llm_cognitive\google-gemini-2.5-flash\Personal&Existential\probe_results.jsonl
+  records (non-empty JSONL lines): 500
+
+[Merge]
+  merge_method: llm
+  refresh_merge: True
+  name_source: step3
+  chart_top_n: 30
+
+[Counts]
+  raw_unique_names: 363
+  raw_total_mentions: 1395
+  canonical_unique_names: 303
+  canonical_total_mentions: 1395
+  distinct_label_reduction: 363 raw → 303 canonical (16.5% fewer labels)
+
+[Output artifacts]
+  merge_map.json: yes
+  merge_map.embeddings.json: no
+  model_law_frequency.png: yes
+  model_law_wordcloud.png: yes
+  cluster_dendrogram.png: no
+  cluster_scatter.png: no
+
+[Top 30 raw names — before merge / 归并前（原始标签频次）]
+  rank   count  name
+     1     152  reinforcement learning
+     2     121  bayesian inference
+     3      97  control theory
+     4      74  feedback control system
+     5      58  dynamical systems theory
+     6      27  operant conditioning
+     7      22  expected utility theory
+     8      21  bayesian updating
+     9      19  signaling game
+    10      15  social network theory
+    11      15  feedback loop control
+    12      15  prospect theory
+    13      14  attractor theory
+    14      14  optimal control theory
+    15      13  self efficacy theory
+    16      12  cognitive bias modification
+    17      12  information asymmetry
+    18      12  state space model
+    19      12  bayesian decision theory
+    20      11  cognitive restructuring
+    21      10  markov decision process
+    22      10  decision theory
+    23      10  bayesian belief updating
+    24      10  system dynamics
+    25      10  resource allocation optimization
+    26      10  control theory feedback loop
+    27      10  optimization theory
+    28      10  catastrophe theory
+    29       8  cognitive behavioral model
+    30       8  multi objective optimization
+
+[Top 30 canonical names — after merge / 归并后（代表名频次）]
+  rank   count  name
+     1     221  control theory
+     2     181  bayesian inference
+     3     163  dynamical systems theory
+     4     158  reinforcement learning
+     5      37  optimization theory
+     6      31  expected utility theory
+     7      27  operant conditioning
+     8      26  social network theory
+     9      25  cognitive bias modification
+    10      19  signaling game
+    11      18  decision theory
+    12      17  cognitive behavioral model
+    13      15  prospect theory
+    14      13  self efficacy theory
+    15      12  information asymmetry
+    16      12  hyperbolic discounting
+    17      10  markov decision process
+    18      10  homeostasis
+    19      10  classical conditioning
+    20       9  feedback loop
+    21       8  game theory
+    22       8  cognitive biases and heuristics
+    23       8  cognitive appraisal theory
+    24       7  information theory
+    25       5  cognitive dissonance theory
+    26       5  hebbian learning
+    27       5  social cognitive theory
+    28       4  self determination theory
+    29       4  social support theory
+    30       4  dynamic programming
+
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 16 clusters]
+  [#1] representative: dynamical systems theory  ·  20 members
+      · attractor basins and bifurcation theory
+      · attractor dynamics
+      · attractor network
+      · attractor network model
+      · attractor network theory
+      · attractor neural networks
+      · attractor state dynamics
+      · attractor theory
+      · bifurcation theory
+      · catastrophe theory
+      · complex adaptive systems theory
+      · coupled oscillators
+      · dynamic system model
+      · dynamic systems theory
+      · dynamical systems
+      · dynamical systems theory  [代表]
+      · network dynamics
+      · nonlinear dynamics
+      · state space model
+      · system dynamics
+  [#2] representative: bayesian inference  ·  10 members
+      · bayesian belief network
+      · bayesian belief update
+      · bayesian belief updating
+      · bayesian cognitive model
+      · bayesian decision theory
+      · bayesian inference  [代表]
+      · bayesian inference for belief updating
+      · bayesian inference model
+      · bayesian network
+      · bayesian updating
+  [#3] representative: control theory  ·  9 members
+      · adaptive control
+      · adaptive control theory
+      · control theory  [代表]
+      · control theory feedback loop
+      · control theory feedback loop adjustment
+      · control theory state space model
+      · feedback control system
+      · feedback loop control
+      · optimal control theory
+  [#4] representative: optimization theory  ·  5 members
+      · constrained optimization
+      · multi objective optimization
+      · optimization theory  [代表]
+      · resource allocation optimization
+      · resource allocation theory
+  [#5] representative: cognitive behavioral model  ·  4 members
+      · cognitive behavioral model  [代表]
+      · cognitive behavioral therapy model
+      · cognitive model
+      · cognitive model of depression
+  [#6] representative: social network theory  ·  4 members
+      · complex network theory
+      · network theory
+      · social network analysis
+      · social network theory  [代表]
+  [#7] representative: cognitive bias modification  ·  3 members
+      · cognitive bias correction
+      · cognitive bias modification  [代表]
+      · cognitive restructuring
+  [#8] representative: cognitive biases and heuristics  ·  3 members
+      · anchoring and adjustment heuristic
+      · cognitive biases
+      · cognitive biases and heuristics  [代表]
+  [#9] representative: decision theory  ·  3 members
+      · bounded rationality
+      · decision theory  [代表]
+      · rational choice theory
+  [#10] representative: expected utility theory  ·  3 members
+      · expected utility theory  [代表]
+      · utility maximization
+      · utility maximization model
+  [#11] representative: classical conditioning  ·  2 members
+      · classical conditioning  [代表]
+      · classical conditioning extinction
+  [#12] representative: feedback loop  ·  2 members
+      · feedback loop  [代表]
+      · positive feedback loop
+  [#13] representative: game theory  ·  2 members
+      · cooperative game theory
+      · game theory  [代表]
+  [#14] representative: homeostasis  ·  2 members
+      · homeostasis  [代表]
+      · homeostasis model
+  [#15] representative: hyperbolic discounting  ·  2 members
+      · hyperbolic discounting  [代表]
+      · intertemporal choice model
+  [#16] representative: reinforcement learning  ·  2 members
+      · reinforcement learning  [代表]
+      · reinforcement learning model
+
+[Merge map: raw → canonical where label changed (60 pairs)]
+  bayesian belief network  →  bayesian inference
+  bayesian belief update  →  bayesian inference
+  bayesian belief updating  →  bayesian inference
+  bayesian cognitive model  →  bayesian inference
+  bayesian decision theory  →  bayesian inference
+  bayesian inference for belief updating  →  bayesian inference
+  bayesian inference model  →  bayesian inference
+  bayesian network  →  bayesian inference
+  bayesian updating  →  bayesian inference
+  classical conditioning extinction  →  classical conditioning
+  cognitive behavioral therapy model  →  cognitive behavioral model
+  cognitive model  →  cognitive behavioral model
+  cognitive model of depression  →  cognitive behavioral model
+  cognitive bias correction  →  cognitive bias modification
+  cognitive restructuring  →  cognitive bias modification
+  anchoring and adjustment heuristic  →  cognitive biases and heuristics
+  cognitive biases  →  cognitive biases and heuristics
+  adaptive control  →  control theory
+  adaptive control theory  →  control theory
+  control theory feedback loop  →  control theory
+  control theory feedback loop adjustment  →  control theory
+  control theory state space model  →  control theory
+  feedback control system  →  control theory
+  feedback loop control  →  control theory
+  optimal control theory  →  control theory
+  bounded rationality  →  decision theory
+  rational choice theory  →  decision theory
+  attractor basins and bifurcation theory  →  dynamical systems theory
+  attractor dynamics  →  dynamical systems theory
+  attractor network  →  dynamical systems theory
+  attractor network model  →  dynamical systems theory
+  attractor network theory  →  dynamical systems theory
+  attractor neural networks  →  dynamical systems theory
+  attractor state dynamics  →  dynamical systems theory
+  attractor theory  →  dynamical systems theory
+  bifurcation theory  →  dynamical systems theory
+  catastrophe theory  →  dynamical systems theory
+  complex adaptive systems theory  →  dynamical systems theory
+  coupled oscillators  →  dynamical systems theory
+  dynamic system model  →  dynamical systems theory
+  dynamic systems theory  →  dynamical systems theory
+  dynamical systems  →  dynamical systems theory
+  network dynamics  →  dynamical systems theory
+  nonlinear dynamics  →  dynamical systems theory
+  state space model  →  dynamical systems theory
+  system dynamics  →  dynamical systems theory
+  utility maximization  →  expected utility theory
+  utility maximization model  →  expected utility theory
+  positive feedback loop  →  feedback loop
+  cooperative game theory  →  game theory
+  homeostasis model  →  homeostasis
+  intertemporal choice model  →  hyperbolic discounting
+  constrained optimization  →  optimization theory
+  multi objective optimization  →  optimization theory
+  resource allocation optimization  →  optimization theory
+  resource allocation theory  →  optimization theory
+  reinforcement learning model  →  reinforcement learning
+  complex network theory  →  social network theory
+  network theory  →  social network theory
+  social network analysis  →  social network theory
+
+[Merge cluster details / 归并簇完整明细（共 303 簇，其中 16 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: dynamical systems theory  ·  20 条
+      · attractor basins and bifurcation theory
+      · attractor dynamics
+      · attractor network
+      · attractor network model
+      · attractor network theory
+      · attractor neural networks
+      · attractor state dynamics
+      · attractor theory
+      · bifurcation theory
+      · catastrophe theory
+      · complex adaptive systems theory
+      · coupled oscillators
+      · dynamic system model
+      · dynamic systems theory
+      · dynamical systems
+      · dynamical systems theory  [代表]
+      · network dynamics
+      · nonlinear dynamics
+      · state space model
+      · system dynamics
+  [2] 代表名: bayesian inference  ·  10 条
+      · bayesian belief network
+      · bayesian belief update
+      · bayesian belief updating
+      · bayesian cognitive model
+      · bayesian decision theory
+      · bayesian inference  [代表]
+      · bayesian inference for belief updating
+      · bayesian inference model
+      · bayesian network
+      · bayesian updating
+  [3] 代表名: control theory  ·  9 条
+      · adaptive control
+      · adaptive control theory
+      · control theory  [代表]
+      · control theory feedback loop
+      · control theory feedback loop adjustment
+      · control theory state space model
+      · feedback control system
+      · feedback loop control
+      · optimal control theory
+  [4] 代表名: optimization theory  ·  5 条
+      · constrained optimization
+      · multi objective optimization
+      · optimization theory  [代表]
+      · resource allocation optimization
+      · resource allocation theory
+  [5] 代表名: cognitive behavioral model  ·  4 条
+      · cognitive behavioral model  [代表]
+      · cognitive behavioral therapy model
+      · cognitive model
+      · cognitive model of depression
+  [6] 代表名: social network theory  ·  4 条
+      · complex network theory
+      · network theory
+      · social network analysis
+      · social network theory  [代表]
+  [7] 代表名: cognitive bias modification  ·  3 条
+      · cognitive bias correction
+      · cognitive bias modification  [代表]
+      · cognitive restructuring
+  [8] 代表名: cognitive biases and heuristics  ·  3 条
+      · anchoring and adjustment heuristic
+      · cognitive biases
+      · cognitive biases and heuristics  [代表]
+  [9] 代表名: decision theory  ·  3 条
+      · bounded rationality
+      · decision theory  [代表]
+      · rational choice theory
+  [10] 代表名: expected utility theory  ·  3 条
+      · expected utility theory  [代表]
+      · utility maximization
+      · utility maximization model
+  [11] 代表名: classical conditioning  ·  2 条
+      · classical conditioning  [代表]
+      · classical conditioning extinction
+  [12] 代表名: feedback loop  ·  2 条
+      · feedback loop  [代表]
+      · positive feedback loop
+  [13] 代表名: game theory  ·  2 条
+      · cooperative game theory
+      · game theory  [代表]
+  [14] 代表名: homeostasis  ·  2 条
+      · homeostasis  [代表]
+      · homeostasis model
+  [15] 代表名: hyperbolic discounting  ·  2 条
+      · hyperbolic discounting  [代表]
+      · intertemporal choice model
+  [16] 代表名: reinforcement learning  ·  2 条
+      · reinforcement learning  [代表]
+      · reinforcement learning model
+  [17] （单条）activation energy model
+  [18] （单条）adaptive control optimization
+  [19] （单条）adaptive resilience model
+  [20] （单条）adiabatic process
+  [21] （单条）allostatic load model
+  [22] （单条）attachment theory model
+  [23] （单条）attractor basins
+  [24] （单条）attractor basins and catastrophe theory
+  [25] （单条）attractor basins and phase transitions
+  [26] （单条）attractor basins dynamics
+  [27] （单条）attractor basins in dynamical systems
+  [28] （单条）attractor networks
+  [29] （单条）attractor neural network
+  [30] （单条）barrier option theory
+  [31] （单条）basin of attraction
+  [32] （单条）bayesian belief revision
+  [33] （单条）bayesian brain hypothesis
+  [34] （单条）bayesian inference and belief updating
+  [35] （单条）bayesian inference and cognitive restructuring
+  [36] （单条）bayesian inference and decision theory
+  [37] （单条）bayesian probability
+  [38] （单条）bayesian update
+  [39] （单条）behavioral activation
+  [40] （单条）behavioral activation model
+  [41] （单条）behavioral economics
+  [42] （单条）behavioral economics nudge theory
+  [43] （单条）behavioral economics nudging
+  [44] （单条）belief propagation
+  [45] （单条）belief revision
+  [46] （单条）belief updating bayesian inference
+  [47] （单条）biased bayesian updating
+  [48] （单条）biological feedback loop regulation
+  [49] （单条）biopsychosocial model
+  [50] （单条）bistable system dynamics
+  [51] （单条）bounded rationality and satisficing
+  [52] （单条）chunking
+  [53] （单条）circadian rhythm entrainment
+  [54] （单条）classical and operant conditioning
+  [55] （单条）classical and operant conditioning models
+  [56] （单条）classical conditioning and extinction
+  [57] （单条）cognitive appraisal model
+  [58] （单条）cognitive appraisal theory
+  [59] （单条）cognitive behavioral loop
+  [60] （单条）cognitive behavioral model of insomnia
+  [61] （单条）cognitive behavioral re structuring
+  [62] （单条）cognitive bias correction model
+  [63] （单条）cognitive biases correction
+  [64] （单条）cognitive dissonance theory
+  [65] （单条）cognitive distortion model
+  [66] （单条）cognitive load theory
+  [67] （单条）cognitive model of emotion
+  [68] （单条）cognitive model of psychopathology
+  [69] （单条）cognitive resource allocation theory
+  [70] （单条）cognitive restructuring model
+  [71] （单条）cognitive schema
+  [72] （单条）cognitive schema theory
+  [73] （单条）cognitive theory of depression
+  [74] （单条）cognitive triad model
+  [75] （单条）complex adaptive systems
+  [76] （单条）complex adaptive systems resilience
+  [77] （单条）compound interest
+  [78] （单条）compound interest model
+  [79] （单条）connectionism
+  [80] （单条）constraint optimization
+  [81] （单条）constraint relaxation
+  [82] （单条）contingencies of self worth
+  [83] （单条）control system optimization
+  [84] （单条）control theory homeostasis
+  [85] （单条）control theory pid controller
+  [86] （单条）control theory state space transformation
+  [87] （单条）control theory system stabilization
+  [88] （单条）cost benefit analysis
+  [89] （单条）coupled dynamical systems
+  [90] （单条）crisis management model
+  [91] （单条）cybernetics control system
+  [92] （单条）cybernetics feedback control system
+  [93] （单条）cybernetics feedback loop
+  [94] （单条）decision theory under uncertainty
+  [95] （单条）decision tree analysis
+  [96] （单条）decision tree learning
+  [97] （单条）decoupling principle
+  [98] （单条）dual process theory
+  [99] （单条）dynamic programming
+  [100] （单条）dynamic system stability
+  [101] （单条）dynamic system theory
+  [102] （单条）dynamic system with feedback loops
+  [103] （单条）dynamic systems stability
+  [104] （单条）dynamical system theory
+  [105] （单条）dynamical systems feedback loops
+  [106] （单条）dynamical systems theory phase transition
+  [107] （单条）dynamical systems theory with attractors
+  [108] （单条）dynamical systems with bifurcation
+  [109] （单条）ego depletion model
+  [110] （单条）embodied cognition
+  [111] （单条）emotion regulation process model
+  [112] （单条）event study
+  [113] （单条）expectancy theory
+  [114] （单条）expectancy value theory
+  [115] （单条）expected utility theory reorientation
+  [116] （单条）exploration exploitation tradeoff
+  [117] （单条）exponential decay model
+  [118] （单条）exposure therapy
+  [119] （单条）feedback control
+  [120] （单条）feedback control loop
+  [121] （单条）feedback control systems
+  [122] （单条）feedback loop analysis
+  [123] （单条）feedback loop control theory
+  [124] （单条）feedback loop dynamics
+  [125] （单条）feedback loop interruption and reconfiguration
+  [126] （单条）feedback loop mechanisms
+  [127] （单条）feedback loop theory
+  [128] （单条）flow theory
+  [129] （单条）fogg behavior model
+  [130] （单条）game theory equilibrium
+  [131] （单条）game theory equilibrium refinement
+  [132] （单条）game theory nash equilibrium
+  [133] （单条）general adaptation syndrome
+  [134] （单条）general systems theory
+  [135] （单条）gradient descent optimization
+  [136] （单条）habit formation theory
+  [137] （单条）habituation model
+  [138] （单条）hebbian learning
+  [139] （单条）hebbian learning model
+  [140] （单条）hierarchy of needs theory
+  [141] （单条）homeostasis regulation model
+  [142] （单条）homeostasis restoration model
+  [143] （单条）hyperbolic discounting model
+  [144] （单条）information asymmetry
+  [145] （单条）information asymmetry model
+  [146] （单条）information asymmetry reduction
+  [147] （单条）information diffusion model
+  [148] （单条）information processing theory
+  [149] （单条）information theory
+  [150] （单条）information theory and control
+  [151] （单条）information theory entropy reduction
+  [152] （单条）input output system
+  [153] （单条）intertemporal choice theory
+  [154] （单条）intertemporal choice with hyperbolic discounting
+  [155] （单条）intrinsic motivation
+  [156] （单条）knapsack problem
+  [157] （单条）law of diminishing returns
+  [158] （单条）learned helplessness
+  [159] （单条）learned helplessness model
+  [160] （单条）limited capacity attention model
+  [161] （单条）local optima and global optima
+  [162] （单条）local optima avoidance
+  [163] （单条）loss aversion
+  [164] （单条）markov decision process
+  [165] （单条）markov decision process with external intervention
+  [166] （单条）markov decision process with policy optimization
+  [167] （单条）maslow's hierarchy of needs
+  [168] （单条）mechanism design
+  [169] （单条）memory reconsolidation
+  [170] （单条）monoamine hypothesis of depression
+  [171] （单条）multi agent system
+  [172] （单条）multi agent system coordination
+  [173] （单条）multi armed bandit problem
+  [174] （单条）multi attribute decision making
+  [175] （单条）multi attribute utility theory
+  [176] （单条）multiattribute utility theory
+  [177] （单条）multistability and phase transition
+  [178] （单条）multistability and phase transition in dynamical systems
+  [179] （单条）nash equilibrium shift
+  [180] （单条）negative feedback control system
+  [181] （单条）negative feedback loop
+  [182] （单条）negative feedback loop disruption
+  [183] （单条）network centrality
+  [184] （单条）network centrality intervention
+  [185] （单条）network centrality metrics
+  [186] （单条）network interventions
+  [187] （单条）network robustness
+  [188] （单条）neural network dynamics
+  [189] （单条）neural network rewiring
+  [190] （单条）neural plasticity
+  [191] （单条）neurotransmitter dynamics model
+  [192] （单条）neurotransmitter homeostasis regulation
+  [193] （单条）nonlinear dynamic systems with feedback control
+  [194] （单条）nonlinear dynamical system
+  [195] （单条）nonlinear dynamical systems
+  [196] （单条）nonlinear dynamical systems attractor landscape
+  [197] （单条）nonlinear dynamical systems theory
+  [198] （单条）nudge theory
+  [199] （单条）operant conditioning
+  [200] （单条）operant conditioning model
+  [201] （单条）optimal stopping problem
+  [202] （单条）optimal stopping theory
+  [203] （单条）optimization algorithm
+  [204] （单条）path dependence
+  [205] （单条）pharmacokinetic model
+  [206] （单条）phase transition
+  [207] （单条）phase transition model
+  [208] （单条）phase transition theory
+  [209] （单条）polyvagal theory
+  [210] （单条）portfolio theory
+  [211] （单条）positive and negative feedback loops
+  [212] （单条）positive feedback loop interruption
+  [213] （单条）positive feedback system
+  [214] （单条）potential field theory
+  [215] （单条）prediction error minimization
+  [216] （单条）predictive coding
+  [217] （单条）preferential attachment
+  [218] （单条）principal agent problem
+  [219] （单条）principal agent theory
+  [220] （单条）principle of homeostasis
+  [221] （单条）priority queueing model
+  [222] （单条）production function
+  [223] （单条）prospect theory
+  [224] （单条）queueing theory
+  [225] （单条）queuing theory
+  [226] （单条）real options theory
+  [227] （单条）regulation of affective states
+  [228] （单条）reinforcement learning exploration exploitation dilemma
+  [229] （单条）reinforcement learning reward function engineering
+  [230] （单条）reinforcement learning value function
+  [231] （单条）reinforcement learning with dynamic reward function and value iteration
+  [232] （单条）reinforcement learning with environmental shaping
+  [233] （单条）reinforcement learning with multi objective reward functions
+  [234] （单条）reliability engineering
+  [235] （单条）repeated game theory
+  [236] （单条）repeated game with unstable equilibrium
+  [237] （单条）repeated prisoner's dilemma
+  [238] （单条）resilience engineering
+  [239] （单条）resilience theory
+  [240] （单条）resource allocation model
+  [241] （单条）resource allocation optimization under constraints
+  [242] （单条）reward prediction error
+  [243] （单条）reward system optimization
+  [244] （单条）risk aversion
+  [245] （单条）risk exposure reduction model
+  [246] （单条）risk management theory
+  [247] （单条）risk mitigation model
+  [248] （单条）schema theory
+  [249] （单条）self determination theory
+  [250] （单条）self efficacy theory
+  [251] （单条）self fulfilling prophecy
+  [252] （单条）sequential decision making
+  [253] （单条）sequential decision making under uncertainty
+  [254] （单条）sequential game
+  [255] （单条）signaling game
+  [256] （单条）signaling game theory
+  [257] （单条）signaling theory
+  [258] （单条）simulated annealing
+  [259] （单条）social cognitive theory
+  [260] （单条）social learning equilibrium
+  [261] （单条）social learning theory
+  [262] （单条）social network contagion and support
+  [263] （单条）social network dynamics
+  [264] （单条）social network influence model
+  [265] （单条）social network theory with resource transfer
+  [266] （单条）social support networks
+  [267] （单条）social support theory
+  [268] （单条）stability theory
+  [269] （单条）stochastic dynamic programming
+  [270] （单条）stochastic gradient descent with adaptive learning rate
+  [271] （单条）stochastic optimal control
+  [272] （单条）stochastic process
+  [273] （单条）stochastic resonance
+  [274] （单条）stress coping model
+  [275] （单条）synaptic plasticity
+  [276] （单条）synergistic effects in complex adaptive systems
+  [277] （单条）synergy effect
+  [278] （单条）system dynamics equilibrium shift
+  [279] （单条）system dynamics feedback loop interventions
+  [280] （单条）system dynamics feedback loops
+  [281] （单条）system identification
+  [282] （单条）system identification and control
+  [283] （单条）system identification and robust control
+  [284] （单条）systems theory
+  [285] （单条）theory of planned behavior
+  [286] （单条）threshold decision model
+  [287] （单条）threshold model
+  [288] （单条）time preference and discounting
+  [289] （单条）tit for tat strategy
+  [290] （单条）transaction cost economics
+  [291] （单条）transactional model of stress and coping
+  [292] （单条）transtheoretical model
+  [293] （单条）trust game
+  [294] （单条）two process model of sleep regulation
+  [295] （单条）utility function
+  [296] （单条）utility function modification
+  [297] （单条）utility function transformation in game theory
+  [298] （单条）utility maximization theory
+  [299] （单条）utility maximization under constraint
+  [300] （单条）utility maximization under constraints
+  [301] （单条）utility maximization with bounded rationality
+  [302] （单条）utility theory
+  [303] （单条）vulnerability stress model
+
+==============================================================================
