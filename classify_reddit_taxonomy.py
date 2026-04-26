@@ -42,7 +42,7 @@ TAXONOMY_INPUT_PRESETS: dict[str, Path] = {
     "reddit_advice": ROOT / "reddit_r_advice.jsonl",
     "reddit_data": ROOT / "data" / "reddit_r_advice.jsonl",
     "zhihu_kol_train": ROOT / "zhihu_kol_train.jsonl",
-    "probe_results": ROOT / "probe_results.jsonl",
+    "probe_results": ROOT / "model" / "probe_results.jsonl",
     "selected_t3_submissions": ROOT / "selected_subreddits_t3_submissions.jsonl",
     "subreddits": ROOT / "subreddits.jsonl",
 }

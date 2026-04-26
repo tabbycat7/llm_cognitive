@@ -1,0 +1,228 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:24
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Societal&Ethical\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Societal&Ethical\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Societal&Ethical\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     558
+  distinct stage-1 canonicals:  311
+  stage2 map entries (keys):    311
+  distinct stage-2 canonicals:  192
+  stage2 merge groups (|keys|>1 for same c2): 29 groups, 148 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1191
+  distinct c1 (weighted rows): 311
+  distinct c2 (weighted):      192
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'fact opinion dichotomy'  ←  73 stage-1 labels
+        · ambiguity resolution under knightian uncertainty
+        · anchor consistency
+        · andersen test
+        · assertion theory
+        · asset recovery
+        · bailment
+        · base rate neglect
+        · bass diffusion model
+        · beyond reasonable doubt
+        · binary state verification
+        · boolean algebra
+        · boolean conjunction model
+        · … +61 more
+  [ 2] 'bargaining'  ←  5 stage-1 labels
+        · alternating offer bargaining
+        · bargaining
+        · bargaining model
+        · sequential bargaining
+        · ultimatum game
+  [ 3] 'nash equilibrium'  ←  5 stage-1 labels
+        · best response
+        · game theory equilibria
+        · mixed strategy equilibrium
+        · nash equilibrium
+        · separating equilibrium
+  [ 4] 'signaling game'  ←  5 stage-1 labels
+        · authentication game
+        · costly signaling
+        · signal theory
+        · signaling
+        · signaling game
+  [ 5] 'feedback loop'  ←  4 stage-1 labels
+        · feedback control
+        · feedback loop
+        · feedback loop interruption
+        · system dynamics
+  [ 6] 'mechanism design'  ←  4 stage-1 labels
+        · incentive compatibility
+        · incentive mechanism
+        · mechanism design
+        · revelation principle
+  [ 7] 'sequential game'  ←  4 stage-1 labels
+        · backward induction
+        · extensive form game
+        · multistage game
+        · sequential game
+  [ 8] 'choice architecture'  ←  3 stage-1 labels
+        · choice architecture
+        · cognitive heuristics
+        · framing effect
+  [ 9] 'enforcement mechanism'  ←  3 stage-1 labels
+        · accountability mechanism
+        · enforcement mechanism
+        · regulatory enforcement
+  [10] 'principal-agent theory'  ←  3 stage-1 labels
+        · adverse selection
+        · principal agent theory
+        · screening
+  [11] 'social influence'  ←  3 stage-1 labels
+        · coalition formation
+        · collective action
+        · social influence
+  [12] 'arbitration'  ←  2 stage-1 labels
+        · arbitration
+        · mediation model
+  [13] 'bayesian updating'  ←  2 stage-1 labels
+        · bayes theorem
+        · bayesian updating
+  [14] 'commitment'  ←  2 stage-1 labels
+        · commitment
+        · credible threat
+  [15] 'contingent claims'  ←  2 stage-1 labels
+        · american option
+        · contingent claims
+  [16] 'coordination game'  ←  2 stage-1 labels
+        · chicken game
+        · coordination game
+  [17] 'hypothesis testing'  ←  2 stage-1 labels
+        · hypothesis testing
+        · likelihood ratio test
+  [18] 'information acquisition'  ←  2 stage-1 labels
+        · information acquisition
+        · multichannel acquisition
+  [19] 'information cascade'  ←  2 stage-1 labels
+        · cascade model
+        · information cascade
+  [20] 'liability rule'  ←  2 stage-1 labels
+        · liability rule
+        · liability transfer
+  [21] 'markov chain'  ←  2 stage-1 labels
+        · markov chain
+        · state transition
+  [22] 'markov decision process'  ←  2 stage-1 labels
+        · markov decision process
+        · sequential decision making
+  [23] 'optimal stopping'  ←  2 stage-1 labels
+        · optimal stopping
+        · real options
+  [24] 'procedural justice'  ←  2 stage-1 labels
+        · procedural justice
+        · procedural manipulation
+  [25] 'reinforcement learning'  ←  2 stage-1 labels
+        · adaptive search algorithm
+        · reinforcement learning
+  [26] 'resource allocation'  ←  2 stage-1 labels
+        · proportional allocation
+        · resource allocation
+  [27] 'threshold model'  ←  2 stage-1 labels
+        · threshold model
+        · threshold state machine
+  [28] 'utility theory'  ←  2 stage-1 labels
+        · expected value calculation
+        · utility theory
+  [29] 'verification'  ←  2 stage-1 labels
+        · audit trail
+        · verification
+
+[Stage-2 renames] (key ≠ value, 124 entries; list first 80)
+  'accountability mechanism'  →  'enforcement mechanism'
+  'adaptive search algorithm'  →  'reinforcement learning'
+  'adverse selection'  →  'principal-agent theory'
+  'alternating offer bargaining'  →  'bargaining'
+  'ambiguity resolution under knightian uncertainty'  →  'fact opinion dichotomy'
+  'american option'  →  'contingent claims'
+  'anchor consistency'  →  'fact opinion dichotomy'
+  'andersen test'  →  'fact opinion dichotomy'
+  'assertion theory'  →  'fact opinion dichotomy'
+  'asset recovery'  →  'fact opinion dichotomy'
+  'audit trail'  →  'verification'
+  'authentication game'  →  'signaling game'
+  'backward induction'  →  'sequential game'
+  'bailment'  →  'fact opinion dichotomy'
+  'bargaining model'  →  'bargaining'
+  'base rate neglect'  →  'fact opinion dichotomy'
+  'bass diffusion model'  →  'fact opinion dichotomy'
+  'bayes theorem'  →  'bayesian updating'
+  'best response'  →  'nash equilibrium'
+  'beyond reasonable doubt'  →  'fact opinion dichotomy'
+  'binary classification with feature space adaptation'  →  'binary classification'
+  'binary state verification'  →  'fact opinion dichotomy'
+  'boolean algebra'  →  'fact opinion dichotomy'
+  'boolean conjunction model'  →  'fact opinion dichotomy'
+  'boolean network'  →  'fact opinion dichotomy'
+  'boundary condition'  →  'fact opinion dichotomy'
+  'boundary spanning'  →  'fact opinion dichotomy'
+  'bureaucratic politics model'  →  'fact opinion dichotomy'
+  'but for test'  →  'fact opinion dichotomy'
+  'cascade model'  →  'information cascade'
+  'catastrophe theory'  →  'fact opinion dichotomy'
+  'categorical perception'  →  'fact opinion dichotomy'
+  'causal attribution'  →  'causal inference'
+  'causal inference andscm'  →  'fact opinion dichotomy'
+  'causal intervention'  →  'fact opinion dichotomy'
+  'certificate chain'  →  'fact opinion dichotomy'
+  'chain of custody'  →  'fact opinion dichotomy'
+  'chain store paradox'  →  'fact opinion dichotomy'
+  'challenge response paradigm'  →  'fact opinion dichotomy'
+  'channel capacity (information theory)'  →  'fact opinion dichotomy'
+  'chicken game'  →  'coordination game'
+  'claim priority model'  →  'fact opinion dichotomy'
+  'coalition formation'  →  'social influence'
+  'cognitive bias correction'  →  'fact opinion dichotomy'
+  'cognitive control'  →  'fact opinion dichotomy'
+  'cognitive dissonance'  →  'fact opinion dichotomy'
+  'cognitive heuristics'  →  'choice architecture'
+  'collective action'  →  'social influence'
+  'complete contract'  →  'fact opinion dichotomy'
+  'constrained network routing'  →  'fact opinion dichotomy'
+  'constraint propagation'  →  'fact opinion dichotomy'
+  'contempt of court doctrine'  →  'fact opinion dichotomy'
+  'contestable market'  →  'fact opinion dichotomy'
+  'context sensitive decision'  →  'fact opinion dichotomy'
+  'contract gap filling'  →  'fact opinion dichotomy'
+  'controllability'  →  'fact opinion dichotomy'
+  'cost benefit calculation shift'  →  'fact opinion dichotomy'
+  'costly signaling'  →  'signaling game'
+  'countervailing power mechanism'  →  'fact opinion dichotomy'
+  'court enforced settlement'  →  'fact opinion dichotomy'
+  'credence goods'  →  'fact opinion dichotomy'
+  'credible threat'  →  'commitment'
+  'credit card chargeback mechanism'  →  'fact opinion dichotomy'
+  'critical point model'  →  'fact opinion dichotomy'
+  'damped harmonic oscillator'  →  'fact opinion dichotomy'
+  "darcy's law"  →  'fact opinion dichotomy'
+  'decision rule model'  →  'fact opinion dichotomy'
+  'decision tree with information trigger'  →  'fact opinion dichotomy'
+  'decision under uncertainty'  →  'fact opinion dichotomy'
+  'default rule with response window'  →  'fact opinion dichotomy'
+  'degroot friedkin model'  →  'fact opinion dichotomy'
+  'dependency graph'  →  'fact opinion dichotomy'
+  'discovery procedure'  →  'fact opinion dichotomy'
+  'displacement'  →  'fact opinion dichotomy'
+  'distributed state propagation'  →  'fact opinion dichotomy'
+  'diversion program'  →  'fact opinion dichotomy'
+  'division of labor'  →  'fact opinion dichotomy'
+  'documentation trace'  →  'fact opinion dichotomy'
+  'dual channel cascade'  →  'fact opinion dichotomy'
+  'dual process theory'  →  'fact opinion dichotomy'
+  … 44 more
+
+[Consistency with merge_map.json]
+  compared 558 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

@@ -1,32 +1,34 @@
 ==============================================================================
 LLM Cognitive Probe — Analysis Summary
 ==============================================================================
-Generated (local): 2026-04-22T20:10:20
+Generated (local): 2026-04-24T10:36:01
 
 [Input]
-  results_file: E:\college\postgraduate\llm_cognitive\google-gemini-2.5-flash\Relational&Intimate\probe_results.jsonl
+  results_file: E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Relational&Intimate\probe_results.jsonl
   records (non-empty JSONL lines): 500
 
 [Merge]
   merge_method: llm
-  refresh_merge: True
+  refresh_merge: False
   name_source: step3
   chart_top_n: 30
 
 [Counts]
   raw_unique_names: 353
   raw_total_mentions: 1322
-  canonical_unique_names: 318
+  canonical_unique_names: 71
   canonical_total_mentions: 1322
-  distinct_label_reduction: 353 raw → 318 canonical (9.9% fewer labels)
+  distinct_label_reduction: 353 raw → 71 canonical (79.9% fewer labels)
 
 [Output artifacts]
   merge_map.json: yes
-  merge_map.embeddings.json: no
+  merge_map_llm_stage1.json: yes
+  merge_map_llm_stage1.embeddings.json: yes
+  merge_map_llm_stage2.json: yes
   model_law_frequency.png: yes
   model_law_wordcloud.png: yes
-  cluster_dendrogram.png: no
-  cluster_scatter.png: no
+  cluster_dendrogram.png: yes
+  cluster_scatter.png: yes
 
 [Top 30 raw names — before merge / 归并前（原始标签频次）]
   rank   count  name
@@ -63,527 +65,1107 @@ Generated (local): 2026-04-22T20:10:20
 
 [Top 30 canonical names — after merge / 归并后（代表名频次）]
   rank   count  name
-     1     200  signaling game
-     2      98  bayesian inference
-     3      58  feedback control system
-     4      43  reinforcement learning
-     5      43  operant conditioning
-     6      37  nash equilibrium
-     7      32  feedback loop interruption
-     8      31  control theory
-     9      27  repeated game theory
-    10      27  game theory
-    11      25  dynamical systems theory
-    12      24  expected utility theory
-    13      23  information asymmetry
-    14      21  optimal stopping problem
-    15      21  cognitive dissonance theory
-    16      21  resource allocation optimization
-    17      19  prospect theory
-    18      17  principal agent problem
-    19      15  utility maximization
-    20      13  sunk cost fallacy
-    21      12  bayesian decision theory
-    22      11  classical conditioning extinction
-    23      11  signaling theory
-    24      11  information theory
-    25      11  contract theory
-    26      10  hyperbolic discounting
-    27       9  markov decision process
-    28       8  cost benefit analysis
-    29       8  bayesian game
-    30       7  tit for tat strategy
+     1     211  signaling game
+     2     143  feedback control
+     3     114  bayesian inference
+     4      96  dynamical systems
+     5      83  utility theory
+     6      58  nash equilibrium
+     7      58  operant conditioning
+     8      47  reinforcement learning
+     9      45  repeated game
+    10      39  optimization
+    11      37  information theory
+    12      35  prospect theory
+    13      32  information asymmetry
+    14      29  cognitive dissonance
+    15      28  game theory
+    16      23  principal-agent theory
+    17      22  optimal stopping
+    18      22  cognitive bias
+    19      14  social networks
+    20      13  classical conditioning
+    21      13  bargaining game
+    22      12  markov decision process
+    23       9  commitment device
+    24       9  real options
+    25       7  scarcity
+    26       7  cognitive model
+    27       7  markov chain
+    28       6  dynamic programming
+    29       6  portfolio theory
+    30       6  state space model
 
-[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 21 clusters]
-  [#1] representative: bayesian inference  ·  5 members
-      · bayesian belief updating
-      · bayesian inference  [代表]
-      · bayesian information update
-      · bayesian update
-      · bayesian updating
-  [#2] representative: feedback control system  ·  4 members
-      · control theory feedback loop
-      · dynamic systems with feedback control
-      · feedback control system  [代表]
-      · feedback loop control
-  [#3] representative: game theory  ·  4 members
-      · bargaining game
-      · cooperative game theory
-      · coordination game
-      · game theory  [代表]
-  [#4] representative: contract theory  ·  3 members
-      · contract theory  [代表]
-      · incentive compatibility
-      · mechanism design
-  [#5] representative: dynamical systems theory  ·  3 members
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 46 clusters]
+  [#1] representative: dynamical systems  ·  49 members
+      · adaptive dynamics
+      · attractor basins
+      · attractor dynamics
+      · attractor state transition
+      · attractor theory
+      · bifurcation theory
+      · boundary condition establishment
+      · boundary conditions
+      · catastrophe theory
+      · chaos theory attractor dynamics
+      · coupled oscillators
+      · coupled oscillators model
+      · critical point dynamics
+      · decoupling
+      · decoupling theory
+      · disequilibrium dynamics
+      · dissipative structure self organization
+      · dissipative structures
+      · dynamic system control theory
+      · dynamic system disruption
+      · dynamic system perturbation
+      · dynamic system theory
       · dynamic systems theory
-      · dynamical systems theory  [代表]
+      · dynamic systems with feedback control
+      · dynamical systems  [代表]
+      · dynamical systems phase transition
+      · dynamical systems stability
+      · dynamical systems theory
+      · escape dynamics
+      · game theory strategy change
+      · game theory strategy shift
+      · hysteresis model
+      · limit cycle attractor disruption
+      · logistic growth model
+      · phase transition
+      · phase transition induction
+      · relaxation to equilibrium
+      · resilience theory
+      · self organization criticality
+      · system decoupling
       · system dynamics
-  [#6] representative: feedback loop interruption  ·  3 members
-      · control theory feedback loop interruption
-      · feedback loop interruption  [代表]
-      · negative feedback loop disruption
-  [#7] representative: hyperbolic discounting  ·  3 members
-      · hyperbolic discounting  [代表]
+      · system dynamics feedback loop adjustment
+      · system dynamics feedback loop interruption
+      · system dynamics feedback loops
+      · system dynamics modeling
+      · system isolation for recovery
+      · system robustness
+      · threshold decision model
+      · threshold model
+  [#2] representative: utility theory  ·  24 members
+      · cost benefit analysis
+      · discounted utility model
+      · expected utility maximization
+      · expected utility theory
+      · hyperbolic discounting
+      · incentive alignment
+      · incentive alignment mechanism
+      · incentive compatibility
+      · incentive mechanism design
+      · incentive theory
       · intertemporal choice
       · intertemporal choice model
-  [#8] representative: operant conditioning  ·  3 members
+      · multi attribute decision making
+      · multiattribute utility theory
+      · rational choice theory
+      · regret minimization
+      · time inconsistency
+      · utility function revaluation
+      · utility maximization
+      · utility maximization theory
+      · utility maximization under constraint relaxation
+      · utility maximization under uncertainty
+      · utility maximization with dynamic constraints
+      · value function decay
+  [#3] representative: feedback control  ·  23 members
+      · adaptive control
+      · adaptive control theory
+      · control theory
+      · control theory disturbance rejection
+      · control theory feedback loop
+      · control theory feedback loop interruption
+      · control theory with positive feedback loop
+      · cybernetic feedback loop adjustment
+      · cybernetics of feedback loops
+      · feedback control system
+      · feedback control system disruption
+      · feedback loop
+      · feedback loop control
+      · feedback loop interruption
+      · negative feedback control system
+      · negative feedback loop
+      · negative feedback loop disruption
+      · negative feedback loop interruption
+      · open loop control
+      · optimal control theory
+      · positive feedback loop
+      · positive feedback loop interruption
+      · stochastic control theory
+  [#4] representative: information theory  ·  17 members
+      · entropy reduction principle
+      · information entropy minimization
+      · information entropy reduction
+      · information flow control
+      · information theory  [代表]
+      · information theory and entropy reduction
+      · information theory based optimal filtering
+      · information theory communication channel
+      · information theory entropy reduction
+      · information theory noise reduction
+      · shannon entropy
+      · signal detection theory
+      · signal extraction
+      · signal processing
+      · signal theory
+      · signal to noise ratio optimization
+      · signaling theory
+  [#5] representative: nash equilibrium  ·  16 members
+      · cooperative game theory
+      · cooperative game theory equilibrium
+      · equilibrium selection
+      · equilibrium shift
+      · game theory equilibrium
+      · game theory equilibrium selection
+      · game theory equilibrium shift
+      · game theory nash equilibrium
+      · game theory with cooperative equilibrium
+      · multiple equilibria
+      · multiple equilibria model
+      · nash bargaining solution
+      · nash equilibrium  [代表]
+      · nash equilibrium shift
+      · nash equilibrium with external enforcement
+      · system equilibrium shift
+  [#6] representative: optimization  ·  16 members
+      · constrained optimization
+      · constraint optimization
+      · finite horizon optimization
+      · global optimization
+      · iterative optimization
+      · kalman filter
+      · multi objective optimization and pareto efficiency
+      · optimal resource allocation
+      · optimization problem
+      · optimization under constraints
+      · optimization under uncertainty
+      · resource allocation model
+      · resource allocation optimization
+      · resource allocation problem
+      · resource allocation theory
+      · robustness maximization
+  [#7] representative: operant conditioning  ·  13 members
+      · behavioral substitution and positive reinforcement
+      · extinction
+      · extinction learning
+      · extinction reinforcement schedule
+      · extinction schedules
+      · intermittent reinforcement
+      · intermittent reinforcement extinction
+      · intermittent reinforcement schedule
       · operant conditioning  [代表]
       · operant conditioning extinction
       · operant extinction
-  [#9] representative: principal agent problem  ·  3 members
+      · reinforcement extinction
+      · variable ratio reinforcement schedules
+  [#8] representative: repeated game  ·  12 members
+      · folk theorem
+      · game theory repeated game with monitoring
+      · game theory repeated games
+      · game theory repeated games with punishments
+      · repeated game  [代表]
+      · repeated game theory
+      · repeated game theory with incomplete information
+      · repeated game theory with reputation building
+      · repeated game with punishment
+      · tit for tat strategy
+      · tit for tat with forgiveness
+      · trigger strategy
+  [#9] representative: signaling game  ·  11 members
+      · asymmetric information game theory
+      · game theory signaling
+      · game theory signaling and commitment
+      · game theory signaling and information revelation
+      · game theory signaling and screening
+      · signaling game  [代表]
+      · signaling game and nash equilibrium
+      · signaling game equilibrium
+      · signaling game equilibrium shift
+      · signaling game theory
+      · signaling game with asymmetric information
+  [#10] representative: bayesian inference  ·  10 members
+      · bayesian belief update
+      · bayesian belief updating
+      · bayesian decision theory
+      · bayesian inference  [代表]
+      · bayesian information update
+      · bayesian information updating
+      · bayesian learning
+      · bayesian update
+      · bayesian updating
+      · hidden markov model inference
+  [#11] representative: cognitive bias  ·  10 members
+      · cognitive bias  [代表]
+      · cognitive bias correction
+      · cognitive bias mitigation
+      · cognitive bias modification
+      · cognitive distortion theory
+      · cognitive distortions
+      · confirmation bias
+      · sunk cost fallacy
+      · sunk cost fallacy and decision trees
+      · sunk cost fallacy avoidance
+  [#12] representative: prospect theory  ·  10 members
+      · anchoring and adjustment heuristic
+      · endowment effect
+      · framing effect
+      · loss aversion
+      · prospect theory  [代表]
+      · reference dependence
+      · reference point shift
+      · risk aversion principle
+      · status quo bias
+      · status quo bias mitigation
+  [#13] representative: social networks  ·  9 members
+      · assortative mixing
+      · homophily
+      · network centrality
+      · network centrality theory
+      · network pruning
+      · social capital theory
+      · social network analysis
+      · social network restructuring
+      · social network theory
+  [#14] representative: information asymmetry  ·  8 members
       · adverse selection
-      · moral hazard
-      · principal agent problem  [代表]
-  [#10] representative: resource allocation optimization  ·  3 members
-      · optimal resource allocation
-      · resource allocation optimization  [代表]
-      · resource allocation theory
-  [#11] representative: bayesian game  ·  2 members
-      · bayesian game  [代表]
-      · bayesian game theory
-  [#12] representative: classical conditioning extinction  ·  2 members
-      · classical conditioning extinction  [代表]
-      · extinction learning
-  [#13] representative: constrained optimization  ·  2 members
-      · constrained optimization  [代表]
-      · constraint optimization
-  [#14] representative: control theory  ·  2 members
-      · adaptive control theory
-      · control theory  [代表]
-  [#15] representative: information asymmetry  ·  2 members
+      · asymmetric information
       · information asymmetry  [代表]
+      · information asymmetry and signaling
       · information asymmetry reduction
-  [#16] representative: markov chain  ·  2 members
+      · information cascade prevention
+      · moral hazard
+      · moral hazard model
+  [#15] representative: bargaining game  ·  7 members
+      · bargaining game  [代表]
+      · bargaining game with ultimatum
+      · bargaining theory
+      · batna best alternative to a negotiated agreement
+      · conflict resolution theory
+      · reservation price
+      · ultimatum game
+  [#16] representative: classical conditioning  ·  7 members
+      · classical and operant conditioning
+      · classical conditioning  [代表]
+      · classical conditioning extinction
+      · classical conditioning extinction and reconditioning
+      · stimulus control and response prevention
+      · stimulus generalization and discrimination
+      · stimulus response theory
+  [#17] representative: principal-agent theory  ·  6 members
+      · agent based model
+      · contract theory
+      · mechanism design
+      · principal agent model
+      · principal agent problem
+      · principal agent theory
+  [#18] representative: real options  ·  5 members
+      · option pricing model
+      · option value maximization
+      · real option theory
+      · real options analysis
+      · real options theory
+  [#19] representative: reinforcement learning  ·  5 members
+      · explore exploit dilemma
+      · reinforcement learning  [代表]
+      · reinforcement learning punishment
+      · reward prediction error
+      · temporal difference learning
+  [#20] representative: cognitive model  ·  4 members
+      · cognitive behavioral model
+      · cognitive behavioral therapy model
+      · cognitive behavioral therapy principles
+      · cognitive model  [代表]
+  [#21] representative: commitment device  ·  4 members
+      · commitment and credibility
+      · commitment device  [代表]
+      · commitment problem
+      · credible commitment
+  [#22] representative: game theory  ·  4 members
+      · bayesian game
+      · bayesian game theory
+      · behavioral game theory
+      · game theory  [代表]
+  [#23] representative: bounded rationality  ·  3 members
+      · bounded rationality  [代表]
+      · bounded rationality and satisficing
+      · satisficing
+  [#24] representative: cognitive dissonance  ·  3 members
+      · cognitive dissonance  [代表]
+      · cognitive dissonance theory
+      · cognitive restructuring
+  [#25] representative: decision tree  ·  3 members
+      · binary decision tree
+      · decision tree activation
+      · decision tree analysis
+  [#26] representative: dependency theory  ·  3 members
+      · dependency theory  [代表]
+      · power dependency theory
+      · resource dependency theory
+  [#27] representative: markov chain  ·  3 members
       · absorbing markov chain
       · markov chain  [代表]
-  [#17] representative: nash bargaining solution  ·  2 members
-      · bargaining theory
-      · nash bargaining solution  [代表]
-  [#18] representative: nash equilibrium  ·  2 members
-      · nash equilibrium  [代表]
-      · nash equilibrium shift
-  [#19] representative: signaling game  ·  2 members
-      · signaling game  [代表]
-      · signaling game theory
-  [#20] representative: sunk cost fallacy  ·  2 members
-      · sunk cost fallacy  [代表]
-      · sunk cost fallacy avoidance
-  [#21] representative: tit for tat strategy  ·  2 members
-      · tit for tat strategy  [代表]
-      · trigger strategy
+      · stochastic process with state transition
+  [#28] representative: markov decision process  ·  3 members
+      · markov decision process  [代表]
+      · sequential decision making
+      · sequential decision making under uncertainty
+  [#29] representative: prisoner's dilemma  ·  3 members
+      · prisoner's dilemma  [代表]
+      · prisoner's dilemma repeated game
+      · prisoners dilemma
+  [#30] representative: self regulation  ·  3 members
+      · affect regulation theory
+      · self esteem regulation theory
+      · self regulation theory
+  [#31] representative: social exchange theory  ·  3 members
+      · equity theory
+      · social exchange theory  [代表]
+      · social exchange theory reciprocity
+  [#32] representative: state space model  ·  3 members
+      · state space model  [代表]
+      · state space model with boundary conditions
+      · state transition model
+  [#33] representative: coase theorem  ·  2 members
+      · coase theorem  [代表]
+      · externalities
+  [#34] representative: coordination game  ·  2 members
+      · coordination failure
+      · coordination game  [代表]
+  [#35] representative: decision theory  ·  2 members
+      · decision theory  [代表]
+      · decision theory constraint optimization
+  [#36] representative: hebbian learning  ·  2 members
+      · hebbian learning  [代表]
+      · neural plasticity
+  [#37] representative: optimal stopping  ·  2 members
+      · optimal stopping problem
+      · optimal stopping theory
+  [#38] representative: path dependence  ·  2 members
+      · path dependence  [代表]
+      · path dependence theory
+  [#39] representative: scarcity  ·  2 members
+      · scarcity effect
+      · scarcity principle
+  [#40] representative: schema theory  ·  2 members
+      · schema theory  [代表]
+      · shared mental models
+  [#41] representative: sequential game  ·  2 members
+      · sequential game  [代表]
+      · sequential game theory
+  [#42] representative: social theory  ·  2 members
+      · social cognitive theory
+      · social support theory
+  [#43] representative: stackelberg game  ·  2 members
+      · stackelberg competition
+      · stackelberg game  [代表]
+  [#44] representative: subgame perfect equilibrium  ·  2 members
+      · subgame perfect equilibrium  [代表]
+      · subgame perfect nash equilibrium
+  [#45] representative: systematic desensitization  ·  2 members
+      · behavioral activation
+      · systematic desensitization  [代表]
+  [#46] representative: transaction cost economics  ·  2 members
+      · switching costs
+      · transaction cost economics  [代表]
 
-[Merge map: raw → canonical where label changed (35 pairs)]
-  bayesian game theory  →  bayesian game
+[Merge map: raw → canonical where label changed (293 pairs)]
+  bargaining game with ultimatum  →  bargaining game
+  bargaining theory  →  bargaining game
+  batna best alternative to a negotiated agreement  →  bargaining game
+  conflict resolution theory  →  bargaining game
+  reservation price  →  bargaining game
+  ultimatum game  →  bargaining game
+  bayesian belief update  →  bayesian inference
   bayesian belief updating  →  bayesian inference
+  bayesian decision theory  →  bayesian inference
   bayesian information update  →  bayesian inference
+  bayesian information updating  →  bayesian inference
+  bayesian learning  →  bayesian inference
   bayesian update  →  bayesian inference
   bayesian updating  →  bayesian inference
-  extinction learning  →  classical conditioning extinction
-  constraint optimization  →  constrained optimization
-  incentive compatibility  →  contract theory
-  mechanism design  →  contract theory
-  adaptive control theory  →  control theory
-  dynamic systems theory  →  dynamical systems theory
-  system dynamics  →  dynamical systems theory
-  control theory feedback loop  →  feedback control system
-  dynamic systems with feedback control  →  feedback control system
-  feedback loop control  →  feedback control system
-  control theory feedback loop interruption  →  feedback loop interruption
-  negative feedback loop disruption  →  feedback loop interruption
-  bargaining game  →  game theory
-  cooperative game theory  →  game theory
-  coordination game  →  game theory
-  intertemporal choice  →  hyperbolic discounting
-  intertemporal choice model  →  hyperbolic discounting
+  hidden markov model inference  →  bayesian inference
+  bounded rationality and satisficing  →  bounded rationality
+  satisficing  →  bounded rationality
+  classical and operant conditioning  →  classical conditioning
+  classical conditioning extinction  →  classical conditioning
+  classical conditioning extinction and reconditioning  →  classical conditioning
+  stimulus control and response prevention  →  classical conditioning
+  stimulus generalization and discrimination  →  classical conditioning
+  stimulus response theory  →  classical conditioning
+  externalities  →  coase theorem
+  cognitive bias correction  →  cognitive bias
+  cognitive bias mitigation  →  cognitive bias
+  cognitive bias modification  →  cognitive bias
+  cognitive distortion theory  →  cognitive bias
+  cognitive distortions  →  cognitive bias
+  confirmation bias  →  cognitive bias
+  sunk cost fallacy  →  cognitive bias
+  sunk cost fallacy and decision trees  →  cognitive bias
+  sunk cost fallacy avoidance  →  cognitive bias
+  cognitive dissonance theory  →  cognitive dissonance
+  cognitive restructuring  →  cognitive dissonance
+  cognitive behavioral model  →  cognitive model
+  cognitive behavioral therapy model  →  cognitive model
+  cognitive behavioral therapy principles  →  cognitive model
+  commitment and credibility  →  commitment device
+  commitment problem  →  commitment device
+  credible commitment  →  commitment device
+  coordination failure  →  coordination game
+  decision theory constraint optimization  →  decision theory
+  binary decision tree  →  decision tree
+  decision tree activation  →  decision tree
+  decision tree analysis  →  decision tree
+  power dependency theory  →  dependency theory
+  resource dependency theory  →  dependency theory
+  adaptive dynamics  →  dynamical systems
+  attractor basins  →  dynamical systems
+  attractor dynamics  →  dynamical systems
+  attractor state transition  →  dynamical systems
+  attractor theory  →  dynamical systems
+  bifurcation theory  →  dynamical systems
+  boundary condition establishment  →  dynamical systems
+  boundary conditions  →  dynamical systems
+  catastrophe theory  →  dynamical systems
+  chaos theory attractor dynamics  →  dynamical systems
+  coupled oscillators  →  dynamical systems
+  coupled oscillators model  →  dynamical systems
+  critical point dynamics  →  dynamical systems
+  decoupling  →  dynamical systems
+  decoupling theory  →  dynamical systems
+  disequilibrium dynamics  →  dynamical systems
+  dissipative structure self organization  →  dynamical systems
+  dissipative structures  →  dynamical systems
+  dynamic system control theory  →  dynamical systems
+  dynamic system disruption  →  dynamical systems
+  dynamic system perturbation  →  dynamical systems
+  dynamic system theory  →  dynamical systems
+  dynamic systems theory  →  dynamical systems
+  dynamic systems with feedback control  →  dynamical systems
+  dynamical systems phase transition  →  dynamical systems
+  dynamical systems stability  →  dynamical systems
+  dynamical systems theory  →  dynamical systems
+  escape dynamics  →  dynamical systems
+  game theory strategy change  →  dynamical systems
+  game theory strategy shift  →  dynamical systems
+  hysteresis model  →  dynamical systems
+  limit cycle attractor disruption  →  dynamical systems
+  logistic growth model  →  dynamical systems
+  phase transition  →  dynamical systems
+  phase transition induction  →  dynamical systems
+  relaxation to equilibrium  →  dynamical systems
+  resilience theory  →  dynamical systems
+  self organization criticality  →  dynamical systems
+  system decoupling  →  dynamical systems
+  system dynamics  →  dynamical systems
+  system dynamics feedback loop adjustment  →  dynamical systems
+  system dynamics feedback loop interruption  →  dynamical systems
+  system dynamics feedback loops  →  dynamical systems
+  system dynamics modeling  →  dynamical systems
+  system isolation for recovery  →  dynamical systems
+  system robustness  →  dynamical systems
+  threshold decision model  →  dynamical systems
+  threshold model  →  dynamical systems
+  adaptive control  →  feedback control
+  adaptive control theory  →  feedback control
+  control theory  →  feedback control
+  control theory disturbance rejection  →  feedback control
+  control theory feedback loop  →  feedback control
+  control theory feedback loop interruption  →  feedback control
+  control theory with positive feedback loop  →  feedback control
+  cybernetic feedback loop adjustment  →  feedback control
+  cybernetics of feedback loops  →  feedback control
+  feedback control system  →  feedback control
+  feedback control system disruption  →  feedback control
+  feedback loop  →  feedback control
+  feedback loop control  →  feedback control
+  feedback loop interruption  →  feedback control
+  negative feedback control system  →  feedback control
+  negative feedback loop  →  feedback control
+  negative feedback loop disruption  →  feedback control
+  negative feedback loop interruption  →  feedback control
+  open loop control  →  feedback control
+  optimal control theory  →  feedback control
+  positive feedback loop  →  feedback control
+  positive feedback loop interruption  →  feedback control
+  stochastic control theory  →  feedback control
+  bayesian game  →  game theory
+  bayesian game theory  →  game theory
+  behavioral game theory  →  game theory
+  neural plasticity  →  hebbian learning
+  adverse selection  →  information asymmetry
+  asymmetric information  →  information asymmetry
+  information asymmetry and signaling  →  information asymmetry
   information asymmetry reduction  →  information asymmetry
+  information cascade prevention  →  information asymmetry
+  moral hazard  →  information asymmetry
+  moral hazard model  →  information asymmetry
+  entropy reduction principle  →  information theory
+  information entropy minimization  →  information theory
+  information entropy reduction  →  information theory
+  information flow control  →  information theory
+  information theory and entropy reduction  →  information theory
+  information theory based optimal filtering  →  information theory
+  information theory communication channel  →  information theory
+  information theory entropy reduction  →  information theory
+  information theory noise reduction  →  information theory
+  shannon entropy  →  information theory
+  signal detection theory  →  information theory
+  signal extraction  →  information theory
+  signal processing  →  information theory
+  signal theory  →  information theory
+  signal to noise ratio optimization  →  information theory
+  signaling theory  →  information theory
   absorbing markov chain  →  markov chain
-  bargaining theory  →  nash bargaining solution
+  stochastic process with state transition  →  markov chain
+  sequential decision making  →  markov decision process
+  sequential decision making under uncertainty  →  markov decision process
+  cooperative game theory  →  nash equilibrium
+  cooperative game theory equilibrium  →  nash equilibrium
+  equilibrium selection  →  nash equilibrium
+  equilibrium shift  →  nash equilibrium
+  game theory equilibrium  →  nash equilibrium
+  game theory equilibrium selection  →  nash equilibrium
+  game theory equilibrium shift  →  nash equilibrium
+  game theory nash equilibrium  →  nash equilibrium
+  game theory with cooperative equilibrium  →  nash equilibrium
+  multiple equilibria  →  nash equilibrium
+  multiple equilibria model  →  nash equilibrium
+  nash bargaining solution  →  nash equilibrium
   nash equilibrium shift  →  nash equilibrium
+  nash equilibrium with external enforcement  →  nash equilibrium
+  system equilibrium shift  →  nash equilibrium
+  behavioral substitution and positive reinforcement  →  operant conditioning
+  extinction  →  operant conditioning
+  extinction learning  →  operant conditioning
+  extinction reinforcement schedule  →  operant conditioning
+  extinction schedules  →  operant conditioning
+  intermittent reinforcement  →  operant conditioning
+  intermittent reinforcement extinction  →  operant conditioning
+  intermittent reinforcement schedule  →  operant conditioning
   operant conditioning extinction  →  operant conditioning
   operant extinction  →  operant conditioning
-  adverse selection  →  principal agent problem
-  moral hazard  →  principal agent problem
-  optimal resource allocation  →  resource allocation optimization
-  resource allocation theory  →  resource allocation optimization
+  reinforcement extinction  →  operant conditioning
+  variable ratio reinforcement schedules  →  operant conditioning
+  optimal stopping problem  →  optimal stopping
+  optimal stopping theory  →  optimal stopping
+  constrained optimization  →  optimization
+  constraint optimization  →  optimization
+  finite horizon optimization  →  optimization
+  global optimization  →  optimization
+  iterative optimization  →  optimization
+  kalman filter  →  optimization
+  multi objective optimization and pareto efficiency  →  optimization
+  optimal resource allocation  →  optimization
+  optimization problem  →  optimization
+  optimization under constraints  →  optimization
+  optimization under uncertainty  →  optimization
+  resource allocation model  →  optimization
+  resource allocation optimization  →  optimization
+  resource allocation problem  →  optimization
+  resource allocation theory  →  optimization
+  robustness maximization  →  optimization
+  path dependence theory  →  path dependence
+  agent based model  →  principal-agent theory
+  contract theory  →  principal-agent theory
+  mechanism design  →  principal-agent theory
+  principal agent model  →  principal-agent theory
+  principal agent problem  →  principal-agent theory
+  principal agent theory  →  principal-agent theory
+  prisoner's dilemma repeated game  →  prisoner's dilemma
+  prisoners dilemma  →  prisoner's dilemma
+  anchoring and adjustment heuristic  →  prospect theory
+  endowment effect  →  prospect theory
+  framing effect  →  prospect theory
+  loss aversion  →  prospect theory
+  reference dependence  →  prospect theory
+  reference point shift  →  prospect theory
+  risk aversion principle  →  prospect theory
+  status quo bias  →  prospect theory
+  status quo bias mitigation  →  prospect theory
+  option pricing model  →  real options
+  option value maximization  →  real options
+  real option theory  →  real options
+  real options analysis  →  real options
+  real options theory  →  real options
+  explore exploit dilemma  →  reinforcement learning
+  reinforcement learning punishment  →  reinforcement learning
+  reward prediction error  →  reinforcement learning
+  temporal difference learning  →  reinforcement learning
+  folk theorem  →  repeated game
+  game theory repeated game with monitoring  →  repeated game
+  game theory repeated games  →  repeated game
+  game theory repeated games with punishments  →  repeated game
+  repeated game theory  →  repeated game
+  repeated game theory with incomplete information  →  repeated game
+  repeated game theory with reputation building  →  repeated game
+  repeated game with punishment  →  repeated game
+  tit for tat strategy  →  repeated game
+  tit for tat with forgiveness  →  repeated game
+  trigger strategy  →  repeated game
+  scarcity effect  →  scarcity
+  scarcity principle  →  scarcity
+  shared mental models  →  schema theory
+  affect regulation theory  →  self regulation
+  self esteem regulation theory  →  self regulation
+  self regulation theory  →  self regulation
+  sequential game theory  →  sequential game
+  asymmetric information game theory  →  signaling game
+  game theory signaling  →  signaling game
+  game theory signaling and commitment  →  signaling game
+  game theory signaling and information revelation  →  signaling game
+  game theory signaling and screening  →  signaling game
+  signaling game and nash equilibrium  →  signaling game
+  signaling game equilibrium  →  signaling game
+  signaling game equilibrium shift  →  signaling game
   signaling game theory  →  signaling game
-  sunk cost fallacy avoidance  →  sunk cost fallacy
-  trigger strategy  →  tit for tat strategy
+  signaling game with asymmetric information  →  signaling game
+  equity theory  →  social exchange theory
+  social exchange theory reciprocity  →  social exchange theory
+  assortative mixing  →  social networks
+  homophily  →  social networks
+  network centrality  →  social networks
+  network centrality theory  →  social networks
+  network pruning  →  social networks
+  social capital theory  →  social networks
+  social network analysis  →  social networks
+  social network restructuring  →  social networks
+  social network theory  →  social networks
+  social cognitive theory  →  social theory
+  social support theory  →  social theory
+  stackelberg competition  →  stackelberg game
+  state space model with boundary conditions  →  state space model
+  state transition model  →  state space model
+  subgame perfect nash equilibrium  →  subgame perfect equilibrium
+  behavioral activation  →  systematic desensitization
+  switching costs  →  transaction cost economics
+  cost benefit analysis  →  utility theory
+  discounted utility model  →  utility theory
+  expected utility maximization  →  utility theory
+  expected utility theory  →  utility theory
+  hyperbolic discounting  →  utility theory
+  incentive alignment  →  utility theory
+  incentive alignment mechanism  →  utility theory
+  incentive compatibility  →  utility theory
+  incentive mechanism design  →  utility theory
+  incentive theory  →  utility theory
+  intertemporal choice  →  utility theory
+  intertemporal choice model  →  utility theory
+  multi attribute decision making  →  utility theory
+  multiattribute utility theory  →  utility theory
+  rational choice theory  →  utility theory
+  regret minimization  →  utility theory
+  time inconsistency  →  utility theory
+  utility function revaluation  →  utility theory
+  utility maximization  →  utility theory
+  utility maximization theory  →  utility theory
+  utility maximization under constraint relaxation  →  utility theory
+  utility maximization under uncertainty  →  utility theory
+  utility maximization with dynamic constraints  →  utility theory
+  value function decay  →  utility theory
 
-[Merge cluster details / 归并簇完整明细（共 318 簇，其中 21 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
-  [1] 代表名: bayesian inference  ·  5 条
-      · bayesian belief updating
-      · bayesian inference  [代表]
-      · bayesian information update
-      · bayesian update
-      · bayesian updating
-  [2] 代表名: feedback control system  ·  4 条
-      · control theory feedback loop
-      · dynamic systems with feedback control
-      · feedback control system  [代表]
-      · feedback loop control
-  [3] 代表名: game theory  ·  4 条
-      · bargaining game
-      · cooperative game theory
-      · coordination game
-      · game theory  [代表]
-  [4] 代表名: contract theory  ·  3 条
-      · contract theory  [代表]
-      · incentive compatibility
-      · mechanism design
-  [5] 代表名: dynamical systems theory  ·  3 条
+[Merge cluster details / 归并簇完整明细（共 71 簇，其中 46 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: dynamical systems  ·  49 条
+      · adaptive dynamics
+      · attractor basins
+      · attractor dynamics
+      · attractor state transition
+      · attractor theory
+      · bifurcation theory
+      · boundary condition establishment
+      · boundary conditions
+      · catastrophe theory
+      · chaos theory attractor dynamics
+      · coupled oscillators
+      · coupled oscillators model
+      · critical point dynamics
+      · decoupling
+      · decoupling theory
+      · disequilibrium dynamics
+      · dissipative structure self organization
+      · dissipative structures
+      · dynamic system control theory
+      · dynamic system disruption
+      · dynamic system perturbation
+      · dynamic system theory
       · dynamic systems theory
-      · dynamical systems theory  [代表]
+      · dynamic systems with feedback control
+      · dynamical systems  [代表]
+      · dynamical systems phase transition
+      · dynamical systems stability
+      · dynamical systems theory
+      · escape dynamics
+      · game theory strategy change
+      · game theory strategy shift
+      · hysteresis model
+      · limit cycle attractor disruption
+      · logistic growth model
+      · phase transition
+      · phase transition induction
+      · relaxation to equilibrium
+      · resilience theory
+      · self organization criticality
+      · system decoupling
       · system dynamics
-  [6] 代表名: feedback loop interruption  ·  3 条
-      · control theory feedback loop interruption
-      · feedback loop interruption  [代表]
-      · negative feedback loop disruption
-  [7] 代表名: hyperbolic discounting  ·  3 条
-      · hyperbolic discounting  [代表]
+      · system dynamics feedback loop adjustment
+      · system dynamics feedback loop interruption
+      · system dynamics feedback loops
+      · system dynamics modeling
+      · system isolation for recovery
+      · system robustness
+      · threshold decision model
+      · threshold model
+  [2] 代表名: utility theory  ·  24 条
+      · cost benefit analysis
+      · discounted utility model
+      · expected utility maximization
+      · expected utility theory
+      · hyperbolic discounting
+      · incentive alignment
+      · incentive alignment mechanism
+      · incentive compatibility
+      · incentive mechanism design
+      · incentive theory
       · intertemporal choice
       · intertemporal choice model
-  [8] 代表名: operant conditioning  ·  3 条
+      · multi attribute decision making
+      · multiattribute utility theory
+      · rational choice theory
+      · regret minimization
+      · time inconsistency
+      · utility function revaluation
+      · utility maximization
+      · utility maximization theory
+      · utility maximization under constraint relaxation
+      · utility maximization under uncertainty
+      · utility maximization with dynamic constraints
+      · value function decay
+  [3] 代表名: feedback control  ·  23 条
+      · adaptive control
+      · adaptive control theory
+      · control theory
+      · control theory disturbance rejection
+      · control theory feedback loop
+      · control theory feedback loop interruption
+      · control theory with positive feedback loop
+      · cybernetic feedback loop adjustment
+      · cybernetics of feedback loops
+      · feedback control system
+      · feedback control system disruption
+      · feedback loop
+      · feedback loop control
+      · feedback loop interruption
+      · negative feedback control system
+      · negative feedback loop
+      · negative feedback loop disruption
+      · negative feedback loop interruption
+      · open loop control
+      · optimal control theory
+      · positive feedback loop
+      · positive feedback loop interruption
+      · stochastic control theory
+  [4] 代表名: information theory  ·  17 条
+      · entropy reduction principle
+      · information entropy minimization
+      · information entropy reduction
+      · information flow control
+      · information theory  [代表]
+      · information theory and entropy reduction
+      · information theory based optimal filtering
+      · information theory communication channel
+      · information theory entropy reduction
+      · information theory noise reduction
+      · shannon entropy
+      · signal detection theory
+      · signal extraction
+      · signal processing
+      · signal theory
+      · signal to noise ratio optimization
+      · signaling theory
+  [5] 代表名: nash equilibrium  ·  16 条
+      · cooperative game theory
+      · cooperative game theory equilibrium
+      · equilibrium selection
+      · equilibrium shift
+      · game theory equilibrium
+      · game theory equilibrium selection
+      · game theory equilibrium shift
+      · game theory nash equilibrium
+      · game theory with cooperative equilibrium
+      · multiple equilibria
+      · multiple equilibria model
+      · nash bargaining solution
+      · nash equilibrium  [代表]
+      · nash equilibrium shift
+      · nash equilibrium with external enforcement
+      · system equilibrium shift
+  [6] 代表名: optimization  ·  16 条
+      · constrained optimization
+      · constraint optimization
+      · finite horizon optimization
+      · global optimization
+      · iterative optimization
+      · kalman filter
+      · multi objective optimization and pareto efficiency
+      · optimal resource allocation
+      · optimization problem
+      · optimization under constraints
+      · optimization under uncertainty
+      · resource allocation model
+      · resource allocation optimization
+      · resource allocation problem
+      · resource allocation theory
+      · robustness maximization
+  [7] 代表名: operant conditioning  ·  13 条
+      · behavioral substitution and positive reinforcement
+      · extinction
+      · extinction learning
+      · extinction reinforcement schedule
+      · extinction schedules
+      · intermittent reinforcement
+      · intermittent reinforcement extinction
+      · intermittent reinforcement schedule
       · operant conditioning  [代表]
       · operant conditioning extinction
       · operant extinction
-  [9] 代表名: principal agent problem  ·  3 条
+      · reinforcement extinction
+      · variable ratio reinforcement schedules
+  [8] 代表名: repeated game  ·  12 条
+      · folk theorem
+      · game theory repeated game with monitoring
+      · game theory repeated games
+      · game theory repeated games with punishments
+      · repeated game  [代表]
+      · repeated game theory
+      · repeated game theory with incomplete information
+      · repeated game theory with reputation building
+      · repeated game with punishment
+      · tit for tat strategy
+      · tit for tat with forgiveness
+      · trigger strategy
+  [9] 代表名: signaling game  ·  11 条
+      · asymmetric information game theory
+      · game theory signaling
+      · game theory signaling and commitment
+      · game theory signaling and information revelation
+      · game theory signaling and screening
+      · signaling game  [代表]
+      · signaling game and nash equilibrium
+      · signaling game equilibrium
+      · signaling game equilibrium shift
+      · signaling game theory
+      · signaling game with asymmetric information
+  [10] 代表名: bayesian inference  ·  10 条
+      · bayesian belief update
+      · bayesian belief updating
+      · bayesian decision theory
+      · bayesian inference  [代表]
+      · bayesian information update
+      · bayesian information updating
+      · bayesian learning
+      · bayesian update
+      · bayesian updating
+      · hidden markov model inference
+  [11] 代表名: cognitive bias  ·  10 条
+      · cognitive bias  [代表]
+      · cognitive bias correction
+      · cognitive bias mitigation
+      · cognitive bias modification
+      · cognitive distortion theory
+      · cognitive distortions
+      · confirmation bias
+      · sunk cost fallacy
+      · sunk cost fallacy and decision trees
+      · sunk cost fallacy avoidance
+  [12] 代表名: prospect theory  ·  10 条
+      · anchoring and adjustment heuristic
+      · endowment effect
+      · framing effect
+      · loss aversion
+      · prospect theory  [代表]
+      · reference dependence
+      · reference point shift
+      · risk aversion principle
+      · status quo bias
+      · status quo bias mitigation
+  [13] 代表名: social networks  ·  9 条
+      · assortative mixing
+      · homophily
+      · network centrality
+      · network centrality theory
+      · network pruning
+      · social capital theory
+      · social network analysis
+      · social network restructuring
+      · social network theory
+  [14] 代表名: information asymmetry  ·  8 条
       · adverse selection
-      · moral hazard
-      · principal agent problem  [代表]
-  [10] 代表名: resource allocation optimization  ·  3 条
-      · optimal resource allocation
-      · resource allocation optimization  [代表]
-      · resource allocation theory
-  [11] 代表名: bayesian game  ·  2 条
-      · bayesian game  [代表]
-      · bayesian game theory
-  [12] 代表名: classical conditioning extinction  ·  2 条
-      · classical conditioning extinction  [代表]
-      · extinction learning
-  [13] 代表名: constrained optimization  ·  2 条
-      · constrained optimization  [代表]
-      · constraint optimization
-  [14] 代表名: control theory  ·  2 条
-      · adaptive control theory
-      · control theory  [代表]
-  [15] 代表名: information asymmetry  ·  2 条
+      · asymmetric information
       · information asymmetry  [代表]
+      · information asymmetry and signaling
       · information asymmetry reduction
-  [16] 代表名: markov chain  ·  2 条
+      · information cascade prevention
+      · moral hazard
+      · moral hazard model
+  [15] 代表名: bargaining game  ·  7 条
+      · bargaining game  [代表]
+      · bargaining game with ultimatum
+      · bargaining theory
+      · batna best alternative to a negotiated agreement
+      · conflict resolution theory
+      · reservation price
+      · ultimatum game
+  [16] 代表名: classical conditioning  ·  7 条
+      · classical and operant conditioning
+      · classical conditioning  [代表]
+      · classical conditioning extinction
+      · classical conditioning extinction and reconditioning
+      · stimulus control and response prevention
+      · stimulus generalization and discrimination
+      · stimulus response theory
+  [17] 代表名: principal-agent theory  ·  6 条
+      · agent based model
+      · contract theory
+      · mechanism design
+      · principal agent model
+      · principal agent problem
+      · principal agent theory
+  [18] 代表名: real options  ·  5 条
+      · option pricing model
+      · option value maximization
+      · real option theory
+      · real options analysis
+      · real options theory
+  [19] 代表名: reinforcement learning  ·  5 条
+      · explore exploit dilemma
+      · reinforcement learning  [代表]
+      · reinforcement learning punishment
+      · reward prediction error
+      · temporal difference learning
+  [20] 代表名: cognitive model  ·  4 条
+      · cognitive behavioral model
+      · cognitive behavioral therapy model
+      · cognitive behavioral therapy principles
+      · cognitive model  [代表]
+  [21] 代表名: commitment device  ·  4 条
+      · commitment and credibility
+      · commitment device  [代表]
+      · commitment problem
+      · credible commitment
+  [22] 代表名: game theory  ·  4 条
+      · bayesian game
+      · bayesian game theory
+      · behavioral game theory
+      · game theory  [代表]
+  [23] 代表名: bounded rationality  ·  3 条
+      · bounded rationality  [代表]
+      · bounded rationality and satisficing
+      · satisficing
+  [24] 代表名: cognitive dissonance  ·  3 条
+      · cognitive dissonance  [代表]
+      · cognitive dissonance theory
+      · cognitive restructuring
+  [25] 代表名: decision tree  ·  3 条
+      · binary decision tree
+      · decision tree activation
+      · decision tree analysis
+  [26] 代表名: dependency theory  ·  3 条
+      · dependency theory  [代表]
+      · power dependency theory
+      · resource dependency theory
+  [27] 代表名: markov chain  ·  3 条
       · absorbing markov chain
       · markov chain  [代表]
-  [17] 代表名: nash bargaining solution  ·  2 条
-      · bargaining theory
-      · nash bargaining solution  [代表]
-  [18] 代表名: nash equilibrium  ·  2 条
-      · nash equilibrium  [代表]
-      · nash equilibrium shift
-  [19] 代表名: signaling game  ·  2 条
-      · signaling game  [代表]
-      · signaling game theory
-  [20] 代表名: sunk cost fallacy  ·  2 条
-      · sunk cost fallacy  [代表]
-      · sunk cost fallacy avoidance
-  [21] 代表名: tit for tat strategy  ·  2 条
-      · tit for tat strategy  [代表]
-      · trigger strategy
-  [22] （单条）adaptive control
-  [23] （单条）adaptive dynamics
-  [24] （单条）affect regulation theory
-  [25] （单条）affective dynamics
-  [26] （单条）agent based model
-  [27] （单条）anchoring and adjustment heuristic
-  [28] （单条）assortative mixing
-  [29] （单条）asymmetric information
-  [30] （单条）asymmetric information game theory
-  [31] （单条）attractor basins
-  [32] （单条）attractor dynamics
-  [33] （单条）attractor state transition
-  [34] （单条）attractor theory
-  [35] （单条）attribution theory
-  [36] （单条）bargaining game with ultimatum
-  [37] （单条）batna best alternative to a negotiated agreement
-  [38] （单条）bayesian belief update
-  [39] （单条）bayesian decision theory
-  [40] （单条）bayesian information updating
-  [41] （单条）bayesian learning
-  [42] （单条）behavioral activation
-  [43] （单条）behavioral game theory
-  [44] （单条）behavioral substitution and positive reinforcement
-  [45] （单条）bifurcation theory
-  [46] （单条）binary decision tree
-  [47] （单条）boundary condition establishment
-  [48] （单条）boundary conditions
+      · stochastic process with state transition
+  [28] 代表名: markov decision process  ·  3 条
+      · markov decision process  [代表]
+      · sequential decision making
+      · sequential decision making under uncertainty
+  [29] 代表名: prisoner's dilemma  ·  3 条
+      · prisoner's dilemma  [代表]
+      · prisoner's dilemma repeated game
+      · prisoners dilemma
+  [30] 代表名: self regulation  ·  3 条
+      · affect regulation theory
+      · self esteem regulation theory
+      · self regulation theory
+  [31] 代表名: social exchange theory  ·  3 条
+      · equity theory
+      · social exchange theory  [代表]
+      · social exchange theory reciprocity
+  [32] 代表名: state space model  ·  3 条
+      · state space model  [代表]
+      · state space model with boundary conditions
+      · state transition model
+  [33] 代表名: coase theorem  ·  2 条
+      · coase theorem  [代表]
+      · externalities
+  [34] 代表名: coordination game  ·  2 条
+      · coordination failure
+      · coordination game  [代表]
+  [35] 代表名: decision theory  ·  2 条
+      · decision theory  [代表]
+      · decision theory constraint optimization
+  [36] 代表名: hebbian learning  ·  2 条
+      · hebbian learning  [代表]
+      · neural plasticity
+  [37] 代表名: optimal stopping  ·  2 条
+      · optimal stopping problem
+      · optimal stopping theory
+  [38] 代表名: path dependence  ·  2 条
+      · path dependence  [代表]
+      · path dependence theory
+  [39] 代表名: scarcity  ·  2 条
+      · scarcity effect
+      · scarcity principle
+  [40] 代表名: schema theory  ·  2 条
+      · schema theory  [代表]
+      · shared mental models
+  [41] 代表名: sequential game  ·  2 条
+      · sequential game  [代表]
+      · sequential game theory
+  [42] 代表名: social theory  ·  2 条
+      · social cognitive theory
+      · social support theory
+  [43] 代表名: stackelberg game  ·  2 条
+      · stackelberg competition
+      · stackelberg game  [代表]
+  [44] 代表名: subgame perfect equilibrium  ·  2 条
+      · subgame perfect equilibrium  [代表]
+      · subgame perfect nash equilibrium
+  [45] 代表名: systematic desensitization  ·  2 条
+      · behavioral activation
+      · systematic desensitization  [代表]
+  [46] 代表名: transaction cost economics  ·  2 条
+      · switching costs
+      · transaction cost economics  [代表]
+  [47] （单条）affective dynamics
+  [48] （单条）attribution theory
   [49] （单条）boundary setting theory
-  [50] （单条）bounded rationality
-  [51] （单条）bounded rationality and satisficing
-  [52] （单条）catastrophe theory
-  [53] （单条）chaos theory attractor dynamics
-  [54] （单条）classical and operant conditioning
-  [55] （单条）classical conditioning
-  [56] （单条）classical conditioning extinction and reconditioning
-  [57] （单条）coase theorem
-  [58] （单条）cognitive behavioral model
-  [59] （单条）cognitive behavioral therapy model
-  [60] （单条）cognitive behavioral therapy principles
-  [61] （单条）cognitive bias
-  [62] （单条）cognitive bias correction
-  [63] （单条）cognitive bias mitigation
-  [64] （单条）cognitive bias modification
-  [65] （单条）cognitive dissonance
-  [66] （单条）cognitive dissonance theory
-  [67] （单条）cognitive distortion theory
-  [68] （单条）cognitive distortions
-  [69] （单条）cognitive load theory
-  [70] （单条）cognitive model
-  [71] （单条）cognitive restructuring
-  [72] （单条）commitment and credibility
-  [73] （单条）commitment device
-  [74] （单条）commitment problem
-  [75] （单条）common knowledge
-  [76] （单条）confirmation bias
-  [77] （单条）conflict resolution theory
-  [78] （单条）control theory disturbance rejection
-  [79] （单条）control theory with positive feedback loop
-  [80] （单条）cooperative game theory equilibrium
-  [81] （单条）coordination failure
-  [82] （单条）cost benefit analysis
-  [83] （单条）coupled oscillators
-  [84] （单条）coupled oscillators model
-  [85] （单条）credible commitment
-  [86] （单条）critical point dynamics
-  [87] （单条）cybernetic feedback loop adjustment
-  [88] （单条）cybernetics of feedback loops
-  [89] （单条）decision theory
-  [90] （单条）decision theory constraint optimization
-  [91] （单条）decision tree activation
-  [92] （单条）decision tree analysis
-  [93] （单条）decoupling
-  [94] （单条）decoupling theory
-  [95] （单条）dependency theory
-  [96] （单条）discounted utility model
-  [97] （单条）disentanglement
-  [98] （单条）disequilibrium dynamics
-  [99] （单条）dissipative structure self organization
-  [100] （单条）dissipative structures
-  [101] （单条）dual process theory
-  [102] （单条）dynamic programming
-  [103] （单条）dynamic system control theory
-  [104] （单条）dynamic system disruption
-  [105] （单条）dynamic system perturbation
-  [106] （单条）dynamic system theory
-  [107] （单条）dynamical systems
-  [108] （单条）dynamical systems phase transition
-  [109] （单条）dynamical systems stability
-  [110] （单条）economic capital theory
-  [111] （单条）endowment effect
-  [112] （单条）entropy reduction principle
-  [113] （单条）equilibrium selection
-  [114] （单条）equilibrium shift
-  [115] （单条）equity theory
-  [116] （单条）escape dynamics
-  [117] （单条）expectation management
-  [118] （单条）expected utility maximization
-  [119] （单条）expected utility theory
-  [120] （单条）explore exploit dilemma
-  [121] （单条）externalities
-  [122] （单条）extinction
-  [123] （单条）extinction reinforcement schedule
-  [124] （单条）extinction schedules
-  [125] （单条）feedback control system disruption
-  [126] （单条）feedback loop
-  [127] （单条）finite horizon optimization
-  [128] （单条）folk theorem
-  [129] （单条）framing effect
-  [130] （单条）game theory equilibrium
-  [131] （单条）game theory equilibrium selection
-  [132] （单条）game theory equilibrium shift
-  [133] （单条）game theory nash equilibrium
-  [134] （单条）game theory repeated game with monitoring
-  [135] （单条）game theory repeated games
-  [136] （单条）game theory repeated games with punishments
-  [137] （单条）game theory signaling
-  [138] （单条）game theory signaling and commitment
-  [139] （单条）game theory signaling and information revelation
-  [140] （单条）game theory signaling and screening
-  [141] （单条）game theory strategy change
-  [142] （单条）game theory strategy shift
-  [143] （单条）game theory with cooperative equilibrium
-  [144] （单条）global optimization
-  [145] （单条）hebbian learning
-  [146] （单条）hidden markov model inference
-  [147] （单条）homeostasis
-  [148] （单条）homophily
-  [149] （单条）human capital investment
-  [150] （单条）hysteresis model
-  [151] （单条）incentive alignment
-  [152] （单条）incentive alignment mechanism
-  [153] （单条）incentive mechanism design
-  [154] （单条）incentive theory
-  [155] （单条）information asymmetry and signaling
-  [156] （单条）information cascade prevention
-  [157] （单条）information entropy minimization
-  [158] （单条）information entropy reduction
-  [159] （单条）information flow control
-  [160] （单条）information theory
-  [161] （单条）information theory and entropy reduction
-  [162] （单条）information theory based optimal filtering
-  [163] （单条）information theory communication channel
-  [164] （单条）information theory entropy reduction
-  [165] （单条）information theory noise reduction
-  [166] （单条）intermittent reinforcement
-  [167] （单条）intermittent reinforcement extinction
-  [168] （单条）intermittent reinforcement schedule
-  [169] （单条）iterative optimization
-  [170] （单条）kalman filter
-  [171] （单条）le chatelier's principle
-  [172] （单条）limit cycle attractor disruption
-  [173] （单条）logistic growth model
-  [174] （单条）loss aversion
-  [175] （单条）markov decision process
-  [176] （单条）minimax principle
-  [177] （单条）moral hazard model
-  [178] （单条）multi attribute decision making
-  [179] （单条）multi objective optimization and pareto efficiency
-  [180] （单条）multiattribute utility theory
-  [181] （单条）multiple equilibria
-  [182] （单条）multiple equilibria model
-  [183] （单条）nash equilibrium with external enforcement
-  [184] （单条）negative feedback control system
-  [185] （单条）negative feedback loop
-  [186] （单条）negative feedback loop interruption
-  [187] （单条）network centrality
-  [188] （单条）network centrality theory
-  [189] （单条）network pruning
-  [190] （单条）neural plasticity
-  [191] （单条）nudge theory
-  [192] （单条）open loop control
-  [193] （单条）opportunity cost
-  [194] （单条）optimal control theory
-  [195] （单条）optimal stopping problem
-  [196] （单条）optimal stopping theory
-  [197] （单条）optimization problem
-  [198] （单条）optimization under constraints
-  [199] （单条）optimization under uncertainty
-  [200] （单条）option pricing model
-  [201] （单条）option value maximization
-  [202] （单条）path dependence
-  [203] （单条）path dependence theory
-  [204] （单条）phase transition
-  [205] （单条）phase transition induction
-  [206] （单条）portfolio theory
-  [207] （单条）positive feedback loop
-  [208] （单条）positive feedback loop interruption
-  [209] （单条）power dependency theory
-  [210] （单条）principal agent model
-  [211] （单条）principal agent theory
-  [212] （单条）prisoner's dilemma
-  [213] （单条）prisoner's dilemma repeated game
-  [214] （单条）prisoners dilemma
-  [215] （单条）prospect theory
-  [216] （单条）psychological reactance
-  [217] （单条）rational choice theory
-  [218] （单条）real option theory
-  [219] （单条）real options analysis
-  [220] （单条）real options theory
-  [221] （单条）reciprocal altruism
-  [222] （单条）reference dependence
-  [223] （单条）reference point shift
-  [224] （单条）regret minimization
-  [225] （单条）reinforcement extinction
-  [226] （单条）reinforcement learning
-  [227] （单条）reinforcement learning punishment
-  [228] （单条）relaxation to equilibrium
-  [229] （单条）repeated game
-  [230] （单条）repeated game theory
-  [231] （单条）repeated game theory with incomplete information
-  [232] （单条）repeated game theory with reputation building
-  [233] （单条）repeated game with punishment
-  [234] （单条）reservation price
-  [235] （单条）resilience theory
-  [236] （单条）resource allocation model
-  [237] （单条）resource allocation problem
-  [238] （单条）resource dependency theory
-  [239] （单条）reward prediction error
-  [240] （单条）risk aversion principle
-  [241] （单条）risk management
-  [242] （单条）robustness maximization
-  [243] （单条）satisficing
-  [244] （单条）scarcity effect
-  [245] （单条）scarcity principle
-  [246] （单条）schema theory
-  [247] （单条）self efficacy theory
-  [248] （单条）self esteem regulation theory
-  [249] （单条）self organization criticality
-  [250] （单条）self regulation theory
-  [251] （单条）sequential decision making
-  [252] （单条）sequential decision making under uncertainty
-  [253] （单条）sequential game
-  [254] （单条）sequential game theory
-  [255] （单条）shannon entropy
-  [256] （单条）shared mental models
-  [257] （单条）signal detection theory
-  [258] （单条）signal extraction
-  [259] （单条）signal processing
-  [260] （单条）signal theory
-  [261] （单条）signal to noise ratio optimization
-  [262] （单条）signaling game and nash equilibrium
-  [263] （单条）signaling game equilibrium
-  [264] （单条）signaling game equilibrium shift
-  [265] （单条）signaling game with asymmetric information
-  [266] （单条）signaling theory
-  [267] （单条）social capital theory
-  [268] （单条）social cognitive theory
-  [269] （单条）social exchange theory
-  [270] （单条）social exchange theory reciprocity
-  [271] （单条）social network analysis
-  [272] （单条）social network restructuring
-  [273] （单条）social network theory
-  [274] （单条）social support theory
-  [275] （单条）stable matching problem
-  [276] （单条）stackelberg competition
-  [277] （单条）stackelberg game
-  [278] （单条）stag hunt game
-  [279] （单条）state space model
-  [280] （单条）state space model with boundary conditions
-  [281] （单条）state transition model
-  [282] （单条）status quo bias
-  [283] （单条）status quo bias mitigation
-  [284] （单条）stimulus control and response prevention
-  [285] （单条）stimulus generalization and discrimination
-  [286] （单条）stimulus response theory
-  [287] （单条）stochastic control theory
-  [288] （单条）stochastic process with state transition
-  [289] （单条）strategy space reduction
-  [290] （单条）subgame perfect equilibrium
-  [291] （单条）subgame perfect nash equilibrium
-  [292] （单条）sunk cost fallacy and decision trees
-  [293] （单条）switching costs
-  [294] （单条）system decoupling
-  [295] （单条）system dynamics feedback loop adjustment
-  [296] （单条）system dynamics feedback loop interruption
-  [297] （单条）system dynamics feedback loops
-  [298] （单条）system dynamics modeling
-  [299] （单条）system equilibrium shift
-  [300] （单条）system isolation for recovery
-  [301] （单条）system robustness
-  [302] （单条）systematic desensitization
-  [303] （单条）temporal difference learning
-  [304] （单条）threshold decision model
-  [305] （单条）threshold model
-  [306] （单条）time inconsistency
-  [307] （单条）tit for tat with forgiveness
-  [308] （单条）transaction cost economics
-  [309] （单条）ultimatum game
-  [310] （单条）utility function revaluation
-  [311] （单条）utility maximization
-  [312] （单条）utility maximization theory
-  [313] （单条）utility maximization under constraint relaxation
-  [314] （单条）utility maximization under uncertainty
-  [315] （单条）utility maximization with dynamic constraints
-  [316] （单条）value function decay
-  [317] （单条）value of information
-  [318] （单条）variable ratio reinforcement schedules
+  [50] （单条）cognitive load theory
+  [51] （单条）common knowledge
+  [52] （单条）disentanglement
+  [53] （单条）dual process theory
+  [54] （单条）dynamic programming
+  [55] （单条）economic capital theory
+  [56] （单条）expectation management
+  [57] （单条）homeostasis
+  [58] （单条）human capital investment
+  [59] （单条）le chatelier's principle
+  [60] （单条）minimax principle
+  [61] （单条）nudge theory
+  [62] （单条）opportunity cost
+  [63] （单条）portfolio theory
+  [64] （单条）psychological reactance
+  [65] （单条）reciprocal altruism
+  [66] （单条）risk management
+  [67] （单条）self efficacy theory
+  [68] （单条）stable matching problem
+  [69] （单条）stag hunt game
+  [70] （单条）strategy space reduction
+  [71] （单条）value of information
 
 ==============================================================================

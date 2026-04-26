@@ -1,0 +1,285 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Societal&Ethical\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Societal&Ethical\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Societal&Ethical\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     306
+  distinct stage-1 canonicals:  190
+  stage2 map entries (keys):    190
+  distinct stage-2 canonicals:  59
+  stage2 merge groups (|keys|>1 for same c2): 27 groups, 158 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 903
+  distinct c1 (weighted rows): 190
+  distinct c2 (weighted):      59
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'game theory games'  ←  24 stage-1 labels
+        · audit game
+        · bargaining game
+        · commitment device
+        · common knowledge
+        · coordination game
+        · credible commitment
+        · credible threat
+        · deterrence theory
+        · extortion game
+        · finite game
+        · first mover advantage
+        · focal point
+        · … +12 more
+  [ 2] 'network theory'  ←  12 stage-1 labels
+        · access control
+        · connectivity augmentation
+        · core periphery model
+        · deadlock resolution
+        · distributed consensus
+        · edge cut
+        · k out of n system
+        · load balancing
+        · mix network
+        · network centrality
+        · parallel redundancy model
+        · tie breaking
+  [ 3] 'behavioral biases'  ←  9 stage-1 labels
+        · ambiguity aversion
+        · backfire effect
+        · bias
+        · default effect
+        · framing effect
+        · lock in effect
+        · motivated reasoning
+        · rational inattention
+        · status quo bias
+  [ 4] 'nash equilibrium'  ←  9 stage-1 labels
+        · backward induction
+        · collusive equilibrium
+        · dominant strategy equilibrium
+        · equilibrium refinement
+        · iterated elimination of dominated strategies
+        · multiple equilibria
+        · nash equilibrium
+        · perfect bayesian equilibrium
+        · subgame perfect equilibrium
+  [ 5] 'principal-agent theory'  ←  9 stage-1 labels
+        · adverse selection
+        · agency theory
+        · hidden action model
+        · hidden information
+        · hold up problem
+        · incomplete contract
+        · moral hazard
+        · principal agent theory
+        · screening
+  [ 6] 'search algorithms'  ←  7 stage-1 labels
+        · greedy algorithm
+        · lexicographical order
+        · optimal search theory
+        · priority scheduling
+        · priorityassignmentmodel
+        · search algorithm
+        · search theory
+  [ 7] 'threshold models'  ←  7 stage-1 labels
+        · bandwagoneffect
+        · contagion model
+        · critical mass model
+        · information cascade
+        · majorityillusion
+        · pluralistic ignorance
+        · threshold model
+  [ 8] 'causal inference'  ←  6 stage-1 labels
+        · backdoor adjustment
+        · causal graph
+        · causal identification
+        · causal models
+        · d separation
+        · do calculus
+  [ 9] 'data management'  ←  6 stage-1 labels
+        · anomaly detection
+        · entity resolution
+        · missing value imputation
+        · partitioning
+        · record linkage
+        · state elimination
+  [10] 'bayesian inference'  ←  5 stage-1 labels
+        · bayes' theorem
+        · bayesian methods
+        · kalman filtering
+        · naive bayes classifier
+        · weight of evidence
+  [11] 'coase theorem'  ←  5 stage-1 labels
+        · coase theorem
+        · coasetheorem
+        · internalization of externalities
+        · pigouvian taxation
+        · tax incidence
+  [12] 'expected utility theory'  ←  5 stage-1 labels
+        · expected loss
+        · expected utility
+        · expected utility maximization
+        · optimal information acquisition
+        · value of information
+  [13] 'financial economics'  ←  5 stage-1 labels
+        · costly punishment
+        · credit risk transfer
+        · institutional arbitrage
+        · issuelinkage
+        · lemons model
+  [14] 'risk management'  ←  5 stage-1 labels
+        · diversification
+        · hedging
+        · risk management
+        · risk minimization
+        · variance optimization
+  [15] 'collective action'  ←  4 stage-1 labels
+        · collective action
+        · duverger's law
+        · median voter theorem
+        · minimum winning coalition
+  [16] 'cost-benefit analysis'  ←  4 stage-1 labels
+        · compound interest
+        · cost benefit analysis
+        · exponential function
+        · net present value
+  [17] 'dynamic programming'  ←  4 stage-1 labels
+        · dynamic programming
+        · markov decision process
+        · optimal stopping
+        · sequential decision making
+  [18] 'markov chains'  ←  4 stage-1 labels
+        · absorbing markov chain
+        · absorbing state
+        · branching process
+        · state transition model
+  [19] 'network flow problems'  ←  4 stage-1 labels
+        · maximum flow
+        · minimum cut
+        · path interdiction
+        · shortest path problem
+  [20] 'signaling game'  ←  4 stage-1 labels
+        · costly signaling
+        · pooling equilibrium
+        · separating equilibrium
+        · signaling game
+  [21] 'statistical hypothesis testing'  ←  4 stage-1 labels
+        · hypothesis testing
+        · hypothesistesting
+        · likelihood ratio test
+        · neyman pearson lemma
+  [22] 'information theory'  ←  3 stage-1 labels
+        · information gain
+        · minimum description length
+        · shannon entropy
+  [23] 'matching theory'  ←  3 stage-1 labels
+        · assortative matching
+        · matching theory
+        · stable matching
+  [24] 'mechanism design'  ←  3 stage-1 labels
+        · incentive compatibility
+        · preference revelation mechanism
+        · revelation principle
+  [25] 'real options theory'  ←  3 stage-1 labels
+        · contingent claim
+        · option value
+        · real options
+  [26] 'feedback control'  ←  2 stage-1 labels
+        · negative feedback control
+        · positive feedback
+  [27] 'minimax decision rule'  ←  2 stage-1 labels
+        · minimax
+        · minimax regret
+
+[Stage-2 renames] (key ≠ value, 153 entries; list first 80)
+  'absorbing markov chain'  →  'markov chains'
+  'absorbing state'  →  'markov chains'
+  'access control'  →  'network theory'
+  'adverse selection'  →  'principal-agent theory'
+  'agency theory'  →  'principal-agent theory'
+  'ambiguity aversion'  →  'behavioral biases'
+  'anomaly detection'  →  'data management'
+  'assortative matching'  →  'matching theory'
+  'audit game'  →  'game theory games'
+  'backdoor adjustment'  →  'causal inference'
+  'backfire effect'  →  'behavioral biases'
+  'backward induction'  →  'nash equilibrium'
+  'bandwagoneffect'  →  'threshold models'
+  'bargaining game'  →  'game theory games'
+  "bayes' theorem"  →  'bayesian inference'
+  'bayesian methods'  →  'bayesian inference'
+  'bias'  →  'behavioral biases'
+  'branching process'  →  'markov chains'
+  'causal graph'  →  'causal inference'
+  'causal identification'  →  'causal inference'
+  'causal models'  →  'causal inference'
+  'coasetheorem'  →  'coase theorem'
+  'collusive equilibrium'  →  'nash equilibrium'
+  'commitment device'  →  'game theory games'
+  'common knowledge'  →  'game theory games'
+  'competitive lotka-volterra model'  →  'lotka-volterra model'
+  'compound interest'  →  'cost-benefit analysis'
+  'connectivity augmentation'  →  'network theory'
+  'contagion model'  →  'threshold models'
+  'contingent claim'  →  'real options theory'
+  'coordination game'  →  'game theory games'
+  'core periphery model'  →  'network theory'
+  'cost benefit analysis'  →  'cost-benefit analysis'
+  'costly punishment'  →  'financial economics'
+  'costly signaling'  →  'signaling game'
+  'credible commitment'  →  'game theory games'
+  'credible threat'  →  'game theory games'
+  'credit risk transfer'  →  'financial economics'
+  'critical mass model'  →  'threshold models'
+  'd separation'  →  'causal inference'
+  'deadlock resolution'  →  'network theory'
+  'default effect'  →  'behavioral biases'
+  'dempster shafer theory'  →  'dempster-shafer theory'
+  'deterrence theory'  →  'game theory games'
+  'distributed consensus'  →  'network theory'
+  'diversification'  →  'risk management'
+  'do calculus'  →  'causal inference'
+  'dominant strategy equilibrium'  →  'nash equilibrium'
+  "duverger's law"  →  'collective action'
+  'edge cut'  →  'network theory'
+  'entity resolution'  →  'data management'
+  'equilibrium refinement'  →  'nash equilibrium'
+  'expected loss'  →  'expected utility theory'
+  'expected utility'  →  'expected utility theory'
+  'expected utility maximization'  →  'expected utility theory'
+  'exponential function'  →  'cost-benefit analysis'
+  'extortion game'  →  'game theory games'
+  'finite game'  →  'game theory games'
+  'first mover advantage'  →  'game theory games'
+  'focal point'  →  'game theory games'
+  'framing effect'  →  'behavioral biases'
+  'free riding problem'  →  'game theory games'
+  'greedy algorithm'  →  'search algorithms'
+  'hedging'  →  'risk management'
+  'hidden action model'  →  'principal-agent theory'
+  'hidden information'  →  'principal-agent theory'
+  'hold up problem'  →  'principal-agent theory'
+  'hypothesis testing'  →  'statistical hypothesis testing'
+  'hypothesistesting'  →  'statistical hypothesis testing'
+  'incentive compatibility'  →  'mechanism design'
+  'incomplete contract'  →  'principal-agent theory'
+  'information cascade'  →  'threshold models'
+  'information gain'  →  'information theory'
+  'inspector game'  →  'game theory games'
+  'institutional arbitrage'  →  'financial economics'
+  'internalization of externalities'  →  'coase theorem'
+  'issuelinkage'  →  'financial economics'
+  'iterated elimination of dominated strategies'  →  'nash equilibrium'
+  'k out of n system'  →  'network theory'
+  'kalman filtering'  →  'bayesian inference'
+  … 73 more
+
+[Consistency with merge_map.json]
+  compared 306 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

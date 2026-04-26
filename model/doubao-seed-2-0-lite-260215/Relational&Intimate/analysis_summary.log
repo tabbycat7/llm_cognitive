@@ -1,32 +1,34 @@
 ==============================================================================
 LLM Cognitive Probe — Analysis Summary
 ==============================================================================
-Generated (local): 2026-04-22T20:10:13
+Generated (local): 2026-04-24T10:35:57
 
 [Input]
-  results_file: E:\college\postgraduate\llm_cognitive\doubao-seed-2-0-lite-260215\Relational&Intimate\probe_results.jsonl
+  results_file: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Relational&Intimate\probe_results.jsonl
   records (non-empty JSONL lines): 500
 
 [Merge]
   merge_method: llm
-  refresh_merge: True
+  refresh_merge: False
   name_source: step3
   chart_top_n: 30
 
 [Counts]
   raw_unique_names: 215
   raw_total_mentions: 962
-  canonical_unique_names: 167
+  canonical_unique_names: 101
   canonical_total_mentions: 962
-  distinct_label_reduction: 215 raw → 167 canonical (22.3% fewer labels)
+  distinct_label_reduction: 215 raw → 101 canonical (53.0% fewer labels)
 
 [Output artifacts]
   merge_map.json: yes
-  merge_map.embeddings.json: no
+  merge_map_llm_stage1.json: yes
+  merge_map_llm_stage1.embeddings.json: yes
+  merge_map_llm_stage2.json: yes
   model_law_frequency.png: yes
   model_law_wordcloud.png: yes
-  cluster_dendrogram.png: no
-  cluster_scatter.png: no
+  cluster_dendrogram.png: yes
+  cluster_scatter.png: yes
 
 [Top 30 raw names — before merge / 归并前（原始标签频次）]
   rank   count  name
@@ -63,412 +65,614 @@ Generated (local): 2026-04-22T20:10:13
 
 [Top 30 canonical names — after merge / 归并后（代表名频次）]
   rank   count  name
-     1     199  positive feedback loop
-     2     112  signaling game
-     3      92  bayesian updating
-     4      54  optimal stopping
-     5      29  screening model
-     6      26  exponential decay
-     7      24  path dependence
-     8      24  coordination game
-     9      23  sunk cost fallacy
-    10      21  asymmetric information
-    11      18  ultimatum game
-    12      18  negative feedback loop
-    13      16  nash equilibrium
-    14      15  credible commitment
-    15      15  constrained optimization
-    16      11  minimax regret
-    17      11  revelation principle
-    18      10  extinction
-    19      10  zeigarnik effect
-    20       9  trigger strategy
-    21       7  nash bargaining solution
+     1     220  feedback control
+     2     118  signaling game
+     3      95  bayesian updating
+     4      57  optimal stopping
+     5      34  nash equilibrium
+     6      30  screening
+     7      27  exponential decay
+     8      24  path dependence
+     9      22  information asymmetry
+    10      21  sunk cost fallacy
+    11      19  constrained optimization
+    12      19  strategic commitment
+    13      19  coordination game
+    14      18  ultimatum game
+    15      10  regret minimization
+    16      10  extinction
+    17      10  zeigarnik effect
+    18      10  trigger strategy
+    19       9  revelation principle
+    20       8  real options
+    21       7  intermittent reinforcement
     22       7  multi armed bandit
-    23       6  option value
-    24       6  intermittent reinforcement
-    25       6  modern portfolio theory
+    23       6  expected utility
+    24       6  minimax
+    25       6  reinforcement learning
     26       5  incentive compatibility
     27       5  anchoring effect
-    28       5  common knowledge
-    29       5  reinforcement learning
-    30       5  cheap talk
+    28       5  self reinforcement
+    29       5  cognitive heuristics and biases
+    30       5  common knowledge
 
-[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 20 clusters]
-  [#1] representative: signaling game  ·  8 members
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 40 clusters]
+  [#1] representative: nash equilibrium  ·  12 members
+      · dominant strategy equilibrium
+      · dynamic equilibrium
+      · equilibrium selection
+      · multiple equilibria
+      · nash bargaining solution
+      · nash equilibrium  [代表]
+      · sequential equilibrium
+      · stable equilibrium
+      · stable nash equilibrium
+      · stackelberg equilibrium
+      · subgame perfect equilibrium
+      · subgame perfect nash equilibrium
+  [#2] representative: feedback control  ·  11 members
+      · closed loop control
+      · negative feedback
+      · negative feedback loop
+      · negativefeedbackloop
+      · positive feedback
+      · positive feedback loop
+      · positive feedback model
+      · positive feedback system
+      · positivefeedback
+      · reinforcing feedback loop
+      · reinforcingfeedbackloop
+  [#3] representative: signaling game  ·  11 members
+      · cheap talk
+      · cheap talk game
       · costly signaling
       · pooling equilibrium
       · poolingequilibrium
+      · sender receiver game
       · separating equilibrium
       · signaling game  [代表]
       · signaling model
       · signalinggame
       · signalingmodel
-  [#2] representative: coordination game  ·  5 members
-      · coordination failure
-      · coordination game  [代表]
-      · coordinationgame
-      · equilibrium selection
-      · multiple equilibria
-  [#3] representative: nash equilibrium  ·  5 members
-      · nash equilibrium  [代表]
-      · sequential equilibrium
-      · stable nash equilibrium
-      · stackelberg equilibrium
-      · subgame perfect equilibrium
-  [#4] representative: positive feedback loop  ·  5 members
-      · positive feedback
-      · positive feedback loop  [代表]
-      · positivefeedback
-      · reinforcing feedback loop
-      · self reinforcing process
-  [#5] representative: asymmetric information  ·  4 members
-      · adverse selection
-      · asymmetric information  [代表]
-      · hidden information
-      · moral hazard
-  [#6] representative: bayesian updating  ·  4 members
+  [#4] representative: bayesian updating  ·  7 members
+      · bayesian belief update
       · bayesian belief updating
+      · bayesian game
       · bayesian updating  [代表]
       · bayesianupdating
       · belief revision
-  [#7] representative: optimal stopping  ·  4 members
+      · sequential bayesian updating
+  [#5] representative: optimal stopping  ·  7 members
       · optimal stopping  [代表]
       · optimal stopping problem
+      · optimal stopping theorem
       · optimal stopping theory
       · optimalstopping
-  [#8] representative: credible commitment  ·  3 members
+      · secretary problem
+      · sequential search
+  [#6] representative: strategic commitment  ·  6 members
       · commitment device
-      · credible commitment  [代表]
-      · strategic commitment
-  [#9] representative: exponential decay  ·  3 members
+      · commitment model
+      · commitment problem
+      · credible commitment
+      · escalation of commitment
+      · strategic commitment  [代表]
+  [#7] representative: constrained optimization  ·  5 members
+      · budget constraint
+      · constrained optimization  [代表]
+      · corner solution
+      · cost minimization
+      · utility maximization
+  [#8] representative: coordination game  ·  5 members
+      · coordination failure
+      · coordination game  [代表]
+      · coordinationfailure
+      · coordinationgame
+      · stag hunt game
+  [#9] representative: information asymmetry  ·  5 members
+      · adverse selection
+      · asymmetric information
+      · hidden information
+      · information asymmetry  [代表]
+      · moral hazard
+  [#10] representative: minimax  ·  5 members
+      · maximin rule
+      · minimax  [代表]
+      · minimax criterion
+      · minimax principle
+      · minimax theorem
+  [#11] representative: real options  ·  5 members
+      · option value
+      · real option
+      · real options  [代表]
+      · real options model
+      · real options theory
+  [#12] representative: cognitive heuristics and biases  ·  4 members
+      · availability heuristic
+      · confirmation bias
+      · sampling bias
+      · scarcity heuristic
+  [#13] representative: exponential decay  ·  4 members
+      · ebbinghaus forgetting curve
       · exponential decay  [代表]
       · exponential decay model
       · exponentialdecay
-  [#10] representative: extinction  ·  3 members
+  [#14] representative: multistability  ·  4 members
+      · bistability
+      · bistable system
+      · multistability  [代表]
+      · multistable dynamical system
+  [#15] representative: resource allocation  ·  4 members
+      · attention allocation model
+      · optimal resource allocation
+      · resource allocation  [代表]
+      · time allocation model
+  [#16] representative: screening  ·  4 members
+      · screening  [代表]
+      · screening game
+      · screening model
+      · screeningmodel
+  [#17] representative: self reinforcement  ·  4 members
+      · self fulfilling equilibrium
+      · self fulfilling prophecy
+      · self reinforcing dynamics
+      · self reinforcing process
+  [#18] representative: expected utility  ·  3 members
+      · expected utility maximization
+      · expected utility model
+      · expected utility theory
+  [#19] representative: extinction  ·  3 members
       · extinction  [代表]
       · extinction learning
       · operant extinction
-  [#11] representative: minimax regret  ·  3 members
-      · minimax criterion
-      · minimax regret  [代表]
-      · regret minimization
-  [#12] representative: modern portfolio theory  ·  3 members
-      · modern portfolio theory  [代表]
+  [#20] representative: free riding  ·  3 members
+      · free rider problem
+      · free riding  [代表]
+      · free riding problem
+  [#21] representative: prisoner's dilemma  ·  3 members
+      · iterated prisoner's dilemma
+      · prisoner's dilemma  [代表]
+      · repeated prisoner's dilemma
+  [#22] representative: regret minimization  ·  3 members
+      · minimax regret
+      · regret minimization  [代表]
+      · regret theory
+  [#23] representative: absorbing markov chain  ·  2 members
+      · absorbing markov chain  [代表]
+      · absorbing state
+  [#24] representative: attractor dynamics  ·  2 members
+      · attractor dynamics  [代表]
+      · attractor switching
+  [#25] representative: aversion  ·  2 members
+      · loss aversion
+      · risk aversion
+  [#26] representative: constraint satisfaction  ·  2 members
+      · constraint relaxation
+      · constraint satisfaction problem
+  [#27] representative: diversification  ·  2 members
+      · diversification  [代表]
       · portfolio diversification
-      · portfolio optimization
-  [#13] representative: option value  ·  3 members
-      · option value  [代表]
-      · real option
-      · real options model
-  [#14] representative: screening model  ·  3 members
-      · screening
-      · screening game
-      · screening model  [代表]
-  [#15] representative: cheap talk  ·  2 members
-      · cheap talk  [代表]
-      · cheap talk game
-  [#16] representative: incentive compatibility  ·  2 members
+  [#28] representative: fixed point  ·  2 members
+      · fixed point attractor
+      · stable fixed point
+  [#29] representative: hebbian learning  ·  2 members
+      · hebb's rule
+      · hebbian learning  [代表]
+  [#30] representative: incentive compatibility  ·  2 members
       · incentive compatibility  [代表]
       · incentive compatibility constraint
-  [#17] representative: multi armed bandit  ·  2 members
+  [#31] representative: information disclosure  ·  2 members
+      · full disclosure principle
+      · information disclosure  [代表]
+  [#32] representative: intermittent reinforcement  ·  2 members
+      · intermittent reinforcement  [代表]
+      · positive reinforcement
+  [#33] representative: modern portfolio theory  ·  2 members
+      · modern portfolio theory  [代表]
+      · portfolio optimization
+  [#34] representative: multi armed bandit  ·  2 members
       · multi armed bandit  [代表]
       · multi armed bandit problem
-  [#18] representative: negative feedback loop  ·  2 members
-      · negative feedback
-      · negative feedback loop  [代表]
-  [#19] representative: revelation principle  ·  2 members
+  [#35] representative: pareto optimality  ·  2 members
+      · pareto improvement
+      · pareto inferior equilibrium
+  [#36] representative: preference revelation  ·  2 members
       · preference revelation mechanism
-      · revelation principle  [代表]
-  [#20] representative: sunk cost fallacy  ·  2 members
-      · escalation of commitment
-      · sunk cost fallacy  [代表]
+      · revealed preference theory
+  [#37] representative: reinforcement learning  ·  2 members
+      · reinforcement learning  [代表]
+      · safe reinforcement learning
+  [#38] representative: stable matching  ·  2 members
+      · stable matching  [代表]
+      · two sided matching
+  [#39] representative: status quo bias  ·  2 members
+      · status quo bias  [代表]
+      · statusquobias
+  [#40] representative: trigger strategy  ·  2 members
+      · grim trigger strategy
+      · trigger strategy  [代表]
 
-[Merge map: raw → canonical where label changed (48 pairs)]
-  adverse selection  →  asymmetric information
-  hidden information  →  asymmetric information
-  moral hazard  →  asymmetric information
+[Merge map: raw → canonical where label changed (124 pairs)]
+  absorbing state  →  absorbing markov chain
+  attractor switching  →  attractor dynamics
+  loss aversion  →  aversion
+  risk aversion  →  aversion
+  bayesian belief update  →  bayesian updating
   bayesian belief updating  →  bayesian updating
+  bayesian game  →  bayesian updating
   bayesianupdating  →  bayesian updating
   belief revision  →  bayesian updating
-  cheap talk game  →  cheap talk
+  sequential bayesian updating  →  bayesian updating
+  availability heuristic  →  cognitive heuristics and biases
+  confirmation bias  →  cognitive heuristics and biases
+  sampling bias  →  cognitive heuristics and biases
+  scarcity heuristic  →  cognitive heuristics and biases
+  budget constraint  →  constrained optimization
+  corner solution  →  constrained optimization
+  cost minimization  →  constrained optimization
+  utility maximization  →  constrained optimization
+  constraint relaxation  →  constraint satisfaction
+  constraint satisfaction problem  →  constraint satisfaction
   coordination failure  →  coordination game
+  coordinationfailure  →  coordination game
   coordinationgame  →  coordination game
-  equilibrium selection  →  coordination game
-  multiple equilibria  →  coordination game
-  commitment device  →  credible commitment
-  strategic commitment  →  credible commitment
+  stag hunt game  →  coordination game
+  portfolio diversification  →  diversification
+  expected utility maximization  →  expected utility
+  expected utility model  →  expected utility
+  expected utility theory  →  expected utility
+  ebbinghaus forgetting curve  →  exponential decay
   exponential decay model  →  exponential decay
   exponentialdecay  →  exponential decay
   extinction learning  →  extinction
   operant extinction  →  extinction
+  closed loop control  →  feedback control
+  negative feedback  →  feedback control
+  negative feedback loop  →  feedback control
+  negativefeedbackloop  →  feedback control
+  positive feedback  →  feedback control
+  positive feedback loop  →  feedback control
+  positive feedback model  →  feedback control
+  positive feedback system  →  feedback control
+  positivefeedback  →  feedback control
+  reinforcing feedback loop  →  feedback control
+  reinforcingfeedbackloop  →  feedback control
+  fixed point attractor  →  fixed point
+  stable fixed point  →  fixed point
+  free rider problem  →  free riding
+  free riding problem  →  free riding
+  hebb's rule  →  hebbian learning
   incentive compatibility constraint  →  incentive compatibility
-  minimax criterion  →  minimax regret
-  regret minimization  →  minimax regret
-  portfolio diversification  →  modern portfolio theory
+  incompleteinformationgame  →  incomplete information game
+  adverse selection  →  information asymmetry
+  asymmetric information  →  information asymmetry
+  hidden information  →  information asymmetry
+  moral hazard  →  information asymmetry
+  full disclosure principle  →  information disclosure
+  positive reinforcement  →  intermittent reinforcement
+  maximin rule  →  minimax
+  minimax criterion  →  minimax
+  minimax principle  →  minimax
+  minimax theorem  →  minimax
   portfolio optimization  →  modern portfolio theory
   multi armed bandit problem  →  multi armed bandit
+  bistability  →  multistability
+  bistable system  →  multistability
+  multistable dynamical system  →  multistability
+  dominant strategy equilibrium  →  nash equilibrium
+  dynamic equilibrium  →  nash equilibrium
+  equilibrium selection  →  nash equilibrium
+  multiple equilibria  →  nash equilibrium
+  nash bargaining solution  →  nash equilibrium
   sequential equilibrium  →  nash equilibrium
+  stable equilibrium  →  nash equilibrium
   stable nash equilibrium  →  nash equilibrium
   stackelberg equilibrium  →  nash equilibrium
   subgame perfect equilibrium  →  nash equilibrium
-  negative feedback  →  negative feedback loop
+  subgame perfect nash equilibrium  →  nash equilibrium
   optimal stopping problem  →  optimal stopping
+  optimal stopping theorem  →  optimal stopping
   optimal stopping theory  →  optimal stopping
   optimalstopping  →  optimal stopping
-  real option  →  option value
-  real options model  →  option value
-  positive feedback  →  positive feedback loop
-  positivefeedback  →  positive feedback loop
-  reinforcing feedback loop  →  positive feedback loop
-  self reinforcing process  →  positive feedback loop
-  preference revelation mechanism  →  revelation principle
-  screening  →  screening model
-  screening game  →  screening model
+  secretary problem  →  optimal stopping
+  sequential search  →  optimal stopping
+  pareto improvement  →  pareto optimality
+  pareto inferior equilibrium  →  pareto optimality
+  preference revelation mechanism  →  preference revelation
+  revealed preference theory  →  preference revelation
+  iterated prisoner's dilemma  →  prisoner's dilemma
+  repeated prisoner's dilemma  →  prisoner's dilemma
+  option value  →  real options
+  real option  →  real options
+  real options model  →  real options
+  real options theory  →  real options
+  minimax regret  →  regret minimization
+  regret theory  →  regret minimization
+  safe reinforcement learning  →  reinforcement learning
+  attention allocation model  →  resource allocation
+  optimal resource allocation  →  resource allocation
+  time allocation model  →  resource allocation
+  screening game  →  screening
+  screening model  →  screening
+  screeningmodel  →  screening
+  self fulfilling equilibrium  →  self reinforcement
+  self fulfilling prophecy  →  self reinforcement
+  self reinforcing dynamics  →  self reinforcement
+  self reinforcing process  →  self reinforcement
+  cheap talk  →  signaling game
+  cheap talk game  →  signaling game
   costly signaling  →  signaling game
   pooling equilibrium  →  signaling game
   poolingequilibrium  →  signaling game
+  sender receiver game  →  signaling game
   separating equilibrium  →  signaling game
   signaling model  →  signaling game
   signalinggame  →  signaling game
   signalingmodel  →  signaling game
-  escalation of commitment  →  sunk cost fallacy
+  two sided matching  →  stable matching
+  statusquobias  →  status quo bias
+  commitment device  →  strategic commitment
+  commitment model  →  strategic commitment
+  commitment problem  →  strategic commitment
+  credible commitment  →  strategic commitment
+  escalation of commitment  →  strategic commitment
+  grim trigger strategy  →  trigger strategy
 
-[Merge cluster details / 归并簇完整明细（共 167 簇，其中 20 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
-  [1] 代表名: signaling game  ·  8 条
+[Merge cluster details / 归并簇完整明细（共 101 簇，其中 40 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: nash equilibrium  ·  12 条
+      · dominant strategy equilibrium
+      · dynamic equilibrium
+      · equilibrium selection
+      · multiple equilibria
+      · nash bargaining solution
+      · nash equilibrium  [代表]
+      · sequential equilibrium
+      · stable equilibrium
+      · stable nash equilibrium
+      · stackelberg equilibrium
+      · subgame perfect equilibrium
+      · subgame perfect nash equilibrium
+  [2] 代表名: feedback control  ·  11 条
+      · closed loop control
+      · negative feedback
+      · negative feedback loop
+      · negativefeedbackloop
+      · positive feedback
+      · positive feedback loop
+      · positive feedback model
+      · positive feedback system
+      · positivefeedback
+      · reinforcing feedback loop
+      · reinforcingfeedbackloop
+  [3] 代表名: signaling game  ·  11 条
+      · cheap talk
+      · cheap talk game
       · costly signaling
       · pooling equilibrium
       · poolingequilibrium
+      · sender receiver game
       · separating equilibrium
       · signaling game  [代表]
       · signaling model
       · signalinggame
       · signalingmodel
-  [2] 代表名: coordination game  ·  5 条
-      · coordination failure
-      · coordination game  [代表]
-      · coordinationgame
-      · equilibrium selection
-      · multiple equilibria
-  [3] 代表名: nash equilibrium  ·  5 条
-      · nash equilibrium  [代表]
-      · sequential equilibrium
-      · stable nash equilibrium
-      · stackelberg equilibrium
-      · subgame perfect equilibrium
-  [4] 代表名: positive feedback loop  ·  5 条
-      · positive feedback
-      · positive feedback loop  [代表]
-      · positivefeedback
-      · reinforcing feedback loop
-      · self reinforcing process
-  [5] 代表名: asymmetric information  ·  4 条
-      · adverse selection
-      · asymmetric information  [代表]
-      · hidden information
-      · moral hazard
-  [6] 代表名: bayesian updating  ·  4 条
+  [4] 代表名: bayesian updating  ·  7 条
+      · bayesian belief update
       · bayesian belief updating
+      · bayesian game
       · bayesian updating  [代表]
       · bayesianupdating
       · belief revision
-  [7] 代表名: optimal stopping  ·  4 条
+      · sequential bayesian updating
+  [5] 代表名: optimal stopping  ·  7 条
       · optimal stopping  [代表]
       · optimal stopping problem
+      · optimal stopping theorem
       · optimal stopping theory
       · optimalstopping
-  [8] 代表名: credible commitment  ·  3 条
+      · secretary problem
+      · sequential search
+  [6] 代表名: strategic commitment  ·  6 条
       · commitment device
-      · credible commitment  [代表]
-      · strategic commitment
-  [9] 代表名: exponential decay  ·  3 条
+      · commitment model
+      · commitment problem
+      · credible commitment
+      · escalation of commitment
+      · strategic commitment  [代表]
+  [7] 代表名: constrained optimization  ·  5 条
+      · budget constraint
+      · constrained optimization  [代表]
+      · corner solution
+      · cost minimization
+      · utility maximization
+  [8] 代表名: coordination game  ·  5 条
+      · coordination failure
+      · coordination game  [代表]
+      · coordinationfailure
+      · coordinationgame
+      · stag hunt game
+  [9] 代表名: information asymmetry  ·  5 条
+      · adverse selection
+      · asymmetric information
+      · hidden information
+      · information asymmetry  [代表]
+      · moral hazard
+  [10] 代表名: minimax  ·  5 条
+      · maximin rule
+      · minimax  [代表]
+      · minimax criterion
+      · minimax principle
+      · minimax theorem
+  [11] 代表名: real options  ·  5 条
+      · option value
+      · real option
+      · real options  [代表]
+      · real options model
+      · real options theory
+  [12] 代表名: cognitive heuristics and biases  ·  4 条
+      · availability heuristic
+      · confirmation bias
+      · sampling bias
+      · scarcity heuristic
+  [13] 代表名: exponential decay  ·  4 条
+      · ebbinghaus forgetting curve
       · exponential decay  [代表]
       · exponential decay model
       · exponentialdecay
-  [10] 代表名: extinction  ·  3 条
+  [14] 代表名: multistability  ·  4 条
+      · bistability
+      · bistable system
+      · multistability  [代表]
+      · multistable dynamical system
+  [15] 代表名: resource allocation  ·  4 条
+      · attention allocation model
+      · optimal resource allocation
+      · resource allocation  [代表]
+      · time allocation model
+  [16] 代表名: screening  ·  4 条
+      · screening  [代表]
+      · screening game
+      · screening model
+      · screeningmodel
+  [17] 代表名: self reinforcement  ·  4 条
+      · self fulfilling equilibrium
+      · self fulfilling prophecy
+      · self reinforcing dynamics
+      · self reinforcing process
+  [18] 代表名: expected utility  ·  3 条
+      · expected utility maximization
+      · expected utility model
+      · expected utility theory
+  [19] 代表名: extinction  ·  3 条
       · extinction  [代表]
       · extinction learning
       · operant extinction
-  [11] 代表名: minimax regret  ·  3 条
-      · minimax criterion
-      · minimax regret  [代表]
-      · regret minimization
-  [12] 代表名: modern portfolio theory  ·  3 条
-      · modern portfolio theory  [代表]
+  [20] 代表名: free riding  ·  3 条
+      · free rider problem
+      · free riding  [代表]
+      · free riding problem
+  [21] 代表名: prisoner's dilemma  ·  3 条
+      · iterated prisoner's dilemma
+      · prisoner's dilemma  [代表]
+      · repeated prisoner's dilemma
+  [22] 代表名: regret minimization  ·  3 条
+      · minimax regret
+      · regret minimization  [代表]
+      · regret theory
+  [23] 代表名: absorbing markov chain  ·  2 条
+      · absorbing markov chain  [代表]
+      · absorbing state
+  [24] 代表名: attractor dynamics  ·  2 条
+      · attractor dynamics  [代表]
+      · attractor switching
+  [25] 代表名: aversion  ·  2 条
+      · loss aversion
+      · risk aversion
+  [26] 代表名: constraint satisfaction  ·  2 条
+      · constraint relaxation
+      · constraint satisfaction problem
+  [27] 代表名: diversification  ·  2 条
+      · diversification  [代表]
       · portfolio diversification
-      · portfolio optimization
-  [13] 代表名: option value  ·  3 条
-      · option value  [代表]
-      · real option
-      · real options model
-  [14] 代表名: screening model  ·  3 条
-      · screening
-      · screening game
-      · screening model  [代表]
-  [15] 代表名: cheap talk  ·  2 条
-      · cheap talk  [代表]
-      · cheap talk game
-  [16] 代表名: incentive compatibility  ·  2 条
+  [28] 代表名: fixed point  ·  2 条
+      · fixed point attractor
+      · stable fixed point
+  [29] 代表名: hebbian learning  ·  2 条
+      · hebb's rule
+      · hebbian learning  [代表]
+  [30] 代表名: incentive compatibility  ·  2 条
       · incentive compatibility  [代表]
       · incentive compatibility constraint
-  [17] 代表名: multi armed bandit  ·  2 条
+  [31] 代表名: information disclosure  ·  2 条
+      · full disclosure principle
+      · information disclosure  [代表]
+  [32] 代表名: intermittent reinforcement  ·  2 条
+      · intermittent reinforcement  [代表]
+      · positive reinforcement
+  [33] 代表名: modern portfolio theory  ·  2 条
+      · modern portfolio theory  [代表]
+      · portfolio optimization
+  [34] 代表名: multi armed bandit  ·  2 条
       · multi armed bandit  [代表]
       · multi armed bandit problem
-  [18] 代表名: negative feedback loop  ·  2 条
-      · negative feedback
-      · negative feedback loop  [代表]
-  [19] 代表名: revelation principle  ·  2 条
+  [35] 代表名: pareto optimality  ·  2 条
+      · pareto improvement
+      · pareto inferior equilibrium
+  [36] 代表名: preference revelation  ·  2 条
       · preference revelation mechanism
-      · revelation principle  [代表]
-  [20] 代表名: sunk cost fallacy  ·  2 条
-      · escalation of commitment
-      · sunk cost fallacy  [代表]
-  [21] （单条）absorbing markov chain
-  [22] （单条）absorbing state
-  [23] （单条）anchoring effect
-  [24] （单条）attention allocation model
-  [25] （单条）attractor dynamics
-  [26] （单条）attractor switching
-  [27] （单条）availability heuristic
-  [28] （单条）backdoor adjustment
-  [29] （单条）bayesian belief update
-  [30] （单条）bayesian game
-  [31] （单条）binary choice model
-  [32] （单条）bistability
-  [33] （单条）bistable system
-  [34] （单条）budget constraint
-  [35] （单条）buffer stock model
-  [36] （单条）chicken game
-  [37] （单条）closed loop control
-  [38] （单条）cognitive dissonance
-  [39] （单条）cognitive offloading
-  [40] （单条）commitment model
-  [41] （单条）commitment problem
-  [42] （单条）common knowledge
-  [43] （单条）confirmation bias
-  [44] （单条）confounder adjustment
-  [45] （单条）constrained optimization
-  [46] （单条）constraint relaxation
-  [47] （单条）constraint satisfaction problem
-  [48] （单条）coordinationfailure
-  [49] （单条）corner solution
-  [50] （单条）cost minimization
-  [51] （单条）coupled oscillator model
-  [52] （单条）damped oscillation
-  [53] （单条）discrete time system
-  [54] （单条）diversification
-  [55] （单条）dominant strategy equilibrium
-  [56] （单条）dynamic consistency
-  [57] （单条）dynamic equilibrium
-  [58] （单条）ebbinghaus forgetting curve
-  [59] （单条）entry deterrence game
-  [60] （单条）equilibrium trap
-  [61] （单条）expected utility maximization
-  [62] （单条）expected utility model
-  [63] （单条）expected utility theory
-  [64] （单条）externality
-  [65] （单条）extortion game
-  [66] （单条）finite horizon game
-  [67] （单条）fixed point attractor
-  [68] （单条）free rider problem
-  [69] （单条）free riding
-  [70] （单条）free riding problem
-  [71] （单条）full disclosure principle
-  [72] （单条）fundamental attribution error
-  [73] （单条）gradient descent
-  [74] （单条）graph cut
-  [75] （单条）grim trigger strategy
-  [76] （单条）habituation
-  [77] （单条）hebb's rule
-  [78] （单条）hebbian learning
-  [79] （单条）hedonic adaptation
-  [80] （单条）hold up problem
-  [81] （单条）hyperbolic discounting
-  [82] （单条）incompleteinformationgame
-  [83] （单条）increasing marginal cost
-  [84] （单条）information asymmetry
-  [85] （单条）information disclosure
-  [86] （单条）intermittent reinforcement
-  [87] （单条）ironic process theory
-  [88] （单条）iterated prisoner's dilemma
-  [89] （单条）limited capacity model
-  [90] （单条）load balancing
-  [91] （单条）local optimum
-  [92] （单条）loss aversion
-  [93] （单条）lyapunov stability
-  [94] （单条）matching law
-  [95] （单条）maximin rule
-  [96] （单条）measurement error model
-  [97] （单条）metastable state
-  [98] （单条）minimax
-  [99] （单条）minimax principle
-  [100] （单条）minimax theorem
-  [101] （单条）minimum intervention principle
-  [102] （单条）monopoly
-  [103] （单条）multistability
-  [104] （单条）multistable dynamical system
-  [105] （单条）nash bargaining solution
-  [106] （单条）negativefeedbackloop
-  [107] （单条）optimal information acquisition
-  [108] （单条）optimal resource allocation
-  [109] （单条）optimal stopping theorem
-  [110] （单条）ornstein uhlenbeck process
-  [111] （单条）pareto improvement
-  [112] （单条）pareto inferior equilibrium
-  [113] （单条）path dependence
-  [114] （单条）perturbation theory
-  [115] （单条）phase transition
-  [116] （单条）positive feedback model
-  [117] （单条）positive feedback system
-  [118] （单条）positive reinforcement
-  [119] （单条）poverty trap
-  [120] （单条）preventive maintenance model
-  [121] （单条）prisoner's dilemma
-  [122] （单条）prospect theory
-  [123] （单条）rational inattention
-  [124] （单条）real options
-  [125] （单条）real options theory
-  [126] （单条）regret theory
-  [127] （单条）reinforcement learning
-  [128] （单条）reinforcingfeedbackloop
-  [129] （单条）relaxation process
-  [130] （单条）repeated game
-  [131] （单条）repeated prisoner's dilemma
-  [132] （单条）resource allocation
-  [133] （单条）revealed preference theory
-  [134] （单条）risk aversion
-  [135] （单条）safe reinforcement learning
-  [136] （单条）sampling bias
-  [137] （单条）scarcity heuristic
-  [138] （单条）screeningmodel
-  [139] （单条）secretary problem
-  [140] （单条）self fulfilling equilibrium
-  [141] （单条）self fulfilling prophecy
-  [142] （单条）self organized criticality
-  [143] （单条）self reinforcing dynamics
-  [144] （单条）sender receiver game
-  [145] （单条）sequential bayesian updating
-  [146] （单条）sequential hypothesis testing
-  [147] （单条）sequential search
-  [148] （单条）signal to noise ratio
-  [149] （单条）stable equilibrium
-  [150] （单条）stable fixed point
-  [151] （单条）stable matching
-  [152] （单条）stag hunt game
-  [153] （单条）state separation theorem
-  [154] （单条）status quo bias
-  [155] （单条）statusquobias
-  [156] （单条）stop loss rule
-  [157] （单条）structural balance theory
-  [158] （单条）subgame perfect nash equilibrium
-  [159] （单条）threshold model
-  [160] （单条）time allocation model
-  [161] （单条）tit for tat
-  [162] （单条）trigger strategy
-  [163] （单条）two sided matching
-  [164] （单条）ultimatum game
-  [165] （单条）utility maximization
-  [166] （单条）weak coupling
-  [167] （单条）zeigarnik effect
+      · revealed preference theory
+  [37] 代表名: reinforcement learning  ·  2 条
+      · reinforcement learning  [代表]
+      · safe reinforcement learning
+  [38] 代表名: stable matching  ·  2 条
+      · stable matching  [代表]
+      · two sided matching
+  [39] 代表名: status quo bias  ·  2 条
+      · status quo bias  [代表]
+      · statusquobias
+  [40] 代表名: trigger strategy  ·  2 条
+      · grim trigger strategy
+      · trigger strategy  [代表]
+  [41] （单条）anchoring effect
+  [42] （单条）backdoor adjustment
+  [43] （单条）binary choice model
+  [44] （单条）buffer stock model
+  [45] （单条）chicken game
+  [46] （单条）cognitive dissonance
+  [47] （单条）cognitive offloading
+  [48] （单条）common knowledge
+  [49] （单条）confounder adjustment
+  [50] （单条）coupled oscillator model
+  [51] （单条）damped oscillation
+  [52] （单条）discrete time system
+  [53] （单条）dynamic consistency
+  [54] （单条）entry deterrence game
+  [55] （单条）equilibrium trap
+  [56] （单条）externality
+  [57] （单条）extortion game
+  [58] （单条）finite horizon game
+  [59] （单条）fundamental attribution error
+  [60] （单条）gradient descent
+  [61] （单条）graph cut
+  [62] （单条）habituation
+  [63] （单条）hedonic adaptation
+  [64] （单条）hold up problem
+  [65] （单条）hyperbolic discounting
+  [66] （单条）incompleteinformationgame
+  [67] （单条）increasing marginal cost
+  [68] （单条）ironic process theory
+  [69] （单条）limited capacity model
+  [70] （单条）load balancing
+  [71] （单条）local optimum
+  [72] （单条）lyapunov stability
+  [73] （单条）matching law
+  [74] （单条）measurement error model
+  [75] （单条）metastable state
+  [76] （单条）minimum intervention principle
+  [77] （单条）monopoly
+  [78] （单条）optimal information acquisition
+  [79] （单条）ornstein uhlenbeck process
+  [80] （单条）path dependence
+  [81] （单条）perturbation theory
+  [82] （单条）phase transition
+  [83] （单条）poverty trap
+  [84] （单条）preventive maintenance model
+  [85] （单条）prospect theory
+  [86] （单条）rational inattention
+  [87] （单条）relaxation process
+  [88] （单条）repeated game
+  [89] （单条）revelation principle
+  [90] （单条）self organized criticality
+  [91] （单条）sequential hypothesis testing
+  [92] （单条）signal to noise ratio
+  [93] （单条）state separation theorem
+  [94] （单条）stop loss rule
+  [95] （单条）structural balance theory
+  [96] （单条）sunk cost fallacy
+  [97] （单条）threshold model
+  [98] （单条）tit for tat
+  [99] （单条）ultimatum game
+  [100] （单条）weak coupling
+  [101] （单条）zeigarnik effect
 
 ==============================================================================

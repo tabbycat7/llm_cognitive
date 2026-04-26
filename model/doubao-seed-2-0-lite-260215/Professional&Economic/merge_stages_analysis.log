@@ -1,0 +1,201 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Professional&Economic\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Professional&Economic\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Professional&Economic\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     324
+  distinct stage-1 canonicals:  194
+  stage2 map entries (keys):    194
+  distinct stage-2 canonicals:  133
+  stage2 merge groups (|keys|>1 for same c2): 22 groups, 83 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1020
+  distinct c1 (weighted rows): 194
+  distinct c2 (weighted):      133
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'constrained optimization'  ←  7 stage-1 labels
+        · constrained optimization
+        · constraint satisfaction
+        · cost minimization
+        · lexicographic optimization
+        · linear programming
+        · multi stage optimization
+        · sequential optimization
+  [ 2] 'search theory'  ←  7 stage-1 labels
+        · directed search
+        · job search model
+        · optimal search theory
+        · reservation price
+        · reservation wage model
+        · search theory
+        · sequential search
+  [ 3] 'modern portfolio theory'  ←  6 stage-1 labels
+        · diversification
+        · mean variance
+        · modern portfolio theory
+        · naive diversification
+        · portfolio optimization
+        · risk return tradeoff
+  [ 4] 'nash bargaining solution'  ←  6 stage-1 labels
+        · bargaining
+        · bargaining with outside options
+        · nash bargaining solution
+        · outside option
+        · sequential bargaining
+        · ultimatum game
+  [ 5] 'signaling game'  ←  6 stage-1 labels
+        · cheap talk
+        · costly signaling
+        · hidden information model
+        · job market signaling
+        · signaling game
+        · spence signaling model
+  [ 6] 'asset liability matching'  ←  5 stage-1 labels
+        · asset liability matching
+        · cash flow matching
+        · duration matching
+        · fixed income immunization
+        · horizon matching
+  [ 7] 'intertemporal choice'  ←  5 stage-1 labels
+        · hyperbolic discounting
+        · intertemporal choice
+        · life cycle theory
+        · permanent income hypothesis
+        · precautionary saving
+  [ 8] 'net present value'  ←  5 stage-1 labels
+        · annuity
+        · discounted cash flow
+        · future value
+        · net present value
+        · time value of money
+  [ 9] 'principal agent theory'  ←  5 stage-1 labels
+        · incentive compatibility
+        · moral hazard
+        · principal agent
+        · revelation principle
+        · screening model
+  [10] 'matching theory'  ←  4 stage-1 labels
+        · assignment problem
+        · matching market
+        · matching theory
+        · two sided matching
+  [11] 'utility theory'  ←  4 stage-1 labels
+        · diminishing marginal utility
+        · expected opportunity loss
+        · expected value
+        · utility theory
+  [12] 'scoring model'  ←  3 stage-1 labels
+        · linear additive model
+        · scoring model
+        · weighted sum model
+  [13] 'arbitrage'  ←  2 stage-1 labels
+        · arbitrage
+        · cost of carry
+  [14] 'buffer stock'  ←  2 stage-1 labels
+        · buffer stock
+        · smoothing
+  [15] 'debt repayment strategies'  ←  2 stage-1 labels
+        · avalanche method
+        · debt repayment strategies
+  [16] 'dynamic programming'  ←  2 stage-1 labels
+        · dynamic programming
+        · markov decision process
+  [17] 'efficient market hypothesis'  ←  2 stage-1 labels
+        · efficient market hypothesis
+        · random walk hypothesis
+  [18] 'exponential growth'  ←  2 stage-1 labels
+        · compound growth
+        · exponential change
+  [19] 'minimax'  ←  2 stage-1 labels
+        · maximin
+        · minimax
+  [20] 'queueing theory'  ←  2 stage-1 labels
+        · poisson process
+        · queueing theory
+  [21] 'real options'  ←  2 stage-1 labels
+        · abandonment option
+        · real options
+  [22] 'safety first criterion'  ←  2 stage-1 labels
+        · roy safety first criterion
+        · safety first
+
+[Stage-2 renames] (key ≠ value, 66 entries; list first 80)
+  'abandonment option'  →  'real options'
+  'annuity'  →  'net present value'
+  'assignment problem'  →  'matching theory'
+  'avalanche method'  →  'debt repayment strategies'
+  'bargaining'  →  'nash bargaining solution'
+  'bargaining with outside options'  →  'nash bargaining solution'
+  'cash flow matching'  →  'asset liability matching'
+  'cheap talk'  →  'signaling game'
+  'compound growth'  →  'exponential growth'
+  'constraint satisfaction'  →  'constrained optimization'
+  'cost minimization'  →  'constrained optimization'
+  'cost of carry'  →  'arbitrage'
+  'costly signaling'  →  'signaling game'
+  'diminishing marginal utility'  →  'utility theory'
+  'directed search'  →  'search theory'
+  'discounted cash flow'  →  'net present value'
+  'diversification'  →  'modern portfolio theory'
+  'duration matching'  →  'asset liability matching'
+  'expected opportunity loss'  →  'utility theory'
+  'expected value'  →  'utility theory'
+  'exponential change'  →  'exponential growth'
+  'featureselection'  →  'feature selection'
+  'fixed income immunization'  →  'asset liability matching'
+  'future value'  →  'net present value'
+  'hidden information model'  →  'signaling game'
+  'horizon matching'  →  'asset liability matching'
+  'hyperbolic discounting'  →  'intertemporal choice'
+  'incentive compatibility'  →  'principal agent theory'
+  'job market signaling'  →  'signaling game'
+  'job search model'  →  'search theory'
+  'lexicographic optimization'  →  'constrained optimization'
+  'life cycle theory'  →  'intertemporal choice'
+  'linear additive model'  →  'scoring model'
+  'linear programming'  →  'constrained optimization'
+  'markov decision process'  →  'dynamic programming'
+  'matching market'  →  'matching theory'
+  'maximin'  →  'minimax'
+  'mean variance'  →  'modern portfolio theory'
+  'modulardecomposition'  →  'modular decomposition'
+  'moral hazard'  →  'principal agent theory'
+  'multi stage optimization'  →  'constrained optimization'
+  'naive diversification'  →  'modern portfolio theory'
+  'optimal search theory'  →  'search theory'
+  'outside option'  →  'nash bargaining solution'
+  'permanent income hypothesis'  →  'intertemporal choice'
+  'poisson process'  →  'queueing theory'
+  'portfolio optimization'  →  'modern portfolio theory'
+  'precautionary saving'  →  'intertemporal choice'
+  'principal agent'  →  'principal agent theory'
+  'random walk hypothesis'  →  'efficient market hypothesis'
+  'reservation price'  →  'search theory'
+  'reservation wage model'  →  'search theory'
+  'revelation principle'  →  'principal agent theory'
+  'risk return tradeoff'  →  'modern portfolio theory'
+  'roy safety first criterion'  →  'safety first criterion'
+  'safety first'  →  'safety first criterion'
+  'screening model'  →  'principal agent theory'
+  'sequential bargaining'  →  'nash bargaining solution'
+  'sequential optimization'  →  'constrained optimization'
+  'sequential search'  →  'search theory'
+  'smoothing'  →  'buffer stock'
+  'spence signaling model'  →  'signaling game'
+  'time value of money'  →  'net present value'
+  'two sided matching'  →  'matching theory'
+  'ultimatum game'  →  'nash bargaining solution'
+  'weighted sum model'  →  'scoring model'
+
+[Consistency with merge_map.json]
+  compared 324 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

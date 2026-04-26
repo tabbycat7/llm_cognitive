@@ -8,6 +8,9 @@ the same analysis block as ``run.py --analyse-only`` (``analyse`` → ``visualis
 LLM 归并使用 ``.env`` 中的 ``OPENAI_API_MERGE_KEY`` / ``OPENAI_BASE_URL_MERGE`` /
 ``LLM_MODEL_MERGE``（与探测阶段解耦），见 ``analyze_results.merge_synonyms_via_llm``。
 
+``--merge-method embedding_llm_llm`` 或 ``embedding_llm_llm_stage2`` 时，第二阶段归并可单独用 ``.env`` 指定（不设则与上面相同）：
+``LLM_MODEL_MERGE_STAGE2``、``OPENAI_BASE_URL_MERGE_STAGE2``、``OPENAI_API_MERGE_STAGE2_KEY``。
+
 Examples
 --------
   # 默认：项目根下所有符合条件的 probe_results.jsonl，顺序执行 LLM 归并
@@ -28,9 +31,16 @@ Examples
   # 批处理结束后，额外写一份汇总 JSON（每个模型×分类下前 50 个名称及频次）
   python batch_llm_merge.py --refresh-merge -j 28 --export-models-summary-json merged_top50.json --export-models-summary-phase after_merge 
 
+python batch_llm_merge.py  --export-models-summary-json merged_top50.json --export-models-summary-phase after_merge
+
   # 汇总「归并前」原始标签频次
   python batch_llm_merge.py --export-models-summary-json raw_top50.json \\
       --export-models-summary-phase before_merge
+
+  # 不归并，只写汇总 JSON（不画图、不写 analysis_summary.log）
+  python batch_llm_merge.py --merge-method none \\
+      --export-models-summary-json merged_top50.json \\
+      --export-models-summary-only
 
   # 默认安静：每任务一行；需要与 run.py 相同的表格/归并行可加 --verbose
   python batch_llm_merge.py --verbose
@@ -40,6 +50,24 @@ Examples
   # 若汇总 JSON 要在旧文件上「追加/覆盖本次任务」而不是整文件重写：
   python batch_llm_merge.py --models 新模型名 --export-models-summary-json merged_top50.json \\
       --export-models-summary-merge
+
+  # 混合归并：先 embedding 聚类，再并发调用 LLM 为每个簇命名
+  python batch_llm_merge.py --merge-method embedding_llm --refresh-merge \\
+      --llm-naming-workers 12
+
+  python batch_llm_merge.py --embedding-threshold 0.35 --merge-method embedding_llm --refresh-merge -j 28 --llm-naming-workers 12
+
+  # 三阶段归并：embedding 聚类 + LLM 簇命名 + LLM 二次归并（进一步合并 canonical 名称）
+  python batch_llm_merge.py --merge-method embedding_llm_llm --refresh-merge \\
+      --llm-naming-workers 12
+
+  # 只重跑 Stage 2（读已有 merge_map_llm_stage1.json，调用 LLM 二次归并，写 merge_map_llm_stage2.json + merge_map.json）
+  python batch_llm_merge.py --merge-method embedding_llm_llm_stage2 --refresh-merge -j 4
+
+  # 只用 Stage 1 作为最终归并（读 merge_map_llm_stage1.json 写入 merge_map.json，不调 Stage-2 LLM）
+  python batch_llm_merge.py --merge-method embedding_llm_llm_stage1_final -j 4
+  # 同上，短名：
+  python batch_llm_merge.py --merge-method embedding_llm_stage1_final -j 4
 """
 
 from __future__ import annotations
@@ -55,6 +83,7 @@ from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
+from tqdm import tqdm
 
 ROOT = Path(__file__).resolve().parent
 MODEL_ROOT = ROOT / "model"
@@ -65,6 +94,12 @@ if _ENV_FILE.is_file():
 from analyze_results import analyse, print_raw_names, visualise, write_analysis_summary_log
 from cognitive_probe import category_to_probe_output_subdir
 
+
+# Long name in ``analyze_results.analyse``; CLI may accept a shorter alias (see ``main``).
+MERGE_METHOD_ALIASES: dict[str, str] = {
+    # 与 ``embedding_llm_llm_stage1_final`` 相同：仅用 merge_map_llm_stage1.json 写最终 merge_map.json
+    "embedding_llm_stage1_final": "embedding_llm_llm_stage1_final",
+}
 
 DEFAULT_EXCLUDE_DIR_NAMES: frozenset[str] = frozenset(
     {
@@ -247,6 +282,7 @@ def _run_one(
     embedding_model: str,
     embedding_threshold: float,
     embedding_device: str,
+    llm_naming_workers: int,
     quiet: bool,
 ) -> tuple[Counter, Counter]:
     cache_path = output_path.parent / "merge_map.json"
@@ -262,6 +298,7 @@ def _run_one(
         embedding_model=embedding_model,
         embedding_device=embedding_device,
         name_source=name_source,
+        llm_naming_workers=llm_naming_workers,
     )
     print_raw_names(raw_counts, quiet=quiet)
     is_merged = merge_method != "none"
@@ -332,9 +369,24 @@ def build_parser() -> argparse.ArgumentParser:
     )
     p.add_argument(
         "--merge-method",
-        choices=["llm", "embedding", "none"],
+        choices=[
+            "llm",
+            "embedding",
+            "embedding_llm",
+            "embedding_llm_llm",
+            "embedding_llm_llm_stage2",
+            "embedding_llm_llm_stage1_final",
+            "embedding_llm_stage1_final",
+            "none",
+        ],
         default="llm",
-        help="Same as run.py (default: llm).",
+        help="Same as run.py (default: llm). "
+        "embedding_llm = embedding clustering + concurrent LLM naming per cluster. "
+        "embedding_llm_llm = embedding_llm then a second LLM pass to further merge canonicals. "
+        "embedding_llm_llm_stage2 = skip embedding/Stage1; load merge_map_llm_stage1.json "
+        "and run Stage 2 + write merge_map.json only (needs existing Stage 1 file). "
+        "embedding_llm_llm_stage1_final (alias: embedding_llm_stage1_final) = write merge_map.json "
+        "from merge_map_llm_stage1.json only (no Stage-2 LLM, no merge API).",
     )
     p.add_argument("--refresh-merge", action="store_true", help="Ignore merge_map.json cache.")
     p.add_argument("--top-n", type=int, default=30, help="Chart / log top-N (default: 30).")
@@ -347,14 +399,26 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument(
         "--embedding-backend",
         choices=["local", "ollama", "openai"],
-        default="local",
+        default=os.getenv("EMBEDDING_BACKEND", "local"),
+        help="Embedding backend (default: env EMBEDDING_BACKEND or 'local').",
     )
-    p.add_argument("--embedding-model", default="BAAI/bge-small-zh-v1.5")
+    p.add_argument(
+        "--embedding-model",
+        default=os.getenv("EMBEDDING_MODEL", "BAAI/bge-small-zh-v1.5"),
+        help="Embedding model (default: env EMBEDDING_MODEL or 'BAAI/bge-small-zh-v1.5').",
+    )
     p.add_argument(
         "--embedding-device",
         default=os.getenv("EMBEDDING_DEVICE", "auto"),
     )
     p.add_argument("--embedding-threshold", type=float, default=0.3)
+    p.add_argument(
+        "--llm-naming-workers",
+        type=int,
+        default=8,
+        metavar="N",
+        help="Max concurrent LLM calls for cluster naming in embedding_llm mode (default: 8).",
+    )
     p.add_argument(
         "--jobs",
         "-j",
@@ -372,7 +436,7 @@ def build_parser() -> argparse.ArgumentParser:
         "-v",
         action="store_true",
         help="Verbose console: per-job banners, raw-name table, freq chart text, merge line, "
-        "summary path (default batch mode is quiet).",
+        "summary path; disables batch quiet + tqdm main progress bar (default: quiet with tqdm).",
     )
     p.add_argument(
         "--continue-on-error",
@@ -413,11 +477,20 @@ def build_parser() -> argparse.ArgumentParser:
         help="With --export-models-summary-json: if the file already exists, merge items: "
         "keep rows for other probe_results paths, add/update rows for this run (key=probe_results).",
     )
+    p.add_argument(
+        "--export-models-summary-only",
+        action="store_true",
+        help="With --export-models-summary-json: only run analyse() for frequency counters and write "
+        "the summary JSON; skip bar chart, word cloud, and analysis_summary.log (faster). "
+        "Use --merge-method none for raw labels only; other merge methods still apply merge_map.",
+    )
     return p
 
 
 def main() -> int:
     args = build_parser().parse_args()
+    if args.merge_method in MERGE_METHOD_ALIASES:
+        args.merge_method = MERGE_METHOD_ALIASES[str(args.merge_method)]
     root: Path = args.root.expanduser().resolve()
     if not root.is_dir():
         print(f"[error] --root is not a directory: {root}", file=sys.stderr)
@@ -456,9 +529,15 @@ def main() -> int:
             print(p.as_posix())
         return 0
 
-    if args.merge_method == "llm" and args.name_source in ("step1", "step2"):
+    if args.merge_method in (
+        "llm",
+        "embedding_llm",
+        "embedding_llm_llm",
+        "embedding_llm_llm_stage2",
+        "embedding_llm_llm_stage1_final",
+    ) and args.name_source in ("step1", "step2"):
         print(
-            "[error] merge_method=llm does not support name_source step1/step2. "
+            f"[error] merge_method={args.merge_method} does not support name_source step1/step2. "
             "Use embedding or none, or name_source step3.",
             file=sys.stderr,
         )
@@ -502,6 +581,7 @@ def main() -> int:
                 embedding_model=args.embedding_model,
                 embedding_threshold=args.embedding_threshold,
                 embedding_device=args.embedding_device,
+                llm_naming_workers=args.llm_naming_workers,
                 quiet=quiet,
             )
             dt = time.perf_counter() - t0
@@ -512,39 +592,78 @@ def main() -> int:
     exit_code = 0
     try:
         if args.jobs <= 1:
-            for i, path in enumerate(jobs, 1):
-                if quiet:
-                    print(
-                        f"[{i}/{len(jobs)}] {_probe_rel(path, root)}",
-                        end=" … ",
-                        flush=True,
+            job_iter = jobs
+            pbar: tqdm | None
+            if quiet:
+                pbar = tqdm(
+                    job_iter,
+                    total=len(jobs),
+                    desc="[batch]",
+                    unit="file",
+                    smoothing=0.05,
+                )
+            else:
+                pbar = None
+            for i, path in enumerate(pbar or job_iter, 1):
+                if pbar is not None:
+                    _rel = str(_probe_rel(path, root))
+                    pbar.set_postfix_str(
+                        _rel[:52] + ("…" if len(_rel) > 52 else ""),
+                        refresh=False,
                     )
-                else:
+                if not quiet:
                     print(f"\n{'=' * 70}\n[{i}/{len(jobs)}] {path}\n{'=' * 70}", flush=True)
-                path, msg, counts = work(path)
-                print(msg, flush=True)
+                rpath, msg, counts = work(path)
+                if not quiet:
+                    print(msg, flush=True)
                 if counts is not None and export_path is not None:
                     summary_rows.append(
-                        build_summary_row(path, counts[0], counts[1])
+                        build_summary_row(rpath, counts[0], counts[1])
                     )
                 if not str(msg).startswith("ok"):
-                    failed.append((path, msg))
+                    failed.append((rpath, msg))
+                    if quiet and pbar is not None:
+                        tqdm.write(f"[FAIL] {_probe_rel(rpath, root)}  {msg}", file=sys.stderr)
                     if not args.continue_on_error:
-                        print("[batch] stopped (--no-continue-on-error).", file=sys.stderr)
+                        if quiet and pbar is not None:
+                            tqdm.write(
+                                "[batch] stopped (--no-continue-on-error).",
+                                file=sys.stderr,
+                            )
+                        else:
+                            print(
+                                "[batch] stopped (--no-continue-on-error).",
+                                file=sys.stderr,
+                            )
                         exit_code = 3
                         break
         else:
             print(f"[batch] parallel workers: {args.jobs}", flush=True)
             with ThreadPoolExecutor(max_workers=args.jobs) as ex:
                 futs = {ex.submit(work, p): p for p in jobs}
-                for fut in as_completed(futs):
+                pbar2: tqdm | None
+                if quiet:
+                    pbar2 = tqdm(
+                        as_completed(futs),
+                        total=len(futs),
+                        desc="[batch]",
+                        unit="job",
+                        smoothing=0.05,
+                    )
+                else:
+                    pbar2 = None
+                done_iter = pbar2 if pbar2 is not None else as_completed(futs)
+                for fut in done_iter:
                     path, msg, counts = fut.result()
                     ok = str(msg).startswith("ok")
                     rel = _probe_rel(path, root)
-                    flag = "OK" if ok else "FAIL"
-                    if quiet:
-                        print(f"[{flag}] {rel}  {msg}", flush=True)
+                    if pbar2 is not None:
+                        pbar2.set_postfix_str(
+                            f"{rel[:40]}{'…' if len(rel) > 40 else ''} | {msg[:24]}",
+                            refresh=False,
+                        )
                     else:
+                        flag = "OK" if ok else "FAIL"
                         print(f"[{flag}] {path}: {msg}", flush=True)
                     if counts is not None and export_path is not None:
                         summary_rows.append(
@@ -552,9 +671,20 @@ def main() -> int:
                         )
                     if not ok:
                         failed.append((path, msg))
+                        if quiet and pbar2 is not None:
+                            tqdm.write(f"[FAIL] {path}: {msg}", file=sys.stderr)
                         if not args.continue_on_error:
                             ex.shutdown(wait=False, cancel_futures=True)
-                            print("[batch] stopped (--no-continue-on-error).", file=sys.stderr)
+                            if quiet and pbar2 is not None:
+                                tqdm.write(
+                                    "[batch] stopped (--no-continue-on-error).",
+                                    file=sys.stderr,
+                                )
+                            else:
+                                print(
+                                    "[batch] stopped (--no-continue-on-error).",
+                                    file=sys.stderr,
+                                )
                             exit_code = 3
                             break
     finally:

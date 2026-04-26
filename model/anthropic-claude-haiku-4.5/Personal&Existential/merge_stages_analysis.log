@@ -1,0 +1,303 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:22
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Personal&Existential\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Personal&Existential\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Personal&Existential\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     1213
+  distinct stage-1 canonicals:  382
+  stage2 map entries (keys):    382
+  distinct stage-2 canonicals:  227
+  stage2 merge groups (|keys|>1 for same c2): 31 groups, 186 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1476
+  distinct c1 (weighted rows): 382
+  distinct c2 (weighted):      227
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'dynamical systems'  ←  24 stage-1 labels
+        · activation barrier reduction via exogenous constraint imposition
+        · activation energy barrier
+        · adaptation dynamics with time constant compression
+        · attractor reconstruction via trajectory forcing
+        · basin of attraction escape via parameter space expansion
+        · bifurcation theory in pharmacological dose response
+        · bifurcation theory with phase forcing in coupled nonlinear oscillators
+        · change of basis in state space representation
+        · constraint induced therapy via external forcing function
+        · coupled dynamical systems
+        · dynamical systems
+        · dynamical systems stability
+        · … +12 more
+  [ 2] 'feedback control'  ←  19 stage-1 labels
+        · closed loop control theory
+        · control theoretic reformulation of objective function
+        · coupled feedback systems
+        · cybernetics
+        · feedback control
+        · feedback control in dynamical systems
+        · feedback control system
+        · feedback decoupling
+        · feedback gain reduction
+        · feedback interruption
+        · feedback loop
+        · feedback loop control
+        · … +7 more
+  [ 3] 'causal inference'  ←  18 stage-1 labels
+        · attribution theory
+        · causal attribution boundary shift
+        · causal attribution reversal via diagnostic reframing
+        · causal decomposition
+        · causal decoupling
+        · causal graphical models
+        · causal identifiability
+        · causal identification
+        · causal inference through experimental separation
+        · causal intervention
+        · causal mechanism isolation via pathway blocking
+        · causal model selection
+        · … +6 more
+  [ 4] 'constrained optimization'  ←  16 stage-1 labels
+        · barrier function minimization
+        · binding analysis
+        · capacity constraint
+        · constrained optimization
+        · constrained optimization with continuous budget allocation
+        · constrained optimization with time sensitive leverage
+        · convex optimization
+        · critical path method
+        · hierarchical constraint
+        · portfolio diversification
+        · regularization
+        · relaxation
+        · … +4 more
+  [ 5] 'state space representation'  ←  10 stage-1 labels
+        · additive decomposition model
+        · function restructuring
+        · orthogonal decomposition
+        · state space decoupling
+        · state space modeling
+        · state space reduction
+        · state space representation
+        · state space transformation
+        · temporal decomposition
+        · temporal decoupling
+  [ 6] 'reinforcement learning'  ←  8 stage-1 labels
+        · active learning with utility maximization
+        · hierarchical reinforcement learning
+        · inverse reinforcement learning
+        · reinforcement learning
+        · reinforcement learning reconstruction
+        · reinforcement schedules
+        · reward function design
+        · reward shaping
+  [ 7] 'bayesian inference'  ←  7 stage-1 labels
+        · bayesian decomposition
+        · bayesian estimation
+        · bayesian experimental design for parameter identification
+        · bayesian hypothesis testing
+        · bayesian inference
+        · bayesian information
+        · bayesian information resolution
+  [ 8] 'constraint satisfaction'  ←  6 stage-1 labels
+        · constraint based behavior modification
+        · constraint satisfaction
+        · constraint satisfaction decoupling
+        · constraint satisfaction under motivation deficit
+        · hierarchical constraint satisfaction
+        · multi agent constraint satisfaction
+  [ 9] 'bistability'  ←  5 stage-1 labels
+        · bistability hysteresis
+        · bistable dynamical systems
+        · bistable dynamics
+        · bistable system
+        · bistable systems
+  [10] 'cognitive load theory'  ←  5 stage-1 labels
+        · bandwidth limitation
+        · bounded rationality
+        · bounded search with sequential sampling
+        · cognitive load theory
+        · ego depletion
+  [11] 'markov decision process'  ←  5 stage-1 labels
+        · backward induction with irreversible commitment
+        · hidden markov model
+        · markov decision process
+        · sequential decision making
+        · sequential game
+  [12] 'mechanism design'  ←  5 stage-1 labels
+        · adverse selection
+        · adverse selection mitigation through cost externalization
+        · complementarity and coordination failure resolution
+        · mechanism design
+        · stackelberg game
+  [13] 'attractor dynamics'  ←  4 stage-1 labels
+        · attractor basin dynamics
+        · attractor destabilization
+        · attractor landscape dynamics
+        · attractor state feedback
+  [14] 'bifurcation theory'  ←  4 stage-1 labels
+        · bifurcation and attractors
+        · bifurcation control
+        · bifurcation theory
+        · dynamical systems bifurcation
+  [15] 'commitment device'  ←  4 stage-1 labels
+        · akrasia resolution via commitment device and information revelation
+        · commitment device
+        · temporal commitment
+        · ulysses contract
+  [16] 'principal agent problem'  ←  4 stage-1 labels
+        · information asymmetry reduction
+        · information asymmetry resolution
+        · preference revelation
+        · principal agent problem
+  [17] 'rescorla wagner model'  ←  4 stage-1 labels
+        · behavioral extinction and stimulus substitution model
+        · contingency reversal
+        · extinction learning
+        · rescorla wagner model
+  [18] 'signaling game'  ←  4 stage-1 labels
+        · binary hypothesis testing with cost asymmetry resolution
+        · information asymmetry and signaling
+        · signaling game
+        · signaling theory
+  [19] 'value of information'  ←  4 stage-1 labels
+        · information channel
+        · information entropy reduction
+        · uncertainty reduction
+        · value of information
+  [20] 'constraint relaxation'  ←  3 stage-1 labels
+        · constraint relaxation
+        · constraint relaxation via fixed cost absorption
+        · sequential constraint relaxation
+  [21] 'observability and controllability'  ←  3 stage-1 labels
+        · distributed control
+        · hierarchical control
+        · observability and controllability
+  [22] 'portfolio theory'  ←  3 stage-1 labels
+        · option value
+        · portfolio theory
+        · real options
+  [23] 'prospect theory'  ←  3 stage-1 labels
+        · prospect theory
+        · reference dependence
+        · state dependent utility
+  [24] 'redundancy'  ←  3 stage-1 labels
+        · parallel redundancy
+        · redundancy
+        · redundancy fault tolerance
+  [25] 'sequential analysis'  ←  3 stage-1 labels
+        · optimal stopping
+        · sequential analysis
+        · sequential hypothesis testing
+  [26] 'availability heuristic'  ←  2 stage-1 labels
+        · availability heuristic in institutional decision making
+        · availability heuristic reversal through documentation protocol
+  [27] 'bayesian updating'  ←  2 stage-1 labels
+        · bayesian belief updating
+        · bayesian updating
+  [28] 'kalman filter'  ←  2 stage-1 labels
+        · bayesian filtering
+        · kalman filter
+  [29] 'optimal control'  ←  2 stage-1 labels
+        · adaptive control
+        · optimal control
+  [30] 'pareto optimality'  ←  2 stage-1 labels
+        · constrained equilibrium
+        · pareto optimality
+  [31] 'signal detection theory'  ←  2 stage-1 labels
+        · sequential probability ratio test
+        · signal detection theory
+
+[Stage-2 renames] (key ≠ value, 164 entries; list first 80)
+  'absorbing state escape via intervention cascade'  →  'absorbing state escape'
+  'activation barrier reduction via exogenous constraint imposition'  →  'dynamical systems'
+  'activation energy barrier'  →  'dynamical systems'
+  'active learning with utility maximization'  →  'reinforcement learning'
+  'adaptation dynamics with time constant compression'  →  'dynamical systems'
+  'adaptive control'  →  'optimal control'
+  'additive decomposition model'  →  'state space representation'
+  'adverse selection'  →  'mechanism design'
+  'adverse selection mitigation through cost externalization'  →  'mechanism design'
+  'akrasia resolution via commitment device and information revelation'  →  'commitment device'
+  'attractor basin dynamics'  →  'attractor dynamics'
+  'attractor destabilization'  →  'attractor dynamics'
+  'attractor landscape dynamics'  →  'attractor dynamics'
+  'attractor reconstruction via trajectory forcing'  →  'dynamical systems'
+  'attractor state feedback'  →  'attractor dynamics'
+  'attribution theory'  →  'causal inference'
+  'availability heuristic in institutional decision making'  →  'availability heuristic'
+  'availability heuristic reversal through documentation protocol'  →  'availability heuristic'
+  'backward induction with irreversible commitment'  →  'markov decision process'
+  'bandwidth limitation'  →  'cognitive load theory'
+  'barrier function minimization'  →  'constrained optimization'
+  'basin of attraction escape via parameter space expansion'  →  'dynamical systems'
+  'bayesian belief updating'  →  'bayesian updating'
+  'bayesian decomposition'  →  'bayesian inference'
+  'bayesian estimation'  →  'bayesian inference'
+  'bayesian experimental design for parameter identification'  →  'bayesian inference'
+  'bayesian filtering'  →  'kalman filter'
+  'bayesian hypothesis testing'  →  'bayesian inference'
+  'bayesian information'  →  'bayesian inference'
+  'bayesian information resolution'  →  'bayesian inference'
+  'behavioral extinction and stimulus substitution model'  →  'rescorla wagner model'
+  'bifurcation and attractors'  →  'bifurcation theory'
+  'bifurcation control'  →  'bifurcation theory'
+  'bifurcation theory in pharmacological dose response'  →  'dynamical systems'
+  'bifurcation theory with phase forcing in coupled nonlinear oscillators'  →  'dynamical systems'
+  'binary hypothesis testing with cost asymmetry resolution'  →  'signaling game'
+  'binding analysis'  →  'constrained optimization'
+  'bistability hysteresis'  →  'bistability'
+  'bistable dynamical systems'  →  'bistability'
+  'bistable dynamics'  →  'bistability'
+  'bistable system'  →  'bistability'
+  'bistable systems'  →  'bistability'
+  'bounded rationality'  →  'cognitive load theory'
+  'bounded search with sequential sampling'  →  'cognitive load theory'
+  'capability intent model of suicide'  →  'capability intent model'
+  'capacity constraint'  →  'constrained optimization'
+  'causal attribution boundary shift'  →  'causal inference'
+  'causal attribution reversal via diagnostic reframing'  →  'causal inference'
+  'causal decomposition'  →  'causal inference'
+  'causal decoupling'  →  'causal inference'
+  'causal graphical models'  →  'causal inference'
+  'causal identifiability'  →  'causal inference'
+  'causal identification'  →  'causal inference'
+  'causal inference through experimental separation'  →  'causal inference'
+  'causal intervention'  →  'causal inference'
+  'causal mechanism isolation via pathway blocking'  →  'causal inference'
+  'causal model selection'  →  'causal inference'
+  'change of basis in state space representation'  →  'dynamical systems'
+  'closed loop control theory'  →  'feedback control'
+  'complementarity and coordination failure resolution'  →  'mechanism design'
+  'constrained equilibrium'  →  'pareto optimality'
+  'constrained optimization with continuous budget allocation'  →  'constrained optimization'
+  'constrained optimization with time sensitive leverage'  →  'constrained optimization'
+  'constraint based behavior modification'  →  'constraint satisfaction'
+  'constraint induced therapy via external forcing function'  →  'dynamical systems'
+  'constraint relaxation via fixed cost absorption'  →  'constraint relaxation'
+  'constraint satisfaction decoupling'  →  'constraint satisfaction'
+  'constraint satisfaction under motivation deficit'  →  'constraint satisfaction'
+  'context dependent memory encoding model'  →  'context dependent memory'
+  'contingency reversal'  →  'rescorla wagner model'
+  'control theoretic reformulation of objective function'  →  'feedback control'
+  'convex optimization'  →  'constrained optimization'
+  'coupled dynamical systems'  →  'dynamical systems'
+  'coupled feedback systems'  →  'feedback control'
+  'coupled oscillator'  →  'coupled oscillators'
+  'critical path method'  →  'constrained optimization'
+  'cybernetics'  →  'feedback control'
+  'distributed control'  →  'observability and controllability'
+  'dynamical systems bifurcation'  →  'bifurcation theory'
+  'dynamical systems stability'  →  'dynamical systems'
+  … 84 more
+
+[Consistency with merge_map.json]
+  compared 1213 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

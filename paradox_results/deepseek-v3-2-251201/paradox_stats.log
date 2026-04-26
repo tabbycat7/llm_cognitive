@@ -1,0 +1,11 @@
+model_id: deepseek-v3-2-251201
+total_tests: 50
+scored_tests: 50
+error_count: 0
+average_score: 19.620/20
+average_grade: 卓越
+grade_distribution: {"卓越": 45, "优秀": 5, "良好": 0, "一般": 0, "较差": 0, "极差": 0}
+score_distribution: {"0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 1, "17": 4, "18": 0, "19": 3, "20": 42}
+
+[theory_breakdown]
+- dynamical systems → Random Walk | total=50 | scored=50 | avg=19.62/20 | grade=卓越 | grade_dist={"卓越": 45, "优秀": 5, "良好": 0, "一般": 0, "较差": 0, "极差": 0}

@@ -255,7 +255,7 @@ TAXONOMY_CANONICAL_CATEGORIES: tuple[str, ...] = (
 )
 _TAXONOMY_NAKED_TO_CANONICAL: dict[str, str] = {c[1:-1]: c for c in TAXONOMY_CANONICAL_CATEGORIES}
 
-# Subdirectory names under ``<model_dir>/`` (e.g. ``deepseek/Relational&Intimate/``).
+# Subdirectory names under ``model/<model_id>/`` (e.g. ``model/deepseek/Relational&Intimate/``).
 CANONICAL_CATEGORY_OUTPUT_SUBDIR: dict[str, str] = {
     "[Relational & Intimate]": "Relational&Intimate",
     "[Professional & Economic]": "Professional&Economic",
@@ -279,7 +279,7 @@ def normalize_taxonomy_category(raw: str | None) -> tuple[str | None, bool]:
 
 
 def category_to_probe_output_subdir(filter_category: str) -> str:
-    """Map ``--filter-category`` string to a filesystem-safe subdir (see ``deepseek/`` layout)."""
+    """Map ``--filter-category`` string to a filesystem-safe subdir (under ``model/<model_id>/``)."""
     canon, ok = normalize_taxonomy_category(filter_category)
     if ok and canon in CANONICAL_CATEGORY_OUTPUT_SUBDIR:
         return CANONICAL_CATEGORY_OUTPUT_SUBDIR[canon]
@@ -294,7 +294,7 @@ def category_to_probe_output_subdir(filter_category: str) -> str:
 
 
 def model_id_to_probe_output_dirname(model: str) -> str:
-    """Top-level directory under project root (e.g. ``deepseek`` for DeepSeek models)."""
+    """Folder name for ``model/<this>/…`` (e.g. ``deepseek`` for DeepSeek API model ids)."""
     m = (model or "unknown").strip() or "unknown"
     if "deepseek" in m.lower():
         return "deepseek"

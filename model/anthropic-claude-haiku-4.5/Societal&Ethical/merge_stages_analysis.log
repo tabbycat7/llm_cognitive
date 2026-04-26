@@ -1,0 +1,315 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:22
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Societal&Ethical\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Societal&Ethical\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Societal&Ethical\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     1163
+  distinct stage-1 canonicals:  434
+  stage2 map entries (keys):    434
+  distinct stage-2 canonicals:  289
+  stage2 merge groups (|keys|>1 for same c2): 34 groups, 179 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1466
+  distinct c1 (weighted rows): 434
+  distinct c2 (weighted):      289
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'system decoupling'  ←  22 stage-1 labels
+        · attractor basin destabilization through coupled perturbation
+        · causal decoupling
+        · consistency constraints
+        · constraint elimination
+        · constraint hardening
+        · decomposition
+        · dimensionality reduction
+        · dimensionality transformation
+        · entropy reduction
+        · finite automaton
+        · institutional constraint
+        · iterated elimination
+        · … +10 more
+  [ 2] 'bayesian updating'  ←  13 stage-1 labels
+        · bayesian asymmetric information
+        · bayesian cascade degradation
+        · bayesian classification threshold shift
+        · bayesian decomposition
+        · bayesian evidence updating
+        · bayesian inference
+        · bayesian inference with conditional independence screening
+        · bayesian inference with fixed decision rules
+        · bayesian information revelation
+        · bayesian intent inference
+        · bayesian interpretation control
+        · bayesian sequential updating
+        · … +1 more
+  [ 3] 'constrained optimization'  ←  9 stage-1 labels
+        · activity based costing
+        · attention economy model with resource constraints
+        · bilevel optimization with constraint satisfaction
+        · constraint relaxation
+        · constraint satisfaction problem
+        · convex cost minimization
+        · expected value maximization
+        · penalty function
+        · utility maximization
+  [ 4] 'threshold model'  ←  9 stage-1 labels
+        · critical threshold model
+        · critical transition
+        · regime shift
+        · threshold crossing
+        · threshold detection
+        · threshold dynamics
+        · threshold exceedance modeling
+        · threshold model
+        · tipping point dynamics
+  [ 5] 'bargaining theory'  ←  8 stage-1 labels
+        · asymmetric cost
+        · asymmetric cost structure in bargaining with credible threats
+        · bargaining with outside options
+        · coalition formation with identity internalization
+        · first mover advantage
+        · incentive restructuring
+        · nash bargaining solution
+        · rubinstein bargaining
+  [ 6] 'signaling game'  ←  8 stage-1 labels
+        · asymmetric information signaling
+        · asymmetric loss hypothesis testing
+        · bayesian signaling
+        · costly signaling
+        · signaling equilibrium
+        · signaling game
+        · signaling theory
+        · spence signaling
+  [ 7] 'causal inference'  ←  7 stage-1 labels
+        · causal chain breaking via external corroboration
+        · causal chain severance
+        · causal confounding
+        · causal inference
+        · causal intervention
+        · causal mediation analysis
+        · causal path shortening with signal amplification
+  [ 8] 'commitment device'  ←  7 stage-1 labels
+        · backward induction with credible commitment
+        · commitment device
+        · commitment with observable deadline
+        · credible commitment
+        · escalation of commitment
+        · sequential commitment
+        · temporal commitment
+  [ 9] 'feedback control'  ←  7 stage-1 labels
+        · attractor dynamics in feedback systems
+        · competing feedback loop dominance in coupled systems
+        · control loop
+        · feedback loop dynamics
+        · feedback loop restructuring
+        · negative feedback loop
+        · state feedback control
+  [10] 'mechanism design'  ←  6 stage-1 labels
+        · authority allocation through institutional formalization
+        · credible mechanism design
+        · incentive compatibility constraint
+        · mechanism design
+        · multi agent mechanism design
+        · revelation principle
+  [11] 'optimization techniques'  ←  6 stage-1 labels
+        · constrained optimization
+        · cost function optimization
+        · dynamic programming
+        · hazard rate optimization
+        · minimax
+        · variance reduction
+  [12] 'adverse selection'  ←  5 stage-1 labels
+        · adverse selection
+        · adverse selection with litigation cost endogenization
+        · market for lemons
+        · screening
+        · screening equilibrium
+  [13] 'burden of proof reversal'  ←  5 stage-1 labels
+        · bayesian burden reversal
+        · burden of proof allocation
+        · burden of proof reversal
+        · burden reversal
+        · burden reversal through evidence anchoring
+  [14] 'control theory'  ←  5 stage-1 labels
+        · bifurcation theory
+        · bistable dynamical system with time dependent escape rate
+        · negative feedback control
+        · state space model
+        · stochastic control
+  [15] 'decision theory'  ←  5 stage-1 labels
+        · decision theory
+        · expected utility theory
+        · optimal stopping
+        · real options
+        · value of information
+  [16] 'game theory equilibrium'  ←  5 stage-1 labels
+        · equilibrium selection
+        · equilibrium shift
+        · separating equilibrium
+        · sequential equilibrium
+        · subgame perfect equilibrium
+  [17] 'principal agent theory'  ←  5 stage-1 labels
+        · principal agent alignment
+        · principal agent monitoring
+        · principal agent moral hazard
+        · principal agent problem
+        · principal agent theory
+  [18] 'discounting models'  ←  4 stage-1 labels
+        · compound interest dynamics
+        · hyperbolic discounting
+        · intertemporal choice
+        · temporal discounting
+  [19] 'information theory'  ←  4 stage-1 labels
+        · information geometry
+        · information partition
+        · information redundancy
+        · signal to noise ratio optimization
+  [20] 'liability attribution'  ←  4 stage-1 labels
+        · liability attribution
+        · liability optimization
+        · liability threshold model
+        · responsibility attribution
+  [21] 'network models'  ←  4 stage-1 labels
+        · autocatalytic reaction network
+        · coalition formation games
+        · network bottleneck
+        · network redundancy
+  [22] 'verification and enforcement'  ←  4 stage-1 labels
+        · audit trail mechanism
+        · distributed verification
+        · third party enforcement
+        · verifiable signaling theory
+  [23] 'evidence accumulation'  ←  3 stage-1 labels
+        · competing accumulator model
+        · evidence accumulation model
+        · evidence sequencing
+  [24] 'optimal stopping'  ←  3 stage-1 labels
+        · american option to perpetual claim elimination
+        · option value
+        · outside option value
+  [25] 'redundancy modeling'  ←  3 stage-1 labels
+        · redundancy
+        · redundancy and fault tolerance
+        · redundancy modeling
+  [26] 'bayesian game'  ←  2 stage-1 labels
+        · bayesian game
+        · sequential bayesian game
+  [27] 'cost benefit analysis'  ←  2 stage-1 labels
+        · cost benefit analysis
+        · cost benefit threshold
+  [28] 'extensive form game'  ←  2 stage-1 labels
+        · extensive form game
+        · sequential game
+  [29] 'learning models'  ←  2 stage-1 labels
+        · attitude crystallization under reduced cognitive dissonance
+        · conditional policy learning
+  [30] 'path dependence'  ←  2 stage-1 labels
+        · path dependence
+        · path dependency
+  [31] 'probability models'  ←  2 stage-1 labels
+        · conjunctive probability model
+        · first passage time
+  [32] 'signal detection theory'  ←  2 stage-1 labels
+        · signal detection theory
+        · signal extraction
+  [33] 'stackelberg game'  ←  2 stage-1 labels
+        · stackelberg competition
+        · stackelberg game
+  [34] 'value of information'  ←  2 stage-1 labels
+        · information revelation
+        · sequential information revelation
+
+[Stage-2 renames] (key ≠ value, 164 entries; list first 80)
+  'absorbing markov chain'  →  'markov chain'
+  'activity based costing'  →  'constrained optimization'
+  'adverse selection with litigation cost endogenization'  →  'adverse selection'
+  'american option to perpetual claim elimination'  →  'optimal stopping'
+  'asymmetric cost'  →  'bargaining theory'
+  'asymmetric cost structure in bargaining with credible threats'  →  'bargaining theory'
+  'asymmetric information signaling'  →  'signaling game'
+  'asymmetric loss hypothesis testing'  →  'signaling game'
+  'attention economy model with resource constraints'  →  'constrained optimization'
+  'attitude crystallization under reduced cognitive dissonance'  →  'learning models'
+  'attractor basin destabilization through coupled perturbation'  →  'system decoupling'
+  'attractor dynamics in feedback systems'  →  'feedback control'
+  'audit trail mechanism'  →  'verification and enforcement'
+  'authority allocation through institutional formalization'  →  'mechanism design'
+  'autocatalytic reaction network'  →  'network models'
+  'backward induction with credible commitment'  →  'commitment device'
+  'bargaining with outside options'  →  'bargaining theory'
+  'bayesian asymmetric information'  →  'bayesian updating'
+  'bayesian burden reversal'  →  'burden of proof reversal'
+  'bayesian cascade degradation'  →  'bayesian updating'
+  'bayesian classification threshold shift'  →  'bayesian updating'
+  'bayesian decomposition'  →  'bayesian updating'
+  'bayesian evidence updating'  →  'bayesian updating'
+  'bayesian inference'  →  'bayesian updating'
+  'bayesian inference with conditional independence screening'  →  'bayesian updating'
+  'bayesian inference with fixed decision rules'  →  'bayesian updating'
+  'bayesian information revelation'  →  'bayesian updating'
+  'bayesian intent inference'  →  'bayesian updating'
+  'bayesian interpretation control'  →  'bayesian updating'
+  'bayesian sequential updating'  →  'bayesian updating'
+  'bayesian signaling'  →  'signaling game'
+  'bifurcation theory'  →  'control theory'
+  'bilevel optimization with constraint satisfaction'  →  'constrained optimization'
+  'bistable dynamical system with time dependent escape rate'  →  'control theory'
+  'burden of proof allocation'  →  'burden of proof reversal'
+  'burden reversal'  →  'burden of proof reversal'
+  'burden reversal through evidence anchoring'  →  'burden of proof reversal'
+  'causal chain breaking via external corroboration'  →  'causal inference'
+  'causal chain severance'  →  'causal inference'
+  'causal confounding'  →  'causal inference'
+  'causal decoupling'  →  'system decoupling'
+  'causal intervention'  →  'causal inference'
+  'causal mediation analysis'  →  'causal inference'
+  'causal path shortening with signal amplification'  →  'causal inference'
+  'coalition formation games'  →  'network models'
+  'coalition formation with identity internalization'  →  'bargaining theory'
+  'commitment with observable deadline'  →  'commitment device'
+  'competing accumulator model'  →  'evidence accumulation'
+  'competing feedback loop dominance in coupled systems'  →  'feedback control'
+  'competing renewal processes'  →  'renewal processes'
+  'compound interest dynamics'  →  'discounting models'
+  'conditional policy learning'  →  'learning models'
+  'conjunctive probability model'  →  'probability models'
+  'consistency constraints'  →  'system decoupling'
+  'constrained optimization'  →  'optimization techniques'
+  'constraint elimination'  →  'system decoupling'
+  'constraint hardening'  →  'system decoupling'
+  'constraint relaxation'  →  'constrained optimization'
+  'constraint satisfaction problem'  →  'constrained optimization'
+  'control loop'  →  'feedback control'
+  'convex cost minimization'  →  'constrained optimization'
+  'cost benefit threshold'  →  'cost benefit analysis'
+  'cost function optimization'  →  'optimization techniques'
+  'costly signaling'  →  'signaling game'
+  'credible commitment'  →  'commitment device'
+  'credible mechanism design'  →  'mechanism design'
+  'critical threshold model'  →  'threshold model'
+  'critical transition'  →  'threshold model'
+  'decomposition'  →  'system decoupling'
+  'dimensionality reduction'  →  'system decoupling'
+  'dimensionality transformation'  →  'system decoupling'
+  'distributed verification'  →  'verification and enforcement'
+  'dynamic programming'  →  'optimization techniques'
+  'entropy reduction'  →  'system decoupling'
+  'equilibrium selection'  →  'game theory equilibrium'
+  'equilibrium shift'  →  'game theory equilibrium'
+  'escalation of commitment'  →  'commitment device'
+  'evidence accumulation model'  →  'evidence accumulation'
+  'evidence sequencing'  →  'evidence accumulation'
+  'expected utility theory'  →  'decision theory'
+  … 84 more
+
+[Consistency with merge_map.json]
+  compared 1163 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

@@ -1,0 +1,266 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\deepseek\Relational&Intimate\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\deepseek\Relational&Intimate\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\deepseek\Relational&Intimate\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     435
+  distinct stage-1 canonicals:  219
+  stage2 map entries (keys):    219
+  distinct stage-2 canonicals:  113
+  stage2 merge groups (|keys|>1 for same c2): 30 groups, 136 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1194
+  distinct c1 (weighted rows): 219
+  distinct c2 (weighted):      113
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'dynamical systems'  ←  23 stage-1 labels
+        · attractor
+        · attractor dynamics
+        · basin of attraction
+        · bifurcation control
+        · bistability
+        · bistable dynamical system with a separatrix
+        · catastrophe theory
+        · coupled oscillators
+        · damped oscillation
+        · decoupled dynamical systems
+        · dynamical systems
+        · hysteresis
+        · … +11 more
+  [ 2] 'game theory'  ←  14 stage-1 labels
+        · backward induction
+        · cheap talk
+        · cooling off period game
+        · extensive form game
+        · fictitious play
+        · finitely repeated game with a known horizon
+        · game theory
+        · incomplete information games
+        · information revelation game
+        · potential game
+        · prisoner's dilemma
+        · repeated game
+        · … +2 more
+  [ 3] 'control theory'  ←  8 stage-1 labels
+        · control system
+        · control theory
+        · decentralized control with external stabilizer
+        · kalman filter
+        · model predictive control
+        · optimal control
+        · optimal control with state estimation and disturbance rejection
+        · separation principle
+  [ 4] 'prospect theory'  ←  8 stage-1 labels
+        · anchoring
+        · framing effect
+        · loss aversion
+        · mental accounting
+        · preference reversal
+        · prospect theory
+        · reference dependence
+        · sunk cost fallacy
+  [ 5] 'constrained optimization'  ←  6 stage-1 labels
+        · constrained optimization
+        · dynamic programming
+        · linear programming
+        · multiobjective optimization
+        · portfolio optimization
+        · real options analysis
+  [ 6] 'utility theory'  ←  6 stage-1 labels
+        · hyperbolic discounting
+        · intertemporal choice
+        · opportunity cost
+        · option value
+        · revealed preference
+        · utility theory
+  [ 7] 'contract theory'  ←  5 stage-1 labels
+        · contract theory
+        · moral hazard
+        · principal agent problem
+        · relational contract theory
+        · self enforcing contract
+  [ 8] 'feedback control'  ←  5 stage-1 labels
+        · differential equation model of negative feedback loop
+        · feedback control
+        · feedback disruption
+        · homeostatic control
+        · proportional integral derivative control
+  [ 9] 'reinforcement learning'  ←  5 stage-1 labels
+        · multi armed bandit
+        · reinforcement learning
+        · reinforcement learning with policy gradient
+        · reinforcement learning with reward shaping
+        · temporal difference learning
+  [10] 'mechanism design'  ←  4 stage-1 labels
+        · mechanism design
+        · mechanism design with precommitment
+        · revelation principle
+        · screening
+  [11] 'nash equilibrium'  ←  4 stage-1 labels
+        · equilibrium selection
+        · game equilibria
+        · nash equilibrium
+        · subgame perfect equilibrium
+  [12] 'sequential decision making'  ←  4 stage-1 labels
+        · drift diffusion model
+        · sequential decision making
+        · sequential probability ratio test
+        · sequential sampling model
+  [13] 'attentional control'  ←  3 stage-1 labels
+        · attention capacity model
+        · attentional blink
+        · attentional control
+  [14] 'commitment device'  ←  3 stage-1 labels
+        · commitment
+        · commitment device
+        · credible commitment
+  [15] 'decision theory'  ←  3 stage-1 labels
+        · cost benefit analysis
+        · decision theory
+        · regret minimization
+  [16] 'hot cold empathy gap'  ←  3 stage-1 labels
+        · hedonic adaptation
+        · hot cold empathy gap
+        · zeigarnik effect
+  [17] 'information theory'  ←  3 stage-1 labels
+        · active information acquisition
+        · information asymmetry correction
+        · information theory
+  [18] 'network dynamics'  ←  3 stage-1 labels
+        · network dynamics
+        · network topology
+        · preferential attachment with exploration
+  [19] 'network robustness'  ←  3 stage-1 labels
+        · network disintegration
+        · network isolation
+        · network robustness
+  [20] 'resource allocation'  ←  3 stage-1 labels
+        · resource allocation
+        · resource allocation in convex optimization
+        · resource dynamics
+  [21] 'bayesian inference'  ←  2 stage-1 labels
+        · bayesian inference
+        · bayesian inference with strong prior
+  [22] 'bounded rationality'  ←  2 stage-1 labels
+        · bounded rationality
+        · heuristic
+  [23] 'cognitive restructuring'  ←  2 stage-1 labels
+        · cognitive restructuring
+        · reframing
+  [24] 'decoupling'  ←  2 stage-1 labels
+        · decoupling
+        · input output decoupling
+  [25] 'evolutionary game theory'  ←  2 stage-1 labels
+        · evolutionary game theory
+        · evolutionary stable strategy
+  [26] 'extinction'  ←  2 stage-1 labels
+        · extinction
+        · matching law with extinction
+  [27] 'markov decision process'  ←  2 stage-1 labels
+        · absorbing markov chain
+        · markov decision process
+  [28] 'operant conditioning'  ←  2 stage-1 labels
+        · intermittent reinforcement
+        · operant conditioning
+  [29] 'signaling game'  ←  2 stage-1 labels
+        · signaling
+        · signaling game
+  [30] 'trigger strategy'  ←  2 stage-1 labels
+        · folk theorem with trigger strategy
+        · trigger strategy
+
+[Stage-2 renames] (key ≠ value, 106 entries; list first 80)
+  'absorbing markov chain'  →  'markov decision process'
+  'active information acquisition'  →  'information theory'
+  'anchoring'  →  'prospect theory'
+  'attention capacity model'  →  'attentional control'
+  'attentional blink'  →  'attentional control'
+  'attractor'  →  'dynamical systems'
+  'attractor dynamics'  →  'dynamical systems'
+  'backward induction'  →  'game theory'
+  'basin of attraction'  →  'dynamical systems'
+  'bayesian inference with strong prior'  →  'bayesian inference'
+  'bifurcation control'  →  'dynamical systems'
+  'bistability'  →  'dynamical systems'
+  'bistable dynamical system with a separatrix'  →  'dynamical systems'
+  'catastrophe theory'  →  'dynamical systems'
+  'cheap talk'  →  'game theory'
+  'commitment'  →  'commitment device'
+  'control system'  →  'control theory'
+  'cooling off period game'  →  'game theory'
+  'cost benefit analysis'  →  'decision theory'
+  'coupled oscillators'  →  'dynamical systems'
+  'credible commitment'  →  'commitment device'
+  'damped oscillation'  →  'dynamical systems'
+  'decentralized control with external stabilizer'  →  'control theory'
+  'decoupled dynamical systems'  →  'dynamical systems'
+  'differential equation model of negative feedback loop'  →  'feedback control'
+  'drift diffusion model'  →  'sequential decision making'
+  'dynamic programming'  →  'constrained optimization'
+  'equilibrium selection'  →  'nash equilibrium'
+  'evolutionary stable strategy'  →  'evolutionary game theory'
+  'extensive form game'  →  'game theory'
+  'feedback disruption'  →  'feedback control'
+  'fictitious play'  →  'game theory'
+  'finitely repeated game with a known horizon'  →  'game theory'
+  'folk theorem with trigger strategy'  →  'trigger strategy'
+  'framing effect'  →  'prospect theory'
+  'game equilibria'  →  'nash equilibrium'
+  'hedonic adaptation'  →  'hot cold empathy gap'
+  'heuristic'  →  'bounded rationality'
+  'homeostatic control'  →  'feedback control'
+  'hyperbolic discounting'  →  'utility theory'
+  'hysteresis'  →  'dynamical systems'
+  'incomplete information games'  →  'game theory'
+  'information asymmetry correction'  →  'information theory'
+  'information revelation game'  →  'game theory'
+  'input output decoupling'  →  'decoupling'
+  'intermittent reinforcement'  →  'operant conditioning'
+  'intertemporal choice'  →  'utility theory'
+  'kalman filter'  →  'control theory'
+  'limit cycle'  →  'dynamical systems'
+  'linear programming'  →  'constrained optimization'
+  'loss aversion'  →  'prospect theory'
+  'lyapunov stability'  →  'dynamical systems'
+  'matching law with extinction'  →  'extinction'
+  'mechanism design with precommitment'  →  'mechanism design'
+  'mental accounting'  →  'prospect theory'
+  'model predictive control'  →  'control theory'
+  'moral hazard'  →  'contract theory'
+  'multi armed bandit'  →  'reinforcement learning'
+  'multiobjective optimization'  →  'constrained optimization'
+  'multistability'  →  'dynamical systems'
+  'network disintegration'  →  'network robustness'
+  'network isolation'  →  'network robustness'
+  'network topology'  →  'network dynamics'
+  'opportunity cost'  →  'utility theory'
+  'optimal control'  →  'control theory'
+  'optimal control with state estimation and disturbance rejection'  →  'control theory'
+  'option value'  →  'utility theory'
+  'phase transition'  →  'dynamical systems'
+  'poincaré map'  →  'dynamical systems'
+  'portfolio optimization'  →  'constrained optimization'
+  'potential function minimization in dynamical systems'  →  'dynamical systems'
+  'potential game'  →  'game theory'
+  'potential well'  →  'dynamical systems'
+  'preemptive control in dynamical systems'  →  'dynamical systems'
+  'preference reversal'  →  'prospect theory'
+  'preferential attachment with exploration'  →  'network dynamics'
+  'principal agent problem'  →  'contract theory'
+  "prisoner's dilemma"  →  'game theory'
+  'proportional integral derivative control'  →  'feedback control'
+  'real options analysis'  →  'constrained optimization'
+  … 26 more
+
+[Consistency with merge_map.json]
+  compared 435 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

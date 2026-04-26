@@ -1,0 +1,2331 @@
+==============================================================================
+Embedding + LLM Cluster Naming — Detailed Cluster Log
+==============================================================================
+Generated (local): 2026-04-24T09:48:10
+
+[Parameters]
+  embedding_backend:   openai
+  embedding_model:     openai/text-embedding-3-small
+  distance_threshold:  0.35
+  llm_naming_model:    google/gemini-2.5-flash
+  llm_naming_workers:  20
+
+[Summary]
+  total_attractor_names:   1149
+  total_clusters:          481
+  multi_member_clusters:   196  (LLM named)
+  singleton_clusters:      285
+  distinct_canonical_names: 470
+
+------------------------------------------------------------------------------
+Per-cluster detail (sorted by size descending)
+------------------------------------------------------------------------------
+
+[#1]  canonical: bayesian updating  (42 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了所有修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. bayesian belief updating
+      2. bayesian updating with signal manipulation
+      3. bayesian information update
+      4. bayesian updating with information structure
+      5. bayesian updating with competing signals
+      6. bayesian belief updating model
+      7. bayesian signaling with sequential updating
+      8. bayesian updating with threshold decision rule
+      9. bayesian updating with costly signaling
+     10. bayesian updating with signal degradation
+     11. bayesian updating  ← canonical
+     12. bayesian inference with signal updating
+     13. bayesian updating of default probability
+     14. bayesian posterior update with selective prior
+     15. bayesian updating with asymmetric evidence
+     16. bayesian information updating
+     17. bayesian updating with information value
+     18. bayesian updating with source credibility weighting
+     19. bayesian posterior update with multiple evidence sources
+     20. bayesian belief revision under evidence incompatibility
+     21. bayesian signal updating
+     22. bayesian inference with sequential evidence updating
+     23. bayesian updating with signal credibility
+     24. bayesian updating with evidence hierarchies
+     25. bayesian sequential updating with stopping rule
+     26. bayesian updating with signal accumulation
+     27. bayesian information updating with forward looking signals
+     28. sequential bayesian updating
+     29. bayesian signal detection with prior update
+     30. bayesian updating with value of information
+     31. bayesian inference with signal accumulation
+     32. bayesian belief updating with information acquisition
+     33. bayesian signal integration with prior updating
+     34. bayesian sequential updating
+     35. bayesian information updating through market signals
+     36. bayesian inference with evidence updating
+     37. bayesian inference with posterior updating
+     38. bayesian inference with evidence documentation
+     39. bayesian updating with signal ordering
+     40. bayesian updating with sample size effect
+     41. bayesian updating with credible signaling
+     42. explore exploit tradeoff with bayesian updating
+
+[#2]  canonical: constrained optimization  (33 members, LLM named)
+    reason: 该名称是所有簇成员的核心共同概念，剥离了所有修饰语和具体场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. constrained optimization with time horizon
+      2. constrained optimization with binding constraint relaxation
+      3. constrained multi objective optimization
+      4. constrained optimization with piecewise linear constraints
+      5. constrained portfolio optimization with binding contribution limits
+      6. constrained optimization with binding constraints
+      7. linear constraint satisfaction with objective function optimization
+      8. constrained optimization with multiple objective functions
+      9. constrained optimization with threshold conditions
+     10. constrained optimization with dual feasibility
+     11. constrained optimization under parameter restructuring
+     12. parametric constrained optimization
+     13. constrained optimization under uncertainty
+     14. constrained optimization via linear programming
+     15. constrained optimization with binding constraint
+     16. constrained optimization with binding constraints relaxation
+     17. constrained optimization with penalty method
+     18. constrained optimization with dynamic constraints
+     19. convex optimization with budget constraints
+     20. constrained optimization  ← canonical
+     21. constrained optimization with budget constraint
+     22. constrained optimization with objective function reframing
+     23. constrained optimization with budget constraint relaxation
+     24. constrained optimization with parameter restructuring
+     25. constrained optimization with lower bound constraints
+     26. constrained optimization under binding deadline
+     27. constrained optimization under fixed boundary conditions
+     28. constrained optimization with revealed binding constraint
+     29. constrained optimization with hard deadlines
+     30. constrained optimization with binding constraint identification
+     31. constrained optimization with binding allocation rules
+     32. constrained optimization with multiple binding constraints
+     33. multi objective optimization under constraint
+
+[#3]  canonical: constraint relaxation  (29 members, LLM named)
+    reason: 所有簇成员都围绕“constraint relaxation”这一核心概念展开，其他部分均为其应用场景、方法或修饰语，符合剥离修饰语和字数限制的原则。
+      1. constraint relaxation optimization
+      2. constraint relaxation under stochastic optimization
+      3. constraint relaxation in sequential decision making
+      4. constrained optimization with constraint relaxation
+      5. constraint relaxation via problem reformulation
+      6. constraint relaxation in nonlinear programming
+      7. constraint relaxation via option value expansion
+      8. constraint relaxation via strategic compliance
+      9. constraint relaxation in linear programming
+     10. constraint relaxation in search space
+     11. constraint relaxation in stochastic dynamic programming
+     12. constraint relaxation via sequential information acquisition
+     13. constraint relaxation via decomposition
+     14. constraint relaxation and objective function minimization
+     15. constraint relaxation through mechanism design
+     16. constraint relaxation through dual problem decomposition
+     17. constraint relaxation in convex optimization
+     18. constraint decomposition via lagrangian relaxation
+     19. problem decomposition via constraint relaxation
+     20. constraint relaxation via hierarchical leverage
+     21. constraint relaxation via temporal decomposition
+     22. constraint relaxation and feasibility recovery
+     23. constraint relaxation through legitimacy
+     24. constraint relaxation in dynamic programming
+     25. constraint relaxation in feasible action space
+     26. constraint relaxation via satisfiability analysis
+     27. constraint relaxation via resource augmentation
+     28. constraint relaxation model
+     29. constraint relaxation via resource substitution
+
+[#4]  canonical: optimal stopping  (26 members, LLM named)
+    reason: 所有簇成员都围绕'optimal stopping'这一核心概念展开，其他部分均为其具体化或修饰语，剥离修饰语后，'optimal stopping'是其最纯粹、最核心的表达。
+      1. optimal stopping theory
+      2. optimal stopping problem
+      3. optimal stopping problem with increasing penalty
+      4. bayesian optimal stopping
+      5. optimal stopping theory with sequential resource allocation
+      6. optimal stopping problem with irreversible exit
+      7. optimal stopping problem with sequential constraints
+      8. optimal stopping theory with heterogeneous stopping costs
+      9. optimal stopping problem with increasing liability
+     10. optimal stopping under resource constraint relaxation
+     11. optimal stopping problem with behavioral feedback
+     12. bayesian optimal stopping problem
+     13. optimal stopping problem with option value
+     14. optimal stopping problem with state dependent constraints
+     15. optimal stopping problem with switching costs
+     16. optimal stopping  ← canonical
+     17. optimal stopping with deadline constraint
+     18. optimal stopping problem with credential accumulation
+     19. optimal stopping under uncertain future states
+     20. optimal stopping problem with portfolio reallocation
+     21. optimal stopping with staged liquidity
+     22. optimal stopping problem with state dependent payoffs
+     23. optimal stopping problem with opportunity cost
+     24. optimal stopping problem with accelerating cost function
+     25. optimal stopping with piecewise linear reward functions
+     26. optimal stopping problem with time varying utility
+
+[#5]  canonical: bayesian signaling  (23 members, LLM named)
+    reason: 该名称是簇中出现频率最高且最能概括核心概念的术语，剥离了所有修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范。
+      1. bayesian screening with signal revelation
+      2. bayesian screening with signaling
+      3. bayesian screening with costly signaling
+      4. bayesian inference with signal extraction
+      5. bayesian signaling and screening
+      6. bayesian signaling  ← canonical
+      7. bayesian signaling with heuristic switching
+      8. bayesian signaling with asymmetric information
+      9. bayesian signal learning in credit markets
+     10. bayesian signaling with cost of lying
+     11. bayesian signal filtering
+     12. bayesian inference with signal quality optimization
+     13. bayesian inference with signal manipulation
+     14. bayesian signal detection theory
+     15. bayesian inference with signal quality
+     16. bayesian inference with signal detection
+     17. bayesian signaling with information asymmetry reduction
+     18. bayesian signaling with cheap talk
+     19. bayesian inference with signal separation
+     20. bayesian signal separation
+     21. bayesian inference with signal precision
+     22. bayesian information updating with signal extraction
+     23. bayesian signaling with cost of replacement updating
+
+[#6]  canonical: costly signaling  (20 members, LLM named)
+    reason: 该名称是簇中出现频率最高、最简洁且能涵盖所有成员核心概念的术语，符合维基百科词条和教科书小节的命名规范，并严格遵守了字数和修饰语剥离的原则。
+      1. costly signaling with temporal constraints
+      2. signaling theory with costly signals
+      3. costly signaling equilibrium
+      4. signaling equilibrium with costly revelation
+      5. costly signaling with verifiable commitment
+      6. signaling game with costly verification
+      7. signaling game with costly signals
+      8. signaling game with costly revelation
+      9. costly signaling with threshold commitment
+     10. costly signaling with penalty function
+     11. costly signaling theory
+     12. signaling theory with costly verification
+     13. signaling equilibrium with credible commitment
+     14. signaling game with hidden cost
+     15. signaling theory with costly signal production
+     16. signaling equilibrium with costly credentials
+     17. signaling game with costly action
+     18. signaling games with sunk cost commitment
+     19. signaling game with commitment constraints
+     20. costly signaling  ← canonical
+
+[#7]  canonical: dynamic programming  (19 members, LLM named)
+    reason: 所有簇成员都是动态规划的变体或特定应用，'dynamic programming' 是其最核心、最通用的学术名称，符合维基百科词条和教科书章节的命名规范，且字数限制。
+      1. dynamic programming with state space expansion
+      2. dynamic programming with irreversible decisions
+      3. dynamic programming with state decomposition
+      4. dynamic programming  ← canonical
+      5. dynamic programming state transition
+      6. dynamic programming with optimal stopping
+      7. dynamic programming with constraint relaxation
+      8. dynamic programming with time varying constraints
+      9. dynamic programming with path dependency
+     10. dynamic programming with budget constraint
+     11. dynamic programming with endogenous constraint evolution
+     12. dynamic programming with time discounting
+     13. dynamic programming with state partitioning
+     14. dynamic programming with state dependent policy
+     15. dynamic programming with sequential constraint relaxation
+     16. dynamic programming with discounted cumulative utility
+     17. dynamic programming with time horizon extension
+     18. dynamic programming with state reallocation
+     19. dynamic programming with state variables
+
+[#8]  canonical: principal agent problem  (18 members, LLM named)
+    reason: 所有簇成员都围绕“principal agent problem”展开，其余部分均为其修饰语或具体应用场景，符合剥离修饰语和字数限制的原则。
+      1. principal agent problem with information asymmetry resolution
+      2. principal agent problem with verifiable performance metrics
+      3. principal agent problem  ← canonical
+      4. principal agent problem with adverse selection
+      5. principal agent problem with institutional escalation
+      6. principal agent problem with contingent transfers
+      7. principal agent problem with information asymmetry
+      8. principal agent problem with external enforcement
+      9. principal agent problem with institutional monitoring
+     10. principal agent problem resolution through structural separation
+     11. principal agent problem with moral hazard
+     12. principal agent problem with adverse selection resolution
+     13. principal agent problem with monitoring
+     14. principal agent problem with costly monitoring
+     15. principal agent problem with institutional mediation
+     16. principal agent model
+     17. principal agent problem with information asymmetry reduction
+     18. principal agent problem with moral hazard mitigation
+
+[#9]  canonical: adverse selection  (13 members, LLM named)
+    reason: 该簇中的所有成员都围绕着“adverse selection”这一核心概念展开，其他词汇均为其修饰或具体化，剥离修饰语后，adverse selection是其最纯粹、最核心的表达。
+      1. separating equilibrium in adverse selection
+      2. signaling theory under adverse selection
+      3. adverse selection with screening
+      4. adverse selection and signaling equilibrium
+      5. adverse selection under information asymmetry
+      6. adverse selection  ← canonical
+      7. adverse selection screening
+      8. adverse selection with contingency contracting
+      9. adverse selection with screening mechanism
+     10. adverse selection with ex ante screening
+     11. adverse selection and information asymmetry reduction
+     12. adverse selection with signaling
+     13. adverse selection model
+
+[#10]  canonical: information asymmetry resolution  (13 members, LLM named)
+    reason: 该名称最简洁地概括了簇中所有成员的核心概念，即信息不对称的解决或处理，同时符合维基百科词条和教科书小节的命名规范，并严格遵守了字数和修饰语剥离的原则。
+      1. information asymmetry reduction through price transparency
+      2. information asymmetry resolution  ← canonical
+      3. information asymmetry resolution in bilateral bargaining
+      4. information asymmetry model
+      5. information asymmetry reversal
+      6. information asymmetry equilibrium
+      7. information asymmetry resolution model
+      8. information asymmetry reduction
+      9. information asymmetry reduction via active inquiry
+     10. information asymmetry resolution in constrained optimization
+     11. information asymmetry with verification
+     12. information asymmetry reduction and market equilibrium restoration
+     13. information asymmetry reduction via documentation
+
+[#11]  canonical: commitment device  (12 members, LLM named)
+    reason: 所有簇成员都围绕'commitment device'展开，且该术语本身已是成熟的学术概念，符合维基百科词条和介观层级要求，无需额外修饰。
+      1. commitment device  ← canonical
+      2. mechanism design with commitment devices
+      3. commitment device through mechanism design
+      4. schelling point with commitment device
+      5. commitment device via irreversible allocation
+      6. commitment device with irreversible action threshold
+      7. commitment device with observable cost
+      8. commitment device with automatic penalty function
+      9. commitment device with path dependency
+     10. commitment device through documentation
+     11. commitment device framework
+     12. signaling with commitment device
+
+[#12]  canonical: real options  (12 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了所有修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. real options framework
+      2. real options theory
+      3. real options valuation
+      4. real options valuation with irreversible commitment
+      5. real options analysis
+      6. real options theory with symmetric exercise windows
+      7. real option value
+      8. real options theory with option expiration
+      9. real options theory with irreversible investment
+     10. real options valuation with embedded flexibility
+     11. real options theory with irreversibility
+     12. real options pricing model
+
+[#13]  canonical: signaling equilibrium  (11 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了所有修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. signaling games with separating equilibrium
+      2. signaling equilibrium  ← canonical
+      3. signaling equilibrium under incomplete information
+      4. signaling equilibrium in asymmetric information games
+      5. labor market signaling equilibrium
+      6. signaling game with separating equilibrium
+      7. separating equilibrium in signaling games
+      8. signaling equilibrium in labor markets
+      9. signaling game with pooling equilibrium separation
+     10. signaling game separating equilibrium
+     11. signaling equilibrium under information asymmetry
+
+[#14]  canonical: stackelberg game  (11 members, LLM named)
+    reason: 所有簇成员都围绕Stackelberg博弈展开，其他部分均为其特定变体或应用场景的修饰语，Stackelberg Game本身即是介观层级的标准学术概念。
+      1. stackelberg commitment game with information revelation
+      2. stackelberg game with information revelation
+      3. stackelberg game with payment floor negotiation
+      4. stackelberg sequential game with escalating cost structure
+      5. stackelberg game to symmetric information game
+      6. stackelberg game with third party enforcement
+      7. stackelberg game equilibrium reversal
+      8. stackelberg game with regulatory third party
+      9. stackelberg competition with information revelation
+     10. stackelberg game with enforcement multiplier
+     11. stackelberg game  ← canonical
+
+[#15]  canonical: mechanism design  (10 members, LLM named)
+    reason: 该簇中的所有成员都是“机制设计”的变体或特定应用，剥离所有修饰语后，其核心概念即为“机制设计”本身。
+      1. mechanism design with communication constraints
+      2. mechanism design with revelation principle
+      3. mechanism design via revelation principle
+      4. mechanism design with incomplete information
+      5. mechanism design with asymmetric information
+      6. mechanism design with verifiable information
+      7. mechanism design  ← canonical
+      8. mechanism design with information revelation
+      9. mechanism design with cost asymmetry
+     10. mechanism design with verifiable outcomes
+
+[#16]  canonical: bayesian information asymmetry  (10 members, LLM named)
+    reason: 该名称最简洁地概括了簇中所有成员的核心概念，即贝叶斯方法应用于信息不对称情境，同时剥离了所有修饰性动词和介词短语。
+      1. bayesian updating with information asymmetry
+      2. bayesian game with information asymmetry resolution
+      3. bayesian updating with information asymmetry resolution
+      4. bayesian learning with information asymmetry
+      5. bayesian persuasion with information asymmetry resolution
+      6. bayesian inference with asymmetric information reversal
+      7. bayesian information asymmetry reversal
+      8. bayesian inference with incomplete information and strategic payoff restructuring
+      9. bayesian information asymmetry reduction
+     10. bayesian inference with asymmetric information
+
+[#17]  canonical: stochastic programming  (9 members, LLM named)
+    reason: 所有簇成员都围绕随机性决策制定，且'stochastic programming'是涵盖所有变体的最核心、最通用的学术概念。
+      1. two stage stochastic programming
+      2. stochastic programming with recourse
+      3. stochastic dynamic programming
+      4. stochastic dynamic programming with state dependent constraints
+      5. stochastic dynamic programming with incomplete information
+      6. stochastic dynamic programming with heterogeneous discount rates
+      7. stochastic dynamic programming with certainty equivalence
+      8. stochastic dynamic programming with capacity constraints
+      9. stochastic dynamic programming with state separation
+
+[#18]  canonical: mean variance optimization  (8 members, LLM named)
+    reason: 该名称是所有簇成员的核心共同部分，剥离了所有修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范，且字数符合要求。
+      1. mean variance portfolio optimization
+      2. mean variance portfolio optimization with rate regime uncertainty
+      3. mean variance optimization with option value
+      4. mean variance optimization with time horizon constraint
+      5. mean variance portfolio optimization with liquidity tiers
+      6. mean variance portfolio selection
+      7. mean variance optimization  ← canonical
+      8. mean variance optimization with constraint reduction
+
+[#19]  canonical: portfolio optimization  (8 members, LLM named)
+    reason: 该簇中的所有成员都围绕着“投资组合优化”这一核心概念，其他词语均为其具体的约束条件或应用场景的修饰语，应被剥离。
+      1. portfolio allocation under dual constraints
+      2. portfolio optimization with competing constraints
+      3. optimal portfolio allocation under time constraint
+      4. portfolio optimization under time constraint
+      5. portfolio optimization under uncertainty
+      6. portfolio optimization with constraint binding
+      7. portfolio optimization under incomplete information
+      8. portfolio optimization with constraint aggregation
+
+[#20]  canonical: signaling game  (8 members, LLM named)
+    reason: 所有簇成员都围绕'signaling game'这一核心概念展开，其余部分均为其特定变体或修饰语，符合剥离修饰语和介观层级的要求。
+      1. signaling game with channel selection
+      2. signaling game with cheap talk elimination
+      3. signaling game  ← canonical
+      4. sequential signaling game
+      5. signaling game with information revelation
+      6. signaling game with outside option
+      7. signaling game with information disclosure
+      8. signaling game with asymmetric information
+
+[#21]  canonical: feedback control  (7 members, LLM named)
+    reason: 该名称是所有簇成员的共同核心，剥离了所有修饰语和具体化描述，符合维基百科词条和教科书章节的命名规范，且字数精简。
+      1. feedback control system
+      2. feedback control system with time delay
+      3. feedback control system rebalancing
+      4. feedback delay reduction in control systems
+      5. feedback control system with state transition
+      6. feedback control systems
+      7. feedback control theory
+
+[#22]  canonical: feedback control  (7 members, LLM named)
+    reason: 该簇成员主要围绕反馈控制及其变体展开，剥离修饰语后，'Feedback Control' 是最核心且涵盖性最强的概念。
+      1. negative feedback control system
+      2. predictive feedforward control
+      3. negative feedback control loop
+      4. feedforward control
+      5. adaptive control with feedback
+      6. negative feedback loop control
+      7. negative feedback control with external observation
+
+[#23]  canonical: net present value  (7 members, LLM named)
+    reason: 所有簇成员都围绕'net present value'这一核心概念展开，其他部分均为其应用场景或修饰语，根据剥离修饰语原则，应保留最核心部分。
+      1. net present value optimization
+      2. net present value comparison with spread elimination
+      3. net present value with opportunity cost discounting
+      4. net present value timing arbitrage
+      5. net present value under uncertainty
+      6. net present value  ← canonical
+      7. net present value with exponential discounting
+
+[#24]  canonical: intertemporal choice  (7 members, LLM named)
+    reason: 所有簇成员都围绕着'intertemporal choice'或其核心组成部分'intertemporal budget constraint'展开，剥离修饰语后，'intertemporal choice'是最高层级的共同概念。
+      1. intertemporal choice with switching costs
+      2. intertemporal budget constraint optimization
+      3. intertemporal choice under irreversible constraints
+      4. intertemporal budget constraint with agency cost
+      5. intertemporal budget constraint with liquidity preference
+      6. intertemporal budget constraint
+      7. intertemporal choice with present bias correction
+
+[#25]  canonical: knapsack problem  (7 members, LLM named)
+    reason: 所有簇成员都明确指向“knapsack problem”这一核心概念，其余部分均为其特定变体或修饰语，应予剥离。
+      1. knapsack problem with constraint relaxation
+      2. knapsack problem with cost minimization
+      3. knapsack problem with time dependent utility
+      4. knapsack optimization with time dependent weights
+      5. knapsack problem with opportunity cost
+      6. knapsack problem with revealed constraints
+      7. knapsack problem with heterogeneous values
+
+[#26]  canonical: bayesian inference  (7 members, LLM named)
+    reason: 所有簇成员都围绕'bayesian inference'展开，其他部分均为其修饰或特定应用，根据剥离修饰语原则，'bayesian inference'是其最核心和纯粹的本体。
+      1. bayesian inference with value of information
+      2. bayesian inference  ← canonical
+      3. bayesian inference with information value
+      4. bayesian inference with likelihood respecification
+      5. bayesian inference with incomplete information
+      6. bayesian information reduction
+      7. bayesian inference with prior correction
+
+[#27]  canonical: exponential optimization  (6 members, LLM named)
+    reason: 该名称简洁地概括了簇中所有成员的核心概念，即涉及指数函数形式的优化问题，并剥离了所有修饰语和具体场景。
+      1. exponential growth versus linear optimization trade off
+      2. exponential decay timing optimization
+      3. exponential growth with friction optimization
+      4. exponential decay with optimized decay constant
+      5. exponential growth with parameter optimization
+      6. exponential decay with parameter optimization
+
+[#28]  canonical: exponential model  (6 members, LLM named)
+    reason: 所有簇成员都围绕着指数增长或衰减的核心概念，剥离修饰语后，'exponential model' 是最纯粹、最核心的共同抽象。
+      1. exponential growth model with linear constraint
+      2. exponential decay with source term model
+      3. exponential decay model
+      4. exponential decay model with parameter substitution
+      5. exponential growth model with time dependent elasticity
+      6. exponential growth model
+
+[#29]  canonical: bifurcation theory  (6 members, LLM named)
+    reason: 所有簇成员都围绕'bifurcation'展开，'theory'是其最核心且通用的学术概念，符合维基百科词条和教科书章节的命名规范，且字数适中。
+      1. bifurcation theory with metric regime switching
+      2. bifurcation theory  ← canonical
+      3. bifurcation and threshold dynamics
+      4. bifurcation analysis with critical threshold crossing
+      5. bifurcation analysis
+      6. bifurcation theory with time forcing
+
+[#30]  canonical: hyperbolic discounting  (6 members, LLM named)
+    reason: 所有簇成员都围绕“hyperbolic discounting”这一核心概念展开，其余部分均为其修饰语或应用场景，根据剥离修饰语和字数高压线原则，这是最纯粹和核心的名称。
+      1. hyperbolic discounting with commitment devices
+      2. hyperbolic discounting with cognitive load
+      3. hyperbolic discounting constraint
+      4. hyperbolic discounting correction
+      5. hyperbolic discounting with precommitment
+      6. precommitment mechanism under hyperbolic discounting
+
+[#31]  canonical: linear programming  (6 members, LLM named)
+    reason: 所有簇成员都围绕着线性规划的核心概念，其后的修饰语均指代线性规划的不同应用场景或约束条件处理方式，剥离修饰语后，核心概念即为线性规划本身。
+      1. linear programming allocation problem
+      2. linear programming constraint relaxation
+      3. linear programming with resource constraints
+      4. linear programming with competing constraints
+      5. linear programming with constraint tightening
+      6. linear programming with binding constraints
+
+[#32]  canonical: constraint satisfaction  (6 members, LLM named)
+    reason: 所有簇成员都围绕着“约束满足”这一核心概念，其他部分均为其修饰或具体化。
+      1. constraint satisfaction under uncertainty
+      2. constraint satisfaction problem
+      3. constraint satisfaction ordering in linear programming
+      4. constraint satisfaction with option value
+      5. constraint satisfaction through discrete choice set design
+      6. constraint satisfaction problem with incomplete information
+
+[#33]  canonical: signaling and screening  (6 members, LLM named)
+    reason: 该名称最简洁地概括了簇中所有成员的核心概念，即在信息不对称情境下的信号发送与筛选机制，符合维基百科词条和教科书小节的命名风格，且字数精炼。
+      1. signaling theory with information asymmetry reduction
+      2. information asymmetry reduction with credible signaling
+      3. information asymmetry reduction via market signal
+      4. signaling and screening under asymmetric information
+      5. signaling and screening under information asymmetry
+      6. screening under asymmetric information
+
+[#34]  canonical: information revelation  (6 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了所有修饰语和具体场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. information revelation timing model
+      2. information revelation principle
+      3. information revelation through sequential signaling
+      4. information revelation mechanism
+      5. information revelation and constraint relaxation
+      6. information revelation and constraint visibility model
+
+[#35]  canonical: path dependence  (5 members, LLM named)
+    reason: 簇中所有成员都围绕“path dependence”展开，其他部分均为其修饰或具体化，且该词本身已是成熟的学术概念。
+      1. path dependence with critical windows
+      2. path dependence  ← canonical
+      3. path dependence and lock in effects
+      4. path dependence and lock in
+      5. path dependence and lock in reversal
+
+[#36]  canonical: commitment devices  (5 members, LLM named)
+    reason: 该簇中的所有成员都围绕着'commitment devices'这一核心概念展开，其他词汇均为其修饰语或具体应用场景的描述，剥离后'commitment devices'是唯一且最纯粹的共同核心。
+      1. temporal discounting with commitment devices
+      2. temporal mismatch elimination via commitment device
+      3. temporal commitment device via institutional procedure
+      4. temporal preference reversal with commitment devices
+      5. commitment device with temporal decoupling
+
+[#37]  canonical: multi armed bandit  (5 members, LLM named)
+    reason: 所有簇成员的核心概念都是'multi armed bandit'，其余部分均为其特定变体或修饰语，应被剥离。
+      1. multi armed bandit problem
+      2. multi armed bandit exploration under hidden feasibility
+      3. multi armed bandit with information cost
+      4. multi armed bandit problem with exploration budget
+      5. multi armed bandit with information acquisition
+
+[#38]  canonical: option value  (5 members, LLM named)
+    reason: 所有簇成员都围绕着“option value”这一核心概念展开，其他词汇均为其修饰语或应用场景。
+      1. option value theory
+      2. option value under uncertainty
+      3. option value preservation
+      4. option value threshold model
+      5. option value maximization
+
+[#39]  canonical: finite horizon stopping  (5 members, LLM named)
+    reason: 该名称剥离了所有修饰语和具体应用场景，保留了核心概念“有限时间范围”和“停止决策”，符合维基百科词条和教科书小节的命名规范，且字数精炼。
+      1. finite horizon stopping time problem
+      2. finite horizon dynamic game
+      3. finite horizon effect
+      4. finite horizon commitment with stopping rule
+      5. finite time horizon optimization with stopping rule
+
+[#40]  canonical: sequential decision making  (5 members, LLM named)
+    reason: 所有簇成员的核心都是关于'sequential decision making'，而'uncertainty'、'incomplete information'、'information revelation'、'optimal stopping'和'option value'都是其具体的修饰或子问题，应被剥离。
+      1. sequential decision making under incomplete information
+      2. sequential decision making under uncertainty with information revelation
+      3. sequential decision making under uncertainty with optimal stopping
+      4. sequential decision making under uncertainty
+      5. sequential decision making under uncertainty with option value
+
+[#41]  canonical: feasible region  (5 members, LLM named)
+    reason: 所有簇成员都围绕“可行域”这一核心概念展开，其他词汇均为其修饰或操作。
+      1. constraint duality and feasible region separation
+      2. constraint programming with feasible region modification
+      3. constrained dynamic programming with state dependent feasible region
+      4. constrained optimization with feasible region expansion
+      5. feasibility region expansion via constraint relaxation
+
+[#42]  canonical: ultimatum game  (5 members, LLM named)
+    reason: 所有簇成员都围绕“最后通牒博弈”这一核心概念展开，后缀均为其特定变体或约束条件，应被剥离。
+      1. ultimatum game with sunk cost asymmetry
+      2. ultimatum game with information revelation
+      3. ultimatum game with credible commitment
+      4. ultimatum game with commitment mechanism
+      5. ultimatum game with binary constraint
+
+[#43]  canonical: bayesian information updating  (5 members, LLM named)
+    reason: 该名称最简洁地概括了簇中所有成员的核心概念，即贝叶斯框架下的信息揭示与信念更新过程，并符合维基百科词条和教科书章节的命名规范。
+      1. bayesian signaling with information revelation
+      2. information revelation and bayesian updating
+      3. bayesian information revelation
+      4. information revelation and belief updating
+      5. bayesian belief updating with preference revelation
+
+[#44]  canonical: bayesian decision theory  (5 members, LLM named)
+    reason: 该名称是簇中所有成员的共同核心，代表了贝叶斯方法在决策制定中的理论基础，且符合维基百科准则和字数限制，并剥离了修饰语。
+      1. bayesian sequential decision making
+      2. sequential decision making with bayesian information updating
+      3. sequential bayesian decision making under resource constraint
+      4. bayesian decision theory with information acquisition
+      5. bayesian decision theory  ← canonical
+
+[#45]  canonical: burden of proof reversal  (4 members, LLM named)
+    reason: 该名称是簇中所有成员的共同核心，且符合维基百科词条和教科书小节的命名规范，无冗余修饰语，字数适中，处于介观层级。
+      1. burden of proof reversal  ← canonical
+      2. burden of proof reversal through documentation
+      3. burden of proof reversal via bayesian prior shift
+      4. burden of proof reversal under strict liability framework
+
+[#46]  canonical: value of information  (4 members, LLM named)
+    reason: 该名称是所有簇成员的共同核心，且符合维基百科词条和教科书小节的命名规范，无修饰语，字数适中，处于介观层级。
+      1. value of information  ← canonical
+      2. value of information in irreversible decisions
+      3. value of information under binary state
+      4. value of information in sequential decision making
+
+[#47]  canonical: cognitive load theory  (4 members, LLM named)
+    reason: 该名称是簇中所有成员的基础理论，其他成员均为其特定应用、扩展或优化，符合维基百科词条和教科书小节的命名规范，且字数适中。
+      1. cognitive load theory  ← canonical
+      2. cognitive load theory with dimensionality reduction
+      3. cognitive load reduction via system decomposition
+      4. cognitive load minimization under attention constraints
+
+[#48]  canonical: compound interest  (4 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范。
+      1. compound interest growth model
+      2. compound interest model
+      3. compound interest model with geometric series
+      4. compound interest dynamics
+
+[#49]  canonical: feedback dynamics  (4 members, LLM named)
+    reason: 该名称最纯粹地概括了簇中所有成员的核心概念，即系统中的反馈机制，同时剥离了所有修饰语和具体类型。
+      1. dynamical systems with positive feedback loop
+      2. positive feedback dynamics with critical threshold
+      3. positive feedback dynamics in coupled difference equations
+      4. negative feedback loop with threshold dynamics
+
+[#50]  canonical: feedback loop constraint  (4 members, LLM named)
+    reason: 所有簇成员都围绕“反馈回路”与“约束”这两个核心概念展开，且该名称符合维基百科词条和教科书小节的命名规范，字数精简，层级适中。
+      1. feedback loop reversal via constraint elimination
+      2. feedback loop stabilization via hard constraints
+      3. feedback loop activation under constraint
+      4. negative feedback loop interruption via constraint binding
+
+[#51]  canonical: threshold model  (4 members, LLM named)
+    reason: 所有簇成员都是'threshold model'的特定变体，剥离修饰语后，'threshold model'是其最核心、最通用的概念。
+      1. threshold model with state bifurcation
+      2. threshold model with absorbing states
+      3. threshold model  ← canonical
+      4. threshold model with state dependent constraints
+
+[#52]  canonical: threshold crossing  (4 members, LLM named)
+    reason: 该名称是所有簇成员的共同核心，剥离了所有修饰语，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. threshold crossing with intermediate steps
+      2. threshold crossing model
+      3. threshold crossing dynamics
+      4. threshold crossing in parameter space
+
+[#53]  canonical: enforcement mechanism design  (4 members, LLM named)
+    reason: 该名称最简洁地概括了簇成员的核心共性，即在机制设计中考虑了执行或惩罚的成本与方式，且符合维基百科词条和教科书小节的命名规范。
+      1. mechanism design with costly enforcement
+      2. mechanism design with penalty functions
+      3. mechanism design with external enforcer
+      4. mechanism design with collateral
+
+[#54]  canonical: human capital accumulation  (4 members, LLM named)
+    reason: 该名称是簇中所有成员的核心概念，剥离了具体的应用场景（depreciation, portfolio optimization）和修饰语，符合维基百科词条和教科书小节的命名规范，且字数精炼。
+      1. human capital accumulation with skill depreciation
+      2. human capital accumulation model
+      3. human capital depreciation model
+      4. human capital portfolio optimization
+
+[#55]  canonical: liquidity constrained allocation  (4 members, LLM named)
+    reason: 该名称剥离了具体的'portfolio'或'capital'等应用场景，聚焦于核心概念'liquidity constrained'和'allocation'，符合介观层级和字数限制。
+      1. optimal portfolio allocation with liquidity constraints
+      2. portfolio rebalancing under liquidity constraints
+      3. present value minimization with liquidity allocation
+      4. constrained capital allocation under liquidity hierarchy
+
+[#56]  canonical: temporal arbitrage  (4 members, LLM named)
+    reason: 该名称是所有簇成员的核心共同概念，剥离了所有修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. temporal constraint arbitrage
+      2. temporal arbitrage in decentralized withholding systems
+      3. intertemporal arbitrage model
+      4. temporal arbitrage model
+
+[#57]  canonical: pareto frontier  (4 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. pareto frontier expansion
+      2. efficiency frontier analysis
+      3. pareto efficiency frontier under budget constraint
+      4. pareto frontier optimization
+
+[#58]  canonical: greedy minimization  (4 members, LLM named)
+    reason: 所有簇成员都围绕“贪婪算法”和“最小化”这两个核心概念，剥离了具体的应用场景和修饰词。
+      1. greedy algorithm for weighted debt minimization
+      2. greedy algorithm for weighted cost minimization
+      3. greedy algorithm for debt reduction
+      4. greedy algorithm for debt minimization
+
+[#59]  canonical: optimal control  (4 members, LLM named)
+    reason: 所有簇成员的核心概念都是“最优控制”，其他部分均为其修饰语或特定应用场景。
+      1. optimal control theory with state feedback
+      2. optimal control with behavioral constraint
+      3. optimal control theory
+      4. optimal control under constraints
+
+[#60]  canonical: robust optimization  (4 members, LLM named)
+    reason: 该名称是簇中所有成员的核心共同概念，剥离了具体的决策类型、不确定性来源和优化方法修饰语，符合维基百科词条和教科书章节的命名风格，且字数精简。
+      1. robust decision making under model uncertainty
+      2. robust optimization under parametric uncertainty
+      3. minimax optimization under uncertainty
+      4. robust optimization under uncertainty
+
+[#61]  canonical: expected utility theory  (4 members, LLM named)
+    reason: 所有簇成员都围绕“期望效用”这一核心概念展开，并隐含了不确定性，剥离修饰语后，'Expected Utility Theory' 是最简洁且涵盖最广的标准学术名词。
+      1. expected utility maximization under detection risk
+      2. expected value cost minimization under uncertainty
+      3. expected utility maximization under uncertainty
+      4. expected utility theory under uncertainty resolution
+
+[#62]  canonical: linear feasibility  (4 members, LLM named)
+    reason: 该名称最简洁地表达了簇中所有成员的核心概念，剥离了冗余的修饰语，并符合维基百科词条和教科书小节的命名规范。
+      1. linear programming feasibility problem
+      2. feasibility analysis under linear constraints
+      3. linear feasibility problem
+      4. feasibility problem in linear programming
+
+[#63]  canonical: lagrange multipliers  (4 members, LLM named)
+    reason: 所有簇成员都围绕拉格朗日乘数这一核心数学工具展开，且该名称符合维基百科词条和教科书小节的命名规范，简洁且无修饰语。
+      1. constrained optimization with lagrange multipliers
+      2. constrained optimization with lagrange multiplier relaxation
+      3. lagrange multiplier method with constraint identification
+      4. constrained optimization with multiplier effect
+
+[#64]  canonical: nash bargaining  (4 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了具体的应用场景和修饰语，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. nash bargaining solution
+      2. nash bargaining solution with outside option
+      3. nash equilibrium perturbation
+      4. nash bargaining solution with outside options
+
+[#65]  canonical: stackelberg competition  (4 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，其他成员均为其特定变体或应用，符合维基百科词条和教科书小节的命名规范，且字数限制。
+      1. stackelberg competition with commitment device
+      2. stackelberg competition with commitment signaling
+      3. stackelberg competition  ← canonical
+      4. stackelberg commitment model
+
+[#66]  canonical: bayesian persuasion  (4 members, LLM named)
+    reason: 该名称是簇中所有成员的共同核心，其他成员均为其特定条件或扩展，符合剥离修饰语的原则，且是维基百科的独立词条名。
+      1. bayesian persuasion with cost asymmetry
+      2. bayesian persuasion  ← canonical
+      3. bayesian persuasion with evidence accumulation
+      4. bayesian persuasion with verifiable evidence
+
+[#67]  canonical: prospect theory  (4 members, LLM named)
+    reason: 该名称是所有簇成员的共同核心，其他成员均为其特定方面或扩展，符合剥离修饰语和介观层级的要求。
+      1. prospect theory reference dependence
+      2. prospect theory with probability weighting
+      3. prospect theory  ← canonical
+      4. prospect theory with probability weighting correction
+
+[#68]  canonical: anchoring and adjustment  (3 members, LLM named)
+    reason: 这是该概念最简洁、最核心的表达，符合维基百科词条和教科书小节的命名规范，且字数限制。
+      1. anchoring and adjustment  ← canonical
+      2. anchoring and adjustment model
+      3. anchoring and adjustment heuristic with temporal priming
+
+[#69]  canonical: gambler's ruin  (3 members, LLM named)
+    reason: 所有簇成员都围绕着'gambler's ruin'这一核心概念，其他部分均为其修饰语或具体化场景。
+      1. gambler's ruin problem with fixed withdrawal rate
+      2. gambler's ruin problem
+      3. gambler's ruin with absorbing barriers
+
+[#70]  canonical: path dependency  (3 members, LLM named)
+    reason: 所有簇成员都围绕着'path dependency'这一核心概念，后续短语均为其特定表现或修饰。
+      1. path dependency and equilibrium escape
+      2. path dependency with absorbing states
+      3. path dependency with irreversible state transitions
+
+[#71]  canonical: sequential hypothesis testing  (3 members, LLM named)
+    reason: 所有簇成员都围绕'sequential hypothesis testing'展开，后续短语均为其特定策略或约束的修饰。
+      1. sequential hypothesis testing with adaptive strategy revision
+      2. sequential hypothesis testing with irreversible actions
+      3. sequential hypothesis testing with predetermined stopping rules
+
+[#72]  canonical: precommitment mechanism  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的核心概念，其他成员是其具体化或带有修饰语的变体，符合剥离修饰语和介观层级的要求。
+      1. precommitment mechanism  ← canonical
+      2. precommitment mechanism with forced automation
+      3. precommitment device with verification
+
+[#73]  canonical: exploration exploitation tradeoff  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的核心概念，且符合维基百科词条和教科书小节的命名规范，无修饰语，字数适中，处于介观层级。
+      1. explore exploit tradeoff
+      2. regret minimization in exploration exploitation tradeoff
+      3. exploration exploitation tradeoff  ← canonical
+
+[#74]  canonical: american option pricing  (3 members, LLM named)
+    reason: 该名称是簇内所有成员的核心共同概念，剥离了所有修饰语和具体场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. american option pricing under state dependent exercise
+      2. american option pricing model
+      3. american option pricing framework
+
+[#75]  canonical: outside option  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的核心概念，剥离了具体应用场景和修饰语，符合维基百科词条和介观层级要求。
+      1. outside option principle in bilateral bargaining
+      2. outside option value
+      3. outside option principle
+
+[#76]  canonical: optimal stopping  (3 members, LLM named)
+    reason: 该簇中的所有成员都围绕着在不确定性下做出决策以最大化预期收益的核心思想，这正是最优停止理论的本质，而'option value'是其在特定经济学应用中的体现。
+      1. option value theory with irreversible investment
+      2. option value under irreversible investment
+      3. optimal stopping theory with irreversible investment
+
+[#77]  canonical: liquidity constraint  (3 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了具体问题、优化方法和模型类型等修饰语，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. liquidity constraint binding problem
+      2. liquidity constraint optimization
+      3. liquidity ladder model
+
+[#78]  canonical: stochastic dominance  (3 members, LLM named)
+    reason: 所有簇成员的核心概念都是随机占优，with后面的内容均为其应用场景或特定条件，应被剥离。
+      1. stochastic dominance with tax arbitrage
+      2. stochastic dominance with sequential risk reduction
+      3. stochastic dominance with regime change risk
+
+[#79]  canonical: consumption smoothing  (3 members, LLM named)
+    reason: 所有簇成员都围绕着“消费平滑”这一核心概念，其他词汇均为修饰语或具体化场景。
+      1. stochastic consumption smoothing model
+      2. intertemporal consumption smoothing under nonlinear taxation
+      3. intertemporal consumption smoothing under progressive taxation
+
+[#80]  canonical: tax optimization  (3 members, LLM named)
+    reason: 该名称最简洁地概括了所有簇成员的核心概念，即在税务背景下的优化问题，同时剥离了具体的优化方法和约束条件。
+      1. tax location optimization model
+      2. constrained optimization with tax arbitrage
+      3. convex optimization with tax liability minimization
+
+[#81]  canonical: intertemporal tax arbitrage  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的核心共同概念，剥离了具体的税率不确定性、累进税制或时间窗口等修饰语，符合维基百科词条和教科书小节的命名规范，且字数精炼。
+      1. intertemporal tax arbitrage under uncertain future tax rates
+      2. intertemporal tax arbitrage with progressive taxation
+      3. progressive tax arbitrage with time sensitive window
+
+[#82]  canonical: intertemporal capital allocation  (3 members, LLM named)
+    reason: 该名称最纯粹地概括了簇成员共同的核心概念，即资本在时间维度上的分配，同时剥离了具体的修饰语和应用场景。
+      1. intertemporal substitution with human capital investment
+      2. intertemporal capital allocation with heterogeneous discount rates
+      3. intertemporal capital accumulation
+
+[#83]  canonical: temporal discounting  (3 members, LLM named)
+    reason: 所有簇成员都围绕“时间折扣”这一核心概念展开，其他部分均为其应用或具体形式的修饰语。
+      1. intertemporal utility maximization with exponential discounting
+      2. temporal discounting and dynamic programming optimization
+      3. temporal discounting with hard constraints
+
+[#84]  canonical: cost minimization  (3 members, LLM named)
+    reason: 所有簇成员都围绕着“成本最小化”这一核心概念，其他部分均为修饰语或具体化描述，应予剥离。
+      1. cost minimization under feasibility constraints
+      2. threshold effects in cost minimization
+      3. cost minimization problem with constraint activation
+
+[#85]  canonical: satisficing  (3 members, LLM named)
+    reason: 该簇中的所有成员都围绕着'satisficing'这一核心概念，其他部分均为其修饰语或具体应用场景，根据剥离修饰语的原则，'satisficing'是其最纯粹、最核心的学术名词。
+      1. satisficing under time constraint
+      2. satisficing  ← canonical
+      3. satisficing under bounded rationality
+
+[#86]  canonical: knightian uncertainty  (3 members, LLM named)
+    reason: 所有簇成员都围绕'Knightian Uncertainty'这一核心概念展开，其余部分均为其具体应用或修饰。
+      1. knightian uncertainty with state dependent risk assessment
+      2. knightian uncertainty reduction
+      3. knightian uncertainty with information acquisition
+
+[#87]  canonical: convex optimization  (3 members, LLM named)
+    reason: 所有簇成员都围绕着凸优化这一核心概念，其他部分均为其具体应用或修饰。
+      1. convex optimization with slack variables
+      2. convex optimization under trajectory analysis
+      3. convex cost function optimization
+
+[#88]  canonical: dynamic programming with information  (3 members, LLM named)
+    reason: 该名称简洁地概括了簇成员的核心共性，即动态规划与信息处理的结合，同时剥离了具体的修饰语和应用场景。
+      1. stochastic dynamic programming with information revelation
+      2. dynamic programming with information acquisition cost
+      3. dynamic programming with information revelation
+
+[#89]  canonical: resource allocation  (3 members, LLM named)
+    reason: 所有成员都围绕着“资源分配”这一核心概念，其他词汇均为修饰或限定，应予剥离。
+      1. effort allocation under constraints
+      2. constrained optimization under resource scarcity
+      3. optimal resource allocation under scarcity
+
+[#90]  canonical: hierarchical constraint satisfaction  (3 members, LLM named)
+    reason: 该名称最简洁地概括了簇中所有成员的核心概念，即分层处理约束满足问题，且符合维基百科词条和教科书小节的命名规范。
+      1. hierarchical decomposition of coupled constraints
+      2. hierarchical constraint satisfaction  ← canonical
+      3. hierarchical constraint priority ordering
+
+[#91]  canonical: feasibility optimization  (3 members, LLM named)
+    reason: 该名称剥离了所有修饰语，保留了核心概念“可行性”和“优化”，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. feasibility constrained prescriptive optimization
+      2. sequential optimization with feasibility constraint relaxation
+      3. stochastic constraint satisfaction with feasibility maximization
+
+[#92]  canonical: pareto optimality  (3 members, LLM named)
+    reason: 所有簇成员都围绕'Pareto Optimality'这一核心概念展开，且该概念是多目标优化中的基础和核心，符合维基百科词条和教科书章节的命名风格，并满足字数和层级要求。
+      1. constraint decomposition in multi objective optimization
+      2. constrained optimization with pareto efficiency
+      3. pareto optimality in multi objective optimization
+
+[#93]  canonical: screening equilibrium  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的核心共同概念，剥离了具体的实现方式（signaling, separating, contract）和冗余修饰，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. screening and signaling equilibrium
+      2. screening contract with separating equilibrium
+      3. screening and separating equilibrium
+
+[#94]  canonical: rubinstein bargaining model  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的基础模型，其他成员是其特定条件下的扩展，符合剥离修饰语的原则。
+      1. rubinstein bargaining model  ← canonical
+      2. rubinstein bargaining model with incomplete information
+      3. rubinstein bargaining model with outside options
+
+[#95]  canonical: outside option bargaining  (3 members, LLM named)
+    reason: 该名称简洁地捕捉了所有簇成员的核心概念，即在讨价还价过程中存在外部选择，并符合维基百科词条和教科书小节的命名规范，剥离了修饰语，且字数适中。
+      1. information asymmetry reduction and bilateral bargaining with outside option
+      2. bargaining with incomplete information and outside option
+      3. outside option expansion via bargaining theory
+
+[#96]  canonical: spence signaling  (3 members, LLM named)
+    reason: 该名称是该簇中所有成员的核心概念，剥离了所有修饰语，符合维基百科词条和教科书小节的命名规范，且字数符合要求。
+      1. spence signaling model
+      2. spence signaling  ← canonical
+      3. spence signaling model with cost of signaling
+
+[#97]  canonical: equilibrium selection  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的核心概念，其他成员都是其特定应用或机制的修饰语，符合剥离修饰语和字数限制的原则。
+      1. equilibrium selection  ← canonical
+      2. equilibrium selection through information revelation
+      3. equilibrium selection in signaling games
+
+[#98]  canonical: sequential game equilibrium  (3 members, LLM named)
+    reason: 该名称是簇成员的共同核心，剥离了具体的修饰语和应用场景，符合维基百科词条和教科书小节的命名规范，且字数适中。
+      1. sequential signaling game with endogenous decision timing
+      2. sequential game equilibrium with information timing
+      3. sequential game equilibrium with payoff reframing
+
+[#99]  canonical: signal detection theory  (3 members, LLM named)
+    reason: 根据维基百科准则和剥离修饰语的原则，'signal detection theory'是核心概念，其他成员是其特定应用或扩展。
+      1. signal detection theory  ← canonical
+      2. signal detection theory with noise reduction
+      3. signal detection theory with sufficient statistics
+
+[#100]  canonical: hidden markov model  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的基础概念，其他成员是其特定应用或变体，符合剥离修饰语和介观层级的要求。
+      1. hidden markov model with bayesian inference
+      2. hidden markov model  ← canonical
+      3. hidden markov model reduction
+
+[#101]  canonical: markov decision process  (3 members, LLM named)
+    reason: 该簇中的所有成员都是马尔可夫决策过程的变体，'markov decision process' 是其最核心、最基础且无修饰语的形式。
+      1. markov decision process  ← canonical
+      2. markov decision process with partial observability
+      3. state dependent markov decision process
+
+[#102]  canonical: revelation principle  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的共同核心，且符合维基百科词条和教科书小节的命名规范，同时满足字数限制和介观层级要求。
+      1. revelation principle  ← canonical
+      2. revelation principle with costly falsification
+      3. revelation principle with verifiable commitment
+
+[#103]  canonical: causal bayesian inference  (3 members, LLM named)
+    reason: 该名称最简洁地概括了簇成员的核心概念，即因果关系与贝叶斯推断的结合，并剥离了修饰语。
+      1. causal attribution through bayesian updating
+      2. bayesian inference with causal conditioning
+      3. causal attribution theory with bayesian inference
+
+[#104]  canonical: two sided matching  (3 members, LLM named)
+    reason: 所有簇成员的核心概念都是“two sided matching”，后续部分均为其特定条件或扩展，应被剥离。
+      1. two sided matching with endogenous search order
+      2. two sided matching with search friction
+      3. two sided matching with preference heterogeneity
+
+[#105]  canonical: reference point theory  (3 members, LLM named)
+    reason: 该名称是簇中成员的共同核心，且符合维基百科词条和教科书小节的命名规范，简洁且无修饰语。
+      1. prospect theory reference point shift
+      2. reference point theory  ← canonical
+      3. prospect theory with reference point manipulation
+
+[#106]  canonical: comparative advantage  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的基础概念，其他成员是其应用或扩展，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. comparative advantage  ← canonical
+      2. comparative advantage reallocation
+      3. comparative advantage and market segmentation
+
+[#107]  canonical: ulysses contract  (2 members, LLM named)
+    reason: 根据核心命名法则，剥离修饰语后，'ulysses contract' 是最纯粹、最核心的学术概念，且符合维基百科词条和字数要求。
+      1. ulysses contract  ← canonical
+      2. ulysses contract with irreversible option elimination
+
+[#108]  canonical: condorcet jury theorem  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，且符合维基百科词条和教科书小节的命名规范，无冗余修饰。
+      1. condorcet jury theorem  ← canonical
+      2. condorcet jury theorem with heterogeneous signal reliability
+
+[#109]  canonical: shannon channel capacity  (2 members, LLM named)
+    reason: 该名称是香农信息论中关于信道传输能力的核心概念，简洁且符合维基百科词条命名规范。
+      1. shannon information channel capacity model
+      2. shannon information theory channel model
+
+[#110]  canonical: channel capacity  (2 members, LLM named)
+    reason: 该名称是信息论中描述信道传输信息最大速率的核心概念，剥离了冗余和信息论等修饰语，符合维基百科词条和教科书小节的命名规范。
+      1. information theoretic channel capacity
+      2. information theory signal redundancy and channel capacity
+
+[#111]  canonical: dimensionality reduction  (2 members, LLM named)
+    reason: 两个簇成员都明确指向了降维这一核心概念，而'orthogonal decomposition'和'basis transformation'是实现降维的具体方法，应被剥离。
+      1. dimensionality reduction through orthogonal decomposition
+      2. dimensionality reduction via basis transformation
+
+[#112]  canonical: feature dimensionality  (2 members, LLM named)
+    reason: 该名称简洁地概括了特征空间中的维度概念，并隐含了分离性，符合维基百科词条和教科书小节的命名规范，且字数适中。
+      1. dimensionality and separability in feature space
+      2. dimensionality and feature separation
+
+[#113]  canonical: multi attribute utility theory  (2 members, LLM named)
+    reason: 第二个成员是第一个成员的子概念，因此第一个成员是更核心、更通用的概念，符合维基百科词条和教科书章节的命名习惯，且满足字数和修饰语剥离要求。
+      1. multi attribute utility theory  ← canonical
+      2. attribute weighting in multi attribute utility theory
+
+[#114]  canonical: temporal anchoring  (2 members, LLM named)
+    reason: 两个簇成员都围绕“时间锚定”这一核心概念，剥离修饰语后，这是最纯粹的表达。
+      1. temporal anchoring via documentary evidence
+      2. temporal precedence with documentary lock in
+
+[#115]  canonical: operant extinction  (2 members, LLM named)
+    reason: 该名称是操作性条件反射领域中描述强化物移除导致行为消退的标准术语，符合维基百科词条和教科书章节命名规范，且字数精简。
+      1. extinction through reinforcement removal
+      2. operant conditioning with extinction
+
+[#116]  canonical: moral hazard  (2 members, LLM named)
+    reason: 该簇成员均描述了道德风险现象，'monitoring'是其发生或分析的特定条件，而非核心概念本身，因此剥离修饰语后核心概念为'moral hazard'。
+      1. moral hazard under monitoring
+      2. moral hazard with monitoring
+
+[#117]  canonical: law of large numbers  (2 members, LLM named)
+    reason: 泊松过程与大数定律的组合是特定应用或扩展，大数定律是更核心、更基础的理论概念。
+      1. law of large numbers  ← canonical
+      2. poisson process and law of large numbers
+
+[#118]  canonical: denominator expansion  (2 members, LLM named)
+    reason: 两个簇成员的核心概念都是“分母展开”，修饰语和介词短语均被剥离，符合维基百科词条和教科书小节的命名规范，且字数适中。
+      1. denominator expansion under fixed numerator constraint
+      2. denominator expansion in rate metrics
+
+[#119]  canonical: decay model  (2 members, LLM named)
+    reason: 剥离了'signal'和'information'这两个具体的修饰语，提炼出核心概念'decay model'，符合维基百科词条和教科书小节的命名风格，且字数精简。
+      1. signal decay model
+      2. information decay model
+
+[#120]  canonical: compound interest optimization  (2 members, LLM named)
+    reason: 剥离了具体的修饰语和约束条件，保留了核心概念，符合维基百科词条和教科书小节的命名风格。
+      1. continuous compound interest optimization
+      2. compound interest optimization with constrained cash flow allocation
+
+[#121]  canonical: geometric brownian motion  (2 members, LLM named)
+    reason: 簇成员均围绕几何布朗运动这一核心随机过程展开，其他部分为修饰或应用场景。
+      1. geometric brownian motion with positive drift coefficient
+      2. real options valuation under geometric brownian motion
+
+[#122]  canonical: attractor basin dynamics  (2 members, LLM named)
+    reason: 该名称概括了簇成员中共同的核心概念：吸引子盆地的行为和变化，同时剥离了具体的'逃逸'或'反转'等修饰。
+      1. feedback loop reversal and attractor basin transition
+      2. attractor basin escape
+
+[#123]  canonical: first order linear differential equation  (2 members, LLM named)
+    reason: 根据核心命名法则，剥离修饰语'with parameter optimization'后，剩余部分即为最核心、最纯粹的学术概念。
+      1. first order linear differential equation with parameter optimization
+      2. first order linear differential equation  ← canonical
+
+[#124]  canonical: system decoupling  (2 members, LLM named)
+    reason: 该名称简洁地概括了将相互关联的动态系统分离的核心概念，符合维基百科词条和教科书小节的命名风格，并剥离了修饰语。
+      1. decoupling of coupled dynamical systems
+      2. decoupled system dynamics
+
+[#125]  canonical: bistability hysteresis  (2 members, LLM named)
+    reason: 该名称剥离了'dynamical system'和'tipping point dynamics'等修饰语，直接指出了簇成员共同的核心概念：双稳态和迟滞现象，符合维基百科词条和教科书小节的命名风格，且字数精简。
+      1. bistable dynamical system with hysteresis
+      2. tipping point dynamics with hysteresis
+
+[#126]  canonical: positive feedback acceleration  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，剥离了修饰语和冗余信息，符合维基百科词条和教科书小节的命名规范，且字数适中。
+      1. parallel positive feedback acceleration
+      2. positive feedback loop dynamics with time dependent acceleration
+
+[#127]  canonical: positive feedback  (2 members, LLM named)
+    reason: reinforcing feedback loop和positive feedback loop activation都指向了正反馈这一核心概念，剥离修饰语后，positive feedback是最简洁且标准的学术名词。
+      1. reinforcing feedback loop
+      2. positive feedback loop activation
+
+[#128]  canonical: loop interruption  (2 members, LLM named)
+    reason: 该名称剥离了正负性修饰和具体反馈类型，聚焦于中断循环这一核心动作，符合维基百科词条和教科书小节的简洁性与介观层级要求。
+      1. negative reinforcement loop disruption
+      2. positive feedback loop interruption
+
+[#129]  canonical: feedback loop analysis  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，剥离了具体操作（decoupling）和特定目标（stability），聚焦于反馈回路的通用分析方法。
+      1. feedback loop decoupling
+      2. feedback loop stability analysis
+
+[#130]  canonical: path dependency breaking  (2 members, LLM named)
+    reason: 两个簇成员都明确指出了“path dependency breaking”这一核心概念，而“via documentation lock in”和“via discrete reset”是实现该概念的具体方法或修饰语，应被剥离。
+      1. path dependency breaking via documentation lock in
+      2. path dependency breaking via discrete reset
+
+[#131]  canonical: path dependence  (2 members, LLM named)
+    reason: 该名称是描述系统演化依赖于其历史路径的核心概念，符合维基百科词条和教科书小节的命名规范，且字数精简，剥离了修饰语。
+      1. path dependent dynamics
+      2. compound growth dynamics with path dependency
+
+[#132]  canonical: regime switching  (2 members, LLM named)
+    reason: 该名称是簇中两个成员的共同核心，代表了模型或理论的核心概念，且符合维基百科词条和教科书小节的命名风格，字数精炼。
+      1. conditional expectation under regime switching
+      2. regime switching model
+
+[#133]  canonical: bifurcation  (2 members, LLM named)
+    reason: 该簇的两个成员都围绕“bifurcation”这一核心概念展开，而“dynamical system”和“parameter perturbation”是其常见的上下文或机制，根据剥离修饰语的原则，应予去除。
+      1. dynamical system bifurcation via parameter perturbation
+      2. bifurcation via parameter perturbation
+
+[#134]  canonical: stochastic barriers  (2 members, LLM named)
+    reason: 该名称简洁地概括了两个簇成员的核心概念，即随机过程中的边界条件，同时剥离了具体的应用场景和修饰语，符合维基百科词条和教科书小节的命名规范。
+      1. stochastic barrier model with absorbing threshold
+      2. stochastic control with absorbing barriers
+
+[#135]  canonical: threshold dynamics  (2 members, LLM named)
+    reason: 两个簇成员都围绕“threshold dynamics”展开，后续的“with state dependent transitions”和“with phase transitions”均是其具体的修饰或应用场景，应予剥离。
+      1. threshold dynamics with state dependent transitions
+      2. threshold dynamics with phase transitions
+
+[#136]  canonical: threshold state transition  (2 members, LLM named)
+    reason: 该名称剥离了所有修饰语，保留了核心概念“阈值”和“状态转换”，符合2-3个单词的长度限制，且具有介观层级。
+      1. temporal threshold mechanism in state transition
+      2. threshold based state transition model
+
+[#137]  canonical: threshold decision  (2 members, LLM named)
+    reason: 该名称是簇中两个成员的共同核心，剥离了'rule'和'model'这两个描述其形式的修饰语，符合维基百科词条和教科书小节的命名风格。
+      1. threshold decision rule
+      2. threshold decision model
+
+[#138]  canonical: likelihood ratio test  (2 members, LLM named)
+    reason: 似然比检验是序贯概率比检验的更一般形式和理论基础，且在统计学中具有更广泛的适用性和核心地位，符合介观层级和维基百科词条的特点。
+      1. sequential probability ratio test
+      2. likelihood ratio test  ← canonical
+
+[#139]  canonical: backward induction  (2 members, LLM named)
+    reason: 这两个概念都是特定情境下反向归纳的应用，反向归纳是其核心和最纯粹的学术概念。
+      1. backward induction on constraint satisfaction
+      2. backward induction with commitment
+
+[#140]  canonical: anchoring commitment  (2 members, LLM named)
+    reason: 该名称剥离了修饰语，保留了核心概念，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. anchoring as a commitment device
+      2. temporal commitment device with external anchoring
+
+[#141]  canonical: present value optimization  (2 members, LLM named)
+    reason: 剥离了具体的应用场景修饰语'with tax arbitrage'，保留了核心概念'present value optimization'，符合维基百科词条和教科书小节命名规范，且字数适中。
+      1. present value optimization  ← canonical
+      2. present value optimization with tax arbitrage
+
+[#142]  canonical: mental accounting  (2 members, LLM named)
+    reason: 该名称是维基百科和学术文献中普遍使用的标准术语，且已满足简洁性和介观层级要求。
+      1. mental accounting  ← canonical
+      2. mental accounting model
+
+[#143]  canonical: irreversibility  (2 members, LLM named)
+    reason: 该名称是两个簇成员的核心概念，且符合维基百科准则和字数限制，剥离了所有修饰语。
+      1. irreversibility effect
+      2. irreversibility premium in sequential decision making
+
+[#144]  canonical: sunk cost fallacy  (2 members, LLM named)
+    reason: 两个簇成员都围绕“sunk cost fallacy”展开，其余部分均为修饰语或具体方法，根据剥离修饰语原则，核心概念即为沉没成本谬误本身。
+      1. sunk cost fallacy prevention through option value preservation
+      2. sunk cost fallacy elimination via decision restructuring
+
+[#145]  canonical: stock and flow dynamics  (2 members, LLM named)
+    reason: 该名称是簇成员的共同核心，剥离了具体的约束条件和触发机制，符合维基百科词条和教科书小节的命名规范，且字数适中。
+      1. stock and flow dynamics with constraint reversal
+      2. stock and flow dynamics with threshold crossing
+
+[#146]  canonical: stochastic process simulation  (2 members, LLM named)
+    reason: 两个簇成员都描述了对随机过程进行模拟或比较的方法，剥离修饰语后，核心概念是随机过程的模拟。
+      1. monte carlo path sampling for stochastic process
+      2. parallel stochastic process racing
+
+[#147]  canonical: marginal optimization  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，剥离了具体的优化对象（return/incidence），符合简洁性和抽象性要求。
+      1. marginal return optimization
+      2. marginal incidence optimization
+
+[#148]  canonical: competing risks  (2 members, LLM named)
+    reason: Competing risks是更广义和标准的学术术语，涵盖了competing hazards的概念，且符合剥离修饰语和字数限制的要求。
+      1. competing hazards model
+      2. competing risks model
+
+[#149]  canonical: asymmetric loss  (2 members, LLM named)
+    reason: 该名称是簇中两个成员的核心共同概念，剥离了具体操作（optimization）和上下文（expected value under）的修饰语，符合维基百科词条和教科书小节的简洁性要求。
+      1. asymmetric loss function optimization
+      2. expected value under asymmetric loss
+
+[#150]  canonical: sequence of returns risk  (2 members, LLM named)
+    reason: 该名称是簇成员的共同核心概念，剥离了具体的应用场景和操作方式，符合维基百科词条和教科书小节的命名规范，且字数适中。
+      1. sequence of returns risk under convex withdrawal schedule
+      2. sequence of returns risk elimination
+
+[#151]  canonical: value at risk  (2 members, LLM named)
+    reason: Value at Risk是该簇的核心概念，'minimization'是其应用场景或操作，应被剥离。
+      1. value at risk minimization
+      2. value at risk  ← canonical
+
+[#152]  canonical: progressive taxation  (2 members, LLM named)
+    reason: 两个簇成员的核心共同点是“progressive taxation”，而“parameter identification”和“marginal rate optimization”是其应用或分析方法，属于修饰语范畴。
+      1. constrained parameter identification under progressive taxation
+      2. marginal rate optimization under progressive taxation
+
+[#153]  canonical: arbitrage  (2 members, LLM named)
+    reason: 簇成员均围绕'套利'这一核心经济金融概念展开，剥离具体套利对象后，'套利'是其最纯粹、最核心的学术名词。
+      1. rent growth arbitrage
+      2. marginal rate of return arbitrage
+
+[#154]  canonical: temporal decomposition  (2 members, LLM named)
+    reason: 两个簇成员都强调了'temporal'和'decomposition'的核心概念，剥离修饰语后，这是最纯粹且符合字数限制的表达。
+      1. dimensional decomposition via temporal separation
+      2. temporal constraint decomposition
+
+[#155]  canonical: intertemporal cost minimization  (2 members, LLM named)
+    reason: 两个簇成员的核心概念都围绕着跨期成本最小化，剥离了具体的实现方式和应用场景。
+      1. interest cost minimization via temporal deferral
+      2. intertemporal cost minimization with tax deferral option
+
+[#156]  canonical: intertemporal optimization  (2 members, LLM named)
+    reason: 两个成员都强调了跨时间（intertemporal/temporal）的优化，并涉及目标（objectives），但'separable'和'conflicting'是具体的约束或性质，应被剥离。
+      1. intertemporal optimization with separable objectives
+      2. temporal separation of conflicting objectives
+
+[#157]  canonical: temporal optimization  (2 members, LLM named)
+    reason: 剥离了具体应用场景和修饰语，保留了核心的时间维度优化概念，符合2-3个单词的长度要求。
+      1. time dependent optimization
+      2. temporal optimization in task queue dynamics
+
+[#158]  canonical: temporal optimization  (2 members, LLM named)
+    reason: 簇成员均涉及'temporal'维度下的优化或资源分配，'optimization'是其核心共性，且符合介观层级和字数限制。
+      1. temporal cost asymmetry optimization
+      2. temporal resource allocation problem
+
+[#159]  canonical: capital structure  (2 members, LLM named)
+    reason: 簇成员均围绕资本结构这一核心概念展开，一个关注成本最小化，一个关注整体优化，均是资本结构管理的不同侧面。
+      1. cost of capital minimization
+      2. capital structure optimization
+
+[#160]  canonical: budget constraint  (2 members, LLM named)
+    reason: 簇成员均围绕'预算约束'这一核心概念展开，'reframing via fungibility'和'modification'是其具体操作或属性，剥离修饰语后，'budget constraint'是其最纯粹、最核心的学术名词。
+      1. budget constraint reframing via fungibility
+      2. budget constraint modification
+
+[#161]  canonical: cost function  (2 members, LLM named)
+    reason: 簇成员均围绕成本函数本身的变化或特性展开，'cost function'是其最核心且无修饰的本体。
+      1. cost function discontinuity via institutional constraint
+      2. cost function restructuring
+
+[#162]  canonical: bellman equation  (2 members, LLM named)
+    reason: 该簇的两个成员都明确指向贝尔曼方程，其后的修饰语是具体的应用场景或概念，应被剥离。
+      1. bellman equation for sequential decision making
+      2. bellman equation option value
+
+[#163]  canonical: optimal stopping  (2 members, LLM named)
+    reason: 该簇的两个成员都围绕'optimal stopping'这一核心概念展开，'information revelation'是其修饰或特定情境，应被剥离。
+      1. optimal stopping problem with information revelation
+      2. information revelation and optimal stopping
+
+[#164]  canonical: decision tree  (2 members, LLM named)
+    reason: 两个成员都明确提及了'decision tree'，而其他部分是修饰语，描述了决策树的特定类型或特性，符合剥离修饰语的原则。
+      1. sequential decision tree with conditional probability branching
+      2. bayesian decision tree with path dependent outcomes
+
+[#165]  canonical: sequential decision making  (2 members, LLM named)
+    reason: 两个簇成员都围绕'sequential decision'展开，并涉及'simplification'或'reduction'，但这些是其过程或结果，而非核心概念本身。'Sequential Decision Making'是涵盖这些过程的通用且标准的学术术语。
+      1. sequential decision simplification under cognitive constraints
+      2. information reduction via sequential decision making
+
+[#166]  canonical: state space search  (2 members, LLM named)
+    reason: 两个成员都围绕'state space'和'search'的核心概念，剥离约束条件和具体方法后，此为最纯粹的共同主题。
+      1. state space search with deadline constraint
+      2. state space partitioning with hard constraints
+
+[#167]  canonical: resource allocation  (2 members, LLM named)
+    reason: 两个簇成员都围绕 'resource allocation' 这一核心概念，'portfolio' 和 'threshold' 均为其具体应用或模型类型，应被剥离。
+      1. portfolio resource allocation model
+      2. threshold model of resource allocation
+
+[#168]  canonical: system decoupling  (2 members, LLM named)
+    reason: 该名称最简洁地概括了簇成员中共同的核心概念，即通过某种方式将系统或变量解耦，且符合维基百科词条和字数限制。
+      1. system decomposition and constraint decoupling
+      2. variable decoupling via constraint imposition
+
+[#169]  canonical: lexicographic ordering  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，剥离了具体的应用场景（preference, optimization）和修饰语（with constraint hierarchy），符合维基百科词条和教科书小节的命名风格，且字数精简。
+      1. lexicographic preference ordering
+      2. lexicographic optimization with constraint hierarchy
+
+[#170]  canonical: constraint hierarchy  (2 members, LLM named)
+    reason: 两个簇成员都围绕“constraint hierarchy”这一核心概念展开，后续的修饰语均为其具体应用或实现细节，应予剥离。
+      1. constraint hierarchy with slack variable allocation
+      2. constraint hierarchy in feasibility analysis
+
+[#171]  canonical: constraint relaxation  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，剥离了具体的修饰词，符合维基百科词条和教科书小节的命名规范，且字数适中。
+      1. discontinuous constraint relaxation
+      2. sequential constraint relaxation
+
+[#172]  canonical: constraint set  (2 members, LLM named)
+    reason: 簇成员均围绕“约束集”这一核心概念进行操作或处理，剥离修饰语后，该词最能代表其共性。
+      1. constraint set convexification
+      2. constraint set manipulation
+
+[#173]  canonical: constrained optimization  (2 members, LLM named)
+    reason: 根据核心命名法则，剥离了所有修饰语和具体应用场景，提取出最核心的共同概念，且符合字数限制和维基百科准则。
+      1. sunk cost effect with constrained optimization
+      2. constrained optimization with irreversibility
+
+[#174]  canonical: credibility enhancement  (2 members, LLM named)
+    reason: 两个簇成员都明确提及了'credibility enhancement'，且该短语本身就是一个独立的学术概念，符合维基百科词条和教科书小节的命名风格，同时满足字数限制和介观层级要求，并剥离了修饰语。
+      1. signaling theory with credibility enhancement
+      2. outside option credibility enhancement
+
+[#175]  canonical: screening  (2 members, LLM named)
+    reason: screening是这两个术语的核心概念，mechanism和model是其具体表现形式，剥离修饰语后，screening最能代表该簇的本质。
+      1. screening mechanism
+      2. screening model
+
+[#176]  canonical: cost inversion  (2 members, LLM named)
+    reason: 两个簇成员都指向了成本反转的核心概念，'asymmetry' 是一个修饰语，应被剥离以获得最纯粹的学术名词。
+      1. cost asymmetry inversion
+      2. asymmetric cost inversion
+
+[#177]  canonical: resource allocation  (2 members, LLM named)
+    reason: 剥离了'under information asymmetry'这一修饰语，'cost allocation'是'resource allocation'的一种具体形式，因此'resource allocation'是更核心和通用的概念。
+      1. cost allocation under information asymmetry reduction
+      2. resource allocation under information asymmetry
+
+[#178]  canonical: bilateral monopoly  (2 members, LLM named)
+    reason: 两个簇成员的核心概念都是'bilateral monopoly'，其余部分是修饰语或特定情境。
+      1. bilateral monopoly with endogenous outside option
+      2. bilateral monopoly model with information asymmetry resolution
+
+[#179]  canonical: sequential bargaining  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，剥离了具体条件和修饰语，符合维基百科词条和教科书小节的命名规范，且字数精炼。
+      1. sequential bargaining with incomplete information
+      2. sequential bargaining model
+
+[#180]  canonical: bargaining model  (2 members, LLM named)
+    reason: 这两个模型都是特定类型的讨价还价模型，剥离修饰语后，其核心概念均为'Bargaining Model'。
+      1. alternating offer bargaining model
+      2. temporal bargaining model
+
+[#181]  canonical: signaling theory  (2 members, LLM named)
+    reason: 该名称是簇中两个成员的共同核心，且符合维基百科词条和教科书小节的命名规范，剥离了修饰语，并处于介观层级。
+      1. signaling theory  ← canonical
+      2. signaling theory with multiple emitters
+
+[#182]  canonical: sequential information game  (2 members, LLM named)
+    reason: 两个成员都描述了序贯博弈中信息结构或控制的核心作用，剥离修饰语后，'information'是共同且关键的要素。
+      1. sequential game with information structure reversal
+      2. sequential game with information control
+
+[#183]  canonical: information theory  (2 members, LLM named)
+    reason: 该簇的两个成员都涉及信息在博弈中的作用，一个侧重信息揭示，另一个侧重完美信息，共同指向信息在博弈论中的核心地位，因此信息理论是其最纯粹、最核心的抽象。
+      1. information revelation in incomplete information games
+      2. perfect information game theory
+
+[#184]  canonical: incomplete information games  (2 members, LLM named)
+    reason: 两个簇成员都明确提到了'incomplete information games'，这是它们共同的核心概念，而'sequential move advantage'和'network topology shift'是该类游戏中的具体现象或研究方向。
+      1. sequential move advantage in incomplete information games
+      2. network topology shift in incomplete information games
+
+[#185]  canonical: credible commitment  (2 members, LLM named)
+    reason: 两个簇成员的核心共同点是“credible commitment”，其他部分是其应用场景或具体形式，应被剥离。
+      1. extensive form game with credible commitment
+      2. finite horizon sequential bargaining with credible commitment
+
+[#186]  canonical: signal extraction  (2 members, LLM named)
+    reason: 剥离了具体的噪声类型修饰语，保留了核心概念，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. signal extraction problem
+      2. signal extraction with transient noise
+
+[#187]  canonical: markov chain transformation  (2 members, LLM named)
+    reason: 该名称概括了对马尔可夫链结构进行改变或调整的通用概念，涵盖了状态空间重构和吸收态避免等具体操作。
+      1. markov chain state space restructuring
+      2. markov chain absorbing state avoidance
+
+[#188]  canonical: preference revelation  (2 members, LLM named)
+    reason: 该名称是两个簇成员的核心共同概念，剥离了具体理论或机制的修饰语，符合维基百科词条和教科书小节的命名风格。
+      1. revealed preference theory
+      2. preference revelation mechanism
+
+[#189]  canonical: representativeness heuristic  (2 members, LLM named)
+    reason: 簇成员均围绕“representativeness heuristic”展开，其中一个成员是其修正，另一个是其去偏，因此该词是核心概念。
+      1. representativeness heuristic correction via likelihood salience
+      2. representativeness heuristic debiasing
+
+[#190]  canonical: bayesian framing  (2 members, LLM named)
+    reason: 该名称简洁地概括了贝叶斯推理中框架（frame）对信念更新的影响，符合维基百科词条和教科书小节的命名风格，并剥离了具体应用场景和修饰语。
+      1. bayesian belief updating with narrative framing
+      2. bayesian frame dependence
+
+[#191]  canonical: bayesian consistency  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心概念，剥离了具体的应用场景和修饰语，符合维基百科词条和教科书小节的命名风格，且字数精简。
+      1. bayesian consistency condition
+      2. bayesian inference with temporal signal consistency
+
+[#192]  canonical: causal identification  (2 members, LLM named)
+    reason: 两个簇成员都围绕'causal identification'展开，而'mechanism separation'和'incomplete information'是其具体方法或条件，应被剥离。
+      1. causal identification through mechanism separation
+      2. causal identification under incomplete information
+
+[#193]  canonical: search and matching  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，剥离了'theory'和'model'这两个修饰词，符合维基百科词条和教科书小节的命名风格，且字数适中。
+      1. search and matching theory
+      2. search and matching model
+
+[#194]  canonical: portfolio theory  (2 members, LLM named)
+    reason: modern portfolio theory是portfolio theory的一个特定发展阶段或分支，portfolio theory是更基础和通用的概念。
+      1. portfolio theory  ← canonical
+      2. modern portfolio theory
+
+[#195]  canonical: independent trials  (2 members, LLM named)
+    reason: 该名称是簇中两个成员的核心共同部分，剥离了具体的应用场景和修饰语，符合维基百科词条和教科书小节的命名风格，且字数精简。
+      1. independent trials model
+      2. portfolio theory with independent trials
+
+[#196]  canonical: threshold arbitrage  (2 members, LLM named)
+    reason: 两个簇成员都明确提到了'threshold'和'arbitrage'，且'market segmentation'是其应用场景或条件，而非核心概念本身。
+      1. threshold crossing model with market segmentation
+      2. threshold arbitrage across market segments
+
+[#197]  canonical: cheap talk elimination  (1 member, singleton)
+      1. cheap talk elimination  ← canonical
+
+[#198]  canonical: exit as information signal  (1 member, singleton)
+      1. exit as information signal  ← canonical
+
+[#199]  canonical: curriculum learning  (1 member, singleton)
+      1. curriculum learning  ← canonical
+
+[#200]  canonical: wright learning curve model  (1 member, singleton)
+      1. wright learning curve model  ← canonical
+
+[#201]  canonical: funnel conversion model  (1 member, singleton)
+      1. funnel conversion model  ← canonical
+
+[#202]  canonical: immunization theory  (1 member, singleton)
+      1. immunization theory  ← canonical
+
+[#203]  canonical: automaticity theory  (1 member, singleton)
+      1. automaticity theory  ← canonical
+
+[#204]  canonical: critical juncture theory  (1 member, singleton)
+      1. critical juncture theory  ← canonical
+
+[#205]  canonical: critical path method  (1 member, singleton)
+      1. critical path method  ← canonical
+
+[#206]  canonical: network flow model with weak ties  (1 member, singleton)
+      1. network flow model with weak ties  ← canonical
+
+[#207]  canonical: network centrality improvement through strategic positioning  (1 member, singleton)
+      1. network centrality improvement through strategic positioning  ← canonical
+
+[#208]  canonical: frequency and recency weighting in ranking  (1 member, singleton)
+      1. frequency and recency weighting in ranking  ← canonical
+
+[#209]  canonical: hold up problem  (1 member, singleton)
+      1. hold up problem  ← canonical
+
+[#210]  canonical: information set compression  (1 member, singleton)
+      1. information set compression  ← canonical
+
+[#211]  canonical: information set expansion and feasible set enlargement  (1 member, singleton)
+      1. information set expansion and feasible set enlargement  ← canonical
+
+[#212]  canonical: information theory rate distortion  (1 member, singleton)
+      1. information theory rate distortion  ← canonical
+
+[#213]  canonical: information theoretic matching  (1 member, singleton)
+      1. information theoretic matching  ← canonical
+
+[#214]  canonical: redundant channel coding  (1 member, singleton)
+      1. redundant channel coding  ← canonical
+
+[#215]  canonical: information value of experimentation  (1 member, singleton)
+      1. information value of experimentation  ← canonical
+
+[#216]  canonical: information cascade model  (1 member, singleton)
+      1. information cascade model  ← canonical
+
+[#217]  canonical: information completeness model  (1 member, singleton)
+      1. information completeness model  ← canonical
+
+[#218]  canonical: information state representation  (1 member, singleton)
+      1. information state representation  ← canonical
+
+[#219]  canonical: metric remapping and frame reinterpretation  (1 member, singleton)
+      1. metric remapping and frame reinterpretation  ← canonical
+
+[#220]  canonical: constraint repackaging via category manipulation  (1 member, singleton)
+      1. constraint repackaging via category manipulation  ← canonical
+
+[#221]  canonical: state space dimensionality reduction  (1 member, singleton)
+      1. state space dimensionality reduction  ← canonical
+
+[#222]  canonical: information dimensionality principle  (1 member, singleton)
+      1. information dimensionality principle  ← canonical
+
+[#223]  canonical: cosine similarity matching in high dimensional feature space  (1 member, singleton)
+      1. cosine similarity matching in high dimensional feature space  ← canonical
+
+[#224]  canonical: feature space transformation  (1 member, singleton)
+      1. feature space transformation  ← canonical
+
+[#225]  canonical: niche differentiation via orthogonal capability vectors  (1 member, singleton)
+      1. niche differentiation via orthogonal capability vectors  ← canonical
+
+[#226]  canonical: change of basis in vector space  (1 member, singleton)
+      1. change of basis in vector space  ← canonical
+
+[#227]  canonical: feature representation and classification boundary  (1 member, singleton)
+      1. feature representation and classification boundary  ← canonical
+
+[#228]  canonical: kolmogorov complexity reduction  (1 member, singleton)
+      1. kolmogorov complexity reduction  ← canonical
+
+[#229]  canonical: computational complexity reduction via indexing  (1 member, singleton)
+      1. computational complexity reduction via indexing  ← canonical
+
+[#230]  canonical: sensitivity analysis with scenario decomposition  (1 member, singleton)
+      1. sensitivity analysis with scenario decomposition  ← canonical
+
+[#231]  canonical: distributed problem solving with task decomposition  (1 member, singleton)
+      1. distributed problem solving with task decomposition  ← canonical
+
+[#232]  canonical: additive value decomposition  (1 member, singleton)
+      1. additive value decomposition  ← canonical
+
+[#233]  canonical: signal decomposition and redundant pathway architecture  (1 member, singleton)
+      1. signal decomposition and redundant pathway architecture  ← canonical
+
+[#234]  canonical: factor analysis  (1 member, singleton)
+      1. factor analysis  ← canonical
+
+[#235]  canonical: decision factorization  (1 member, singleton)
+      1. decision factorization  ← canonical
+
+[#236]  canonical: principal component analysis  (1 member, singleton)
+      1. principal component analysis  ← canonical
+
+[#237]  canonical: multi criteria decision analysis  (1 member, singleton)
+      1. multi criteria decision analysis  ← canonical
+
+[#238]  canonical: schelling point selection  (1 member, singleton)
+      1. schelling point selection  ← canonical
+
+[#239]  canonical: focal point equilibrium  (1 member, singleton)
+      1. focal point equilibrium  ← canonical
+
+[#240]  canonical: anchoring and framing effects  (1 member, singleton)
+      1. anchoring and framing effects  ← canonical
+
+[#241]  canonical: anchoring with justification constraint  (1 member, singleton)
+      1. anchoring with justification constraint  ← canonical
+
+[#242]  canonical: anchoring effect with bounded rationality  (1 member, singleton)
+      1. anchoring effect with bounded rationality  ← canonical
+
+[#243]  canonical: institutional memory effect with evidence crystallization  (1 member, singleton)
+      1. institutional memory effect with evidence crystallization  ← canonical
+
+[#244]  canonical: ruin theory  (1 member, singleton)
+      1. ruin theory  ← canonical
+
+[#245]  canonical: third party enforcement with penalty multiplication  (1 member, singleton)
+      1. third party enforcement with penalty multiplication  ← canonical
+
+[#246]  canonical: creditor enforcement hierarchy  (1 member, singleton)
+      1. creditor enforcement hierarchy  ← canonical
+
+[#247]  canonical: risk decomposition via institutional intermediation  (1 member, singleton)
+      1. risk decomposition via institutional intermediation  ← canonical
+
+[#248]  canonical: cost externalization through institutional choice  (1 member, singleton)
+      1. cost externalization through institutional choice  ← canonical
+
+[#249]  canonical: blame diffusion through institutional layering  (1 member, singleton)
+      1. blame diffusion through institutional layering  ← canonical
+
+[#250]  canonical: institutional hierarchy shift via formal channel routing  (1 member, singleton)
+      1. institutional hierarchy shift via formal channel routing  ← canonical
+
+[#251]  canonical: principal agent accountability via decision visibility  (1 member, singleton)
+      1. principal agent accountability via decision visibility  ← canonical
+
+[#252]  canonical: principal agent problem with endogenous effort supply  (1 member, singleton)
+      1. principal agent problem with endogenous effort supply  ← canonical
+
+[#253]  canonical: lyapunov stability theory  (1 member, singleton)
+      1. lyapunov stability theory  ← canonical
+
+[#254]  canonical: lagrangian relaxation  (1 member, singleton)
+      1. lagrangian relaxation  ← canonical
+
+[#255]  canonical: production function with factor substitution  (1 member, singleton)
+      1. production function with factor substitution  ← canonical
+
+[#256]  canonical: birthday problem inverse formulation  (1 member, singleton)
+      1. birthday problem inverse formulation  ← canonical
+
+[#257]  canonical: comparative exponential growth rate analysis  (1 member, singleton)
+      1. comparative exponential growth rate analysis  ← canonical
+
+[#258]  canonical: exponential growth with initial condition sensitivity  (1 member, singleton)
+      1. exponential growth with initial condition sensitivity  ← canonical
+
+[#259]  canonical: exponential decay with retrieval interruption  (1 member, singleton)
+      1. exponential decay with retrieval interruption  ← canonical
+
+[#260]  canonical: competing exponential processes with rate modulation  (1 member, singleton)
+      1. competing exponential processes with rate modulation  ← canonical
+
+[#261]  canonical: temporal decay function  (1 member, singleton)
+      1. temporal decay function  ← canonical
+
+[#262]  canonical: state machine with time dependent decay dynamics  (1 member, singleton)
+      1. state machine with time dependent decay dynamics  ← canonical
+
+[#263]  canonical: exponential decay with staggered phase shifts  (1 member, singleton)
+      1. exponential decay with staggered phase shifts  ← canonical
+
+[#264]  canonical: weighted linear scoring model with time decay  (1 member, singleton)
+      1. weighted linear scoring model with time decay  ← canonical
+
+[#265]  canonical: compound growth model with capital reinvestment  (1 member, singleton)
+      1. compound growth model with capital reinvestment  ← canonical
+
+[#266]  canonical: compound interest with multiplicative fee drag  (1 member, singleton)
+      1. compound interest with multiplicative fee drag  ← canonical
+
+[#267]  canonical: continuous compounding versus discrete optimization cycles  (1 member, singleton)
+      1. continuous compounding versus discrete optimization cycles  ← canonical
+
+[#268]  canonical: discrete time compounding interruption  (1 member, singleton)
+      1. discrete time compounding interruption  ← canonical
+
+[#269]  canonical: geometric compounding with heterogeneous discount rates  (1 member, singleton)
+      1. geometric compounding with heterogeneous discount rates  ← canonical
+
+[#270]  canonical: volatility convexity lemma in continuous compounding  (1 member, singleton)
+      1. volatility convexity lemma in continuous compounding  ← canonical
+
+[#271]  canonical: geometric series with multiplicative feedback loop  (1 member, singleton)
+      1. geometric series with multiplicative feedback loop  ← canonical
+
+[#272]  canonical: geometric series accumulation with friction term  (1 member, singleton)
+      1. geometric series accumulation with friction term  ← canonical
+
+[#273]  canonical: geometric progression with constant periodic additions  (1 member, singleton)
+      1. geometric progression with constant periodic additions  ← canonical
+
+[#274]  canonical: constrained optimization under regime identification  (1 member, singleton)
+      1. constrained optimization under regime identification  ← canonical
+
+[#275]  canonical: adaptive control and system identification  (1 member, singleton)
+      1. adaptive control and system identification  ← canonical
+
+[#276]  canonical: parameter identification and observability augmentation  (1 member, singleton)
+      1. parameter identification and observability augmentation  ← canonical
+
+[#277]  canonical: differential equations  (1 member, singleton)
+      1. differential equations  ← canonical
+
+[#278]  canonical: coupled linear dynamical systems with priority ordered activation  (1 member, singleton)
+      1. coupled linear dynamical systems with priority ordered activation  ← canonical
+
+[#279]  canonical: observability and control in dynamical systems  (1 member, singleton)
+      1. observability and control in dynamical systems  ← canonical
+
+[#280]  canonical: temporal difference learning with feedback loop interruption  (1 member, singleton)
+      1. temporal difference learning with feedback loop interruption  ← canonical
+
+[#281]  canonical: reinforcement learning with delayed vs immediate feedback  (1 member, singleton)
+      1. reinforcement learning with delayed vs immediate feedback  ← canonical
+
+[#282]  canonical: positive feedback with state dependent rate  (1 member, singleton)
+      1. positive feedback with state dependent rate  ← canonical
+
+[#283]  canonical: feedback control with measurement noise filtering  (1 member, singleton)
+      1. feedback control with measurement noise filtering  ← canonical
+
+[#284]  canonical: explicit target setting with feedback control  (1 member, singleton)
+      1. explicit target setting with feedback control  ← canonical
+
+[#285]  canonical: feedback loop breaking with leverage point identification  (1 member, singleton)
+      1. feedback loop breaking with leverage point identification  ← canonical
+
+[#286]  canonical: deterministic accumulation with path independence  (1 member, singleton)
+      1. deterministic accumulation with path independence  ← canonical
+
+[#287]  canonical: path dependency and non commutative portfolio growth  (1 member, singleton)
+      1. path dependency and non commutative portfolio growth  ← canonical
+
+[#288]  canonical: task switching overhead model  (1 member, singleton)
+      1. task switching overhead model  ← canonical
+
+[#289]  canonical: threshold model with cost discontinuity  (1 member, singleton)
+      1. threshold model with cost discontinuity  ← canonical
+
+[#290]  canonical: threshold response function  (1 member, singleton)
+      1. threshold response function  ← canonical
+
+[#291]  canonical: threshold exceedance avoidance  (1 member, singleton)
+      1. threshold exceedance avoidance  ← canonical
+
+[#292]  canonical: resilience theory with buffer stock  (1 member, singleton)
+      1. resilience theory with buffer stock  ← canonical
+
+[#293]  canonical: resilience through buffering and shock absorption capacity  (1 member, singleton)
+      1. resilience through buffering and shock absorption capacity  ← canonical
+
+[#294]  canonical: series parallel system reliability  (1 member, singleton)
+      1. series parallel system reliability  ← canonical
+
+[#295]  canonical: serial system bottleneck analysis  (1 member, singleton)
+      1. serial system bottleneck analysis  ← canonical
+
+[#296]  canonical: cascade failure model with redundancy  (1 member, singleton)
+      1. cascade failure model with redundancy  ← canonical
+
+[#297]  canonical: redundancy and fault tolerance  (1 member, singleton)
+      1. redundancy and fault tolerance  ← canonical
+
+[#298]  canonical: information redundancy elimination  (1 member, singleton)
+      1. information redundancy elimination  ← canonical
+
+[#299]  canonical: path redundancy principle  (1 member, singleton)
+      1. path redundancy principle  ← canonical
+
+[#300]  canonical: difference in differences estimation  (1 member, singleton)
+      1. difference in differences estimation  ← canonical
+
+[#301]  canonical: resource regeneration rate differential  (1 member, singleton)
+      1. resource regeneration rate differential  ← canonical
+
+[#302]  canonical: stratified sampling with heterogeneous success probabilities  (1 member, singleton)
+      1. stratified sampling with heterogeneous success probabilities  ← canonical
+
+[#303]  canonical: stratified sampling with pre filtered population characteristics  (1 member, singleton)
+      1. stratified sampling with pre filtered population characteristics  ← canonical
+
+[#304]  canonical: kelly criterion  (1 member, singleton)
+      1. kelly criterion  ← canonical
+
+[#305]  canonical: function specification and verification  (1 member, singleton)
+      1. function specification and verification  ← canonical
+
+[#306]  canonical: measurement and verification problem  (1 member, singleton)
+      1. measurement and verification problem  ← canonical
+
+[#307]  canonical: backwards induction elimination  (1 member, singleton)
+      1. backwards induction elimination  ← canonical
+
+[#308]  canonical: commitment cost asymmetry model  (1 member, singleton)
+      1. commitment cost asymmetry model  ← canonical
+
+[#309]  canonical: credible commitment problem  (1 member, singleton)
+      1. credible commitment problem  ← canonical
+
+[#310]  canonical: choice set restriction via pre commitment  (1 member, singleton)
+      1. choice set restriction via pre commitment  ← canonical
+
+[#311]  canonical: principal agent problem with commitment device  (1 member, singleton)
+      1. principal agent problem with commitment device  ← canonical
+
+[#312]  canonical: compound growth with delayed initiation cost  (1 member, singleton)
+      1. compound growth with delayed initiation cost  ← canonical
+
+[#313]  canonical: sequential cost uncertainty with escalation commitment  (1 member, singleton)
+      1. sequential cost uncertainty with escalation commitment  ← canonical
+
+[#314]  canonical: heterogeneous cost rate prioritization  (1 member, singleton)
+      1. heterogeneous cost rate prioritization  ← canonical
+
+[#315]  canonical: proportional cost allocation by tenure ratio  (1 member, singleton)
+      1. proportional cost allocation by tenure ratio  ← canonical
+
+[#316]  canonical: reinforcement learning with exploration and exploitation  (1 member, singleton)
+      1. reinforcement learning with exploration and exploitation  ← canonical
+
+[#317]  canonical: temporal opportunity window exploitation  (1 member, singleton)
+      1. temporal opportunity window exploitation  ← canonical
+
+[#318]  canonical: contingent information acquisition strategy  (1 member, singleton)
+      1. contingent information acquisition strategy  ← canonical
+
+[#319]  canonical: present value of growth opportunities  (1 member, singleton)
+      1. present value of growth opportunities  ← canonical
+
+[#320]  canonical: exponential discounting with threshold trigger  (1 member, singleton)
+      1. exponential discounting with threshold trigger  ← canonical
+
+[#321]  canonical: reservation wage mechanism  (1 member, singleton)
+      1. reservation wage mechanism  ← canonical
+
+[#322]  canonical: reservation price theory  (1 member, singleton)
+      1. reservation price theory  ← canonical
+
+[#323]  canonical: reservation price adjustment via outside option  (1 member, singleton)
+      1. reservation price adjustment via outside option  ← canonical
+
+[#324]  canonical: real options theory with employment switching  (1 member, singleton)
+      1. real options theory with employment switching  ← canonical
+
+[#325]  canonical: option value expansion via time indexed information revelation  (1 member, singleton)
+      1. option value expansion via time indexed information revelation  ← canonical
+
+[#326]  canonical: option pricing with time decay and irreversible hiring  (1 member, singleton)
+      1. option pricing with time decay and irreversible hiring  ← canonical
+
+[#327]  canonical: precautionary savings theory  (1 member, singleton)
+      1. precautionary savings theory  ← canonical
+
+[#328]  canonical: sunk cost decoupling via information structure isolation  (1 member, singleton)
+      1. sunk cost decoupling via information structure isolation  ← canonical
+
+[#329]  canonical: accelerating depreciation model  (1 member, singleton)
+      1. accelerating depreciation model  ← canonical
+
+[#330]  canonical: linear accumulation model  (1 member, singleton)
+      1. linear accumulation model  ← canonical
+
+[#331]  canonical: life cycle consumption and asset location model  (1 member, singleton)
+      1. life cycle consumption and asset location model  ← canonical
+
+[#332]  canonical: debt service capacity constraint with feedback stability  (1 member, singleton)
+      1. debt service capacity constraint with feedback stability  ← canonical
+
+[#333]  canonical: debt service coverage ratio constraint  (1 member, singleton)
+      1. debt service coverage ratio constraint  ← canonical
+
+[#334]  canonical: debt to income ratio dynamics with income growth  (1 member, singleton)
+      1. debt to income ratio dynamics with income growth  ← canonical
+
+[#335]  canonical: differential equation model of debt dynamics  (1 member, singleton)
+      1. differential equation model of debt dynamics  ← canonical
+
+[#336]  canonical: piecewise linear cash flow dynamics with structural phase transition  (1 member, singleton)
+      1. piecewise linear cash flow dynamics with structural phase transition  ← canonical
+
+[#337]  canonical: stochastic liquidity management  (1 member, singleton)
+      1. stochastic liquidity management  ← canonical
+
+[#338]  canonical: liquidity preference under depreciation heterogeneity  (1 member, singleton)
+      1. liquidity preference under depreciation heterogeneity  ← canonical
+
+[#339]  canonical: stock flow consistency model  (1 member, singleton)
+      1. stock flow consistency model  ← canonical
+
+[#340]  canonical: supply demand mismatch resolution model  (1 member, singleton)
+      1. supply demand mismatch resolution model  ← canonical
+
+[#341]  canonical: inventory buffer model for stochastic demand  (1 member, singleton)
+      1. inventory buffer model for stochastic demand  ← canonical
+
+[#342]  canonical: stock accumulation with threshold constraint  (1 member, singleton)
+      1. stock accumulation with threshold constraint  ← canonical
+
+[#343]  canonical: safety stock model  (1 member, singleton)
+      1. safety stock model  ← canonical
+
+[#344]  canonical: stochastic cash flow variance reduction via asset substitution  (1 member, singleton)
+      1. stochastic cash flow variance reduction via asset substitution  ← canonical
+
+[#345]  canonical: stochastic volatility reduction  (1 member, singleton)
+      1. stochastic volatility reduction  ← canonical
+
+[#346]  canonical: stochastic gradient estimation via active sampling  (1 member, singleton)
+      1. stochastic gradient estimation via active sampling  ← canonical
+
+[#347]  canonical: information gain maximization  (1 member, singleton)
+      1. information gain maximization  ← canonical
+
+[#348]  canonical: expected value maximization with filtering  (1 member, singleton)
+      1. expected value maximization with filtering  ← canonical
+
+[#349]  canonical: marginal rate of return equalization  (1 member, singleton)
+      1. marginal rate of return equalization  ← canonical
+
+[#350]  canonical: exponential amplification of marginal cost reduction  (1 member, singleton)
+      1. exponential amplification of marginal cost reduction  ← canonical
+
+[#351]  canonical: variance reduction through repeated sampling with improved base rate  (1 member, singleton)
+      1. variance reduction through repeated sampling with improved base rate  ← canonical
+
+[#352]  canonical: variance reduction through conditional commitment  (1 member, singleton)
+      1. variance reduction through conditional commitment  ← canonical
+
+[#353]  canonical: ruin probability minimization through buffer accumulation and variance reduction  (1 member, singleton)
+      1. ruin probability minimization through buffer accumulation and variance reduction  ← canonical
+
+[#354]  canonical: dollar cost averaging variance reduction  (1 member, singleton)
+      1. dollar cost averaging variance reduction  ← canonical
+
+[#355]  canonical: liability matching model  (1 member, singleton)
+      1. liability matching model  ← canonical
+
+[#356]  canonical: bayesian liability cascade  (1 member, singleton)
+      1. bayesian liability cascade  ← canonical
+
+[#357]  canonical: feasible set restructuring via liability partition  (1 member, singleton)
+      1. feasible set restructuring via liability partition  ← canonical
+
+[#358]  canonical: hazard rate model  (1 member, singleton)
+      1. hazard rate model  ← canonical
+
+[#359]  canonical: critical load threshold model  (1 member, singleton)
+      1. critical load threshold model  ← canonical
+
+[#360]  canonical: loss harvesting as negative income shock offset  (1 member, singleton)
+      1. loss harvesting as negative income shock offset  ← canonical
+
+[#361]  canonical: negative equity trap escape through principal acceleration threshold  (1 member, singleton)
+      1. negative equity trap escape through principal acceleration threshold  ← canonical
+
+[#362]  canonical: reference point shift in loss aversion  (1 member, singleton)
+      1. reference point shift in loss aversion  ← canonical
+
+[#363]  canonical: certainty equivalent analysis under dual return sources  (1 member, singleton)
+      1. certainty equivalent analysis under dual return sources  ← canonical
+
+[#364]  canonical: shortfall risk minimization  (1 member, singleton)
+      1. shortfall risk minimization  ← canonical
+
+[#365]  canonical: correlation risk reduction  (1 member, singleton)
+      1. correlation risk reduction  ← canonical
+
+[#366]  canonical: copula based risk aggregation  (1 member, singleton)
+      1. copula based risk aggregation  ← canonical
+
+[#367]  canonical: queueing theory with capacity constraints  (1 member, singleton)
+      1. queueing theory with capacity constraints  ← canonical
+
+[#368]  canonical: priority queue optimization  (1 member, singleton)
+      1. priority queue optimization  ← canonical
+
+[#369]  canonical: linear superposition of tax liabilities  (1 member, singleton)
+      1. linear superposition of tax liabilities  ← canonical
+
+[#370]  canonical: arbitrage pricing theory  (1 member, singleton)
+      1. arbitrage pricing theory  ← canonical
+
+[#371]  canonical: tax arbitrage through account heterogeneity  (1 member, singleton)
+      1. tax arbitrage through account heterogeneity  ← canonical
+
+[#372]  canonical: temporal constraint reduction of search space  (1 member, singleton)
+      1. temporal constraint reduction of search space  ← canonical
+
+[#373]  canonical: cash flow timing mismatch resolution through temporal disaggregation  (1 member, singleton)
+      1. cash flow timing mismatch resolution through temporal disaggregation  ← canonical
+
+[#374]  canonical: temporal separation of income signal and spending decision  (1 member, singleton)
+      1. temporal separation of income signal and spending decision  ← canonical
+
+[#375]  canonical: temporal decoupling of fixed costs from variable returns  (1 member, singleton)
+      1. temporal decoupling of fixed costs from variable returns  ← canonical
+
+[#376]  canonical: temporal mechanism design  (1 member, singleton)
+      1. temporal mechanism design  ← canonical
+
+[#377]  canonical: pareto efficiency reallocation  (1 member, singleton)
+      1. pareto efficiency reallocation  ← canonical
+
+[#378]  canonical: production possibilities frontier  (1 member, singleton)
+      1. production possibilities frontier  ← canonical
+
+[#379]  canonical: cost dynamics and capital conversion  (1 member, singleton)
+      1. cost dynamics and capital conversion  ← canonical
+
+[#380]  canonical: cost minimization under alternative production technologies  (1 member, singleton)
+      1. cost minimization under alternative production technologies  ← canonical
+
+[#381]  canonical: least cost avoider principle  (1 member, singleton)
+      1. least cost avoider principle  ← canonical
+
+[#382]  canonical: opportunity cost principle  (1 member, singleton)
+      1. opportunity cost principle  ← canonical
+
+[#383]  canonical: leverage equity tradeoff  (1 member, singleton)
+      1. leverage equity tradeoff  ← canonical
+
+[#384]  canonical: operating leverage model  (1 member, singleton)
+      1. operating leverage model  ← canonical
+
+[#385]  canonical: break even analysis  (1 member, singleton)
+      1. break even analysis  ← canonical
+
+[#386]  canonical: working capital cycle compression  (1 member, singleton)
+      1. working capital cycle compression  ← canonical
+
+[#387]  canonical: search space concentration with local optimization  (1 member, singleton)
+      1. search space concentration with local optimization  ← canonical
+
+[#388]  canonical: multi dimensional local optimality testing  (1 member, singleton)
+      1. multi dimensional local optimality testing  ← canonical
+
+[#389]  canonical: knapsack problem with debt restructuring  (1 member, singleton)
+      1. knapsack problem with debt restructuring  ← canonical
+
+[#390]  canonical: fractional knapsack problem with nonlinear value function  (1 member, singleton)
+      1. fractional knapsack problem with nonlinear value function  ← canonical
+
+[#391]  canonical: debt snowball with dynamic cash flow reallocation  (1 member, singleton)
+      1. debt snowball with dynamic cash flow reallocation  ← canonical
+
+[#392]  canonical: debt avalanche algorithm  (1 member, singleton)
+      1. debt avalanche algorithm  ← canonical
+
+[#393]  canonical: debt consolidation and sequencing optimization  (1 member, singleton)
+      1. debt consolidation and sequencing optimization  ← canonical
+
+[#394]  canonical: separation theorem with behavioral cost function  (1 member, singleton)
+      1. separation theorem with behavioral cost function  ← canonical
+
+[#395]  canonical: separability of decision variables  (1 member, singleton)
+      1. separability of decision variables  ← canonical
+
+[#396]  canonical: optimal stopping and queue position dynamics  (1 member, singleton)
+      1. optimal stopping and queue position dynamics  ← canonical
+
+[#397]  canonical: finite horizon cost minimization with irreversible state transition  (1 member, singleton)
+      1. finite horizon cost minimization with irreversible state transition  ← canonical
+
+[#398]  canonical: stopping time problem  (1 member, singleton)
+      1. stopping time problem  ← canonical
+
+[#399]  canonical: minimax regret under incomplete information  (1 member, singleton)
+      1. minimax regret under incomplete information  ← canonical
+
+[#400]  canonical: convex payoff dynamics  (1 member, singleton)
+      1. convex payoff dynamics  ← canonical
+
+[#401]  canonical: convex time budget allocation  (1 member, singleton)
+      1. convex time budget allocation  ← canonical
+
+[#402]  canonical: convex cost function with state dependent productivity  (1 member, singleton)
+      1. convex cost function with state dependent productivity  ← canonical
+
+[#403]  canonical: convex risk measure framework  (1 member, singleton)
+      1. convex risk measure framework  ← canonical
+
+[#404]  canonical: projection onto convex constraint set  (1 member, singleton)
+      1. projection onto convex constraint set  ← canonical
+
+[#405]  canonical: jensen inequality for convex functions  (1 member, singleton)
+      1. jensen inequality for convex functions  ← canonical
+
+[#406]  canonical: constrained dynamic programming with interest rate arbitrage  (1 member, singleton)
+      1. constrained dynamic programming with interest rate arbitrage  ← canonical
+
+[#407]  canonical: stochastic control with human capital constraint  (1 member, singleton)
+      1. stochastic control with human capital constraint  ← canonical
+
+[#408]  canonical: state space reachability with path minimization  (1 member, singleton)
+      1. state space reachability with path minimization  ← canonical
+
+[#409]  canonical: state space expansion via savings rate optimization  (1 member, singleton)
+      1. state space expansion via savings rate optimization  ← canonical
+
+[#410]  canonical: information refinement and state space discretization  (1 member, singleton)
+      1. information refinement and state space discretization  ← canonical
+
+[#411]  canonical: multi agent constraint competition  (1 member, singleton)
+      1. multi agent constraint competition  ← canonical
+
+[#412]  canonical: competing dynamics with hard deadline  (1 member, singleton)
+      1. competing dynamics with hard deadline  ← canonical
+
+[#413]  canonical: threshold based resource allocation with state dependent utility maximization  (1 member, singleton)
+      1. threshold based resource allocation with state dependent utility maximization  ← canonical
+
+[#414]  canonical: zero sum versus positive sum resource reallocation  (1 member, singleton)
+      1. zero sum versus positive sum resource reallocation  ← canonical
+
+[#415]  canonical: slack variable elimination in resource constraints  (1 member, singleton)
+      1. slack variable elimination in resource constraints  ← canonical
+
+[#416]  canonical: constraint substitution via environmental design  (1 member, singleton)
+      1. constraint substitution via environmental design  ← canonical
+
+[#417]  canonical: topological sorting with precedence constraints  (1 member, singleton)
+      1. topological sorting with precedence constraints  ← canonical
+
+[#418]  canonical: worst case analysis with constraint binding  (1 member, singleton)
+      1. worst case analysis with constraint binding  ← canonical
+
+[#419]  canonical: constraint binding analysis via lagrangian duality  (1 member, singleton)
+      1. constraint binding analysis via lagrangian duality  ← canonical
+
+[#420]  canonical: option exercise under binding constraint  (1 member, singleton)
+      1. option exercise under binding constraint  ← canonical
+
+[#421]  canonical: binding constraint removal  (1 member, singleton)
+      1. binding constraint removal  ← canonical
+
+[#422]  canonical: skill accumulation under constraint binding  (1 member, singleton)
+      1. skill accumulation under constraint binding  ← canonical
+
+[#423]  canonical: constraint relaxation and bandwidth optimization  (1 member, singleton)
+      1. constraint relaxation and bandwidth optimization  ← canonical
+
+[#424]  canonical: constraint set expansion via information asymmetry resolution  (1 member, singleton)
+      1. constraint set expansion via information asymmetry resolution  ← canonical
+
+[#425]  canonical: state contingent portfolio optimization  (1 member, singleton)
+      1. state contingent portfolio optimization  ← canonical
+
+[#426]  canonical: constraint qualification and feasible set revision  (1 member, singleton)
+      1. constraint qualification and feasible set revision  ← canonical
+
+[#427]  canonical: market clearing dynamics  (1 member, singleton)
+      1. market clearing dynamics  ← canonical
+
+[#428]  canonical: reputation dynamics model  (1 member, singleton)
+      1. reputation dynamics model  ← canonical
+
+[#429]  canonical: common knowledge equilibrium  (1 member, singleton)
+      1. common knowledge equilibrium  ← canonical
+
+[#430]  canonical: framing effect with option proliferation  (1 member, singleton)
+      1. framing effect with option proliferation  ← canonical
+
+[#431]  canonical: sequential screening with strategic information revelation  (1 member, singleton)
+      1. sequential screening with strategic information revelation  ← canonical
+
+[#432]  canonical: self selection  (1 member, singleton)
+      1. self selection  ← canonical
+
+[#433]  canonical: fixed cost allocation and economies of scale reversal  (1 member, singleton)
+      1. fixed cost allocation and economies of scale reversal  ← canonical
+
+[#434]  canonical: information asymmetry reduction through temporal control  (1 member, singleton)
+      1. information asymmetry reduction through temporal control  ← canonical
+
+[#435]  canonical: information asymmetry and strategic disclosure timing  (1 member, singleton)
+      1. information asymmetry and strategic disclosure timing  ← canonical
+
+[#436]  canonical: power asymmetry model  (1 member, singleton)
+      1. power asymmetry model  ← canonical
+
+[#437]  canonical: threat point shift in cooperative bargaining  (1 member, singleton)
+      1. threat point shift in cooperative bargaining  ← canonical
+
+[#438]  canonical: coase bargaining with endogenous transaction cost reduction  (1 member, singleton)
+      1. coase bargaining with endogenous transaction cost reduction  ← canonical
+
+[#439]  canonical: shapley bargaining model  (1 member, singleton)
+      1. shapley bargaining model  ← canonical
+
+[#440]  canonical: incomplete contract theory with ex post renegotiation  (1 member, singleton)
+      1. incomplete contract theory with ex post renegotiation  ← canonical
+
+[#441]  canonical: signaling game with type inference  (1 member, singleton)
+      1. signaling game with type inference  ← canonical
+
+[#442]  canonical: strategic framing shift from signaling game to coordination problem  (1 member, singleton)
+      1. strategic framing shift from signaling game to coordination problem  ← canonical
+
+[#443]  canonical: coordination game with information sharing  (1 member, singleton)
+      1. coordination game with information sharing  ← canonical
+
+[#444]  canonical: coalition formation in cooperative game theory  (1 member, singleton)
+      1. coalition formation in cooperative game theory  ← canonical
+
+[#445]  canonical: extensive form game restructuring via move elimination  (1 member, singleton)
+      1. extensive form game restructuring via move elimination  ← canonical
+
+[#446]  canonical: change of game participants and payoff structure  (1 member, singleton)
+      1. change of game participants and payoff structure  ← canonical
+
+[#447]  canonical: subgame perfect equilibrium  (1 member, singleton)
+      1. subgame perfect equilibrium  ← canonical
+
+[#448]  canonical: signal averaging through independent channels  (1 member, singleton)
+      1. signal averaging through independent channels  ← canonical
+
+[#449]  canonical: feedback amplification and signal separation  (1 member, singleton)
+      1. feedback amplification and signal separation  ← canonical
+
+[#450]  canonical: signal to noise ratio optimization  (1 member, singleton)
+      1. signal to noise ratio optimization  ← canonical
+
+[#451]  canonical: statistical pattern detection  (1 member, singleton)
+      1. statistical pattern detection  ← canonical
+
+[#452]  canonical: reward function insertion into fixed state system  (1 member, singleton)
+      1. reward function insertion into fixed state system  ← canonical
+
+[#453]  canonical: signaling through state variable improvement  (1 member, singleton)
+      1. signaling through state variable improvement  ← canonical
+
+[#454]  canonical: revealed preference through choice set expansion  (1 member, singleton)
+      1. revealed preference through choice set expansion  ← canonical
+
+[#455]  canonical: revealed preference theory with constraint misspecification  (1 member, singleton)
+      1. revealed preference theory with constraint misspecification  ← canonical
+
+[#456]  canonical: endogenous preference revelation prior to exogenous signal processing  (1 member, singleton)
+      1. endogenous preference revelation prior to exogenous signal processing  ← canonical
+
+[#457]  canonical: availability heuristic with signal salience manipulation  (1 member, singleton)
+      1. availability heuristic with signal salience manipulation  ← canonical
+
+[#458]  canonical: bayesian hypothesis testing with sequential sampling  (1 member, singleton)
+      1. bayesian hypothesis testing with sequential sampling  ← canonical
+
+[#459]  canonical: bayesian verification under model uncertainty  (1 member, singleton)
+      1. bayesian verification under model uncertainty  ← canonical
+
+[#460]  canonical: causal inference with temporal trajectory  (1 member, singleton)
+      1. causal inference with temporal trajectory  ← canonical
+
+[#461]  canonical: causal inference via randomized intervention  (1 member, singleton)
+      1. causal inference via randomized intervention  ← canonical
+
+[#462]  canonical: causal attribution timeline locking  (1 member, singleton)
+      1. causal attribution timeline locking  ← canonical
+
+[#463]  canonical: causal decomposition under confounding  (1 member, singleton)
+      1. causal decomposition under confounding  ← canonical
+
+[#464]  canonical: threshold autoregressive model for type inference  (1 member, singleton)
+      1. threshold autoregressive model for type inference  ← canonical
+
+[#465]  canonical: trajectory based inference  (1 member, singleton)
+      1. trajectory based inference  ← canonical
+
+[#466]  canonical: parallel search model  (1 member, singleton)
+      1. parallel search model  ← canonical
+
+[#467]  canonical: assortative matching  (1 member, singleton)
+      1. assortative matching  ← canonical
+
+[#468]  canonical: preferential attachment in information search  (1 member, singleton)
+      1. preferential attachment in information search  ← canonical
+
+[#469]  canonical: job search theory  (1 member, singleton)
+      1. job search theory  ← canonical
+
+[#470]  canonical: rent seeking model  (1 member, singleton)
+      1. rent seeking model  ← canonical
+
+[#471]  canonical: expectation alignment model  (1 member, singleton)
+      1. expectation alignment model  ← canonical
+
+[#472]  canonical: attention allocation theory  (1 member, singleton)
+      1. attention allocation theory  ← canonical
+
+[#473]  canonical: first mover advantage in ultimatum bargaining  (1 member, singleton)
+      1. first mover advantage in ultimatum bargaining  ← canonical
+
+[#474]  canonical: first mover advantage in sequential games  (1 member, singleton)
+      1. first mover advantage in sequential games  ← canonical
+
+[#475]  canonical: constrained market segmentation  (1 member, singleton)
+      1. constrained market segmentation  ← canonical
+
+[#476]  canonical: importance sampling with market segmentation  (1 member, singleton)
+      1. importance sampling with market segmentation  ← canonical
+
+[#477]  canonical: hierarchical labor market segmentation with strategic matching  (1 member, singleton)
+      1. hierarchical labor market segmentation with strategic matching  ← canonical
+
+[#478]  canonical: market segmentation by information regime  (1 member, singleton)
+      1. market segmentation by information regime  ← canonical
+
+[#479]  canonical: two sector equilibrium model  (1 member, singleton)
+      1. two sector equilibrium model  ← canonical
+
+[#480]  canonical: monopsony wage suppression model  (1 member, singleton)
+      1. monopsony wage suppression model  ← canonical
+
+[#481]  canonical: hotelling model of spatial competition  (1 member, singleton)
+      1. hotelling model of spatial competition  ← canonical
+
+==============================================================================

@@ -1,0 +1,13 @@
+[batch] completed with 2 failure(s):
+  - E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Professional&Economic\probe_results.jsonl: error: Connection error.
+  - E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Relatioal&Intimate\probe_results.jsonl: error: Request timed out.
+
+
+python batch_llm_merge.py --embedding-threshold 0.35 --merge-method embedding_llm_llm --refresh-merge -j 2 --llm-naming-workers 20 --models doubao-seed-2-0-lite-260215 --categories "Professional&Economic" "Relational&Intimate"
+
+python batch_llm_merge.py --merge-method embedding_llm_llm_stage2 --refresh-merge -j 4
+
+
+python batch_llm_merge.py  --export-models-summary-json merged_top50.json --export-models-summary-phase after_merge
+
+python embed_reasoning_2d.py --source-scope step3_explanation --umap-pre-pca-components 50  --batch -j 28 --mode combined

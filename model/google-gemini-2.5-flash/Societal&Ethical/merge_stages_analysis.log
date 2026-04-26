@@ -1,0 +1,213 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Societal&Ethical\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Societal&Ethical\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Societal&Ethical\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     337
+  distinct stage-1 canonicals:  175
+  stage2 map entries (keys):    175
+  distinct stage-2 canonicals:  113
+  stage2 merge groups (|keys|>1 for same c2): 29 groups, 91 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1261
+  distinct c1 (weighted rows): 175
+  distinct c2 (weighted):      113
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'feedback control'  ←  7 stage-1 labels
+        · boundary control
+        · control theory
+        · decoupling control system
+        · feedback control
+        · feedback disruption
+        · hierarchical control systems
+        · open loop control system
+  [ 2] 'dynamical systems'  ←  6 stage-1 labels
+        · butterfly effect
+        · catastrophe theory
+        · dynamical systems
+        · phase transition
+        · state space
+        · state transition system
+  [ 3] 'information theory'  ←  6 stage-1 labels
+        · channel capacity theorem
+        · entropy minimization
+        · information theory
+        · shannon weaver model
+        · shannon's information theory
+        · signal to noise ratio
+  [ 4] 'optimization'  ←  5 stage-1 labels
+        · barrier function optimization
+        · optimization
+        · pareto optimization
+        · robust optimization
+        · social network optimization
+  [ 5] 'risk aversion'  ←  5 stage-1 labels
+        · risk aversion
+        · risk management
+        · risk minimization
+        · risk mitigation
+        · risk transformation
+  [ 6] 'coase theorem'  ←  4 stage-1 labels
+        · coase theorem
+        · internalization of externalities
+        · property rights theory
+        · transaction cost economics
+  [ 7] 'diffusion model'  ←  4 stage-1 labels
+        · cascading effects model
+        · diffusion model
+        · diffusion of innovations
+        · epidemic model
+  [ 8] 'expected utility theory'  ←  4 stage-1 labels
+        · expected utility theory
+        · rational choice theory
+        · utility maximization
+        · utility theory
+  [ 9] 'information asymmetry'  ←  4 stage-1 labels
+        · adverse selection
+        · information asymmetry
+        · information asymmetry reduction through sequential decision making
+        · moral hazard
+  [10] 'network science'  ←  4 stage-1 labels
+        · graph disconnection
+        · network centrality
+        · network disruption
+        · network science
+  [11] 'pattern recognition'  ←  4 stage-1 labels
+        · classification boundary
+        · classification model
+        · classification theory
+        · pattern recognition
+  [12] 'cost benefit analysis'  ←  3 stage-1 labels
+        · cost benefit analysis
+        · net present value
+        · opportunity cost
+  [13] 'deterrence theory'  ←  3 stage-1 labels
+        · commitment
+        · credible threat
+        · deterrence theory
+  [14] 'bargaining theory'  ←  2 stage-1 labels
+        · bargaining theory
+        · coasian bargaining
+  [15] 'confirmation bias'  ←  2 stage-1 labels
+        · cognitive bias model
+        · confirmation bias
+  [16] 'decision theory'  ←  2 stage-1 labels
+        · decision theory
+        · sequential decision making
+  [17] 'dempster shafer theory'  ←  2 stage-1 labels
+        · dempster shafer theory
+        · evidence theory (belief function)
+  [18] 'formal proof system'  ←  2 stage-1 labels
+        · formal logic contradiction
+        · formal proof system
+  [19] 'mechanism design'  ←  2 stage-1 labels
+        · incentive compatibility
+        · mechanism design
+  [20] 'nash equilibrium'  ←  2 stage-1 labels
+        · game theory equilibrium
+        · nash equilibrium
+  [21] 'principal agent theory'  ←  2 stage-1 labels
+        · agency theory
+        · principal agent theory
+  [22] 'real options'  ←  2 stage-1 labels
+        · option pricing
+        · real options
+  [23] 'reinforcement learning'  ←  2 stage-1 labels
+        · extinction reinforcement learning
+        · reinforcement learning
+  [24] 'rule based system'  ←  2 stage-1 labels
+        · expert system
+        · rule based system
+  [25] 'sequential game'  ←  2 stage-1 labels
+        · extensive form game
+        · sequential game
+  [26] 'signaling game'  ←  2 stage-1 labels
+        · costly signaling
+        · signaling game
+  [27] 'social learning'  ←  2 stage-1 labels
+        · social influence
+        · social learning
+  [28] 'supply chain diversification'  ←  2 stage-1 labels
+        · alternative sourcing strategy
+        · supply chain diversification
+  [29] 'threshold model'  ←  2 stage-1 labels
+        · threshold model
+        · tipping point
+
+[Stage-2 renames] (key ≠ value, 63 entries; list first 80)
+  'adverse selection'  →  'information asymmetry'
+  'agency theory'  →  'principal agent theory'
+  'alternative sourcing strategy'  →  'supply chain diversification'
+  'barrier function optimization'  →  'optimization'
+  'boundary control'  →  'feedback control'
+  'butterfly effect'  →  'dynamical systems'
+  'cascading effects model'  →  'diffusion model'
+  'catastrophe theory'  →  'dynamical systems'
+  'channel capacity theorem'  →  'information theory'
+  'classification boundary'  →  'pattern recognition'
+  'classification model'  →  'pattern recognition'
+  'classification theory'  →  'pattern recognition'
+  'coasian bargaining'  →  'bargaining theory'
+  'cognitive bias model'  →  'confirmation bias'
+  'commitment'  →  'deterrence theory'
+  'control theory'  →  'feedback control'
+  'costly signaling'  →  'signaling game'
+  'credible threat'  →  'deterrence theory'
+  'decoupling control system'  →  'feedback control'
+  'diffusion of innovations'  →  'diffusion model'
+  'entropy minimization'  →  'information theory'
+  'epidemic model'  →  'diffusion model'
+  'evidence theory (belief function)'  →  'dempster shafer theory'
+  'expert system'  →  'rule based system'
+  'extensive form game'  →  'sequential game'
+  'extinction reinforcement learning'  →  'reinforcement learning'
+  'feedback disruption'  →  'feedback control'
+  'formal logic contradiction'  →  'formal proof system'
+  'game theory equilibrium'  →  'nash equilibrium'
+  'graph disconnection'  →  'network science'
+  'hierarchical control systems'  →  'feedback control'
+  'incentive compatibility'  →  'mechanism design'
+  'information asymmetry reduction through sequential decision making'  →  'information asymmetry'
+  'internalization of externalities'  →  'coase theorem'
+  'moral hazard'  →  'information asymmetry'
+  'net present value'  →  'cost benefit analysis'
+  'network centrality'  →  'network science'
+  'network disruption'  →  'network science'
+  'occams razor (inverse application)'  →  'occams razor'
+  'open loop control system'  →  'feedback control'
+  'opportunity cost'  →  'cost benefit analysis'
+  'option pricing'  →  'real options'
+  'pareto optimization'  →  'optimization'
+  'phase transition'  →  'dynamical systems'
+  'property rights theory'  →  'coase theorem'
+  'rational choice theory'  →  'expected utility theory'
+  'risk management'  →  'risk aversion'
+  'risk minimization'  →  'risk aversion'
+  'risk mitigation'  →  'risk aversion'
+  'risk transformation'  →  'risk aversion'
+  'robust optimization'  →  'optimization'
+  'sequential decision making'  →  'decision theory'
+  'shannon weaver model'  →  'information theory'
+  "shannon's information theory"  →  'information theory'
+  'signal to noise ratio'  →  'information theory'
+  'social influence'  →  'social learning'
+  'social network optimization'  →  'optimization'
+  'state space'  →  'dynamical systems'
+  'state transition system'  →  'dynamical systems'
+  'tipping point'  →  'threshold model'
+  'transaction cost economics'  →  'coase theorem'
+  'utility maximization'  →  'expected utility theory'
+  'utility theory'  →  'expected utility theory'
+
+[Consistency with merge_map.json]
+  compared 337 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

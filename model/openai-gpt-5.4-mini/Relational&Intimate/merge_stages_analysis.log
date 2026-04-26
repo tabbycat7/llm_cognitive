@@ -1,0 +1,228 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:24
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Relational&Intimate\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Relational&Intimate\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Relational&Intimate\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     199
+  distinct stage-1 canonicals:  122
+  stage2 map entries (keys):    122
+  distinct stage-2 canonicals:  33
+  stage2 merge groups (|keys|>1 for same c2): 18 groups, 107 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1442
+  distinct c1 (weighted rows): 122
+  distinct c2 (weighted):      33
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'dynamical systems'  ←  21 stage-1 labels
+        · adaptive dynamics
+        · attractor
+        · bifurcation theory
+        · bistability
+        · coupled oscillator model
+        · damped harmonic oscillator
+        · delay differential equation
+        · dynamical systems
+        · exponential decay
+        · fixed point
+        · homeostasis
+        · hysteresis
+        · … +9 more
+  [ 2] 'strategic games'  ←  11 stage-1 labels
+        · bargaining problem
+        · coordination game
+        · deterrence theory
+        · game of chicken
+        · hirschman’s exit voice loyalty
+        · potential game
+        · stackelberg competition
+        · stag hunt
+        · trust game
+        · ultimatum game
+        · war of attrition
+  [ 3] 'reinforcement learning'  ←  10 stage-1 labels
+        · classical conditioning
+        · extinction
+        · habituation
+        · intermittent reinforcement
+        · operant conditioning
+        · partial reinforcement extinction effect
+        · reinforcement learning
+        · rescorla wagner model
+        · reward prediction error
+        · variable ratio reinforcement
+  [ 4] 'mechanism design'  ←  9 stage-1 labels
+        · commitment device
+        · credible commitment
+        · incentive compatibility
+        · mechanism design
+        · outside option model
+        · principal agent problem
+        · reservation utility
+        · reservation wage model
+        · screening
+  [ 5] 'constrained optimization'  ←  8 stage-1 labels
+        · constrained optimization
+        · constraint satisfaction problem
+        · maximization
+        · portfolio diversification
+        · portfolio theory
+        · resource allocation
+        · risk minimization
+        · robust optimization
+  [ 6] 'repeated games'  ←  8 stage-1 labels
+        · dynamic game
+        · extensive form game
+        · finite horizon game
+        · folk theorem
+        · repeated game
+        · repeated prisoner's dilemma
+        · tit for tat
+        · trigger strategy
+  [ 7] 'signaling games'  ←  7 stage-1 labels
+        · asymmetric information
+        · cheap talk
+        · incomplete information
+        · perfect bayesian equilibrium
+        · signal theory
+        · signaling game
+        · spence signaling model
+  [ 8] 'control theory'  ←  5 stage-1 labels
+        · control barrier function
+        · control theory
+        · delayed feedback
+        · feedback control
+        · optimal control
+  [ 9] 'temporal discounting'  ←  5 stage-1 labels
+        · delayed gratification
+        · dynamic inconsistency
+        · option value
+        · real options theory
+        · temporal discounting
+  [10] 'expected utility theory'  ←  3 stage-1 labels
+        · allais effect
+        · expected utility
+        · rational expectations
+  [11] 'markov processes'  ←  3 stage-1 labels
+        · absorbing state
+        · markov chain
+        · markov processes
+  [12] 'optimal stopping'  ←  3 stage-1 labels
+        · optimal stopping
+        · stopping rule
+        · stopping time
+  [13] 'state space models'  ←  3 stage-1 labels
+        · kalman filter
+        · predictive coding
+        · state space model
+  [14] 'threshold models'  ←  3 stage-1 labels
+        · network diffusion
+        · network percolation
+        · threshold model
+  [15] 'dynamic programming'  ←  2 stage-1 labels
+        · dynamic programming
+        · sequential decision making
+  [16] 'multi armed bandit'  ←  2 stage-1 labels
+        · active learning
+        · multi armed bandit
+  [17] 'nash equilibrium'  ←  2 stage-1 labels
+        · best response
+        · nash theory
+  [18] 'sequential hypothesis testing'  ←  2 stage-1 labels
+        · sequential analysis
+        · sequential hypothesis testing
+
+[Stage-2 renames] (key ≠ value, 96 entries; list first 80)
+  'absorbing state'  →  'markov processes'
+  'active learning'  →  'multi armed bandit'
+  'adaptive dynamics'  →  'dynamical systems'
+  'allais effect'  →  'expected utility theory'
+  'asymmetric information'  →  'signaling games'
+  'attractor'  →  'dynamical systems'
+  'bargaining problem'  →  'strategic games'
+  'best response'  →  'nash equilibrium'
+  'bifurcation theory'  →  'dynamical systems'
+  'bistability'  →  'dynamical systems'
+  'cheap talk'  →  'signaling games'
+  'classical conditioning'  →  'reinforcement learning'
+  'commitment device'  →  'mechanism design'
+  'constraint satisfaction problem'  →  'constrained optimization'
+  'control barrier function'  →  'control theory'
+  'coordination game'  →  'strategic games'
+  'coupled oscillator model'  →  'dynamical systems'
+  'credible commitment'  →  'mechanism design'
+  'damped harmonic oscillator'  →  'dynamical systems'
+  'delay differential equation'  →  'dynamical systems'
+  'delayed feedback'  →  'control theory'
+  'delayed gratification'  →  'temporal discounting'
+  'deterrence theory'  →  'strategic games'
+  'dynamic game'  →  'repeated games'
+  'dynamic inconsistency'  →  'temporal discounting'
+  'expected utility'  →  'expected utility theory'
+  'exponential decay'  →  'dynamical systems'
+  'extensive form game'  →  'repeated games'
+  'extinction'  →  'reinforcement learning'
+  'feedback control'  →  'control theory'
+  'finite horizon game'  →  'repeated games'
+  'fixed point'  →  'dynamical systems'
+  'folk theorem'  →  'repeated games'
+  'game of chicken'  →  'strategic games'
+  'habituation'  →  'reinforcement learning'
+  'hirschman’s exit voice loyalty'  →  'strategic games'
+  'homeostasis'  →  'dynamical systems'
+  'hysteresis'  →  'dynamical systems'
+  'incentive compatibility'  →  'mechanism design'
+  'incomplete information'  →  'signaling games'
+  'intermittent reinforcement'  →  'reinforcement learning'
+  'kalman filter'  →  'state space models'
+  'leaky integrator'  →  'dynamical systems'
+  'linear time invariant system'  →  'dynamical systems'
+  'logistic model'  →  'dynamical systems'
+  'lotka volterra model'  →  'dynamical systems'
+  'markov chain'  →  'markov processes'
+  'maximization'  →  'constrained optimization'
+  'nash theory'  →  'nash equilibrium'
+  'network diffusion'  →  'threshold models'
+  'network percolation'  →  'threshold models'
+  'operant conditioning'  →  'reinforcement learning'
+  'optimal control'  →  'control theory'
+  'option value'  →  'temporal discounting'
+  'outside option model'  →  'mechanism design'
+  'partial reinforcement extinction effect'  →  'reinforcement learning'
+  'perfect bayesian equilibrium'  →  'signaling games'
+  'portfolio diversification'  →  'constrained optimization'
+  'portfolio theory'  →  'constrained optimization'
+  'potential game'  →  'strategic games'
+  'potential well model'  →  'dynamical systems'
+  'predictive coding'  →  'state space models'
+  'principal agent problem'  →  'mechanism design'
+  'rational expectations'  →  'expected utility theory'
+  'real options theory'  →  'temporal discounting'
+  'relaxation oscillator'  →  'dynamical systems'
+  'repeated game'  →  'repeated games'
+  "repeated prisoner's dilemma"  →  'repeated games'
+  'replicator dynamics'  →  'dynamical systems'
+  'rescorla wagner model'  →  'reinforcement learning'
+  'reservation utility'  →  'mechanism design'
+  'reservation wage model'  →  'mechanism design'
+  'resource allocation'  →  'constrained optimization'
+  'reward prediction error'  →  'reinforcement learning'
+  'risk minimization'  →  'constrained optimization'
+  'robust optimization'  →  'constrained optimization'
+  'screening'  →  'mechanism design'
+  'sequential analysis'  →  'sequential hypothesis testing'
+  'sequential decision making'  →  'dynamic programming'
+  'signal theory'  →  'signaling games'
+  … 16 more
+
+[Consistency with merge_map.json]
+  compared 199 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

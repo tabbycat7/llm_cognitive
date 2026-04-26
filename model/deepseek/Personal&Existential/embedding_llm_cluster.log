@@ -1,0 +1,1018 @@
+==============================================================================
+Embedding + LLM Cluster Naming — Detailed Cluster Log
+==============================================================================
+Generated (local): 2026-04-24T09:49:03
+
+[Parameters]
+  embedding_backend:   openai
+  embedding_model:     openai/text-embedding-3-small
+  distance_threshold:  0.35
+  llm_naming_model:    google/gemini-2.5-flash
+  llm_naming_workers:  20
+
+[Summary]
+  total_attractor_names:   421
+  total_clusters:          250
+  multi_member_clusters:   73  (LLM named)
+  singleton_clusters:      177
+  distinct_canonical_names: 246
+
+------------------------------------------------------------------------------
+Per-cluster detail (sorted by size descending)
+------------------------------------------------------------------------------
+
+[#1]  canonical: attractor dynamics  (16 members, LLM named)
+    reason: 该名称是簇中最核心、最普遍的术语，涵盖了所有成员的共同概念，且符合维基百科词条和教科书小节的命名规范，字数适中。
+      1. attractor dynamics  ← canonical
+      2. attractor model
+      3. attractor dynamics in nonlinear dynamical systems
+      4. attractor landscape
+      5. attractor network dynamics
+      6. attractor network model
+      7. attractor landscape dynamics
+      8. attractor network
+      9. attractor
+     10. attractor dynamics in dynamical systems
+     11. attractor neural network
+     12. attractor landscape model
+     13. attractor switching in dynamical systems
+     14. attractor dynamics in nonlinear systems
+     15. attractor state perturbation
+     16. attractor landscape modification
+
+[#2]  canonical: bistability  (15 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了所有修饰语和应用场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. metastability in dynamical systems
+      2. bistable system with hysteresis
+      3. bistability  ← canonical
+      4. bistable system
+      5. bistable dynamical system
+      6. bistable system with controlled phase transition
+      7. bistability in nonlinear dynamical systems
+      8. bistable system with state switching
+      9. bistable system with external forcing
+     10. bistability and hysteresis
+     11. dynamical systems theory with bistability
+     12. bistability in dynamical systems
+     13. multistability and phase transition in dynamical systems
+     14. bistable system dynamics with control inputs
+     15. multistability in dynamical systems
+
+[#3]  canonical: feedback control  (9 members, LLM named)
+    reason: 该名称是所有簇成员的共同核心，涵盖了正负反馈、控制系统以及前馈控制的本质，且符合维基百科词条和教科书小节的命名规范，字数精简，层级适中。
+      1. positive feedback loop
+      2. feedback loop control
+      3. negative feedback control
+      4. negative feedback loop
+      5. reinforcing and balancing feedback loops
+      6. negative feedback control system
+      7. negative feedback loop with external control signal
+      8. feedforward control
+      9. negative feedback control loop
+
+[#4]  canonical: bayesian inference  (8 members, LLM named)
+    reason: 该名称是贝叶斯方法论的核心概念，涵盖了簇中所有成员的本质，且符合维基百科词条和教科书章节的命名规范，同时满足字数和层级要求。
+      1. bayesian belief updating
+      2. bayesian inference  ← canonical
+      3. bayesian belief updating with hierarchical priors
+      4. bayesian updating
+      5. bayesian optimization
+      6. bayesian decision theory
+      7. bayesian belief updating with aberrant priors
+      8. hierarchical bayesian inference
+
+[#5]  canonical: constraint optimization  (8 members, LLM named)
+    reason: 该名称是簇中出现频率最高且语义最核心的表达，涵盖了所有成员的本质，并符合维基百科词条和教科书小节的命名风格，同时满足字数限制和介观层级要求。
+      1. constraint optimization  ← canonical
+      2. constraint satisfaction problem
+      3. constraint satisfaction and optimization
+      4. constrained optimization
+      5. constraint satisfaction
+      6. optimization under constraints
+      7. constraint relaxation
+      8. constraint optimization problem
+
+[#6]  canonical: feedback control  (7 members, LLM named)
+    reason: 该名称是所有簇成员的核心共同概念，剥离了所有修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. feedback control theory
+      2. feedback control  ← canonical
+      3. feedback control with damping
+      4. feedback control system
+      5. feedback control with setpoint adjustment
+      6. feedback control with dead zone
+      7. feedback control theory with time delays
+
+[#7]  canonical: extinction learning  (7 members, LLM named)
+    reason: 该名称是簇中出现频率最高且最能概括所有成员核心概念的术语，同时满足简洁性和介观层级要求。
+      1. fear extinction learning
+      2. operant conditioning extinction
+      3. extinction learning in classical conditioning
+      4. classical conditioning extinction
+      5. pavlovian extinction
+      6. extinction
+      7. extinction learning  ← canonical
+
+[#8]  canonical: controlled dynamical systems  (6 members, LLM named)
+    reason: 该名称剥离了所有修饰语，聚焦于核心概念：受控的动态系统，符合维基百科词条和教科书小节的命名风格，且字数精简。
+      1. state space model with feedback control
+      2. dynamical systems theory with external control input
+      3. dynamical systems theory with external control
+      4. dynamic systems theory with negative feedback control
+      5. dynamical systems theory with feedback control
+      6. dynamical systems with negative feedback
+
+[#9]  canonical: control theory  (6 members, LLM named)
+    reason: 所有簇成员都是'control theory'的特定应用或细化，该名称是其最核心、最通用的学术概念。
+      1. control theory  ← canonical
+      2. control theory with negative feedback loop
+      3. control theory with state feedback
+      4. control theory with safety constraints
+      5. control theory with external input
+      6. control theory with negative feedback
+
+[#10]  canonical: attractor dynamics  (5 members, LLM named)
+    reason: 该名称最简洁地概括了簇中所有成员的核心概念，即动力系统中的吸引子行为，并符合维基百科词条和教科书小节的命名规范。
+      1. multistability and attractor landscape
+      2. dynamical systems theory with attractor landscapes
+      3. dynamical systems theory with multiple attractors
+      4. dynamical systems theory attractor model
+      5. dynamical systems theory with attractor states
+
+[#11]  canonical: dynamical systems  (5 members, LLM named)
+    reason: 该名称是所有簇成员中最核心、最抽象的共同概念，符合维基百科词条和教科书章节的命名规范，且字数精简。
+      1. dynamical systems theory
+      2. system dynamics modeling
+      3. system dynamics
+      4. coupled dynamical systems
+      5. dynamic systems theory
+
+[#12]  canonical: policy gradient  (5 members, LLM named)
+    reason: 该名称是簇中所有成员的核心概念，且满足维基百科词条和教科书小节的命名规范，同时剥离了修饰语并符合字数限制。
+      1. policy gradient  ← canonical
+      2. policy gradient methods in reinforcement learning
+      3. policy gradient theorem
+      4. goal gradient hypothesis
+      5. goal gradient theory
+
+[#13]  canonical: multi armed bandit  (5 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了所有修饰语和具体化描述，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. multi armed bandit problem
+      2. multi armed bandit  ← canonical
+      3. contextual multi armed bandit
+      4. multi armed bandit with safety constraints
+      5. multi armed bandit with safe policy
+
+[#14]  canonical: principal agent problem  (5 members, LLM named)
+    reason: 该名称是所有簇成员的共同核心，剥离了所有修饰语和具体应用场景，符合维基百科词条和教科书小节的命名规范，且字数符合要求。
+      1. principal agent model with contract theory
+      2. principal agent theory with monitoring
+      3. principal agent problem with participatory monitoring
+      4. principal agent problem with signaling
+      5. principal agent problem  ← canonical
+
+[#15]  canonical: resource allocation  (5 members, LLM named)
+    reason: 所有簇成员的核心概念都是“资源分配”，其他词汇均为修饰语，根据强制剥离修饰语和字数高压线原则，应去除。
+      1. resource allocation optimization
+      2. resource allocation optimization under constraints
+      3. resource allocation with hard constraints
+      4. resource allocation under hard constraints
+      5. resource allocation optimization with constraints
+
+[#16]  canonical: dynamical systems bifurcation  (4 members, LLM named)
+    reason: 该名称是簇成员中最简洁且能准确表达核心概念的共同部分，剥离了'control'这一具体操作修饰语，符合维基百科词条和教科书章节的命名风格。
+      1. dynamical systems theory with bifurcation control
+      2. dynamical systems with bifurcation control
+      3. dynamical systems with bifurcation
+      4. dynamical systems bifurcation  ← canonical
+
+[#17]  canonical: signaling game  (4 members, LLM named)
+    reason: 该名称是簇中所有成员的基础概念，其他成员均为其特定变体或修饰，符合剥离修饰语的原则。
+      1. signaling game  ← canonical
+      2. signaling game with costly signal
+      3. signaling game with costly signaling
+      4. signaling game with costless signal
+
+[#18]  canonical: bifurcation  (3 members, LLM named)
+    reason: bifurcation theory是该领域的核心理论，bifurcation control和hopf bifurcation都是bifurcation的具体应用或特例，因此bifurcation是其最纯粹、最核心的学术概念。
+      1. bifurcation theory
+      2. bifurcation control
+      3. hopf bifurcation
+
+[#19]  canonical: set point  (3 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了控制、理论等修饰词，符合维基百科词条和介观层级的要求。
+      1. set point theory
+      2. set point control
+      3. homeostatic set point theory
+
+[#20]  canonical: optimal control  (3 members, LLM named)
+    reason: 这是最简洁、最核心的术语，'theory'是其学科属性，'with feedback'是其一种具体实现或扩展，均应剥离。
+      1. optimal control theory
+      2. optimal control  ← canonical
+      3. optimal control with feedback
+
+[#21]  canonical: feedback disruption  (3 members, LLM named)
+    reason: 剥离了所有修饰语和限定词，保留了核心概念，符合2-3个单词的长度要求，且在学术语境中具有独立性。
+      1. feedback loop disruption in control theory
+      2. feedback loop disruption
+      3. negative feedback loop disruption in dynamical systems
+
+[#22]  canonical: closed loop control  (3 members, LLM named)
+    reason: 该名称是所有簇成员的共同核心，剥离了修饰语和具体化描述，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. dual loop control
+      2. closed loop control theory
+      3. closed loop feedback control
+
+[#23]  canonical: limit cycle  (3 members, LLM named)
+    reason: 所有簇成员都围绕着“limit cycle”这一核心概念展开，其他词均为其修饰或应用。
+      1. limit cycle oscillation
+      2. limit cycle control
+      3. limit cycle stabilization
+
+[#24]  canonical: network robustness  (3 members, LLM named)
+    reason: 该名称是簇成员中最简洁且最能代表核心概念的，符合维基百科词条和经典教科书小节的命名风格，并剥离了修饰语和模型特指。
+      1. robustness of complex networks
+      2. network robustness  ← canonical
+      3. network robustness model
+
+[#25]  canonical: coordination game  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的基础概念，其他成员是其特定变体，符合剥离修饰语的原则。
+      1. coordination game  ← canonical
+      2. coordination game with a mediator
+      3. coordination game with focal points
+
+[#26]  canonical: game theory  (3 members, LLM named)
+    reason: 该簇中的所有成员都是博弈论的特定分支或应用，博弈论是它们最核心、最纯粹的共同概念。
+      1. evolutionary game theory
+      2. repeated game theory
+      3. game theory  ← canonical
+
+[#27]  canonical: resource allocation  (3 members, LLM named)
+    reason: 该名称是所有簇成员的核心概念，剥离了具体的模型类型和应用场景修饰语，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. resource allocation model
+      2. resource allocation model of self regulation
+      3. resource competition model
+
+[#28]  canonical: bounded rationality  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的共同核心，且是学术界公认的、最基础和广泛使用的概念，其他成员均为其特定形式或扩展。
+      1. bounded rationality with heuristic override
+      2. bounded rationality  ← canonical
+      3. bounded rationality with stopping rules
+
+[#29]  canonical: memory reconsolidation  (3 members, LLM named)
+    reason: 该名称是簇中所有成员的核心概念，且符合维基百科词条和教科书小节的命名规范，同时剥离了修饰语并满足字数限制。
+      1. memory reconsolidation  ← canonical
+      2. memory reconsolidation theory
+      3. prediction error driven memory reconsolidation
+
+[#30]  canonical: hierarchical control  (2 members, LLM named)
+    reason: 剥离了'theory'这一修饰词，保留了核心概念，符合简洁性和介观层级要求。
+      1. hierarchical control theory
+      2. hierarchical control  ← canonical
+
+[#31]  canonical: phase space reconstruction  (2 members, LLM named)
+    reason: phase space reconstruction是更通用和标准的学术术语，state space reconstruction是其同义词或在特定领域下的具体表达，但'phase space'在动力系统理论中具有更广泛和严格的定义。
+      1. state space reconstruction
+      2. phase space reconstruction  ← canonical
+
+[#32]  canonical: potential landscape  (2 members, LLM named)
+    reason: potential landscape 是该理论的核心概念，'theory' 是修饰语，应被剥离以获得最纯粹的学术名词。
+      1. potential landscape  ← canonical
+      2. potential landscape theory
+
+[#33]  canonical: homeostatic regulation  (2 members, LLM named)
+    reason: homeostatic regulation 是更普遍和核心的概念，homeostatic regulation of arousal 是其一个具体应用或子领域，根据剥离修饰语的原则，应选择更泛化的概念。
+      1. homeostatic regulation  ← canonical
+      2. homeostatic regulation of arousal
+
+[#34]  canonical: system identification  (2 members, LLM named)
+    reason: system identification 是一个更基础和核心的概念，feedback control 是其应用或扩展，剥离修饰语后，system identification 独立且符合维基百科词条标准。
+      1. system identification and feedback control
+      2. system identification  ← canonical
+
+[#35]  canonical: lyapunov stability  (2 members, LLM named)
+    reason: Lyapunov Stability 是该理论的核心概念，'theory' 是一个修饰词，可以被剥离。
+      1. lyapunov stability theory
+      2. lyapunov stability  ← canonical
+
+[#36]  canonical: threshold model  (2 members, LLM named)
+    reason: threshold model是更通用、更基础的学术概念，threshold trigger model是其一个具体的应用或变体，符合剥离修饰语的原则。
+      1. threshold model  ← canonical
+      2. threshold trigger model
+
+[#37]  canonical: model based control  (2 members, LLM named)
+    reason: model reference adaptive control 和 model predictive control 都是基于模型的控制方法，'model based control' 是其最核心、最抽象的共同概念。
+      1. model reference adaptive control
+      2. model predictive control
+
+[#38]  canonical: cascade control  (2 members, LLM named)
+    reason: cascade control是更广义且标准的控制理论术语，cascade model通常指其数学模型或特定应用。
+      1. cascade model
+      2. cascade control  ← canonical
+
+[#39]  canonical: optimal stopping  (2 members, LLM named)
+    reason: optimal stopping theory是optimal stopping的完整学术名称，但根据剥离修饰语的原则，'theory'作为描述性的修饰语应被移除，保留核心概念optimal stopping。
+      1. optimal stopping  ← canonical
+      2. optimal stopping theory
+
+[#40]  canonical: stochastic optimal control  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，剥离了具体应用场景和修饰语，符合维基百科词条和教科书小节的命名规范，且字数适中。
+      1. stochastic optimal control with action costs
+      2. optimal exposure therapy as stochastic optimal control
+
+[#41]  canonical: phase transition  (2 members, LLM named)
+    reason: phase transition 是更基础、更广义的学术概念，induction 只是其发生的一种方式或研究角度，属于修饰语范畴，应被剥离。
+      1. phase transition induction
+      2. phase transition  ← canonical
+
+[#42]  canonical: hysteresis  (2 members, LLM named)
+    reason: Hysteresis是核心概念，'hysteresis loop control'是其应用或特定表现形式，应被剥离。
+      1. hysteresis  ← canonical
+      2. hysteresis loop control
+
+[#43]  canonical: forced oscillation  (2 members, LLM named)
+    reason: forced oscillation是描述受外部周期力作用的振动现象的标准学术术语，forced oscillator是产生这种现象的物理系统，前者更侧重于现象本身，更具普适性。
+      1. forced oscillator
+      2. forced oscillation  ← canonical
+
+[#44]  canonical: coupled oscillators  (2 members, LLM named)
+    reason: 该名称是簇中两个成员的共同核心，剥离了具体的修饰语和条件，符合维基百科词条和教科书小节的命名规范，且字数精简。
+      1. coupled oscillator model
+      2. coupled oscillators with boundary conditions
+
+[#45]  canonical: cybernetics  (2 members, LLM named)
+    reason: second order cybernetics是cybernetics的一个特定发展阶段或分支，cybernetics是更基础、更核心的上位概念。
+      1. cybernetics  ← canonical
+      2. second order cybernetics
+
+[#46]  canonical: decoupling  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心概念，且符合维基百科词条和教科书小节的命名规范，剥离了修饰语，并处于介观层级。
+      1. system decoupling
+      2. control theory with decoupling
+
+[#47]  canonical: network science  (2 members, LLM named)
+    reason: network theory是研究网络的理论基础，network medicine是网络理论在医学领域的应用，network science是涵盖这两者并更广泛研究复杂网络现象的学科总称。
+      1. network theory
+      2. network medicine
+
+[#48]  canonical: repeated prisoner's dilemma  (2 members, LLM named)
+    reason: 该名称是囚徒困境在重复博弈情境下的标准学术术语，'with direct reciprocity'是其特定变体或应用场景的修饰语，应予剥离。
+      1. repeated prisoner's dilemma  ← canonical
+      2. repeated prisoner's dilemma with direct reciprocity
+
+[#49]  canonical: gradient descent  (2 members, LLM named)
+    reason: 梯度下降是该簇中所有算法的基础和核心思想，动量法是其一种改进或变体，因此梯度下降是更纯粹、更核心的学术名词。
+      1. gradient descent  ← canonical
+      2. gradient descent with momentum
+
+[#50]  canonical: markov chain  (2 members, LLM named)
+    reason: 簇成员均是马尔可夫链的特定应用或变体，剥离修饰语后，马尔可夫链是其最核心和通用的概念。
+      1. markov chain with absorbing states
+      2. markov chain intervention
+
+[#51]  canonical: markov decision process  (2 members, LLM named)
+    reason: partially observable markov decision process 是 markov decision process 的一个特例，因此 markov decision process 是更核心和通用的概念。
+      1. markov decision process  ← canonical
+      2. partially observable markov decision process
+
+[#52]  canonical: multi objective optimization  (2 members, LLM named)
+    reason: multidimensional choice set optimization 是 multi objective optimization 的一个具体应用或变体，后者是更通用和核心的学术概念。
+      1. multidimensional choice set optimization
+      2. multi objective optimization  ← canonical
+
+[#53]  canonical: multi objective optimization  (2 members, LLM named)
+    reason: Portfolio optimization和Pareto optimization都属于多目标优化范畴，前者是其应用，后者是其核心概念。
+      1. portfolio optimization
+      2. pareto optimization
+
+[#54]  canonical: convex optimization  (2 members, LLM named)
+    reason: Convex Optimization 是一个更广义的概念，Convex Relaxation 是其在特定问题求解中的一种技术或应用。
+      1. convex optimization  ← canonical
+      2. convex relaxation
+
+[#55]  canonical: rational choice theory  (2 members, LLM named)
+    reason: rational choice theory是核心概念，'with constrained optimization'是其应用或扩展，应被剥离。
+      1. rational choice theory  ← canonical
+      2. rational choice theory with constrained optimization
+
+[#56]  canonical: utility theory  (2 members, LLM named)
+    reason: expected utility theory 和 multi attribute utility theory 都是 utility theory 的具体形式或扩展，utility theory 是它们共同的、最核心的上位概念。
+      1. expected utility theory
+      2. multi attribute utility theory
+
+[#57]  canonical: conditioning  (2 members, LLM named)
+    reason: operant conditioning 和 classical and operant conditioning 都属于 conditioning 的范畴，且 conditioning 是一个独立的维基百科词条，符合介观层级和字数限制。
+      1. operant conditioning
+      2. classical and operant conditioning
+
+[#58]  canonical: fear conditioning  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，且符合维基百科词条和教科书章节的命名规范，剥离了具体的后续过程（extinction, reconsolidation），字数精简，层级适中。
+      1. fear conditioning extinction and reconsolidation
+      2. fear conditioning and extinction
+
+[#59]  canonical: predictive coding  (2 members, LLM named)
+    reason: predictive coding 是该簇的核心概念，hierarchical predictive coding 是其更具体的变体，因此前者是更纯粹、更通用的标准学术名词。
+      1. predictive coding  ← canonical
+      2. hierarchical predictive coding
+
+[#60]  canonical: error driven learning  (2 members, LLM named)
+    reason: 该名称是簇中两个成员的共同核心，且符合维基百科词条和教科书小节的命名规范，剥离了具体应用场景，字数适中，处于介观层级。
+      1. error driven learning in predictive coding
+      2. error driven learning  ← canonical
+
+[#61]  canonical: temporal difference learning  (2 members, LLM named)
+    reason: 第二个成员是第一个成员的修饰，直接提取最核心的术语，符合维基百科词条和教科书小节的命名规范，且字数符合要求。
+      1. temporal difference learning  ← canonical
+      2. temporal difference learning in reinforcement learning
+
+[#62]  canonical: hebbian learning  (2 members, LLM named)
+    reason: hebbian learning是该簇的上位概念，competitive hebbian learning是其具体变体，剥离修饰语后，hebbian learning最能代表核心概念。
+      1. hebbian learning  ← canonical
+      2. competitive hebbian learning
+
+[#63]  canonical: reward shaping  (2 members, LLM named)
+    reason: reward shaping是该簇中更基础、更核心的概念，reinforcement learning with reward shaping是其在特定领域（强化学习）的应用，符合剥离修饰语的原则。
+      1. reward shaping  ← canonical
+      2. reinforcement learning with reward shaping
+
+[#64]  canonical: reinforcement learning  (2 members, LLM named)
+    reason: Hierarchical Reinforcement Learning 是 Reinforcement Learning 的一个特定范畴或高级形式，Reinforcement Learning 是更基础和核心的概念。
+      1. reinforcement learning  ← canonical
+      2. hierarchical reinforcement learning
+
+[#65]  canonical: value function reinforcement learning  (2 members, LLM named)
+    reason: 该名称简洁地概括了簇成员的核心共同点，即强化学习中对价值函数的处理，且符合字数和维基百科词条命名规范。
+      1. reinforcement learning with value function decomposition
+      2. reinforcement learning with value function approximation
+
+[#66]  canonical: implementation intention  (2 members, LLM named)
+    reason: 该术语本身已是学术界公认的标准概念，且符合简洁性原则，无需进一步剥离或修改。
+      1. implementation intentions
+      2. implementation intention  ← canonical
+
+[#67]  canonical: temporal discounting  (2 members, LLM named)
+    reason: hyperbolic discounting 是 temporal discounting 的一种具体形式，而 temporal discounting model 则是对 temporal discounting 现象进行建模的泛称，因此 temporal discounting 是最核心、最纯粹的上位概念。
+      1. hyperbolic discounting
+      2. temporal discounting model
+
+[#68]  canonical: bias modification  (2 members, LLM named)
+    reason: 该名称是两个簇成员的共同核心，剥离了具体的认知或注意修饰语，符合维基百科词条和介观层级要求。
+      1. cognitive bias modification
+      2. attentional bias modification
+
+[#69]  canonical: cognitive reappraisal  (2 members, LLM named)
+    reason: 该名称是认知行为疗法中核心概念的通用术语，涵盖了认知重构的本质，且符合维基百科词条和教科书章节的命名规范。
+      1. cognitive restructuring
+      2. cognitive reappraisal model
+
+[#70]  canonical: cognitive dissonance  (2 members, LLM named)
+    reason: 该名称是簇中两个成员的共同核心概念，且符合维基百科词条和教科书目录的命名规范，剥离了修饰语，并保持了简洁性。
+      1. cognitive dissonance theory
+      2. cognitive dissonance reduction
+
+[#71]  canonical: connectionism  (2 members, LLM named)
+    reason: Connectionism是涵盖connectionist model和cognitive network model的更广泛、更基础的学术概念，符合维基百科词条和介观层级要求，且字数精简。
+      1. connectionist model
+      2. cognitive network model
+
+[#72]  canonical: habit formation  (2 members, LLM named)
+    reason: 该名称是簇成员的共同核心概念，剥离了'loop'和'model'等修饰词，符合维基百科词条和教科书章节的命名风格，且字数精简。
+      1. habit formation loop
+      2. habit formation model
+
+[#73]  canonical: behavioral activation  (2 members, LLM named)
+    reason: 该名称是簇中两个成员的共同核心，且符合维基百科词条和教科书小节的命名规范，剥离了修饰语，并处于介观层级。
+      1. behavioral activation  ← canonical
+      2. behavioral activation threshold model
+
+[#74]  canonical: the market for lemons  (1 member, singleton)
+      1. the market for lemons  ← canonical
+
+[#75]  canonical: cheap talk  (1 member, singleton)
+      1. cheap talk  ← canonical
+
+[#76]  canonical: activation energy  (1 member, singleton)
+      1. activation energy  ← canonical
+
+[#77]  canonical: arrhenius equation  (1 member, singleton)
+      1. arrhenius equation  ← canonical
+
+[#78]  canonical: energy balance equation with adaptive thermogenesis  (1 member, singleton)
+      1. energy balance equation with adaptive thermogenesis  ← canonical
+
+[#79]  canonical: triadic closure  (1 member, singleton)
+      1. triadic closure  ← canonical
+
+[#80]  canonical: upper confidence bound  (1 member, singleton)
+      1. upper confidence bound  ← canonical
+
+[#81]  canonical: threat point  (1 member, singleton)
+      1. threat point  ← canonical
+
+[#82]  canonical: schelling point  (1 member, singleton)
+      1. schelling point  ← canonical
+
+[#83]  canonical: pid control  (1 member, singleton)
+      1. pid control  ← canonical
+
+[#84]  canonical: proxy control  (1 member, singleton)
+      1. proxy control  ← canonical
+
+[#85]  canonical: means restriction  (1 member, singleton)
+      1. means restriction  ← canonical
+
+[#86]  canonical: control barrier function  (1 member, singleton)
+      1. control barrier function  ← canonical
+
+[#87]  canonical: state observer  (1 member, singleton)
+      1. state observer  ← canonical
+
+[#88]  canonical: hierarchical dimensional taxonomy  (1 member, singleton)
+      1. hierarchical dimensional taxonomy  ← canonical
+
+[#89]  canonical: problem decomposition  (1 member, singleton)
+      1. problem decomposition  ← canonical
+
+[#90]  canonical: chunking  (1 member, singleton)
+      1. chunking  ← canonical
+
+[#91]  canonical: source coding  (1 member, singleton)
+      1. source coding  ← canonical
+
+[#92]  canonical: statistical classification  (1 member, singleton)
+      1. statistical classification  ← canonical
+
+[#93]  canonical: pattern recognition and classification  (1 member, singleton)
+      1. pattern recognition and classification  ← canonical
+
+[#94]  canonical: dimensionality reduction  (1 member, singleton)
+      1. dimensionality reduction  ← canonical
+
+[#95]  canonical: multivariate time series analysis  (1 member, singleton)
+      1. multivariate time series analysis  ← canonical
+
+[#96]  canonical: proportional integral derivative control  (1 member, singleton)
+      1. proportional integral derivative control  ← canonical
+
+[#97]  canonical: path integral  (1 member, singleton)
+      1. path integral  ← canonical
+
+[#98]  canonical: function approximation  (1 member, singleton)
+      1. function approximation  ← canonical
+
+[#99]  canonical: transfer function  (1 member, singleton)
+      1. transfer function  ← canonical
+
+[#100]  canonical: sigmoid activation function  (1 member, singleton)
+      1. sigmoid activation function  ← canonical
+
+[#101]  canonical: perturbation theory  (1 member, singleton)
+      1. perturbation theory  ← canonical
+
+[#102]  canonical: phase space perturbation  (1 member, singleton)
+      1. phase space perturbation  ← canonical
+
+[#103]  canonical: state space representation with mode switching  (1 member, singleton)
+      1. state space representation with mode switching  ← canonical
+
+[#104]  canonical: discretization and state space representation  (1 member, singleton)
+      1. discretization and state space representation  ← canonical
+
+[#105]  canonical: potential landscape with stochastic resonance  (1 member, singleton)
+      1. potential landscape with stochastic resonance  ← canonical
+
+[#106]  canonical: belief landscape reshaping  (1 member, singleton)
+      1. belief landscape reshaping  ← canonical
+
+[#107]  canonical: attractor network model of semantic memory  (1 member, singleton)
+      1. attractor network model of semantic memory  ← canonical
+
+[#108]  canonical: basin of attraction  (1 member, singleton)
+      1. basin of attraction  ← canonical
+
+[#109]  canonical: two process model of sleep regulation  (1 member, singleton)
+      1. two process model of sleep regulation  ← canonical
+
+[#110]  canonical: mechanism design  (1 member, singleton)
+      1. mechanism design  ← canonical
+
+[#111]  canonical: periodically forced dynamical system  (1 member, singleton)
+      1. periodically forced dynamical system  ← canonical
+
+[#112]  canonical: bistable system with potential well  (1 member, singleton)
+      1. bistable system with potential well  ← canonical
+
+[#113]  canonical: multiple equilibria with state switching  (1 member, singleton)
+      1. multiple equilibria with state switching  ← canonical
+
+[#114]  canonical: drift diffusion model  (1 member, singleton)
+      1. drift diffusion model  ← canonical
+
+[#115]  canonical: reaction diffusion system with boundary control  (1 member, singleton)
+      1. reaction diffusion system with boundary control  ← canonical
+
+[#116]  canonical: replicator dynamics  (1 member, singleton)
+      1. replicator dynamics  ← canonical
+
+[#117]  canonical: threshold control  (1 member, singleton)
+      1. threshold control  ← canonical
+
+[#118]  canonical: goal setting theory  (1 member, singleton)
+      1. goal setting theory  ← canonical
+
+[#119]  canonical: feedback linearization  (1 member, singleton)
+      1. feedback linearization  ← canonical
+
+[#120]  canonical: perceptual control theory  (1 member, singleton)
+      1. perceptual control theory  ← canonical
+
+[#121]  canonical: compensatory control  (1 member, singleton)
+      1. compensatory control  ← canonical
+
+[#122]  canonical: forced synchronization  (1 member, singleton)
+      1. forced synchronization  ← canonical
+
+[#123]  canonical: entrainment  (1 member, singleton)
+      1. entrainment  ← canonical
+
+[#124]  canonical: phase response curve  (1 member, singleton)
+      1. phase response curve  ← canonical
+
+[#125]  canonical: phase locked loop  (1 member, singleton)
+      1. phase locked loop  ← canonical
+
+[#126]  canonical: time scale separation  (1 member, singleton)
+      1. time scale separation  ← canonical
+
+[#127]  canonical: limit cycle oscillator with entrainment  (1 member, singleton)
+      1. limit cycle oscillator with entrainment  ← canonical
+
+[#128]  canonical: damped harmonic oscillator  (1 member, singleton)
+      1. damped harmonic oscillator  ← canonical
+
+[#129]  canonical: information theory  (1 member, singleton)
+      1. information theory  ← canonical
+
+[#130]  canonical: information theory of salutogenesis  (1 member, singleton)
+      1. information theory of salutogenesis  ← canonical
+
+[#131]  canonical: information cascade  (1 member, singleton)
+      1. information cascade  ← canonical
+
+[#132]  canonical: computational psychiatry  (1 member, singleton)
+      1. computational psychiatry  ← canonical
+
+[#133]  canonical: switching cost reduction  (1 member, singleton)
+      1. switching cost reduction  ← canonical
+
+[#134]  canonical: channel switching in noisy communication  (1 member, singleton)
+      1. channel switching in noisy communication  ← canonical
+
+[#135]  canonical: decentering  (1 member, singleton)
+      1. decentering  ← canonical
+
+[#136]  canonical: network flow  (1 member, singleton)
+      1. network flow  ← canonical
+
+[#137]  canonical: network rewiring  (1 member, singleton)
+      1. network rewiring  ← canonical
+
+[#138]  canonical: hopfield network  (1 member, singleton)
+      1. hopfield network  ← canonical
+
+[#139]  canonical: star network  (1 member, singleton)
+      1. star network  ← canonical
+
+[#140]  canonical: priority queueing network with routing  (1 member, singleton)
+      1. priority queueing network with routing  ← canonical
+
+[#141]  canonical: parallel redundant systems  (1 member, singleton)
+      1. parallel redundant systems  ← canonical
+
+[#142]  canonical: reliability block diagram  (1 member, singleton)
+      1. reliability block diagram  ← canonical
+
+[#143]  canonical: byzantine fault tolerance  (1 member, singleton)
+      1. byzantine fault tolerance  ← canonical
+
+[#144]  canonical: overgeneralization  (1 member, singleton)
+      1. overgeneralization  ← canonical
+
+[#145]  canonical: law of large numbers  (1 member, singleton)
+      1. law of large numbers  ← canonical
+
+[#146]  canonical: law of requisite variety  (1 member, singleton)
+      1. law of requisite variety  ← canonical
+
+[#147]  canonical: allais paradox  (1 member, singleton)
+      1. allais paradox  ← canonical
+
+[#148]  canonical: redundancy principle  (1 member, singleton)
+      1. redundancy principle  ← canonical
+
+[#149]  canonical: multimodal sensory integration and competition  (1 member, singleton)
+      1. multimodal sensory integration and competition  ← canonical
+
+[#150]  canonical: early warning signal  (1 member, singleton)
+      1. early warning signal  ← canonical
+
+[#151]  canonical: signal detection theory  (1 member, singleton)
+      1. signal detection theory  ← canonical
+
+[#152]  canonical: nash equilibrium  (1 member, singleton)
+      1. nash equilibrium  ← canonical
+
+[#153]  canonical: subgame perfect equilibrium  (1 member, singleton)
+      1. subgame perfect equilibrium  ← canonical
+
+[#154]  canonical: correlated equilibrium  (1 member, singleton)
+      1. correlated equilibrium  ← canonical
+
+[#155]  canonical: self fulfilling prophecy equilibrium  (1 member, singleton)
+      1. self fulfilling prophecy equilibrium  ← canonical
+
+[#156]  canonical: screening equilibrium  (1 member, singleton)
+      1. screening equilibrium  ← canonical
+
+[#157]  canonical: nonequilibrium thermodynamics  (1 member, singleton)
+      1. nonequilibrium thermodynamics  ← canonical
+
+[#158]  canonical: matching law  (1 member, singleton)
+      1. matching law  ← canonical
+
+[#159]  canonical: stable matching  (1 member, singleton)
+      1. stable matching  ← canonical
+
+[#160]  canonical: tit for tat  (1 member, singleton)
+      1. tit for tat  ← canonical
+
+[#161]  canonical: dijkstra's algorithm  (1 member, singleton)
+      1. dijkstra's algorithm  ← canonical
+
+[#162]  canonical: greedy algorithm  (1 member, singleton)
+      1. greedy algorithm  ← canonical
+
+[#163]  canonical: hidden markov model  (1 member, singleton)
+      1. hidden markov model  ← canonical
+
+[#164]  canonical: bayesian brain hypothesis  (1 member, singleton)
+      1. bayesian brain hypothesis  ← canonical
+
+[#165]  canonical: bayesian diagnostic network  (1 member, singleton)
+      1. bayesian diagnostic network  ← canonical
+
+[#166]  canonical: bayesian social comparison model  (1 member, singleton)
+      1. bayesian social comparison model  ← canonical
+
+[#167]  canonical: bayes classifier  (1 member, singleton)
+      1. bayes classifier  ← canonical
+
+[#168]  canonical: moderated regression  (1 member, singleton)
+      1. moderated regression  ← canonical
+
+[#169]  canonical: kalman filter  (1 member, singleton)
+      1. kalman filter  ← canonical
+
+[#170]  canonical: dynamic programming  (1 member, singleton)
+      1. dynamic programming  ← canonical
+
+[#171]  canonical: stochastic dynamic programming  (1 member, singleton)
+      1. stochastic dynamic programming  ← canonical
+
+[#172]  canonical: sequential quadratic programming  (1 member, singleton)
+      1. sequential quadratic programming  ← canonical
+
+[#173]  canonical: linear programming  (1 member, singleton)
+      1. linear programming  ← canonical
+
+[#174]  canonical: modular optimization  (1 member, singleton)
+      1. modular optimization  ← canonical
+
+[#175]  canonical: two stage optimization  (1 member, singleton)
+      1. two stage optimization  ← canonical
+
+[#176]  canonical: optimization theory  (1 member, singleton)
+      1. optimization theory  ← canonical
+
+[#177]  canonical: bilevel optimization  (1 member, singleton)
+      1. bilevel optimization  ← canonical
+
+[#178]  canonical: theory of constraints  (1 member, singleton)
+      1. theory of constraints  ← canonical
+
+[#179]  canonical: optimal substructure  (1 member, singleton)
+      1. optimal substructure  ← canonical
+
+[#180]  canonical: satisficing  (1 member, singleton)
+      1. satisficing  ← canonical
+
+[#181]  canonical: multi criteria decision analysis  (1 member, singleton)
+      1. multi criteria decision analysis  ← canonical
+
+[#182]  canonical: decision tree analysis  (1 member, singleton)
+      1. decision tree analysis  ← canonical
+
+[#183]  canonical: sequential decision making under uncertainty  (1 member, singleton)
+      1. sequential decision making under uncertainty  ← canonical
+
+[#184]  canonical: fuzzy logic  (1 member, singleton)
+      1. fuzzy logic  ← canonical
+
+[#185]  canonical: resource rational analysis  (1 member, singleton)
+      1. resource rational analysis  ← canonical
+
+[#186]  canonical: random utility model with search costs  (1 member, singleton)
+      1. random utility model with search costs  ← canonical
+
+[#187]  canonical: simulated annealing  (1 member, singleton)
+      1. simulated annealing  ← canonical
+
+[#188]  canonical: negative reinforcement loop  (1 member, singleton)
+      1. negative reinforcement loop  ← canonical
+
+[#189]  canonical: recurrent neural network  (1 member, singleton)
+      1. recurrent neural network  ← canonical
+
+[#190]  canonical: neuroplasticity  (1 member, singleton)
+      1. neuroplasticity  ← canonical
+
+[#191]  canonical: reward prediction error  (1 member, singleton)
+      1. reward prediction error  ← canonical
+
+[#192]  canonical: q learning  (1 member, singleton)
+      1. q learning  ← canonical
+
+[#193]  canonical: variable ratio reinforcement schedule  (1 member, singleton)
+      1. variable ratio reinforcement schedule  ← canonical
+
+[#194]  canonical: scheduled reinforcement  (1 member, singleton)
+      1. scheduled reinforcement  ← canonical
+
+[#195]  canonical: shaping  (1 member, singleton)
+      1. shaping  ← canonical
+
+[#196]  canonical: policy improvement in reinforcement learning  (1 member, singleton)
+      1. policy improvement in reinforcement learning  ← canonical
+
+[#197]  canonical: reinforcement learning with dense reward function  (1 member, singleton)
+      1. reinforcement learning with dense reward function  ← canonical
+
+[#198]  canonical: deliberate practice  (1 member, singleton)
+      1. deliberate practice  ← canonical
+
+[#199]  canonical: power law of practice  (1 member, singleton)
+      1. power law of practice  ← canonical
+
+[#200]  canonical: precommitment strategy  (1 member, singleton)
+      1. precommitment strategy  ← canonical
+
+[#201]  canonical: commitment device  (1 member, singleton)
+      1. commitment device  ← canonical
+
+[#202]  canonical: agm belief revision  (1 member, singleton)
+      1. agm belief revision  ← canonical
+
+[#203]  canonical: belief propagation  (1 member, singleton)
+      1. belief propagation  ← canonical
+
+[#204]  canonical: common knowledge  (1 member, singleton)
+      1. common knowledge  ← canonical
+
+[#205]  canonical: mental accounting  (1 member, singleton)
+      1. mental accounting  ← canonical
+
+[#206]  canonical: exponential decay  (1 member, singleton)
+      1. exponential decay  ← canonical
+
+[#207]  canonical: causal inference  (1 member, singleton)
+      1. causal inference  ← canonical
+
+[#208]  canonical: active inference  (1 member, singleton)
+      1. active inference  ← canonical
+
+[#209]  canonical: causal directed acyclic graph  (1 member, singleton)
+      1. causal directed acyclic graph  ← canonical
+
+[#210]  canonical: sufficient cause model  (1 member, singleton)
+      1. sufficient cause model  ← canonical
+
+[#211]  canonical: zeigarnik effect  (1 member, singleton)
+      1. zeigarnik effect  ← canonical
+
+[#212]  canonical: observer effect  (1 member, singleton)
+      1. observer effect  ← canonical
+
+[#213]  canonical: cognitive disengagement theory  (1 member, singleton)
+      1. cognitive disengagement theory  ← canonical
+
+[#214]  canonical: beck's cognitive model of depression  (1 member, singleton)
+      1. beck's cognitive model of depression  ← canonical
+
+[#215]  canonical: dual process theory  (1 member, singleton)
+      1. dual process theory  ← canonical
+
+[#216]  canonical: ironic process theory  (1 member, singleton)
+      1. ironic process theory  ← canonical
+
+[#217]  canonical: scaffolding theory  (1 member, singleton)
+      1. scaffolding theory  ← canonical
+
+[#218]  canonical: cognitive schema theory  (1 member, singleton)
+      1. cognitive schema theory  ← canonical
+
+[#219]  canonical: cognitive load theory  (1 member, singleton)
+      1. cognitive load theory  ← canonical
+
+[#220]  canonical: symptom network theory  (1 member, singleton)
+      1. symptom network theory  ← canonical
+
+[#221]  canonical: framing effect  (1 member, singleton)
+      1. framing effect  ← canonical
+
+[#222]  canonical: frame competition theory  (1 member, singleton)
+      1. frame competition theory  ← canonical
+
+[#223]  canonical: counterfactual framework  (1 member, singleton)
+      1. counterfactual framework  ← canonical
+
+[#224]  canonical: self efficacy theory  (1 member, singleton)
+      1. self efficacy theory  ← canonical
+
+[#225]  canonical: internalization in self determination theory  (1 member, singleton)
+      1. internalization in self determination theory  ← canonical
+
+[#226]  canonical: social learning theory  (1 member, singleton)
+      1. social learning theory  ← canonical
+
+[#227]  canonical: friction theory  (1 member, singleton)
+      1. friction theory  ← canonical
+
+[#228]  canonical: nudge theory  (1 member, singleton)
+      1. nudge theory  ← canonical
+
+[#229]  canonical: resilience theory  (1 member, singleton)
+      1. resilience theory  ← canonical
+
+[#230]  canonical: reliability theory  (1 member, singleton)
+      1. reliability theory  ← canonical
+
+[#231]  canonical: relational frame theory  (1 member, singleton)
+      1. relational frame theory  ← canonical
+
+[#232]  canonical: expectancy value theory  (1 member, singleton)
+      1. expectancy value theory  ← canonical
+
+[#233]  canonical: prospect theory  (1 member, singleton)
+      1. prospect theory  ← canonical
+
+[#234]  canonical: real options theory  (1 member, singleton)
+      1. real options theory  ← canonical
+
+[#235]  canonical: modern portfolio theory  (1 member, singleton)
+      1. modern portfolio theory  ← canonical
+
+[#236]  canonical: revealed preference theory  (1 member, singleton)
+      1. revealed preference theory  ← canonical
+
+[#237]  canonical: reference dependent preferences  (1 member, singleton)
+      1. reference dependent preferences  ← canonical
+
+[#238]  canonical: attribution theory  (1 member, singleton)
+      1. attribution theory  ← canonical
+
+[#239]  canonical: attention allocation model  (1 member, singleton)
+      1. attention allocation model  ← canonical
+
+[#240]  canonical: appraisal theory of emotion  (1 member, singleton)
+      1. appraisal theory of emotion  ← canonical
+
+[#241]  canonical: habituation  (1 member, singleton)
+      1. habituation  ← canonical
+
+[#242]  canonical: behavioral momentum  (1 member, singleton)
+      1. behavioral momentum  ← canonical
+
+[#243]  canonical: attachment theory as a biobehavioral regulatory system  (1 member, singleton)
+      1. attachment theory as a biobehavioral regulatory system  ← canonical
+
+[#244]  canonical: quantitative behavioral tracking  (1 member, singleton)
+      1. quantitative behavioral tracking  ← canonical
+
+[#245]  canonical: dose response model  (1 member, singleton)
+      1. dose response model  ← canonical
+
+[#246]  canonical: pharmacokinetic pharmacodynamic modeling  (1 member, singleton)
+      1. pharmacokinetic pharmacodynamic modeling  ← canonical
+
+[#247]  canonical: synergistic interaction model  (1 member, singleton)
+      1. synergistic interaction model  ← canonical
+
+[#248]  canonical: double well potential model  (1 member, singleton)
+      1. double well potential model  ← canonical
+
+[#249]  canonical: allostatic load model  (1 member, singleton)
+      1. allostatic load model  ← canonical
+
+[#250]  canonical: rescorla wagner model  (1 member, singleton)
+      1. rescorla wagner model  ← canonical
+
+==============================================================================

@@ -1,0 +1,270 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:24
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Professional&Economic\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Professional&Economic\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Professional&Economic\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     321
+  distinct stage-1 canonicals:  196
+  stage2 map entries (keys):    196
+  distinct stage-2 canonicals:  91
+  stage2 merge groups (|keys|>1 for same c2): 29 groups, 134 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1434
+  distinct c1 (weighted rows): 196
+  distinct c2 (weighted):      91
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'constrained optimization'  ←  17 stage-1 labels
+        · assignment problem
+        · capital allocation
+        · constrained optimization
+        · constraint satisfaction problem
+        · cost benefit analysis
+        · cost minimization
+        · fixed charge problem
+        · knapsack problem
+        · lagrangian duality
+        · linear optimization
+        · marginal analysis
+        · multi criteria decision analysis
+        · … +5 more
+  [ 2] 'stochastic process'  ←  11 stage-1 labels
+        · absorbing state
+        · diffusion model
+        · first passage time
+        · geometric brownian motion
+        · hawkes process
+        · markov models
+        · ornstein uhlenbeck process
+        · poisson process
+        · ruin theory
+        · state space model
+        · stochastic theory
+  [ 3] 'optimal control'  ←  10 stage-1 labels
+        · control theory
+        · dynamical system
+        · feedback
+        · feedback control
+        · lyapunov stability
+        · model predictive control
+        · optimal control
+        · risk sensitive control
+        · stability theory
+        · system dynamics
+  [ 4] 'portfolio theory'  ←  10 stage-1 labels
+        · after tax portfolio selection
+        · asset liability management
+        · conditional value at risk
+        · constant rebalancing strategy
+        · dollar cost averaging
+        · kelly criterion
+        · mean variance optimization
+        · portfolio diversification
+        · portfolio theory
+        · two fund separation theorem
+  [ 5] 'intertemporal choice'  ←  6 stage-1 labels
+        · compound interest
+        · discounted cash flow
+        · future value of an annuity
+        · intertemporal choice
+        · present value
+        · time discounting
+  [ 6] 'prospect theory'  ←  6 stage-1 labels
+        · anchoring
+        · mental accounting
+        · prospect theory
+        · reference dependence
+        · reference point theory
+        · sunk cost fallacy
+  [ 7] 'search theory'  ←  6 stage-1 labels
+        · job ladder model
+        · optimal search
+        · reservation price
+        · reservation wage
+        · search theory
+        · sequential search
+  [ 8] 'consumption saving'  ←  5 stage-1 labels
+        · consumption saving
+        · consumption smoothing
+        · life cycle cost analysis
+        · life cycle hypothesis
+        · precautionary saving
+  [ 9] 'signaling'  ←  5 stage-1 labels
+        · information diffusion model
+        · screening model
+        · signal detection theory
+        · signaling
+        · spence signaling model
+  [10] 'threshold model'  ←  5 stage-1 labels
+        · bankruptcy threshold model
+        · threshold effect
+        · threshold model
+        · threshold rule
+        · tipping point
+  [11] 'information theory'  ←  4 stage-1 labels
+        · information gain
+        · information theory
+        · rate distortion theory
+        · signal to noise ratio
+  [12] 'inventory theory'  ←  4 stage-1 labels
+        · base stock policy
+        · buffer stock
+        · inventory theory
+        · optimal cash balance model
+  [13] 'linear model'  ←  4 stage-1 labels
+        · linear discriminant analysis
+        · linear model
+        · linear regression
+        · linear scoring model
+  [14] 'utility theory'  ←  4 stage-1 labels
+        · multi attribute utility theory
+        · random utility model
+        · utility maximization
+        · utility theory
+  [15] 'bayesian inference'  ←  3 stage-1 labels
+        · bayesian inference
+        · hierarchical bayesian model
+        · latent variable model
+  [16] 'debt dynamics'  ←  3 stage-1 labels
+        · debt dynamics
+        · debt repayment strategies
+        · debt restructuring
+  [17] 'dynamic game'  ←  3 stage-1 labels
+        · dynamic game
+        · stackelberg competition
+        · subgame perfect equilibrium
+  [18] 'dynamic programming'  ←  3 stage-1 labels
+        · bellman equation
+        · dynamic programming
+        · sequential decision process
+  [19] 'markov decision process'  ←  3 stage-1 labels
+        · markov decision process
+        · pomdp
+        · reinforcement learning
+  [20] 'optimal stopping'  ←  3 stage-1 labels
+        · optimal stopping
+        · secretary problem
+        · stopping time
+  [21] 'principal agent problem'  ←  3 stage-1 labels
+        · incentive compatibility
+        · mechanism design
+        · principal agent problem
+  [22] 'bargaining'  ←  2 stage-1 labels
+        · bargaining
+        · ultimatum game
+  [23] 'commitment device'  ←  2 stage-1 labels
+        · commitment device
+        · precommitment
+  [24] 'matching theory'  ←  2 stage-1 labels
+        · matching theory
+        · stable matching
+  [25] 'multi armed bandit'  ←  2 stage-1 labels
+        · exploration exploitation tradeoff
+        · multi armed bandit
+  [26] 'preferential attachment'  ←  2 stage-1 labels
+        · cumulative advantage
+        · preferential attachment
+  [27] 'real options'  ←  2 stage-1 labels
+        · option value
+        · real options
+  [28] 'repeated game'  ←  2 stage-1 labels
+        · repeated game
+        · repeated prisoner's dilemma
+  [29] 'sequential analysis'  ←  2 stage-1 labels
+        · sequential analysis
+        · sequential probability ratio test
+
+[Stage-2 renames] (key ≠ value, 107 entries; list first 80)
+  'absorbing state'  →  'stochastic process'
+  'after tax portfolio selection'  →  'portfolio theory'
+  'anchoring'  →  'prospect theory'
+  'asset liability management'  →  'portfolio theory'
+  'assignment problem'  →  'constrained optimization'
+  'bankruptcy threshold model'  →  'threshold model'
+  'base stock policy'  →  'inventory theory'
+  'bellman equation'  →  'dynamic programming'
+  'buffer stock'  →  'inventory theory'
+  'capital allocation'  →  'constrained optimization'
+  'compound interest'  →  'intertemporal choice'
+  'conditional value at risk'  →  'portfolio theory'
+  'constant rebalancing strategy'  →  'portfolio theory'
+  'constraint satisfaction problem'  →  'constrained optimization'
+  'consumption smoothing'  →  'consumption saving'
+  'control theory'  →  'optimal control'
+  'cost benefit analysis'  →  'constrained optimization'
+  'cost minimization'  →  'constrained optimization'
+  'cumulative advantage'  →  'preferential attachment'
+  'debt repayment strategies'  →  'debt dynamics'
+  'debt restructuring'  →  'debt dynamics'
+  'diffusion model'  →  'stochastic process'
+  'discounted cash flow'  →  'intertemporal choice'
+  'dollar cost averaging'  →  'portfolio theory'
+  'dynamical system'  →  'optimal control'
+  'exploration exploitation tradeoff'  →  'multi armed bandit'
+  'feedback'  →  'optimal control'
+  'feedback control'  →  'optimal control'
+  'first passage time'  →  'stochastic process'
+  'fixed charge problem'  →  'constrained optimization'
+  'future value of an annuity'  →  'intertemporal choice'
+  'geometric brownian motion'  →  'stochastic process'
+  'hawkes process'  →  'stochastic process'
+  'hierarchical bayesian model'  →  'bayesian inference'
+  'incentive compatibility'  →  'principal agent problem'
+  'information diffusion model'  →  'signaling'
+  'information gain'  →  'information theory'
+  'job ladder model'  →  'search theory'
+  'kelly criterion'  →  'portfolio theory'
+  'knapsack problem'  →  'constrained optimization'
+  'lagrangian duality'  →  'constrained optimization'
+  'last in, first out'  →  'last in first out'
+  'latent variable model'  →  'bayesian inference'
+  'life cycle cost analysis'  →  'consumption saving'
+  'life cycle hypothesis'  →  'consumption saving'
+  'linear discriminant analysis'  →  'linear model'
+  'linear optimization'  →  'constrained optimization'
+  'linear regression'  →  'linear model'
+  'linear scoring model'  →  'linear model'
+  'lyapunov stability'  →  'optimal control'
+  'marginal analysis'  →  'constrained optimization'
+  'markov models'  →  'stochastic process'
+  'mean variance optimization'  →  'portfolio theory'
+  'mechanism design'  →  'principal agent problem'
+  'mental accounting'  →  'prospect theory'
+  'model predictive control'  →  'optimal control'
+  'multi attribute utility theory'  →  'utility theory'
+  'multi criteria decision analysis'  →  'constrained optimization'
+  'multiobjective optimization'  →  'constrained optimization'
+  'optimal cash balance model'  →  'inventory theory'
+  'optimal search'  →  'search theory'
+  'optimization'  →  'constrained optimization'
+  'option value'  →  'real options'
+  'ornstein uhlenbeck process'  →  'stochastic process'
+  'poisson process'  →  'stochastic process'
+  'pomdp'  →  'markov decision process'
+  'portfolio diversification'  →  'portfolio theory'
+  'precautionary saving'  →  'consumption saving'
+  'precommitment'  →  'commitment device'
+  'present value'  →  'intertemporal choice'
+  'random utility model'  →  'utility theory'
+  'rate distortion theory'  →  'information theory'
+  'reference dependence'  →  'prospect theory'
+  'reference point theory'  →  'prospect theory'
+  'reinforcement learning'  →  'markov decision process'
+  "repeated prisoner's dilemma"  →  'repeated game'
+  'reservation price'  →  'search theory'
+  'reservation wage'  →  'search theory'
+  'resource allocation'  →  'constrained optimization'
+  'risk sensitive control'  →  'optimal control'
+  … 27 more
+
+[Consistency with merge_map.json]
+  compared 321 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

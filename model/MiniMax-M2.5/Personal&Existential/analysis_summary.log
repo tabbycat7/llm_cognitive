@@ -1,32 +1,34 @@
 ==============================================================================
 LLM Cognitive Probe — Analysis Summary
 ==============================================================================
-Generated (local): 2026-04-22T20:10:19
+Generated (local): 2026-04-24T10:36:08
 
 [Input]
-  results_file: E:\college\postgraduate\llm_cognitive\MiniMax-M2.5\Personal&Existential\probe_results.jsonl
+  results_file: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Personal&Existential\probe_results.jsonl
   records (non-empty JSONL lines): 500
 
 [Merge]
   merge_method: llm
-  refresh_merge: True
+  refresh_merge: False
   name_source: step3
   chart_top_n: 30
 
 [Counts]
   raw_unique_names: 590
   raw_total_mentions: 1298
-  canonical_unique_names: 547
+  canonical_unique_names: 207
   canonical_total_mentions: 1298
-  distinct_label_reduction: 590 raw → 547 canonical (7.3% fewer labels)
+  distinct_label_reduction: 590 raw → 207 canonical (64.9% fewer labels)
 
 [Output artifacts]
   merge_map.json: yes
-  merge_map.embeddings.json: no
+  merge_map_llm_stage1.json: yes
+  merge_map_llm_stage1.embeddings.json: yes
+  merge_map_llm_stage2.json: yes
   model_law_frequency.png: yes
   model_law_wordcloud.png: yes
-  cluster_dendrogram.png: no
-  cluster_scatter.png: no
+  cluster_dendrogram.png: yes
+  cluster_scatter.png: yes
 
 [Top 30 raw names — before merge / 归并前（原始标签频次）]
   rank   count  name
@@ -63,786 +65,1574 @@ Generated (local): 2026-04-22T20:10:19
 
 [Top 30 canonical names — after merge / 归并后（代表名频次）]
   rank   count  name
-     1     178  negative feedback loop
-     2      80  reinforcement learning
-     3      71  attractor dynamics
-     4      42  bayesian inference
-     5      34  positive feedback loop
-     6      27  hebbian learning
-     7      24  operant conditioning
-     8      20  cognitive restructuring
-     9      20  homeostasis
-    10      14  extinction learning
-    11      12  hyperbolic discounting
-    12      12  percolation theory
-    13      11  threshold model
-    14      10  commitment device
-    15      10  predictive coding
-    16      10  memory reconsolidation
-    17       9  allostatic load model
-    18       9  multi armed bandit
-    19       9  signaling game
-    20       8  catastrophe theory
-    21       8  markov chain
-    22       8  bifurcation theory
-    23       7  dynamical systems theory
-    24       7  rescorla wagner model
-    25       7  hysteresis
-    26       7  habit loop
-    27       7  limit cycle oscillator
-    28       6  classical conditioning
-    29       6  cognitive dissonance theory
-    30       5  state space model
+     1     262  feedback control
+     2     114  reinforcement learning
+     3     111  attractor dynamics
+     4      72  bayesian updating
+     5      69  operant conditioning
+     6      62  dynamical systems theory
+     7      51  network theory
+     8      51  cognitive theories
+     9      46  homeostasis
+    10      35  hebbian plasticity
+    11      24  markov chain
+    12      21  control theory
+    13      16  threshold model
+    14      15  temporal discounting
+    15      12  commitment device
+    16      10  constraint satisfaction
+    17      10  signaling game
+    18      10  memory reconsolidation
+    19       7  causal modeling
+    20       6  principal agent theory
+    21       6  michaelis menten kinetics
+    22       6  iterative optimization
+    23       6  circadian rhythm
+    24       6  optimal stopping
+    25       5  redundancy
+    26       5  crisis intervention
+    27       5  information asymmetry
+    28       5  pharmacokinetic modeling
+    29       5  expected utility theory
+    30       5  habit loop
 
-[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 23 clusters]
-  [#1] representative: negative feedback loop  ·  11 members
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 54 clusters]
+  [#1] representative: feedback control  ·  55 members
+      · balancing feedback loop
+      · bidirectional feedback system
       · closed loop control
       · closed loop feedback control
-      · feedback control
+      · closed loop feedback system
+      · closed loop system
+      · conditional feedback response
+      · coupled feedback dynamics
+      · environmental negative feedback loop
+      · feedback control  [代表]
+      · feedback control loop
       · feedback control system
+      · feedback control system with constraint variable
       · feedback control theory
+      · feedback controller
+      · feedback disruption
       · feedback dynamics
-      · homeostatic negative feedback
+      · feedback dynamics in social systems
+      · feedback dynamics model
+      · feedback loop
+      · feedback loop dynamics
+      · feedback loop model
+      · feedback loop modification
+      · feedback loops in dynamical systems
+      · feedback stabilization
+      · feedforward control
+      · negative feedback
       · negative feedback control
       · negative feedback control system
-      · negative feedback loop  [代表]
+      · negative feedback inhibition
+      · negative feedback loop
+      · negative feedback loop cutting
+      · negative feedback loop disruption
+      · negative feedback loop regulation
+      · negative feedback loop system
       · negative feedback regulation
-  [#2] representative: attractor dynamics  ·  5 members
+      · negative feedback regulator
+      · negative feedback stabilization
+      · open loop control system
+      · positive feedback
+      · positive feedback amplification
+      · positive feedback dynamics
+      · positive feedback loop
+      · positive feedback loop disruption
+      · positive feedback loop dysregulation
+      · positive feedback loop with negative intervention
+      · positive feedback loops
+      · positive reinforcement loop
+      · reciprocal feedback loop
+      · reinforcement loop
+      · reinforcing feedback loop
+      · self reinforcing feedback loop
+      · state feedback control
+      · vicious circle
+      · vicious cycle dynamics
+  [#2] representative: attractor dynamics  ·  38 members
+      · attractor
+      · attractor basin
       · attractor dynamics  [代表]
+      · attractor dynamics in nonlinear dynamical systems
+      · attractor reconfiguration
+      · attractor replacement
+      · attractor state
       · attractor state dynamics
       · attractor state transition
+      · attractor switching
+      · basin escape dynamics
       · basin of attraction
+      · biological oscillator limit cycle attractor
+      · bistable attractor dynamics
+      · bistable dynamical system
+      · bistable dynamics
+      · bistable system dynamics
+      · bistable system with tipping point
+      · dynamical system attractor
       · dynamical system with attractor
-  [#3] representative: reinforcement learning  ·  5 members
-      · markov decision process
-      · reinforcement learning  [代表]
-      · reward prediction error
-      · reward shaping
-      · temporal difference learning
-  [#4] representative: operant conditioning  ·  4 members
+      · dynamical systems attractor
+      · dynamical systems attractor restructuring
+      · dynamical systems state space perturbation
+      · limit cycle
+      · limit cycle attractor
+      · limit cycle oscillator
+      · metastable dynamical systems
+      · multi dimensional attractor
+      · multi stability dynamics
+      · multi stability with redundant attractors
+      · multi stable attractor dynamics
+      · multistable dynamical system
+      · point attractor dynamics
+      · recurrent attractor dynamics
+      · state space control
+      · state space model
+      · state space model with observer
+      · state space transition dynamics
+  [#3] representative: dynamical systems theory  ·  36 members
+      · avalanche dynamics
+      · bifurcation of stability attractors
+      · bifurcation theory
+      · cascade dynamics
+      · catastrophe model
+      · catastrophe theory
+      · catastrophe theory cusp bifurcation
+      · catastrophe theory cusp model
+      · critical phase transition model
+      · critical phenomena
+      · critical point dynamics
+      · criticality dynamics
+      · cusp catastrophe
+      · dynamic system stability
+      · dynamical system
+      · dynamical systems bifurcation
+      · dynamical systems equilibrium
+      · dynamical systems stability
+      · dynamical systems stabilization
+      · dynamical systems theory  [代表]
+      · fast slow system dynamics
+      · fold catastrophe model
+      · hopf bifurcation
+      · hysteresis
+      · hysteresis model
+      · linear dynamical system
+      · multi equilibrium dynamical system
+      · nonlinear dynamical systems
+      · nonlinear dynamical systems with multiple equilibria
+      · nonlinear dynamics with slowly varying parameters
+      · phase transition
+      · stepwise transition model
+      · threshold model in dynamical systems
+      · threshold transition dynamics
+      · tipping point dynamics
+      · tipping point intervention
+  [#4] representative: network theory  ·  29 members
+      · cascade failure prevention
+      · cascade intervention model
+      · cascade model
+      · cascading failure
+      · cascading failure model
+      · cascading failure prevention
+      · graph connectivity
+      · graph connectivity recovery
+      · network cascade dynamics
+      · network cascade model
+      · network contagion
+      · network diffusion
+      · network diffusion model
+      · network effects
+      · network redundancy
+      · network resilience through redundancy
+      · network robustness
+      · network theory  [代表]
+      · percolation
+      · percolation theory
+      · percolation threshold
+      · social contagion model
+      · social monitoring network
+      · social network analysis
+      · social network intervention
+      · social network reconstruction
+      · social network theory
+      · social reinforcement network
+      · threshold model of cascading behavior
+  [#5] representative: reinforcement learning  ·  27 members
+      · behavior shaping
       · behavioral shaping
+      · exploration exploitation tradeoff
+      · markov decision process
+      · markov decision process with reward modulation
+      · markov decision processes
+      · multi armed bandit
       · negative reinforcement
-      · operant conditioning  [代表]
+      · negative reinforcement cycle
+      · negative reinforcement learning
+      · negative reinforcement loop
+      · operant conditioning with schedules of reinforcement
+      · partial reinforcement schedule
+      · partially observable markov decision process
+      · reinforcement learning  [代表]
+      · reinforcement learning with damaged reward function
+      · reinforcement learning with intrinsic rewards
+      · reinforcement learning with temporal difference
+      · reinforcement schedule
+      · reward function reconstruction
+      · reward shaping
+      · schedules of reinforcement
+      · shaping
+      · temporal difference error
+      · temporal difference learning
       · variable ratio reinforcement schedule
-  [#5] representative: bayesian inference  ·  3 members
-      · bayesian belief updating
-      · bayesian inference  [代表]
-      · bayesian updating
-  [#6] representative: cognitive restructuring  ·  3 members
+      · variable reinforcement schedule
+  [#6] representative: operant conditioning  ·  25 members
+      · alternative reinforcement
+      · behavioral extinction
+      · classical conditioning
+      · classical conditioning (pavlovian model)
+      · classical conditioning extinction
+      · classical conditioning model
+      · conditioned extinction
+      · error driven learning
+      · extinction
+      · extinction learning
+      · fear conditioning and extinction
+      · fear extinction learning
+      · fear extinction paradigm
+      · habit formation
+      · habit formation model
+      · habituation
+      · operant conditioning  [代表]
+      · operant conditioning model
+      · operant conditioning theory
+      · operant conditioning with differential reinforcement
+      · partial reinforcement extinction effect
+      · pavlovian extinction
+      · procedural habit formation
+      · rescorla wagner model
+      · two process theory of habit formation
+  [#7] representative: cognitive theories  ·  24 members
       · attribution retraining
+      · attribution theory
+      · cognitive affective schema reconstruction
+      · cognitive control modeling
+      · cognitive defusion
+      · cognitive dissonance
+      · cognitive dissonance reduction
+      · cognitive dissonance theory
+      · cognitive load theory
       · cognitive reappraisal
-      · cognitive restructuring  [代表]
-  [#7] representative: limit cycle oscillator  ·  3 members
+      · cognitive rebalancing
+      · cognitive reframing
+      · cognitive restructuring
+      · dual process theory
+      · ego depletion theory
+      · growth mindset
+      · metacognition
+      · metacognitive monitoring
+      · self efficacy theory
+      · self perception theory
+      · self reference paradox
+      · self referential reasoning
+      · social proof
+      · social proof mechanism
+  [#8] representative: bayesian updating  ·  20 members
+      · bayes theorem
+      · bayesian belief update
+      · bayesian belief updating
+      · bayesian belief updating model
+      · bayesian games
+      · bayesian inference
+      · bayesian inference with independent evidence sources
+      · bayesian optimization
+      · bayesian reasoning bias
+      · bayesian update
+      · bayesian updating  [代表]
+      · bayesian updating with biased likelihood
+      · prediction error
+      · predictive coding
+      · predictive coding with precision weighting
+      · predictive processing
+      · reinforcement learning reward prediction error
+      · reward prediction error
+      · reward prediction error model
+      · sequential bayesian updating
+  [#9] representative: control theory  ·  18 members
+      · adaptive control
+      · allostatic set point regulation
+      · control input
+      · control lyapunov function
+      · control theoretic stability
+      · control theoretic state transition
+      · control theory  [代表]
+      · external authority intervention
+      · external control
+      · hierarchical control model
+      · homeostatic set point model
+      · homeostatic set point reset
+      · locus of control shift
+      · lyapunov stability control
+      · optimal control theory
+      · perceptual control theory
+      · reference shift in control systems
+      · set point regulation
+  [#10] representative: homeostasis  ·  16 members
+      · allostasis
+      · allostatic load
+      · allostatic load and allostatic regulation
+      · allostatic load model
+      · allostatic load theory
+      · allostatic regulation
+      · homeostasis  [代表]
+      · homeostatic equilibrium
+      · homeostatic feedback control
+      · homeostatic feedback model
+      · homeostatic feedback regulation
+      · homeostatic negative feedback
+      · homeostatic negative feedback control
+      · homeostatic rebalancing
+      · homeostatic regulation
+      · homeostatic regulation model
+  [#11] representative: markov chain  ·  12 members
+      · absorbing state
+      · autoregressive model
+      · hidden markov model
+      · markov chain  [代表]
+      · markov chain model
+      · markov chain with absorbing states
+      · observable state transition
+      · state transition
+      · state transition model
+      · stochastic block model
+      · stochastic optimization
+      · time series analysis
+  [#12] representative: causal modeling  ·  7 members
+      · causal chain interruption
+      · causal discovery
+      · causal inference framework
+      · causal inference model
+      · causal loop theory
+      · causal network model
+      · structural causal model
+  [#13] representative: hebbian plasticity  ·  7 members
+      · competitive learning
+      · hebbian learning
+      · hebbian learning model
+      · hebbian plasticity  [代表]
+      · hebbian synaptic plasticity
+      · neural plasticity
+      · neuroplasticity
+  [#14] representative: threshold model  ·  7 members
+      · activation threshold
+      · critical threshold model
+      · metabolic threshold model
+      · network threshold model
+      · social network threshold model
+      · threshold model  [代表]
+      · threshold regulation model
+  [#15] representative: iterative optimization  ·  6 members
+      · hill climbing
+      · iterative optimization  [代表]
+      · iterative optimization with feedback
+      · iterative refinement
+      · momentum based gradient descent
+      · stochastic gradient descent
+  [#16] representative: constraint satisfaction  ·  5 members
+      · constraint relaxation
+      · constraint relaxation model
+      · constraint satisfaction  [代表]
+      · constraint satisfaction dynamics
+      · constraint satisfaction problem
+  [#17] representative: crisis intervention  ·  5 members
+      · crisis decompensation model
+      · crisis diversion
+      · crisis intervention protocol
+      · crisis intervention window
+      · crisis safety planning protocol
+  [#18] representative: optimal stopping  ·  5 members
+      · optimal stopping  [代表]
+      · optimal stopping theory
+      · optimal stopping with time horizon
+      · sequential decision process
+      · sequential decision theory
+  [#19] representative: principal agent theory  ·  5 members
+      · hidden action model
+      · principal agent model
+      · principal agent monitoring
+      · principal agent problem
+      · principal agent theory  [代表]
+  [#20] representative: behavioral activation  ·  4 members
+      · behavioral activation  [代表]
+      · behavioral activation model
+      · cognitive restructuring via behavioral activation
+      · friction model of behavioral activation
+  [#21] representative: circadian rhythm  ·  4 members
       · circadian oscillator
       · circadian oscillator model
-      · limit cycle oscillator  [代表]
-  [#8] representative: allostatic load model  ·  2 members
-      · allostatic load
-      · allostatic load model  [代表]
-  [#9] representative: bifurcation theory  ·  2 members
-      · bifurcation theory  [代表]
-      · hopf bifurcation
-  [#10] representative: catastrophe theory  ·  2 members
-      · catastrophe model
-      · catastrophe theory  [代表]
-  [#11] representative: cognitive dissonance theory  ·  2 members
-      · cognitive dissonance reduction
-      · cognitive dissonance theory  [代表]
-  [#12] representative: constraint satisfaction  ·  2 members
-      · constraint satisfaction  [代表]
-      · constraint satisfaction problem
-  [#13] representative: dynamical systems theory  ·  2 members
-      · dynamical system
-      · dynamical systems theory  [代表]
-  [#14] representative: extinction learning  ·  2 members
-      · extinction learning  [代表]
-      · fear extinction learning
-  [#15] representative: habit loop  ·  2 members
-      · habit formation
-      · habit loop  [代表]
-  [#16] representative: hebbian learning  ·  2 members
-      · hebbian learning  [代表]
-      · hebbian plasticity
-  [#17] representative: homeostasis  ·  2 members
-      · homeostasis  [代表]
-      · homeostatic regulation
-  [#18] representative: hyperbolic discounting  ·  2 members
+      · circadian rhythm entrainment model
+      · circadian rhythm model
+  [#22] representative: expected utility theory  ·  4 members
+      · cost benefit decision model
+      · expected utility maximization
+      · expected utility maximization under uncertainty
+      · expected utility theory  [代表]
+  [#23] representative: information asymmetry  ·  4 members
+      · information asymmetry  [代表]
+      · information asymmetry correction
+      · information asymmetry reduction
+      · information asymmetry signaling
+  [#24] representative: redundancy  ·  4 members
+      · redundancy  [代表]
+      · redundancy in social support networks
+      · redundant system with failure mode analysis
+      · redundant systems design
+  [#25] representative: temporal discounting  ·  4 members
       · delay discounting
-      · hyperbolic discounting  [代表]
-  [#19] representative: memory reconsolidation  ·  2 members
+      · hyperbolic discounting
+      · temporal discounting  [代表]
+      · temporal discounting rebalancing
+  [#26] representative: bottleneck  ·  3 members
+      · bottleneck analysis
+      · bottleneck queue
+      · bottleneck removal
+  [#27] representative: commitment device  ·  3 members
+      · commitment device  [代表]
+      · external commitment device
+      · precommitment device
+  [#28] representative: decision tree  ·  3 members
+      · binary decision tree
+      · decision tree  [代表]
+      · decision tree classification
+  [#29] representative: diversification  ·  3 members
+      · diversity gain
+      · portfolio diversification
+      · risk diversification
+  [#30] representative: michaelis menten kinetics  ·  3 members
+      · first order kinetics
+      · mass action kinetics
+      · michaelis menten kinetics  [代表]
+  [#31] representative: pharmacokinetic modeling  ·  3 members
+      · pharmacokinetic compartment model
+      · pharmacokinetic pharmacodynamic model
+      · pharmacokinetic steady state model
+  [#32] representative: social capital  ·  3 members
+      · social capital  [代表]
+      · social capital accumulation
+      · social capital theory
+  [#33] representative: system properties  ·  3 members
+      · controllability
+      · observability
+      · observability and controllability
+  [#34] representative: activation model  ·  2 members
+      · competitive activation model
+      · resource activation model
+  [#35] representative: availability heuristic  ·  2 members
+      · availability heuristic  [代表]
+      · confirmatory bias
+  [#36] representative: buffering hypothesis  ·  2 members
+      · social buffering hypothesis
+      · stress buffering hypothesis
+  [#37] representative: classification  ·  2 members
+      · clinical classification framework
+      · diagnostic classification
+  [#38] representative: constrained optimization  ·  2 members
+      · constrained optimization  [代表]
+      · constraint set modification
+  [#39] representative: dimensionality reduction  ·  2 members
+      · dimensionality reduction  [代表]
+      · dimensionality reduction (inverse)
+  [#40] representative: discrete time systems  ·  2 members
+      · discrete time feedback control
+      · discrete time state estimation
+  [#41] representative: energy balance  ·  2 members
+      · energy balance equation
+      · energy balance model
+  [#42] representative: external monitoring mechanism  ·  2 members
+      · external monitoring mechanism  [代表]
+      · external regulator
+  [#43] representative: habit loop  ·  2 members
+      · habit loop  [代表]
+      · habit loop model
+  [#44] representative: hill equation  ·  2 members
+      · dose response relationship
+      · hill equation  [代表]
+  [#45] representative: implementation intentions  ·  2 members
+      · conditional trigger action plan
+      · implementation intentions  [代表]
+  [#46] representative: intrinsic motivation  ·  2 members
+      · intrinsic motivation  [代表]
+      · intrinsic motivation modeling
+  [#47] representative: logistic growth  ·  2 members
+      · logistic growth  [代表]
+      · logistic growth model
+  [#48] representative: memory reconsolidation  ·  2 members
       · memory reconsolidation  [代表]
       · memory reconsolidation theory
-  [#20] representative: percolation theory  ·  2 members
-      · percolation
-      · percolation theory  [代表]
-  [#21] representative: positive feedback loop  ·  2 members
-      · positive feedback loop  [代表]
-      · reinforcing feedback loop
-  [#22] representative: predictive coding  ·  2 members
-      · predictive coding  [代表]
-      · predictive processing
-  [#23] representative: threshold model  ·  2 members
-      · critical threshold model
-      · threshold model  [代表]
+  [#49] representative: monoamine hypothesis  ·  2 members
+      · monoamine deficiency hypothesis
+      · monoamine hypothesis  [代表]
+  [#50] representative: pareto optimality  ·  2 members
+      · pareto optimal resource allocation
+      · pareto optimization
+  [#51] representative: reference dependence  ·  2 members
+      · reference dependence  [代表]
+      · reference dependent utility
+  [#52] representative: self organization  ·  2 members
+      · self organization  [代表]
+      · self organizing systems
+  [#53] representative: signaling game  ·  2 members
+      · signaling game  [代表]
+      · signaling model
+  [#54] representative: statistical mechanics models  ·  2 members
+      · ising model
+      · sis model
 
-[Merge map: raw → canonical where label changed (43 pairs)]
-  allostatic load  →  allostatic load model
+[Merge map: raw → canonical where label changed (398 pairs)]
+  competitive activation model  →  activation model
+  resource activation model  →  activation model
+  attractor  →  attractor dynamics
+  attractor basin  →  attractor dynamics
+  attractor dynamics in nonlinear dynamical systems  →  attractor dynamics
+  attractor reconfiguration  →  attractor dynamics
+  attractor replacement  →  attractor dynamics
+  attractor state  →  attractor dynamics
   attractor state dynamics  →  attractor dynamics
   attractor state transition  →  attractor dynamics
+  attractor switching  →  attractor dynamics
+  basin escape dynamics  →  attractor dynamics
   basin of attraction  →  attractor dynamics
+  biological oscillator limit cycle attractor  →  attractor dynamics
+  bistable attractor dynamics  →  attractor dynamics
+  bistable dynamical system  →  attractor dynamics
+  bistable dynamics  →  attractor dynamics
+  bistable system dynamics  →  attractor dynamics
+  bistable system with tipping point  →  attractor dynamics
+  dynamical system attractor  →  attractor dynamics
   dynamical system with attractor  →  attractor dynamics
-  bayesian belief updating  →  bayesian inference
-  bayesian updating  →  bayesian inference
-  hopf bifurcation  →  bifurcation theory
-  catastrophe model  →  catastrophe theory
-  cognitive dissonance reduction  →  cognitive dissonance theory
-  attribution retraining  →  cognitive restructuring
-  cognitive reappraisal  →  cognitive restructuring
+  dynamical systems attractor  →  attractor dynamics
+  dynamical systems attractor restructuring  →  attractor dynamics
+  dynamical systems state space perturbation  →  attractor dynamics
+  limit cycle  →  attractor dynamics
+  limit cycle attractor  →  attractor dynamics
+  limit cycle oscillator  →  attractor dynamics
+  metastable dynamical systems  →  attractor dynamics
+  multi dimensional attractor  →  attractor dynamics
+  multi stability dynamics  →  attractor dynamics
+  multi stability with redundant attractors  →  attractor dynamics
+  multi stable attractor dynamics  →  attractor dynamics
+  multistable dynamical system  →  attractor dynamics
+  point attractor dynamics  →  attractor dynamics
+  recurrent attractor dynamics  →  attractor dynamics
+  state space control  →  attractor dynamics
+  state space model  →  attractor dynamics
+  state space model with observer  →  attractor dynamics
+  state space transition dynamics  →  attractor dynamics
+  confirmatory bias  →  availability heuristic
+  bayes theorem  →  bayesian updating
+  bayesian belief update  →  bayesian updating
+  bayesian belief updating  →  bayesian updating
+  bayesian belief updating model  →  bayesian updating
+  bayesian games  →  bayesian updating
+  bayesian inference  →  bayesian updating
+  bayesian inference with independent evidence sources  →  bayesian updating
+  bayesian optimization  →  bayesian updating
+  bayesian reasoning bias  →  bayesian updating
+  bayesian update  →  bayesian updating
+  bayesian updating with biased likelihood  →  bayesian updating
+  prediction error  →  bayesian updating
+  predictive coding  →  bayesian updating
+  predictive coding with precision weighting  →  bayesian updating
+  predictive processing  →  bayesian updating
+  reinforcement learning reward prediction error  →  bayesian updating
+  reward prediction error  →  bayesian updating
+  reward prediction error model  →  bayesian updating
+  sequential bayesian updating  →  bayesian updating
+  behavioral activation model  →  behavioral activation
+  cognitive restructuring via behavioral activation  →  behavioral activation
+  friction model of behavioral activation  →  behavioral activation
+  bottleneck analysis  →  bottleneck
+  bottleneck queue  →  bottleneck
+  bottleneck removal  →  bottleneck
+  social buffering hypothesis  →  buffering hypothesis
+  stress buffering hypothesis  →  buffering hypothesis
+  causal chain interruption  →  causal modeling
+  causal discovery  →  causal modeling
+  causal inference framework  →  causal modeling
+  causal inference model  →  causal modeling
+  causal loop theory  →  causal modeling
+  causal network model  →  causal modeling
+  structural causal model  →  causal modeling
+  circadian oscillator  →  circadian rhythm
+  circadian oscillator model  →  circadian rhythm
+  circadian rhythm entrainment model  →  circadian rhythm
+  circadian rhythm model  →  circadian rhythm
+  clinical classification framework  →  classification
+  diagnostic classification  →  classification
+  attribution retraining  →  cognitive theories
+  attribution theory  →  cognitive theories
+  cognitive affective schema reconstruction  →  cognitive theories
+  cognitive control modeling  →  cognitive theories
+  cognitive defusion  →  cognitive theories
+  cognitive dissonance  →  cognitive theories
+  cognitive dissonance reduction  →  cognitive theories
+  cognitive dissonance theory  →  cognitive theories
+  cognitive load theory  →  cognitive theories
+  cognitive reappraisal  →  cognitive theories
+  cognitive rebalancing  →  cognitive theories
+  cognitive reframing  →  cognitive theories
+  cognitive restructuring  →  cognitive theories
+  dual process theory  →  cognitive theories
+  ego depletion theory  →  cognitive theories
+  growth mindset  →  cognitive theories
+  metacognition  →  cognitive theories
+  metacognitive monitoring  →  cognitive theories
+  self efficacy theory  →  cognitive theories
+  self perception theory  →  cognitive theories
+  self reference paradox  →  cognitive theories
+  self referential reasoning  →  cognitive theories
+  social proof  →  cognitive theories
+  social proof mechanism  →  cognitive theories
+  external commitment device  →  commitment device
+  precommitment device  →  commitment device
+  constraint set modification  →  constrained optimization
+  constraint relaxation  →  constraint satisfaction
+  constraint relaxation model  →  constraint satisfaction
+  constraint satisfaction dynamics  →  constraint satisfaction
   constraint satisfaction problem  →  constraint satisfaction
+  adaptive control  →  control theory
+  allostatic set point regulation  →  control theory
+  control input  →  control theory
+  control lyapunov function  →  control theory
+  control theoretic stability  →  control theory
+  control theoretic state transition  →  control theory
+  external authority intervention  →  control theory
+  external control  →  control theory
+  hierarchical control model  →  control theory
+  homeostatic set point model  →  control theory
+  homeostatic set point reset  →  control theory
+  locus of control shift  →  control theory
+  lyapunov stability control  →  control theory
+  optimal control theory  →  control theory
+  perceptual control theory  →  control theory
+  reference shift in control systems  →  control theory
+  set point regulation  →  control theory
+  crisis decompensation model  →  crisis intervention
+  crisis diversion  →  crisis intervention
+  crisis intervention protocol  →  crisis intervention
+  crisis intervention window  →  crisis intervention
+  crisis safety planning protocol  →  crisis intervention
+  binary decision tree  →  decision tree
+  decision tree classification  →  decision tree
+  dimensionality reduction (inverse)  →  dimensionality reduction
+  discrete time feedback control  →  discrete time systems
+  discrete time state estimation  →  discrete time systems
+  diversity gain  →  diversification
+  portfolio diversification  →  diversification
+  risk diversification  →  diversification
+  avalanche dynamics  →  dynamical systems theory
+  bifurcation of stability attractors  →  dynamical systems theory
+  bifurcation theory  →  dynamical systems theory
+  cascade dynamics  →  dynamical systems theory
+  catastrophe model  →  dynamical systems theory
+  catastrophe theory  →  dynamical systems theory
+  catastrophe theory cusp bifurcation  →  dynamical systems theory
+  catastrophe theory cusp model  →  dynamical systems theory
+  critical phase transition model  →  dynamical systems theory
+  critical phenomena  →  dynamical systems theory
+  critical point dynamics  →  dynamical systems theory
+  criticality dynamics  →  dynamical systems theory
+  cusp catastrophe  →  dynamical systems theory
+  dynamic system stability  →  dynamical systems theory
   dynamical system  →  dynamical systems theory
-  fear extinction learning  →  extinction learning
-  habit formation  →  habit loop
-  hebbian plasticity  →  hebbian learning
+  dynamical systems bifurcation  →  dynamical systems theory
+  dynamical systems equilibrium  →  dynamical systems theory
+  dynamical systems stability  →  dynamical systems theory
+  dynamical systems stabilization  →  dynamical systems theory
+  fast slow system dynamics  →  dynamical systems theory
+  fold catastrophe model  →  dynamical systems theory
+  hopf bifurcation  →  dynamical systems theory
+  hysteresis  →  dynamical systems theory
+  hysteresis model  →  dynamical systems theory
+  linear dynamical system  →  dynamical systems theory
+  multi equilibrium dynamical system  →  dynamical systems theory
+  nonlinear dynamical systems  →  dynamical systems theory
+  nonlinear dynamical systems with multiple equilibria  →  dynamical systems theory
+  nonlinear dynamics with slowly varying parameters  →  dynamical systems theory
+  phase transition  →  dynamical systems theory
+  stepwise transition model  →  dynamical systems theory
+  threshold model in dynamical systems  →  dynamical systems theory
+  threshold transition dynamics  →  dynamical systems theory
+  tipping point dynamics  →  dynamical systems theory
+  tipping point intervention  →  dynamical systems theory
+  energy balance equation  →  energy balance
+  energy balance model  →  energy balance
+  cost benefit decision model  →  expected utility theory
+  expected utility maximization  →  expected utility theory
+  expected utility maximization under uncertainty  →  expected utility theory
+  external regulator  →  external monitoring mechanism
+  balancing feedback loop  →  feedback control
+  bidirectional feedback system  →  feedback control
+  closed loop control  →  feedback control
+  closed loop feedback control  →  feedback control
+  closed loop feedback system  →  feedback control
+  closed loop system  →  feedback control
+  conditional feedback response  →  feedback control
+  coupled feedback dynamics  →  feedback control
+  environmental negative feedback loop  →  feedback control
+  feedback control loop  →  feedback control
+  feedback control system  →  feedback control
+  feedback control system with constraint variable  →  feedback control
+  feedback control theory  →  feedback control
+  feedback controller  →  feedback control
+  feedback disruption  →  feedback control
+  feedback dynamics  →  feedback control
+  feedback dynamics in social systems  →  feedback control
+  feedback dynamics model  →  feedback control
+  feedback loop  →  feedback control
+  feedback loop dynamics  →  feedback control
+  feedback loop model  →  feedback control
+  feedback loop modification  →  feedback control
+  feedback loops in dynamical systems  →  feedback control
+  feedback stabilization  →  feedback control
+  feedforward control  →  feedback control
+  negative feedback  →  feedback control
+  negative feedback control  →  feedback control
+  negative feedback control system  →  feedback control
+  negative feedback inhibition  →  feedback control
+  negative feedback loop  →  feedback control
+  negative feedback loop cutting  →  feedback control
+  negative feedback loop disruption  →  feedback control
+  negative feedback loop regulation  →  feedback control
+  negative feedback loop system  →  feedback control
+  negative feedback regulation  →  feedback control
+  negative feedback regulator  →  feedback control
+  negative feedback stabilization  →  feedback control
+  open loop control system  →  feedback control
+  positive feedback  →  feedback control
+  positive feedback amplification  →  feedback control
+  positive feedback dynamics  →  feedback control
+  positive feedback loop  →  feedback control
+  positive feedback loop disruption  →  feedback control
+  positive feedback loop dysregulation  →  feedback control
+  positive feedback loop with negative intervention  →  feedback control
+  positive feedback loops  →  feedback control
+  positive reinforcement loop  →  feedback control
+  reciprocal feedback loop  →  feedback control
+  reinforcement loop  →  feedback control
+  reinforcing feedback loop  →  feedback control
+  self reinforcing feedback loop  →  feedback control
+  state feedback control  →  feedback control
+  vicious circle  →  feedback control
+  vicious cycle dynamics  →  feedback control
+  habit loop model  →  habit loop
+  competitive learning  →  hebbian plasticity
+  hebbian learning  →  hebbian plasticity
+  hebbian learning model  →  hebbian plasticity
+  hebbian synaptic plasticity  →  hebbian plasticity
+  neural plasticity  →  hebbian plasticity
+  neuroplasticity  →  hebbian plasticity
+  dose response relationship  →  hill equation
+  allostasis  →  homeostasis
+  allostatic load  →  homeostasis
+  allostatic load and allostatic regulation  →  homeostasis
+  allostatic load model  →  homeostasis
+  allostatic load theory  →  homeostasis
+  allostatic regulation  →  homeostasis
+  homeostatic equilibrium  →  homeostasis
+  homeostatic feedback control  →  homeostasis
+  homeostatic feedback model  →  homeostasis
+  homeostatic feedback regulation  →  homeostasis
+  homeostatic negative feedback  →  homeostasis
+  homeostatic negative feedback control  →  homeostasis
+  homeostatic rebalancing  →  homeostasis
   homeostatic regulation  →  homeostasis
-  delay discounting  →  hyperbolic discounting
-  circadian oscillator  →  limit cycle oscillator
-  circadian oscillator model  →  limit cycle oscillator
+  homeostatic regulation model  →  homeostasis
+  conditional trigger action plan  →  implementation intentions
+  information asymmetry correction  →  information asymmetry
+  information asymmetry reduction  →  information asymmetry
+  information asymmetry signaling  →  information asymmetry
+  intrinsic motivation modeling  →  intrinsic motivation
+  hill climbing  →  iterative optimization
+  iterative optimization with feedback  →  iterative optimization
+  iterative refinement  →  iterative optimization
+  momentum based gradient descent  →  iterative optimization
+  stochastic gradient descent  →  iterative optimization
+  logistic growth model  →  logistic growth
+  absorbing state  →  markov chain
+  autoregressive model  →  markov chain
+  hidden markov model  →  markov chain
+  markov chain model  →  markov chain
+  markov chain with absorbing states  →  markov chain
+  observable state transition  →  markov chain
+  state transition  →  markov chain
+  state transition model  →  markov chain
+  stochastic block model  →  markov chain
+  stochastic optimization  →  markov chain
+  time series analysis  →  markov chain
   memory reconsolidation theory  →  memory reconsolidation
-  closed loop control  →  negative feedback loop
-  closed loop feedback control  →  negative feedback loop
-  feedback control  →  negative feedback loop
-  feedback control system  →  negative feedback loop
-  feedback control theory  →  negative feedback loop
-  feedback dynamics  →  negative feedback loop
-  homeostatic negative feedback  →  negative feedback loop
-  negative feedback control  →  negative feedback loop
-  negative feedback control system  →  negative feedback loop
-  negative feedback regulation  →  negative feedback loop
-  behavioral shaping  →  operant conditioning
-  negative reinforcement  →  operant conditioning
-  variable ratio reinforcement schedule  →  operant conditioning
-  percolation  →  percolation theory
-  reinforcing feedback loop  →  positive feedback loop
-  predictive processing  →  predictive coding
+  first order kinetics  →  michaelis menten kinetics
+  mass action kinetics  →  michaelis menten kinetics
+  monoamine deficiency hypothesis  →  monoamine hypothesis
+  cascade failure prevention  →  network theory
+  cascade intervention model  →  network theory
+  cascade model  →  network theory
+  cascading failure  →  network theory
+  cascading failure model  →  network theory
+  cascading failure prevention  →  network theory
+  graph connectivity  →  network theory
+  graph connectivity recovery  →  network theory
+  network cascade dynamics  →  network theory
+  network cascade model  →  network theory
+  network contagion  →  network theory
+  network diffusion  →  network theory
+  network diffusion model  →  network theory
+  network effects  →  network theory
+  network redundancy  →  network theory
+  network resilience through redundancy  →  network theory
+  network robustness  →  network theory
+  percolation  →  network theory
+  percolation theory  →  network theory
+  percolation threshold  →  network theory
+  social contagion model  →  network theory
+  social monitoring network  →  network theory
+  social network analysis  →  network theory
+  social network intervention  →  network theory
+  social network reconstruction  →  network theory
+  social network theory  →  network theory
+  social reinforcement network  →  network theory
+  threshold model of cascading behavior  →  network theory
+  alternative reinforcement  →  operant conditioning
+  behavioral extinction  →  operant conditioning
+  classical conditioning  →  operant conditioning
+  classical conditioning (pavlovian model)  →  operant conditioning
+  classical conditioning extinction  →  operant conditioning
+  classical conditioning model  →  operant conditioning
+  conditioned extinction  →  operant conditioning
+  error driven learning  →  operant conditioning
+  extinction  →  operant conditioning
+  extinction learning  →  operant conditioning
+  fear conditioning and extinction  →  operant conditioning
+  fear extinction learning  →  operant conditioning
+  fear extinction paradigm  →  operant conditioning
+  habit formation  →  operant conditioning
+  habit formation model  →  operant conditioning
+  habituation  →  operant conditioning
+  operant conditioning model  →  operant conditioning
+  operant conditioning theory  →  operant conditioning
+  operant conditioning with differential reinforcement  →  operant conditioning
+  partial reinforcement extinction effect  →  operant conditioning
+  pavlovian extinction  →  operant conditioning
+  procedural habit formation  →  operant conditioning
+  rescorla wagner model  →  operant conditioning
+  two process theory of habit formation  →  operant conditioning
+  optimal stopping theory  →  optimal stopping
+  optimal stopping with time horizon  →  optimal stopping
+  sequential decision process  →  optimal stopping
+  sequential decision theory  →  optimal stopping
+  pareto optimal resource allocation  →  pareto optimality
+  pareto optimization  →  pareto optimality
+  pharmacokinetic compartment model  →  pharmacokinetic modeling
+  pharmacokinetic pharmacodynamic model  →  pharmacokinetic modeling
+  pharmacokinetic steady state model  →  pharmacokinetic modeling
+  hidden action model  →  principal agent theory
+  principal agent model  →  principal agent theory
+  principal agent monitoring  →  principal agent theory
+  principal agent problem  →  principal agent theory
+  redundancy in social support networks  →  redundancy
+  redundant system with failure mode analysis  →  redundancy
+  redundant systems design  →  redundancy
+  reference dependent utility  →  reference dependence
+  behavior shaping  →  reinforcement learning
+  behavioral shaping  →  reinforcement learning
+  exploration exploitation tradeoff  →  reinforcement learning
   markov decision process  →  reinforcement learning
-  reward prediction error  →  reinforcement learning
+  markov decision process with reward modulation  →  reinforcement learning
+  markov decision processes  →  reinforcement learning
+  multi armed bandit  →  reinforcement learning
+  negative reinforcement  →  reinforcement learning
+  negative reinforcement cycle  →  reinforcement learning
+  negative reinforcement learning  →  reinforcement learning
+  negative reinforcement loop  →  reinforcement learning
+  operant conditioning with schedules of reinforcement  →  reinforcement learning
+  partial reinforcement schedule  →  reinforcement learning
+  partially observable markov decision process  →  reinforcement learning
+  reinforcement learning with damaged reward function  →  reinforcement learning
+  reinforcement learning with intrinsic rewards  →  reinforcement learning
+  reinforcement learning with temporal difference  →  reinforcement learning
+  reinforcement schedule  →  reinforcement learning
+  reward function reconstruction  →  reinforcement learning
   reward shaping  →  reinforcement learning
+  schedules of reinforcement  →  reinforcement learning
+  shaping  →  reinforcement learning
+  temporal difference error  →  reinforcement learning
   temporal difference learning  →  reinforcement learning
+  variable ratio reinforcement schedule  →  reinforcement learning
+  variable reinforcement schedule  →  reinforcement learning
+  self organizing systems  →  self organization
+  signaling model  →  signaling game
+  social capital accumulation  →  social capital
+  social capital theory  →  social capital
+  ising model  →  statistical mechanics models
+  sis model  →  statistical mechanics models
+  controllability  →  system properties
+  observability  →  system properties
+  observability and controllability  →  system properties
+  delay discounting  →  temporal discounting
+  hyperbolic discounting  →  temporal discounting
+  temporal discounting rebalancing  →  temporal discounting
+  activation threshold  →  threshold model
   critical threshold model  →  threshold model
+  metabolic threshold model  →  threshold model
+  network threshold model  →  threshold model
+  social network threshold model  →  threshold model
+  threshold regulation model  →  threshold model
 
-[Merge cluster details / 归并簇完整明细（共 547 簇，其中 23 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
-  [1] 代表名: negative feedback loop  ·  11 条
+[Merge cluster details / 归并簇完整明细（共 207 簇，其中 54 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: feedback control  ·  55 条
+      · balancing feedback loop
+      · bidirectional feedback system
       · closed loop control
       · closed loop feedback control
-      · feedback control
+      · closed loop feedback system
+      · closed loop system
+      · conditional feedback response
+      · coupled feedback dynamics
+      · environmental negative feedback loop
+      · feedback control  [代表]
+      · feedback control loop
       · feedback control system
+      · feedback control system with constraint variable
       · feedback control theory
+      · feedback controller
+      · feedback disruption
       · feedback dynamics
-      · homeostatic negative feedback
+      · feedback dynamics in social systems
+      · feedback dynamics model
+      · feedback loop
+      · feedback loop dynamics
+      · feedback loop model
+      · feedback loop modification
+      · feedback loops in dynamical systems
+      · feedback stabilization
+      · feedforward control
+      · negative feedback
       · negative feedback control
       · negative feedback control system
-      · negative feedback loop  [代表]
+      · negative feedback inhibition
+      · negative feedback loop
+      · negative feedback loop cutting
+      · negative feedback loop disruption
+      · negative feedback loop regulation
+      · negative feedback loop system
       · negative feedback regulation
-  [2] 代表名: attractor dynamics  ·  5 条
+      · negative feedback regulator
+      · negative feedback stabilization
+      · open loop control system
+      · positive feedback
+      · positive feedback amplification
+      · positive feedback dynamics
+      · positive feedback loop
+      · positive feedback loop disruption
+      · positive feedback loop dysregulation
+      · positive feedback loop with negative intervention
+      · positive feedback loops
+      · positive reinforcement loop
+      · reciprocal feedback loop
+      · reinforcement loop
+      · reinforcing feedback loop
+      · self reinforcing feedback loop
+      · state feedback control
+      · vicious circle
+      · vicious cycle dynamics
+  [2] 代表名: attractor dynamics  ·  38 条
+      · attractor
+      · attractor basin
       · attractor dynamics  [代表]
+      · attractor dynamics in nonlinear dynamical systems
+      · attractor reconfiguration
+      · attractor replacement
+      · attractor state
       · attractor state dynamics
       · attractor state transition
+      · attractor switching
+      · basin escape dynamics
       · basin of attraction
+      · biological oscillator limit cycle attractor
+      · bistable attractor dynamics
+      · bistable dynamical system
+      · bistable dynamics
+      · bistable system dynamics
+      · bistable system with tipping point
+      · dynamical system attractor
       · dynamical system with attractor
-  [3] 代表名: reinforcement learning  ·  5 条
-      · markov decision process
-      · reinforcement learning  [代表]
-      · reward prediction error
-      · reward shaping
-      · temporal difference learning
-  [4] 代表名: operant conditioning  ·  4 条
+      · dynamical systems attractor
+      · dynamical systems attractor restructuring
+      · dynamical systems state space perturbation
+      · limit cycle
+      · limit cycle attractor
+      · limit cycle oscillator
+      · metastable dynamical systems
+      · multi dimensional attractor
+      · multi stability dynamics
+      · multi stability with redundant attractors
+      · multi stable attractor dynamics
+      · multistable dynamical system
+      · point attractor dynamics
+      · recurrent attractor dynamics
+      · state space control
+      · state space model
+      · state space model with observer
+      · state space transition dynamics
+  [3] 代表名: dynamical systems theory  ·  36 条
+      · avalanche dynamics
+      · bifurcation of stability attractors
+      · bifurcation theory
+      · cascade dynamics
+      · catastrophe model
+      · catastrophe theory
+      · catastrophe theory cusp bifurcation
+      · catastrophe theory cusp model
+      · critical phase transition model
+      · critical phenomena
+      · critical point dynamics
+      · criticality dynamics
+      · cusp catastrophe
+      · dynamic system stability
+      · dynamical system
+      · dynamical systems bifurcation
+      · dynamical systems equilibrium
+      · dynamical systems stability
+      · dynamical systems stabilization
+      · dynamical systems theory  [代表]
+      · fast slow system dynamics
+      · fold catastrophe model
+      · hopf bifurcation
+      · hysteresis
+      · hysteresis model
+      · linear dynamical system
+      · multi equilibrium dynamical system
+      · nonlinear dynamical systems
+      · nonlinear dynamical systems with multiple equilibria
+      · nonlinear dynamics with slowly varying parameters
+      · phase transition
+      · stepwise transition model
+      · threshold model in dynamical systems
+      · threshold transition dynamics
+      · tipping point dynamics
+      · tipping point intervention
+  [4] 代表名: network theory  ·  29 条
+      · cascade failure prevention
+      · cascade intervention model
+      · cascade model
+      · cascading failure
+      · cascading failure model
+      · cascading failure prevention
+      · graph connectivity
+      · graph connectivity recovery
+      · network cascade dynamics
+      · network cascade model
+      · network contagion
+      · network diffusion
+      · network diffusion model
+      · network effects
+      · network redundancy
+      · network resilience through redundancy
+      · network robustness
+      · network theory  [代表]
+      · percolation
+      · percolation theory
+      · percolation threshold
+      · social contagion model
+      · social monitoring network
+      · social network analysis
+      · social network intervention
+      · social network reconstruction
+      · social network theory
+      · social reinforcement network
+      · threshold model of cascading behavior
+  [5] 代表名: reinforcement learning  ·  27 条
+      · behavior shaping
       · behavioral shaping
+      · exploration exploitation tradeoff
+      · markov decision process
+      · markov decision process with reward modulation
+      · markov decision processes
+      · multi armed bandit
       · negative reinforcement
-      · operant conditioning  [代表]
+      · negative reinforcement cycle
+      · negative reinforcement learning
+      · negative reinforcement loop
+      · operant conditioning with schedules of reinforcement
+      · partial reinforcement schedule
+      · partially observable markov decision process
+      · reinforcement learning  [代表]
+      · reinforcement learning with damaged reward function
+      · reinforcement learning with intrinsic rewards
+      · reinforcement learning with temporal difference
+      · reinforcement schedule
+      · reward function reconstruction
+      · reward shaping
+      · schedules of reinforcement
+      · shaping
+      · temporal difference error
+      · temporal difference learning
       · variable ratio reinforcement schedule
-  [5] 代表名: bayesian inference  ·  3 条
-      · bayesian belief updating
-      · bayesian inference  [代表]
-      · bayesian updating
-  [6] 代表名: cognitive restructuring  ·  3 条
+      · variable reinforcement schedule
+  [6] 代表名: operant conditioning  ·  25 条
+      · alternative reinforcement
+      · behavioral extinction
+      · classical conditioning
+      · classical conditioning (pavlovian model)
+      · classical conditioning extinction
+      · classical conditioning model
+      · conditioned extinction
+      · error driven learning
+      · extinction
+      · extinction learning
+      · fear conditioning and extinction
+      · fear extinction learning
+      · fear extinction paradigm
+      · habit formation
+      · habit formation model
+      · habituation
+      · operant conditioning  [代表]
+      · operant conditioning model
+      · operant conditioning theory
+      · operant conditioning with differential reinforcement
+      · partial reinforcement extinction effect
+      · pavlovian extinction
+      · procedural habit formation
+      · rescorla wagner model
+      · two process theory of habit formation
+  [7] 代表名: cognitive theories  ·  24 条
       · attribution retraining
+      · attribution theory
+      · cognitive affective schema reconstruction
+      · cognitive control modeling
+      · cognitive defusion
+      · cognitive dissonance
+      · cognitive dissonance reduction
+      · cognitive dissonance theory
+      · cognitive load theory
       · cognitive reappraisal
-      · cognitive restructuring  [代表]
-  [7] 代表名: limit cycle oscillator  ·  3 条
+      · cognitive rebalancing
+      · cognitive reframing
+      · cognitive restructuring
+      · dual process theory
+      · ego depletion theory
+      · growth mindset
+      · metacognition
+      · metacognitive monitoring
+      · self efficacy theory
+      · self perception theory
+      · self reference paradox
+      · self referential reasoning
+      · social proof
+      · social proof mechanism
+  [8] 代表名: bayesian updating  ·  20 条
+      · bayes theorem
+      · bayesian belief update
+      · bayesian belief updating
+      · bayesian belief updating model
+      · bayesian games
+      · bayesian inference
+      · bayesian inference with independent evidence sources
+      · bayesian optimization
+      · bayesian reasoning bias
+      · bayesian update
+      · bayesian updating  [代表]
+      · bayesian updating with biased likelihood
+      · prediction error
+      · predictive coding
+      · predictive coding with precision weighting
+      · predictive processing
+      · reinforcement learning reward prediction error
+      · reward prediction error
+      · reward prediction error model
+      · sequential bayesian updating
+  [9] 代表名: control theory  ·  18 条
+      · adaptive control
+      · allostatic set point regulation
+      · control input
+      · control lyapunov function
+      · control theoretic stability
+      · control theoretic state transition
+      · control theory  [代表]
+      · external authority intervention
+      · external control
+      · hierarchical control model
+      · homeostatic set point model
+      · homeostatic set point reset
+      · locus of control shift
+      · lyapunov stability control
+      · optimal control theory
+      · perceptual control theory
+      · reference shift in control systems
+      · set point regulation
+  [10] 代表名: homeostasis  ·  16 条
+      · allostasis
+      · allostatic load
+      · allostatic load and allostatic regulation
+      · allostatic load model
+      · allostatic load theory
+      · allostatic regulation
+      · homeostasis  [代表]
+      · homeostatic equilibrium
+      · homeostatic feedback control
+      · homeostatic feedback model
+      · homeostatic feedback regulation
+      · homeostatic negative feedback
+      · homeostatic negative feedback control
+      · homeostatic rebalancing
+      · homeostatic regulation
+      · homeostatic regulation model
+  [11] 代表名: markov chain  ·  12 条
+      · absorbing state
+      · autoregressive model
+      · hidden markov model
+      · markov chain  [代表]
+      · markov chain model
+      · markov chain with absorbing states
+      · observable state transition
+      · state transition
+      · state transition model
+      · stochastic block model
+      · stochastic optimization
+      · time series analysis
+  [12] 代表名: causal modeling  ·  7 条
+      · causal chain interruption
+      · causal discovery
+      · causal inference framework
+      · causal inference model
+      · causal loop theory
+      · causal network model
+      · structural causal model
+  [13] 代表名: hebbian plasticity  ·  7 条
+      · competitive learning
+      · hebbian learning
+      · hebbian learning model
+      · hebbian plasticity  [代表]
+      · hebbian synaptic plasticity
+      · neural plasticity
+      · neuroplasticity
+  [14] 代表名: threshold model  ·  7 条
+      · activation threshold
+      · critical threshold model
+      · metabolic threshold model
+      · network threshold model
+      · social network threshold model
+      · threshold model  [代表]
+      · threshold regulation model
+  [15] 代表名: iterative optimization  ·  6 条
+      · hill climbing
+      · iterative optimization  [代表]
+      · iterative optimization with feedback
+      · iterative refinement
+      · momentum based gradient descent
+      · stochastic gradient descent
+  [16] 代表名: constraint satisfaction  ·  5 条
+      · constraint relaxation
+      · constraint relaxation model
+      · constraint satisfaction  [代表]
+      · constraint satisfaction dynamics
+      · constraint satisfaction problem
+  [17] 代表名: crisis intervention  ·  5 条
+      · crisis decompensation model
+      · crisis diversion
+      · crisis intervention protocol
+      · crisis intervention window
+      · crisis safety planning protocol
+  [18] 代表名: optimal stopping  ·  5 条
+      · optimal stopping  [代表]
+      · optimal stopping theory
+      · optimal stopping with time horizon
+      · sequential decision process
+      · sequential decision theory
+  [19] 代表名: principal agent theory  ·  5 条
+      · hidden action model
+      · principal agent model
+      · principal agent monitoring
+      · principal agent problem
+      · principal agent theory  [代表]
+  [20] 代表名: behavioral activation  ·  4 条
+      · behavioral activation  [代表]
+      · behavioral activation model
+      · cognitive restructuring via behavioral activation
+      · friction model of behavioral activation
+  [21] 代表名: circadian rhythm  ·  4 条
       · circadian oscillator
       · circadian oscillator model
-      · limit cycle oscillator  [代表]
-  [8] 代表名: allostatic load model  ·  2 条
-      · allostatic load
-      · allostatic load model  [代表]
-  [9] 代表名: bifurcation theory  ·  2 条
-      · bifurcation theory  [代表]
-      · hopf bifurcation
-  [10] 代表名: catastrophe theory  ·  2 条
-      · catastrophe model
-      · catastrophe theory  [代表]
-  [11] 代表名: cognitive dissonance theory  ·  2 条
-      · cognitive dissonance reduction
-      · cognitive dissonance theory  [代表]
-  [12] 代表名: constraint satisfaction  ·  2 条
-      · constraint satisfaction  [代表]
-      · constraint satisfaction problem
-  [13] 代表名: dynamical systems theory  ·  2 条
-      · dynamical system
-      · dynamical systems theory  [代表]
-  [14] 代表名: extinction learning  ·  2 条
-      · extinction learning  [代表]
-      · fear extinction learning
-  [15] 代表名: habit loop  ·  2 条
-      · habit formation
-      · habit loop  [代表]
-  [16] 代表名: hebbian learning  ·  2 条
-      · hebbian learning  [代表]
-      · hebbian plasticity
-  [17] 代表名: homeostasis  ·  2 条
-      · homeostasis  [代表]
-      · homeostatic regulation
-  [18] 代表名: hyperbolic discounting  ·  2 条
+      · circadian rhythm entrainment model
+      · circadian rhythm model
+  [22] 代表名: expected utility theory  ·  4 条
+      · cost benefit decision model
+      · expected utility maximization
+      · expected utility maximization under uncertainty
+      · expected utility theory  [代表]
+  [23] 代表名: information asymmetry  ·  4 条
+      · information asymmetry  [代表]
+      · information asymmetry correction
+      · information asymmetry reduction
+      · information asymmetry signaling
+  [24] 代表名: redundancy  ·  4 条
+      · redundancy  [代表]
+      · redundancy in social support networks
+      · redundant system with failure mode analysis
+      · redundant systems design
+  [25] 代表名: temporal discounting  ·  4 条
       · delay discounting
-      · hyperbolic discounting  [代表]
-  [19] 代表名: memory reconsolidation  ·  2 条
+      · hyperbolic discounting
+      · temporal discounting  [代表]
+      · temporal discounting rebalancing
+  [26] 代表名: bottleneck  ·  3 条
+      · bottleneck analysis
+      · bottleneck queue
+      · bottleneck removal
+  [27] 代表名: commitment device  ·  3 条
+      · commitment device  [代表]
+      · external commitment device
+      · precommitment device
+  [28] 代表名: decision tree  ·  3 条
+      · binary decision tree
+      · decision tree  [代表]
+      · decision tree classification
+  [29] 代表名: diversification  ·  3 条
+      · diversity gain
+      · portfolio diversification
+      · risk diversification
+  [30] 代表名: michaelis menten kinetics  ·  3 条
+      · first order kinetics
+      · mass action kinetics
+      · michaelis menten kinetics  [代表]
+  [31] 代表名: pharmacokinetic modeling  ·  3 条
+      · pharmacokinetic compartment model
+      · pharmacokinetic pharmacodynamic model
+      · pharmacokinetic steady state model
+  [32] 代表名: social capital  ·  3 条
+      · social capital  [代表]
+      · social capital accumulation
+      · social capital theory
+  [33] 代表名: system properties  ·  3 条
+      · controllability
+      · observability
+      · observability and controllability
+  [34] 代表名: activation model  ·  2 条
+      · competitive activation model
+      · resource activation model
+  [35] 代表名: availability heuristic  ·  2 条
+      · availability heuristic  [代表]
+      · confirmatory bias
+  [36] 代表名: buffering hypothesis  ·  2 条
+      · social buffering hypothesis
+      · stress buffering hypothesis
+  [37] 代表名: classification  ·  2 条
+      · clinical classification framework
+      · diagnostic classification
+  [38] 代表名: constrained optimization  ·  2 条
+      · constrained optimization  [代表]
+      · constraint set modification
+  [39] 代表名: dimensionality reduction  ·  2 条
+      · dimensionality reduction  [代表]
+      · dimensionality reduction (inverse)
+  [40] 代表名: discrete time systems  ·  2 条
+      · discrete time feedback control
+      · discrete time state estimation
+  [41] 代表名: energy balance  ·  2 条
+      · energy balance equation
+      · energy balance model
+  [42] 代表名: external monitoring mechanism  ·  2 条
+      · external monitoring mechanism  [代表]
+      · external regulator
+  [43] 代表名: habit loop  ·  2 条
+      · habit loop  [代表]
+      · habit loop model
+  [44] 代表名: hill equation  ·  2 条
+      · dose response relationship
+      · hill equation  [代表]
+  [45] 代表名: implementation intentions  ·  2 条
+      · conditional trigger action plan
+      · implementation intentions  [代表]
+  [46] 代表名: intrinsic motivation  ·  2 条
+      · intrinsic motivation  [代表]
+      · intrinsic motivation modeling
+  [47] 代表名: logistic growth  ·  2 条
+      · logistic growth  [代表]
+      · logistic growth model
+  [48] 代表名: memory reconsolidation  ·  2 条
       · memory reconsolidation  [代表]
       · memory reconsolidation theory
-  [20] 代表名: percolation theory  ·  2 条
-      · percolation
-      · percolation theory  [代表]
-  [21] 代表名: positive feedback loop  ·  2 条
-      · positive feedback loop  [代表]
-      · reinforcing feedback loop
-  [22] 代表名: predictive coding  ·  2 条
-      · predictive coding  [代表]
-      · predictive processing
-  [23] 代表名: threshold model  ·  2 条
-      · critical threshold model
-      · threshold model  [代表]
-  [24] （单条）absorbing state
-  [25] （单条）activation threshold
-  [26] （单条）active queue management
-  [27] （单条）adaptive control
-  [28] （单条）adaptive expectation
-  [29] （单条）allostasis
-  [30] （单条）allostatic load and allostatic regulation
-  [31] （单条）allostatic load theory
-  [32] （单条）allostatic regulation
-  [33] （单条）allostatic set point regulation
-  [34] （单条）alternate path routing
-  [35] （单条）alternative reinforcement
-  [36] （单条）approach avoidance conflict
-  [37] （单条）attractor
-  [38] （单条）attractor basin
-  [39] （单条）attractor dynamics in nonlinear dynamical systems
-  [40] （单条）attractor reconfiguration
-  [41] （单条）attractor replacement
-  [42] （单条）attractor state
-  [43] （单条）attractor switching
-  [44] （单条）attribution theory
-  [45] （单条）autocatalytic reaction
-  [46] （单条）autoregressive model
-  [47] （单条）availability heuristic
-  [48] （单条）avalanche dynamics
-  [49] （单条）balancing feedback loop
-  [50] （单条）baseline establishment
-  [51] （单条）basin escape dynamics
-  [52] （单条）bayes theorem
-  [53] （单条）bayesian belief update
-  [54] （单条）bayesian belief updating model
-  [55] （单条）bayesian games
-  [56] （单条）bayesian inference with independent evidence sources
-  [57] （单条）bayesian optimization
-  [58] （单条）bayesian reasoning bias
-  [59] （单条）bayesian update
-  [60] （单条）bayesian updating with biased likelihood
+  [49] 代表名: monoamine hypothesis  ·  2 条
+      · monoamine deficiency hypothesis
+      · monoamine hypothesis  [代表]
+  [50] 代表名: pareto optimality  ·  2 条
+      · pareto optimal resource allocation
+      · pareto optimization
+  [51] 代表名: reference dependence  ·  2 条
+      · reference dependence  [代表]
+      · reference dependent utility
+  [52] 代表名: self organization  ·  2 条
+      · self organization  [代表]
+      · self organizing systems
+  [53] 代表名: signaling game  ·  2 条
+      · signaling game  [代表]
+      · signaling model
+  [54] 代表名: statistical mechanics models  ·  2 条
+      · ising model
+      · sis model
+  [55] （单条）active queue management
+  [56] （单条）adaptive expectation
+  [57] （单条）alternate path routing
+  [58] （单条）approach avoidance conflict
+  [59] （单条）autocatalytic reaction
+  [60] （单条）baseline establishment
   [61] （单条）behavior change trigger
-  [62] （单条）behavior shaping
-  [63] （单条）behavioral activation
-  [64] （单条）behavioral activation model
-  [65] （单条）behavioral constraint
-  [66] （单条）behavioral extinction
-  [67] （单条）bidirectional feedback system
-  [68] （单条）bifurcation of stability attractors
-  [69] （单条）binary decision tree
-  [70] （单条）binary search
-  [71] （单条）biological oscillator limit cycle attractor
-  [72] （单条）bipartite matching
-  [73] （单条）bistable attractor dynamics
-  [74] （单条）bistable dynamical system
-  [75] （单条）bistable dynamics
-  [76] （单条）bistable system dynamics
-  [77] （单条）bistable system with tipping point
-  [78] （单条）bottleneck analysis
-  [79] （单条）bottleneck queue
-  [80] （单条）bottleneck removal
-  [81] （单条）cascade dynamics
-  [82] （单条）cascade failure prevention
-  [83] （单条）cascade inhibition
-  [84] （单条）cascade intervention model
-  [85] （单条）cascade model
-  [86] （单条）cascading failure
-  [87] （单条）cascading failure model
-  [88] （单条）cascading failure prevention
-  [89] （单条）catastrophe theory cusp bifurcation
-  [90] （单条）catastrophe theory cusp model
-  [91] （单条）causal chain interruption
-  [92] （单条）causal discovery
-  [93] （单条）causal inference framework
-  [94] （单条）causal inference model
-  [95] （单条）causal loop theory
-  [96] （单条）causal network model
-  [97] （单条）certainty equivalence threshold
-  [98] （单条）choice architecture
-  [99] （单条）chunking
-  [100] （单条）circadian rhythm entrainment model
-  [101] （单条）circadian rhythm model
-  [102] （单条）classical conditioning
-  [103] （单条）classical conditioning (pavlovian model)
-  [104] （单条）classical conditioning extinction
-  [105] （单条）classical conditioning model
-  [106] （单条）clinical classification framework
-  [107] （单条）closed loop feedback system
-  [108] （单条）closed loop system
-  [109] （单条）cognitive affective schema reconstruction
-  [110] （单条）cognitive control modeling
-  [111] （单条）cognitive defusion
-  [112] （单条）cognitive dissonance
-  [113] （单条）cognitive load theory
-  [114] （单条）cognitive rebalancing
-  [115] （单条）cognitive reframing
-  [116] （单条）cognitive restructuring via behavioral activation
-  [117] （单条）commitment device
-  [118] （单条）compartmental epidemiological model
-  [119] （单条）competitive activation model
-  [120] （单条）competitive learning
-  [121] （单条）competitive salience
-  [122] （单条）concurrent engineering
-  [123] （单条）conditional feedback response
-  [124] （单条）conditional trigger action plan
-  [125] （单条）conditioned extinction
-  [126] （单条）confirmatory bias
-  [127] （单条）constrained optimization
-  [128] （单条）constraint relaxation
-  [129] （单条）constraint relaxation model
-  [130] （单条）constraint satisfaction dynamics
-  [131] （单条）constraint set modification
-  [132] （单条）control input
-  [133] （单条）control lyapunov function
-  [134] （单条）control theoretic stability
-  [135] （单条）control theoretic state transition
-  [136] （单条）control theory
-  [137] （单条）controllability
-  [138] （单条）convergent validation
-  [139] （单条）convex relaxation
-  [140] （单条）cost benefit decision model
-  [141] （单条）counterconditioning
-  [142] （单条）counterfactual reasoning
-  [143] （单条）coupled feedback dynamics
-  [144] （单条）coupled oscillator system
-  [145] （单条）crisis decompensation model
-  [146] （单条）crisis diversion
-  [147] （单条）crisis intervention protocol
-  [148] （单条）crisis intervention window
-  [149] （单条）crisis safety planning protocol
-  [150] （单条）critical phase transition model
-  [151] （单条）critical phenomena
-  [152] （单条）critical point dynamics
-  [153] （单条）criticality dynamics
-  [154] （单条）cusp catastrophe
-  [155] （单条）decision framing
-  [156] （单条）decision tree
-  [157] （单条）decision tree classification
-  [158] （单条）decomposition principle
-  [159] （单条）delay differential equation
-  [160] （单条）diagnostic classification
-  [161] （单条）diffusion of innovations
-  [162] （单条）dimensionality reduction
-  [163] （单条）dimensionality reduction (inverse)
-  [164] （单条）discrete time feedback control
-  [165] （单条）discrete time state estimation
-  [166] （单条）diversity gain
-  [167] （单条）dose response relationship
-  [168] （单条）dual process theory
-  [169] （单条）dynamic system stability
-  [170] （单条）dynamical system attractor
-  [171] （单条）dynamical systems attractor
-  [172] （单条）dynamical systems attractor restructuring
-  [173] （单条）dynamical systems bifurcation
-  [174] （单条）dynamical systems equilibrium
-  [175] （单条）dynamical systems stability
-  [176] （单条）dynamical systems stabilization
-  [177] （单条）dynamical systems state space perturbation
-  [178] （单条）ego depletion theory
-  [179] （单条）emotional disclosure
-  [180] （单条）energy balance equation
-  [181] （单条）energy balance model
-  [182] （单条）environmental negative feedback loop
-  [183] （单条）episodic memory consolidation
-  [184] （单条）error driven learning
-  [185] （单条）expected utility maximization
-  [186] （单条）expected utility maximization under uncertainty
-  [187] （单条）expected utility theory
-  [188] （单条）exploration exploitation tradeoff
-  [189] （单条）external authority intervention
-  [190] （单条）external commitment device
-  [191] （单条）external control
-  [192] （单条）external monitoring mechanism
-  [193] （单条）external regulator
-  [194] （单条）extinction
-  [195] （单条）fast slow system dynamics
-  [196] （单条）fear conditioning and extinction
-  [197] （单条）fear extinction paradigm
-  [198] （单条）feedback control loop
-  [199] （单条）feedback control system with constraint variable
-  [200] （单条）feedback controller
-  [201] （单条）feedback disruption
-  [202] （单条）feedback dynamics in social systems
-  [203] （单条）feedback dynamics model
-  [204] （单条）feedback loop
-  [205] （单条）feedback loop dynamics
-  [206] （单条）feedback loop model
-  [207] （单条）feedback loop modification
-  [208] （单条）feedback loops in dynamical systems
-  [209] （单条）feedback stabilization
-  [210] （单条）feedforward control
-  [211] （单条）first order kinetics
-  [212] （单条）fitzhugh nagumo model
-  [213] （单条）fold catastrophe model
-  [214] （单条）friction cost model
-  [215] （单条）friction model of behavioral activation
-  [216] （单条）gain modulation
-  [217] （单条）generative model
-  [218] （单条）goal gradient effect
-  [219] （单条）graph connectivity
-  [220] （单条）graph connectivity recovery
-  [221] （单条）growth mindset
-  [222] （单条）habit formation model
-  [223] （单条）habit loop model
-  [224] （单条）habit reversal training
-  [225] （单条）habituation
-  [226] （单条）hebbian learning model
-  [227] （单条）hebbian synaptic plasticity
-  [228] （单条）hidden action model
-  [229] （单条）hidden markov model
-  [230] （单条）hierarchical control model
-  [231] （单条）hill climbing
-  [232] （单条）hill equation
-  [233] （单条）homeostatic equilibrium
-  [234] （单条）homeostatic feedback control
-  [235] （单条）homeostatic feedback model
-  [236] （单条）homeostatic feedback regulation
-  [237] （单条）homeostatic negative feedback control
-  [238] （单条）homeostatic rebalancing
-  [239] （单条）homeostatic regulation model
-  [240] （单条）homeostatic set point model
-  [241] （单条）homeostatic set point reset
-  [242] （单条）homophily
-  [243] （单条）hopfield network
-  [244] （单条）hpa axis negative feedback model
-  [245] （单条）hysteresis
-  [246] （单条）hysteresis model
-  [247] （单条）implementation intentions
-  [248] （单条）incentive sensitization theory of addiction
-  [249] （单条）incremental learning
-  [250] （单条）information asymmetry
-  [251] （单条）information asymmetry correction
-  [252] （单条）information asymmetry reduction
-  [253] （单条）information asymmetry signaling
-  [254] （单条）information channel with signal to noise ratio optimization
-  [255] （单条）information disclosure mechanism
-  [256] （单条）inhibitory learning
-  [257] （单条）intensive outpatient program with assertive community treatment
-  [258] （单条）internal locus of evaluation
-  [259] （单条）interpersonal theory of suicide
-  [260] （单条）intolerance of uncertainty
-  [261] （单条）intrinsic motivation
-  [262] （单条）intrinsic motivation modeling
-  [263] （单条）ising model
-  [264] （单条）iterative optimization
-  [265] （单条）iterative optimization with feedback
-  [266] （单条）iterative refinement
-  [267] （单条）kramers rate theory
-  [268] （单条）labeling theory
-  [269] （单条）latent variable model
-  [270] （单条）law of effect
-  [271] （单条）leverage points in complex systems
-  [272] （单条）limit cycle
-  [273] （单条）limit cycle attractor
-  [274] （单条）linear dynamical system
-  [275] （单条）load redistribution
-  [276] （单条）load shedding
-  [277] （单条）locus of control shift
-  [278] （单条）logistic growth
-  [279] （单条）logistic growth model
-  [280] （单条）lyapunov stability control
-  [281] （单条）markov chain
-  [282] （单条）markov chain model
-  [283] （单条）markov chain with absorbing states
-  [284] （单条）markov decision process with reward modulation
-  [285] （单条）markov decision processes
-  [286] （单条）mass action kinetics
-  [287] （单条）means restriction
-  [288] （单条）mechanism design
-  [289] （单条）metabolic threshold model
-  [290] （单条）metacognition
-  [291] （单条）metacognitive monitoring
-  [292] （单条）metastable dynamical systems
-  [293] （单条）michaelis menten kinetics
-  [294] （单条）minimum cut
-  [295] （单条）model misspecification correction
-  [296] （单条）momentum based gradient descent
-  [297] （单条）monoamine deficiency hypothesis
-  [298] （单条）monoamine hypothesis
-  [299] （单条）multi armed bandit
-  [300] （单条）multi dimensional attractor
-  [301] （单条）multi equilibrium dynamical system
-  [302] （单条）multi objective optimization
-  [303] （单条）multi stability dynamics
-  [304] （单条）multi stability with redundant attractors
-  [305] （单条）multi stable attractor dynamics
-  [306] （单条）multi target synergistic drug model
-  [307] （单条）multi time scale dynamics
-  [308] （单条）multinomial logistic regression
-  [309] （单条）multistable dynamical system
-  [310] （单条）narrative identity construction
-  [311] （单条）negative feedback
-  [312] （单条）negative feedback inhibition
-  [313] （单条）negative feedback loop cutting
-  [314] （单条）negative feedback loop disruption
-  [315] （单条）negative feedback loop regulation
-  [316] （单条）negative feedback loop system
-  [317] （单条）negative feedback regulator
-  [318] （单条）negative feedback stabilization
-  [319] （单条）negative reinforcement cycle
-  [320] （单条）negative reinforcement learning
-  [321] （单条）negative reinforcement loop
-  [322] （单条）network cascade dynamics
-  [323] （单条）network cascade model
-  [324] （单条）network contagion
-  [325] （单条）network diffusion
-  [326] （单条）network diffusion model
-  [327] （单条）network effects
-  [328] （单条）network formation dynamics
-  [329] （单条）network rebalancing
-  [330] （单条）network redundancy
-  [331] （单条）network resilience through redundancy
-  [332] （单条）network robustness
-  [333] （单条）network theory
-  [334] （单条）network threshold model
-  [335] （单条）neural mass model
-  [336] （单条）neural network state transition model
-  [337] （单条）neural plasticity
-  [338] （单条）neurochemical homeostasis
-  [339] （单条）neuroplasticity
-  [340] （单条）neurotransmitter dysregulation model
-  [341] （单条）neurotransmitter receptor occupancy model
-  [342] （单条）neurotransmitter reuptake dynamics
-  [343] （单条）nonlinear dynamical systems
-  [344] （单条）nonlinear dynamical systems with multiple equilibria
-  [345] （单条）nonlinear dynamics with slowly varying parameters
-  [346] （单条）observability
-  [347] （单条）observability and controllability
-  [348] （单条）observability state reconstruction
-  [349] （单条）observable state transition
-  [350] （单条）observer effect
-  [351] （单条）obstacle model
-  [352] （单条）one compartment first order elimination model
-  [353] （单条）open loop control system
-  [354] （单条）open system theory
-  [355] （单条）operant conditioning model
-  [356] （单条）operant conditioning theory
-  [357] （单条）operant conditioning with differential reinforcement
-  [358] （单条）operant conditioning with schedules of reinforcement
-  [359] （单条）optimal control theory
-  [360] （单条）optimal stopping
-  [361] （单条）optimal stopping theory
-  [362] （单条）optimal stopping with time horizon
-  [363] （单条）oscillation dynamics
-  [364] （单条）override mechanism
-  [365] （单条）parameter control in dynamical systems
-  [366] （单条）pareto optimal resource allocation
-  [367] （单条）pareto optimization
-  [368] （单条）partial reinforcement extinction effect
-  [369] （单条）partial reinforcement schedule
-  [370] （单条）partially observable markov decision process
-  [371] （单条）pavlovian extinction
-  [372] （单条）perceptual control theory
-  [373] （单条）percolation threshold
-  [374] （单条）pharmacokinetic compartment model
-  [375] （单条）pharmacokinetic pharmacodynamic model
-  [376] （单条）pharmacokinetic steady state model
-  [377] （单条）pharmacological desensitization
-  [378] （单条）phase response curve
-  [379] （单条）phase transition
-  [380] （单条）point attractor dynamics
-  [381] （单条）poisson process
-  [382] （单条）polyvagal theory
-  [383] （单条）portfolio diversification
-  [384] （单条）positive feedback
-  [385] （单条）positive feedback amplification
-  [386] （单条）positive feedback dynamics
-  [387] （单条）positive feedback loop disruption
-  [388] （单条）positive feedback loop dysregulation
-  [389] （单条）positive feedback loop with negative intervention
-  [390] （单条）positive feedback loops
-  [391] （单条）positive reinforcement loop
-  [392] （单条）potential well model
-  [393] （单条）poverty trap
-  [394] （单条）precommitment device
-  [395] （单条）precomputed strategy lookup
-  [396] （单条）prediction error
-  [397] （单条）predictive coding with precision weighting
-  [398] （单条）predictive maintenance
-  [399] （单条）principal agent model
-  [400] （单条）principal agent monitoring
-  [401] （单条）principal agent problem
-  [402] （单条）principal agent theory
-  [403] （单条）priority queue
-  [404] （单条）problem space remapping
-  [405] （单条）procedural habit formation
-  [406] （单条）process of elimination
-  [407] （单条）prospect theory value function
-  [408] （单条）q learning
-  [409] （单条）rapid acting antidepressant intervention with acute phase stabilization
-  [410] （单条）rate limiting step model
-  [411] （单条）receptor downregulation and upregulation kinetics
-  [412] （单条）reciprocal feedback loop
-  [413] （单条）recurrent attractor dynamics
-  [414] （单条）recursive processing in neural circuits
-  [415] （单条）redundancy
-  [416] （单条）redundancy in social support networks
-  [417] （单条）redundant system with failure mode analysis
-  [418] （单条）redundant systems design
-  [419] （单条）reference dependence
-  [420] （单条）reference dependent utility
-  [421] （单条）reference shift in control systems
-  [422] （单条）regime switching model
-  [423] （单条）reinforcement learning policy iteration
-  [424] （单条）reinforcement learning reward prediction error
-  [425] （单条）reinforcement learning value function update
-  [426] （单条）reinforcement learning with damaged reward function
-  [427] （单条）reinforcement learning with intrinsic rewards
-  [428] （单条）reinforcement learning with temporal difference
-  [429] （单条）reinforcement loop
-  [430] （单条）reinforcement schedule
-  [431] （单条）reinforcement sensitivity theory
-  [432] （单条）relaxation oscillation
-  [433] （单条）reliability theory
-  [434] （单条）rem sleep rebound model
-  [435] （单条）rescorla wagner model
-  [436] （单条）resilience engineering
-  [437] （单条）resource activation model
-  [438] （单条）response inhibition
-  [439] （单条）retrieval practice
-  [440] （单条）reward function reconstruction
-  [441] （单条）reward prediction error model
-  [442] （单条）risk and protective factor model
-  [443] （单条）risk assessment and mitigation
-  [444] （单条）risk diversification
-  [445] （单条）robust decision making under uncertainty
-  [446] （单条）saddle node bifurcation
-  [447] （单条）saturation kinetics
-  [448] （单条）schedules of reinforcement
-  [449] （单条）schema change
-  [450] （单条）schema update mechanism
-  [451] （单条）self disclosure reciprocity
-  [452] （单条）self efficacy theory
-  [453] （单条）self fulfilling prophecy
-  [454] （单条）self organization
-  [455] （单条）self organized criticality
-  [456] （单条）self organizing systems
-  [457] （单条）self perception theory
-  [458] （单条）self reference paradox
-  [459] （单条）self referential reasoning
-  [460] （单条）self reinforcing feedback loop
-  [461] （单条）sequential analysis
-  [462] （单条）sequential bayesian updating
-  [463] （单条）sequential decision process
-  [464] （单条）sequential decision theory
-  [465] （单条）sequential game with commitment
-  [466] （单条）set point regulation
-  [467] （单条）shaping
-  [468] （单条）signal detection theory
-  [469] （单条）signaling game
-  [470] （单条）signaling model
-  [471] （单条）sis model
-  [472] （单条）sleep restriction therapy (optimization framework)
-  [473] （单条）social buffering hypothesis
-  [474] （单条）social capital
-  [475] （单条）social capital accumulation
-  [476] （单条）social capital theory
-  [477] （单条）social contagion model
-  [478] （单条）social diffusion
-  [479] （单条）social learning theory
-  [480] （单条）social monitoring network
-  [481] （单条）social network analysis
-  [482] （单条）social network intervention
-  [483] （单条）social network reconstruction
-  [484] （单条）social network theory
-  [485] （单条）social network threshold model
-  [486] （单条）social proof
-  [487] （单条）social proof mechanism
-  [488] （单条）social reinforcement network
-  [489] （单条）spaced repetition
-  [490] （单条）spectral analysis
-  [491] （单条）stabilization by transient stabilization
-  [492] （单条）stackelberg game
-  [493] （单条）state dependent affect recognition
-  [494] （单条）state dependent switching control
-  [495] （单条）state estimation
-  [496] （单条）state feedback control
-  [497] （单条）state space control
-  [498] （单条）state space model
-  [499] （单条）state space model with observer
-  [500] （单条）state space transition dynamics
-  [501] （单条）state transition
-  [502] （单条）state transition model
-  [503] （单条）state variable consistency
-  [504] （单条）stepwise transition model
-  [505] （单条）stochastic block model
-  [506] （单条）stochastic gradient descent
-  [507] （单条）stochastic optimization
-  [508] （单条）strange loop
-  [509] （单条）stress buffering hypothesis
-  [510] （单条）stress diathesis model
-  [511] （单条）structural causal model
-  [512] （单条）structuredinteraction framework
-  [513] （单条）supervisory control with time delay
-  [514] （单条）symbolic representation
-  [515] （单条）synaptic weight optimization
-  [516] （单条）system boundary reconfiguration
-  [517] （单条）system identification
-  [518] （单条）targeted parameter intervention
-  [519] （单条）temporal difference error
-  [520] （单条）temporal discounting
-  [521] （单条）temporal discounting rebalancing
-  [522] （单条）theory of planned behavior
-  [523] （单条）threshold based risk attenuation
-  [524] （单条）threshold control via gain scheduling
-  [525] （单条）threshold model in dynamical systems
-  [526] （单条）threshold model of cascading behavior
-  [527] （单条）threshold model with pressure release
-  [528] （单条）threshold regulation model
-  [529] （单条）threshold transition dynamics
-  [530] （单条）time delay dynamical system
-  [531] （单条）time series analysis
-  [532] （单条）tipping point dynamics
-  [533] （单条）tipping point intervention
-  [534] （单条）tolerance dynamics
-  [535] （单条）transtheoretical model
-  [536] （单条）triage based resource allocation
-  [537] （单条）two process model of sleep regulation
-  [538] （单条）two process theory of habit formation
-  [539] （单条）two stage intervention model
-  [540] （单条）utility optimization
-  [541] （单条）variable reinforcement schedule
-  [542] （单条）vicious circle
-  [543] （单条）vicious cycle dynamics
-  [544] （单条）winner take all competition
-  [545] （单条）working memory capacity constraint
-  [546] （单条）yerkes dodson law
-  [547] （单条）无合适映射
+  [62] （单条）behavioral constraint
+  [63] （单条）binary search
+  [64] （单条）bipartite matching
+  [65] （单条）cascade inhibition
+  [66] （单条）certainty equivalence threshold
+  [67] （单条）choice architecture
+  [68] （单条）chunking
+  [69] （单条）compartmental epidemiological model
+  [70] （单条）competitive salience
+  [71] （单条）concurrent engineering
+  [72] （单条）convergent validation
+  [73] （单条）convex relaxation
+  [74] （单条）counterconditioning
+  [75] （单条）counterfactual reasoning
+  [76] （单条）coupled oscillator system
+  [77] （单条）decision framing
+  [78] （单条）decomposition principle
+  [79] （单条）delay differential equation
+  [80] （单条）diffusion of innovations
+  [81] （单条）emotional disclosure
+  [82] （单条）episodic memory consolidation
+  [83] （单条）fitzhugh nagumo model
+  [84] （单条）friction cost model
+  [85] （单条）gain modulation
+  [86] （单条）generative model
+  [87] （单条）goal gradient effect
+  [88] （单条）habit reversal training
+  [89] （单条）homophily
+  [90] （单条）hopfield network
+  [91] （单条）hpa axis negative feedback model
+  [92] （单条）incentive sensitization theory of addiction
+  [93] （单条）incremental learning
+  [94] （单条）information channel with signal to noise ratio optimization
+  [95] （单条）information disclosure mechanism
+  [96] （单条）inhibitory learning
+  [97] （单条）intensive outpatient program with assertive community treatment
+  [98] （单条）internal locus of evaluation
+  [99] （单条）interpersonal theory of suicide
+  [100] （单条）intolerance of uncertainty
+  [101] （单条）kramers rate theory
+  [102] （单条）labeling theory
+  [103] （单条）latent variable model
+  [104] （单条）law of effect
+  [105] （单条）leverage points in complex systems
+  [106] （单条）load redistribution
+  [107] （单条）load shedding
+  [108] （单条）means restriction
+  [109] （单条）mechanism design
+  [110] （单条）minimum cut
+  [111] （单条）model misspecification correction
+  [112] （单条）multi objective optimization
+  [113] （单条）multi target synergistic drug model
+  [114] （单条）multi time scale dynamics
+  [115] （单条）multinomial logistic regression
+  [116] （单条）narrative identity construction
+  [117] （单条）network formation dynamics
+  [118] （单条）network rebalancing
+  [119] （单条）neural mass model
+  [120] （单条）neural network state transition model
+  [121] （单条）neurochemical homeostasis
+  [122] （单条）neurotransmitter dysregulation model
+  [123] （单条）neurotransmitter receptor occupancy model
+  [124] （单条）neurotransmitter reuptake dynamics
+  [125] （单条）observability state reconstruction
+  [126] （单条）observer effect
+  [127] （单条）obstacle model
+  [128] （单条）one compartment first order elimination model
+  [129] （单条）open system theory
+  [130] （单条）oscillation dynamics
+  [131] （单条）override mechanism
+  [132] （单条）parameter control in dynamical systems
+  [133] （单条）pharmacological desensitization
+  [134] （单条）phase response curve
+  [135] （单条）poisson process
+  [136] （单条）polyvagal theory
+  [137] （单条）potential well model
+  [138] （单条）poverty trap
+  [139] （单条）precomputed strategy lookup
+  [140] （单条）predictive maintenance
+  [141] （单条）priority queue
+  [142] （单条）problem space remapping
+  [143] （单条）process of elimination
+  [144] （单条）prospect theory value function
+  [145] （单条）q learning
+  [146] （单条）rapid acting antidepressant intervention with acute phase stabilization
+  [147] （单条）rate limiting step model
+  [148] （单条）receptor downregulation and upregulation kinetics
+  [149] （单条）recursive processing in neural circuits
+  [150] （单条）regime switching model
+  [151] （单条）reinforcement learning policy iteration
+  [152] （单条）reinforcement learning value function update
+  [153] （单条）reinforcement sensitivity theory
+  [154] （单条）relaxation oscillation
+  [155] （单条）reliability theory
+  [156] （单条）rem sleep rebound model
+  [157] （单条）resilience engineering
+  [158] （单条）response inhibition
+  [159] （单条）retrieval practice
+  [160] （单条）risk and protective factor model
+  [161] （单条）risk assessment and mitigation
+  [162] （单条）robust decision making under uncertainty
+  [163] （单条）saddle node bifurcation
+  [164] （单条）saturation kinetics
+  [165] （单条）schema change
+  [166] （单条）schema update mechanism
+  [167] （单条）self disclosure reciprocity
+  [168] （单条）self fulfilling prophecy
+  [169] （单条）self organized criticality
+  [170] （单条）sequential analysis
+  [171] （单条）sequential game with commitment
+  [172] （单条）signal detection theory
+  [173] （单条）sleep restriction therapy (optimization framework)
+  [174] （单条）social diffusion
+  [175] （单条）social learning theory
+  [176] （单条）spaced repetition
+  [177] （单条）spectral analysis
+  [178] （单条）stabilization by transient stabilization
+  [179] （单条）stackelberg game
+  [180] （单条）state dependent affect recognition
+  [181] （单条）state dependent switching control
+  [182] （单条）state estimation
+  [183] （单条）state variable consistency
+  [184] （单条）strange loop
+  [185] （单条）stress diathesis model
+  [186] （单条）structuredinteraction framework
+  [187] （单条）supervisory control with time delay
+  [188] （单条）symbolic representation
+  [189] （单条）synaptic weight optimization
+  [190] （单条）system boundary reconfiguration
+  [191] （单条）system identification
+  [192] （单条）targeted parameter intervention
+  [193] （单条）theory of planned behavior
+  [194] （单条）threshold based risk attenuation
+  [195] （单条）threshold control via gain scheduling
+  [196] （单条）threshold model with pressure release
+  [197] （单条）time delay dynamical system
+  [198] （单条）tolerance dynamics
+  [199] （单条）transtheoretical model
+  [200] （单条）triage based resource allocation
+  [201] （单条）two process model of sleep regulation
+  [202] （单条）two stage intervention model
+  [203] （单条）utility optimization
+  [204] （单条）winner take all competition
+  [205] （单条）working memory capacity constraint
+  [206] （单条）yerkes dodson law
+  [207] （单条）无合适映射
 
 ==============================================================================

@@ -1,0 +1,167 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Personal&Existential\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Personal&Existential\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Personal&Existential\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     219
+  distinct stage-1 canonicals:  145
+  stage2 map entries (keys):    145
+  distinct stage-2 canonicals:  98
+  stage2 merge groups (|keys|>1 for same c2): 18 groups, 65 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1023
+  distinct c1 (weighted rows): 145
+  distinct c2 (weighted):      98
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'cognitive bias'  ←  8 stage-1 labels
+        · all or nothing bias
+        · anchoring
+        · base rate fallacy
+        · cognitive bias
+        · framing effect
+        · negativity bias
+        · sunk cost fallacy
+        · zeigarnik effect
+  [ 2] 'feedback control'  ←  7 stage-1 labels
+        · adaptive control
+        · boundary control
+        · closed loop control
+        · disturbance rejection
+        · feedback loop
+        · feedbackcontrol
+        · linear feedback control system
+  [ 3] 'attractor'  ←  6 stage-1 labels
+        · attractor
+        · basin of attraction
+        · bistability
+        · limit cycle
+        · multi stability
+        · point attractor
+  [ 4] 'local search'  ←  5 stage-1 labels
+        · greedy algorithm
+        · hill climbing
+        · incremental optimization
+        · local optimization
+        · local search
+  [ 5] 'multiple equilibria'  ←  5 stage-1 labels
+        · equilibrium
+        · multiple equilibria
+        · stable fixed point
+        · steady states
+        · steadystate
+  [ 6] 'energy-based models'  ←  4 stage-1 labels
+        · energy balance
+        · energy dissipation
+        · energy landscape
+        · energy principle
+  [ 7] 'approximation methods'  ←  3 stage-1 labels
+        · adiabatic approximation
+        · approximation method
+        · perturbation theory
+  [ 8] 'bifurcation theory'  ←  3 stage-1 labels
+        · bifurcation
+        · cusp catastrophe model
+        · phase transition
+  [ 9] 'limited capacity models'  ←  3 stage-1 labels
+        · capacity model of attention
+        · limited attention
+        · limited capacity model
+  [10] 'matching theory'  ←  3 stage-1 labels
+        · matching theory
+        · stable matching
+        · twosidedmatching
+  [11] 'reinforcement learning'  ←  3 stage-1 labels
+        · multi armed bandit
+        · reinforcement learning
+        · temporal difference learning
+  [12] 'signaling'  ←  3 stage-1 labels
+        · information asymmetry
+        · pooling equilibrium
+        · signaling
+  [13] 'causal model'  ←  2 stage-1 labels
+        · causal model
+        · rubin causal model
+  [14] 'markov chain'  ←  2 stage-1 labels
+        · markov chain
+        · markov decision process
+  [15] 'rescorla wagner model'  ←  2 stage-1 labels
+        · extinction learning
+        · rescorla wagner model
+  [16] 'sequential hypothesis testing'  ←  2 stage-1 labels
+        · sequential analysis
+        · sequential hypothesis testing
+  [17] 'stability'  ←  2 stage-1 labels
+        · stability
+        · stochastic stability
+  [18] 'temporal discounting'  ←  2 stage-1 labels
+        · intertemporal choice
+        · temporal discounting
+
+[Stage-2 renames] (key ≠ value, 54 entries; list first 80)
+  'adaptive control'  →  'feedback control'
+  'adiabatic approximation'  →  'approximation methods'
+  'all or nothing bias'  →  'cognitive bias'
+  'anchoring'  →  'cognitive bias'
+  'approximation method'  →  'approximation methods'
+  'base rate fallacy'  →  'cognitive bias'
+  'basin of attraction'  →  'attractor'
+  'bifurcation'  →  'bifurcation theory'
+  'bistability'  →  'attractor'
+  'boundary control'  →  'feedback control'
+  'capacity model of attention'  →  'limited capacity models'
+  'closed loop control'  →  'feedback control'
+  'cusp catastrophe model'  →  'bifurcation theory'
+  'disturbance rejection'  →  'feedback control'
+  'energy balance'  →  'energy-based models'
+  'energy dissipation'  →  'energy-based models'
+  'energy landscape'  →  'energy-based models'
+  'energy principle'  →  'energy-based models'
+  'equilibrium'  →  'multiple equilibria'
+  'extinction learning'  →  'rescorla wagner model'
+  'feedback loop'  →  'feedback control'
+  'feedbackcontrol'  →  'feedback control'
+  'framing effect'  →  'cognitive bias'
+  'greedy algorithm'  →  'local search'
+  'hill climbing'  →  'local search'
+  'incremental optimization'  →  'local search'
+  'information asymmetry'  →  'signaling'
+  'intertemporal choice'  →  'temporal discounting'
+  'limit cycle'  →  'attractor'
+  'limited attention'  →  'limited capacity models'
+  'limited capacity model'  →  'limited capacity models'
+  'linear feedback control system'  →  'feedback control'
+  'local optimization'  →  'local search'
+  'markov decision process'  →  'markov chain'
+  'multi armed bandit'  →  'reinforcement learning'
+  'multi stability'  →  'attractor'
+  'negativity bias'  →  'cognitive bias'
+  'perturbation theory'  →  'approximation methods'
+  'phase transition'  →  'bifurcation theory'
+  'point attractor'  →  'attractor'
+  'pooling equilibrium'  →  'signaling'
+  'rationaladdiction'  →  'rational addiction'
+  'rubin causal model'  →  'causal model'
+  'sequential analysis'  →  'sequential hypothesis testing'
+  'stable fixed point'  →  'multiple equilibria'
+  'stable matching'  →  'matching theory'
+  'steady states'  →  'multiple equilibria'
+  'steadystate'  →  'multiple equilibria'
+  'stochastic stability'  →  'stability'
+  'substitutioneffect'  →  'substitution effect'
+  'sunk cost fallacy'  →  'cognitive bias'
+  'temporal difference learning'  →  'reinforcement learning'
+  'twosidedmatching'  →  'matching theory'
+  'zeigarnik effect'  →  'cognitive bias'
+
+[Consistency with merge_map.json]
+  compared 219 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

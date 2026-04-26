@@ -5,15 +5,20 @@ Supports reasoning fields from:
 2) Nested JSON blocks embedded in step response strings (for example step3_response).
 3) The full text of step2_response (--source-scope step2_full), without parsing JSON.
 4) String values of key "explanation" inside step3_response JSON (--source-scope step3_explanation).
-5) Use ``--color-by merge`` to color points by canonical names in ``merge_map.json`` (same
+5) ``step3_and_explanation``: per JSONL line, concatenate all step3 ``reasoning`` texts and all
+   ``explanation`` strings from ``step3_response`` JSON into one document, then one embedding per line.
+   For ``--color-by merge``, ``raw_model_name`` is the most frequent model inferred from those paths
+   (same ``models[i]`` convention as other scopes).
+6) ``step3_reasoning`` (formerly ``step3``): only ``reasoning`` fields parsed from ``step3_response`` JSON.
+7) Use ``--color-by merge`` to color points by canonical names in ``merge_map.json`` (same
    as analysis; default path: directory of ``--input`` / merge_map.json).
-6) ``--batch``: scan ``--root`` for ``probe_results.jsonl``. By default each job writes
+8) ``--batch``: scan ``--root`` for ``probe_results.jsonl``. By default each job writes
    ``reasoning_embeddings_2d*.csv/.png`` **next to that JSONL** (same folder as analysis).
    The combined overview image (if ``--mode`` includes combined) goes under ``--output-root``.
    Use ``--batch-output-subdirs`` to instead mirror the old layout ``--output-root/<model>/<category>/``.
    ``-j / --batch-workers N`` parallelizes **openai** and **ollama** batch jobs
    (thread pool); **local** keeps a single shared encoder (N ignored).
-7) ``--mode combined|separate|both`` in batch mode:
+9) ``--mode combined|separate|both`` in batch mode:
     combined = one overview figure, separate = one figure per job, both = export both.
 
 python embed_reasoning_2d.py --input x/probe_results.jsonl --from-embeddings prev_run/
@@ -31,6 +36,9 @@ use a model that provides model.safetensors.
 
 The output CSV (``reasoning_embeddings_2d_points.csv``) saves ``x``/``y`` 2D coordinates
 plus metadata per row. High-dimensional embedding vectors are **not** stored in the CSV.
+
+With ``--reduce umap``, optional ``--umap-pre-pca-components K`` (K>0) runs PCA to at most
+``min(K, n_samples-1, embedding_dim)`` dimensions before UMAP (default K=0: no preconditioning).
 
 ``--plot-only-2d`` rereads a prior 2D CSV, matches rows to ``--input``/``--source-scope``,
 and saves **PNG + 2D-only CSV (no high-dim column)** in the same folder as ``probe_results.jsonl``.
@@ -205,6 +213,84 @@ def canonical_merged_name(raw: str, merge_map: dict[str, str]) -> str:
     return c if c else (key or r)
 
 
+_STEP3_CONCAT_SOURCE = "step3_response.concat_reasoning_and_explanation"
+
+
+def _dominant_raw_model_name(
+    parsed: dict,
+    reasoning_items: list[tuple[str, str]],
+    expl_items: list[tuple[str, str]],
+) -> str:
+    """Pick one model name for merge coloring: most paths under ``models[i]`` win; ties break by name."""
+    cnt: Counter[str] = Counter()
+    for path, _text in reasoning_items + expl_items:
+        n = raw_model_name_from_parsed_path(parsed, path)
+        if n:
+            cnt[n] += 1
+    if cnt:
+        return max(cnt.items(), key=lambda kv: (kv[1], kv[0]))[0]
+    models = parsed.get("models")
+    if isinstance(models, list) and len(models) == 1 and isinstance(models[0], dict):
+        n = models[0].get("name", "")
+        if isinstance(n, str) and n.strip():
+            return n.strip()
+    return ""
+
+
+def _record_step3_reasoning_explanation_concat(row: dict, *, line_no: int, qid: object) -> dict | None:
+    """One record per JSONL line: all step3 reasoning strings then all explanations, joined."""
+    raw3 = row.get("step3_response")
+    if not isinstance(raw3, str) or not raw3.strip():
+        return None
+    block = extract_json_block(raw3)
+    if not block:
+        return None
+    try:
+        parsed = json.loads(block)
+    except json.JSONDecodeError:
+        return None
+    if not isinstance(parsed, dict):
+        return None
+
+    reasoning_items = list(collect_reasonings(parsed, prefix="step3_response.$parsed"))
+    expl_items = list(
+        collect_string_field(parsed, "explanation", prefix="step3_response.$parsed")
+    )
+
+    reasoning_parts: list[str] = []
+    for _path, text in reasoning_items:
+        t = (text or "").strip()
+        if t:
+            reasoning_parts.append(t)
+
+    expl_parts: list[str] = []
+    for _path, text in expl_items:
+        t = (text or "").strip()
+        if t:
+            expl_parts.append(t)
+
+    if not reasoning_parts and not expl_parts:
+        return None
+
+    sep = "\n\n"
+    if reasoning_parts and expl_parts:
+        blob = sep.join(reasoning_parts) + sep + sep.join(expl_parts)
+    elif reasoning_parts:
+        blob = sep.join(reasoning_parts)
+    else:
+        blob = sep.join(expl_parts)
+
+    raw_model_name = _dominant_raw_model_name(parsed, reasoning_items, expl_items)
+
+    return {
+        "question_index": qid,
+        "line_no": line_no,
+        "source": _STEP3_CONCAT_SOURCE,
+        "reasoning": blob,
+        "raw_model_name": raw_model_name,
+    }
+
+
 def parse_jsonl_reasonings(input_path: Path, source_scope: str) -> list[dict]:
     """Load JSONL and gather all reasoning text sources."""
     records: list[dict] = []
@@ -261,6 +347,12 @@ def parse_jsonl_reasonings(input_path: Path, source_scope: str) -> list[dict]:
                     )
                 continue
 
+            if source_scope == "step3_and_explanation":
+                rec = _record_step3_reasoning_explanation_concat(row, line_no=line_no, qid=qid)
+                if rec is not None:
+                    records.append(rec)
+                continue
+
             if source_scope == "all":
                 for path, text in collect_reasonings(row, prefix="record"):
                     records.append(
@@ -272,8 +364,9 @@ def parse_jsonl_reasonings(input_path: Path, source_scope: str) -> list[dict]:
                             "raw_model_name": raw_model_name_from_parsed_path(row, path),
                         }
                     )
+                continue
 
-            fields = ("step3_response",) if source_scope == "step3" else STEP_TEXT_FIELDS
+            fields = ("step3_response",) if source_scope == "step3_reasoning" else STEP_TEXT_FIELDS
             for field in fields:
                 raw_text = row.get(field)
                 if not isinstance(raw_text, str) or not raw_text.strip():
@@ -305,6 +398,8 @@ def source_group(source: str) -> str:
     s = source.lower()
     if s == "step2_response.full" or s.startswith("step2_response.full"):
         return "step2_response_full"
+    if s == _STEP3_CONCAT_SOURCE.lower() or "concat_reasoning_and_explanation" in s:
+        return "step3_reasoning_explanation_concat"
     if s.startswith("step3_response.$parsed"):
         last_seg = s.rsplit(".", 1)[-1]
         if last_seg == "explanation":
@@ -317,7 +412,14 @@ def source_group(source: str) -> str:
     return "other_reasoning"
 
 
-def project_2d(embeddings: np.ndarray, method: str) -> np.ndarray:
+def project_2d(
+    embeddings: np.ndarray,
+    method: str,
+    *,
+    umap_pre_pca_components: int = 0,
+    quiet: bool = False,
+    log_prefix: str = "",
+) -> np.ndarray:
     n = embeddings.shape[0]
     if n == 1:
         return np.array([[0.0, 0.0]], dtype=float)
@@ -328,16 +430,38 @@ def project_2d(embeddings: np.ndarray, method: str) -> np.ndarray:
         try:
             import umap
 
+            X = np.asarray(embeddings, dtype=np.float64)
+            if umap_pre_pca_components > 0:
+                d = X.shape[1]
+                k = min(max(int(umap_pre_pca_components), 1), n - 1, d)
+                if k < d:
+                    pca = PCA(n_components=k, random_state=42)
+                    X = pca.fit_transform(X)
+                    ev = float(np.sum(pca.explained_variance_ratio_))
+                    if not quiet:
+                        lp = f"{log_prefix} " if log_prefix else ""
+                        print(
+                            f"{lp}[info] UMAP precondition: PCA → {k} dims "
+                            f"(from embedding dim {d}; cumulative explained variance ratio ≈ {ev:.4f})"
+                        )
+                elif not quiet:
+                    lp = f"{log_prefix} " if log_prefix else ""
+                    print(
+                        f"{lp}[info] UMAP precondition: PCA skipped "
+                        f"(K={umap_pre_pca_components} ≥ embedding dim {d})"
+                    )
+
             n_neighbors = min(15, n - 1)
             reducer = umap.UMAP(
                 n_components=2,
                 metric="cosine",
-                n_neighbors=80,
-                min_dist=0.001,
+                n_neighbors=15,
+                min_dist=0.5,
+                spread=2.0,
                 random_state=42,
                 n_jobs=1,
             )
-            return reducer.fit_transform(embeddings)
+            return reducer.fit_transform(X)
         except Exception as err:
             print(f"[warn] UMAP failed, fallback to t-SNE. reason={err}")
 
@@ -364,7 +488,8 @@ def _qualitative_color_series(n: int) -> list:
 
 
 _MERGE_TOP_ATTRACTORS = 10
-_MERGE_OTHER_FACE = "#d9d9d9"#其余吸引子的颜色
+_MERGE_MIN_COUNT = 10  # merge legend: omit attractors with count < this (others still drawn in gray)
+_MERGE_OTHER_FACE = "#d9d9d9"  # 其余（已过滤低频）吸引子
 _MERGE_OTHER_EDGE = "#bfbfbf"
 
 
@@ -384,6 +509,7 @@ def plot_points_on_ax(
         "step2_response_full": "#d62728",
         "step3_models_reasoning": "#1f77b4",
         "step3_explanation": "#17becf",
+        "step3_reasoning_explanation_concat": "#bcbd22",
         "metadata_reasoning": "#ff7f0e",
         "other_step_reasoning": "#2ca02c",
         "other_reasoning": "#9467bd",
@@ -401,11 +527,17 @@ def plot_points_on_ax(
     count_by: Counter[str] = Counter(groups)
 
     if color_by == "merge":
-        top_ordered = [n for n, _ in count_by.most_common(_MERGE_TOP_ATTRACTORS)]
+        ranked = [
+            (n, c)
+            for n, c in count_by.most_common()
+            if c >= _MERGE_MIN_COUNT
+        ]
+        top_ordered = [n for n, _ in ranked[:_MERGE_TOP_ATTRACTORS]]
         top_set = frozenset(top_ordered)
         color_series = _qualitative_color_series(max(_MERGE_TOP_ATTRACTORS, 1))
-        others = sorted(g for g in unique_groups if g not in top_set)
-        plot_order = list(others) + [g for g in top_ordered if g in unique_groups]
+        visible = {g for g in unique_groups if count_by[g] >= _MERGE_MIN_COUNT}
+        others = sorted(g for g in visible if g not in top_set)
+        plot_order = list(others) + [g for g in top_ordered if g in visible]
         for grp in plot_order:
             idx = [i for i, g in enumerate(groups) if g == grp]
             xy = points[idx]
@@ -697,6 +829,7 @@ def run_embedding_job(
     source_scope: str,
     color_by: str,
     reduce: str,
+    umap_pre_pca_components: int = 0,
     embedding_backend: str,
     embedding_model: str,
     batch_size: int,
@@ -763,7 +896,14 @@ def run_embedding_job(
         )
         embeddings = l2_normalize_rows(embeddings)
 
-    points = project_2d(embeddings, method=reduce)
+    pre_pca = umap_pre_pca_components if reduce == "umap" else 0
+    points = project_2d(
+        embeddings,
+        method=reduce,
+        umap_pre_pca_components=pre_pca,
+        quiet=console_quiet,
+        log_prefix=log_prefix,
+    )
 
     mpath = merge_map_path if merge_map_path is not None else (input_path.parent / "merge_map.json")
     merge_map: dict[str, str] = {}
@@ -852,6 +992,7 @@ def _execute_one_batch_job(
                 source_scope=args.source_scope,
                 color_by=args.color_by,
                 reduce=args.reduce,
+                umap_pre_pca_components=args.umap_pre_pca_components,
                 embedding_backend=args.embedding_backend,
                 embedding_model=args.model,
                 batch_size=args.batch_size,
@@ -946,6 +1087,13 @@ def run_batch_from_args(args: argparse.Namespace) -> int:
     fig_lock: threading.Lock | None = threading.Lock() if use_parallel and w > 1 else None
 
     ncols = _tqdm_ncols()
+    k_pca = int(getattr(args, "umap_pre_pca_components", 0) or 0)
+    if not plot_only and args.reduce == "umap" and k_pca > 0:
+        tqdm.write(
+            f"[batch] UMAP: PCA precondition active (target K={k_pca} components, capped per job by n−1 and "
+            f"embedding dim). Per-job PCA explained-variance lines are omitted in batch mode; "
+            f"run a single file without --batch to see them."
+        )
     if plot_only:
         tqdm.write(
             "[batch] --plot-only-2d: reads <probe_dir>/BASENAME for x,y, writes figure+2D-only CSV there "
@@ -1176,6 +1324,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="2D projection method.",
     )
     parser.add_argument(
+        "--umap-pre-pca-components",
+        type=int,
+        default=0,
+        metavar="K",
+        help=(
+            "When --reduce umap and K>0: run PCA to min(K, n_samples-1, embedding_dim) components first, "
+            "then UMAP to 2D (noise reduction / speed). K=0 disables (default)."
+        ),
+    )
+    parser.add_argument(
         "--output-dir",
         type=Path,
         default=Path("reasoning_embedding_2d"),
@@ -1183,9 +1341,18 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--source-scope",
-        choices=["step3", "all", "step2_full", "step3_explanation"],
+        choices=[
+            "step3_reasoning",
+            "step3_and_explanation",
+            "all",
+            "step2_full",
+            "step3_explanation",
+        ],
         default="step3_explanation",
-        help="Text source: step3 reasonings, all reasonings, full step2_response, or step3 explanation fields (default: %(default)s).",
+        help=(
+            "Text source: step3 reasoning only; step3 reasoning+explanation concatenated per line; "
+            "all reasonings; full step2_response; or step3 explanation fields (default: %(default)s)."
+        ),
     )
     parser.add_argument(
         "--color-by",
@@ -1251,6 +1418,7 @@ def main() -> None:
         source_scope=args.source_scope,
         color_by=args.color_by,
         reduce=args.reduce,
+        umap_pre_pca_components=args.umap_pre_pca_components,
         embedding_backend=args.embedding_backend,
         embedding_model=args.model,
         batch_size=args.batch_size,

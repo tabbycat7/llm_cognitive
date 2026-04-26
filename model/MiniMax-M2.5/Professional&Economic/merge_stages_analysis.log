@@ -1,0 +1,260 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:24
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Professional&Economic\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Professional&Economic\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Professional&Economic\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     608
+  distinct stage-1 canonicals:  354
+  stage2 map entries (keys):    354
+  distinct stage-2 canonicals:  255
+  stage2 merge groups (|keys|>1 for same c2): 26 groups, 125 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1219
+  distinct c1 (weighted rows): 354
+  distinct c2 (weighted):      255
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'constrained optimization'  ←  15 stage-1 labels
+        · budget allocation
+        · budget allocation model
+        · constrained optimization
+        · constraint analysis
+        · constraint reduction in sequential optimization
+        · constraint reformulation
+        · constraint satisfaction
+        · convex optimization with budget constraint
+        · greedy algorithm
+        · knapsack problem
+        · linear programming
+        · multi objective optimization
+        · … +3 more
+  [ 2] 'bargaining theory'  ←  12 stage-1 labels
+        · bargaining range
+        · bargaining theory
+        · batna
+        · best alternative to negotiated agreement
+        · binding arbitration
+        · brinkmanship
+        · cheap talk game
+        · competitive bargaining
+        · deadline game
+        · outside option
+        · ultimatum game
+        · war of attrition
+  [ 3] 'human capital theory'  ←  9 stage-1 labels
+        · cognitive load theory
+        · deliberate practice
+        · human capital
+        · knowledge transfer
+        · learning curve
+        · schema theory
+        · seci model
+        · skill
+        · spaced repetition
+  [ 4] 'behavioral economics'  ←  8 stage-1 labels
+        · anchoring
+        · bounded rationality
+        · framing effect
+        · hyperbolic discounting
+        · mental accounting
+        · reference dependence
+        · satisficing
+        · sunk cost
+  [ 5] 'debt management'  ←  8 stage-1 labels
+        · amortization
+        · buffer stock
+        · debt management
+        · debt repayment strategies
+        · debt service ratio
+        · debt to income ratio constraint
+        · income contingent repayment
+        · savings model
+  [ 6] 'time value of money'  ←  8 stage-1 labels
+        · compound growth
+        · compound interest
+        · declining balance depreciation
+        · depreciation schedule
+        · discounted cash flow
+        · exponential function
+        · net present value
+        · time value of money
+  [ 7] 'network effects'  ←  6 stage-1 labels
+        · collective behavior
+        · information cascade
+        · network effects
+        · percolation
+        · threshold model
+        · weak ties
+  [ 8] 'matching theory'  ←  5 stage-1 labels
+        · bipartite matching
+        · cascade matching
+        · deferred acceptance algorithm
+        · matching theory
+        · two sided matching
+  [ 9] 'portfolio theory'  ←  5 stage-1 labels
+        · diversification
+        · dollar cost averaging
+        · mean variance optimization
+        · portfolio rebalancing
+        · portfolio theory
+  [10] 'signaling theory'  ←  5 stage-1 labels
+        · competitive market signaling
+        · information revelation
+        · separating equilibrium
+        · signaling
+        · spence signaling model
+  [11] 'tax optimization'  ←  5 stage-1 labels
+        · progressive taxation
+        · tax arbitrage
+        · tax deferral
+        · tax efficiency
+        · tax mechanism
+  [12] 'feedback control'  ←  4 stage-1 labels
+        · control theory
+        · dynamical systems
+        · feedback
+        · feedback control
+  [13] 'nash equilibrium'  ←  4 stage-1 labels
+        · best response
+        · equilibrium
+        · minimax
+        · nash equilibrium
+  [14] 'optimal stopping'  ←  4 stage-1 labels
+        · optimal stopping
+        · option pricing
+        · option value
+        · real options
+  [15] 'principal-agent theory'  ←  4 stage-1 labels
+        · contract theory
+        · delegated enforcement
+        · incentive compatibility
+        · principal agent theory
+  [16] 'utility maximization'  ←  3 stage-1 labels
+        · intertemporal choice
+        · multi attribute utility theory
+        · utility maximization
+  [17] 'arbitrage'  ←  2 stage-1 labels
+        · arbitrage
+        · bid ask spread arbitrage
+  [18] 'bayesian updating'  ←  2 stage-1 labels
+        · bayesian theory
+        · bayesian updating
+  [19] 'cash flow management'  ←  2 stage-1 labels
+        · cash flow management
+        · cash flow optimization
+  [20] 'liquidity'  ←  2 stage-1 labels
+        · liquidity
+        · precautionary demand
+  [21] 'markov decision process'  ←  2 stage-1 labels
+        · markov decision process
+        · sequential decision process
+  [22] 'mechanism design'  ←  2 stage-1 labels
+        · mechanism design
+        · revelation principle
+  [23] 'multi-armed bandit'  ←  2 stage-1 labels
+        · exploration exploitation tradeoff
+        · multi armed bandit
+  [24] 'queueing theory'  ←  2 stage-1 labels
+        · queueing
+        · queueing theory
+  [25] 'repeated game'  ←  2 stage-1 labels
+        · repeated game
+        · trigger strategy
+  [26] 'search theory'  ←  2 stage-1 labels
+        · job search
+        · search theory
+
+[Stage-2 renames] (key ≠ value, 109 entries; list first 80)
+  'amortization'  →  'debt management'
+  'anchoring'  →  'behavioral economics'
+  'bargaining range'  →  'bargaining theory'
+  'batna'  →  'bargaining theory'
+  'bayesian theory'  →  'bayesian updating'
+  'best alternative to negotiated agreement'  →  'bargaining theory'
+  'best response'  →  'nash equilibrium'
+  'bid ask spread arbitrage'  →  'arbitrage'
+  'binding arbitration'  →  'bargaining theory'
+  'bipartite matching'  →  'matching theory'
+  'bounded rationality'  →  'behavioral economics'
+  'break even analysis'  →  'break-even analysis'
+  'brinkmanship'  →  'bargaining theory'
+  'budget allocation'  →  'constrained optimization'
+  'budget allocation model'  →  'constrained optimization'
+  'buffer stock'  →  'debt management'
+  'cascade matching'  →  'matching theory'
+  'cash flow optimization'  →  'cash flow management'
+  'cheap talk game'  →  'bargaining theory'
+  'cognitive load theory'  →  'human capital theory'
+  'collective behavior'  →  'network effects'
+  'competitive bargaining'  →  'bargaining theory'
+  'competitive market signaling'  →  'signaling theory'
+  'compound growth'  →  'time value of money'
+  'compound interest'  →  'time value of money'
+  'constraint analysis'  →  'constrained optimization'
+  'constraint reduction in sequential optimization'  →  'constrained optimization'
+  'constraint reformulation'  →  'constrained optimization'
+  'constraint satisfaction'  →  'constrained optimization'
+  'contract theory'  →  'principal-agent theory'
+  'control theory'  →  'feedback control'
+  'convex optimization with budget constraint'  →  'constrained optimization'
+  'cost benefit analysis'  →  'cost-benefit analysis'
+  'deadline game'  →  'bargaining theory'
+  'debt repayment strategies'  →  'debt management'
+  'debt service ratio'  →  'debt management'
+  'debt to income ratio constraint'  →  'debt management'
+  'declining balance depreciation'  →  'time value of money'
+  'deferred acceptance algorithm'  →  'matching theory'
+  'delegated enforcement'  →  'principal-agent theory'
+  'deliberate practice'  →  'human capital theory'
+  'depreciation schedule'  →  'time value of money'
+  'discounted cash flow'  →  'time value of money'
+  'diversification'  →  'portfolio theory'
+  'dollar cost averaging'  →  'portfolio theory'
+  'dynamical systems'  →  'feedback control'
+  'equilibrium'  →  'nash equilibrium'
+  'exploration exploitation tradeoff'  →  'multi-armed bandit'
+  'exponential function'  →  'time value of money'
+  'feedback'  →  'feedback control'
+  'framing effect'  →  'behavioral economics'
+  'greedy algorithm'  →  'constrained optimization'
+  'human capital'  →  'human capital theory'
+  'hyperbolic discounting'  →  'behavioral economics'
+  'incentive compatibility'  →  'principal-agent theory'
+  'income contingent repayment'  →  'debt management'
+  'information cascade'  →  'network effects'
+  'information revelation'  →  'signaling theory'
+  'intertemporal choice'  →  'utility maximization'
+  'job search'  →  'search theory'
+  'knapsack problem'  →  'constrained optimization'
+  'knowledge transfer'  →  'human capital theory'
+  'learning curve'  →  'human capital theory'
+  'linear programming'  →  'constrained optimization'
+  'mean variance optimization'  →  'portfolio theory'
+  'mental accounting'  →  'behavioral economics'
+  'minimax'  →  'nash equilibrium'
+  'multi armed bandit'  →  'multi-armed bandit'
+  'multi attribute utility theory'  →  'utility maximization'
+  'multi objective optimization'  →  'constrained optimization'
+  'net present value'  →  'time value of money'
+  'option pricing'  →  'optimal stopping'
+  'option value'  →  'optimal stopping'
+  'outside option'  →  'bargaining theory'
+  'pareto concepts'  →  'pareto efficiency'
+  'percolation'  →  'network effects'
+  'portfolio rebalancing'  →  'portfolio theory'
+  'precautionary demand'  →  'liquidity'
+  'principal agent theory'  →  'principal-agent theory'
+  'progressive taxation'  →  'tax optimization'
+  … 29 more
+
+[Consistency with merge_map.json]
+  compared 608 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

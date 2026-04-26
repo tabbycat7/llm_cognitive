@@ -1,0 +1,188 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\deepseek\Professional&Economic\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\deepseek\Professional&Economic\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\deepseek\Professional&Economic\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     481
+  distinct stage-1 canonicals:  288
+  stage2 map entries (keys):    288
+  distinct stage-2 canonicals:  237
+  stage2 merge groups (|keys|>1 for same c2): 23 groups, 74 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1111
+  distinct c1 (weighted rows): 288
+  distinct c2 (weighted):      237
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'time value of money'  ←  8 stage-1 labels
+        · compound interest
+        · compound interest with erosion effect
+        · discounted cash flow
+        · future value comparison with tax drag
+        · future value of a growing annuity
+        · net present value
+        · present value
+        · time value of money
+  [ 2] 'portfolio optimization'  ←  7 stage-1 labels
+        · constant mix strategy
+        · diversification
+        · dollar cost averaging
+        · mean variance optimization
+        · portfolio optimization
+        · portfolio theory
+        · rebalancing
+  [ 3] 'amortization'  ←  5 stage-1 labels
+        · amortization
+        · avalanche method
+        · debt repayment strategies
+        · income based repayment optimization
+        · loan amortization
+  [ 4] 'dynamical systems'  ←  5 stage-1 labels
+        · attractor transition
+        · dynamical system with stable equilibrium shift
+        · dynamical systems
+        · dynamical systems with multiple attractors
+        · system dynamics
+  [ 5] 'optimal control'  ←  5 stage-1 labels
+        · control theory
+        · decoupling control
+        · feedback control
+        · optimal control
+        · proportional control
+  [ 6] 'bargaining game'  ←  4 stage-1 labels
+        · bargaining game
+        · bargaining with a range offer
+        · best alternative to a negotiated agreement
+        · sequential bargaining
+  [ 7] 'signaling game'  ←  4 stage-1 labels
+        · costly signaling
+        · signaling
+        · signaling game
+        · spence signaling model
+  [ 8] 'asset liability management'  ←  3 stage-1 labels
+        · asset liability management
+        · cash flow matching
+        · duration matching
+  [ 9] 'dynamic programming'  ←  3 stage-1 labels
+        · dynamic optimization
+        · dynamic programming
+        · stochastic dynamic optimization
+  [10] 'feature engineering'  ←  3 stage-1 labels
+        · feature augmentation
+        · feature engineering
+        · feature space transformation
+  [11] 'mechanism design'  ←  3 stage-1 labels
+        · incentive design
+        · mechanism design
+        · revelation principle
+  [12] 'arbitrage'  ←  2 stage-1 labels
+        · arbitrage
+        · tax arbitrage
+  [13] 'bayesian inference'  ←  2 stage-1 labels
+        · bayesian learning in reputation systems
+        · bayesian methods
+  [14] 'buffer stock model'  ←  2 stage-1 labels
+        · base stock policy
+        · buffer stock model
+  [15] 'commitment device'  ←  2 stage-1 labels
+        · commitment device
+        · precommitment
+  [16] 'constraint satisfaction'  ←  2 stage-1 labels
+        · constraint satisfaction
+        · constraint satisfaction problem with reinterpretation
+  [17] 'cost optimization'  ←  2 stage-1 labels
+        · cost function optimization
+        · fixed cost optimization with subsidy
+  [18] 'debt modeling'  ←  2 stage-1 labels
+        · collateralized debt model
+        · debt renegotiation model
+  [19] 'focal point'  ←  2 stage-1 labels
+        · focal point
+        · schelling point
+  [20] 'multi attribute utility theory'  ←  2 stage-1 labels
+        · multi attribute utility theory
+        · multi criteria decision making
+  [21] 'prospect theory'  ←  2 stage-1 labels
+        · prospect theory
+        · reference dependence
+  [22] 'repeated game'  ←  2 stage-1 labels
+        · finite horizon repeated game
+        · repeated game
+  [23] 'tax optimization'  ←  2 stage-1 labels
+        · tax efficient asset location
+        · tax shield
+
+[Stage-2 renames] (key ≠ value, 61 entries; list first 80)
+  'attractor transition'  →  'dynamical systems'
+  'avalanche method'  →  'amortization'
+  'bargaining with a range offer'  →  'bargaining game'
+  'base stock policy'  →  'buffer stock model'
+  'bayesian learning in reputation systems'  →  'bayesian inference'
+  'bayesian methods'  →  'bayesian inference'
+  'best alternative to a negotiated agreement'  →  'bargaining game'
+  'capital structure optimization'  →  'capital structure theory'
+  'cash flow matching'  →  'asset liability management'
+  'cheap talk game with verifiable message'  →  'cheap talk game'
+  'collateralized debt model'  →  'debt modeling'
+  'compound interest'  →  'time value of money'
+  'compound interest with erosion effect'  →  'time value of money'
+  'constant mix strategy'  →  'portfolio optimization'
+  'constraint satisfaction problem with reinterpretation'  →  'constraint satisfaction'
+  'control theory'  →  'optimal control'
+  'cost function optimization'  →  'cost optimization'
+  'costly signaling'  →  'signaling game'
+  'debt renegotiation model'  →  'debt modeling'
+  'debt repayment strategies'  →  'amortization'
+  'decoupling control'  →  'optimal control'
+  'decoy effect avoidance'  →  'decoy effect'
+  'discounted cash flow'  →  'time value of money'
+  'diversification'  →  'portfolio optimization'
+  'dollar cost averaging'  →  'portfolio optimization'
+  'duration matching'  →  'asset liability management'
+  'dynamic game with commitment'  →  'dynamic game'
+  'dynamic optimization'  →  'dynamic programming'
+  'dynamical system with stable equilibrium shift'  →  'dynamical systems'
+  'dynamical systems with multiple attractors'  →  'dynamical systems'
+  'feature augmentation'  →  'feature engineering'
+  'feature space transformation'  →  'feature engineering'
+  'feedback control'  →  'optimal control'
+  'fico score algorithm'  →  'credit scoring'
+  'finite horizon repeated game'  →  'repeated game'
+  'first order equations'  →  'first order differential equations'
+  'fixed cost optimization with subsidy'  →  'cost optimization'
+  'future value comparison with tax drag'  →  'time value of money'
+  'future value of a growing annuity'  →  'time value of money'
+  'incentive design'  →  'mechanism design'
+  'income based repayment optimization'  →  'amortization'
+  'loan amortization'  →  'amortization'
+  'mean variance optimization'  →  'portfolio optimization'
+  'multi criteria decision making'  →  'multi attribute utility theory'
+  'net present value'  →  'time value of money'
+  'portfolio theory'  →  'portfolio optimization'
+  'precommitment'  →  'commitment device'
+  'present value'  →  'time value of money'
+  'proportional control'  →  'optimal control'
+  'rebalancing'  →  'portfolio optimization'
+  'reference dependence'  →  'prospect theory'
+  'revelation principle'  →  'mechanism design'
+  'schelling point'  →  'focal point'
+  'sequential bargaining'  →  'bargaining game'
+  'signaling'  →  'signaling game'
+  'spence signaling model'  →  'signaling game'
+  'stochastic dynamic optimization'  →  'dynamic programming'
+  'system dynamics'  →  'dynamical systems'
+  'tax arbitrage'  →  'arbitrage'
+  'tax efficient asset location'  →  'tax optimization'
+  'tax shield'  →  'tax optimization'
+
+[Consistency with merge_map.json]
+  compared 481 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

@@ -1,0 +1,301 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Professional&Economic\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Professional&Economic\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Professional&Economic\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     378
+  distinct stage-1 canonicals:  217
+  stage2 map entries (keys):    217
+  distinct stage-2 canonicals:  104
+  stage2 merge groups (|keys|>1 for same c2): 43 groups, 156 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1326
+  distinct c1 (weighted rows): 217
+  distinct c2 (weighted):      104
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'cognitive biases'  ←  9 stage-1 labels
+        · ambiguity aversion
+        · anchoring
+        · availability heuristic
+        · deadline effect
+        · framing effect
+        · goal gradient effect
+        · mental accounting
+        · recency effect
+        · sunk cost
+  [ 2] 'risk management'  ←  9 stage-1 labels
+        · buffer stock model
+        · precautionary principle
+        · precautionary savings model
+        · risk adjusted return
+        · risk aversion
+        · risk exposure minimization
+        · risk management
+        · risk prioritization model
+        · safe withdrawal rate model
+  [ 3] 'network theory'  ←  8 stage-1 labels
+        · critical mass
+        · cumulative advantage
+        · matthew effect
+        · network centrality
+        · network effects
+        · network theory
+        · snowball effect
+        · strength of weak ties
+  [ 4] 'discounted cash flow model'  ←  7 stage-1 labels
+        · annuity formula
+        · annuity valuation
+        · compound interest
+        · compounding effect
+        · net present value
+        · perpetuity
+        · time value of money
+  [ 5] 'constrained optimization'  ←  6 stage-1 labels
+        · allocation
+        · constrained optimization
+        · cost minimization
+        · input constraint system
+        · penalty function method
+        · resource allocation optimization
+  [ 6] 'modern portfolio theory'  ←  6 stage-1 labels
+        · diversification
+        · dollar cost averaging
+        · mean variance optimization
+        · portfolio optimization
+        · portfolio rebalancing
+        · portfolio theory
+  [ 7] 'principal agent theory'  ←  6 stage-1 labels
+        · adverse selection
+        · agency theory
+        · contract theory
+        · incentive compatibility
+        · incomplete contracts
+        · principal agent theory
+  [ 8] 'production function'  ←  6 stage-1 labels
+        · cobb douglas production function
+        · economies of scale
+        · marginal productivity
+        · production function
+        · returns to specialization
+        · specialization
+  [ 9] 'expected utility theory'  ←  5 stage-1 labels
+        · decision theory
+        · hyperbolic discounting
+        · intertemporal choice
+        · rational choice theory
+        · utility theory
+  [10] 'information theory'  ←  5 stage-1 labels
+        · information aggregation
+        · information asymmetry
+        · information cascade
+        · information diffusion model
+        · information theory
+  [11] 'system dynamics'  ←  5 stage-1 labels
+        · attractor dynamics
+        · leverage points
+        · negative feedback loop interruption
+        · positive feedback loop
+        · system dynamics
+  [12] 'capital budgeting'  ←  4 stage-1 labels
+        · capital budgeting
+        · option value
+        · payback period
+        · real options
+  [13] 'cost benefit analysis'  ←  4 stage-1 labels
+        · cost benefit analysis
+        · margin of safety
+        · opportunity cost
+        · total cost of ownership
+  [14] 'debt management model'  ←  4 stage-1 labels
+        · amortization
+        · debt amortization acceleration
+        · debt optimization
+        · debt repayment strategies
+  [15] 'market equilibrium'  ←  4 stage-1 labels
+        · coase theorem
+        · equilibrium shift
+        · market equilibrium
+        · market equilibrium adjustment
+  [16] 'optimal control theory'  ←  4 stage-1 labels
+        · control theory
+        · feedback control
+        · predictive control model
+        · stochastic control
+  [17] 'resource based view'  ←  4 stage-1 labels
+        · competitive advantage theory
+        · dynamic capabilities theory
+        · niche construction
+        · resource based view
+  [18] 'social exchange theory'  ←  4 stage-1 labels
+        · equity theory
+        · expectancy theory
+        · reciprocal altruism
+        · social theory
+  [19] 'bargaining theory'  ←  3 stage-1 labels
+        · bargaining power
+        · bargaining theory
+        · bargaining with outside options
+  [20] 'game theory equilibria'  ←  3 stage-1 labels
+        · folk theorem
+        · nash equilibrium
+        · subgame perfect equilibrium
+  [21] 'option pricing model'  ←  3 stage-1 labels
+        · binomial distribution
+        · black scholes model
+        · option pricing
+  [22] 'path dependence'  ←  3 stage-1 labels
+        · path dependence
+        · phase transition
+        · threshold
+  [23] 'robustness principle'  ←  3 stage-1 labels
+        · redundancy principle
+        · reliability
+        · robustness principle
+  [24] 'signaling game'  ←  3 stage-1 labels
+        · reputation game
+        · signal theory
+        · signaling game
+  [25] 'arbitrage pricing theory'  ←  2 stage-1 labels
+        · arbitrage
+        · efficient market hypothesis
+  [26] 'asset liability management'  ←  2 stage-1 labels
+        · asset liability management
+        · cash flow management
+  [27] 'bounded rationality'  ←  2 stage-1 labels
+        · bounded rationality
+        · cognitive load theory
+  [28] 'capital theory'  ←  2 stage-1 labels
+        · accumulation theory
+        · capital theory
+  [29] 'credit scoring model'  ←  2 stage-1 labels
+        · credit scoring
+        · statistical scoring model optimization
+  [30] 'decomposition principle'  ←  2 stage-1 labels
+        · decomposition principle
+        · decoupling principle
+  [31] 'dynamic programming'  ←  2 stage-1 labels
+        · bellman equation
+        · dynamic programming
+  [32] 'fixed income valuation'  ←  2 stage-1 labels
+        · duration matching
+        · fixed income valuation
+  [33] 'greedy algorithm'  ←  2 stage-1 labels
+        · greedy algorithm
+        · hill climbing algorithm
+  [34] 'information retrieval model'  ←  2 stage-1 labels
+        · faceted navigation
+        · information retrieval model
+  [35] 'institutional theory'  ←  2 stage-1 labels
+        · coercive isomorphism
+        · institutional economics
+  [36] 'iterative optimization'  ←  2 stage-1 labels
+        · iterative optimization
+        · random search model
+  [37] 'marginal analysis'  ←  2 stage-1 labels
+        · marginal analysis
+        · maximization
+  [38] 'markov decision process'  ←  2 stage-1 labels
+        · markov decision process
+        · sequential decision making
+  [39] 'matching theory'  ←  2 stage-1 labels
+        · bipartite matching
+        · matching theory
+  [40] 'multi criteria decision making'  ←  2 stage-1 labels
+        · dominance principle
+        · multicriteria decision making
+
+[Stage-2 renames] (key ≠ value, 132 entries; list first 80)
+  'accumulation theory'  →  'capital theory'
+  'adverse selection'  →  'principal agent theory'
+  'agency theory'  →  'principal agent theory'
+  'allocation'  →  'constrained optimization'
+  'ambiguity aversion'  →  'cognitive biases'
+  'amortization'  →  'debt management model'
+  'anchoring'  →  'cognitive biases'
+  'annuity formula'  →  'discounted cash flow model'
+  'annuity valuation'  →  'discounted cash flow model'
+  'arbitrage'  →  'arbitrage pricing theory'
+  'attention economy'  →  'attention economics'
+  'attractor dynamics'  →  'system dynamics'
+  'availability heuristic'  →  'cognitive biases'
+  'bargaining power'  →  'bargaining theory'
+  'bargaining with outside options'  →  'bargaining theory'
+  'bellman equation'  →  'dynamic programming'
+  'binomial distribution'  →  'option pricing model'
+  'bipartite matching'  →  'matching theory'
+  'black scholes model'  →  'option pricing model'
+  'buffer stock model'  →  'risk management'
+  'cash flow management'  →  'asset liability management'
+  'coase theorem'  →  'market equilibrium'
+  'cobb douglas production function'  →  'production function'
+  'coercive isomorphism'  →  'institutional theory'
+  'cognitive load theory'  →  'bounded rationality'
+  'commitment device'  →  'nudge theory'
+  'competitive advantage theory'  →  'resource based view'
+  'compound interest'  →  'discounted cash flow model'
+  'compounding effect'  →  'discounted cash flow model'
+  'contract theory'  →  'principal agent theory'
+  'control theory'  →  'optimal control theory'
+  'cost minimization'  →  'constrained optimization'
+  'credit scoring'  →  'credit scoring model'
+  'critical mass'  →  'network theory'
+  'cumulative advantage'  →  'network theory'
+  'deadline effect'  →  'cognitive biases'
+  'debt amortization acceleration'  →  'debt management model'
+  'debt optimization'  →  'debt management model'
+  'debt repayment strategies'  →  'debt management model'
+  'decision theory'  →  'expected utility theory'
+  'decoupling principle'  →  'decomposition principle'
+  'diversification'  →  'modern portfolio theory'
+  'dollar cost averaging'  →  'modern portfolio theory'
+  'dominance principle'  →  'multi criteria decision making'
+  'duration matching'  →  'fixed income valuation'
+  'dynamic capabilities theory'  →  'resource based view'
+  'economies of scale'  →  'production function'
+  'efficient market hypothesis'  →  'arbitrage pricing theory'
+  'equilibrium shift'  →  'market equilibrium'
+  'equity theory'  →  'social exchange theory'
+  'expectancy theory'  →  'social exchange theory'
+  'exploration exploitation dilemma'  →  'search theory'
+  'faceted navigation'  →  'information retrieval model'
+  'feedback control'  →  'optimal control theory'
+  'folk theorem'  →  'game theory equilibria'
+  'framing effect'  →  'cognitive biases'
+  'goal gradient effect'  →  'cognitive biases'
+  'hill climbing algorithm'  →  'greedy algorithm'
+  'hyperbolic discounting'  →  'expected utility theory'
+  'incentive compatibility'  →  'principal agent theory'
+  'incomplete contracts'  →  'principal agent theory'
+  'information aggregation'  →  'information theory'
+  'information asymmetry'  →  'information theory'
+  'information cascade'  →  'information theory'
+  'information diffusion model'  →  'information theory'
+  'input constraint system'  →  'constrained optimization'
+  'institutional economics'  →  'institutional theory'
+  'intertemporal choice'  →  'expected utility theory'
+  'leverage points'  →  'system dynamics'
+  'margin of safety'  →  'cost benefit analysis'
+  'marginal productivity'  →  'production function'
+  'market equilibrium adjustment'  →  'market equilibrium'
+  "maslow's hierarchy of needs"  →  'maslow hierarchy of needs'
+  'matthew effect'  →  'network theory'
+  'maximization'  →  'marginal analysis'
+  'mean variance optimization'  →  'modern portfolio theory'
+  'mental accounting'  →  'cognitive biases'
+  'minimum viable product strategy'  →  'minimum viable product'
+  'multi armed bandit problem'  →  'multi armed bandit'
+  'multicriteria decision making'  →  'multi criteria decision making'
+  … 52 more
+
+[Consistency with merge_map.json]
+  compared 378 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

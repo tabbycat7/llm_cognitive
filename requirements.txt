@@ -12,3 +12,5 @@ sentence-transformers>=2.2
 # PyTorch: do NOT pin here — install torch + torchvision + torchaudio together from
 # https://pytorch.org/get-started/locally/ (same CUDA build) to avoid pip/conda conflicts.
 requests>=2.28
+plotly>=5.18
+kaleido>=0.2

@@ -1,32 +1,34 @@
 ==============================================================================
 LLM Cognitive Probe — Analysis Summary
 ==============================================================================
-Generated (local): 2026-04-22T20:10:16
+Generated (local): 2026-04-24T10:35:55
 
 [Input]
-  results_file: E:\college\postgraduate\llm_cognitive\doubao-seed-2-0-lite-260215\Personal&Existential\probe_results.jsonl
+  results_file: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Personal&Existential\probe_results.jsonl
   records (non-empty JSONL lines): 500
 
 [Merge]
   merge_method: llm
-  refresh_merge: True
+  refresh_merge: False
   name_source: step3
   chart_top_n: 30
 
 [Counts]
   raw_unique_names: 219
   raw_total_mentions: 1023
-  canonical_unique_names: 172
+  canonical_unique_names: 98
   canonical_total_mentions: 1023
-  distinct_label_reduction: 219 raw → 172 canonical (21.5% fewer labels)
+  distinct_label_reduction: 219 raw → 98 canonical (55.3% fewer labels)
 
 [Output artifacts]
   merge_map.json: yes
-  merge_map.embeddings.json: no
+  merge_map_llm_stage1.json: yes
+  merge_map_llm_stage1.embeddings.json: yes
+  merge_map_llm_stage2.json: yes
   model_law_frequency.png: yes
   model_law_wordcloud.png: yes
-  cluster_dendrogram.png: no
-  cluster_scatter.png: no
+  cluster_dendrogram.png: yes
+  cluster_scatter.png: yes
 
 [Top 30 raw names — before merge / 归并前（原始标签频次）]
   rank   count  name
@@ -63,402 +65,628 @@ Generated (local): 2026-04-22T20:10:16
 
 [Top 30 canonical names — after merge / 归并后（代表名频次）]
   rank   count  name
-     1     323  positive feedback loop
-     2     105  negative feedback loop
-     3      96  bayesian updating
-     4      82  constrained optimization
-     5      70  gradient descent
-     6      28  attractor dynamics
-     7      27  reinforcement learning
-     8      18  multiple equilibria
-     9      12  multi armed bandit
-    10      11  path dependence
-    11       9  multistability
-    12       7  sequential hypothesis testing
-    13       7  asymmetric information
-    14       7  threshold model
-    15       7  confirmation bias
-    16       6  stock and flow model
-    17       6  constraint relaxation
-    18       6  signaling model
-    19       4  absorbing markov chain
-    20       4  limited capacity model
-    21       4  anchoring
-    22       4  hyperbolic discounting
-    23       4  bounded rationality
-    24       4  simulated annealing
-    25       3  ironic process theory
-    26       3  minimum energy principle
-    27       3  cumulative risk model
-    28       3  incremental optimization
-    29       2  local optimum
-    30       2  dynamic programming
+     1     429  feedback control
+     2      97  bayesian updating
+     3      78  constrained optimization
+     4      68  gradient descent
+     5      31  attractor
+     6      30  reinforcement learning
+     7      24  multiple equilibria
+     8      20  cognitive bias
+     9      16  signaling
+    10      12  local search
+    11      11  stability
+    12      11  path dependence
+    13       9  energy-based models
+    14       8  markov chain
+    15       8  constraint satisfaction
+    16       8  rescorla wagner model
+    17       7  sequential hypothesis testing
+    18       7  threshold model
+    19       6  homeostasis
+    20       6  limited capacity models
+    21       6  temporal discounting
+    22       5  approximation methods
+    23       5  stock and flow
+    24       4  real options
+    25       4  matching theory
+    26       4  resource allocation
+    27       4  bounded rationality
+    28       4  simulated annealing
+    29       3  ironic process theory
+    30       3  hebbian learning
 
-[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 16 clusters]
-  [#1] representative: attractor dynamics  ·  8 members
-      · attractor
-      · attractor dynamics  [代表]
-      · basin of attraction
-      · bistable dynamical system
-      · bistabledynamics
-      · limit cycle
-      · point attractor
-      · stable attractor
-  [#2] representative: negative feedback loop  ·  6 members
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 36 clusters]
+  [#1] representative: feedback control  ·  17 members
+      · adaptive control
+      · boundary control
       · closed loop control
-      · homeostasis
+      · disturbance rejection
+      · feedback loop
+      · feedbackcontrol
+      · linear feedback control system
       · negative feedback
       · negative feedback control
-      · negative feedback loop  [代表]
-      · set point model
-  [#3] representative: positive feedback loop  ·  6 members
+      · negative feedback loop
+      · negativefeedback
       · positive feedback
-      · positive feedback loop  [代表]
+      · positive feedback loop
       · positivefeedbackloop
       · reinforcing feedback
       · reinforcing feedback loop
       · reinforcingfeedbackloop
-  [#4] representative: bayesian updating  ·  5 members
+  [#2] representative: cognitive bias  ·  13 members
+      · all or nothing bias
+      · anchoring
+      · anchoring bias
+      · anchoring heuristic
+      · anchoringeffect
+      · attention bias
+      · base rate fallacy
+      · confirmation bias
+      · framing effect
+      · negativity bias
+      · sampling bias
+      · sunk cost fallacy
+      · zeigarnik effect
+  [#3] representative: attractor  ·  11 members
+      · attractor  [代表]
+      · attractor dynamics
+      · basin of attraction
+      · bistable dynamical system
+      · bistabledynamics
+      · fixed point attractor
+      · limit cycle
+      · limit cycle oscillator
+      · multi stability
+      · point attractor
+      · stable attractor
+  [#4] representative: multiple equilibria  ·  11 members
+      · dynamic equilibrium
+      · equilibrium selection
+      · multiple equilibria  [代表]
+      · multiple equilibrium
+      · multiple stable equilibria
+      · multiple steady state
+      · multiple steady states
+      · stable equilibrium
+      · stable fixed point
+      · steady state approximation
+      · steadystate
+  [#5] representative: local search  ·  7 members
+      · greedy algorithm
+      · hill climbing
+      · incremental hill climbing
+      · incremental optimization
+      · local optimization
+      · local optimum
+      · local search  [代表]
+  [#6] representative: signaling  ·  7 members
+      · asymmetric information
+      · information asymmetry
+      · pooling equilibrium
+      · signaling game
+      · signaling model
+      · signaling theory
+      · signalingmodel
+  [#7] representative: bayesian updating  ·  6 members
       · bayesian belief update
       · bayesian belief updating
       · bayesian filtering
       · bayesian updating  [代表]
       · bayesianupdating
-  [#5] representative: constrained optimization  ·  5 members
-      · constrained optimization  [代表]
-      · constrainedoptimization
-      · constraint optimization
-      · constraint satisfaction problem
-      · optimal resource allocation
-  [#6] representative: gradient descent  ·  5 members
+      · sequential bayesian optimization
+  [#8] representative: energy-based models  ·  6 members
+      · energy balance model
+      · energy dissipation
+      · energy landscape
+      · energybudgetmodel
+      · free energy principle
+      · minimum energy principle
+  [#9] representative: reinforcement learning  ·  6 members
+      · multi armed bandit
+      · multi armed bandit problem
+      · multiarmed bandit
+      · multiarmedbandit
+      · reinforcement learning  [代表]
+      · temporal difference learning
+  [#10] representative: approximation methods  ·  5 members
+      · adiabatic approximation
+      · adiabaticapproximation
+      · perturbation theory
+      · slowly varying approximation
+      · successive approximation
+  [#11] representative: gradient descent  ·  4 members
       · gradient ascent
       · gradient descent  [代表]
       · gradientdescent
-      · hill climbing
       · stochastic gradient descent
-  [#7] representative: multiple equilibria  ·  5 members
-      · equilibrium selection
-      · multiple equilibria  [代表]
-      · multiple equilibrium
-      · multiple stable equilibria
-      · multiple steady states
-  [#8] representative: reinforcement learning  ·  5 members
-      · extinction learning
+  [#12] representative: markov chain  ·  4 members
+      · absorbing markov chain
+      · hidden markov model
+      · markov chain  [代表]
       · markov decision process
-      · reinforcement learning  [代表]
-      · rescorla wagner model
-      · reward shaping
-  [#9] representative: anchoring  ·  4 members
-      · anchoring  [代表]
-      · anchoring bias
-      · anchoring heuristic
-      · anchoringeffect
-  [#10] representative: adiabatic approximation  ·  2 members
-      · adiabatic approximation  [代表]
-      · adiabaticapproximation
-  [#11] representative: asymmetric information  ·  2 members
-      · asymmetric information  [代表]
-      · information asymmetry
-  [#12] representative: multi armed bandit  ·  2 members
-      · multi armed bandit  [代表]
-      · multi armed bandit problem
-  [#13] representative: multistability  ·  2 members
+  [#13] representative: real options  ·  4 members
+      · real option
+      · real options  [代表]
+      · real options analysis
+      · real options theory
+  [#14] representative: stability  ·  4 members
       · bistability
-      · multistability  [代表]
-  [#14] representative: sequential hypothesis testing  ·  2 members
+      · metastability
+      · multistability
+      · stochastic stability
+  [#15] representative: bifurcation theory  ·  3 members
+      · bifurcation
+      · cusp catastrophe model
+      · phase transition
+  [#16] representative: causal model  ·  3 members
+      · causal graph model
+      · rubin causal model
+      · structural causal model
+  [#17] representative: constrained optimization  ·  3 members
+      · constrained optimization  [代表]
+      · constrainedoptimization
+      · constraint optimization
+  [#18] representative: homeostasis  ·  3 members
+      · homeostasis  [代表]
+      · homeostatic control
+      · homeostatic set point
+  [#19] representative: limited capacity models  ·  3 members
+      · capacity model of attention
+      · limited attention
+      · limited capacity model
+  [#20] representative: matching theory  ·  3 members
+      · matching theory  [代表]
+      · stable matching
+      · twosidedmatching
+  [#21] representative: resource allocation  ·  3 members
+      · limited resource allocation model
+      · optimal resource allocation
+      · resource allocation theory
+  [#22] representative: temporal discounting  ·  3 members
+      · delay discounting
+      · hyperbolic discounting
+      · intertemporal choice
+  [#23] representative: buffer stock  ·  2 members
+      · buffer stock model
+      · buffer stock theory
+  [#24] representative: compartment model  ·  2 members
+      · single compartment model
+      · two compartment model
+  [#25] representative: constraint satisfaction  ·  2 members
+      · constraint relaxation
+      · constraint satisfaction problem
+  [#26] representative: exponential decay  ·  2 members
+      · exponential decay model
+      · exponential relaxation
+  [#27] representative: habituation  ·  2 members
+      · habituation  [代表]
+      · habituation model
+  [#28] representative: hebbian learning  ·  2 members
+      · hebb's rule
+      · hebbian learning  [代表]
+  [#29] representative: local minimum  ·  2 members
+      · local minimum  [代表]
+      · localminimum
+  [#30] representative: marginal analysis  ·  2 members
+      · marginal analysis  [代表]
+      · marginal gains
+  [#31] representative: pareto optimality  ·  2 members
+      · pareto principle
+      · paretooptimization
+  [#32] representative: rescorla wagner model  ·  2 members
+      · extinction learning
+      · rescorla wagner model  [代表]
+  [#33] representative: sequential hypothesis testing  ·  2 members
       · sequential analysis
       · sequential hypothesis testing  [代表]
-  [#15] representative: signaling model  ·  2 members
-      · signaling model  [代表]
-      · signalingmodel
-  [#16] representative: stock and flow model  ·  2 members
-      · buffer stock model
-      · stock and flow model  [代表]
+  [#34] representative: signal to noise ratio  ·  2 members
+      · signal to noise ratio  [代表]
+      · signal to noise ratio maximization
+  [#35] representative: stock and flow  ·  2 members
+      · stock and flow  [代表]
+      · stock and flow model
+  [#36] representative: utility maximization  ·  2 members
+      · expected utility maximization
+      · utility maximization  [代表]
 
-[Merge map: raw → canonical where label changed (47 pairs)]
-  adiabaticapproximation  →  adiabatic approximation
-  anchoring bias  →  anchoring
-  anchoring heuristic  →  anchoring
-  anchoringeffect  →  anchoring
-  information asymmetry  →  asymmetric information
-  attractor  →  attractor dynamics
-  basin of attraction  →  attractor dynamics
-  bistable dynamical system  →  attractor dynamics
-  bistabledynamics  →  attractor dynamics
-  limit cycle  →  attractor dynamics
-  point attractor  →  attractor dynamics
-  stable attractor  →  attractor dynamics
+[Merge map: raw → canonical where label changed (139 pairs)]
+  adiabatic approximation  →  approximation methods
+  adiabaticapproximation  →  approximation methods
+  perturbation theory  →  approximation methods
+  slowly varying approximation  →  approximation methods
+  successive approximation  →  approximation methods
+  attractor dynamics  →  attractor
+  basin of attraction  →  attractor
+  bistable dynamical system  →  attractor
+  bistabledynamics  →  attractor
+  fixed point attractor  →  attractor
+  limit cycle  →  attractor
+  limit cycle oscillator  →  attractor
+  multi stability  →  attractor
+  point attractor  →  attractor
+  stable attractor  →  attractor
   bayesian belief update  →  bayesian updating
   bayesian belief updating  →  bayesian updating
   bayesian filtering  →  bayesian updating
   bayesianupdating  →  bayesian updating
+  sequential bayesian optimization  →  bayesian updating
+  bifurcation  →  bifurcation theory
+  cusp catastrophe model  →  bifurcation theory
+  phase transition  →  bifurcation theory
+  buffer stock model  →  buffer stock
+  buffer stock theory  →  buffer stock
+  causal graph model  →  causal model
+  rubin causal model  →  causal model
+  structural causal model  →  causal model
+  all or nothing bias  →  cognitive bias
+  anchoring  →  cognitive bias
+  anchoring bias  →  cognitive bias
+  anchoring heuristic  →  cognitive bias
+  anchoringeffect  →  cognitive bias
+  attention bias  →  cognitive bias
+  base rate fallacy  →  cognitive bias
+  confirmation bias  →  cognitive bias
+  framing effect  →  cognitive bias
+  negativity bias  →  cognitive bias
+  sampling bias  →  cognitive bias
+  sunk cost fallacy  →  cognitive bias
+  zeigarnik effect  →  cognitive bias
+  single compartment model  →  compartment model
+  two compartment model  →  compartment model
   constrainedoptimization  →  constrained optimization
   constraint optimization  →  constrained optimization
-  constraint satisfaction problem  →  constrained optimization
-  optimal resource allocation  →  constrained optimization
+  constraint relaxation  →  constraint satisfaction
+  constraint satisfaction problem  →  constraint satisfaction
+  energy balance model  →  energy-based models
+  energy dissipation  →  energy-based models
+  energy landscape  →  energy-based models
+  energybudgetmodel  →  energy-based models
+  free energy principle  →  energy-based models
+  minimum energy principle  →  energy-based models
+  exponential decay model  →  exponential decay
+  exponential relaxation  →  exponential decay
+  adaptive control  →  feedback control
+  boundary control  →  feedback control
+  closed loop control  →  feedback control
+  disturbance rejection  →  feedback control
+  feedback loop  →  feedback control
+  feedbackcontrol  →  feedback control
+  linear feedback control system  →  feedback control
+  negative feedback  →  feedback control
+  negative feedback control  →  feedback control
+  negative feedback loop  →  feedback control
+  negativefeedback  →  feedback control
+  positive feedback  →  feedback control
+  positive feedback loop  →  feedback control
+  positivefeedbackloop  →  feedback control
+  reinforcing feedback  →  feedback control
+  reinforcing feedback loop  →  feedback control
+  reinforcingfeedbackloop  →  feedback control
   gradient ascent  →  gradient descent
   gradientdescent  →  gradient descent
-  hill climbing  →  gradient descent
   stochastic gradient descent  →  gradient descent
-  multi armed bandit problem  →  multi armed bandit
+  habituation model  →  habituation
+  hebb's rule  →  hebbian learning
+  homeostatic control  →  homeostasis
+  homeostatic set point  →  homeostasis
+  capacity model of attention  →  limited capacity models
+  limited attention  →  limited capacity models
+  limited capacity model  →  limited capacity models
+  localminimum  →  local minimum
+  greedy algorithm  →  local search
+  hill climbing  →  local search
+  incremental hill climbing  →  local search
+  incremental optimization  →  local search
+  local optimization  →  local search
+  local optimum  →  local search
+  marginal gains  →  marginal analysis
+  absorbing markov chain  →  markov chain
+  hidden markov model  →  markov chain
+  markov decision process  →  markov chain
+  stable matching  →  matching theory
+  twosidedmatching  →  matching theory
+  dynamic equilibrium  →  multiple equilibria
   equilibrium selection  →  multiple equilibria
   multiple equilibrium  →  multiple equilibria
   multiple stable equilibria  →  multiple equilibria
+  multiple steady state  →  multiple equilibria
   multiple steady states  →  multiple equilibria
-  bistability  →  multistability
-  closed loop control  →  negative feedback loop
-  homeostasis  →  negative feedback loop
-  negative feedback  →  negative feedback loop
-  negative feedback control  →  negative feedback loop
-  set point model  →  negative feedback loop
-  positive feedback  →  positive feedback loop
-  positivefeedbackloop  →  positive feedback loop
-  reinforcing feedback  →  positive feedback loop
-  reinforcing feedback loop  →  positive feedback loop
-  reinforcingfeedbackloop  →  positive feedback loop
-  extinction learning  →  reinforcement learning
-  markov decision process  →  reinforcement learning
-  rescorla wagner model  →  reinforcement learning
-  reward shaping  →  reinforcement learning
+  stable equilibrium  →  multiple equilibria
+  stable fixed point  →  multiple equilibria
+  steady state approximation  →  multiple equilibria
+  steadystate  →  multiple equilibria
+  pareto principle  →  pareto optimality
+  paretooptimization  →  pareto optimality
+  rationaladdiction  →  rational addiction
+  real option  →  real options
+  real options analysis  →  real options
+  real options theory  →  real options
+  multi armed bandit  →  reinforcement learning
+  multi armed bandit problem  →  reinforcement learning
+  multiarmed bandit  →  reinforcement learning
+  multiarmedbandit  →  reinforcement learning
+  temporal difference learning  →  reinforcement learning
+  extinction learning  →  rescorla wagner model
+  limited resource allocation model  →  resource allocation
+  optimal resource allocation  →  resource allocation
+  resource allocation theory  →  resource allocation
   sequential analysis  →  sequential hypothesis testing
-  signalingmodel  →  signaling model
-  buffer stock model  →  stock and flow model
+  signal to noise ratio maximization  →  signal to noise ratio
+  asymmetric information  →  signaling
+  information asymmetry  →  signaling
+  pooling equilibrium  →  signaling
+  signaling game  →  signaling
+  signaling model  →  signaling
+  signaling theory  →  signaling
+  signalingmodel  →  signaling
+  bistability  →  stability
+  metastability  →  stability
+  multistability  →  stability
+  stochastic stability  →  stability
+  stock and flow model  →  stock and flow
+  substitutioneffect  →  substitution effect
+  delay discounting  →  temporal discounting
+  hyperbolic discounting  →  temporal discounting
+  intertemporal choice  →  temporal discounting
+  expected utility maximization  →  utility maximization
 
-[Merge cluster details / 归并簇完整明细（共 172 簇，其中 16 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
-  [1] 代表名: attractor dynamics  ·  8 条
-      · attractor
-      · attractor dynamics  [代表]
-      · basin of attraction
-      · bistable dynamical system
-      · bistabledynamics
-      · limit cycle
-      · point attractor
-      · stable attractor
-  [2] 代表名: negative feedback loop  ·  6 条
+[Merge cluster details / 归并簇完整明细（共 98 簇，其中 36 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: feedback control  ·  17 条
+      · adaptive control
+      · boundary control
       · closed loop control
-      · homeostasis
+      · disturbance rejection
+      · feedback loop
+      · feedbackcontrol
+      · linear feedback control system
       · negative feedback
       · negative feedback control
-      · negative feedback loop  [代表]
-      · set point model
-  [3] 代表名: positive feedback loop  ·  6 条
+      · negative feedback loop
+      · negativefeedback
       · positive feedback
-      · positive feedback loop  [代表]
+      · positive feedback loop
       · positivefeedbackloop
       · reinforcing feedback
       · reinforcing feedback loop
       · reinforcingfeedbackloop
-  [4] 代表名: bayesian updating  ·  5 条
+  [2] 代表名: cognitive bias  ·  13 条
+      · all or nothing bias
+      · anchoring
+      · anchoring bias
+      · anchoring heuristic
+      · anchoringeffect
+      · attention bias
+      · base rate fallacy
+      · confirmation bias
+      · framing effect
+      · negativity bias
+      · sampling bias
+      · sunk cost fallacy
+      · zeigarnik effect
+  [3] 代表名: attractor  ·  11 条
+      · attractor  [代表]
+      · attractor dynamics
+      · basin of attraction
+      · bistable dynamical system
+      · bistabledynamics
+      · fixed point attractor
+      · limit cycle
+      · limit cycle oscillator
+      · multi stability
+      · point attractor
+      · stable attractor
+  [4] 代表名: multiple equilibria  ·  11 条
+      · dynamic equilibrium
+      · equilibrium selection
+      · multiple equilibria  [代表]
+      · multiple equilibrium
+      · multiple stable equilibria
+      · multiple steady state
+      · multiple steady states
+      · stable equilibrium
+      · stable fixed point
+      · steady state approximation
+      · steadystate
+  [5] 代表名: local search  ·  7 条
+      · greedy algorithm
+      · hill climbing
+      · incremental hill climbing
+      · incremental optimization
+      · local optimization
+      · local optimum
+      · local search  [代表]
+  [6] 代表名: signaling  ·  7 条
+      · asymmetric information
+      · information asymmetry
+      · pooling equilibrium
+      · signaling game
+      · signaling model
+      · signaling theory
+      · signalingmodel
+  [7] 代表名: bayesian updating  ·  6 条
       · bayesian belief update
       · bayesian belief updating
       · bayesian filtering
       · bayesian updating  [代表]
       · bayesianupdating
-  [5] 代表名: constrained optimization  ·  5 条
-      · constrained optimization  [代表]
-      · constrainedoptimization
-      · constraint optimization
-      · constraint satisfaction problem
-      · optimal resource allocation
-  [6] 代表名: gradient descent  ·  5 条
+      · sequential bayesian optimization
+  [8] 代表名: energy-based models  ·  6 条
+      · energy balance model
+      · energy dissipation
+      · energy landscape
+      · energybudgetmodel
+      · free energy principle
+      · minimum energy principle
+  [9] 代表名: reinforcement learning  ·  6 条
+      · multi armed bandit
+      · multi armed bandit problem
+      · multiarmed bandit
+      · multiarmedbandit
+      · reinforcement learning  [代表]
+      · temporal difference learning
+  [10] 代表名: approximation methods  ·  5 条
+      · adiabatic approximation
+      · adiabaticapproximation
+      · perturbation theory
+      · slowly varying approximation
+      · successive approximation
+  [11] 代表名: gradient descent  ·  4 条
       · gradient ascent
       · gradient descent  [代表]
       · gradientdescent
-      · hill climbing
       · stochastic gradient descent
-  [7] 代表名: multiple equilibria  ·  5 条
-      · equilibrium selection
-      · multiple equilibria  [代表]
-      · multiple equilibrium
-      · multiple stable equilibria
-      · multiple steady states
-  [8] 代表名: reinforcement learning  ·  5 条
-      · extinction learning
+  [12] 代表名: markov chain  ·  4 条
+      · absorbing markov chain
+      · hidden markov model
+      · markov chain  [代表]
       · markov decision process
-      · reinforcement learning  [代表]
-      · rescorla wagner model
-      · reward shaping
-  [9] 代表名: anchoring  ·  4 条
-      · anchoring  [代表]
-      · anchoring bias
-      · anchoring heuristic
-      · anchoringeffect
-  [10] 代表名: adiabatic approximation  ·  2 条
-      · adiabatic approximation  [代表]
-      · adiabaticapproximation
-  [11] 代表名: asymmetric information  ·  2 条
-      · asymmetric information  [代表]
-      · information asymmetry
-  [12] 代表名: multi armed bandit  ·  2 条
-      · multi armed bandit  [代表]
-      · multi armed bandit problem
-  [13] 代表名: multistability  ·  2 条
+  [13] 代表名: real options  ·  4 条
+      · real option
+      · real options  [代表]
+      · real options analysis
+      · real options theory
+  [14] 代表名: stability  ·  4 条
       · bistability
-      · multistability  [代表]
-  [14] 代表名: sequential hypothesis testing  ·  2 条
+      · metastability
+      · multistability
+      · stochastic stability
+  [15] 代表名: bifurcation theory  ·  3 条
+      · bifurcation
+      · cusp catastrophe model
+      · phase transition
+  [16] 代表名: causal model  ·  3 条
+      · causal graph model
+      · rubin causal model
+      · structural causal model
+  [17] 代表名: constrained optimization  ·  3 条
+      · constrained optimization  [代表]
+      · constrainedoptimization
+      · constraint optimization
+  [18] 代表名: homeostasis  ·  3 条
+      · homeostasis  [代表]
+      · homeostatic control
+      · homeostatic set point
+  [19] 代表名: limited capacity models  ·  3 条
+      · capacity model of attention
+      · limited attention
+      · limited capacity model
+  [20] 代表名: matching theory  ·  3 条
+      · matching theory  [代表]
+      · stable matching
+      · twosidedmatching
+  [21] 代表名: resource allocation  ·  3 条
+      · limited resource allocation model
+      · optimal resource allocation
+      · resource allocation theory
+  [22] 代表名: temporal discounting  ·  3 条
+      · delay discounting
+      · hyperbolic discounting
+      · intertemporal choice
+  [23] 代表名: buffer stock  ·  2 条
+      · buffer stock model
+      · buffer stock theory
+  [24] 代表名: compartment model  ·  2 条
+      · single compartment model
+      · two compartment model
+  [25] 代表名: constraint satisfaction  ·  2 条
+      · constraint relaxation
+      · constraint satisfaction problem
+  [26] 代表名: exponential decay  ·  2 条
+      · exponential decay model
+      · exponential relaxation
+  [27] 代表名: habituation  ·  2 条
+      · habituation  [代表]
+      · habituation model
+  [28] 代表名: hebbian learning  ·  2 条
+      · hebb's rule
+      · hebbian learning  [代表]
+  [29] 代表名: local minimum  ·  2 条
+      · local minimum  [代表]
+      · localminimum
+  [30] 代表名: marginal analysis  ·  2 条
+      · marginal analysis  [代表]
+      · marginal gains
+  [31] 代表名: pareto optimality  ·  2 条
+      · pareto principle
+      · paretooptimization
+  [32] 代表名: rescorla wagner model  ·  2 条
+      · extinction learning
+      · rescorla wagner model  [代表]
+  [33] 代表名: sequential hypothesis testing  ·  2 条
       · sequential analysis
       · sequential hypothesis testing  [代表]
-  [15] 代表名: signaling model  ·  2 条
-      · signaling model  [代表]
-      · signalingmodel
-  [16] 代表名: stock and flow model  ·  2 条
-      · buffer stock model
-      · stock and flow model  [代表]
-  [17] （单条）absorbing markov chain
-  [18] （单条）adaptive control
-  [19] （单条）affective forecasting error
-  [20] （单条）all or nothing bias
-  [21] （单条）allostatic load model
-  [22] （单条）attention bias
-  [23] （单条）base rate fallacy
-  [24] （单条）bifurcation
-  [25] （单条）bottleneck analysis
-  [26] （单条）boundary control
-  [27] （单条）bounded rationality
-  [28] （单条）branch and bound
-  [29] （单条）buffer stock theory
-  [30] （单条）capacity model of attention
-  [31] （单条）causal graph model
-  [32] （单条）circadian oscillator
-  [33] （单条）cognitive dissonance
-  [34] （单条）confirmation bias
-  [35] （单条）constraint relaxation
-  [36] （单条）coordination game
-  [37] （单条）critical slowing down theory
-  [38] （单条）cumulative risk model
-  [39] （单条）cusp catastrophe model
-  [40] （单条）damped harmonic oscillator
-  [41] （单条）delay discounting
-  [42] （单条）directed search
-  [43] （单条）disturbance rejection
-  [44] （单条）divide and conquer
-  [45] （单条）dynamic equilibrium
-  [46] （单条）dynamic programming
-  [47] （单条）energy balance model
-  [48] （单条）energy dissipation
-  [49] （单条）energy landscape
-  [50] （单条）energybudgetmodel
-  [51] （单条）expected utility maximization
-  [52] （单条）exponential decay model
-  [53] （单条）exponential relaxation
-  [54] （单条）feature selection
-  [55] （单条）feedback loop
-  [56] （单条）feedbackcontrol
-  [57] （单条）first order elimination kinetics
-  [58] （单条）first order system response
-  [59] （单条）fitness landscape
-  [60] （单条）fixed point attractor
-  [61] （单条）framing effect
-  [62] （单条）free energy principle
-  [63] （单条）goal gradient hypothesis
-  [64] （单条）greedy algorithm
-  [65] （单条）habituation
-  [66] （单条）habituation model
-  [67] （单条）hazard rate model
-  [68] （单条）hebb's rule
-  [69] （单条）hebbian learning
-  [70] （单条）hedonic treadmill
-  [71] （单条）hidden markov model
-  [72] （单条）homeostatic control
-  [73] （单条）homeostatic set point
-  [74] （单条）hopfield network
-  [75] （单条）hyperbolic discounting
-  [76] （单条）incremental hill climbing
-  [77] （单条）incremental optimization
-  [78] （单条）intertemporal choice
-  [79] （单条）ironic process theory
-  [80] （单条）latent variable model
-  [81] （单条）learning curve
-  [82] （单条）lexicographic optimization
-  [83] （单条）limit cycle oscillator
-  [84] （单条）limited attention
-  [85] （单条）limited capacity model
-  [86] （单条）limited resource allocation model
-  [87] （单条）linear feedback control system
-  [88] （单条）load balancing
-  [89] （单条）local minimum
-  [90] （单条）local optimization
-  [91] （单条）local optimum
-  [92] （单条）local search
-  [93] （单条）localminimum
-  [94] （单条）logistic growth model
-  [95] （单条）marginal analysis
-  [96] （单条）marginal gains
-  [97] （单条）markov chain
-  [98] （单条）matching theory
-  [99] （单条）maximin principle
-  [100] （单条）maximum a posteriori estimation
-  [101] （单条）metastability
-  [102] （单条）minimal controllability
-  [103] （单条）minimax regret
-  [104] （单条）minimum energy principle
-  [105] （单条）model calibration
-  [106] （单条）modern portfolio theory
-  [107] （单条）multi objective optimization
-  [108] （单条）multi stability
-  [109] （单条）multiarmed bandit
-  [110] （单条）multiarmedbandit
-  [111] （单条）multiple steady state
-  [112] （单条）negativefeedback
-  [113] （单条）negativity bias
-  [114] （单条）operant conditioning
-  [115] （单条）optimal stopping
-  [116] （单条）ornstein uhlenbeck process
-  [117] （单条）overfitting
-  [118] （单条）pareto principle
-  [119] （单条）paretooptimization
-  [120] （单条）path dependence
-  [121] （单条）perturbation theory
-  [122] （单条）phase response curve
-  [123] （单条）phase transition
-  [124] （单条）pooling equilibrium
-  [125] （单条）potential well
-  [126] （单条）poverty trap
-  [127] （单条）preference falsification
-  [128] （单条）queueing model
-  [129] （单条）rationaladdiction
-  [130] （单条）real option
-  [131] （单条）real options
-  [132] （单条）real options analysis
-  [133] （单条）real options theory
-  [134] （单条）reference dependence
-  [135] （单条）relaxation dynamics
-  [136] （单条）reservoir model
-  [137] （单条）resource allocation theory
-  [138] （单条）risk pooling
-  [139] （单条）rubin causal model
-  [140] （单条）sampling bias
-  [141] （单条）sandpile model
-  [142] （单条）self reinforcing process
-  [143] （单条）sequential bayesian optimization
-  [144] （单条）shortest path problem
-  [145] （单条）signal to noise ratio
-  [146] （单条）signal to noise ratio maximization
-  [147] （单条）signaling game
-  [148] （单条）signaling theory
-  [149] （单条）simulated annealing
-  [150] （单条）single compartment model
-  [151] （单条）sis model
-  [152] （单条）slowly varying approximation
-  [153] （单条）spurious correlation
-  [154] （单条）stable equilibrium
-  [155] （单条）stable fixed point
-  [156] （单条）stable matching
-  [157] （单条）state estimation
-  [158] （单条）steady state approximation
-  [159] （单条）steadystate
-  [160] （单条）stochastic stability
-  [161] （单条）stock and flow
-  [162] （单条）structural causal model
-  [163] （单条）substitutioneffect
-  [164] （单条）successive approximation
-  [165] （单条）sunk cost fallacy
-  [166] （单条）temporal difference learning
-  [167] （单条）theory of constraints
-  [168] （单条）threshold model
-  [169] （单条）two compartment model
-  [170] （单条）twosidedmatching
-  [171] （单条）utility maximization
-  [172] （单条）zeigarnik effect
+  [34] 代表名: signal to noise ratio  ·  2 条
+      · signal to noise ratio  [代表]
+      · signal to noise ratio maximization
+  [35] 代表名: stock and flow  ·  2 条
+      · stock and flow  [代表]
+      · stock and flow model
+  [36] 代表名: utility maximization  ·  2 条
+      · expected utility maximization
+      · utility maximization  [代表]
+  [37] （单条）affective forecasting error
+  [38] （单条）allostatic load model
+  [39] （单条）bottleneck analysis
+  [40] （单条）bounded rationality
+  [41] （单条）branch and bound
+  [42] （单条）circadian oscillator
+  [43] （单条）cognitive dissonance
+  [44] （单条）coordination game
+  [45] （单条）critical slowing down theory
+  [46] （单条）cumulative risk model
+  [47] （单条）damped harmonic oscillator
+  [48] （单条）directed search
+  [49] （单条）divide and conquer
+  [50] （单条）dynamic programming
+  [51] （单条）feature selection
+  [52] （单条）first order elimination kinetics
+  [53] （单条）first order system response
+  [54] （单条）fitness landscape
+  [55] （单条）goal gradient hypothesis
+  [56] （单条）hazard rate model
+  [57] （单条）hedonic treadmill
+  [58] （单条）hopfield network
+  [59] （单条）ironic process theory
+  [60] （单条）latent variable model
+  [61] （单条）learning curve
+  [62] （单条）lexicographic optimization
+  [63] （单条）load balancing
+  [64] （单条）logistic growth model
+  [65] （单条）maximin principle
+  [66] （单条）maximum a posteriori estimation
+  [67] （单条）minimal controllability
+  [68] （单条）minimax regret
+  [69] （单条）model calibration
+  [70] （单条）modern portfolio theory
+  [71] （单条）multi objective optimization
+  [72] （单条）operant conditioning
+  [73] （单条）optimal stopping
+  [74] （单条）ornstein uhlenbeck process
+  [75] （单条）overfitting
+  [76] （单条）path dependence
+  [77] （单条）phase response curve
+  [78] （单条）potential well
+  [79] （单条）poverty trap
+  [80] （单条）preference falsification
+  [81] （单条）queueing model
+  [82] （单条）rationaladdiction
+  [83] （单条）reference dependence
+  [84] （单条）relaxation dynamics
+  [85] （单条）reservoir model
+  [86] （单条）reward shaping
+  [87] （单条）risk pooling
+  [88] （单条）sandpile model
+  [89] （单条）self reinforcing process
+  [90] （单条）set point model
+  [91] （单条）shortest path problem
+  [92] （单条）simulated annealing
+  [93] （单条）sis model
+  [94] （单条）spurious correlation
+  [95] （单条）state estimation
+  [96] （单条）substitutioneffect
+  [97] （单条）theory of constraints
+  [98] （单条）threshold model
 
 ==============================================================================

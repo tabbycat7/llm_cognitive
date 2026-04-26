@@ -1,0 +1,275 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\deepseek\Societal&Ethical\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\deepseek\Societal&Ethical\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\deepseek\Societal&Ethical\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     378
+  distinct stage-1 canonicals:  233
+  stage2 map entries (keys):    233
+  distinct stage-2 canonicals:  138
+  stage2 merge groups (|keys|>1 for same c2): 51 groups, 146 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1048
+  distinct c1 (weighted rows): 233
+  distinct c2 (weighted):      138
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'causal inference'  ←  7 stage-1 labels
+        · causal graphs
+        · causal inference
+        · causal inference with instrumental variables
+        · causal intervention
+        · counterfactual causal model
+        · do calculus
+        · potential outcomes framework
+  [ 2] 'signaling game'  ←  6 stage-1 labels
+        · adversarial persuasion game
+        · cheap talk
+        · costly signaling game
+        · screening game
+        · signaling
+        · verifiable disclosure
+  [ 3] 'sequential game'  ←  5 stage-1 labels
+        · centipede game
+        · deadline game
+        · extensive form game
+        · game tree
+        · sequential game
+  [ 4] 'third party enforcement'  ←  5 stage-1 labels
+        · arbitration game
+        · inspection game
+        · punishment game
+        · third party enforcement
+        · third party enforcement game
+  [ 5] 'bargaining model'  ←  4 stage-1 labels
+        · bargaining model
+        · bargaining with outside options
+        · incomplete information bargaining
+        · sequential bargaining
+  [ 6] 'commitment device'  ←  4 stage-1 labels
+        · collateral
+        · commitment device
+        · escrow mechanism
+        · institutional design for commitment problems
+  [ 7] 'complex network contagion model'  ←  4 stage-1 labels
+        · complex network contagion model with external control
+        · diffusion of innovations
+        · multilayer network resilience model
+        · network reconfiguration model
+  [ 8] 'coordination game'  ←  4 stage-1 labels
+        · coordination game
+        · focal point
+        · institution as a coordination device
+        · schelling point
+  [ 9] 'dynamical systems'  ←  4 stage-1 labels
+        · dynamical system with state memory
+        · dynamical systems
+        · predator prey model
+        · system dynamics
+  [10] 'mechanism design'  ←  4 stage-1 labels
+        · information aggregation mechanism
+        · information design
+        · mechanism design
+        · revelation principle
+  [11] 'proof methods'  ←  4 stage-1 labels
+        · inference to the best explanation
+        · logical inconsistency proof
+        · modus tollens
+        · proof methods
+  [12] 'trigger strategy'  ←  4 stage-1 labels
+        · commitment strategy in game theory
+        · precommitment strategy
+        · tit for tat
+        · trigger strategy
+  [13] 'deadlock resolution'  ←  3 stage-1 labels
+        · deadlock resolution in resource allocation graphs
+        · netting
+        · priority rule in claims resolution
+  [14] 'decision tree'  ←  3 stage-1 labels
+        · decision tree
+        · decision tree pruning and grafting
+        · decision tree with costly verification
+  [15] 'deterrence'  ←  3 stage-1 labels
+        · credible commitment
+        · credible threat
+        · deterrence
+  [16] 'dimensionality reduction'  ←  3 stage-1 labels
+        · dimensionality reduction
+        · feature engineering
+        · principal component analysis
+  [17] 'feedback control'  ←  3 stage-1 labels
+        · feedback control
+        · hierarchical control theory
+        · receding horizon control
+  [18] 'graph theory'  ←  3 stage-1 labels
+        · graph theory
+        · merkle tree
+        · minimum cut
+  [19] 'information filter'  ←  3 stage-1 labels
+        · attention economics
+        · attentional bias modification
+        · information filter
+  [20] 'optimal stopping'  ←  3 stage-1 labels
+        · american call option
+        · optimal stopping
+        · real options
+  [21] 'principal agent model'  ←  3 stage-1 labels
+        · common agency
+        · multilateral principal agent model with multiple principals
+        · principal agent theory
+  [22] 'reliability theory'  ←  3 stage-1 labels
+        · defense in depth
+        · parallel system reliability
+        · reliability theory
+  [23] 'social regulation'  ←  3 stage-1 labels
+        · bureaucratic response function
+        · institutional escalation
+        · social regulation
+  [24] 'state machine'  ←  3 stage-1 labels
+        · automata theory
+        · integrate and fire model
+        · state machine
+  [25] 'threshold model'  ←  3 stage-1 labels
+        · duverger's law
+        · information cascade
+        · threshold model
+  [26] 'agent based modeling'  ←  2 stage-1 labels
+        · agent based modeling
+        · multi agent system
+  [27] 'attribution theory'  ←  2 stage-1 labels
+        · attribution theory
+        · locus of control
+  [28] 'bayesian inference'  ←  2 stage-1 labels
+        · bayesian inference with anchoring
+        · bayesian statistics
+  [29] 'channel capacity'  ←  2 stage-1 labels
+        · channel capacity
+        · maxwell's demon
+  [30] 'coase theorem'  ←  2 stage-1 labels
+        · coase theorem
+        · transaction cost economics
+  [31] 'cognitive dissonance'  ←  2 stage-1 labels
+        · cognitive dissonance
+        · motivated reasoning
+  [32] 'constrained optimization'  ←  2 stage-1 labels
+        · constrained optimization
+        · hierarchical optimization
+  [33] 'control theory'  ←  2 stage-1 labels
+        · control theory
+        · optimal control theory
+  [34] 'cost benefit analysis'  ←  2 stage-1 labels
+        · cost benefit analysis
+        · net present value
+  [35] 'cross sectional analysis'  ←  2 stage-1 labels
+        · cross sectional analysis
+        · event study methodology
+  [36] 'data fusion'  ←  2 stage-1 labels
+        · data fusion
+        · noise reduction through aggregation
+  [37] 'default bias'  ←  2 stage-1 labels
+        · default bias
+        · default option in behavioral economics
+  [38] 'distributed consensus'  ←  2 stage-1 labels
+        · condorcet's jury theorem
+        · distributed consensus
+  [39] 'expected utility theory'  ←  2 stage-1 labels
+        · certainty equivalent
+        · expected utility theory
+  [40] 'framing effect'  ←  2 stage-1 labels
+        · framing effect
+        · joint evaluation
+
+[Stage-2 renames] (key ≠ value, 102 entries; list first 80)
+  'adversarial persuasion game'  →  'signaling game'
+  'american call option'  →  'optimal stopping'
+  'arbitration game'  →  'third party enforcement'
+  'attention economics'  →  'information filter'
+  'attentional bias modification'  →  'information filter'
+  'automata theory'  →  'state machine'
+  'backward induction'  →  'subgame perfect equilibrium'
+  'bargaining with outside options'  →  'bargaining model'
+  'bayesian inference with anchoring'  →  'bayesian inference'
+  'bayesian statistics'  →  'bayesian inference'
+  'bistable system with potential well'  →  'multistability'
+  'bureaucratic response function'  →  'social regulation'
+  'causal graphs'  →  'causal inference'
+  'causal inference with instrumental variables'  →  'causal inference'
+  'causal intervention'  →  'causal inference'
+  'centipede game'  →  'sequential game'
+  'certainty equivalent'  →  'expected utility theory'
+  'cheap talk'  →  'signaling game'
+  'cognitive reappraisal'  →  'problem reformulation'
+  'collateral'  →  'commitment device'
+  'commitment strategy in game theory'  →  'trigger strategy'
+  'common agency'  →  'principal agent model'
+  'complex network contagion model with external control'  →  'complex network contagion model'
+  "condorcet's jury theorem"  →  'distributed consensus'
+  'context dependent membership function'  →  'fuzzy set theory'
+  'costly signaling game'  →  'signaling game'
+  'counterfactual causal model'  →  'causal inference'
+  'credible commitment'  →  'deterrence'
+  'credible threat'  →  'deterrence'
+  'deadline game'  →  'sequential game'
+  'deadlock resolution in resource allocation graphs'  →  'deadlock resolution'
+  'decision tree pruning and grafting'  →  'decision tree'
+  'decision tree with costly verification'  →  'decision tree'
+  'default option in behavioral economics'  →  'default bias'
+  'defense in depth'  →  'reliability theory'
+  'diffusion of innovations'  →  'complex network contagion model'
+  'do calculus'  →  'causal inference'
+  "duverger's law"  →  'threshold model'
+  'dynamical system with state memory'  →  'dynamical systems'
+  'escrow mechanism'  →  'commitment device'
+  'event study methodology'  →  'cross sectional analysis'
+  'extensive form game'  →  'sequential game'
+  'externality internalization'  →  'pigouvian tax'
+  'feature engineering'  →  'dimensionality reduction'
+  'focal point'  →  'coordination game'
+  'game of chicken'  →  'war of attrition'
+  'game tree'  →  'sequential game'
+  'hierarchical control theory'  →  'feedback control'
+  'hierarchical optimization'  →  'constrained optimization'
+  'incomplete information bargaining'  →  'bargaining model'
+  'inference to the best explanation'  →  'proof methods'
+  'information aggregation mechanism'  →  'mechanism design'
+  'information cascade'  →  'threshold model'
+  'information design'  →  'mechanism design'
+  'information entropy reduction'  →  'value of information'
+  'inspection game'  →  'third party enforcement'
+  'institution as a coordination device'  →  'coordination game'
+  'institutional design for commitment problems'  →  'commitment device'
+  'institutional escalation'  →  'social regulation'
+  'integrate and fire model'  →  'state machine'
+  'joint evaluation'  →  'framing effect'
+  'lexicographic preference ordering'  →  'multicriteria decision making'
+  'locus of control'  →  'attribution theory'
+  'logical inconsistency proof'  →  'proof methods'
+  'markov processes'  →  'markov process'
+  "maxwell's demon"  →  'channel capacity'
+  'merkle tree'  →  'graph theory'
+  'minimum cut'  →  'graph theory'
+  'modus tollens'  →  'proof methods'
+  'motivated reasoning'  →  'cognitive dissonance'
+  'multi agent system'  →  'agent based modeling'
+  'multilateral principal agent model with multiple principals'  →  'principal agent model'
+  'multilayer network resilience model'  →  'complex network contagion model'
+  'net present value'  →  'cost benefit analysis'
+  'netting'  →  'deadlock resolution'
+  'network reconfiguration model'  →  'complex network contagion model'
+  'noise reduction through aggregation'  →  'data fusion'
+  'online learning with user feedback'  →  'multi armed bandit'
+  'optimal control theory'  →  'control theory'
+  'parallel system reliability'  →  'reliability theory'
+  … 22 more
+
+[Consistency with merge_map.json]
+  compared 378 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

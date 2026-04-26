@@ -1,0 +1,253 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Personal&Existential\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Personal&Existential\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Personal&Existential\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     363
+  distinct stage-1 canonicals:  166
+  stage2 map entries (keys):    166
+  distinct stage-2 canonicals:  70
+  stage2 merge groups (|keys|>1 for same c2): 23 groups, 119 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1395
+  distinct c1 (weighted rows): 166
+  distinct c2 (weighted):      70
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'feedback control'  ←  11 stage-1 labels
+        · adaptive control
+        · control theory
+        · cybernetics
+        · feedback control
+        · feedback loop interruption
+        · homeostasis
+        · input output system
+        · stability theory
+        · system dynamics
+        · system stability
+        · systems theory
+  [ 2] 'dynamical systems'  ←  10 stage-1 labels
+        · attractor basins
+        · attractor network
+        · bifurcation theory
+        · catastrophe theory
+        · coupled oscillators
+        · dynamical systems
+        · dynamical systems attractors
+        · multistability phase transition
+        · neural network dynamics
+        · phase transition
+  [ 3] 'game theory'  ←  10 stage-1 labels
+        · cooperative game theory
+        · game theory
+        · mechanism design
+        · nash equilibrium shift
+        · repeated game
+        · repeated prisoner's dilemma
+        · sequential game
+        · signaling game
+        · tit for tat strategy
+        · trust game
+  [ 4] 'social network analysis'  ←  10 stage-1 labels
+        · information diffusion model
+        · network centrality
+        · network dynamics
+        · network interventions
+        · network robustness
+        · network theory
+        · preferential attachment
+        · social network analysis
+        · social network contagion and support
+        · social support
+  [ 5] 'decision theory'  ←  9 stage-1 labels
+        · behavioral economics
+        · bounded rationality
+        · decision theory
+        · decision tree
+        · dual process theory
+        · expectancy theory
+        · multi attribute decision making
+        · optimal stopping
+        · rational choice theory
+  [ 6] 'optimization'  ←  9 stage-1 labels
+        · constrained optimization
+        · dynamic programming
+        · gradient descent
+        · knapsack problem
+        · local optima
+        · multi objective optimization
+        · optimization
+        · simulated annealing
+        · system optimization
+  [ 7] 'utility theory'  ←  7 stage-1 labels
+        · hyperbolic discounting
+        · intertemporal choice
+        · prospect theory
+        · time preference and discounting
+        · utility function
+        · utility maximization
+        · utility theory
+  [ 8] 'bayesian inference'  ←  6 stage-1 labels
+        · bayesian cognition
+        · bayesian inference
+        · belief propagation
+        · belief revision
+        · prediction error
+        · predictive coding
+  [ 9] 'reinforcement learning'  ←  6 stage-1 labels
+        · exploration exploitation
+        · markov decision process
+        · multi armed bandit problem
+        · reinforcement learning
+        · reinforcement learning with environmental shaping
+        · sequential decision making
+  [10] 'cognitive behavioral therapy'  ←  5 stage-1 labels
+        · behavioral activation
+        · cognitive behavioral model of insomnia
+        · cognitive behavioral therapy
+        · cognitive model of psychopathology
+        · cognitive restructuring
+  [11] 'cognitive bias'  ←  4 stage-1 labels
+        · anchoring and adjustment heuristic
+        · cognitive appraisal
+        · cognitive bias
+        · cognitive dissonance theory
+  [12] 'hebbian learning'  ←  4 stage-1 labels
+        · connectionism
+        · hebbian learning
+        · neural network rewiring
+        · neural plasticity
+  [13] 'resource allocation'  ←  4 stage-1 labels
+        · cost benefit analysis
+        · portfolio theory
+        · real options theory
+        · resource allocation
+  [14] 'stress coping'  ←  4 stage-1 labels
+        · emotion regulation process model
+        · general adaptation syndrome
+        · regulation of affective states
+        · stress coping
+  [15] 'self theory'  ←  3 stage-1 labels
+        · contingencies of self worth
+        · self fulfilling prophecy
+        · self theory
+  [16] 'stochastic processes'  ←  3 stage-1 labels
+        · queueing theory
+        · stochastic processes
+        · stochastic resonance
+  [17] 'cognitive load theory'  ←  2 stage-1 labels
+        · cognitive load theory
+        · limited capacity attention model
+  [18] 'cognitive theory of depression'  ←  2 stage-1 labels
+        · cognitive theory of depression
+        · cognitive triad model
+  [19] 'complex adaptive systems'  ←  2 stage-1 labels
+        · complex adaptive systems
+        · threshold model
+  [20] 'information asymmetry'  ←  2 stage-1 labels
+        · information asymmetry
+        · principal agent theory
+  [21] 'operant conditioning'  ←  2 stage-1 labels
+        · classical and operant conditioning
+        · operant conditioning
+  [22] 'risk management'  ←  2 stage-1 labels
+        · barrier option theory
+        · risk management
+  [23] 'state space model'  ←  2 stage-1 labels
+        · state space model
+        · system identification
+
+[Stage-2 renames] (key ≠ value, 96 entries; list first 80)
+  'adaptive control'  →  'feedback control'
+  'anchoring and adjustment heuristic'  →  'cognitive bias'
+  'attractor basins'  →  'dynamical systems'
+  'attractor network'  →  'dynamical systems'
+  'barrier option theory'  →  'risk management'
+  'bayesian cognition'  →  'bayesian inference'
+  'behavioral activation'  →  'cognitive behavioral therapy'
+  'behavioral economics'  →  'decision theory'
+  'belief propagation'  →  'bayesian inference'
+  'belief revision'  →  'bayesian inference'
+  'bifurcation theory'  →  'dynamical systems'
+  'bounded rationality'  →  'decision theory'
+  'catastrophe theory'  →  'dynamical systems'
+  'classical and operant conditioning'  →  'operant conditioning'
+  'cognitive appraisal'  →  'cognitive bias'
+  'cognitive behavioral model of insomnia'  →  'cognitive behavioral therapy'
+  'cognitive dissonance theory'  →  'cognitive bias'
+  'cognitive model of psychopathology'  →  'cognitive behavioral therapy'
+  'cognitive restructuring'  →  'cognitive behavioral therapy'
+  'cognitive triad model'  →  'cognitive theory of depression'
+  'connectionism'  →  'hebbian learning'
+  'constrained optimization'  →  'optimization'
+  'contingencies of self worth'  →  'self theory'
+  'control theory'  →  'feedback control'
+  'cooperative game theory'  →  'game theory'
+  'cost benefit analysis'  →  'resource allocation'
+  'coupled oscillators'  →  'dynamical systems'
+  'cybernetics'  →  'feedback control'
+  'decision tree'  →  'decision theory'
+  'dual process theory'  →  'decision theory'
+  'dynamic programming'  →  'optimization'
+  'dynamical systems attractors'  →  'dynamical systems'
+  'emotion regulation process model'  →  'stress coping'
+  'expectancy theory'  →  'decision theory'
+  'exploration exploitation'  →  'reinforcement learning'
+  'feedback loop interruption'  →  'feedback control'
+  'general adaptation syndrome'  →  'stress coping'
+  'gradient descent'  →  'optimization'
+  'homeostasis'  →  'feedback control'
+  'hyperbolic discounting'  →  'utility theory'
+  'information diffusion model'  →  'social network analysis'
+  'input output system'  →  'feedback control'
+  'intertemporal choice'  →  'utility theory'
+  'knapsack problem'  →  'optimization'
+  'limited capacity attention model'  →  'cognitive load theory'
+  'local optima'  →  'optimization'
+  'markov decision process'  →  'reinforcement learning'
+  'mechanism design'  →  'game theory'
+  'multi armed bandit problem'  →  'reinforcement learning'
+  'multi attribute decision making'  →  'decision theory'
+  'multi objective optimization'  →  'optimization'
+  'multistability phase transition'  →  'dynamical systems'
+  'nash equilibrium shift'  →  'game theory'
+  'network centrality'  →  'social network analysis'
+  'network dynamics'  →  'social network analysis'
+  'network interventions'  →  'social network analysis'
+  'network robustness'  →  'social network analysis'
+  'network theory'  →  'social network analysis'
+  'neural network dynamics'  →  'dynamical systems'
+  'neural network rewiring'  →  'hebbian learning'
+  'neural plasticity'  →  'hebbian learning'
+  'optimal stopping'  →  'decision theory'
+  'phase transition'  →  'dynamical systems'
+  'portfolio theory'  →  'resource allocation'
+  'prediction error'  →  'bayesian inference'
+  'predictive coding'  →  'bayesian inference'
+  'preferential attachment'  →  'social network analysis'
+  'principal agent theory'  →  'information asymmetry'
+  'prospect theory'  →  'utility theory'
+  'queueing theory'  →  'stochastic processes'
+  'rational choice theory'  →  'decision theory'
+  'real options theory'  →  'resource allocation'
+  'regulation of affective states'  →  'stress coping'
+  'reinforcement learning with environmental shaping'  →  'reinforcement learning'
+  'repeated game'  →  'game theory'
+  "repeated prisoner's dilemma"  →  'game theory'
+  'self fulfilling prophecy'  →  'self theory'
+  'sequential decision making'  →  'reinforcement learning'
+  'sequential game'  →  'game theory'
+  'signaling game'  →  'game theory'
+  … 16 more
+
+[Consistency with merge_map.json]
+  compared 363 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

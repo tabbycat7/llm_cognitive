@@ -1,32 +1,34 @@
 ==============================================================================
 LLM Cognitive Probe — Analysis Summary
 ==============================================================================
-Generated (local): 2026-04-22T20:10:19
+Generated (local): 2026-04-24T10:36:12
 
 [Input]
-  results_file: E:\college\postgraduate\llm_cognitive\MiniMax-M2.5\Societal&Ethical\probe_results.jsonl
+  results_file: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Societal&Ethical\probe_results.jsonl
   records (non-empty JSONL lines): 500
 
 [Merge]
   merge_method: llm
-  refresh_merge: True
+  refresh_merge: False
   name_source: step3
   chart_top_n: 30
 
 [Counts]
   raw_unique_names: 558
   raw_total_mentions: 1191
-  canonical_unique_names: 513
+  canonical_unique_names: 192
   canonical_total_mentions: 1191
-  distinct_label_reduction: 558 raw → 513 canonical (8.1% fewer labels)
+  distinct_label_reduction: 558 raw → 192 canonical (65.6% fewer labels)
 
 [Output artifacts]
   merge_map.json: yes
-  merge_map.embeddings.json: no
+  merge_map_llm_stage1.json: yes
+  merge_map_llm_stage1.embeddings.json: yes
+  merge_map_llm_stage2.json: yes
   model_law_frequency.png: yes
   model_law_wordcloud.png: yes
-  cluster_dendrogram.png: no
-  cluster_scatter.png: no
+  cluster_dendrogram.png: yes
+  cluster_scatter.png: yes
 
 [Top 30 raw names — before merge / 归并前（原始标签频次）]
   rank   count  name
@@ -63,758 +65,1573 @@ Generated (local): 2026-04-22T20:10:19
 
 [Top 30 canonical names — after merge / 归并后（代表名频次）]
   rank   count  name
-     1     131  signaling game
-     2      75  mechanism design
-     3      72  bayesian inference
-     4      63  principal agent model
-     5      35  burden of proof
-     6      26  information asymmetry
-     7      23  commitment device
-     8      19  markov decision process
-     9      18  expected utility theory
-    10      16  constraint satisfaction problem
-    11      16  threshold model
-    12      16  stackelberg game
-    13      14  nash equilibrium
-    14      13  nash bargaining solution
-    15      11  deterrence theory
-    16      11  finite state machine
-    17       9  optimal stopping
-    18       9  sequential game
-    19       9  negative feedback loop
-    20       9  information revelation
-    21       7  real options
-    22       7  credible threat
-    23       6  subgame perfect equilibrium
-    24       6  verification game
-    25       5  zero sum game
-    26       5  audit trail
-    27       5  statute of limitations
-    28       5  game of chicken
-    29       5  percolation theory
-    30       4  backward induction
+     1     143  signaling game
+     2      79  bayesian updating
+     3      76  principal-agent theory
+     4      73  fact opinion dichotomy
+     5      73  mechanism design
+     6      38  commitment
+     7      37  burden of proof
+     8      36  nash equilibrium
+     9      34  information asymmetry
+    10      28  bargaining
+    11      27  sequential game
+    12      23  stackelberg game
+    13      23  feedback loop
+    14      22  markov decision process
+    15      22  threshold model
+    16      20  information revelation
+    17      19  deterrence theory
+    18      19  utility theory
+    19      18  enforcement mechanism
+    20      17  optimal stopping
+    21      17  constraint satisfaction
+    22      13  verification
+    23      11  social influence
+    24      10  markov chain
+    25       9  coordination game
+    26       8  choice architecture
+    27       8  adversarial process
+    28       7  game theory
+    29       7  information acquisition
+    30       6  decision tree
 
-[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 23 clusters]
-  [#1] representative: information asymmetry  ·  5 members
-      · information asymmetry  [代表]
-      · information asymmetry correction
-      · information asymmetry equilibrium
-      · information asymmetry game
-      · information asymmetry reduction
-  [#2] representative: nash bargaining solution  ·  5 members
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 71 clusters]
+  [#1] representative: fact opinion dichotomy  ·  73 members
+      · ambiguity resolution under knightian uncertainty
+      · anchor consistency
+      · andersen test
+      · assertion theory
+      · asset recovery
+      · bailment
+      · base rate neglect
+      · bass diffusion model
+      · beyond reasonable doubt
+      · binary state verification
+      · boolean algebra
+      · boolean conjunction model
+      · boolean network
+      · boundary condition
+      · boundary spanning
+      · bureaucratic politics model
+      · but for test
+      · catastrophe theory
+      · categorical perception
+      · causal inference andscm
+      · causal intervention
+      · certificate chain
+      · chain of custody
+      · chain store paradox
+      · challenge response paradigm
+      · channel capacity (information theory)
+      · claim priority model
+      · cognitive bias correction
+      · cognitive control
+      · cognitive dissonance
+      · complete contract
+      · constrained network routing
+      · constraint propagation
+      · contempt of court doctrine
+      · contestable market
+      · context sensitive decision
+      · contract gap filling
+      · controllability
+      · cost benefit calculation shift
+      · countervailing power mechanism
+      · court enforced settlement
+      · credence goods
+      · credit card chargeback mechanism
+      · critical point model
+      · damped harmonic oscillator
+      · darcy's law
+      · decision rule model
+      · decision tree with information trigger
+      · decision under uncertainty
+      · default rule with response window
+      · degroot friedkin model
+      · dependency graph
+      · discovery procedure
+      · displacement
+      · distributed state propagation
+      · diversion program
+      · division of labor
+      · documentation trace
+      · dual channel cascade
+      · dual process theory
+      · dynamical systems bifurcation
+      · dynamical systems with feedback restructuring
+      · electoral accountability model
+      · emergence
+      · enforcement rule
+      · entropy reduction
+      · equilibrium switching
+      · error correction model
+      · evidence dynamics
+      · exceptional circumstance provision
+      · exploration exploitation
+      · external monitoring mechanism
+      · fact opinion dichotomy  [代表]
+  [#2] representative: bargaining  ·  21 members
+      · adversarial bargaining model
+      · alternating offer bargaining game
+      · alternating offer bargaining model
+      · alternating offer bargaining with outside option
       · bargaining equilibrium
       · bargaining game
       · bargaining model
       · bargaining problem
-      · nash bargaining solution  [代表]
-  [#3] representative: signaling game  ·  5 members
+      · bargaining solution
+      · bilateral bargaining equilibrium
+      · bilateral bargaining game
+      · bilateral bargaining with outside option
+      · rubinstein bargaining model
+      · sequential bargaining
+      · sequential bargaining game
+      · sequential bargaining model
+      · sequential bargaining with outside option
+      · settlement bargaining
+      · strategic bargaining
+      · ultimatum bargaining model
+      · ultimatum game
+  [#3] representative: feedback loop  ·  17 members
+      · cascade dynamics
+      · feedback control system
+      · feedback control theory
+      · feedback dynamics
+      · feedback loop  [代表]
+      · feedback loop disruption
+      · feedback loop dynamics
+      · feedback loop elimination
+      · negative feedback control
+      · negative feedback loop
+      · negative feedback loops
+      · positive feedback loop
+      · positive feedback loop elimination
+      · positivefeedbackloopinterruption
+      · regulatory feedback loop
+      · self interaction feedback loop
+      · system dynamics
+  [#4] representative: sequential game  ·  17 members
+      · .sequential game with perfect information
+      · backward induction
+      · extensive form game
+      · extensive form game with exogenous shock
+      · extensive form game with imperfect information
+      · multi stage game
+      · multi stage game with verifiable observability
+      · repeated game with incomplete information
+      · reverse induction
+      · sequential game  [代表]
+      · sequential game model
+      · sequential game with backward induction
+      · sequential game with imperfect information
+      · sequential game with incomplete information
+      · sequential game with information revelation
+      · sequential game with mediator
+      · sequential game with perfect information
+  [#5] representative: principal-agent theory  ·  15 members
+      · adverse selection
+      · information asymmetry in principal agent models
+      · information asymmetry in principal agent problem
+      · principal agent framework
+      · principal agent information asymmetry
+      · principal agent information asymmetry model
+      · principal agent information problem
+      · principal agent leverage
+      · principal agent model
+      · principal agent model with external enforcement
+      · principal agent model with risk shifting
+      · principal agent problem
+      · principal agent theory
+      · screening
+      · screening mechanism
+  [#6] representative: signaling game  ·  15 members
+      · authentication game
       · costly signaling
+      · sequential signaling game
+      · signal detection theory
+      · signal theory
       · signaling
       · signaling game  [代表]
+      · signaling game in information economics
+      · signaling game with legal cost commitment
+      · signaling game with outside enforcement
+      · signaling game with regulatory enforcement
       · signaling games
+      · signaling mechanism
       · signaling model
-  [#4] representative: bayesian inference  ·  4 members
+      · strategic signaling game
+  [#7] representative: enforcement mechanism  ·  13 members
+      · accountability mechanism
+      · contingent enforcement mechanism
+      · contract enforcement
+      · external regulatory enforcement model
+      · judicial enforcement mechanism
+      · law enforcement mechanism
+      · regulatory enforcement
+      · regulatory enforcement game
+      · regulatory enforcement mechanism
+      · regulatory enforcement model
+      · third party enforcement
+      · third party enforcement game
+      · third party enforcement mechanism
+  [#8] representative: information asymmetry  ·  13 members
+      · information asymmetric game
+      · information asymmetry  [代表]
+      · information asymmetry and signaling
+      · information asymmetry bargaining
+      · information asymmetry correction
+      · information asymmetry equilibrium
+      · information asymmetry exploitation
+      · information asymmetry game
+      · information asymmetry manipulation
+      · information asymmetry reduction
+      · information asymmetry resolution
+      · information asymmetry reversal
+      · information asymmetry signaling
+  [#9] representative: nash equilibrium  ·  13 members
+      · bayesian nash equilibrium
+      · bayesian perfect equilibrium
+      · best response
+      · best response dynamics
+      · mixed strategy equilibrium
+      · multiple nash equilibria
+      · nash bargaining solution
+      · nash equilibrium  [代表]
+      · nash equilibrium shift
+      · nash equilibrium with credible threats
+      · perfect bayesian equilibrium
+      · separating equilibrium
+      · subgame perfect equilibrium
+  [#10] representative: commitment  ·  12 members
+      · commitment  [代表]
+      · commitment constraint
+      · commitment device
+      · commitment mechanism
+      · commitment problem
+      · commitment strategy
+      · credible commitment
+      · credible commitment mechanism
+      · credible threat
+      · credible threat commitment
+      · inducing credible threat
+      · strategic commitment
+  [#11] representative: deterrence theory  ·  10 members
+      · deterrence effect
+      · deterrence equilibrium
+      · deterrence game
+      · deterrence model
+      · deterrence theory  [代表]
+      · general deterrence model
+      · legal deterrence model
+      · optimal deterrence
+      · rational deterrence model
+      · regulatory deterrence model
+  [#12] representative: bayesian updating  ·  9 members
+      · bayes theorem
+      · bayesian belief network
       · bayesian belief updating
-      · bayesian inference  [代表]
+      · bayesian inference
+      · bayesian persuasion
       · bayesian update
-      · bayesian updating
-  [#5] representative: burden of proof  ·  4 members
+      · bayesian updating  [代表]
+      · bayesian updating under competing evidence
+      · bayesian updating under information asymmetry
+  [#13] representative: mechanism design  ·  9 members
+      · incentive compatibility
+      · incentive compatibility constraint
+      · incentive mechanism
+      · mechanism design  [代表]
+      · mechanism design with enforcement
+      · mechanism design with verifiable disclosure
+      · multi task incentive compatibility
+      · restitution incentive mechanism
+      · revelation principle
+  [#14] representative: adversarial process  ·  8 members
+      · adversarial argumentation
+      · adversarial game theory
+      · adversarial legal procedure
+      · adversarial legal system
+      · adversarial litigation game
+      · adversarial litigation model
+      · adversarial procedure
+      · adversarial system
+  [#15] representative: social influence  ·  8 members
+      · coalition formation
+      · coalition formation game
+      · collective action model
+      · collective action problem
+      · collective action theory
+      · social influence model
+      · social influence theory
+      · social learning theory
+  [#16] representative: stackelberg game  ·  7 members
+      · stackelberg commitment
+      · stackelberg competition
+      · stackelberg equilibrium
+      · stackelberg game  [代表]
+      · stackelberg leader follower game
+      · stackelberg leadership
+      · stackelberg leadership model
+  [#17] representative: threshold model  ·  7 members
+      · probability threshold model
+      · threshold access model
+      · threshold barrier model
+      · threshold cascade model
+      · threshold model  [代表]
+      · threshold triggered state transition
+      · threshold触发 state machine
+  [#18] representative: burden of proof  ·  6 members
       · burden of proof  [代表]
       · burden of proof allocation
       · burden of proof shift
       · burden of proof shifting
-  [#6] representative: commitment device  ·  4 members
-      · commitment
-      · commitment device  [代表]
-      · credible commitment
-      · credible commitment mechanism
-  [#7] representative: mechanism design  ·  4 members
-      · incentive compatibility
-      · information revelation mechanism
-      · mechanism design  [代表]
-      · revelation principle
-  [#8] representative: constraint satisfaction problem  ·  3 members
-      · constraint relaxation
-      · constraint satisfaction
-      · constraint satisfaction problem  [代表]
-  [#9] representative: expected utility theory  ·  3 members
-      · expected utility maximization
-      · expected utility theory  [代表]
-      · expected value calculation
-  [#10] representative: markov decision process  ·  3 members
-      · markov decision process  [代表]
-      · sequential decision process
-      · sequential decision theory
-  [#11] representative: negative feedback loop  ·  3 members
-      · feedback loop
-      · negative feedback loop  [代表]
-      · positive feedback loop
-  [#12] representative: principal agent model  ·  3 members
-      · principal agent model  [代表]
-      · principal agent problem
-      · principal agent theory
-  [#13] representative: audit trail  ·  2 members
-      · audit trail  [代表]
-      · audit trail mechanism
-  [#14] representative: bayesian game  ·  2 members
-      · bayesian game  [代表]
-      · bayesian games
-  [#15] representative: collective action problem  ·  2 members
-      · collective action problem  [代表]
-      · collective action theory
-  [#16] representative: deterrence theory  ·  2 members
-      · deterrence model
-      · deterrence theory  [代表]
-  [#17] representative: finite state machine  ·  2 members
-      · finite state machine  [代表]
-      · state transition model
-  [#18] representative: game of chicken  ·  2 members
-      · chicken game
-      · game of chicken  [代表]
-  [#19] representative: information revelation  ·  2 members
+      · reverse burden of proof
+      · shifting burden of proof
+  [#19] representative: choice architecture  ·  6 members
+      · active choice architecture
+      · availability heuristic
+      · choice architecture  [代表]
+      · framing effect
+      · framing shift
+      · representativeness heuristic
+  [#20] representative: information acquisition  ·  6 members
+      · information acquisition  [代表]
+      · information acquisition game
+      · information aggregation
+      · information gathering
+      · multi channel information acquisition
+      · multi channel verification
+  [#21] representative: information revelation  ·  6 members
       · information revelation  [代表]
       · information revelation game
-  [#20] representative: optimal stopping  ·  2 members
+      · information revelation mechanism
+      · information revelation principle
+      · information revelation under boundedrationality
+      · strategic information revelation
+  [#22] representative: markov decision process  ·  6 members
+      · markov decision process  [代表]
+      · partially observable markov decision process
+      · sequential decision model
+      · sequential decision process
+      · sequential decision theory
+      · sequential decision tree
+  [#23] representative: markov chain  ·  5 members
+      · absorbing markov chain
+      · markov chain  [代表]
+      · markov chain transition
+      · state transition dynamics
+      · state transition model
+  [#24] representative: resource allocation  ·  5 members
+      · pro rata allocation
+      · proportional allocation
+      · resource allocation  [代表]
+      · resource allocation optimization
+      · resource redistribution mechanism
+  [#25] representative: verification  ·  5 members
+      · audit game
+      · audit trail
+      · audit trail mechanism
+      · verification game
+      · verification problem
+  [#26] representative: arbitration  ·  4 members
+      · arbitration  [代表]
+      · arbitration framework
+      · causal mediation model
+      · mediation model
+  [#27] representative: bayesian game  ·  4 members
+      · bayesian game  [代表]
+      · bayesian games
+      · bayesian signaling game
+      · signaling game with bayesian updating
+  [#28] representative: constraint satisfaction  ·  4 members
+      · constraint relaxation
+      · constraint relaxation model
+      · constraint satisfaction  [代表]
+      · constraint satisfaction problem
+  [#29] representative: contingent claims  ·  4 members
+      · american option
+      · contingent claim
+      · contingent claims  [代表]
+      · contingent claims analysis
+  [#30] representative: coordination game  ·  4 members
+      · chicken game
+      · coordination game  [代表]
+      · game of chicken
+      · sequential game of chicken
+  [#31] representative: decision tree  ·  4 members
+      · decision tree  [代表]
+      · decision tree analysis
+      · decision tree optimization
+      · decision tree with forced branching
+  [#32] representative: hypothesis testing  ·  4 members
+      · hypothesis testing  [代表]
+      · likelihood ratio
+      · likelihood ratio test
+      · sequential probability ratio test
+  [#33] representative: liability rule  ·  4 members
+      · liability rule  [代表]
+      · liability transfer
+      · multi principal liability transfer
+      · proportional liability rule
+  [#34] representative: optimal stopping  ·  4 members
       · optimal stopping  [代表]
+      · optimal stopping problem
       · optimal stopping theory
-  [#21] representative: percolation theory  ·  2 members
-      · percolation theory  [代表]
+      · real options
+  [#35] representative: procedural justice  ·  4 members
+      · procedural due process
+      · procedural formalism
+      · procedural manipulation
+      · procedural retroaction
+  [#36] representative: temporal constraint  ·  4 members
+      · temporal binding constraint
+      · temporal boundary constraint
+      · temporal constraint  [代表]
+      · temporal constraint satisfaction
+  [#37] representative: utility theory  ·  4 members
+      · expected utility maximization
+      · expected utility theory
+      · expected value calculation
+      · multi attribute utility theory
+  [#38] representative: constrained optimization  ·  3 members
+      · constrained optimization  [代表]
+      · constraint optimization
+      · resource constraint optimization
+  [#39] representative: counterfactuals  ·  3 members
+      · counterfactual causal inference
+      · counterfactual causation
+      · counterfactual reasoning
+  [#40] representative: externality internalization  ·  3 members
+      · externalitiesinternalization
+      · externality internalization  [代表]
+      · internalization of externalities
+  [#41] representative: game theory  ·  3 members
+      · non zero sum game
+      · zero sum equilibrium
+      · zero sum game
+  [#42] representative: information cascade  ·  3 members
+      · cascade failure model
+      · cascade model
+      · information cascade  [代表]
+  [#43] representative: non cooperative game  ·  3 members
+      · non cooperative game  [代表]
+      · punishment strategy in non cooperative games
+      · threat strategy in non cooperative game
+  [#44] representative: percolation  ·  3 members
+      · percolation theory
       · percolation threshold
-  [#22] representative: sequential game  ·  2 members
-      · sequential game  [代表]
-      · sequential game with perfect information
-  [#23] representative: stackelberg game  ·  2 members
-      · stackelberg game  [代表]
-      · stackelberg leadership
+      · percolationthreshold
+  [#45] representative: regulatory dynamics  ·  3 members
+      · regulatory arbitrage
+      · regulatory capture
+      · regulatory leverage
+  [#46] representative: stochastic processes  ·  3 members
+      · stochastic dynamic programming
+      · stochastic process
+      · stochastic restart
+  [#47] representative: bottleneck capacity  ·  2 members
+      · bottleneck capacity model
+      · bottleneck elimination
+  [#48] representative: causal inference  ·  2 members
+      · attribution error
+      · causal attribution model
+  [#49] representative: constraint transformation  ·  2 members
+      · constraint manipulation
+      · constraint transformation  [代表]
+  [#50] representative: credit scoring  ·  2 members
+      · credit scoring model
+      · score credit system
+  [#51] representative: dempster shafer theory  ·  2 members
+      · dempster shafer theory  [代表]
+      · dempster shafer theory of evidence
+  [#52] representative: dynamical systems  ·  2 members
+      · multi stable dynamical systems
+      · slow dynamical system
+  [#53] representative: escalation  ·  2 members
+      · escalation game
+      · escalation ladder
+  [#54] representative: exponential decay  ·  2 members
+      · exponential decay  [代表]
+      · exponential decay model
+  [#55] representative: heaviside step function  ·  2 members
+      · step function
+      · step function heaviside step
+  [#56] representative: hierarchical modeling  ·  2 members
+      · hierarchical classification model
+      · hierarchical optimization
+  [#57] representative: litigation cost benefit  ·  2 members
+      · cost benefit analysis of litigation
+      · litigation cost benefit asymmetry
+  [#58] representative: mechanism transfer  ·  2 members
+      · mechanism shift
+      · mechanism transfer  [代表]
+  [#59] representative: minimax  ·  2 members
+      · minimax  [代表]
+      · minimax theorem
+  [#60] representative: monitoring  ·  2 members
+      · distributed monitoring
+      · hierarchical monitoring
+  [#61] representative: multi-agent optimization  ·  2 members
+      · multi agent coordination
+      · multi agent optimization
+  [#62] representative: network flow  ·  2 members
+      · flow network
+      · network flow  [代表]
+  [#63] representative: pareto improvement  ·  2 members
+      · constrained pareto improvement
+      · pareto improvement  [代表]
+  [#64] representative: payoff restructuring  ·  2 members
+      · payoff matrix restructuring
+      · payoff restructuring via external authority
+  [#65] representative: queue  ·  2 members
+      · blocking queue
+      · priority queue
+  [#66] representative: redundancy  ·  2 members
+      · redundancy  [代表]
+      · redundancy mechanism
+  [#67] representative: reinforcement learning  ·  2 members
+      · adaptive search algorithm
+      · reinforcement learning  [代表]
+  [#68] representative: renegotiation  ·  2 members
+      · contract renegotiation
+      · queue renegotiation
+  [#69] representative: repeated game  ·  2 members
+      · repeat game
+      · repeated game  [代表]
+  [#70] representative: reputation  ·  2 members
+      · reputation dynamics
+      · reputation mechanism
+  [#71] representative: statute of limitations  ·  2 members
+      · statute of limitations  [代表]
+      · statute of limitations decay model
 
-[Merge map: raw → canonical where label changed (45 pairs)]
-  audit trail mechanism  →  audit trail
+[Merge map: raw → canonical where label changed (395 pairs)]
+  adversarial argumentation  →  adversarial process
+  adversarial game theory  →  adversarial process
+  adversarial legal procedure  →  adversarial process
+  adversarial legal system  →  adversarial process
+  adversarial litigation game  →  adversarial process
+  adversarial litigation model  →  adversarial process
+  adversarial procedure  →  adversarial process
+  adversarial system  →  adversarial process
+  arbitration framework  →  arbitration
+  causal mediation model  →  arbitration
+  mediation model  →  arbitration
+  adversarial bargaining model  →  bargaining
+  alternating offer bargaining game  →  bargaining
+  alternating offer bargaining model  →  bargaining
+  alternating offer bargaining with outside option  →  bargaining
+  bargaining equilibrium  →  bargaining
+  bargaining game  →  bargaining
+  bargaining model  →  bargaining
+  bargaining problem  →  bargaining
+  bargaining solution  →  bargaining
+  bilateral bargaining equilibrium  →  bargaining
+  bilateral bargaining game  →  bargaining
+  bilateral bargaining with outside option  →  bargaining
+  rubinstein bargaining model  →  bargaining
+  sequential bargaining  →  bargaining
+  sequential bargaining game  →  bargaining
+  sequential bargaining model  →  bargaining
+  sequential bargaining with outside option  →  bargaining
+  settlement bargaining  →  bargaining
+  strategic bargaining  →  bargaining
+  ultimatum bargaining model  →  bargaining
+  ultimatum game  →  bargaining
   bayesian games  →  bayesian game
-  bayesian belief updating  →  bayesian inference
-  bayesian update  →  bayesian inference
-  bayesian updating  →  bayesian inference
+  bayesian signaling game  →  bayesian game
+  signaling game with bayesian updating  →  bayesian game
+  bayes theorem  →  bayesian updating
+  bayesian belief network  →  bayesian updating
+  bayesian belief updating  →  bayesian updating
+  bayesian inference  →  bayesian updating
+  bayesian persuasion  →  bayesian updating
+  bayesian update  →  bayesian updating
+  bayesian updating under competing evidence  →  bayesian updating
+  bayesian updating under information asymmetry  →  bayesian updating
+  binary classification with feature space adaptation  →  binary classification
+  bottleneck capacity model  →  bottleneck capacity
+  bottleneck elimination  →  bottleneck capacity
   burden of proof allocation  →  burden of proof
   burden of proof shift  →  burden of proof
   burden of proof shifting  →  burden of proof
-  collective action theory  →  collective action problem
-  commitment  →  commitment device
-  credible commitment  →  commitment device
-  credible commitment mechanism  →  commitment device
-  constraint relaxation  →  constraint satisfaction problem
-  constraint satisfaction  →  constraint satisfaction problem
+  reverse burden of proof  →  burden of proof
+  shifting burden of proof  →  burden of proof
+  attribution error  →  causal inference
+  causal attribution model  →  causal inference
+  active choice architecture  →  choice architecture
+  availability heuristic  →  choice architecture
+  framing effect  →  choice architecture
+  framing shift  →  choice architecture
+  representativeness heuristic  →  choice architecture
+  commitment constraint  →  commitment
+  commitment device  →  commitment
+  commitment mechanism  →  commitment
+  commitment problem  →  commitment
+  commitment strategy  →  commitment
+  credible commitment  →  commitment
+  credible commitment mechanism  →  commitment
+  credible threat  →  commitment
+  credible threat commitment  →  commitment
+  inducing credible threat  →  commitment
+  strategic commitment  →  commitment
+  constraint optimization  →  constrained optimization
+  resource constraint optimization  →  constrained optimization
+  constraint relaxation  →  constraint satisfaction
+  constraint relaxation model  →  constraint satisfaction
+  constraint satisfaction problem  →  constraint satisfaction
+  constraint manipulation  →  constraint transformation
+  american option  →  contingent claims
+  contingent claim  →  contingent claims
+  contingent claims analysis  →  contingent claims
+  chicken game  →  coordination game
+  game of chicken  →  coordination game
+  sequential game of chicken  →  coordination game
+  counterfactual causal inference  →  counterfactuals
+  counterfactual causation  →  counterfactuals
+  counterfactual reasoning  →  counterfactuals
+  credit scoring model  →  credit scoring
+  score credit system  →  credit scoring
+  decision tree analysis  →  decision tree
+  decision tree optimization  →  decision tree
+  decision tree with forced branching  →  decision tree
+  dempster shafer theory of evidence  →  dempster shafer theory
+  deterrence effect  →  deterrence theory
+  deterrence equilibrium  →  deterrence theory
+  deterrence game  →  deterrence theory
   deterrence model  →  deterrence theory
-  expected utility maximization  →  expected utility theory
-  expected value calculation  →  expected utility theory
-  state transition model  →  finite state machine
-  chicken game  →  game of chicken
+  general deterrence model  →  deterrence theory
+  legal deterrence model  →  deterrence theory
+  optimal deterrence  →  deterrence theory
+  rational deterrence model  →  deterrence theory
+  regulatory deterrence model  →  deterrence theory
+  multi stable dynamical systems  →  dynamical systems
+  slow dynamical system  →  dynamical systems
+  accountability mechanism  →  enforcement mechanism
+  contingent enforcement mechanism  →  enforcement mechanism
+  contract enforcement  →  enforcement mechanism
+  external regulatory enforcement model  →  enforcement mechanism
+  judicial enforcement mechanism  →  enforcement mechanism
+  law enforcement mechanism  →  enforcement mechanism
+  regulatory enforcement  →  enforcement mechanism
+  regulatory enforcement game  →  enforcement mechanism
+  regulatory enforcement mechanism  →  enforcement mechanism
+  regulatory enforcement model  →  enforcement mechanism
+  third party enforcement  →  enforcement mechanism
+  third party enforcement game  →  enforcement mechanism
+  third party enforcement mechanism  →  enforcement mechanism
+  escalation game  →  escalation
+  escalation ladder  →  escalation
+  exponential decay model  →  exponential decay
+  externalitiesinternalization  →  externality internalization
+  internalization of externalities  →  externality internalization
+  ambiguity resolution under knightian uncertainty  →  fact opinion dichotomy
+  anchor consistency  →  fact opinion dichotomy
+  andersen test  →  fact opinion dichotomy
+  assertion theory  →  fact opinion dichotomy
+  asset recovery  →  fact opinion dichotomy
+  bailment  →  fact opinion dichotomy
+  base rate neglect  →  fact opinion dichotomy
+  bass diffusion model  →  fact opinion dichotomy
+  beyond reasonable doubt  →  fact opinion dichotomy
+  binary state verification  →  fact opinion dichotomy
+  boolean algebra  →  fact opinion dichotomy
+  boolean conjunction model  →  fact opinion dichotomy
+  boolean network  →  fact opinion dichotomy
+  boundary condition  →  fact opinion dichotomy
+  boundary spanning  →  fact opinion dichotomy
+  bureaucratic politics model  →  fact opinion dichotomy
+  but for test  →  fact opinion dichotomy
+  catastrophe theory  →  fact opinion dichotomy
+  categorical perception  →  fact opinion dichotomy
+  causal inference andscm  →  fact opinion dichotomy
+  causal intervention  →  fact opinion dichotomy
+  certificate chain  →  fact opinion dichotomy
+  chain of custody  →  fact opinion dichotomy
+  chain store paradox  →  fact opinion dichotomy
+  challenge response paradigm  →  fact opinion dichotomy
+  channel capacity (information theory)  →  fact opinion dichotomy
+  claim priority model  →  fact opinion dichotomy
+  cognitive bias correction  →  fact opinion dichotomy
+  cognitive control  →  fact opinion dichotomy
+  cognitive dissonance  →  fact opinion dichotomy
+  complete contract  →  fact opinion dichotomy
+  constrained network routing  →  fact opinion dichotomy
+  constraint propagation  →  fact opinion dichotomy
+  contempt of court doctrine  →  fact opinion dichotomy
+  contestable market  →  fact opinion dichotomy
+  context sensitive decision  →  fact opinion dichotomy
+  contract gap filling  →  fact opinion dichotomy
+  controllability  →  fact opinion dichotomy
+  cost benefit calculation shift  →  fact opinion dichotomy
+  countervailing power mechanism  →  fact opinion dichotomy
+  court enforced settlement  →  fact opinion dichotomy
+  credence goods  →  fact opinion dichotomy
+  credit card chargeback mechanism  →  fact opinion dichotomy
+  critical point model  →  fact opinion dichotomy
+  damped harmonic oscillator  →  fact opinion dichotomy
+  darcy's law  →  fact opinion dichotomy
+  decision rule model  →  fact opinion dichotomy
+  decision tree with information trigger  →  fact opinion dichotomy
+  decision under uncertainty  →  fact opinion dichotomy
+  default rule with response window  →  fact opinion dichotomy
+  degroot friedkin model  →  fact opinion dichotomy
+  dependency graph  →  fact opinion dichotomy
+  discovery procedure  →  fact opinion dichotomy
+  displacement  →  fact opinion dichotomy
+  distributed state propagation  →  fact opinion dichotomy
+  diversion program  →  fact opinion dichotomy
+  division of labor  →  fact opinion dichotomy
+  documentation trace  →  fact opinion dichotomy
+  dual channel cascade  →  fact opinion dichotomy
+  dual process theory  →  fact opinion dichotomy
+  dynamical systems bifurcation  →  fact opinion dichotomy
+  dynamical systems with feedback restructuring  →  fact opinion dichotomy
+  electoral accountability model  →  fact opinion dichotomy
+  emergence  →  fact opinion dichotomy
+  enforcement rule  →  fact opinion dichotomy
+  entropy reduction  →  fact opinion dichotomy
+  equilibrium switching  →  fact opinion dichotomy
+  error correction model  →  fact opinion dichotomy
+  evidence dynamics  →  fact opinion dichotomy
+  exceptional circumstance provision  →  fact opinion dichotomy
+  exploration exploitation  →  fact opinion dichotomy
+  external monitoring mechanism  →  fact opinion dichotomy
+  cascade dynamics  →  feedback loop
+  feedback control system  →  feedback loop
+  feedback control theory  →  feedback loop
+  feedback dynamics  →  feedback loop
+  feedback loop disruption  →  feedback loop
+  feedback loop dynamics  →  feedback loop
+  feedback loop elimination  →  feedback loop
+  negative feedback control  →  feedback loop
+  negative feedback loop  →  feedback loop
+  negative feedback loops  →  feedback loop
+  positive feedback loop  →  feedback loop
+  positive feedback loop elimination  →  feedback loop
+  positivefeedbackloopinterruption  →  feedback loop
+  regulatory feedback loop  →  feedback loop
+  self interaction feedback loop  →  feedback loop
+  system dynamics  →  feedback loop
+  non zero sum game  →  game theory
+  zero sum equilibrium  →  game theory
+  zero sum game  →  game theory
+  step function  →  heaviside step function
+  step function heaviside step  →  heaviside step function
+  hierarchical classification model  →  hierarchical modeling
+  hierarchical optimization  →  hierarchical modeling
+  likelihood ratio  →  hypothesis testing
+  likelihood ratio test  →  hypothesis testing
+  sequential probability ratio test  →  hypothesis testing
+  information acquisition game  →  information acquisition
+  information aggregation  →  information acquisition
+  information gathering  →  information acquisition
+  multi channel information acquisition  →  information acquisition
+  multi channel verification  →  information acquisition
+  information asymmetric game  →  information asymmetry
+  information asymmetry and signaling  →  information asymmetry
+  information asymmetry bargaining  →  information asymmetry
   information asymmetry correction  →  information asymmetry
   information asymmetry equilibrium  →  information asymmetry
+  information asymmetry exploitation  →  information asymmetry
   information asymmetry game  →  information asymmetry
+  information asymmetry manipulation  →  information asymmetry
   information asymmetry reduction  →  information asymmetry
+  information asymmetry resolution  →  information asymmetry
+  information asymmetry reversal  →  information asymmetry
+  information asymmetry signaling  →  information asymmetry
+  cascade failure model  →  information cascade
+  cascade model  →  information cascade
   information revelation game  →  information revelation
+  information revelation mechanism  →  information revelation
+  information revelation principle  →  information revelation
+  information revelation under boundedrationality  →  information revelation
+  strategic information revelation  →  information revelation
+  liability transfer  →  liability rule
+  multi principal liability transfer  →  liability rule
+  proportional liability rule  →  liability rule
+  cost benefit analysis of litigation  →  litigation cost benefit
+  litigation cost benefit asymmetry  →  litigation cost benefit
+  absorbing markov chain  →  markov chain
+  markov chain transition  →  markov chain
+  state transition dynamics  →  markov chain
+  state transition model  →  markov chain
+  partially observable markov decision process  →  markov decision process
+  sequential decision model  →  markov decision process
   sequential decision process  →  markov decision process
   sequential decision theory  →  markov decision process
+  sequential decision tree  →  markov decision process
   incentive compatibility  →  mechanism design
-  information revelation mechanism  →  mechanism design
+  incentive compatibility constraint  →  mechanism design
+  incentive mechanism  →  mechanism design
+  mechanism design with enforcement  →  mechanism design
+  mechanism design with verifiable disclosure  →  mechanism design
+  multi task incentive compatibility  →  mechanism design
+  restitution incentive mechanism  →  mechanism design
   revelation principle  →  mechanism design
-  bargaining equilibrium  →  nash bargaining solution
-  bargaining game  →  nash bargaining solution
-  bargaining model  →  nash bargaining solution
-  bargaining problem  →  nash bargaining solution
-  feedback loop  →  negative feedback loop
-  positive feedback loop  →  negative feedback loop
+  mechanism shift  →  mechanism transfer
+  minimax theorem  →  minimax
+  distributed monitoring  →  monitoring
+  hierarchical monitoring  →  monitoring
+  multi agent coordination  →  multi-agent optimization
+  multi agent optimization  →  multi-agent optimization
+  multi armed bandit  →  multi-armed bandit
+  bayesian nash equilibrium  →  nash equilibrium
+  bayesian perfect equilibrium  →  nash equilibrium
+  best response  →  nash equilibrium
+  best response dynamics  →  nash equilibrium
+  mixed strategy equilibrium  →  nash equilibrium
+  multiple nash equilibria  →  nash equilibrium
+  nash bargaining solution  →  nash equilibrium
+  nash equilibrium shift  →  nash equilibrium
+  nash equilibrium with credible threats  →  nash equilibrium
+  perfect bayesian equilibrium  →  nash equilibrium
+  separating equilibrium  →  nash equilibrium
+  subgame perfect equilibrium  →  nash equilibrium
+  flow network  →  network flow
+  punishment strategy in non cooperative games  →  non cooperative game
+  threat strategy in non cooperative game  →  non cooperative game
+  optimal stopping problem  →  optimal stopping
   optimal stopping theory  →  optimal stopping
-  percolation threshold  →  percolation theory
-  principal agent problem  →  principal agent model
-  principal agent theory  →  principal agent model
+  real options  →  optimal stopping
+  constrained pareto improvement  →  pareto improvement
+  payoff matrix restructuring  →  payoff restructuring
+  payoff restructuring via external authority  →  payoff restructuring
+  percolation theory  →  percolation
+  percolation threshold  →  percolation
+  percolationthreshold  →  percolation
+  adverse selection  →  principal-agent theory
+  information asymmetry in principal agent models  →  principal-agent theory
+  information asymmetry in principal agent problem  →  principal-agent theory
+  principal agent framework  →  principal-agent theory
+  principal agent information asymmetry  →  principal-agent theory
+  principal agent information asymmetry model  →  principal-agent theory
+  principal agent information problem  →  principal-agent theory
+  principal agent leverage  →  principal-agent theory
+  principal agent model  →  principal-agent theory
+  principal agent model with external enforcement  →  principal-agent theory
+  principal agent model with risk shifting  →  principal-agent theory
+  principal agent problem  →  principal-agent theory
+  principal agent theory  →  principal-agent theory
+  screening  →  principal-agent theory
+  screening mechanism  →  principal-agent theory
+  procedural due process  →  procedural justice
+  procedural formalism  →  procedural justice
+  procedural manipulation  →  procedural justice
+  procedural retroaction  →  procedural justice
+  blocking queue  →  queue
+  priority queue  →  queue
+  redundancy mechanism  →  redundancy
+  regulatory arbitrage  →  regulatory dynamics
+  regulatory capture  →  regulatory dynamics
+  regulatory leverage  →  regulatory dynamics
+  adaptive search algorithm  →  reinforcement learning
+  contract renegotiation  →  renegotiation
+  queue renegotiation  →  renegotiation
+  repeat game  →  repeated game
+  reputation dynamics  →  reputation
+  reputation mechanism  →  reputation
+  pro rata allocation  →  resource allocation
+  proportional allocation  →  resource allocation
+  resource allocation optimization  →  resource allocation
+  resource redistribution mechanism  →  resource allocation
+  .sequential game with perfect information  →  sequential game
+  backward induction  →  sequential game
+  extensive form game  →  sequential game
+  extensive form game with exogenous shock  →  sequential game
+  extensive form game with imperfect information  →  sequential game
+  multi stage game  →  sequential game
+  multi stage game with verifiable observability  →  sequential game
+  repeated game with incomplete information  →  sequential game
+  reverse induction  →  sequential game
+  sequential game model  →  sequential game
+  sequential game with backward induction  →  sequential game
+  sequential game with imperfect information  →  sequential game
+  sequential game with incomplete information  →  sequential game
+  sequential game with information revelation  →  sequential game
+  sequential game with mediator  →  sequential game
   sequential game with perfect information  →  sequential game
+  authentication game  →  signaling game
   costly signaling  →  signaling game
+  sequential signaling game  →  signaling game
+  signal detection theory  →  signaling game
+  signal theory  →  signaling game
   signaling  →  signaling game
+  signaling game in information economics  →  signaling game
+  signaling game with legal cost commitment  →  signaling game
+  signaling game with outside enforcement  →  signaling game
+  signaling game with regulatory enforcement  →  signaling game
   signaling games  →  signaling game
+  signaling mechanism  →  signaling game
   signaling model  →  signaling game
+  strategic signaling game  →  signaling game
+  coalition formation  →  social influence
+  coalition formation game  →  social influence
+  collective action model  →  social influence
+  collective action problem  →  social influence
+  collective action theory  →  social influence
+  social influence model  →  social influence
+  social influence theory  →  social influence
+  social learning theory  →  social influence
+  stackelberg commitment  →  stackelberg game
+  stackelberg competition  →  stackelberg game
+  stackelberg equilibrium  →  stackelberg game
+  stackelberg leader follower game  →  stackelberg game
   stackelberg leadership  →  stackelberg game
+  stackelberg leadership model  →  stackelberg game
+  statute of limitations decay model  →  statute of limitations
+  stochastic dynamic programming  →  stochastic processes
+  stochastic process  →  stochastic processes
+  stochastic restart  →  stochastic processes
+  temporal binding constraint  →  temporal constraint
+  temporal boundary constraint  →  temporal constraint
+  temporal constraint satisfaction  →  temporal constraint
+  probability threshold model  →  threshold model
+  threshold access model  →  threshold model
+  threshold barrier model  →  threshold model
+  threshold cascade model  →  threshold model
+  threshold triggered state transition  →  threshold model
+  threshold触发 state machine  →  threshold model
+  expected utility maximization  →  utility theory
+  expected utility theory  →  utility theory
+  expected value calculation  →  utility theory
+  multi attribute utility theory  →  utility theory
+  audit game  →  verification
+  audit trail  →  verification
+  audit trail mechanism  →  verification
+  verification game  →  verification
+  verification problem  →  verification
 
-[Merge cluster details / 归并簇完整明细（共 513 簇，其中 23 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
-  [1] 代表名: information asymmetry  ·  5 条
-      · information asymmetry  [代表]
-      · information asymmetry correction
-      · information asymmetry equilibrium
-      · information asymmetry game
-      · information asymmetry reduction
-  [2] 代表名: nash bargaining solution  ·  5 条
+[Merge cluster details / 归并簇完整明细（共 192 簇，其中 71 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: fact opinion dichotomy  ·  73 条
+      · ambiguity resolution under knightian uncertainty
+      · anchor consistency
+      · andersen test
+      · assertion theory
+      · asset recovery
+      · bailment
+      · base rate neglect
+      · bass diffusion model
+      · beyond reasonable doubt
+      · binary state verification
+      · boolean algebra
+      · boolean conjunction model
+      · boolean network
+      · boundary condition
+      · boundary spanning
+      · bureaucratic politics model
+      · but for test
+      · catastrophe theory
+      · categorical perception
+      · causal inference andscm
+      · causal intervention
+      · certificate chain
+      · chain of custody
+      · chain store paradox
+      · challenge response paradigm
+      · channel capacity (information theory)
+      · claim priority model
+      · cognitive bias correction
+      · cognitive control
+      · cognitive dissonance
+      · complete contract
+      · constrained network routing
+      · constraint propagation
+      · contempt of court doctrine
+      · contestable market
+      · context sensitive decision
+      · contract gap filling
+      · controllability
+      · cost benefit calculation shift
+      · countervailing power mechanism
+      · court enforced settlement
+      · credence goods
+      · credit card chargeback mechanism
+      · critical point model
+      · damped harmonic oscillator
+      · darcy's law
+      · decision rule model
+      · decision tree with information trigger
+      · decision under uncertainty
+      · default rule with response window
+      · degroot friedkin model
+      · dependency graph
+      · discovery procedure
+      · displacement
+      · distributed state propagation
+      · diversion program
+      · division of labor
+      · documentation trace
+      · dual channel cascade
+      · dual process theory
+      · dynamical systems bifurcation
+      · dynamical systems with feedback restructuring
+      · electoral accountability model
+      · emergence
+      · enforcement rule
+      · entropy reduction
+      · equilibrium switching
+      · error correction model
+      · evidence dynamics
+      · exceptional circumstance provision
+      · exploration exploitation
+      · external monitoring mechanism
+      · fact opinion dichotomy  [代表]
+  [2] 代表名: bargaining  ·  21 条
+      · adversarial bargaining model
+      · alternating offer bargaining game
+      · alternating offer bargaining model
+      · alternating offer bargaining with outside option
       · bargaining equilibrium
       · bargaining game
       · bargaining model
       · bargaining problem
-      · nash bargaining solution  [代表]
-  [3] 代表名: signaling game  ·  5 条
+      · bargaining solution
+      · bilateral bargaining equilibrium
+      · bilateral bargaining game
+      · bilateral bargaining with outside option
+      · rubinstein bargaining model
+      · sequential bargaining
+      · sequential bargaining game
+      · sequential bargaining model
+      · sequential bargaining with outside option
+      · settlement bargaining
+      · strategic bargaining
+      · ultimatum bargaining model
+      · ultimatum game
+  [3] 代表名: feedback loop  ·  17 条
+      · cascade dynamics
+      · feedback control system
+      · feedback control theory
+      · feedback dynamics
+      · feedback loop  [代表]
+      · feedback loop disruption
+      · feedback loop dynamics
+      · feedback loop elimination
+      · negative feedback control
+      · negative feedback loop
+      · negative feedback loops
+      · positive feedback loop
+      · positive feedback loop elimination
+      · positivefeedbackloopinterruption
+      · regulatory feedback loop
+      · self interaction feedback loop
+      · system dynamics
+  [4] 代表名: sequential game  ·  17 条
+      · .sequential game with perfect information
+      · backward induction
+      · extensive form game
+      · extensive form game with exogenous shock
+      · extensive form game with imperfect information
+      · multi stage game
+      · multi stage game with verifiable observability
+      · repeated game with incomplete information
+      · reverse induction
+      · sequential game  [代表]
+      · sequential game model
+      · sequential game with backward induction
+      · sequential game with imperfect information
+      · sequential game with incomplete information
+      · sequential game with information revelation
+      · sequential game with mediator
+      · sequential game with perfect information
+  [5] 代表名: principal-agent theory  ·  15 条
+      · adverse selection
+      · information asymmetry in principal agent models
+      · information asymmetry in principal agent problem
+      · principal agent framework
+      · principal agent information asymmetry
+      · principal agent information asymmetry model
+      · principal agent information problem
+      · principal agent leverage
+      · principal agent model
+      · principal agent model with external enforcement
+      · principal agent model with risk shifting
+      · principal agent problem
+      · principal agent theory
+      · screening
+      · screening mechanism
+  [6] 代表名: signaling game  ·  15 条
+      · authentication game
       · costly signaling
+      · sequential signaling game
+      · signal detection theory
+      · signal theory
       · signaling
       · signaling game  [代表]
+      · signaling game in information economics
+      · signaling game with legal cost commitment
+      · signaling game with outside enforcement
+      · signaling game with regulatory enforcement
       · signaling games
+      · signaling mechanism
       · signaling model
-  [4] 代表名: bayesian inference  ·  4 条
+      · strategic signaling game
+  [7] 代表名: enforcement mechanism  ·  13 条
+      · accountability mechanism
+      · contingent enforcement mechanism
+      · contract enforcement
+      · external regulatory enforcement model
+      · judicial enforcement mechanism
+      · law enforcement mechanism
+      · regulatory enforcement
+      · regulatory enforcement game
+      · regulatory enforcement mechanism
+      · regulatory enforcement model
+      · third party enforcement
+      · third party enforcement game
+      · third party enforcement mechanism
+  [8] 代表名: information asymmetry  ·  13 条
+      · information asymmetric game
+      · information asymmetry  [代表]
+      · information asymmetry and signaling
+      · information asymmetry bargaining
+      · information asymmetry correction
+      · information asymmetry equilibrium
+      · information asymmetry exploitation
+      · information asymmetry game
+      · information asymmetry manipulation
+      · information asymmetry reduction
+      · information asymmetry resolution
+      · information asymmetry reversal
+      · information asymmetry signaling
+  [9] 代表名: nash equilibrium  ·  13 条
+      · bayesian nash equilibrium
+      · bayesian perfect equilibrium
+      · best response
+      · best response dynamics
+      · mixed strategy equilibrium
+      · multiple nash equilibria
+      · nash bargaining solution
+      · nash equilibrium  [代表]
+      · nash equilibrium shift
+      · nash equilibrium with credible threats
+      · perfect bayesian equilibrium
+      · separating equilibrium
+      · subgame perfect equilibrium
+  [10] 代表名: commitment  ·  12 条
+      · commitment  [代表]
+      · commitment constraint
+      · commitment device
+      · commitment mechanism
+      · commitment problem
+      · commitment strategy
+      · credible commitment
+      · credible commitment mechanism
+      · credible threat
+      · credible threat commitment
+      · inducing credible threat
+      · strategic commitment
+  [11] 代表名: deterrence theory  ·  10 条
+      · deterrence effect
+      · deterrence equilibrium
+      · deterrence game
+      · deterrence model
+      · deterrence theory  [代表]
+      · general deterrence model
+      · legal deterrence model
+      · optimal deterrence
+      · rational deterrence model
+      · regulatory deterrence model
+  [12] 代表名: bayesian updating  ·  9 条
+      · bayes theorem
+      · bayesian belief network
       · bayesian belief updating
-      · bayesian inference  [代表]
+      · bayesian inference
+      · bayesian persuasion
       · bayesian update
-      · bayesian updating
-  [5] 代表名: burden of proof  ·  4 条
+      · bayesian updating  [代表]
+      · bayesian updating under competing evidence
+      · bayesian updating under information asymmetry
+  [13] 代表名: mechanism design  ·  9 条
+      · incentive compatibility
+      · incentive compatibility constraint
+      · incentive mechanism
+      · mechanism design  [代表]
+      · mechanism design with enforcement
+      · mechanism design with verifiable disclosure
+      · multi task incentive compatibility
+      · restitution incentive mechanism
+      · revelation principle
+  [14] 代表名: adversarial process  ·  8 条
+      · adversarial argumentation
+      · adversarial game theory
+      · adversarial legal procedure
+      · adversarial legal system
+      · adversarial litigation game
+      · adversarial litigation model
+      · adversarial procedure
+      · adversarial system
+  [15] 代表名: social influence  ·  8 条
+      · coalition formation
+      · coalition formation game
+      · collective action model
+      · collective action problem
+      · collective action theory
+      · social influence model
+      · social influence theory
+      · social learning theory
+  [16] 代表名: stackelberg game  ·  7 条
+      · stackelberg commitment
+      · stackelberg competition
+      · stackelberg equilibrium
+      · stackelberg game  [代表]
+      · stackelberg leader follower game
+      · stackelberg leadership
+      · stackelberg leadership model
+  [17] 代表名: threshold model  ·  7 条
+      · probability threshold model
+      · threshold access model
+      · threshold barrier model
+      · threshold cascade model
+      · threshold model  [代表]
+      · threshold triggered state transition
+      · threshold触发 state machine
+  [18] 代表名: burden of proof  ·  6 条
       · burden of proof  [代表]
       · burden of proof allocation
       · burden of proof shift
       · burden of proof shifting
-  [6] 代表名: commitment device  ·  4 条
-      · commitment
-      · commitment device  [代表]
-      · credible commitment
-      · credible commitment mechanism
-  [7] 代表名: mechanism design  ·  4 条
-      · incentive compatibility
-      · information revelation mechanism
-      · mechanism design  [代表]
-      · revelation principle
-  [8] 代表名: constraint satisfaction problem  ·  3 条
-      · constraint relaxation
-      · constraint satisfaction
-      · constraint satisfaction problem  [代表]
-  [9] 代表名: expected utility theory  ·  3 条
-      · expected utility maximization
-      · expected utility theory  [代表]
-      · expected value calculation
-  [10] 代表名: markov decision process  ·  3 条
-      · markov decision process  [代表]
-      · sequential decision process
-      · sequential decision theory
-  [11] 代表名: negative feedback loop  ·  3 条
-      · feedback loop
-      · negative feedback loop  [代表]
-      · positive feedback loop
-  [12] 代表名: principal agent model  ·  3 条
-      · principal agent model  [代表]
-      · principal agent problem
-      · principal agent theory
-  [13] 代表名: audit trail  ·  2 条
-      · audit trail  [代表]
-      · audit trail mechanism
-  [14] 代表名: bayesian game  ·  2 条
-      · bayesian game  [代表]
-      · bayesian games
-  [15] 代表名: collective action problem  ·  2 条
-      · collective action problem  [代表]
-      · collective action theory
-  [16] 代表名: deterrence theory  ·  2 条
-      · deterrence model
-      · deterrence theory  [代表]
-  [17] 代表名: finite state machine  ·  2 条
-      · finite state machine  [代表]
-      · state transition model
-  [18] 代表名: game of chicken  ·  2 条
-      · chicken game
-      · game of chicken  [代表]
-  [19] 代表名: information revelation  ·  2 条
+      · reverse burden of proof
+      · shifting burden of proof
+  [19] 代表名: choice architecture  ·  6 条
+      · active choice architecture
+      · availability heuristic
+      · choice architecture  [代表]
+      · framing effect
+      · framing shift
+      · representativeness heuristic
+  [20] 代表名: information acquisition  ·  6 条
+      · information acquisition  [代表]
+      · information acquisition game
+      · information aggregation
+      · information gathering
+      · multi channel information acquisition
+      · multi channel verification
+  [21] 代表名: information revelation  ·  6 条
       · information revelation  [代表]
       · information revelation game
-  [20] 代表名: optimal stopping  ·  2 条
+      · information revelation mechanism
+      · information revelation principle
+      · information revelation under boundedrationality
+      · strategic information revelation
+  [22] 代表名: markov decision process  ·  6 条
+      · markov decision process  [代表]
+      · partially observable markov decision process
+      · sequential decision model
+      · sequential decision process
+      · sequential decision theory
+      · sequential decision tree
+  [23] 代表名: markov chain  ·  5 条
+      · absorbing markov chain
+      · markov chain  [代表]
+      · markov chain transition
+      · state transition dynamics
+      · state transition model
+  [24] 代表名: resource allocation  ·  5 条
+      · pro rata allocation
+      · proportional allocation
+      · resource allocation  [代表]
+      · resource allocation optimization
+      · resource redistribution mechanism
+  [25] 代表名: verification  ·  5 条
+      · audit game
+      · audit trail
+      · audit trail mechanism
+      · verification game
+      · verification problem
+  [26] 代表名: arbitration  ·  4 条
+      · arbitration  [代表]
+      · arbitration framework
+      · causal mediation model
+      · mediation model
+  [27] 代表名: bayesian game  ·  4 条
+      · bayesian game  [代表]
+      · bayesian games
+      · bayesian signaling game
+      · signaling game with bayesian updating
+  [28] 代表名: constraint satisfaction  ·  4 条
+      · constraint relaxation
+      · constraint relaxation model
+      · constraint satisfaction  [代表]
+      · constraint satisfaction problem
+  [29] 代表名: contingent claims  ·  4 条
+      · american option
+      · contingent claim
+      · contingent claims  [代表]
+      · contingent claims analysis
+  [30] 代表名: coordination game  ·  4 条
+      · chicken game
+      · coordination game  [代表]
+      · game of chicken
+      · sequential game of chicken
+  [31] 代表名: decision tree  ·  4 条
+      · decision tree  [代表]
+      · decision tree analysis
+      · decision tree optimization
+      · decision tree with forced branching
+  [32] 代表名: hypothesis testing  ·  4 条
+      · hypothesis testing  [代表]
+      · likelihood ratio
+      · likelihood ratio test
+      · sequential probability ratio test
+  [33] 代表名: liability rule  ·  4 条
+      · liability rule  [代表]
+      · liability transfer
+      · multi principal liability transfer
+      · proportional liability rule
+  [34] 代表名: optimal stopping  ·  4 条
       · optimal stopping  [代表]
+      · optimal stopping problem
       · optimal stopping theory
-  [21] 代表名: percolation theory  ·  2 条
-      · percolation theory  [代表]
+      · real options
+  [35] 代表名: procedural justice  ·  4 条
+      · procedural due process
+      · procedural formalism
+      · procedural manipulation
+      · procedural retroaction
+  [36] 代表名: temporal constraint  ·  4 条
+      · temporal binding constraint
+      · temporal boundary constraint
+      · temporal constraint  [代表]
+      · temporal constraint satisfaction
+  [37] 代表名: utility theory  ·  4 条
+      · expected utility maximization
+      · expected utility theory
+      · expected value calculation
+      · multi attribute utility theory
+  [38] 代表名: constrained optimization  ·  3 条
+      · constrained optimization  [代表]
+      · constraint optimization
+      · resource constraint optimization
+  [39] 代表名: counterfactuals  ·  3 条
+      · counterfactual causal inference
+      · counterfactual causation
+      · counterfactual reasoning
+  [40] 代表名: externality internalization  ·  3 条
+      · externalitiesinternalization
+      · externality internalization  [代表]
+      · internalization of externalities
+  [41] 代表名: game theory  ·  3 条
+      · non zero sum game
+      · zero sum equilibrium
+      · zero sum game
+  [42] 代表名: information cascade  ·  3 条
+      · cascade failure model
+      · cascade model
+      · information cascade  [代表]
+  [43] 代表名: non cooperative game  ·  3 条
+      · non cooperative game  [代表]
+      · punishment strategy in non cooperative games
+      · threat strategy in non cooperative game
+  [44] 代表名: percolation  ·  3 条
+      · percolation theory
       · percolation threshold
-  [22] 代表名: sequential game  ·  2 条
-      · sequential game  [代表]
-      · sequential game with perfect information
-  [23] 代表名: stackelberg game  ·  2 条
-      · stackelberg game  [代表]
-      · stackelberg leadership
-  [24] （单条）.sequential game with perfect information
-  [25] （单条）ability to pay principle
-  [26] （单条）absorbing markov chain
-  [27] （单条）absorbing state
-  [28] （单条）accountability mechanism
-  [29] （单条）active choice architecture
-  [30] （单条）adaptive search algorithm
-  [31] （单条）adversarial argumentation
-  [32] （单条）adversarial bargaining model
-  [33] （单条）adversarial game theory
-  [34] （单条）adversarial legal procedure
-  [35] （单条）adversarial legal system
-  [36] （单条）adversarial litigation game
-  [37] （单条）adversarial litigation model
-  [38] （单条）adversarial procedure
-  [39] （单条）adversarial system
-  [40] （单条）adverse selection
-  [41] （单条）alternating offer bargaining game
-  [42] （单条）alternating offer bargaining model
-  [43] （单条）alternating offer bargaining with outside option
-  [44] （单条）ambiguity resolution under knightian uncertainty
-  [45] （单条）american option
-  [46] （单条）anchor consistency
-  [47] （单条）andersen test
-  [48] （单条）arbitration
-  [49] （单条）arbitration framework
-  [50] （单条）assertion theory
-  [51] （单条）asset recovery
-  [52] （单条）attribution error
-  [53] （单条）audit game
-  [54] （单条）authentication game
-  [55] （单条）availability heuristic
-  [56] （单条）backward induction
-  [57] （单条）bailment
-  [58] （单条）bargaining solution
-  [59] （单条）base rate neglect
-  [60] （单条）bass diffusion model
-  [61] （单条）bayes theorem
-  [62] （单条）bayesian belief network
-  [63] （单条）bayesian nash equilibrium
-  [64] （单条）bayesian perfect equilibrium
-  [65] （单条）bayesian persuasion
-  [66] （单条）bayesian signaling game
-  [67] （单条）bayesian updating under competing evidence
-  [68] （单条）bayesian updating under information asymmetry
-  [69] （单条）best response
-  [70] （单条）best response dynamics
-  [71] （单条）beyond reasonable doubt
-  [72] （单条）bilateral bargaining equilibrium
-  [73] （单条）bilateral bargaining game
-  [74] （单条）bilateral bargaining with outside option
-  [75] （单条）binary classification with feature space adaptation
-  [76] （单条）binary state verification
-  [77] （单条）blocking queue
-  [78] （单条）boolean algebra
-  [79] （单条）boolean conjunction model
-  [80] （单条）boolean logic
-  [81] （单条）boolean network
-  [82] （单条）bottleneck capacity model
-  [83] （单条）bottleneck elimination
-  [84] （单条）boundary condition
-  [85] （单条）boundary spanning
-  [86] （单条）bureaucratic politics model
-  [87] （单条）but for test
-  [88] （单条）cascade dynamics
-  [89] （单条）cascade failure model
-  [90] （单条）cascade model
-  [91] （单条）catastrophe theory
-  [92] （单条）categorical perception
-  [93] （单条）causal attribution model
-  [94] （单条）causal inference andscm
-  [95] （单条）causal intervention
-  [96] （单条）causal mediation model
-  [97] （单条）certificate chain
-  [98] （单条）chain of custody
-  [99] （单条）chain store paradox
-  [100] （单条）challenge response paradigm
-  [101] （单条）channel capacity (information theory)
-  [102] （单条）choice architecture
-  [103] （单条）claim priority model
-  [104] （单条）coalition formation
-  [105] （单条）coalition formation game
-  [106] （单条）cognitive bias correction
-  [107] （单条）cognitive control
-  [108] （单条）cognitive dissonance
-  [109] （单条）collective action model
-  [110] （单条）commitment constraint
-  [111] （单条）commitment mechanism
-  [112] （单条）commitment problem
-  [113] （单条）commitment strategy
-  [114] （单条）common knowledge
-  [115] （单条）complete contract
-  [116] （单条）constrained network routing
-  [117] （单条）constrained optimization
-  [118] （单条）constrained pareto improvement
-  [119] （单条）constraint manipulation
-  [120] （单条）constraint optimization
-  [121] （单条）constraint propagation
-  [122] （单条）constraint relaxation model
-  [123] （单条）constraint transformation
-  [124] （单条）contempt of court doctrine
-  [125] （单条）contestable market
-  [126] （单条）context sensitive decision
-  [127] （单条）contingent claim
-  [128] （单条）contingent claims
-  [129] （单条）contingent claims analysis
-  [130] （单条）contingent enforcement mechanism
-  [131] （单条）contract enforcement
-  [132] （单条）contract gap filling
-  [133] （单条）contract renegotiation
-  [134] （单条）controllability
-  [135] （单条）coordination game
-  [136] （单条）cost benefit analysis of litigation
-  [137] （单条）cost benefit calculation shift
-  [138] （单条）counterfactual causal inference
-  [139] （单条）counterfactual causation
-  [140] （单条）counterfactual reasoning
-  [141] （单条）countervailing power mechanism
-  [142] （单条）court enforced settlement
-  [143] （单条）credence goods
-  [144] （单条）credible threat
-  [145] （单条）credible threat commitment
-  [146] （单条）credit card chargeback mechanism
-  [147] （单条）credit scoring model
-  [148] （单条）critical point model
-  [149] （单条）damped harmonic oscillator
-  [150] （单条）darcy's law
-  [151] （单条）decision rule model
-  [152] （单条）decision tree
-  [153] （单条）decision tree analysis
-  [154] （单条）decision tree optimization
-  [155] （单条）decision tree with forced branching
-  [156] （单条）decision tree with information trigger
-  [157] （单条）decision under uncertainty
-  [158] （单条）default rule with response window
-  [159] （单条）degroot friedkin model
-  [160] （单条）dempster shafer theory
-  [161] （单条）dempster shafer theory of evidence
-  [162] （单条）dependency graph
-  [163] （单条）deterrence effect
-  [164] （单条）deterrence equilibrium
-  [165] （单条）deterrence game
-  [166] （单条）discovery procedure
-  [167] （单条）displacement
-  [168] （单条）distributed monitoring
-  [169] （单条）distributed state propagation
-  [170] （单条）diversion program
-  [171] （单条）division of labor
-  [172] （单条）documentation trace
-  [173] （单条）dual channel cascade
-  [174] （单条）dual process theory
-  [175] （单条）dynamic programming
-  [176] （单条）dynamical systems bifurcation
-  [177] （单条）dynamical systems with feedback restructuring
-  [178] （单条）electoral accountability model
-  [179] （单条）emergence
-  [180] （单条）enforcement rule
-  [181] （单条）entropy reduction
-  [182] （单条）equilibrium switching
-  [183] （单条）error correction model
-  [184] （单条）escalation game
-  [185] （单条）escalation ladder
-  [186] （单条）evidence dynamics
-  [187] （单条）exceptional circumstance provision
-  [188] （单条）exploration exploitation
-  [189] （单条）exponential decay
-  [190] （单条）exponential decay model
-  [191] （单条）extensive form game
-  [192] （单条）extensive form game with exogenous shock
-  [193] （单条）extensive form game with imperfect information
-  [194] （单条）external monitoring mechanism
-  [195] （单条）external regulatory enforcement model
-  [196] （单条）externalitiesinternalization
-  [197] （单条）externality internalization
-  [198] （单条）fact opinion dichotomy
-  [199] （单条）falsification test
-  [200] （单条）fault tolerant control
-  [201] （单条）feature engineering
-  [202] （单条）feedback control system
-  [203] （单条）feedback control theory
-  [204] （单条）feedback dynamics
-  [205] （单条）feedback loop disruption
-  [206] （单条）feedback loop dynamics
-  [207] （单条）feedback loop elimination
-  [208] （单条）first mover advantage
-  [209] （单条）flow network
-  [210] （单条）forum non conveniens
-  [211] （单条）framing effect
-  [212] （单条）framing shift
-  [213] （单条）fruit of the poisonous tree
-  [214] （单条）full faith and credit doctrine
-  [215] （单条）general deterrence model
-  [216] （单条）graph canonicalization
-  [217] （单条）hierarchical classification model
-  [218] （单条）hierarchical monitoring
-  [219] （单条）hierarchical optimization
-  [220] （单条）human in the loop override
-  [221] （单条）hypothesis testing
-  [222] （单条）implicit bias
-  [223] （单条）importance sampling
-  [224] （单条）incentive compatibility constraint
-  [225] （单条）incentive mechanism
-  [226] （单条）incomplete contract framework
-  [227] （单条）incremental penalty scheme
-  [228] （单条）inducing credible threat
-  [229] （单条）information acquisition
-  [230] （单条）information acquisition game
-  [231] （单条）information aggregation
-  [232] （单条）information asymmetric game
-  [233] （单条）information asymmetry and signaling
-  [234] （单条）information asymmetry bargaining
-  [235] （单条）information asymmetry exploitation
-  [236] （单条）information asymmetry in principal agent models
-  [237] （单条）information asymmetry in principal agent problem
-  [238] （单条）information asymmetry manipulation
-  [239] （单条）information asymmetry resolution
-  [240] （单条）information asymmetry reversal
-  [241] （单条）information asymmetry signaling
-  [242] （单条）information cascade
-  [243] （单条）information filtering
-  [244] （单条）information gathering
-  [245] （单条）information monopoly
-  [246] （单条）information revelation principle
-  [247] （单条）information revelation under boundedrationality
-  [248] （单条）institutional theory
-  [249] （单条）internalization of externalities
-  [250] （单条）invariant theory
-  [251] （单条）judicial enforcement mechanism
-  [252] （单条）jurisdictional multiplicity
-  [253] （单条）kalman filter
-  [254] （单条）knowledge institutionalization
-  [255] （单条）lattice theory
-  [256] （单条）law enforcement game
-  [257] （单条）law enforcement mechanism
-  [258] （单条）law of large numbers
-  [259] （单条）legal attachment mechanism
-  [260] （单条）legal deterrence model
-  [261] （单条）liability rule
-  [262] （单条）liability transfer
-  [263] （单条）likelihood ratio
-  [264] （单条）likelihood ratio test
-  [265] （单条）limited liability
-  [266] （单条）litigation cost benefit asymmetry
-  [267] （单条）logical contradiction detection
-  [268] （单条）lump sum payment
-  [269] （单条）m g 1 queue
-  [270] （单条）mandatory legal constraint
-  [271] （单条）mandatory reporting
-  [272] （单条）marginal analysis
-  [273] （单条）marginal cost pricing
-  [274] （单条）markov chain
-  [275] （单条）markov chain transition
-  [276] （单条）mechanism design with enforcement
-  [277] （单条）mechanism design with verifiable disclosure
-  [278] （单条）mechanism shift
-  [279] （单条）mechanism transfer
-  [280] （单条）mediation model
-  [281] （单条）metacognitive monitoring and regulation
-  [282] （单条）minimax
-  [283] （单条）minimax theorem
-  [284] （单条）mixed strategy equilibrium
-  [285] （单条）moral hazard
-  [286] （单条）multi agent coordination
-  [287] （单条）multi agent optimization
-  [288] （单条）multi armed bandit
-  [289] （单条）multi attribute utility theory
-  [290] （单条）multi channel information acquisition
-  [291] （单条）multi channel verification
-  [292] （单条）multi principal liability transfer
-  [293] （单条）multi stable dynamical systems
-  [294] （单条）multi stage game
-  [295] （单条）multi stage game with verifiable observability
-  [296] （单条）multi task incentive compatibility
-  [297] （单条）multi tier decision making
-  [298] （单条）multiple nash equilibria
-  [299] （单条）naive bayes classifier
-  [300] （单条）nash equilibrium
-  [301] （单条）nash equilibrium shift
-  [302] （单条）nash equilibrium with credible threats
-  [303] （单条）negative feedback control
-  [304] （单条）negative feedback loops
-  [305] （单条）network detection
-  [306] （单条）network flow
-  [307] （单条）no fault liability
-  [308] （单条）noisy channel coding
-  [309] （单条）non cooperative game
-  [310] （单条）non zero sum game
-  [311] （单条）observability
-  [312] （单条）optimal deterrence
-  [313] （单条）optimal stopping problem
-  [314] （单条）outside option principle
-  [315] （单条）pagerank
-  [316] （单条）parallel machine scheduling
-  [317] （单条）parallel redundancy
-  [318] （单条）parallel search
-  [319] （单条）pareto improvement
-  [320] （单条）partially observable markov decision process
-  [321] （单条）payoff matrix restructuring
-  [322] （单条）payoff restructuring via external authority
-  [323] （单条）penalty default mechanism
-  [324] （单条）penalty function
-  [325] （单条）percolationthreshold
-  [326] （单条）perfect bayesian equilibrium
-  [327] （单条）perfect information
-  [328] （单条）persistence
-  [329] （单条）piecewise linear segmentation
-  [330] （单条）platform mediated network effects
-  [331] （单条）portfolio of independent bets
-  [332] （单条）positive feedback loop elimination
-  [333] （单条）positivefeedbackloopinterruption
-  [334] （单条）power asymmetry correction
-  [335] （单条）power law distribution
-  [336] （单条）precedent spillover
-  [337] （单条）prescription interruption
-  [338] （单条）presumption shift
-  [339] （单条）price elasticity of demand
-  [340] （单条）principal agent framework
-  [341] （单条）principal agent information asymmetry
-  [342] （单条）principal agent information asymmetry model
-  [343] （单条）principal agent information problem
-  [344] （单条）principal agent leverage
-  [345] （单条）principal agent model with external enforcement
-  [346] （单条）principal agent model with risk shifting
-  [347] （单条）priority queue
-  [348] （单条）privilege escalation protocol
-  [349] （单条）pro rata allocation
-  [350] （单条）probability threshold model
-  [351] （单条）procedural challenging
-  [352] （单条）procedural due process
-  [353] （单条）procedural formalism
-  [354] （单条）procedural game
-  [355] （单条）procedural justice framework
-  [356] （单条）procedural manipulation
-  [357] （单条）procedural retroaction
-  [358] （单条）proof of obligation
-  [359] （单条）proportional allocation
-  [360] （单条）proportional liability rule
-  [361] （单条）proximate cause
-  [362] （单条）punishment strategy in non cooperative games
-  [363] （单条）qualified immunity
-  [364] （单条）queue renegotiation
-  [365] （单条）rational deterrence model
-  [366] （单条）reactance
-  [367] （单条）real options
-  [368] （单条）redundancy
-  [369] （单条）redundancy mechanism
-  [370] （单条）redundant control
-  [371] （单条）regime shift
-  [372] （单条）regime switching discrete choice model
-  [373] （单条）regulatory arbitrage
-  [374] （单条）regulatory capture
-  [375] （单条）regulatory deterrence model
-  [376] （单条）regulatory enforcement
-  [377] （单条）regulatory enforcement game
-  [378] （单条）regulatory enforcement mechanism
-  [379] （单条）regulatory enforcement model
-  [380] （单条）regulatory feedback loop
-  [381] （单条）regulatory leverage
-  [382] （单条）reinforcement learning
-  [383] （单条）reliability theory
-  [384] （单条）repeat game
-  [385] （单条）repeated game
-  [386] （单条）repeated game with incomplete information
-  [387] （单条）replicator dynamics
-  [388] （单条）representativeness heuristic
-  [389] （单条）reputation dynamics
-  [390] （单条）reputation mechanism
-  [391] （单条）resource allocation
-  [392] （单条）resource allocation optimization
-  [393] （单条）resource constraint optimization
-  [394] （单条）resource redistribution mechanism
-  [395] （单条）restitution incentive mechanism
-  [396] （单条）revelation mechanism in incomplete information games
-  [397] （单条）reverse burden of proof
-  [398] （单条）reverse induction
-  [399] （单条）rights based information game
-  [400] （单条）risk classification model
-  [401] （单条）risk dominant equilibrium
-  [402] （单条）risk externality
-  [403] （单条）risk mitigation
-  [404] （单条）risk pooling
-  [405] （单条）risk propagation dynamics
-  [406] （单条）rubinstein bargaining model
-  [407] （单条）rule based adjudication
-  [408] （单条）score credit system
-  [409] （单条）screening
-  [410] （单条）screening mechanism
-  [411] （单条）search theory
-  [412] （单条）selective attention and perceptual filtering
-  [413] （单条）selective enforcement detection
-  [414] （单条）self interaction feedback loop
-  [415] （单条）semantic boundary argumentation
-  [416] （单条）separating equilibrium
-  [417] （单条）sequential bargaining
-  [418] （单条）sequential bargaining game
-  [419] （单条）sequential bargaining model
-  [420] （单条）sequential bargaining with outside option
-  [421] （单条）sequential decision model
-  [422] （单条）sequential decision tree
-  [423] （单条）sequential evidence anchoring
-  [424] （单条）sequential game model
-  [425] （单条）sequential game of chicken
-  [426] （单条）sequential game with backward induction
-  [427] （单条）sequential game with imperfect information
-  [428] （单条）sequential game with incomplete information
-  [429] （单条）sequential game with information revelation
-  [430] （单条）sequential game with mediator
-  [431] （单条）sequential game with verifiable commitment
-  [432] （单条）sequential probability ratio test
-  [433] （单条）sequential signaling game
-  [434] （单条）settlement bargaining
-  [435] （单条）shifting burden of proof
-  [436] （单条）signal detection theory
-  [437] （单条）signal discrimination
-  [438] （单条）signal theory
-  [439] （单条）signaling game in information economics
-  [440] （单条）signaling game with bayesian updating
-  [441] （单条）signaling game with legal cost commitment
-  [442] （单条）signaling game with outside enforcement
-  [443] （单条）signaling game with regulatory enforcement
-  [444] （单条）signaling mechanism
-  [445] （单条）slow dynamical system
-  [446] （单条）social influence model
-  [447] （单条）social influence theory
-  [448] （单条）social learning theory
-  [449] （单条）social norm enforcement
-  [450] （单条）stackelberg commitment
-  [451] （单条）stackelberg competition
-  [452] （单条）stackelberg equilibrium
-  [453] （单条）stackelberg leader follower game
-  [454] （单条）stackelberg leadership model
-  [455] （单条）standard of review
-  [456] （单条）state estimation
-  [457] （单条）state restoration process
-  [458] （单条）state space expansion
-  [459] （单条）state transition dynamics
-  [460] （单条）statute of limitations
-  [461] （单条）statute of limitations decay model
-  [462] （单条）step function
-  [463] （单条）step function heaviside step
-  [464] （单条）stochastic dynamic programming
-  [465] （单条）stochastic process
-  [466] （单条）stochastic restart
-  [467] （单条）strategic bargaining
-  [468] （单条）strategic commitment
-  [469] （单条）strategic information revelation
-  [470] （单条）strategic litigation
-  [471] （单条）strategic signaling game
-  [472] （单条）strategic withdrawal
-  [473] （单条）subgame perfect equilibrium
-  [474] （单条）sunk cost principle
-  [475] （单条）surety bond mechanism
-  [476] （单条）system dynamics
-  [477] （单条）system of systems
-  [478] （单条）tax bracketing
-  [479] （单条）temporal binding constraint
-  [480] （单条）temporal boundary constraint
-  [481] （单条）temporal constraint
-  [482] （单条）temporal constraint satisfaction
-  [483] （单条）theory replacement
-  [484] （单条）third party enforcement
-  [485] （单条）third party enforcement game
-  [486] （单条）third party enforcement mechanism
-  [487] （单条）threat strategy in non cooperative game
-  [488] （单条）threshold access model
-  [489] （单条）threshold barrier model
-  [490] （单条）threshold cascade model
-  [491] （单条）threshold model
-  [492] （单条）threshold model of collective behavior
-  [493] （单条）threshold triggered state transition
-  [494] （单条）threshold触发 state machine
-  [495] （单条）time consistent mechanism
-  [496] （单条）time critical decision problem
-  [497] （单条）tit for tat
-  [498] （单条）trigger mechanism
-  [499] （单条）trust metric
-  [500] （单条）trusted third party authority model
-  [501] （单条）ultimatum bargaining model
-  [502] （单条）ultimatum game
-  [503] （单条）verifiable disclosure mechanism
-  [504] （单条）verification game
-  [505] （单条）verification principle
-  [506] （单条）verification problem
-  [507] （单条）verified information channel
-  [508] （单条）war of attrition
-  [509] （单条）weighted sum aggregation
-  [510] （单条）zero detection game
-  [511] （单条）zero sum equilibrium
-  [512] （单条）zero sum game
-  [513] （单条）无合适映射
+      · percolationthreshold
+  [45] 代表名: regulatory dynamics  ·  3 条
+      · regulatory arbitrage
+      · regulatory capture
+      · regulatory leverage
+  [46] 代表名: stochastic processes  ·  3 条
+      · stochastic dynamic programming
+      · stochastic process
+      · stochastic restart
+  [47] 代表名: bottleneck capacity  ·  2 条
+      · bottleneck capacity model
+      · bottleneck elimination
+  [48] 代表名: causal inference  ·  2 条
+      · attribution error
+      · causal attribution model
+  [49] 代表名: constraint transformation  ·  2 条
+      · constraint manipulation
+      · constraint transformation  [代表]
+  [50] 代表名: credit scoring  ·  2 条
+      · credit scoring model
+      · score credit system
+  [51] 代表名: dempster shafer theory  ·  2 条
+      · dempster shafer theory  [代表]
+      · dempster shafer theory of evidence
+  [52] 代表名: dynamical systems  ·  2 条
+      · multi stable dynamical systems
+      · slow dynamical system
+  [53] 代表名: escalation  ·  2 条
+      · escalation game
+      · escalation ladder
+  [54] 代表名: exponential decay  ·  2 条
+      · exponential decay  [代表]
+      · exponential decay model
+  [55] 代表名: heaviside step function  ·  2 条
+      · step function
+      · step function heaviside step
+  [56] 代表名: hierarchical modeling  ·  2 条
+      · hierarchical classification model
+      · hierarchical optimization
+  [57] 代表名: litigation cost benefit  ·  2 条
+      · cost benefit analysis of litigation
+      · litigation cost benefit asymmetry
+  [58] 代表名: mechanism transfer  ·  2 条
+      · mechanism shift
+      · mechanism transfer  [代表]
+  [59] 代表名: minimax  ·  2 条
+      · minimax  [代表]
+      · minimax theorem
+  [60] 代表名: monitoring  ·  2 条
+      · distributed monitoring
+      · hierarchical monitoring
+  [61] 代表名: multi-agent optimization  ·  2 条
+      · multi agent coordination
+      · multi agent optimization
+  [62] 代表名: network flow  ·  2 条
+      · flow network
+      · network flow  [代表]
+  [63] 代表名: pareto improvement  ·  2 条
+      · constrained pareto improvement
+      · pareto improvement  [代表]
+  [64] 代表名: payoff restructuring  ·  2 条
+      · payoff matrix restructuring
+      · payoff restructuring via external authority
+  [65] 代表名: queue  ·  2 条
+      · blocking queue
+      · priority queue
+  [66] 代表名: redundancy  ·  2 条
+      · redundancy  [代表]
+      · redundancy mechanism
+  [67] 代表名: reinforcement learning  ·  2 条
+      · adaptive search algorithm
+      · reinforcement learning  [代表]
+  [68] 代表名: renegotiation  ·  2 条
+      · contract renegotiation
+      · queue renegotiation
+  [69] 代表名: repeated game  ·  2 条
+      · repeat game
+      · repeated game  [代表]
+  [70] 代表名: reputation  ·  2 条
+      · reputation dynamics
+      · reputation mechanism
+  [71] 代表名: statute of limitations  ·  2 条
+      · statute of limitations  [代表]
+      · statute of limitations decay model
+  [72] （单条）ability to pay principle
+  [73] （单条）absorbing state
+  [74] （单条）binary classification with feature space adaptation
+  [75] （单条）boolean logic
+  [76] （单条）common knowledge
+  [77] （单条）dynamic programming
+  [78] （单条）falsification test
+  [79] （单条）fault tolerant control
+  [80] （单条）feature engineering
+  [81] （单条）finite state machine
+  [82] （单条）first mover advantage
+  [83] （单条）forum non conveniens
+  [84] （单条）fruit of the poisonous tree
+  [85] （单条）full faith and credit doctrine
+  [86] （单条）graph canonicalization
+  [87] （单条）human in the loop override
+  [88] （单条）implicit bias
+  [89] （单条）importance sampling
+  [90] （单条）incomplete contract framework
+  [91] （单条）incremental penalty scheme
+  [92] （单条）information filtering
+  [93] （单条）information monopoly
+  [94] （单条）institutional theory
+  [95] （单条）invariant theory
+  [96] （单条）jurisdictional multiplicity
+  [97] （单条）kalman filter
+  [98] （单条）knowledge institutionalization
+  [99] （单条）lattice theory
+  [100] （单条）law enforcement game
+  [101] （单条）law of large numbers
+  [102] （单条）legal attachment mechanism
+  [103] （单条）limited liability
+  [104] （单条）logical contradiction detection
+  [105] （单条）lump sum payment
+  [106] （单条）m g 1 queue
+  [107] （单条）mandatory legal constraint
+  [108] （单条）mandatory reporting
+  [109] （单条）marginal analysis
+  [110] （单条）marginal cost pricing
+  [111] （单条）metacognitive monitoring and regulation
+  [112] （单条）moral hazard
+  [113] （单条）multi tier decision making
+  [114] （单条）multi armed bandit
+  [115] （单条）naive bayes classifier
+  [116] （单条）network detection
+  [117] （单条）no fault liability
+  [118] （单条）noisy channel coding
+  [119] （单条）observability
+  [120] （单条）outside option principle
+  [121] （单条）pagerank
+  [122] （单条）parallel machine scheduling
+  [123] （单条）parallel redundancy
+  [124] （单条）parallel search
+  [125] （单条）penalty default mechanism
+  [126] （单条）penalty function
+  [127] （单条）perfect information
+  [128] （单条）persistence
+  [129] （单条）piecewise linear segmentation
+  [130] （单条）platform mediated network effects
+  [131] （单条）portfolio of independent bets
+  [132] （单条）power asymmetry correction
+  [133] （单条）power law distribution
+  [134] （单条）precedent spillover
+  [135] （单条）prescription interruption
+  [136] （单条）presumption shift
+  [137] （单条）price elasticity of demand
+  [138] （单条）privilege escalation protocol
+  [139] （单条）procedural challenging
+  [140] （单条）procedural game
+  [141] （单条）procedural justice framework
+  [142] （单条）proof of obligation
+  [143] （单条）proximate cause
+  [144] （单条）qualified immunity
+  [145] （单条）reactance
+  [146] （单条）redundant control
+  [147] （单条）regime shift
+  [148] （单条）regime switching discrete choice model
+  [149] （单条）reliability theory
+  [150] （单条）replicator dynamics
+  [151] （单条）revelation mechanism in incomplete information games
+  [152] （单条）rights based information game
+  [153] （单条）risk classification model
+  [154] （单条）risk dominant equilibrium
+  [155] （单条）risk externality
+  [156] （单条）risk mitigation
+  [157] （单条）risk pooling
+  [158] （单条）risk propagation dynamics
+  [159] （单条）rule based adjudication
+  [160] （单条）search theory
+  [161] （单条）selective attention and perceptual filtering
+  [162] （单条）selective enforcement detection
+  [163] （单条）semantic boundary argumentation
+  [164] （单条）sequential evidence anchoring
+  [165] （单条）sequential game with verifiable commitment
+  [166] （单条）signal discrimination
+  [167] （单条）social norm enforcement
+  [168] （单条）standard of review
+  [169] （单条）state estimation
+  [170] （单条）state restoration process
+  [171] （单条）state space expansion
+  [172] （单条）strategic litigation
+  [173] （单条）strategic withdrawal
+  [174] （单条）sunk cost principle
+  [175] （单条）surety bond mechanism
+  [176] （单条）system of systems
+  [177] （单条）tax bracketing
+  [178] （单条）theory replacement
+  [179] （单条）threshold model of collective behavior
+  [180] （单条）time consistent mechanism
+  [181] （单条）time critical decision problem
+  [182] （单条）tit for tat
+  [183] （单条）trigger mechanism
+  [184] （单条）trust metric
+  [185] （单条）trusted third party authority model
+  [186] （单条）verifiable disclosure mechanism
+  [187] （单条）verification principle
+  [188] （单条）verified information channel
+  [189] （单条）war of attrition
+  [190] （单条）weighted sum aggregation
+  [191] （单条）zero detection game
+  [192] （单条）无合适映射
 
 ==============================================================================

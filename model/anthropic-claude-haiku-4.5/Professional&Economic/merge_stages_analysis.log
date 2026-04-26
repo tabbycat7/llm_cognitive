@@ -1,0 +1,274 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:22
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Professional&Economic\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Professional&Economic\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Professional&Economic\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     1149
+  distinct stage-1 canonicals:  470
+  stage2 map entries (keys):    470
+  distinct stage-2 canonicals:  369
+  stage2 merge groups (|keys|>1 for same c2): 31 groups, 132 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1474
+  distinct c1 (weighted rows): 470
+  distinct c2 (weighted):      369
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'signaling theory'  ←  13 stage-1 labels
+        · bayesian information asymmetry
+        · bayesian signaling
+        · costly signaling
+        · credibility enhancement
+        · information asymmetry resolution
+        · information revelation
+        · screening
+        · screening equilibrium
+        · signaling and screening
+        · signaling equilibrium
+        · signaling game
+        · signaling theory
+        · … +1 more
+  [ 2] 'constrained optimization'  ←  11 stage-1 labels
+        · constrained optimization
+        · constraint hierarchy
+        · constraint relaxation
+        · constraint satisfaction
+        · constraint set
+        · cost minimization
+        · feasibility optimization
+        · feasible region
+        · hierarchical constraint satisfaction
+        · lagrange multipliers
+        · linear feasibility
+  [ 3] 'temporal optimization'  ←  8 stage-1 labels
+        · intertemporal capital allocation
+        · intertemporal cost minimization
+        · intertemporal optimization
+        · intertemporal tax arbitrage
+        · present value optimization
+        · tax optimization
+        · temporal optimization
+        · threshold arbitrage
+  [ 4] 'feedback control'  ←  7 stage-1 labels
+        · feedback control
+        · feedback dynamics
+        · feedback loop analysis
+        · feedback loop constraint
+        · loop interruption
+        · optimal control
+        · system decoupling
+  [ 5] 'attractor basin dynamics'  ←  6 stage-1 labels
+        · attractor basin dynamics
+        · bistability hysteresis
+        · positive feedback
+        · positive feedback acceleration
+        · stock and flow dynamics
+        · stock flow consistency model
+  [ 6] 'bargaining theory'  ←  6 stage-1 labels
+        · bargaining model
+        · nash bargaining
+        · outside option
+        · outside option bargaining
+        · rubinstein bargaining model
+        · sequential bargaining
+  [ 7] 'commitment device'  ←  6 stage-1 labels
+        · anchoring commitment
+        · commitment device
+        · commitment devices
+        · credible commitment
+        · precommitment mechanism
+        · ulysses contract
+  [ 8] 'dynamic programming'  ←  6 stage-1 labels
+        · bellman equation
+        · dynamic programming
+        · dynamic programming with information
+        · markov decision process
+        · sequential decision making
+        · stochastic programming
+  [ 9] 'portfolio theory'  ←  6 stage-1 labels
+        · kelly criterion
+        · mean variance optimization
+        · portfolio optimization
+        · portfolio theory
+        · shortfall risk minimization
+        · value at risk
+  [10] 'anchoring effect'  ←  5 stage-1 labels
+        · anchoring and adjustment
+        · anchoring and framing effects
+        · anchoring effect with bounded rationality
+        · anchoring with justification constraint
+        · temporal anchoring
+  [11] 'bayesian inference'  ←  5 stage-1 labels
+        · bayesian consistency
+        · bayesian decision theory
+        · bayesian framing
+        · bayesian inference
+        · causal bayesian inference
+  [12] 'threshold model'  ←  5 stage-1 labels
+        · threshold crossing
+        · threshold decision
+        · threshold dynamics
+        · threshold model
+        · threshold state transition
+  [13] 'mechanism design'  ←  4 stage-1 labels
+        · enforcement mechanism design
+        · mechanism design
+        · preference revelation
+        · revelation principle
+  [14] 'sequential game equilibrium'  ←  4 stage-1 labels
+        · incomplete information games
+        · sequential game equilibrium
+        · sequential information game
+        · subgame perfect equilibrium
+  [15] 'intertemporal choice'  ←  3 stage-1 labels
+        · hyperbolic discounting
+        · intertemporal choice
+        · temporal discounting
+  [16] 'pareto optimality'  ←  3 stage-1 labels
+        · pareto efficiency reallocation
+        · pareto frontier
+        · pareto optimality
+  [17] 'path dependence'  ←  3 stage-1 labels
+        · path dependence
+        · path dependency
+        · path dependency breaking
+  [18] 'principal agent problem'  ←  3 stage-1 labels
+        · adverse selection
+        · moral hazard
+        · principal agent problem
+  [19] 'real options'  ←  3 stage-1 labels
+        · american option pricing
+        · option value
+        · real options
+  [20] 'signal detection theory'  ←  3 stage-1 labels
+        · signal detection theory
+        · signal extraction
+        · signal to noise ratio optimization
+  [21] 'bayesian updating'  ←  2 stage-1 labels
+        · bayesian information updating
+        · bayesian updating
+  [22] 'bifurcation theory'  ←  2 stage-1 labels
+        · bifurcation
+        · bifurcation theory
+  [23] 'channel capacity'  ←  2 stage-1 labels
+        · channel capacity
+        · shannon channel capacity
+  [24] 'compound interest'  ←  2 stage-1 labels
+        · compound interest
+        · compound interest optimization
+  [25] 'dimensionality reduction'  ←  2 stage-1 labels
+        · dimensionality reduction
+        · feature dimensionality
+  [26] 'exponential model'  ←  2 stage-1 labels
+        · exponential model
+        · exponential optimization
+  [27] 'liquidity constraint'  ←  2 stage-1 labels
+        · liquidity constrained allocation
+        · liquidity constraint
+  [28] 'mental accounting'  ←  2 stage-1 labels
+        · mental accounting
+        · sunk cost fallacy
+  [29] 'optimal stopping'  ←  2 stage-1 labels
+        · finite horizon stopping
+        · optimal stopping
+  [30] 'search and matching'  ←  2 stage-1 labels
+        · job search theory
+        · search and matching
+  [31] 'stackelberg game'  ←  2 stage-1 labels
+        · stackelberg competition
+        · stackelberg game
+
+[Stage-2 renames] (key ≠ value, 103 entries; list first 80)
+  'adverse selection'  →  'principal agent problem'
+  'american option pricing'  →  'real options'
+  'anchoring and adjustment'  →  'anchoring effect'
+  'anchoring and framing effects'  →  'anchoring effect'
+  'anchoring commitment'  →  'commitment device'
+  'anchoring effect with bounded rationality'  →  'anchoring effect'
+  'anchoring with justification constraint'  →  'anchoring effect'
+  'bargaining model'  →  'bargaining theory'
+  'bayesian consistency'  →  'bayesian inference'
+  'bayesian decision theory'  →  'bayesian inference'
+  'bayesian framing'  →  'bayesian inference'
+  'bayesian information asymmetry'  →  'signaling theory'
+  'bayesian information updating'  →  'bayesian updating'
+  'bayesian signaling'  →  'signaling theory'
+  'bellman equation'  →  'dynamic programming'
+  'bifurcation'  →  'bifurcation theory'
+  'bistability hysteresis'  →  'attractor basin dynamics'
+  'causal bayesian inference'  →  'bayesian inference'
+  'commitment devices'  →  'commitment device'
+  'compound interest optimization'  →  'compound interest'
+  'constraint hierarchy'  →  'constrained optimization'
+  'constraint relaxation'  →  'constrained optimization'
+  'constraint satisfaction'  →  'constrained optimization'
+  'constraint set'  →  'constrained optimization'
+  'cost minimization'  →  'constrained optimization'
+  'costly signaling'  →  'signaling theory'
+  'credibility enhancement'  →  'signaling theory'
+  'credible commitment'  →  'commitment device'
+  'dynamic programming with information'  →  'dynamic programming'
+  'enforcement mechanism design'  →  'mechanism design'
+  'exponential optimization'  →  'exponential model'
+  'feasibility optimization'  →  'constrained optimization'
+  'feasible region'  →  'constrained optimization'
+  'feature dimensionality'  →  'dimensionality reduction'
+  'feedback dynamics'  →  'feedback control'
+  'feedback loop analysis'  →  'feedback control'
+  'feedback loop constraint'  →  'feedback control'
+  'finite horizon stopping'  →  'optimal stopping'
+  'hierarchical constraint satisfaction'  →  'constrained optimization'
+  'hyperbolic discounting'  →  'intertemporal choice'
+  'incomplete information games'  →  'sequential game equilibrium'
+  'information asymmetry resolution'  →  'signaling theory'
+  'information revelation'  →  'signaling theory'
+  'intertemporal capital allocation'  →  'temporal optimization'
+  'intertemporal cost minimization'  →  'temporal optimization'
+  'intertemporal optimization'  →  'temporal optimization'
+  'intertemporal tax arbitrage'  →  'temporal optimization'
+  'job search theory'  →  'search and matching'
+  'kelly criterion'  →  'portfolio theory'
+  'lagrange multipliers'  →  'constrained optimization'
+  'linear feasibility'  →  'constrained optimization'
+  'liquidity constrained allocation'  →  'liquidity constraint'
+  'loop interruption'  →  'feedback control'
+  'markov decision process'  →  'dynamic programming'
+  'mean variance optimization'  →  'portfolio theory'
+  'moral hazard'  →  'principal agent problem'
+  'nash bargaining'  →  'bargaining theory'
+  'optimal control'  →  'feedback control'
+  'option value'  →  'real options'
+  'outside option'  →  'bargaining theory'
+  'outside option bargaining'  →  'bargaining theory'
+  'pareto efficiency reallocation'  →  'pareto optimality'
+  'pareto frontier'  →  'pareto optimality'
+  'path dependency'  →  'path dependence'
+  'path dependency breaking'  →  'path dependence'
+  'portfolio optimization'  →  'portfolio theory'
+  'positive feedback'  →  'attractor basin dynamics'
+  'positive feedback acceleration'  →  'attractor basin dynamics'
+  'precommitment mechanism'  →  'commitment device'
+  'preference revelation'  →  'mechanism design'
+  'present value optimization'  →  'temporal optimization'
+  'revelation principle'  →  'mechanism design'
+  'rubinstein bargaining model'  →  'bargaining theory'
+  'screening'  →  'signaling theory'
+  'screening equilibrium'  →  'signaling theory'
+  'sequential bargaining'  →  'bargaining theory'
+  'sequential decision making'  →  'dynamic programming'
+  'sequential information game'  →  'sequential game equilibrium'
+  'shannon channel capacity'  →  'channel capacity'
+  'shortfall risk minimization'  →  'portfolio theory'
+  … 23 more
+
+[Consistency with merge_map.json]
+  compared 1149 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

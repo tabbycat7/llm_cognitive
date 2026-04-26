@@ -1,0 +1,266 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\deepseek\Personal&Existential\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\deepseek\Personal&Existential\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\deepseek\Personal&Existential\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     421
+  distinct stage-1 canonicals:  246
+  stage2 map entries (keys):    246
+  distinct stage-2 canonicals:  96
+  stage2 merge groups (|keys|>1 for same c2): 20 groups, 170 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1188
+  distinct c1 (weighted rows): 246
+  distinct c2 (weighted):      96
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'cognitive behavioral model'  ←  30 stage-1 labels
+        · appraisal theory of emotion
+        · attribution theory
+        · beck's cognitive model of depression
+        · behavioral activation
+        · behavioral momentum
+        · bias modification
+        · chunking
+        · cognitive disengagement theory
+        · cognitive dissonance
+        · cognitive load theory
+        · cognitive reappraisal
+        · cognitive schema theory
+        · … +18 more
+  [ 2] 'dynamical systems'  ←  24 stage-1 labels
+        · attractor dynamics
+        · basin of attraction
+        · bifurcation
+        · bistability
+        · bistable system with potential well
+        · coupled oscillators
+        · damped harmonic oscillator
+        · double well potential model
+        · dynamical systems
+        · dynamical systems bifurcation
+        · entrainment
+        · forced oscillation
+        · … +12 more
+  [ 3] 'control theory'  ←  19 stage-1 labels
+        · cascade control
+        · closed loop control
+        · compensatory control
+        · control barrier function
+        · control theory
+        · controlled dynamical systems
+        · cybernetics
+        · feedback control
+        · feedback linearization
+        · hierarchical control
+        · law of requisite variety
+        · model based control
+        · … +7 more
+  [ 4] 'decision theory'  ←  14 stage-1 labels
+        · allais paradox
+        · bounded rationality
+        · drift diffusion model
+        · expectancy value theory
+        · mental accounting
+        · multi criteria decision analysis
+        · optimal stopping
+        · prospect theory
+        · random utility model with search costs
+        · rational choice theory
+        · reference dependent preferences
+        · satisficing
+        · … +2 more
+  [ 5] 'optimization theory'  ←  12 stage-1 labels
+        · bilevel optimization
+        · constraint optimization
+        · convex optimization
+        · dynamic programming
+        · gradient descent
+        · greedy algorithm
+        · linear programming
+        · modular optimization
+        · multi objective optimization
+        · optimal substructure
+        · optimization theory
+        · theory of constraints
+  [ 6] 'reinforcement learning'  ←  12 stage-1 labels
+        · extinction learning
+        · markov decision process
+        · multi armed bandit
+        · policy gradient
+        · policy improvement in reinforcement learning
+        · q learning
+        · reinforcement learning
+        · rescorla wagner model
+        · reward shaping
+        · temporal difference learning
+        · upper confidence bound
+        · value function reinforcement learning
+  [ 7] 'bayesian inference'  ←  11 stage-1 labels
+        · active inference
+        · bayes classifier
+        · bayesian brain hypothesis
+        · bayesian diagnostic network
+        · bayesian inference
+        · bayesian social comparison model
+        · belief propagation
+        · conditioning
+        · hidden markov model
+        · kalman filter
+        · predictive coding
+  [ 8] 'game theory'  ←  10 stage-1 labels
+        · cheap talk
+        · common knowledge
+        · coordination game
+        · correlated equilibrium
+        · game theory
+        · mechanism design
+        · nash equilibrium
+        · principal agent problem
+        · repeated prisoner's dilemma
+        · signaling game
+  [ 9] 'resource allocation'  ←  5 stage-1 labels
+        · attention allocation model
+        · modern portfolio theory
+        · network flow
+        · priority queueing network with routing
+        · resource allocation
+  [10] 'statistical learning'  ←  5 stage-1 labels
+        · dimensionality reduction
+        · function approximation
+        · multivariate time series analysis
+        · pattern recognition and classification
+        · statistical classification
+  [11] 'homeostatic regulation'  ←  4 stage-1 labels
+        · allostatic load model
+        · energy balance equation with adaptive thermogenesis
+        · homeostatic regulation
+        · set point
+  [12] 'network science'  ←  4 stage-1 labels
+        · information cascade
+        · network rewiring
+        · network robustness
+        · network science
+  [13] 'belief revision'  ←  3 stage-1 labels
+        · agm belief revision
+        · belief landscape reshaping
+        · memory reconsolidation
+  [14] 'causal inference'  ←  3 stage-1 labels
+        · causal directed acyclic graph
+        · causal inference
+        · counterfactual framework
+  [15] 'connectionism'  ←  3 stage-1 labels
+        · attractor network model of semantic memory
+        · connectionism
+        · hopfield network
+  [16] 'threshold model'  ←  3 stage-1 labels
+        · activation energy
+        · arrhenius equation
+        · threshold model
+  [17] 'error driven learning'  ←  2 stage-1 labels
+        · error driven learning
+        · hebbian learning
+  [18] 'feedback disruption'  ←  2 stage-1 labels
+        · feedback disruption
+        · negative reinforcement loop
+  [19] 'information theory'  ←  2 stage-1 labels
+        · information theory
+        · information theory of salutogenesis
+  [20] 'pharmacokinetic pharmacodynamic modeling'  ←  2 stage-1 labels
+        · dose response model
+        · pharmacokinetic pharmacodynamic modeling
+
+[Stage-2 renames] (key ≠ value, 162 entries; list first 80)
+  'activation energy'  →  'threshold model'
+  'active inference'  →  'bayesian inference'
+  'agm belief revision'  →  'belief revision'
+  'allais paradox'  →  'decision theory'
+  'allostatic load model'  →  'homeostatic regulation'
+  'appraisal theory of emotion'  →  'cognitive behavioral model'
+  'arrhenius equation'  →  'threshold model'
+  'attachment theory as a biobehavioral regulatory system'  →  'attachment theory'
+  'attention allocation model'  →  'resource allocation'
+  'attractor dynamics'  →  'dynamical systems'
+  'attractor network model of semantic memory'  →  'connectionism'
+  'attribution theory'  →  'cognitive behavioral model'
+  'basin of attraction'  →  'dynamical systems'
+  'bayes classifier'  →  'bayesian inference'
+  'bayesian brain hypothesis'  →  'bayesian inference'
+  'bayesian diagnostic network'  →  'bayesian inference'
+  'bayesian social comparison model'  →  'bayesian inference'
+  "beck's cognitive model of depression"  →  'cognitive behavioral model'
+  'behavioral activation'  →  'cognitive behavioral model'
+  'behavioral momentum'  →  'cognitive behavioral model'
+  'belief landscape reshaping'  →  'belief revision'
+  'belief propagation'  →  'bayesian inference'
+  'bias modification'  →  'cognitive behavioral model'
+  'bifurcation'  →  'dynamical systems'
+  'bilevel optimization'  →  'optimization theory'
+  'bistability'  →  'dynamical systems'
+  'bistable system with potential well'  →  'dynamical systems'
+  'bounded rationality'  →  'decision theory'
+  'cascade control'  →  'control theory'
+  'causal directed acyclic graph'  →  'causal inference'
+  'channel switching in noisy communication'  →  'channel switching'
+  'cheap talk'  →  'game theory'
+  'chunking'  →  'cognitive behavioral model'
+  'closed loop control'  →  'control theory'
+  'cognitive disengagement theory'  →  'cognitive behavioral model'
+  'cognitive dissonance'  →  'cognitive behavioral model'
+  'cognitive load theory'  →  'cognitive behavioral model'
+  'cognitive reappraisal'  →  'cognitive behavioral model'
+  'cognitive schema theory'  →  'cognitive behavioral model'
+  'commitment device'  →  'cognitive behavioral model'
+  'common knowledge'  →  'game theory'
+  'compensatory control'  →  'control theory'
+  'conditioning'  →  'bayesian inference'
+  'constraint optimization'  →  'optimization theory'
+  'control barrier function'  →  'control theory'
+  'controlled dynamical systems'  →  'control theory'
+  'convex optimization'  →  'optimization theory'
+  'coordination game'  →  'game theory'
+  'correlated equilibrium'  →  'game theory'
+  'counterfactual framework'  →  'causal inference'
+  'coupled oscillators'  →  'dynamical systems'
+  'cybernetics'  →  'control theory'
+  'damped harmonic oscillator'  →  'dynamical systems'
+  'decentering'  →  'cognitive behavioral model'
+  'decision tree analysis'  →  'decision tree'
+  'deliberate practice'  →  'cognitive behavioral model'
+  "dijkstra's algorithm"  →  'dijkstra algorithm'
+  'dimensionality reduction'  →  'statistical learning'
+  'discretization and state space representation'  →  'discretization'
+  'dose response model'  →  'pharmacokinetic pharmacodynamic modeling'
+  'double well potential model'  →  'dynamical systems'
+  'drift diffusion model'  →  'decision theory'
+  'dynamic programming'  →  'optimization theory'
+  'dynamical systems bifurcation'  →  'dynamical systems'
+  'energy balance equation with adaptive thermogenesis'  →  'homeostatic regulation'
+  'entrainment'  →  'dynamical systems'
+  'expectancy value theory'  →  'decision theory'
+  'extinction learning'  →  'reinforcement learning'
+  'fear conditioning'  →  'cognitive behavioral model'
+  'feedback control'  →  'control theory'
+  'feedback linearization'  →  'control theory'
+  'forced oscillation'  →  'dynamical systems'
+  'forced synchronization'  →  'dynamical systems'
+  'frame competition theory'  →  'frame competition'
+  'framing effect'  →  'cognitive behavioral model'
+  'friction theory'  →  'cognitive behavioral model'
+  'function approximation'  →  'statistical learning'
+  'goal setting theory'  →  'cognitive behavioral model'
+  'gradient descent'  →  'optimization theory'
+  'greedy algorithm'  →  'optimization theory'
+  … 82 more
+
+[Consistency with merge_map.json]
+  compared 421 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

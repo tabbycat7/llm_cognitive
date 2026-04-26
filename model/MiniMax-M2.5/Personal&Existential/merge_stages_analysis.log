@@ -1,0 +1,263 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:24
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Personal&Existential\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Personal&Existential\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Personal&Existential\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     590
+  distinct stage-1 canonicals:  309
+  stage2 map entries (keys):    309
+  distinct stage-2 canonicals:  207
+  stage2 merge groups (|keys|>1 for same c2): 26 groups, 128 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1298
+  distinct c1 (weighted rows): 309
+  distinct c2 (weighted):      207
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'cognitive theories'  ←  15 stage-1 labels
+        · attribution retraining
+        · attribution theory
+        · cognitive affective schema reconstruction
+        · cognitive control modeling
+        · cognitive defusion
+        · cognitive dissonance
+        · cognitive load theory
+        · cognitive restructuring
+        · dual process theory
+        · ego depletion theory
+        · growth mindset
+        · metacognition
+        · … +3 more
+  [ 2] 'feedback control'  ←  11 stage-1 labels
+        · bidirectional feedback system
+        · closed loop control
+        · conditional feedback response
+        · feedback control
+        · feedback control system with constraint variable
+        · feedback disruption
+        · feedback loop
+        · feedback loop disruption
+        · negative feedback
+        · positive feedback
+        · vicious cycle
+  [ 3] 'network theory'  ←  11 stage-1 labels
+        · cascade dynamics
+        · cascade model
+        · cascading failure
+        · contagion model
+        · graph connectivity
+        · network diffusion
+        · network robustness
+        · network science
+        · percolation
+        · social network
+        · social network analysis
+  [ 4] 'dynamical systems theory'  ←  10 stage-1 labels
+        · avalanche dynamics
+        · bifurcation theory
+        · catastrophe theory
+        · critical phenomena
+        · criticality dynamics
+        · dynamical systems
+        · fast slow dynamics
+        · hysteresis
+        · phase transition
+        · tipping point
+  [ 5] 'reinforcement learning'  ←  9 stage-1 labels
+        · exploration exploitation tradeoff
+        · markov decision process
+        · multi armed bandit
+        · negative reinforcement
+        · reinforcement learning
+        · reinforcement schedules
+        · reward function learning
+        · shaping
+        · temporal difference learning
+  [ 6] 'attractor dynamics'  ←  8 stage-1 labels
+        · attractor basin
+        · attractor dynamics
+        · basin escape dynamics
+        · dynamical systems attractor
+        · dynamical systems state space perturbation
+        · limit cycle
+        · multistability
+        · state space
+  [ 7] 'control theory'  ←  8 stage-1 labels
+        · adaptive control
+        · control input
+        · control shift
+        · control theory
+        · external control
+        · hierarchical control model
+        · lyapunov control
+        · set point regulation
+  [ 8] 'operant conditioning'  ←  8 stage-1 labels
+        · alternative reinforcement
+        · classical conditioning
+        · error driven learning
+        · extinction
+        · habit formation
+        · habituation
+        · operant conditioning
+        · rescorla wagner model
+  [ 9] 'markov chain'  ←  6 stage-1 labels
+        · absorbing state
+        · autoregressive model
+        · markov chain
+        · state transition
+        · stochastic modeling
+        · time series analysis
+  [10] 'bayesian updating'  ←  5 stage-1 labels
+        · bayes theorem
+        · bayesian games
+        · bayesian updating
+        · prediction error
+        · predictive processing
+  [11] 'causal modeling'  ←  3 stage-1 labels
+        · causal chain interruption
+        · causal discovery
+        · causal modeling
+  [12] 'crisis intervention'  ←  3 stage-1 labels
+        · crisis decompensation model
+        · crisis diversion
+        · crisis intervention
+  [13] 'hebbian plasticity'  ←  3 stage-1 labels
+        · competitive learning
+        · hebbian plasticity
+        · neural plasticity
+  [14] 'homeostasis'  ←  3 stage-1 labels
+        · allostasis
+        · allostatic load
+        · homeostasis
+  [15] 'iterative optimization'  ←  3 stage-1 labels
+        · gradient descent
+        · hill climbing
+        · iterative optimization
+  [16] 'availability heuristic'  ←  2 stage-1 labels
+        · availability heuristic
+        · confirmatory bias
+  [17] 'constrained optimization'  ←  2 stage-1 labels
+        · constrained optimization
+        · constraint set modification
+  [18] 'diversification'  ←  2 stage-1 labels
+        · diversification
+        · diversity gain
+  [19] 'expected utility theory'  ←  2 stage-1 labels
+        · cost benefit decision model
+        · expected utility theory
+  [20] 'external monitoring mechanism'  ←  2 stage-1 labels
+        · external monitoring mechanism
+        · external regulator
+  [21] 'hill equation'  ←  2 stage-1 labels
+        · dose response relationship
+        · hill equation
+  [22] 'implementation intentions'  ←  2 stage-1 labels
+        · conditional trigger action plan
+        · implementation intentions
+  [23] 'michaelis menten kinetics'  ←  2 stage-1 labels
+        · michaelis menten kinetics
+        · reaction kinetics
+  [24] 'optimal stopping'  ←  2 stage-1 labels
+        · optimal stopping
+        · sequential decision making
+  [25] 'principal agent theory'  ←  2 stage-1 labels
+        · hidden action model
+        · principal agent theory
+  [26] 'threshold model'  ←  2 stage-1 labels
+        · activation threshold
+        · threshold model
+
+[Stage-2 renames] (key ≠ value, 105 entries; list first 80)
+  'absorbing state'  →  'markov chain'
+  'activation threshold'  →  'threshold model'
+  'adaptive control'  →  'control theory'
+  'allostasis'  →  'homeostasis'
+  'allostatic load'  →  'homeostasis'
+  'alternative reinforcement'  →  'operant conditioning'
+  'attractor basin'  →  'attractor dynamics'
+  'attribution retraining'  →  'cognitive theories'
+  'attribution theory'  →  'cognitive theories'
+  'autoregressive model'  →  'markov chain'
+  'avalanche dynamics'  →  'dynamical systems theory'
+  'basin escape dynamics'  →  'attractor dynamics'
+  'bayes theorem'  →  'bayesian updating'
+  'bayesian games'  →  'bayesian updating'
+  'bidirectional feedback system'  →  'feedback control'
+  'bifurcation theory'  →  'dynamical systems theory'
+  'cascade dynamics'  →  'network theory'
+  'cascade model'  →  'network theory'
+  'cascading failure'  →  'network theory'
+  'catastrophe theory'  →  'dynamical systems theory'
+  'causal chain interruption'  →  'causal modeling'
+  'causal discovery'  →  'causal modeling'
+  'classical conditioning'  →  'operant conditioning'
+  'closed loop control'  →  'feedback control'
+  'cognitive affective schema reconstruction'  →  'cognitive theories'
+  'cognitive control modeling'  →  'cognitive theories'
+  'cognitive defusion'  →  'cognitive theories'
+  'cognitive dissonance'  →  'cognitive theories'
+  'cognitive load theory'  →  'cognitive theories'
+  'cognitive restructuring'  →  'cognitive theories'
+  'competitive learning'  →  'hebbian plasticity'
+  'conditional feedback response'  →  'feedback control'
+  'conditional trigger action plan'  →  'implementation intentions'
+  'confirmatory bias'  →  'availability heuristic'
+  'constraint set modification'  →  'constrained optimization'
+  'contagion model'  →  'network theory'
+  'control input'  →  'control theory'
+  'control shift'  →  'control theory'
+  'cost benefit decision model'  →  'expected utility theory'
+  'crisis decompensation model'  →  'crisis intervention'
+  'crisis diversion'  →  'crisis intervention'
+  'critical phenomena'  →  'dynamical systems theory'
+  'criticality dynamics'  →  'dynamical systems theory'
+  'diversity gain'  →  'diversification'
+  'dose response relationship'  →  'hill equation'
+  'dual process theory'  →  'cognitive theories'
+  'dynamical systems'  →  'dynamical systems theory'
+  'dynamical systems attractor'  →  'attractor dynamics'
+  'dynamical systems state space perturbation'  →  'attractor dynamics'
+  'ego depletion theory'  →  'cognitive theories'
+  'error driven learning'  →  'operant conditioning'
+  'exploration exploitation tradeoff'  →  'reinforcement learning'
+  'external control'  →  'control theory'
+  'external regulator'  →  'external monitoring mechanism'
+  'extinction'  →  'operant conditioning'
+  'fast slow dynamics'  →  'dynamical systems theory'
+  'feedback control system with constraint variable'  →  'feedback control'
+  'feedback disruption'  →  'feedback control'
+  'feedback loop'  →  'feedback control'
+  'feedback loop disruption'  →  'feedback control'
+  'gradient descent'  →  'iterative optimization'
+  'graph connectivity'  →  'network theory'
+  'growth mindset'  →  'cognitive theories'
+  'habit formation'  →  'operant conditioning'
+  'habituation'  →  'operant conditioning'
+  'hidden action model'  →  'principal agent theory'
+  'hierarchical control model'  →  'control theory'
+  'hill climbing'  →  'iterative optimization'
+  'hysteresis'  →  'dynamical systems theory'
+  'limit cycle'  →  'attractor dynamics'
+  'lyapunov control'  →  'control theory'
+  'markov decision process'  →  'reinforcement learning'
+  'metacognition'  →  'cognitive theories'
+  'multi armed bandit'  →  'reinforcement learning'
+  'multistability'  →  'attractor dynamics'
+  'negative feedback'  →  'feedback control'
+  'negative reinforcement'  →  'reinforcement learning'
+  'network diffusion'  →  'network theory'
+  'network robustness'  →  'network theory'
+  'network science'  →  'network theory'
+  … 25 more
+
+[Consistency with merge_map.json]
+  compared 590 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

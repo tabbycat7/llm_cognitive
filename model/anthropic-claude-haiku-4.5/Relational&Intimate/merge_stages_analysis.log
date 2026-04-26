@@ -1,0 +1,271 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:22
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Relational&Intimate\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Relational&Intimate\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\anthropic-claude-haiku-4.5\Relational&Intimate\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     1155
+  distinct stage-1 canonicals:  347
+  stage2 map entries (keys):    347
+  distinct stage-2 canonicals:  206
+  stage2 merge groups (|keys|>1 for same c2): 22 groups, 163 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1475
+  distinct c1 (weighted rows): 347
+  distinct c2 (weighted):      206
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'dynamical systems'  ←  20 stage-1 labels
+        · attractor basin dynamics
+        · attractor basin escape
+        · attractor escape via uncertainty elimination
+        · attractor landscape dynamics
+        · attractor state destabilization through input removal
+        · bifurcation theory
+        · bifurcation theory with potential well
+        · bistable dynamical systems
+        · bistable potential with barrier reduction
+        · coupled oscillator decoupling
+        · damped oscillator
+        · dynamical systems
+        · … +8 more
+  [ 2] 'game theory'  ←  20 stage-1 labels
+        · backward induction
+        · bayesian equilibrium
+        · best response dynamics
+        · bilateral bargaining with endogenous threat points
+        · commitment equilibrium
+        · commitment game
+        · coordination game
+        · coordination game with common knowledge
+        · correlated equilibrium selection through sequential disclosure
+        · equilibrium selection
+        · equilibrium stability
+        · extensive form game
+        · … +8 more
+  [ 3] 'signaling theory'  ←  19 stage-1 labels
+        · asymmetric information equilibrium
+        · bayesian persuasion with timing
+        · bayesian signaling
+        · cheap talk elimination
+        · common knowledge elimination of information asymmetry
+        · cooperative bargaining and information revelation
+        · costly signaling
+        · information asymmetry correction
+        · information asymmetry resolution
+        · information revelation equilibrium
+        · information revelation game
+        · preference revelation
+        · … +7 more
+  [ 4] 'constrained optimization'  ←  18 stage-1 labels
+        · attentional resource allocation
+        · binding constraint
+        · competitive resource allocation with temporal switching
+        · constrained optimization
+        · constraint optimization with penalty method
+        · constraint qualification and feasible set redefinition
+        · constraint relaxation
+        · constraint satisfaction problem
+        · constraint set restructuring via external arbitration
+        · constraint tightening via explicit incompatibility declaration
+        · cost function modification
+        · entropy optimization
+        · … +6 more
+  [ 5] 'causal inference'  ←  13 stage-1 labels
+        · causal attribution
+        · causal attribution correction via boundary definition
+        · causal confounding
+        · causal directed acyclic graph
+        · causal graphical model with edge misspecification
+        · causal identifiability
+        · causal identification through stimulus ablation
+        · causal inference
+        · causal intervention
+        · causal mediation analysis
+        · causal separation
+        · causal signal restoration
+        · … +1 more
+  [ 6] 'feedback control'  ←  10 stage-1 labels
+        · feedback control
+        · feedback decoupling
+        · feedback disruption
+        · feedback loop destabilization
+        · feedback loop disruption
+        · feedback loop dynamics
+        · feedback loop interruption
+        · feedback system removal
+        · feedback system stability
+        · negative feedback control
+  [ 7] 'optimal control'  ←  8 stage-1 labels
+        · control state isolation
+        · control system
+        · control theoretic variable substitution
+        · controllability analysis
+        · optimal control
+        · state observability
+        · state space reduction
+        · state space transformation
+  [ 8] 'bayesian inference'  ←  7 stage-1 labels
+        · bayesian decomposition of correlated observations
+        · bayesian hypothesis testing
+        · bayesian inference
+        · bayesian inference with adversarial noise filtering
+        · bayesian inference with evidence quality discrimination
+        · bayesian model selection
+        · bayesian prior specification and likelihood reweighting
+  [ 9] 'reinforcement learning'  ←  7 stage-1 labels
+        · concurrent variable ratio schedules
+        · markov decision process
+        · multi armed bandit
+        · reinforcement learning reward shaping
+        · reinforcement schedule
+        · temporal difference learning
+        · variable ratio reinforcement
+  [10] 'commitment device'  ←  6 stage-1 labels
+        · bayesian commitment
+        · commitment device
+        · credible commitment
+        · information commitment
+        · temporal commitment
+        · ulysses contract
+  [11] 'dynamic programming'  ←  6 stage-1 labels
+        · bayesian sequential decision making
+        · dynamic programming
+        · finite horizon optimization
+        · markov decision process reformulation
+        · sequential decision making
+        · value function update
+  [12] 'principal-agent problem'  ←  5 stage-1 labels
+        · adverse selection
+        · incentive compatibility
+        · moral hazard
+        · principal agent problem
+        · revelation principle
+  [13] 'exponential decay'  ←  4 stage-1 labels
+        · associative decay model with stimulus deprivation
+        · exponential decay
+        · exponential decay with feedback loop interruption
+        · memory decay
+  [14] 'bayesian updating'  ←  3 stage-1 labels
+        · bayesian information revelation
+        · bayesian updating
+        · belief updating through intervention in information environment
+  [15] 'repeated measures hypothesis testing'  ←  3 stage-1 labels
+        · hypothesis testing
+        · repeated measures hypothesis testing
+        · sequential hypothesis testing
+  [16] 'absorbing markov chain'  ←  2 stage-1 labels
+        · absorbing barrier
+        · absorbing markov chain
+  [17] 'ambiguity aversion'  ←  2 stage-1 labels
+        · ambiguity aversion
+        · knightian uncertainty
+  [18] 'information theory'  ←  2 stage-1 labels
+        · information entropy reduction
+        · shannon information theory
+  [19] 'linear system stability'  ←  2 stage-1 labels
+        · first order linear system
+        · linear system stability
+  [20] 'option value'  ←  2 stage-1 labels
+        · option value
+        · real options
+  [21] 'temporal discounting'  ←  2 stage-1 labels
+        · hyperbolic discounting
+        · temporal discounting
+  [22] 'time delay systems'  ←  2 stage-1 labels
+        · delay differential equations
+        · time delay systems
+
+[Stage-2 renames] (key ≠ value, 149 entries; list first 80)
+  'absorbing barrier'  →  'absorbing markov chain'
+  'adverse selection'  →  'principal-agent problem'
+  'anchoring effect with temporal primacy'  →  'anchoring effect'
+  'associative decay model with stimulus deprivation'  →  'exponential decay'
+  'asymmetric information equilibrium'  →  'signaling theory'
+  'attentional resource allocation'  →  'constrained optimization'
+  'attractor basin dynamics'  →  'dynamical systems'
+  'attractor basin escape'  →  'dynamical systems'
+  'attractor escape via uncertainty elimination'  →  'dynamical systems'
+  'attractor landscape dynamics'  →  'dynamical systems'
+  'attractor state destabilization through input removal'  →  'dynamical systems'
+  'availability heuristic with competing stimulus presentation'  →  'availability heuristic'
+  'backward induction'  →  'game theory'
+  'base rate correction through frequency documentation'  →  'base rate correction'
+  'bayesian commitment'  →  'commitment device'
+  'bayesian decomposition of correlated observations'  →  'bayesian inference'
+  'bayesian equilibrium'  →  'game theory'
+  'bayesian hypothesis testing'  →  'bayesian inference'
+  'bayesian inference with adversarial noise filtering'  →  'bayesian inference'
+  'bayesian inference with evidence quality discrimination'  →  'bayesian inference'
+  'bayesian information revelation'  →  'bayesian updating'
+  'bayesian model selection'  →  'bayesian inference'
+  'bayesian persuasion with timing'  →  'signaling theory'
+  'bayesian prior specification and likelihood reweighting'  →  'bayesian inference'
+  'bayesian sequential decision making'  →  'dynamic programming'
+  'bayesian signaling'  →  'signaling theory'
+  'belief updating through intervention in information environment'  →  'bayesian updating'
+  'best response dynamics'  →  'game theory'
+  'bifurcation theory'  →  'dynamical systems'
+  'bifurcation theory with potential well'  →  'dynamical systems'
+  'bilateral bargaining with endogenous threat points'  →  'game theory'
+  'binding constraint'  →  'constrained optimization'
+  'bistable dynamical systems'  →  'dynamical systems'
+  'bistable potential with barrier reduction'  →  'dynamical systems'
+  'causal attribution'  →  'causal inference'
+  'causal attribution correction via boundary definition'  →  'causal inference'
+  'causal confounding'  →  'causal inference'
+  'causal directed acyclic graph'  →  'causal inference'
+  'causal graphical model with edge misspecification'  →  'causal inference'
+  'causal identifiability'  →  'causal inference'
+  'causal identification through stimulus ablation'  →  'causal inference'
+  'causal intervention'  →  'causal inference'
+  'causal mediation analysis'  →  'causal inference'
+  'causal separation'  →  'causal inference'
+  'causal signal restoration'  →  'causal inference'
+  'cheap talk elimination'  →  'signaling theory'
+  'commitment equilibrium'  →  'game theory'
+  'commitment game'  →  'game theory'
+  'common knowledge elimination of information asymmetry'  →  'signaling theory'
+  'competitive resource allocation with temporal switching'  →  'constrained optimization'
+  'concurrent variable ratio schedules'  →  'reinforcement learning'
+  'constraint optimization with penalty method'  →  'constrained optimization'
+  'constraint qualification and feasible set redefinition'  →  'constrained optimization'
+  'constraint relaxation'  →  'constrained optimization'
+  'constraint satisfaction problem'  →  'constrained optimization'
+  'constraint set restructuring via external arbitration'  →  'constrained optimization'
+  'constraint tightening via explicit incompatibility declaration'  →  'constrained optimization'
+  'contract formalization and enforcement mechanism'  →  'contract formalization'
+  'control state isolation'  →  'optimal control'
+  'control system'  →  'optimal control'
+  'control theoretic variable substitution'  →  'optimal control'
+  'controllability analysis'  →  'optimal control'
+  'cooperative bargaining and information revelation'  →  'signaling theory'
+  'coordination game'  →  'game theory'
+  'coordination game with common knowledge'  →  'game theory'
+  'correlated equilibrium selection through sequential disclosure'  →  'game theory'
+  'cost function modification'  →  'constrained optimization'
+  'costly signaling'  →  'signaling theory'
+  'coupled oscillator decoupling'  →  'dynamical systems'
+  'credible commitment'  →  'commitment device'
+  'damped oscillator'  →  'dynamical systems'
+  'delay differential equations'  →  'time delay systems'
+  'dynamical systems decoupling'  →  'dynamical systems'
+  'dynamical systems theory'  →  'dynamical systems'
+  'entropy optimization'  →  'constrained optimization'
+  'equilibrium selection'  →  'game theory'
+  'equilibrium stability'  →  'game theory'
+  'exponential decay with feedback loop interruption'  →  'exponential decay'
+  'extensive form game'  →  'game theory'
+  'feasible region collapse'  →  'constrained optimization'
+  … 69 more
+
+[Consistency with merge_map.json]
+  compared 1155 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

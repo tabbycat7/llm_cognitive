@@ -1,32 +1,34 @@
 ==============================================================================
 LLM Cognitive Probe — Analysis Summary
 ==============================================================================
-Generated (local): 2026-04-22T20:10:18
+Generated (local): 2026-04-24T10:35:58
 
 [Input]
-  results_file: E:\college\postgraduate\llm_cognitive\doubao-seed-2-0-lite-260215\Societal&Ethical\probe_results.jsonl
+  results_file: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Societal&Ethical\probe_results.jsonl
   records (non-empty JSONL lines): 500
 
 [Merge]
   merge_method: llm
-  refresh_merge: True
+  refresh_merge: False
   name_source: step3
   chart_top_n: 30
 
 [Counts]
   raw_unique_names: 306
   raw_total_mentions: 903
-  canonical_unique_names: 258
+  canonical_unique_names: 59
   canonical_total_mentions: 903
-  distinct_label_reduction: 306 raw → 258 canonical (15.7% fewer labels)
+  distinct_label_reduction: 306 raw → 59 canonical (80.7% fewer labels)
 
 [Output artifacts]
   merge_map.json: yes
-  merge_map.embeddings.json: no
+  merge_map_llm_stage1.json: yes
+  merge_map_llm_stage1.embeddings.json: yes
+  merge_map_llm_stage2.json: yes
   model_law_frequency.png: yes
   model_law_wordcloud.png: yes
-  cluster_dendrogram.png: no
-  cluster_scatter.png: no
+  cluster_dendrogram.png: yes
+  cluster_scatter.png: yes
 
 [Top 30 raw names — before merge / 归并前（原始标签频次）]
   rank   count  name
@@ -63,525 +65,970 @@ Generated (local): 2026-04-22T20:10:18
 
 [Top 30 canonical names — after merge / 归并后（代表名频次）]
   rank   count  name
-     1     141  signaling game
-     2     108  bayesian updating
-     3      50  principal agent model
-     4      35  expected utility theory
-     5      31  minimax
-     6      29  nash bargaining solution
-     7      26  subgame perfect equilibrium
+     1     142  signaling game
+     2     120  bayesian inference
+     3      77  nash equilibrium
+     4      61  game theory games
+     5      52  principal-agent theory
+     6      42  expected utility theory
+     7      38  minimax decision rule
      8      26  constrained optimization
-     9      19  positive feedback loop
-    10      19  constraint satisfaction problem
-    11      13  asymmetric information
-    12      13  sequential game
-    13      12  deterrence model
-    14      10  signal detection theory
-    15       9  threshold model
-    16       9  nash equilibrium
-    17       8  decision tree analysis
-    18       8  credible commitment
-    19       7  coase theorem
-    20       7  hypothesis testing
-    21       7  shortest path problem
-    22       6  real option
-    23       6  sir model
-    24       5  sequential decision making
-    25       5  dynamic programming
-    26       5  absorbing markov chain
-    27       5  information cascade
-    28       5  priority queueing model
-    29       5  path dependence
-    30       5  optimal stopping
+     9      25  threshold models
+    10      22  feedback control
+    11      21  dynamic programming
+    12      21  constraint satisfaction
+    13      16  real options theory
+    14      15  risk management
+    15      15  information asymmetry
+    16      12  statistical hypothesis testing
+    17      12  network theory
+    18      11  mechanism design
+    19      11  network flow problems
+    20      10  decision tree
+    21      10  coase theorem
+    22      10  queueing theory
+    23      10  signal detection theory
+    24      10  behavioral biases
+    25       9  causal inference
+    26       9  sequential game
+    27       8  search algorithms
+    28       8  markov chains
+    29       8  data management
+    30       7  cost-benefit analysis
 
-[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 27 clusters]
-  [#1] representative: principal agent model  ·  9 members
+[Clusters with actual merge (≥2 raw labels → one canonical / 真正发生聚类的项): 36 clusters]
+  [#1] representative: game theory games  ·  36 members
+      · audit game
+      · bargaining game
+      · bargaining model
+      · commitment device
+      · common knowledge
+      · coordination game
+      · credible commitment
+      · credible threat
+      · deterrence equilibrium
+      · deterrence game
+      · deterrence model
+      · deterrence theory
+      · deterrenceequilibrium
+      · entry deterrence
+      · entry deterrence game
+      · extortion game
+      · finite game
+      · first mover advantage
+      · focal point
+      · free riding problem
+      · inspector game
+      · litigation settlement game
+      · precommitment
+      · preemption game
+      · prisoner's dilemma
+      · public goods game
+      · rational deterrence theory
+      · repeated game
+      · repeated prisoner's dilemma
+      · rubinstein bargaining model
+      · schelling coordination game
+      · schelling point
+      · schellingpoint
+      · tragedy of the commons
+      · ultimatum game
+      · weighted voting game
+  [#2] representative: nash equilibrium  ·  18 members
+      · asymmetric nash bargaining solution
+      · backward induction
+      · collusive equilibrium
+      · collusiveequilibrium
+      · dominant strategy equilibrium
+      · dominantstrategyequilibrium
+      · equilibrium selection
+      · iterated elimination of dominated strategies
+      · multiple equilibrium
+      · multiple stable equilibria
+      · nash bargaining model
+      · nash bargaining solution
+      · nash equilibrium  [代表]
+      · nashbargainingsolution
+      · perfect bayesian equilibrium
+      · sequential equilibrium
+      · subgame perfect equilibrium
+      · subgame perfect nash equilibrium
+  [#3] representative: principal-agent theory  ·  17 members
       · adverse selection
       · agency theory
       · hidden action model
-      · incentive compatibility
+      · hidden information
+      · hidden information model
+      · hold up problem
+      · incomplete contract
+      · incomplete contract model
       · moral hazard
-      · principal agent model  [代表]
+      · moral hazard model
+      · principal agent model
       · principal agent problem
+      · principalagent model
       · principalagentmodel
-      · revelation principle
-  [#2] representative: signaling game  ·  7 members
+      · screening
+      · screening game
+      · screening model
+  [#4] representative: risk management  ·  14 members
+      · empirical risk minimization
+      · hedging
+      · loss minimization
+      · mean variance optimization
+      · portfolio diversification
+      · risk diversification
+      · risk minimization
+      · risk pooling
+      · risk sharing
+      · riskdiversification
+      · riskminimization
+      · structural risk minimization
+      · tail risk hedging
+      · variance reduction
+  [#5] representative: minimax decision rule  ·  12 members
+      · maximin criterion
+      · maximin model
+      · maximin principle
+      · minimax
+      · minimax algorithm
+      · minimax criterion
+      · minimax decision rule  [代表]
+      · minimax principle
+      · minimax regret
+      · minimax rule
+      · minimax theorem
+      · minimaxregretmodel
+  [#6] representative: network theory  ·  12 members
+      · access control
+      · connectivity augmentation
+      · core periphery model
+      · deadlock resolution
+      · distributed consensus
+      · edge cut
+      · k out of n system
+      · load balancing
+      · mix network
+      · network centrality
+      · parallel redundancy model
+      · tie breaking
+  [#7] representative: threshold models  ·  12 members
+      · bandwagoneffect
+      · binary threshold model
+      · contagion model
+      · critical mass model
+      · information cascade
+      · linear threshold model
+      · majorityillusion
+      · pluralistic ignorance
+      · pluralisticignorance
+      · social contagion model
+      · threshold model
+      · thresholdmodel
+  [#8] representative: real options theory  ·  11 members
+      · contingent claim
+      · contingent claim pricing
+      · contingent contract
+      · contingentcontract
+      · option value
+      · real option
+      · real option model
+      · real option theory
+      · real options
+      · real options analysis
+      · real options theory  [代表]
+  [#9] representative: bayesian inference  ·  10 members
+      · bayes' theorem
+      · bayesian decision theory
+      · bayesian game
+      · bayesian persuasion
+      · bayesian updating
+      · bayesianinference
+      · bayesianupdating
+      · kalman filtering
+      · naive bayes classifier
+      · weight of evidence
+  [#10] representative: behavioral biases  ·  10 members
+      · ambiguity aversion
+      · backfire effect
+      · default effect
+      · framing effect
+      · lock in effect
+      · measurement error bias
+      · motivated reasoning
+      · rational inattention
+      · sampling bias
+      · status quo bias
+  [#11] representative: expected utility theory  ·  10 members
+      · expected loss minimization
+      · expected utility maximization
+      · expected utility model
+      · expected utility theory  [代表]
+      · expected value maximization
+      · expectedpayoffmaximization
+      · expectedutilitymaximization
+      · minimum expected loss
+      · optimal information acquisition
+      · value of information
+  [#12] representative: causal inference  ·  8 members
+      · backdoor adjustment
+      · causal graph
+      · causal identification
+      · causalidentification
+      · d separation
+      · do calculus
+      · rubin causal model
+      · structural causal model
+  [#13] representative: dynamic programming  ·  8 members
+      · dynamic programming  [代表]
+      · markov decision process
+      · optimal stopping
+      · optimal stopping problem
+      · optimal stopping theory
+      · sequential decision making
+      · sequential decision model
+      · sequential decision tree
+  [#14] representative: search algorithms  ·  8 members
+      · greedy algorithm
+      · lexicographical order
+      · optimal search theory
+      · parallel search
+      · priority scheduling
+      · priorityassignmentmodel
+      · search theory
+      · sequential search
+  [#15] representative: signaling game  ·  8 members
       · costly signaling
+      · pooling equilibrium
       · separating equilibrium
       · signaling
       · signaling game  [代表]
       · signaling model
       · signalinggame
       · signalingmodel
-  [#3] representative: minimax  ·  5 members
-      · minimax  [代表]
-      · minimax criterion
-      · minimax regret
-      · minimax rule
-      · minimax theorem
-  [#4] representative: deterrence model  ·  4 members
-      · deterrence equilibrium
-      · deterrence game
-      · deterrence model  [代表]
-      · deterrence theory
-  [#5] representative: expected utility theory  ·  3 members
-      · expected utility maximization
-      · expected utility model
-      · expected utility theory  [代表]
-  [#6] representative: nash equilibrium  ·  3 members
-      · dominant strategy equilibrium
-      · equilibrium selection
-      · nash equilibrium  [代表]
-  [#7] representative: sequential game  ·  3 members
-      · sequential bargaining
-      · sequential equilibrium
-      · sequential game  [代表]
-  [#8] representative: subgame perfect equilibrium  ·  3 members
-      · backward induction
-      · subgame perfect equilibrium  [代表]
-      · subgame perfect nash equilibrium
-  [#9] representative: absorbing markov chain  ·  2 members
-      · absorbing markov chain  [代表]
-      · absorbing state
-  [#10] representative: asymmetric information  ·  2 members
-      · asymmetric information  [代表]
-      · information asymmetry
-  [#11] representative: bayesian updating  ·  2 members
-      · bayesian updating  [代表]
-      · bayesianupdating
-  [#12] representative: coase theorem  ·  2 members
+  [#16] representative: data management  ·  7 members
+      · anomaly detection
+      · entity resolution
+      · missing value imputation
+      · record linkage
+      · set partitioning
+      · state elimination
+      · state space partitioning
+  [#17] representative: statistical hypothesis testing  ·  7 members
+      · hypothesis testing
+      · hypothesistesting
+      · likelihood ratio test
+      · neyman pearson lemma
+      · null hypothesis significance testing
+      · sequential hypothesis testing
+      · statistical hypothesis testing  [代表]
+  [#18] representative: network flow problems  ·  6 members
+      · max flow min cut theorem
+      · maximum flow
+      · minimum cost maximum flow
+      · minimum cut
+      · path interdiction
+      · shortest path problem
+  [#19] representative: coase theorem  ·  5 members
       · coase theorem  [代表]
       · coasetheorem
-  [#13] representative: constrained optimization  ·  2 members
+      · internalization of externalities
+      · pigouvian taxation
+      · tax incidence
+  [#20] representative: collective action  ·  5 members
+      · collective action model
+      · duverger's law
+      · median voter theorem
+      · minimum winning coalition
+      · threshold model of collective action
+  [#21] representative: cost-benefit analysis  ·  5 members
+      · compound interest
+      · cost benefit analysis
+      · exponential decay
+      · exponential growth model
+      · net present value
+  [#22] representative: feedback control  ·  5 members
+      · negative feedback control
+      · positive feedback
+      · positive feedback loop
+      · positive feedback system
+      · positivefeedbackloop
+  [#23] representative: financial economics  ·  5 members
+      · costly punishment
+      · credit risk transfer
+      · institutional arbitrage
+      · issuelinkage
+      · lemons model
+  [#24] representative: queueing theory  ·  5 members
+      · priority queueing model
+      · priority queuing
+      · priority queuing model
+      · priorityqueueingmodel
+      · queueing theory  [代表]
+  [#25] representative: constraint satisfaction  ·  4 members
+      · constraint relaxation
+      · constraint relaxation method
+      · constraint satisfaction  [代表]
+      · constraint satisfaction problem
+  [#26] representative: decision tree  ·  4 members
+      · decision tree  [代表]
+      · decision tree analysis
+      · decision tree pruning
+      · fault tree analysis
+  [#27] representative: information asymmetry  ·  4 members
+      · asymmetric information
+      · asymmetric information bargaining
+      · asymmetric information model
+      · information asymmetry  [代表]
+  [#28] representative: information theory  ·  4 members
+      · information gain
+      · information gain maximization
+      · minimum description length
+      · shannon entropy
+  [#29] representative: markov chains  ·  4 members
+      · absorbing markov chain
+      · absorbing state
+      · branching process
+      · state transition model
+  [#30] representative: mechanism design  ·  4 members
+      · incentive compatibility
+      · incentive compatibility constraint
+      · preference revelation mechanism
+      · revelation principle
+  [#31] representative: incomplete information bargaining  ·  3 members
+      · bargaining under incomplete information
+      · incomplete information bargaining  [代表]
+      · incomplete information game
+  [#32] representative: matching theory  ·  3 members
+      · assortative matching
+      · matching theory  [代表]
+      · stable matching
+  [#33] representative: sequential game  ·  3 members
+      · sequential game  [代表]
+      · sequential move game
+      · sequentialgame
+  [#34] representative: constrained optimization  ·  2 members
       · constrained optimization  [代表]
       · constrainedoptimization
-  [#14] representative: constraint satisfaction problem  ·  2 members
-      · constraint satisfaction
-      · constraint satisfaction problem  [代表]
-  [#15] representative: contingent contract  ·  2 members
-      · contingent contract  [代表]
-      · incomplete contract
-  [#16] representative: cost benefit analysis  ·  2 members
-      · cost benefit analysis  [代表]
-      · net present value
-  [#17] representative: credible commitment  ·  2 members
-      · credible commitment  [代表]
-      · credible threat
-  [#18] representative: decision tree analysis  ·  2 members
-      · decision tree
-      · decision tree analysis  [代表]
-  [#19] representative: hypothesis testing  ·  2 members
-      · hypothesis testing  [代表]
-      · hypothesistesting
-  [#20] representative: nash bargaining solution  ·  2 members
-      · nash bargaining solution  [代表]
-      · nashbargainingsolution
-  [#21] representative: optimal stopping  ·  2 members
-      · optimal stopping  [代表]
-      · optimal stopping theory
-  [#22] representative: positive feedback loop  ·  2 members
-      · positive feedback
-      · positive feedback loop  [代表]
-  [#23] representative: priority queueing model  ·  2 members
-      · priority queueing model  [代表]
-      · priority queuing model
-  [#24] representative: real option  ·  2 members
-      · real option  [代表]
-      · real options
-  [#25] representative: sequential decision making  ·  2 members
-      · sequential decision making  [代表]
-      · sequential decision model
-  [#26] representative: shortest path problem  ·  2 members
-      · minimum cut
-      · shortest path problem  [代表]
-  [#27] representative: sir model  ·  2 members
-      · contagion model
-      · sir model  [代表]
+  [#35] representative: path analysis  ·  2 members
+      · path analysis  [代表]
+      · path dependence
+  [#36] representative: robust statistics  ·  2 members
+      · robust estimation
+      · robust optimization
 
-[Merge map: raw → canonical where label changed (49 pairs)]
-  absorbing state  →  absorbing markov chain
-  information asymmetry  →  asymmetric information
-  bayesianupdating  →  bayesian updating
+[Merge map: raw → canonical where label changed (268 pairs)]
+  bayes' theorem  →  bayesian inference
+  bayesian decision theory  →  bayesian inference
+  bayesian game  →  bayesian inference
+  bayesian persuasion  →  bayesian inference
+  bayesian updating  →  bayesian inference
+  bayesianinference  →  bayesian inference
+  bayesianupdating  →  bayesian inference
+  kalman filtering  →  bayesian inference
+  naive bayes classifier  →  bayesian inference
+  weight of evidence  →  bayesian inference
+  ambiguity aversion  →  behavioral biases
+  backfire effect  →  behavioral biases
+  default effect  →  behavioral biases
+  framing effect  →  behavioral biases
+  lock in effect  →  behavioral biases
+  measurement error bias  →  behavioral biases
+  motivated reasoning  →  behavioral biases
+  rational inattention  →  behavioral biases
+  sampling bias  →  behavioral biases
+  status quo bias  →  behavioral biases
+  backdoor adjustment  →  causal inference
+  causal graph  →  causal inference
+  causal identification  →  causal inference
+  causalidentification  →  causal inference
+  d separation  →  causal inference
+  do calculus  →  causal inference
+  rubin causal model  →  causal inference
+  structural causal model  →  causal inference
   coasetheorem  →  coase theorem
-  competitive lotka–volterra model  →  competitive lotka-volterra model
+  internalization of externalities  →  coase theorem
+  pigouvian taxation  →  coase theorem
+  tax incidence  →  coase theorem
+  collective action model  →  collective action
+  duverger's law  →  collective action
+  median voter theorem  →  collective action
+  minimum winning coalition  →  collective action
+  threshold model of collective action  →  collective action
   constrainedoptimization  →  constrained optimization
-  constraint satisfaction  →  constraint satisfaction problem
-  incomplete contract  →  contingent contract
-  net present value  →  cost benefit analysis
-  credible threat  →  credible commitment
-  decision tree  →  decision tree analysis
-  deterrence equilibrium  →  deterrence model
-  deterrence game  →  deterrence model
-  deterrence theory  →  deterrence model
+  constraint relaxation  →  constraint satisfaction
+  constraint relaxation method  →  constraint satisfaction
+  constraint satisfaction problem  →  constraint satisfaction
+  compound interest  →  cost-benefit analysis
+  cost benefit analysis  →  cost-benefit analysis
+  exponential decay  →  cost-benefit analysis
+  exponential growth model  →  cost-benefit analysis
+  net present value  →  cost-benefit analysis
+  anomaly detection  →  data management
+  entity resolution  →  data management
+  missing value imputation  →  data management
+  record linkage  →  data management
+  set partitioning  →  data management
+  state elimination  →  data management
+  state space partitioning  →  data management
+  decision tree analysis  →  decision tree
+  decision tree pruning  →  decision tree
+  fault tree analysis  →  decision tree
+  dempster shafer theory  →  dempster-shafer theory
+  markov decision process  →  dynamic programming
+  optimal stopping  →  dynamic programming
+  optimal stopping problem  →  dynamic programming
+  optimal stopping theory  →  dynamic programming
+  sequential decision making  →  dynamic programming
+  sequential decision model  →  dynamic programming
+  sequential decision tree  →  dynamic programming
+  expected loss minimization  →  expected utility theory
   expected utility maximization  →  expected utility theory
   expected utility model  →  expected utility theory
-  hypothesistesting  →  hypothesis testing
-  minimax criterion  →  minimax
-  minimax regret  →  minimax
-  minimax rule  →  minimax
-  minimax theorem  →  minimax
-  nashbargainingsolution  →  nash bargaining solution
+  expected value maximization  →  expected utility theory
+  expectedpayoffmaximization  →  expected utility theory
+  expectedutilitymaximization  →  expected utility theory
+  minimum expected loss  →  expected utility theory
+  optimal information acquisition  →  expected utility theory
+  value of information  →  expected utility theory
+  negative feedback control  →  feedback control
+  positive feedback  →  feedback control
+  positive feedback loop  →  feedback control
+  positive feedback system  →  feedback control
+  positivefeedbackloop  →  feedback control
+  costly punishment  →  financial economics
+  credit risk transfer  →  financial economics
+  institutional arbitrage  →  financial economics
+  issuelinkage  →  financial economics
+  lemons model  →  financial economics
+  audit game  →  game theory games
+  bargaining game  →  game theory games
+  bargaining model  →  game theory games
+  commitment device  →  game theory games
+  common knowledge  →  game theory games
+  coordination game  →  game theory games
+  credible commitment  →  game theory games
+  credible threat  →  game theory games
+  deterrence equilibrium  →  game theory games
+  deterrence game  →  game theory games
+  deterrence model  →  game theory games
+  deterrence theory  →  game theory games
+  deterrenceequilibrium  →  game theory games
+  entry deterrence  →  game theory games
+  entry deterrence game  →  game theory games
+  extortion game  →  game theory games
+  finite game  →  game theory games
+  first mover advantage  →  game theory games
+  focal point  →  game theory games
+  free riding problem  →  game theory games
+  inspector game  →  game theory games
+  litigation settlement game  →  game theory games
+  precommitment  →  game theory games
+  preemption game  →  game theory games
+  prisoner's dilemma  →  game theory games
+  public goods game  →  game theory games
+  rational deterrence theory  →  game theory games
+  repeated game  →  game theory games
+  repeated prisoner's dilemma  →  game theory games
+  rubinstein bargaining model  →  game theory games
+  schelling coordination game  →  game theory games
+  schelling point  →  game theory games
+  schellingpoint  →  game theory games
+  tragedy of the commons  →  game theory games
+  ultimatum game  →  game theory games
+  weighted voting game  →  game theory games
+  bargaining under incomplete information  →  incomplete information bargaining
+  incomplete information game  →  incomplete information bargaining
+  asymmetric information  →  information asymmetry
+  asymmetric information bargaining  →  information asymmetry
+  asymmetric information model  →  information asymmetry
+  information gain  →  information theory
+  information gain maximization  →  information theory
+  minimum description length  →  information theory
+  shannon entropy  →  information theory
+  competitive lotka–volterra model  →  lotka-volterra model
+  absorbing markov chain  →  markov chains
+  absorbing state  →  markov chains
+  branching process  →  markov chains
+  state transition model  →  markov chains
+  assortative matching  →  matching theory
+  stable matching  →  matching theory
+  incentive compatibility  →  mechanism design
+  incentive compatibility constraint  →  mechanism design
+  preference revelation mechanism  →  mechanism design
+  revelation principle  →  mechanism design
+  maximin criterion  →  minimax decision rule
+  maximin model  →  minimax decision rule
+  maximin principle  →  minimax decision rule
+  minimax  →  minimax decision rule
+  minimax algorithm  →  minimax decision rule
+  minimax criterion  →  minimax decision rule
+  minimax principle  →  minimax decision rule
+  minimax regret  →  minimax decision rule
+  minimax rule  →  minimax decision rule
+  minimax theorem  →  minimax decision rule
+  minimaxregretmodel  →  minimax decision rule
+  asymmetric nash bargaining solution  →  nash equilibrium
+  backward induction  →  nash equilibrium
+  collusive equilibrium  →  nash equilibrium
+  collusiveequilibrium  →  nash equilibrium
   dominant strategy equilibrium  →  nash equilibrium
+  dominantstrategyequilibrium  →  nash equilibrium
   equilibrium selection  →  nash equilibrium
-  optimal stopping theory  →  optimal stopping
-  positive feedback  →  positive feedback loop
-  adverse selection  →  principal agent model
-  agency theory  →  principal agent model
-  hidden action model  →  principal agent model
-  incentive compatibility  →  principal agent model
-  moral hazard  →  principal agent model
-  principal agent problem  →  principal agent model
-  principalagentmodel  →  principal agent model
-  revelation principle  →  principal agent model
-  priority queuing model  →  priority queueing model
-  real options  →  real option
-  sequential decision model  →  sequential decision making
-  sequential bargaining  →  sequential game
-  sequential equilibrium  →  sequential game
-  minimum cut  →  shortest path problem
+  iterated elimination of dominated strategies  →  nash equilibrium
+  multiple equilibrium  →  nash equilibrium
+  multiple stable equilibria  →  nash equilibrium
+  nash bargaining model  →  nash equilibrium
+  nash bargaining solution  →  nash equilibrium
+  nashbargainingsolution  →  nash equilibrium
+  perfect bayesian equilibrium  →  nash equilibrium
+  sequential equilibrium  →  nash equilibrium
+  subgame perfect equilibrium  →  nash equilibrium
+  subgame perfect nash equilibrium  →  nash equilibrium
+  max flow min cut theorem  →  network flow problems
+  maximum flow  →  network flow problems
+  minimum cost maximum flow  →  network flow problems
+  minimum cut  →  network flow problems
+  path interdiction  →  network flow problems
+  shortest path problem  →  network flow problems
+  access control  →  network theory
+  connectivity augmentation  →  network theory
+  core periphery model  →  network theory
+  deadlock resolution  →  network theory
+  distributed consensus  →  network theory
+  edge cut  →  network theory
+  k out of n system  →  network theory
+  load balancing  →  network theory
+  mix network  →  network theory
+  network centrality  →  network theory
+  parallel redundancy model  →  network theory
+  tie breaking  →  network theory
+  path dependence  →  path analysis
+  adverse selection  →  principal-agent theory
+  agency theory  →  principal-agent theory
+  hidden action model  →  principal-agent theory
+  hidden information  →  principal-agent theory
+  hidden information model  →  principal-agent theory
+  hold up problem  →  principal-agent theory
+  incomplete contract  →  principal-agent theory
+  incomplete contract model  →  principal-agent theory
+  moral hazard  →  principal-agent theory
+  moral hazard model  →  principal-agent theory
+  principal agent model  →  principal-agent theory
+  principal agent problem  →  principal-agent theory
+  principalagent model  →  principal-agent theory
+  principalagentmodel  →  principal-agent theory
+  screening  →  principal-agent theory
+  screening game  →  principal-agent theory
+  screening model  →  principal-agent theory
+  priority queueing model  →  queueing theory
+  priority queuing  →  queueing theory
+  priority queuing model  →  queueing theory
+  priorityqueueingmodel  →  queueing theory
+  contingent claim  →  real options theory
+  contingent claim pricing  →  real options theory
+  contingent contract  →  real options theory
+  contingentcontract  →  real options theory
+  option value  →  real options theory
+  real option  →  real options theory
+  real option model  →  real options theory
+  real option theory  →  real options theory
+  real options  →  real options theory
+  real options analysis  →  real options theory
+  empirical risk minimization  →  risk management
+  hedging  →  risk management
+  loss minimization  →  risk management
+  mean variance optimization  →  risk management
+  portfolio diversification  →  risk management
+  risk diversification  →  risk management
+  risk minimization  →  risk management
+  risk pooling  →  risk management
+  risk sharing  →  risk management
+  riskdiversification  →  risk management
+  riskminimization  →  risk management
+  structural risk minimization  →  risk management
+  tail risk hedging  →  risk management
+  variance reduction  →  risk management
+  robust estimation  →  robust statistics
+  robust optimization  →  robust statistics
+  greedy algorithm  →  search algorithms
+  lexicographical order  →  search algorithms
+  optimal search theory  →  search algorithms
+  parallel search  →  search algorithms
+  priority scheduling  →  search algorithms
+  priorityassignmentmodel  →  search algorithms
+  search theory  →  search algorithms
+  sequential search  →  search algorithms
+  sequential move game  →  sequential game
+  sequentialgame  →  sequential game
   costly signaling  →  signaling game
+  pooling equilibrium  →  signaling game
   separating equilibrium  →  signaling game
   signaling  →  signaling game
   signaling model  →  signaling game
   signalinggame  →  signaling game
   signalingmodel  →  signaling game
-  contagion model  →  sir model
-  backward induction  →  subgame perfect equilibrium
-  subgame perfect nash equilibrium  →  subgame perfect equilibrium
+  hypothesis testing  →  statistical hypothesis testing
+  hypothesistesting  →  statistical hypothesis testing
+  likelihood ratio test  →  statistical hypothesis testing
+  neyman pearson lemma  →  statistical hypothesis testing
+  null hypothesis significance testing  →  statistical hypothesis testing
+  sequential hypothesis testing  →  statistical hypothesis testing
+  bandwagoneffect  →  threshold models
+  binary threshold model  →  threshold models
+  contagion model  →  threshold models
+  critical mass model  →  threshold models
+  information cascade  →  threshold models
+  linear threshold model  →  threshold models
+  majorityillusion  →  threshold models
+  pluralistic ignorance  →  threshold models
+  pluralisticignorance  →  threshold models
+  social contagion model  →  threshold models
+  threshold model  →  threshold models
+  thresholdmodel  →  threshold models
 
-[Merge cluster details / 归并簇完整明细（共 258 簇，其中 27 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
-  [1] 代表名: principal agent model  ·  9 条
+[Merge cluster details / 归并簇完整明细（共 59 簇，其中 36 簇含 ≥2 条原始标签；按簇大小与代表名排序；含单条；与开启 COGNITIVE_MERGE_VERBOSE 时控制台聚类明细一致，默认仅写入本日志）]
+  [1] 代表名: game theory games  ·  36 条
+      · audit game
+      · bargaining game
+      · bargaining model
+      · commitment device
+      · common knowledge
+      · coordination game
+      · credible commitment
+      · credible threat
+      · deterrence equilibrium
+      · deterrence game
+      · deterrence model
+      · deterrence theory
+      · deterrenceequilibrium
+      · entry deterrence
+      · entry deterrence game
+      · extortion game
+      · finite game
+      · first mover advantage
+      · focal point
+      · free riding problem
+      · inspector game
+      · litigation settlement game
+      · precommitment
+      · preemption game
+      · prisoner's dilemma
+      · public goods game
+      · rational deterrence theory
+      · repeated game
+      · repeated prisoner's dilemma
+      · rubinstein bargaining model
+      · schelling coordination game
+      · schelling point
+      · schellingpoint
+      · tragedy of the commons
+      · ultimatum game
+      · weighted voting game
+  [2] 代表名: nash equilibrium  ·  18 条
+      · asymmetric nash bargaining solution
+      · backward induction
+      · collusive equilibrium
+      · collusiveequilibrium
+      · dominant strategy equilibrium
+      · dominantstrategyequilibrium
+      · equilibrium selection
+      · iterated elimination of dominated strategies
+      · multiple equilibrium
+      · multiple stable equilibria
+      · nash bargaining model
+      · nash bargaining solution
+      · nash equilibrium  [代表]
+      · nashbargainingsolution
+      · perfect bayesian equilibrium
+      · sequential equilibrium
+      · subgame perfect equilibrium
+      · subgame perfect nash equilibrium
+  [3] 代表名: principal-agent theory  ·  17 条
       · adverse selection
       · agency theory
       · hidden action model
-      · incentive compatibility
+      · hidden information
+      · hidden information model
+      · hold up problem
+      · incomplete contract
+      · incomplete contract model
       · moral hazard
-      · principal agent model  [代表]
+      · moral hazard model
+      · principal agent model
       · principal agent problem
+      · principalagent model
       · principalagentmodel
-      · revelation principle
-  [2] 代表名: signaling game  ·  7 条
+      · screening
+      · screening game
+      · screening model
+  [4] 代表名: risk management  ·  14 条
+      · empirical risk minimization
+      · hedging
+      · loss minimization
+      · mean variance optimization
+      · portfolio diversification
+      · risk diversification
+      · risk minimization
+      · risk pooling
+      · risk sharing
+      · riskdiversification
+      · riskminimization
+      · structural risk minimization
+      · tail risk hedging
+      · variance reduction
+  [5] 代表名: minimax decision rule  ·  12 条
+      · maximin criterion
+      · maximin model
+      · maximin principle
+      · minimax
+      · minimax algorithm
+      · minimax criterion
+      · minimax decision rule  [代表]
+      · minimax principle
+      · minimax regret
+      · minimax rule
+      · minimax theorem
+      · minimaxregretmodel
+  [6] 代表名: network theory  ·  12 条
+      · access control
+      · connectivity augmentation
+      · core periphery model
+      · deadlock resolution
+      · distributed consensus
+      · edge cut
+      · k out of n system
+      · load balancing
+      · mix network
+      · network centrality
+      · parallel redundancy model
+      · tie breaking
+  [7] 代表名: threshold models  ·  12 条
+      · bandwagoneffect
+      · binary threshold model
+      · contagion model
+      · critical mass model
+      · information cascade
+      · linear threshold model
+      · majorityillusion
+      · pluralistic ignorance
+      · pluralisticignorance
+      · social contagion model
+      · threshold model
+      · thresholdmodel
+  [8] 代表名: real options theory  ·  11 条
+      · contingent claim
+      · contingent claim pricing
+      · contingent contract
+      · contingentcontract
+      · option value
+      · real option
+      · real option model
+      · real option theory
+      · real options
+      · real options analysis
+      · real options theory  [代表]
+  [9] 代表名: bayesian inference  ·  10 条
+      · bayes' theorem
+      · bayesian decision theory
+      · bayesian game
+      · bayesian persuasion
+      · bayesian updating
+      · bayesianinference
+      · bayesianupdating
+      · kalman filtering
+      · naive bayes classifier
+      · weight of evidence
+  [10] 代表名: behavioral biases  ·  10 条
+      · ambiguity aversion
+      · backfire effect
+      · default effect
+      · framing effect
+      · lock in effect
+      · measurement error bias
+      · motivated reasoning
+      · rational inattention
+      · sampling bias
+      · status quo bias
+  [11] 代表名: expected utility theory  ·  10 条
+      · expected loss minimization
+      · expected utility maximization
+      · expected utility model
+      · expected utility theory  [代表]
+      · expected value maximization
+      · expectedpayoffmaximization
+      · expectedutilitymaximization
+      · minimum expected loss
+      · optimal information acquisition
+      · value of information
+  [12] 代表名: causal inference  ·  8 条
+      · backdoor adjustment
+      · causal graph
+      · causal identification
+      · causalidentification
+      · d separation
+      · do calculus
+      · rubin causal model
+      · structural causal model
+  [13] 代表名: dynamic programming  ·  8 条
+      · dynamic programming  [代表]
+      · markov decision process
+      · optimal stopping
+      · optimal stopping problem
+      · optimal stopping theory
+      · sequential decision making
+      · sequential decision model
+      · sequential decision tree
+  [14] 代表名: search algorithms  ·  8 条
+      · greedy algorithm
+      · lexicographical order
+      · optimal search theory
+      · parallel search
+      · priority scheduling
+      · priorityassignmentmodel
+      · search theory
+      · sequential search
+  [15] 代表名: signaling game  ·  8 条
       · costly signaling
+      · pooling equilibrium
       · separating equilibrium
       · signaling
       · signaling game  [代表]
       · signaling model
       · signalinggame
       · signalingmodel
-  [3] 代表名: minimax  ·  5 条
-      · minimax  [代表]
-      · minimax criterion
-      · minimax regret
-      · minimax rule
-      · minimax theorem
-  [4] 代表名: deterrence model  ·  4 条
-      · deterrence equilibrium
-      · deterrence game
-      · deterrence model  [代表]
-      · deterrence theory
-  [5] 代表名: expected utility theory  ·  3 条
-      · expected utility maximization
-      · expected utility model
-      · expected utility theory  [代表]
-  [6] 代表名: nash equilibrium  ·  3 条
-      · dominant strategy equilibrium
-      · equilibrium selection
-      · nash equilibrium  [代表]
-  [7] 代表名: sequential game  ·  3 条
-      · sequential bargaining
-      · sequential equilibrium
-      · sequential game  [代表]
-  [8] 代表名: subgame perfect equilibrium  ·  3 条
-      · backward induction
-      · subgame perfect equilibrium  [代表]
-      · subgame perfect nash equilibrium
-  [9] 代表名: absorbing markov chain  ·  2 条
-      · absorbing markov chain  [代表]
-      · absorbing state
-  [10] 代表名: asymmetric information  ·  2 条
-      · asymmetric information  [代表]
-      · information asymmetry
-  [11] 代表名: bayesian updating  ·  2 条
-      · bayesian updating  [代表]
-      · bayesianupdating
-  [12] 代表名: coase theorem  ·  2 条
+  [16] 代表名: data management  ·  7 条
+      · anomaly detection
+      · entity resolution
+      · missing value imputation
+      · record linkage
+      · set partitioning
+      · state elimination
+      · state space partitioning
+  [17] 代表名: statistical hypothesis testing  ·  7 条
+      · hypothesis testing
+      · hypothesistesting
+      · likelihood ratio test
+      · neyman pearson lemma
+      · null hypothesis significance testing
+      · sequential hypothesis testing
+      · statistical hypothesis testing  [代表]
+  [18] 代表名: network flow problems  ·  6 条
+      · max flow min cut theorem
+      · maximum flow
+      · minimum cost maximum flow
+      · minimum cut
+      · path interdiction
+      · shortest path problem
+  [19] 代表名: coase theorem  ·  5 条
       · coase theorem  [代表]
       · coasetheorem
-  [13] 代表名: constrained optimization  ·  2 条
+      · internalization of externalities
+      · pigouvian taxation
+      · tax incidence
+  [20] 代表名: collective action  ·  5 条
+      · collective action model
+      · duverger's law
+      · median voter theorem
+      · minimum winning coalition
+      · threshold model of collective action
+  [21] 代表名: cost-benefit analysis  ·  5 条
+      · compound interest
+      · cost benefit analysis
+      · exponential decay
+      · exponential growth model
+      · net present value
+  [22] 代表名: feedback control  ·  5 条
+      · negative feedback control
+      · positive feedback
+      · positive feedback loop
+      · positive feedback system
+      · positivefeedbackloop
+  [23] 代表名: financial economics  ·  5 条
+      · costly punishment
+      · credit risk transfer
+      · institutional arbitrage
+      · issuelinkage
+      · lemons model
+  [24] 代表名: queueing theory  ·  5 条
+      · priority queueing model
+      · priority queuing
+      · priority queuing model
+      · priorityqueueingmodel
+      · queueing theory  [代表]
+  [25] 代表名: constraint satisfaction  ·  4 条
+      · constraint relaxation
+      · constraint relaxation method
+      · constraint satisfaction  [代表]
+      · constraint satisfaction problem
+  [26] 代表名: decision tree  ·  4 条
+      · decision tree  [代表]
+      · decision tree analysis
+      · decision tree pruning
+      · fault tree analysis
+  [27] 代表名: information asymmetry  ·  4 条
+      · asymmetric information
+      · asymmetric information bargaining
+      · asymmetric information model
+      · information asymmetry  [代表]
+  [28] 代表名: information theory  ·  4 条
+      · information gain
+      · information gain maximization
+      · minimum description length
+      · shannon entropy
+  [29] 代表名: markov chains  ·  4 条
+      · absorbing markov chain
+      · absorbing state
+      · branching process
+      · state transition model
+  [30] 代表名: mechanism design  ·  4 条
+      · incentive compatibility
+      · incentive compatibility constraint
+      · preference revelation mechanism
+      · revelation principle
+  [31] 代表名: incomplete information bargaining  ·  3 条
+      · bargaining under incomplete information
+      · incomplete information bargaining  [代表]
+      · incomplete information game
+  [32] 代表名: matching theory  ·  3 条
+      · assortative matching
+      · matching theory  [代表]
+      · stable matching
+  [33] 代表名: sequential game  ·  3 条
+      · sequential game  [代表]
+      · sequential move game
+      · sequentialgame
+  [34] 代表名: constrained optimization  ·  2 条
       · constrained optimization  [代表]
       · constrainedoptimization
-  [14] 代表名: constraint satisfaction problem  ·  2 条
-      · constraint satisfaction
-      · constraint satisfaction problem  [代表]
-  [15] 代表名: contingent contract  ·  2 条
-      · contingent contract  [代表]
-      · incomplete contract
-  [16] 代表名: cost benefit analysis  ·  2 条
-      · cost benefit analysis  [代表]
-      · net present value
-  [17] 代表名: credible commitment  ·  2 条
-      · credible commitment  [代表]
-      · credible threat
-  [18] 代表名: decision tree analysis  ·  2 条
-      · decision tree
-      · decision tree analysis  [代表]
-  [19] 代表名: hypothesis testing  ·  2 条
-      · hypothesis testing  [代表]
-      · hypothesistesting
-  [20] 代表名: nash bargaining solution  ·  2 条
-      · nash bargaining solution  [代表]
-      · nashbargainingsolution
-  [21] 代表名: optimal stopping  ·  2 条
-      · optimal stopping  [代表]
-      · optimal stopping theory
-  [22] 代表名: positive feedback loop  ·  2 条
-      · positive feedback
-      · positive feedback loop  [代表]
-  [23] 代表名: priority queueing model  ·  2 条
-      · priority queueing model  [代表]
-      · priority queuing model
-  [24] 代表名: real option  ·  2 条
-      · real option  [代表]
-      · real options
-  [25] 代表名: sequential decision making  ·  2 条
-      · sequential decision making  [代表]
-      · sequential decision model
-  [26] 代表名: shortest path problem  ·  2 条
-      · minimum cut
-      · shortest path problem  [代表]
-  [27] 代表名: sir model  ·  2 条
-      · contagion model
-      · sir model  [代表]
-  [28] （单条）access control
-  [29] （单条）ambiguity aversion
-  [30] （单条）anomaly detection
-  [31] （单条）assortative matching
-  [32] （单条）asymmetric information bargaining
-  [33] （单条）asymmetric information model
-  [34] （单条）asymmetric nash bargaining solution
-  [35] （单条）audit game
-  [36] （单条）backdoor adjustment
-  [37] （单条）backfire effect
-  [38] （单条）bandwagoneffect
-  [39] （单条）bargaining game
-  [40] （单条）bargaining model
-  [41] （单条）bargaining under incomplete information
-  [42] （单条）barrier crossing
-  [43] （单条）bayes' theorem
-  [44] （单条）bayesian decision theory
-  [45] （单条）bayesian game
-  [46] （单条）bayesian persuasion
-  [47] （单条）bayesianinference
-  [48] （单条）binary threshold model
-  [49] （单条）branching process
-  [50] （单条）causal graph
-  [51] （单条）causal identification
-  [52] （单条）causalidentification
-  [53] （单条）collective action model
-  [54] （单条）collusive equilibrium
-  [55] （单条）collusiveequilibrium
-  [56] （单条）commitment device
-  [57] （单条）common knowledge
-  [58] （单条）competitive lotka–volterra model
-  [59] （单条）compound interest
-  [60] （单条）connectivity augmentation
-  [61] （单条）constraint relaxation
-  [62] （单条）constraint relaxation method
-  [63] （单条）contingent claim
-  [64] （单条）contingent claim pricing
-  [65] （单条）contingentcontract
-  [66] （单条）coordination game
-  [67] （单条）core periphery model
-  [68] （单条）costly punishment
-  [69] （单条）credit risk transfer
-  [70] （单条）critical mass model
-  [71] （单条）d separation
-  [72] （单条）deadlock resolution
-  [73] （单条）decision tree pruning
-  [74] （单条）default effect
-  [75] （单条）dempster shafer theory
-  [76] （单条）deterrenceequilibrium
-  [77] （单条）distributed consensus
-  [78] （单条）do calculus
-  [79] （单条）dominantstrategyequilibrium
-  [80] （单条）duverger's law
-  [81] （单条）dynamic programming
-  [82] （单条）edge cut
-  [83] （单条）empirical risk minimization
-  [84] （单条）entity resolution
-  [85] （单条）entry deterrence
-  [86] （单条）entry deterrence game
-  [87] （单条）error correction model
-  [88] （单条）evidence accumulation
-  [89] （单条）expected loss minimization
-  [90] （单条）expected value maximization
-  [91] （单条）expectedpayoffmaximization
-  [92] （单条）expectedutilitymaximization
-  [93] （单条）exponential decay
-  [94] （单条）exponential growth model
-  [95] （单条）extortion game
-  [96] （单条）fault tree analysis
-  [97] （单条）finite game
-  [98] （单条）first mover advantage
-  [99] （单条）focal point
-  [100] （单条）framing effect
-  [101] （单条）free riding problem
-  [102] （单条）greedy algorithm
-  [103] （单条）hedging
-  [104] （单条）hidden information
-  [105] （单条）hidden information model
-  [106] （单条）hold up problem
-  [107] （单条）incentive compatibility constraint
-  [108] （单条）incomplete contract model
-  [109] （单条）incomplete information bargaining
-  [110] （单条）incomplete information game
-  [111] （单条）information cascade
-  [112] （单条）information gain
-  [113] （单条）information gain maximization
-  [114] （单条）inspector game
-  [115] （单条）institutional arbitrage
-  [116] （单条）internalization of externalities
-  [117] （单条）issuelinkage
-  [118] （单条）iterated elimination of dominated strategies
-  [119] （单条）k out of n system
-  [120] （单条）kalman filtering
-  [121] （单条）lemons model
-  [122] （单条）lexicographical order
-  [123] （单条）likelihood ratio test
-  [124] （单条）linear threshold model
-  [125] （单条）liquidityconstraint
-  [126] （单条）litigation settlement game
-  [127] （单条）load balancing
-  [128] （单条）lock in effect
-  [129] （单条）loss minimization
-  [130] （单条）majorityillusion
-  [131] （单条）marginal analysis
-  [132] （单条）marketselection
-  [133] （单条）markov decision process
-  [134] （单条）matching theory
-  [135] （单条）max flow min cut theorem
-  [136] （单条）maximin criterion
-  [137] （单条）maximin model
-  [138] （单条）maximin principle
-  [139] （单条）maximum flow
-  [140] （单条）mean variance optimization
-  [141] （单条）measurement error bias
-  [142] （单条）mechanismdesign
-  [143] （单条）median voter theorem
-  [144] （单条）minimax algorithm
-  [145] （单条）minimax decision rule
-  [146] （单条）minimax principle
-  [147] （单条）minimaxregretmodel
-  [148] （单条）minimum cost maximum flow
-  [149] （单条）minimum description length
-  [150] （单条）minimum expected loss
-  [151] （单条）minimum winning coalition
-  [152] （单条）missing value imputation
-  [153] （单条）mix network
-  [154] （单条）moral hazard model
-  [155] （单条）motivated reasoning
-  [156] （单条）multiple equilibrium
-  [157] （单条）multiple stable equilibria
-  [158] （单条）naive bayes classifier
-  [159] （单条）nash bargaining model
-  [160] （单条）negative feedback control
-  [161] （单条）network centrality
-  [162] （单条）neyman pearson lemma
-  [163] （单条）null hypothesis significance testing
-  [164] （单条）optimal information acquisition
-  [165] （单条）optimal resource allocation
-  [166] （单条）optimal search theory
-  [167] （单条）optimal stopping problem
-  [168] （单条）option value
-  [169] （单条）parallel redundancy model
-  [170] （单条）parallel search
-  [171] （单条）pareto improvement
-  [172] （单条）path analysis
-  [173] （单条）path dependence
-  [174] （单条）path interdiction
-  [175] （单条）perfect bayesian equilibrium
-  [176] （单条）pigouvian taxation
-  [177] （单条）pluralistic ignorance
-  [178] （单条）pluralisticignorance
-  [179] （单条）pooling equilibrium
-  [180] （单条）portfolio diversification
-  [181] （单条）positive feedback system
-  [182] （单条）positivefeedbackloop
-  [183] （单条）precommitment
-  [184] （单条）preemption game
-  [185] （单条）preference revelation mechanism
-  [186] （单条）principalagent model
-  [187] （单条）priority queuing
-  [188] （单条）priority scheduling
-  [189] （单条）priorityassignmentmodel
-  [190] （单条）priorityqueueingmodel
-  [191] （单条）prisoner's dilemma
-  [192] （单条）profit maximization model
-  [193] （单条）proportional allocation
-  [194] （单条）prospecttheory
-  [195] （单条）public goods game
-  [196] （单条）queueing theory
-  [197] （单条）rational deterrence theory
-  [198] （单条）rational inattention
-  [199] （单条）real option model
-  [200] （单条）real option theory
-  [201] （单条）real options analysis
-  [202] （单条）real options theory
-  [203] （单条）record linkage
-  [204] （单条）reinforcement learning
-  [205] （单条）repeated game
-  [206] （单条）repeated prisoner's dilemma
-  [207] （单条）replicator dynamics
-  [208] （单条）risk diversification
-  [209] （单条）risk minimization
-  [210] （单条）risk pooling
-  [211] （单条）risk sharing
-  [212] （单条）riskdiversification
-  [213] （单条）riskminimization
-  [214] （单条）robust decision making
-  [215] （单条）robust estimation
-  [216] （单条）robust optimization
-  [217] （单条）rubin causal model
-  [218] （单条）rubinstein bargaining model
-  [219] （单条）sampling bias
-  [220] （单条）schelling coordination game
-  [221] （单条）schelling point
-  [222] （单条）schellingpoint
-  [223] （单条）screening
-  [224] （单条）screening game
-  [225] （单条）screening model
-  [226] （单条）search theory
-  [227] （单条）sequential decision tree
-  [228] （单条）sequential hypothesis testing
-  [229] （单条）sequential move game
-  [230] （单条）sequential search
-  [231] （单条）sequentialgame
-  [232] （单条）set partitioning
-  [233] （单条）shannon entropy
-  [234] （单条）signal detection theory
-  [235] （单条）social contagion model
-  [236] （单条）stable matching
-  [237] （单条）state elimination
-  [238] （单条）state space partitioning
-  [239] （单条）state transition model
-  [240] （单条）statistical hypothesis testing
-  [241] （单条）status quo bias
-  [242] （单条）structural causal model
-  [243] （单条）structural risk minimization
-  [244] （单条）tail risk hedging
-  [245] （单条）tax incidence
-  [246] （单条）threshold model
-  [247] （单条）threshold model of collective action
-  [248] （单条）thresholdmodel
-  [249] （单条）tie breaking
-  [250] （单条）tippingpointmodel
-  [251] （单条）tragedy of the commons
-  [252] （单条）trigger strategy
-  [253] （单条）two stage stochastic programming
-  [254] （单条）ultimatum game
-  [255] （单条）value of information
-  [256] （单条）variance reduction
-  [257] （单条）weight of evidence
-  [258] （单条）weighted voting game
+  [35] 代表名: path analysis  ·  2 条
+      · path analysis  [代表]
+      · path dependence
+  [36] 代表名: robust statistics  ·  2 条
+      · robust estimation
+      · robust optimization
+  [37] （单条）barrier crossing
+  [38] （单条）dempster shafer theory
+  [39] （单条）error correction model
+  [40] （单条）evidence accumulation
+  [41] （单条）liquidityconstraint
+  [42] （单条）competitive lotka–volterra model
+  [43] （单条）marginal analysis
+  [44] （单条）marketselection
+  [45] （单条）mechanismdesign
+  [46] （单条）optimal resource allocation
+  [47] （单条）pareto improvement
+  [48] （单条）profit maximization model
+  [49] （单条）proportional allocation
+  [50] （单条）prospecttheory
+  [51] （单条）reinforcement learning
+  [52] （单条）replicator dynamics
+  [53] （单条）robust decision making
+  [54] （单条）sequential bargaining
+  [55] （单条）signal detection theory
+  [56] （单条）sir model
+  [57] （单条）tippingpointmodel
+  [58] （单条）trigger strategy
+  [59] （单条）two stage stochastic programming
 
 ==============================================================================

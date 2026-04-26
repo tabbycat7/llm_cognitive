@@ -1,0 +1,252 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Societal&Ethical\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Societal&Ethical\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Societal&Ethical\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     654
+  distinct stage-1 canonicals:  346
+  stage2 map entries (keys):    346
+  distinct stage-2 canonicals:  257
+  stage2 merge groups (|keys|>1 for same c2): 26 groups, 115 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1393
+  distinct c1 (weighted rows): 346
+  distinct c2 (weighted):      257
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'principal-agent model'  ←  13 stage-1 labels
+        · adverse selection
+        · akerlof lemon market model
+        · asymmetric information
+        · costly state verification
+        · delegated monitoring
+        · holdup problem
+        · incomplete contracts
+        · information asymmetry
+        · moral hazard
+        · principal agent model
+        · screening
+        · screening game
+        · … +1 more
+  [ 2] 'control theory'  ←  11 stage-1 labels
+        · bang bang control
+        · control systems
+        · control theory
+        · dynamical systems control
+        · kalman filter
+        · lyapunov stability
+        · negative feedback
+        · observability controllability
+        · optimal control
+        · positive feedback loop
+        · state observer
+  [ 3] 'dynamical systems'  ←  8 stage-1 labels
+        · attractor reconstruction
+        · critical mass model
+        · dynamical systems
+        · dynamical systems decomposition
+        · granovetter models
+        · limit cycle perturbation
+        · threshold models
+        · tipping point
+  [ 4] 'constrained optimization'  ←  7 stage-1 labels
+        · constrained optimization
+        · envelope theorem
+        · kkt conditions
+        · kuhn tucker conditions
+        · robust optimization
+        · shadow price
+        · supermodular optimization
+  [ 5] 'game theoretic equilibria'  ←  7 stage-1 labels
+        · bayesian equilibrium
+        · folk theorem
+        · game equilibria
+        · markov perfect equilibrium
+        · nash equilibrium
+        · subgame perfect equilibrium
+        · trigger strategy
+  [ 6] 'decision theory models'  ←  5 stage-1 labels
+        · certainty equivalent
+        · expected utility
+        · multi attribute utility theory
+        · prospect theory
+        · value of information
+  [ 7] 'mechanism design'  ←  5 stage-1 labels
+        · bayesian persuasion
+        · collusion proof mechanism design
+        · mechanism design
+        · myerson mechanism
+        · revelation principle
+  [ 8] 'signaling game'  ←  5 stage-1 labels
+        · cheap talk
+        · crawford sobel model
+        · signaling
+        · signaling game
+        · spence signaling
+  [ 9] 'bayesian updating'  ←  4 stage-1 labels
+        · bayesian inference
+        · bayesian network
+        · bayesian state verification
+        · bayesian updating
+  [10] 'catastrophe theory'  ←  4 stage-1 labels
+        · bifurcation theory
+        · catastrophe theory
+        · cusp catastrophe
+        · hysteresis
+  [11] 'commitment devices'  ←  4 stage-1 labels
+        · commitment device
+        · commitment equilibrium
+        · credible commitment
+        · deterrence theory
+  [12] 'network theory'  ←  4 stage-1 labels
+        · betweenness centrality
+        · max flow min cut
+        · network flow
+        · structural holes
+  [13] 'statistical hypothesis testing'  ←  4 stage-1 labels
+        · competing risks model
+        · maximum entropy
+        · sequential probability ratio test
+        · signal detection theory
+  [14] 'auction and bargaining models'  ←  3 stage-1 labels
+        · all pay auction
+        · alternating offers bargaining
+        · rubinstein bargaining model
+  [15] 'collective action problem'  ←  3 stage-1 labels
+        · collective action
+        · threshold public goods
+        · tragedy of the commons
+  [16] 'coordination game'  ←  3 stage-1 labels
+        · chicken game
+        · coordination game
+        · stag hunt
+  [17] 'dynamic programming'  ←  3 stage-1 labels
+        · dynamic programming
+        · intertemporal optimization
+        · stochastic dynamic programming
+  [18] 'markov processes'  ←  3 stage-1 labels
+        · markov chains
+        · markov decision process
+        · stochastic process
+  [19] 'percolation theory'  ←  3 stage-1 labels
+        · bond percolation on hierarchical lattices
+        · network percolation
+        · percolation theory
+  [20] 'reliability theory'  ←  3 stage-1 labels
+        · parallel redundancy
+        · redundancy allocation problem
+        · reliability block diagram
+  [21] 'social learning'  ←  3 stage-1 labels
+        · information cascade
+        · reinforcement learning
+        · social learning
+  [22] 'hyperbolic discounting'  ←  2 stage-1 labels
+        · hyperbolic discounting
+        · time inconsistency
+  [23] 'minimax'  ←  2 stage-1 labels
+        · maximin criterion
+        · minimax
+  [24] 'multi-armed bandit problem'  ←  2 stage-1 labels
+        · gittins index
+        · multi armed bandit
+  [25] 'optimal stopping'  ←  2 stage-1 labels
+        · optimal stopping
+        · real options
+  [26] 'repeated game'  ←  2 stage-1 labels
+        · repeated game
+        · repeated games
+
+[Stage-2 renames] (key ≠ value, 100 entries; list first 80)
+  'adverse selection'  →  'principal-agent model'
+  'akerlof lemon market model'  →  'principal-agent model'
+  'all pay auction'  →  'auction and bargaining models'
+  'alternating offers bargaining'  →  'auction and bargaining models'
+  'asymmetric information'  →  'principal-agent model'
+  'attractor reconstruction'  →  'dynamical systems'
+  'bang bang control'  →  'control theory'
+  'bayesian equilibrium'  →  'game theoretic equilibria'
+  'bayesian inference'  →  'bayesian updating'
+  'bayesian network'  →  'bayesian updating'
+  'bayesian persuasion'  →  'mechanism design'
+  'bayesian state verification'  →  'bayesian updating'
+  'betweenness centrality'  →  'network theory'
+  'bifurcation theory'  →  'catastrophe theory'
+  'bond percolation on hierarchical lattices'  →  'percolation theory'
+  'certainty equivalent'  →  'decision theory models'
+  'cheap talk'  →  'signaling game'
+  'chicken game'  →  'coordination game'
+  'collective action'  →  'collective action problem'
+  'collusion proof mechanism design'  →  'mechanism design'
+  'commitment device'  →  'commitment devices'
+  'commitment equilibrium'  →  'commitment devices'
+  'competing risks model'  →  'statistical hypothesis testing'
+  'control systems'  →  'control theory'
+  'costly state verification'  →  'principal-agent model'
+  'crawford sobel model'  →  'signaling game'
+  'credible commitment'  →  'commitment devices'
+  'critical mass model'  →  'dynamical systems'
+  'cusp catastrophe'  →  'catastrophe theory'
+  'delegated monitoring'  →  'principal-agent model'
+  'deterrence theory'  →  'commitment devices'
+  'dynamical systems control'  →  'control theory'
+  'dynamical systems decomposition'  →  'dynamical systems'
+  'envelope theorem'  →  'constrained optimization'
+  'expected utility'  →  'decision theory models'
+  'folk theorem'  →  'game theoretic equilibria'
+  'game equilibria'  →  'game theoretic equilibria'
+  'gittins index'  →  'multi-armed bandit problem'
+  'granovetter models'  →  'dynamical systems'
+  'holdup problem'  →  'principal-agent model'
+  'hysteresis'  →  'catastrophe theory'
+  'incomplete contracts'  →  'principal-agent model'
+  'information asymmetry'  →  'principal-agent model'
+  'information cascade'  →  'social learning'
+  'intertemporal optimization'  →  'dynamic programming'
+  'kalman filter'  →  'control theory'
+  'kkt conditions'  →  'constrained optimization'
+  'kuhn tucker conditions'  →  'constrained optimization'
+  'limit cycle perturbation'  →  'dynamical systems'
+  'lyapunov stability'  →  'control theory'
+  'markov chains'  →  'markov processes'
+  'markov decision process'  →  'markov processes'
+  'markov perfect equilibrium'  →  'game theoretic equilibria'
+  'max flow min cut'  →  'network theory'
+  'maximin criterion'  →  'minimax'
+  'maximum entropy'  →  'statistical hypothesis testing'
+  'moral hazard'  →  'principal-agent model'
+  'multi armed bandit'  →  'multi-armed bandit problem'
+  'multi attribute utility theory'  →  'decision theory models'
+  'myerson mechanism'  →  'mechanism design'
+  'nash equilibrium'  →  'game theoretic equilibria'
+  'negative feedback'  →  'control theory'
+  'network flow'  →  'network theory'
+  'network percolation'  →  'percolation theory'
+  'observability controllability'  →  'control theory'
+  'optimal control'  →  'control theory'
+  'parallel redundancy'  →  'reliability theory'
+  'positive feedback loop'  →  'control theory'
+  'principal agent model'  →  'principal-agent model'
+  'prospect theory'  →  'decision theory models'
+  'real options'  →  'optimal stopping'
+  'redundancy allocation problem'  →  'reliability theory'
+  'reinforcement learning'  →  'social learning'
+  'reliability block diagram'  →  'reliability theory'
+  'repeated games'  →  'repeated game'
+  'revelation principle'  →  'mechanism design'
+  'robust optimization'  →  'constrained optimization'
+  'rubinstein bargaining model'  →  'auction and bargaining models'
+  'screening'  →  'principal-agent model'
+  'screening game'  →  'principal-agent model'
+  … 20 more
+
+[Consistency with merge_map.json]
+  compared 654 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

@@ -1,0 +1,269 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Relational&Intimate\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Relational&Intimate\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\google-gemini-2.5-flash\Relational&Intimate\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     353
+  distinct stage-1 canonicals:  183
+  stage2 map entries (keys):    183
+  distinct stage-2 canonicals:  71
+  stage2 merge groups (|keys|>1 for same c2): 30 groups, 142 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1322
+  distinct c1 (weighted rows): 183
+  distinct c2 (weighted):      71
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'dynamical systems'  ←  27 stage-1 labels
+        · adaptive dynamics
+        · attractor
+        · attractor basins
+        · bifurcation theory
+        · boundary condition
+        · catastrophe theory
+        · chaos theory attractor dynamics
+        · coupled oscillators
+        · decoupling
+        · dissipative structures
+        · dynamic system perturbation
+        · dynamic systems theory
+        · … +15 more
+  [ 2] 'utility theory'  ←  12 stage-1 labels
+        · cost benefit analysis
+        · hyperbolic discounting
+        · incentive theory
+        · intertemporal choice
+        · multi attribute decision making
+        · rational choice theory
+        · regret minimization
+        · time inconsistency
+        · utility function revaluation
+        · utility maximization
+        · utility theory
+        · value function decay
+  [ 3] 'information theory'  ←  8 stage-1 labels
+        · entropy reduction principle
+        · information entropy reduction
+        · information flow control
+        · information theory
+        · shannon entropy
+        · signal processing
+        · signal theory
+        · signal to noise ratio optimization
+  [ 4] 'optimization'  ←  8 stage-1 labels
+        · finite horizon optimization
+        · global optimization
+        · iterative optimization
+        · kalman filter
+        · multi objective optimization and pareto efficiency
+        · optimization
+        · resource allocation
+        · robustness maximization
+  [ 5] 'prospect theory'  ←  8 stage-1 labels
+        · anchoring and adjustment heuristic
+        · aversion
+        · endowment effect
+        · framing effect
+        · prospect theory
+        · reference dependence
+        · reference point shift
+        · status quo bias
+  [ 6] 'feedback control'  ←  6 stage-1 labels
+        · control theory
+        · cybernetics
+        · feedback control
+        · feedback loop
+        · open loop control
+        · stochastic control theory
+  [ 7] 'social networks'  ←  6 stage-1 labels
+        · assortative mixing
+        · homophily
+        · network centrality
+        · network pruning
+        · social network restructuring
+        · social networks
+  [ 8] 'bargaining game'  ←  5 stage-1 labels
+        · bargaining game
+        · bargaining theory
+        · batna best alternative to a negotiated agreement
+        · conflict resolution theory
+        · reservation price
+  [ 9] 'nash equilibrium'  ←  5 stage-1 labels
+        · equilibrium selection
+        · equilibrium shift
+        · game theory equilibrium
+        · multiple equilibria
+        · nash equilibrium
+  [10] 'repeated game'  ←  5 stage-1 labels
+        · folk theorem
+        · repeated game
+        · repeated game theory with reputation building
+        · tit for tat
+        · trigger strategy
+  [11] 'cognitive bias'  ←  4 stage-1 labels
+        · cognitive bias
+        · cognitive distortion
+        · confirmation bias
+        · sunk cost fallacy
+  [12] 'information asymmetry'  ←  4 stage-1 labels
+        · adverse selection
+        · information asymmetry
+        · information cascade prevention
+        · moral hazard
+  [13] 'operant conditioning'  ←  4 stage-1 labels
+        · behavioral substitution and positive reinforcement
+        · extinction
+        · intermittent reinforcement
+        · operant conditioning
+  [14] 'reinforcement learning'  ←  4 stage-1 labels
+        · explore exploit dilemma
+        · reinforcement learning
+        · reward prediction error
+        · temporal difference learning
+  [15] 'classical conditioning'  ←  3 stage-1 labels
+        · classical conditioning
+        · stimulus generalization and discrimination
+        · stimulus response
+  [16] 'commitment device'  ←  3 stage-1 labels
+        · commitment
+        · commitment device
+        · credible commitment
+  [17] 'principal-agent theory'  ←  3 stage-1 labels
+        · contract theory
+        · mechanism design
+        · principal agent
+  [18] 'real options'  ←  3 stage-1 labels
+        · option pricing model
+        · option value maximization
+        · real options
+  [19] 'bayesian inference'  ←  2 stage-1 labels
+        · bayesian inference
+        · hidden markov model inference
+  [20] 'bounded rationality'  ←  2 stage-1 labels
+        · bounded rationality
+        · satisficing
+  [21] 'coase theorem'  ←  2 stage-1 labels
+        · coase theorem
+        · externalities
+  [22] 'cognitive dissonance'  ←  2 stage-1 labels
+        · cognitive dissonance
+        · cognitive restructuring
+  [23] 'coordination game'  ←  2 stage-1 labels
+        · coordination failure
+        · coordination game
+  [24] 'hebbian learning'  ←  2 stage-1 labels
+        · hebbian learning
+        · neural plasticity
+  [25] 'markov chain'  ←  2 stage-1 labels
+        · markov chain
+        · stochastic process with state transition
+  [26] 'markov decision process'  ←  2 stage-1 labels
+        · markov decision process
+        · sequential decision making
+  [27] 'schema theory'  ←  2 stage-1 labels
+        · schema theory
+        · shared mental models
+  [28] 'social exchange theory'  ←  2 stage-1 labels
+        · equity theory
+        · social exchange theory
+  [29] 'systematic desensitization'  ←  2 stage-1 labels
+        · behavioral activation
+        · systematic desensitization
+  [30] 'transaction cost economics'  ←  2 stage-1 labels
+        · switching costs
+        · transaction cost economics
+
+[Stage-2 renames] (key ≠ value, 114 entries; list first 80)
+  'adaptive dynamics'  →  'dynamical systems'
+  'adverse selection'  →  'information asymmetry'
+  'anchoring and adjustment heuristic'  →  'prospect theory'
+  'assortative mixing'  →  'social networks'
+  'attractor'  →  'dynamical systems'
+  'attractor basins'  →  'dynamical systems'
+  'aversion'  →  'prospect theory'
+  'bargaining theory'  →  'bargaining game'
+  'batna best alternative to a negotiated agreement'  →  'bargaining game'
+  'behavioral activation'  →  'systematic desensitization'
+  'behavioral substitution and positive reinforcement'  →  'operant conditioning'
+  'bifurcation theory'  →  'dynamical systems'
+  'boundary condition'  →  'dynamical systems'
+  'catastrophe theory'  →  'dynamical systems'
+  'chaos theory attractor dynamics'  →  'dynamical systems'
+  'cognitive distortion'  →  'cognitive bias'
+  'cognitive restructuring'  →  'cognitive dissonance'
+  'commitment'  →  'commitment device'
+  'confirmation bias'  →  'cognitive bias'
+  'conflict resolution theory'  →  'bargaining game'
+  'contract theory'  →  'principal-agent theory'
+  'control theory'  →  'feedback control'
+  'coordination failure'  →  'coordination game'
+  'cost benefit analysis'  →  'utility theory'
+  'coupled oscillators'  →  'dynamical systems'
+  'credible commitment'  →  'commitment device'
+  'cybernetics'  →  'feedback control'
+  'decoupling'  →  'dynamical systems'
+  'dissipative structures'  →  'dynamical systems'
+  'dynamic system perturbation'  →  'dynamical systems'
+  'dynamic systems theory'  →  'dynamical systems'
+  'endowment effect'  →  'prospect theory'
+  'entropy reduction principle'  →  'information theory'
+  'equilibrium selection'  →  'nash equilibrium'
+  'equilibrium shift'  →  'nash equilibrium'
+  'equity theory'  →  'social exchange theory'
+  'escape dynamics'  →  'dynamical systems'
+  'explore exploit dilemma'  →  'reinforcement learning'
+  'externalities'  →  'coase theorem'
+  'extinction'  →  'operant conditioning'
+  'feedback loop'  →  'feedback control'
+  'finite horizon optimization'  →  'optimization'
+  'folk theorem'  →  'repeated game'
+  'framing effect'  →  'prospect theory'
+  'game theory equilibrium'  →  'nash equilibrium'
+  'global optimization'  →  'optimization'
+  'hidden markov model inference'  →  'bayesian inference'
+  'homophily'  →  'social networks'
+  'hyperbolic discounting'  →  'utility theory'
+  'hysteresis model'  →  'dynamical systems'
+  'incentive theory'  →  'utility theory'
+  'information cascade prevention'  →  'information asymmetry'
+  'information entropy reduction'  →  'information theory'
+  'information flow control'  →  'information theory'
+  'intermittent reinforcement'  →  'operant conditioning'
+  'intertemporal choice'  →  'utility theory'
+  'iterative optimization'  →  'optimization'
+  'kalman filter'  →  'optimization'
+  'limit cycle attractor disruption'  →  'dynamical systems'
+  'logistic growth model'  →  'dynamical systems'
+  'mechanism design'  →  'principal-agent theory'
+  'moral hazard'  →  'information asymmetry'
+  'multi attribute decision making'  →  'utility theory'
+  'multi objective optimization and pareto efficiency'  →  'optimization'
+  'multiple equilibria'  →  'nash equilibrium'
+  'network centrality'  →  'social networks'
+  'network pruning'  →  'social networks'
+  'neural plasticity'  →  'hebbian learning'
+  'nonequilibrium dynamics'  →  'dynamical systems'
+  'open loop control'  →  'feedback control'
+  'option pricing model'  →  'real options'
+  'option value maximization'  →  'real options'
+  'phase transition'  →  'dynamical systems'
+  'principal agent'  →  'principal-agent theory'
+  'prisoners dilemma'  →  "prisoner's dilemma"
+  'rational choice theory'  →  'utility theory'
+  'reference dependence'  →  'prospect theory'
+  'reference point shift'  →  'prospect theory'
+  'regret minimization'  →  'utility theory'
+  'relaxation to equilibrium'  →  'dynamical systems'
+  … 34 more
+
+[Consistency with merge_map.json]
+  compared 353 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

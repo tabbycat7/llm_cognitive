@@ -1,0 +1,298 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Professional&Economic\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Professional&Economic\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Professional&Economic\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     668
+  distinct stage-1 canonicals:  391
+  stage2 map entries (keys):    391
+  distinct stage-2 canonicals:  225
+  stage2 merge groups (|keys|>1 for same c2): 20 groups, 186 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1421
+  distinct c1 (weighted rows): 391
+  distinct c2 (weighted):      225
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'economic theory'  ←  22 stage-1 labels
+        · arithmetic of active management
+        · austrian capital theory
+        · category adjustment model
+        · causal temporal filtering
+        · collective action
+        · comparative advantage
+        · increasing returns
+        · intertemporal choice
+        · intertemporal optimization
+        · marginal analysis
+        · optimal leverage
+        · ramsey tax smoothing
+        · … +10 more
+  [ 2] 'prospect theory'  ←  18 stage-1 labels
+        · affective forecasting
+        · anchoring
+        · attribution theory
+        · beta delta discounting
+        · bounded rationality with attention scarcity
+        · choice overload
+        · cognitive dissonance
+        · cognitive load theory
+        · context switching cost model
+        · dual process theory
+        · framing effect
+        · hyperbolic discounting
+        · … +6 more
+  [ 3] 'corporate finance theory'  ←  17 stage-1 labels
+        · actuarial present value
+        · annuity valuation
+        · breakeven analysis
+        · bunching at kinks
+        · c mu rule
+        · capital depreciation and replacement model
+        · capital rationing
+        · capital structure tradeoff theory
+        · carry trade
+        · cash flow sensitivity model
+        · certainty equivalent return comparison
+        · compound interest
+        · … +5 more
+  [ 4] 'portfolio theory'  ←  14 stage-1 labels
+        · after tax asset location optimization
+        · after tax terminal wealth maximization
+        · arbitrage pricing theory
+        · buffer stock saving
+        · capital asset pricing model
+        · constant proportion portfolio insurance
+        · golden eggs model
+        · kelly criterion
+        · liquidity optimization
+        · mean variance optimization
+        · merton portfolio problem
+        · portfolio theory
+        · … +2 more
+  [ 5] 'signaling theory'  ←  12 stage-1 labels
+        · adverse selection
+        · akerlof lemons model
+        · bonding equilibrium
+        · cheap talk
+        · cheap talk with biased senders
+        · costly signaling
+        · crawford sobel model
+        · roy model
+        · screening
+        · signaling game
+        · signaling theory
+        · spence signaling model
+  [ 6] 'network theory'  ←  11 stage-1 labels
+        · betweenness centrality
+        · cascading failure
+        · hub and spoke network
+        · network externalities
+        · parallel redundancy
+        · path dependence
+        · percolation theory
+        · positive feedback
+        · preferential attachment
+        · reliability block diagram
+        · small world networks
+  [ 7] 'optimal control'  ←  11 stage-1 labels
+        · adaptive control of thought
+        · bang bang control
+        · control theory
+        · cybernetics
+        · differential game
+        · dynamic programming
+        · kalman filter
+        · markov decision process
+        · optimal control
+        · pontryagin maximum principle
+        · stochastic control
+  [ 8] 'bargaining theory'  ←  9 stage-1 labels
+        · alternating offers bargaining with outside options
+        · batna
+        · bilateral monopoly
+        · coase theorem
+        · hold up problem
+        · nash bargaining
+        · outside option principle
+        · rubinstein bargaining model
+        · ultimatum game
+  [ 9] 'markov processes'  ←  9 stage-1 labels
+        · avalanche method
+        · base stock policy
+        · first passage time
+        · inventory theory
+        · jackson network
+        · markov chain
+        · queueing theory
+        · ruin theory
+        · stochastic resonance
+  [10] 'dynamical systems theory'  ←  8 stage-1 labels
+        · bifurcation theory
+        · catastrophe theory
+        · cusp catastrophe
+        · diffusion model
+        · escape from a potential well
+        · kuramoto model
+        · logistic model
+        · stability analysis
+  [11] 'bayesian inference'  ←  7 stage-1 labels
+        · bayesian persuasion
+        · bayesian updating
+        · common knowledge cascade
+        · common knowledge generation via hard information injection
+        · conditional independence
+        · condorcet jury theorem
+        · signal detection theory
+  [12] 'life cycle hypothesis'  ←  7 stage-1 labels
+        · consumption savings model with borrowing constraints
+        · debt dynamics model
+        · life cycle hypothesis
+        · optimal taxation
+        · permanent income hypothesis
+        · ramsey cass koopmans model
+        · ramsey model
+  [13] 'principal agent model'  ←  7 stage-1 labels
+        · commitment device
+        · commitment strategy
+        · credible commitment
+        · delegation
+        · incomplete contracts
+        · optimal contract theory
+        · principal agent model
+  [14] 'game theory equilibria'  ←  6 stage-1 labels
+        · folk theorem
+        · perfect bayesian equilibrium
+        · perfect equilibrium
+        · repeated game
+        · repeated games
+        · stackelberg leadership
+  [15] 'mechanism design'  ←  6 stage-1 labels
+        · clock auction
+        · matching market
+        · matching theory
+        · mechanism design
+        · myerson optimal auction
+        · revelation principle
+  [16] 'multi armed bandit'  ←  6 stage-1 labels
+        · gittins index
+        · job search model
+        · multi armed bandit
+        · optimal search
+        · search theory
+        · secretary problem
+  [17] 'real options theory'  ←  6 stage-1 labels
+        · american option
+        · binomial options pricing model
+        · black scholes model
+        · optimal stopping
+        · option theory
+        · real options
+  [18] 'mathematical optimization'  ←  4 stage-1 labels
+        · constrained optimization
+        · linear programming
+        · multi objective optimization
+        · optimal foraging theory
+  [19] 'human capital theory'  ←  3 stage-1 labels
+        · ben porath model
+        · hotelling model
+        · human capital theory
+  [20] 'simulation methods'  ←  3 stage-1 labels
+        · additive decomposition of time decaying score functions
+        · classifier ensemble with threshold optimization
+        · monte carlo simulation
+
+[Stage-2 renames] (key ≠ value, 177 entries; list first 80)
+  'actuarial present value'  →  'corporate finance theory'
+  'adaptive control of thought'  →  'optimal control'
+  'additive decomposition of time decaying score functions'  →  'simulation methods'
+  'adverse selection'  →  'signaling theory'
+  'affective forecasting'  →  'prospect theory'
+  'after tax asset location optimization'  →  'portfolio theory'
+  'after tax terminal wealth maximization'  →  'portfolio theory'
+  'akerlof lemons model'  →  'signaling theory'
+  'alternating offers bargaining with outside options'  →  'bargaining theory'
+  'american option'  →  'real options theory'
+  'anchoring'  →  'prospect theory'
+  'annuity valuation'  →  'corporate finance theory'
+  'arbitrage pricing theory'  →  'portfolio theory'
+  'arithmetic of active management'  →  'economic theory'
+  'attribution theory'  →  'prospect theory'
+  'austrian capital theory'  →  'economic theory'
+  'avalanche method'  →  'markov processes'
+  'bang bang control'  →  'optimal control'
+  'base stock policy'  →  'markov processes'
+  'batna'  →  'bargaining theory'
+  'bayesian persuasion'  →  'bayesian inference'
+  'bayesian updating'  →  'bayesian inference'
+  'ben porath model'  →  'human capital theory'
+  'beta delta discounting'  →  'prospect theory'
+  'betweenness centrality'  →  'network theory'
+  'bifurcation theory'  →  'dynamical systems theory'
+  'bilateral monopoly'  →  'bargaining theory'
+  'binomial options pricing model'  →  'real options theory'
+  'black scholes model'  →  'real options theory'
+  'bonding equilibrium'  →  'signaling theory'
+  'bounded rationality with attention scarcity'  →  'prospect theory'
+  'breakeven analysis'  →  'corporate finance theory'
+  'buffer stock saving'  →  'portfolio theory'
+  'bunching at kinks'  →  'corporate finance theory'
+  'c mu rule'  →  'corporate finance theory'
+  'capital asset pricing model'  →  'portfolio theory'
+  'capital depreciation and replacement model'  →  'corporate finance theory'
+  'capital rationing'  →  'corporate finance theory'
+  'capital structure tradeoff theory'  →  'corporate finance theory'
+  'carry trade'  →  'corporate finance theory'
+  'cascading failure'  →  'network theory'
+  'cash flow sensitivity model'  →  'corporate finance theory'
+  'catastrophe theory'  →  'dynamical systems theory'
+  'category adjustment model'  →  'economic theory'
+  'causal temporal filtering'  →  'economic theory'
+  'certainty equivalent return comparison'  →  'corporate finance theory'
+  'cheap talk'  →  'signaling theory'
+  'cheap talk with biased senders'  →  'signaling theory'
+  'choice overload'  →  'prospect theory'
+  'classifier ensemble with threshold optimization'  →  'simulation methods'
+  'clock auction'  →  'mechanism design'
+  'coase theorem'  →  'bargaining theory'
+  'cognitive dissonance'  →  'prospect theory'
+  'cognitive load theory'  →  'prospect theory'
+  'collective action'  →  'economic theory'
+  'commitment device'  →  'principal agent model'
+  'commitment strategy'  →  'principal agent model'
+  'common knowledge cascade'  →  'bayesian inference'
+  'common knowledge generation via hard information injection'  →  'bayesian inference'
+  'comparative advantage'  →  'economic theory'
+  'compound interest'  →  'corporate finance theory'
+  'compound interest with fee drag'  →  'corporate finance theory'
+  'conditional independence'  →  'bayesian inference'
+  'condorcet jury theorem'  →  'bayesian inference'
+  'constant proportion portfolio insurance'  →  'portfolio theory'
+  'constrained optimization'  →  'mathematical optimization'
+  'consumption savings model with borrowing constraints'  →  'life cycle hypothesis'
+  'context switching cost model'  →  'prospect theory'
+  'control theory'  →  'optimal control'
+  'costly signaling'  →  'signaling theory'
+  'crawford sobel model'  →  'signaling theory'
+  'credible commitment'  →  'principal agent model'
+  'cusp catastrophe'  →  'dynamical systems theory'
+  'cybernetics'  →  'optimal control'
+  'debt dynamics model'  →  'life cycle hypothesis'
+  'delegation'  →  'principal agent model'
+  'differential game'  →  'optimal control'
+  'diffusion model'  →  'dynamical systems theory'
+  'dual process theory'  →  'prospect theory'
+  'duration matching'  →  'corporate finance theory'
+  … 97 more
+
+[Consistency with merge_map.json]
+  compared 668 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

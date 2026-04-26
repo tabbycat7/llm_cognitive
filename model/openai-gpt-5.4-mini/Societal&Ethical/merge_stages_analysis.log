@@ -1,0 +1,214 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:24
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Societal&Ethical\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Societal&Ethical\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Societal&Ethical\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     232
+  distinct stage-1 canonicals:  156
+  stage2 map entries (keys):    156
+  distinct stage-2 canonicals:  105
+  stage2 merge groups (|keys|>1 for same c2): 26 groups, 77 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1428
+  distinct c1 (weighted rows): 156
+  distinct c2 (weighted):      105
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'constrained optimization'  ←  6 stage-1 labels
+        · constrained optimization
+        · convex optimization
+        · lagrangian optimization
+        · linear programming
+        · minimization
+        · robust optimization
+  [ 2] 'dynamical systems'  ←  5 stage-1 labels
+        · attractor dynamics
+        · dynamical systems
+        · replicator dynamics
+        · stability in dynamical systems
+        · state space
+  [ 3] 'stochastic processes'  ←  5 stage-1 labels
+        · branching process
+        · hitting time
+        · martingale
+        · poisson process
+        · stochastic processes
+  [ 4] 'contagion model'  ←  4 stage-1 labels
+        · contagion model
+        · information cascade
+        · rumor propagation model
+        · sir model
+  [ 5] 'information theory'  ←  4 stage-1 labels
+        · expected value of perfect information
+        · information bottleneck
+        · information theory
+        · value of information
+  [ 6] 'sequential game'  ←  4 stage-1 labels
+        · extensive form game
+        · sequential equilibrium
+        · sequential game
+        · subgame perfect equilibrium
+  [ 7] 'signaling game'  ←  4 stage-1 labels
+        · dynamic signaling game
+        · separating equilibrium
+        · signaling
+        · spence signaling model
+  [ 8] 'bargaining theory'  ←  3 stage-1 labels
+        · bargaining theory
+        · nash bargaining
+        · sequential bargaining model
+  [ 9] 'decision theory'  ←  3 stage-1 labels
+        · availability heuristic
+        · decision theory
+        · framing effect
+  [10] 'hypothesis testing'  ←  3 stage-1 labels
+        · hypothesis testing
+        · neyman pearson lemma
+        · sequential probability ratio test
+  [11] 'mechanism design'  ←  3 stage-1 labels
+        · incentive compatibility
+        · mechanism design
+        · participation constraint
+  [12] 'principal-agent model'  ←  3 stage-1 labels
+        · adverse selection
+        · principal agent theory
+        · screening model
+  [13] 'reliability theory'  ←  3 stage-1 labels
+        · fault tree analysis
+        · reliability block diagram
+        · reliability theory
+  [14] 'threshold model'  ←  3 stage-1 labels
+        · threshold model
+        · threshold model of collective behavior
+        · tipping point
+  [15] 'bayesian inference'  ←  2 stage-1 labels
+        · bayes theorem
+        · bayesian theory
+  [16] 'causal inference'  ←  2 stage-1 labels
+        · causal inference
+        · mediation analysis
+  [17] 'contract theory'  ←  2 stage-1 labels
+        · contract theory
+        · incomplete contract
+  [18] 'coordination game'  ←  2 stage-1 labels
+        · coordination game
+        · stag hunt
+  [19] 'feedback control'  ←  2 stage-1 labels
+        · feedback
+        · feedback control
+  [20] 'markov process'  ←  2 stage-1 labels
+        · markov chain
+        · markov process
+  [21] 'network flow'  ←  2 stage-1 labels
+        · minimum cost flow
+        · network flow
+  [22] 'optimal stopping'  ←  2 stage-1 labels
+        · optimal stopping
+        · stopping time
+  [23] 'real options theory'  ←  2 stage-1 labels
+        · option value
+        · real options
+  [24] 'repeated game'  ←  2 stage-1 labels
+        · repeated game
+        · repeated prisoner dilemma
+  [25] 'structural equation modeling'  ←  2 stage-1 labels
+        · structural causal model
+        · structural equation modeling
+  [26] 'survival analysis'  ←  2 stage-1 labels
+        · hazard model
+        · survival analysis
+
+[Stage-2 renames] (key ≠ value, 81 entries; list first 80)
+  'adverse selection'  →  'principal-agent model'
+  'all pay auction'  →  'auction theory'
+  'attractor dynamics'  →  'dynamical systems'
+  'availability heuristic'  →  'decision theory'
+  'bayes theorem'  →  'bayesian inference'
+  'bayesian theory'  →  'bayesian inference'
+  'branching process'  →  'stochastic processes'
+  'cascading failure model'  →  'cascading failure'
+  'cheap talk'  →  'cheap talk game'
+  'commitment'  →  'commitment strategy'
+  'conjunctive normal form'  →  'boolean satisfiability'
+  'constraint satisfaction'  →  'constraint satisfaction problem'
+  'convex optimization'  →  'constrained optimization'
+  'cost benefit analysis'  →  'cost-benefit analysis'
+  'dempster shafer theory'  →  'dempster-shafer theory'
+  'diffusion of innovations'  →  'diffusion process'
+  'dynamic inconsistency'  →  'time inconsistency'
+  'dynamic signaling game'  →  'signaling game'
+  'error correcting code'  →  'error correction code'
+  'expected utility'  →  'expected utility theory'
+  'expected value of perfect information'  →  'information theory'
+  'extensive form game'  →  'sequential game'
+  'extinction'  →  'extinction process'
+  'fault tree analysis'  →  'reliability theory'
+  'feedback'  →  'feedback control'
+  'framing effect'  →  'decision theory'
+  'hazard model'  →  'survival analysis'
+  'hitting time'  →  'stochastic processes'
+  'hopf bifurcation'  →  'bifurcation theory'
+  'incentive compatibility'  →  'mechanism design'
+  'incomplete contract'  →  'contract theory'
+  'incomplete information'  →  'incomplete information game'
+  'information bottleneck'  →  'information theory'
+  'information cascade'  →  'contagion model'
+  'lagrangian optimization'  →  'constrained optimization'
+  'linear programming'  →  'constrained optimization'
+  'markov chain'  →  'markov process'
+  'martingale'  →  'stochastic processes'
+  'maximum entropy principle'  →  'maximum entropy'
+  'mediation analysis'  →  'causal inference'
+  'minimax'  →  'minimax strategy'
+  'minimization'  →  'constrained optimization'
+  'minimum cost flow'  →  'network flow'
+  'minimum expected loss'  →  'expected loss minimization'
+  'minimum variance unbiased estimator'  →  'estimation theory'
+  'nash bargaining'  →  'bargaining theory'
+  'neyman pearson lemma'  →  'hypothesis testing'
+  'option value'  →  'real options theory'
+  'participation constraint'  →  'mechanism design'
+  'partition'  →  'graph partition'
+  'poisson process'  →  'stochastic processes'
+  'principal agent theory'  →  'principal-agent model'
+  'real options'  →  'real options theory'
+  'reliability block diagram'  →  'reliability theory'
+  'repeated prisoner dilemma'  →  'repeated game'
+  'replicator dynamics'  →  'dynamical systems'
+  'reputation'  →  'reputation model'
+  'robust optimization'  →  'constrained optimization'
+  'rumor propagation model'  →  'contagion model'
+  'screening model'  →  'principal-agent model'
+  'separating equilibrium'  →  'signaling game'
+  'sequential bargaining model'  →  'bargaining theory'
+  'sequential decision'  →  'sequential decision making'
+  'sequential equilibrium'  →  'sequential game'
+  'sequential probability ratio test'  →  'hypothesis testing'
+  'signal to noise ratio'  →  'signal-to-noise ratio'
+  'signaling'  →  'signaling game'
+  'sir model'  →  'contagion model'
+  'spence signaling model'  →  'signaling game'
+  'stability in dynamical systems'  →  'dynamical systems'
+  'stag hunt'  →  'coordination game'
+  'state contingent contract'  →  'state-contingent contract'
+  'state space'  →  'dynamical systems'
+  'stopping time'  →  'optimal stopping'
+  'structural causal model'  →  'structural equation modeling'
+  'subgame perfect equilibrium'  →  'sequential game'
+  'system theory'  →  'systems theory'
+  'threshold model of collective behavior'  →  'threshold model'
+  'tipping point'  →  'threshold model'
+  'value of information'  →  'information theory'
+  … 1 more
+
+[Consistency with merge_map.json]
+  compared 232 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

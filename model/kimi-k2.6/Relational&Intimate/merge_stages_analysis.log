@@ -1,0 +1,283 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Relational&Intimate\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Relational&Intimate\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Relational&Intimate\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     576
+  distinct stage-1 canonicals:  324
+  stage2 map entries (keys):    324
+  distinct stage-2 canonicals:  231
+  stage2 merge groups (|keys|>1 for same c2): 41 groups, 134 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1414
+  distinct c1 (weighted rows): 324
+  distinct c2 (weighted):      231
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'control theory'  ←  11 stage-1 labels
+        · bang bang control
+        · control theory
+        · dead time compensation
+        · feedback vertex set
+        · forced response decomposition in linear time invariant systems
+        · linear quadratic regulator
+        · observability
+        · open loop system identification
+        · proportional control
+        · state space model
+        · system identification
+  [ 2] 'commitment device'  ←  8 stage-1 labels
+        · burning bridges
+        · cheap talk equilibrium disruption via commitment device
+        · commitment device
+        · commitment equilibrium refinement
+        · credible commitment
+        · credible commitment in sequential bargaining
+        · precommitment
+        · ulysses contract
+  [ 3] 'bayesian updating'  ←  7 stage-1 labels
+        · bayesian brain hypothesis
+        · bayesian experimental design
+        · bayesian hypothesis testing
+        · bayesian inference
+        · bayesian preference revelation with strategic misrepresentation
+        · bayesian surprise
+        · bayesian updating
+  [ 4] 'feedback loop dynamics'  ←  7 stage-1 labels
+        · cybernetic control
+        · dynamical systems theory with feedback loop excision
+        · feedback control
+        · feedback linearization
+        · feedback loop dynamics
+        · feedback loop reconfiguration
+        · second order cybernetics
+  [ 5] 'attractor dynamics'  ←  5 stage-1 labels
+        · attractor collapse
+        · attractor dynamics
+        · attractor reconstruction
+        · basin of attraction
+        · basin stability
+  [ 6] 'coupled oscillator dynamics'  ←  5 stage-1 labels
+        · coupled differential equations
+        · coupled kuramoto model with adaptive damping
+        · coupled oscillator dynamics
+        · haken kelso bunz model
+        · kuramoto model
+  [ 7] 'nash equilibrium'  ←  5 stage-1 labels
+        · common knowledge equilibrium
+        · common knowledge of rationality
+        · correlated equilibrium
+        · folk theorem
+        · nash equilibrium
+  [ 8] 'attribution theory'  ←  4 stage-1 labels
+        · attribution theory
+        · belief perseverance
+        · correspondence bias fundamental attribution error
+        · correspondent inference theory
+  [ 9] 'betweenness centrality'  ←  4 stage-1 labels
+        · algebraic connectivity
+        · betweenness centrality
+        · network centrality
+        · structural hole theory
+  [10] 'kramers escape problem'  ←  4 stage-1 labels
+        · activated escape over a potential barrier
+        · brownian motion in a potential landscape
+        · escape problem
+        · kramers escape problem
+  [11] 'mechanism design'  ←  4 stage-1 labels
+        · dominant strategy mechanism design
+        · incentive compatible mechanism design
+        · mechanism design
+        · revelation principle
+  [12] 'predictive coding'  ←  4 stage-1 labels
+        · active inference
+        · free energy principle
+        · predictive coding
+        · predictive processing
+  [13] 'bifurcation theory'  ←  3 stage-1 labels
+        · bifurcation theory
+        · hopf bifurcation
+        · saddle node bifurcation
+  [14] 'dynamical systems'  ←  3 stage-1 labels
+        · dynamical systems
+        · dynamical systems stability
+        · dynamical systems with limit cycles
+  [15] 'nash bargaining'  ←  3 stage-1 labels
+        · bargaining model of alternating offers
+        · nash bargaining
+        · rubinstein bargaining model
+  [16] 'principal agent problem'  ←  3 stage-1 labels
+        · adverse selection
+        · principal agent problem
+        · screening
+  [17] 'prospect theory'  ←  3 stage-1 labels
+        · prospect theory
+        · prospect theory reference point
+        · reference dependence
+  [18] 'signaling game'  ←  3 stage-1 labels
+        · crawford sobel model
+        · signaling game
+        · spence signaling model
+  [19] 'statistical mechanics models'  ←  3 stage-1 labels
+        · fluctuation dissipation theorem in self organizing systems
+        · freidlin wentzell theory of large deviations
+        · statistical mechanics models
+  [20] 'structural causal model'  ←  3 stage-1 labels
+        · causal inference
+        · front door criterion
+        · structural causal model
+  [21] 'asset specificity'  ←  2 stage-1 labels
+        · asset specificity
+        · incomplete contracts
+  [22] 'brusselator model'  ←  2 stage-1 labels
+        · brusselator model
+        · dissipative systems
+  [23] 'catastrophe theory'  ←  2 stage-1 labels
+        · catastrophe theory
+        · cusp catastrophe
+  [24] 'coordination game'  ←  2 stage-1 labels
+        · coordination game
+        · stag hunt
+  [25] 'coupled map lattice'  ←  2 stage-1 labels
+        · coupled map lattice
+        · erdos renyi model
+  [26] 'escalation of commitment'  ←  2 stage-1 labels
+        · escalation of commitment
+        · sunk cost fallacy
+  [27] 'externality internalization'  ←  2 stage-1 labels
+        · coase theorem
+        · externality internalization
+  [28] 'hyperbolic discounting'  ←  2 stage-1 labels
+        · beta delta model
+        · hyperbolic discounting
+  [29] 'kalman filter'  ←  2 stage-1 labels
+        · hidden markov model
+        · kalman filter
+  [30] 'limit cycle'  ←  2 stage-1 labels
+        · limit cycle
+        · limit cycle perturbation
+  [31] 'lotka volterra model'  ←  2 stage-1 labels
+        · lotka volterra model
+        · predator prey dynamics
+  [32] 'markov decision process'  ←  2 stage-1 labels
+        · absorbing markov chain
+        · markov decision process
+  [33] 'operant conditioning'  ←  2 stage-1 labels
+        · operant conditioning
+        · variable ratio schedule
+  [34] 'operant extinction'  ←  2 stage-1 labels
+        · extinction
+        · operant extinction
+  [35] 'optimal stopping'  ←  2 stage-1 labels
+        · optimal stopping
+        · real options
+  [36] 'outside option'  ←  2 stage-1 labels
+        · matching with outside options
+        · outside option
+  [37] 'portfolio theory'  ←  2 stage-1 labels
+        · black scholes model
+        · portfolio theory
+  [38] 'repeated games'  ←  2 stage-1 labels
+        · repeated games
+        · tit for tat
+  [39] 'scarcity principle'  ←  2 stage-1 labels
+        · commodity theory
+        · scarcity principle
+  [40] 'sequential probability ratio test'  ←  2 stage-1 labels
+        · sequential hypothesis testing
+        · sequential probability ratio test
+
+[Stage-2 renames] (key ≠ value, 94 entries; list first 80)
+  'absorbing markov chain'  →  'markov decision process'
+  'activated escape over a potential barrier'  →  'kramers escape problem'
+  'active inference'  →  'predictive coding'
+  'adverse selection'  →  'principal agent problem'
+  'algebraic connectivity'  →  'betweenness centrality'
+  'attractor collapse'  →  'attractor dynamics'
+  'attractor reconstruction'  →  'attractor dynamics'
+  'bang bang control'  →  'control theory'
+  'bargaining model of alternating offers'  →  'nash bargaining'
+  'basin of attraction'  →  'attractor dynamics'
+  'basin stability'  →  'attractor dynamics'
+  'bayesian brain hypothesis'  →  'bayesian updating'
+  'bayesian experimental design'  →  'bayesian updating'
+  'bayesian hypothesis testing'  →  'bayesian updating'
+  'bayesian inference'  →  'bayesian updating'
+  'bayesian preference revelation with strategic misrepresentation'  →  'bayesian updating'
+  'bayesian surprise'  →  'bayesian updating'
+  'belief perseverance'  →  'attribution theory'
+  'beta delta model'  →  'hyperbolic discounting'
+  'black scholes model'  →  'portfolio theory'
+  'brownian motion in a potential landscape'  →  'kramers escape problem'
+  'burning bridges'  →  'commitment device'
+  'causal inference'  →  'structural causal model'
+  'cheap talk equilibrium disruption via commitment device'  →  'commitment device'
+  'coase theorem'  →  'externality internalization'
+  'commitment equilibrium refinement'  →  'commitment device'
+  'commodity theory'  →  'scarcity principle'
+  'common knowledge equilibrium'  →  'nash equilibrium'
+  'common knowledge of rationality'  →  'nash equilibrium'
+  'constrained optimization with endogenous constraint modification'  →  'constrained optimization'
+  'correlated equilibrium'  →  'nash equilibrium'
+  'correspondence bias fundamental attribution error'  →  'attribution theory'
+  'correspondent inference theory'  →  'attribution theory'
+  'coupled differential equations'  →  'coupled oscillator dynamics'
+  'coupled kuramoto model with adaptive damping'  →  'coupled oscillator dynamics'
+  'crawford sobel model'  →  'signaling game'
+  'credible commitment'  →  'commitment device'
+  'credible commitment in sequential bargaining'  →  'commitment device'
+  'cusp catastrophe'  →  'catastrophe theory'
+  'cybernetic control'  →  'feedback loop dynamics'
+  'dead time compensation'  →  'control theory'
+  'dissipative systems'  →  'brusselator model'
+  'dominant strategy mechanism design'  →  'mechanism design'
+  'dynamical systems stability'  →  'dynamical systems'
+  'dynamical systems theory with feedback loop excision'  →  'feedback loop dynamics'
+  'dynamical systems with limit cycles'  →  'dynamical systems'
+  'erdos renyi model'  →  'coupled map lattice'
+  'escape problem'  →  'kramers escape problem'
+  'extinction'  →  'operant extinction'
+  'feedback control'  →  'feedback loop dynamics'
+  'feedback linearization'  →  'feedback loop dynamics'
+  'feedback loop reconfiguration'  →  'feedback loop dynamics'
+  'feedback vertex set'  →  'control theory'
+  'fluctuation dissipation theorem in self organizing systems'  →  'statistical mechanics models'
+  'folk theorem'  →  'nash equilibrium'
+  'forced response decomposition in linear time invariant systems'  →  'control theory'
+  'free energy principle'  →  'predictive coding'
+  'freidlin wentzell theory of large deviations'  →  'statistical mechanics models'
+  'front door criterion'  →  'structural causal model'
+  'haken kelso bunz model'  →  'coupled oscillator dynamics'
+  'hidden markov model'  →  'kalman filter'
+  'hopf bifurcation'  →  'bifurcation theory'
+  'incentive compatible mechanism design'  →  'mechanism design'
+  'incomplete contracts'  →  'asset specificity'
+  'kuramoto model'  →  'coupled oscillator dynamics'
+  'limit cycle perturbation'  →  'limit cycle'
+  'linear quadratic regulator'  →  'control theory'
+  'matching with outside options'  →  'outside option'
+  'network centrality'  →  'betweenness centrality'
+  'observability'  →  'control theory'
+  'open loop system identification'  →  'control theory'
+  'precommitment'  →  'commitment device'
+  'predator prey dynamics'  →  'lotka volterra model'
+  'predictive processing'  →  'predictive coding'
+  'proportional control'  →  'control theory'
+  'prospect theory reference point'  →  'prospect theory'
+  'q learning'  →  'temporal difference learning'
+  'real options'  →  'optimal stopping'
+  'reference dependence'  →  'prospect theory'
+  'revelation principle'  →  'mechanism design'
+  … 14 more
+
+[Consistency with merge_map.json]
+  compared 576 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

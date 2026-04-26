@@ -1,0 +1,172 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:24
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Relational&Intimate\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Relational&Intimate\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\MiniMax-M2.5\Relational&Intimate\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     566
+  distinct stage-1 canonicals:  287
+  stage2 map entries (keys):    287
+  distinct stage-2 canonicals:  240
+  stage2 merge groups (|keys|>1 for same c2): 23 groups, 70 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1259
+  distinct c1 (weighted rows): 287
+  distinct c2 (weighted):      240
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'feedback control'  ←  6 stage-1 labels
+        · delayed feedback systems
+        · feedback control
+        · feedback elimination
+        · feedback loop
+        · feedback loop disruption
+        · negative feedback
+  [ 2] 'graph theory'  ←  6 stage-1 labels
+        · betweenness centrality
+        · bridge in graph theory
+        · degree distribution adjustment
+        · graph theory
+        · network topology
+        · percolation
+  [ 3] 'operant conditioning'  ←  5 stage-1 labels
+        · extinction
+        · intermittent reinforcement
+        · operant conditioning
+        · reinforcement
+        · reinforcement schedule
+  [ 4] 'signaling game'  ←  5 stage-1 labels
+        · cheap talk
+        · costly signaling
+        · separating equilibrium
+        · signaling
+        · signaling game
+  [ 5] 'mechanism design'  ←  4 stage-1 labels
+        · incentive compatibility
+        · mechanism design
+        · principal agent theory
+        · revelation principle
+  [ 6] 'reinforcement learning'  ←  4 stage-1 labels
+        · markov decision process
+        · q learning
+        · reinforcement learning
+        · temporal difference learning
+  [ 7] 'attribution theory'  ←  3 stage-1 labels
+        · attribution retraining
+        · attribution theory
+        · causal attribution error
+  [ 8] 'commitment device'  ←  3 stage-1 labels
+        · bounded commitment
+        · commitment
+        · commitment device
+  [ 9] 'information asymmetry'  ←  3 stage-1 labels
+        · information asymmetry
+        · information revelation
+        · screening
+  [10] 'optimization'  ←  3 stage-1 labels
+        · constrained optimization
+        · cost benefit optimization
+        · optimization
+  [11] 'sequential game'  ←  3 stage-1 labels
+        · finite horizon game
+        · sequential game
+        · sequential game with commitment
+  [12] 'threshold model'  ←  3 stage-1 labels
+        · threshold
+        · threshold model
+        · tipping point
+  [13] 'agenda control'  ←  2 stage-1 labels
+        · agenda control
+        · agenda setting game
+  [14] 'attractor dynamics'  ←  2 stage-1 labels
+        · attractor dynamics
+        · basin of attraction
+  [15] 'bargaining model'  ←  2 stage-1 labels
+        · bargaining model
+        · best alternative to negotiated agreement
+  [16] 'cascades'  ←  2 stage-1 labels
+        · cascade suppression
+        · cascades
+  [17] 'classical conditioning'  ←  2 stage-1 labels
+        · classical conditioning
+        · habituation
+  [18] 'contract theory'  ←  2 stage-1 labels
+        · bilateral contracting
+        · contract theory
+  [19] 'control system'  ←  2 stage-1 labels
+        · autonomous system
+        · control system
+  [20] 'dynamic games'  ←  2 stage-1 labels
+        · dynamic game with staged movement
+        · dynamic games
+  [21] 'dynamical systems'  ←  2 stage-1 labels
+        · dynamical systems
+        · system dynamics
+  [22] 'hebbian plasticity'  ←  2 stage-1 labels
+        · hebbian plasticity
+        · plasticity
+  [23] 'resource allocation'  ←  2 stage-1 labels
+        · redundancy allocation
+        · resource allocation
+
+[Stage-2 renames] (key ≠ value, 49 entries; list first 80)
+  'agenda setting game'  →  'agenda control'
+  'attribution retraining'  →  'attribution theory'
+  'autonomous system'  →  'control system'
+  'basin of attraction'  →  'attractor dynamics'
+  'best alternative to negotiated agreement'  →  'bargaining model'
+  'betweenness centrality'  →  'graph theory'
+  'bilateral contracting'  →  'contract theory'
+  'bistable dynamical system with escape'  →  'bistable dynamical system'
+  'bounded commitment'  →  'commitment device'
+  'bridge in graph theory'  →  'graph theory'
+  'cascade suppression'  →  'cascades'
+  'causal attribution error'  →  'attribution theory'
+  'cheap talk'  →  'signaling game'
+  'commitment'  →  'commitment device'
+  'constrained optimization'  →  'optimization'
+  'cost benefit optimization'  →  'optimization'
+  'costly signaling'  →  'signaling game'
+  'degree distribution adjustment'  →  'graph theory'
+  'delayed feedback systems'  →  'feedback control'
+  'dynamic game with staged movement'  →  'dynamic games'
+  'extinction'  →  'operant conditioning'
+  'feedback elimination'  →  'feedback control'
+  'feedback loop'  →  'feedback control'
+  'feedback loop disruption'  →  'feedback control'
+  'finite horizon game'  →  'sequential game'
+  'habituation'  →  'classical conditioning'
+  'incentive compatibility'  →  'mechanism design'
+  'information revelation'  →  'information asymmetry'
+  'intermittent reinforcement'  →  'operant conditioning'
+  'markov decision process'  →  'reinforcement learning'
+  'negative feedback'  →  'feedback control'
+  'network topology'  →  'graph theory'
+  'payoff matrix reconfiguraton'  →  'payoff matrix reconfiguration'
+  'percolation'  →  'graph theory'
+  'plasticity'  →  'hebbian plasticity'
+  'principal agent theory'  →  'mechanism design'
+  'q learning'  →  'reinforcement learning'
+  'redundancy allocation'  →  'resource allocation'
+  'reinforcement'  →  'operant conditioning'
+  'reinforcement schedule'  →  'operant conditioning'
+  'revelation principle'  →  'mechanism design'
+  'screening'  →  'information asymmetry'
+  'separating equilibrium'  →  'signaling game'
+  'sequential game with commitment'  →  'sequential game'
+  'signaling'  →  'signaling game'
+  'system dynamics'  →  'dynamical systems'
+  'temporal difference learning'  →  'reinforcement learning'
+  'threshold'  →  'threshold model'
+  'tipping point'  →  'threshold model'
+
+[Consistency with merge_map.json]
+  compared 566 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

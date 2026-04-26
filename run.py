@@ -79,7 +79,9 @@ from llm_api import create_backend
 
 DEFAULT_INPUT = ROOT / "zhihu_kol_train.jsonl"
 #DEFAULT_INPUT = ROOT / "reddit_r_advice.jsonl"
-DEFAULT_OUTPUT = ROOT / "probe_results.jsonl"
+# All probe JSONL + analysis artifacts (charts, merge_map.json, logs) live under model/.
+MODEL_OUTPUT_ROOT = ROOT / "model"
+DEFAULT_OUTPUT = MODEL_OUTPUT_ROOT / "probe_results.jsonl"
 
 
 def _coerce_output_to_jsonl_path(chosen: Path) -> Path:
@@ -96,15 +98,15 @@ def _coerce_output_to_jsonl_path(chosen: Path) -> Path:
 
 
 def _effective_probe_output_path(args: argparse.Namespace) -> tuple[Path, bool]:
-    """Return (resolved probe JSONL path, whether auto layout ``model/category/`` was applied)."""
+    """Return (resolved probe JSONL path, whether auto layout ``model/<model_id>/<category>/`` was applied)."""
     raw = Path(args.output).expanduser()
     chosen = raw.resolve() if raw.is_absolute() else (Path.cwd() / raw).resolve()
-    default_probe = (ROOT / "probe_results.jsonl").resolve()
+    default_probe = DEFAULT_OUTPUT.resolve()
     if args.filter_category and chosen == default_probe:
         model = (args.model or os.getenv("LLM_MODEL") or "gpt-4o").strip()
         mdir = model_id_to_probe_output_dirname(model)
         cdir = category_to_probe_output_subdir(args.filter_category)
-        resolved = (ROOT / mdir / cdir / "probe_results.jsonl").resolve()
+        resolved = (MODEL_OUTPUT_ROOT / mdir / cdir / "probe_results.jsonl").resolve()
         resolved.parent.mkdir(parents=True, exist_ok=True)
         return resolved, True
     return _coerce_output_to_jsonl_path(chosen), False
@@ -149,7 +151,8 @@ def build_parser() -> argparse.ArgumentParser:
         "--output", "-o",
         default=str(DEFAULT_OUTPUT),
         help="Probe / analyse JSONL path, or a **folder** (then uses <dir>/probe_results.jsonl). "
-        "Default with --filter-category: <project>/<model_id>/<category>/probe_results.jsonl (see deepseek/ layout).",
+        "Default: model/probe_results.jsonl; with --filter-category: "
+        "model/<model_id>/<category>/probe_results.jsonl.",
     )
     p.add_argument(
         "--num", "-n",
@@ -310,8 +313,8 @@ def main() -> None:
         print(f"Output      : {output_path}")
         if output_layout_auto:
             print(
-                "[output-layout] using <project>/<model_id>/<category>/probe_results.jsonl "
-                "(same style as deepseek/…); override with an explicit -o path.",
+                "[output-layout] using model/<model_id>/<category>/probe_results.jsonl; "
+                "override with an explicit -o path.",
                 flush=True,
             )
         print(f"Start index : {args.start}")

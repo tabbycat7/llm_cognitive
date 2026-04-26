@@ -1,0 +1,135 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Relational&Intimate\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Relational&Intimate\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\doubao-seed-2-0-lite-260215\Relational&Intimate\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     215
+  distinct stage-1 canonicals:  134
+  stage2 map entries (keys):    134
+  distinct stage-2 canonicals:  101
+  stage2 merge groups (|keys|>1 for same c2): 18 groups, 51 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 962
+  distinct c1 (weighted rows): 134
+  distinct c2 (weighted):      101
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'nash equilibrium'  ←  6 stage-1 labels
+        · dominant strategy equilibrium
+        · equilibrium
+        · multiple equilibria
+        · nash equilibrium
+        · stackelberg equilibrium
+        · subgame perfect equilibrium
+  [ 2] 'signaling game'  ←  6 stage-1 labels
+        · cheap talk
+        · costly signaling
+        · pooling equilibrium
+        · sender receiver game
+        · separating equilibrium
+        · signaling game
+  [ 3] 'constrained optimization'  ←  5 stage-1 labels
+        · budget constraint
+        · constrained optimization
+        · corner solution
+        · cost minimization
+        · utility maximization
+  [ 4] 'information asymmetry'  ←  4 stage-1 labels
+        · adverse selection
+        · hidden information
+        · information asymmetry
+        · moral hazard
+  [ 5] 'optimal stopping'  ←  3 stage-1 labels
+        · optimal stopping
+        · secretary problem
+        · sequential search
+  [ 6] 'strategic commitment'  ←  3 stage-1 labels
+        · commitment
+        · escalation of commitment
+        · strategic commitment
+  [ 7] 'absorbing markov chain'  ←  2 stage-1 labels
+        · absorbing markov chain
+        · absorbing state
+  [ 8] 'bayesian updating'  ←  2 stage-1 labels
+        · bayesian updating
+        · belief revision
+  [ 9] 'cognitive heuristics and biases'  ←  2 stage-1 labels
+        · cognitive bias
+        · cognitive heuristics
+  [10] 'coordination game'  ←  2 stage-1 labels
+        · coordination
+        · stag hunt game
+  [11] 'exponential decay'  ←  2 stage-1 labels
+        · ebbinghaus forgetting curve
+        · exponential decay
+  [12] 'feedback control'  ←  2 stage-1 labels
+        · closed loop control
+        · feedback control
+  [13] 'intermittent reinforcement'  ←  2 stage-1 labels
+        · intermittent reinforcement
+        · positive reinforcement
+  [14] 'modern portfolio theory'  ←  2 stage-1 labels
+        · modern portfolio theory
+        · portfolio optimization
+  [15] 'real options'  ←  2 stage-1 labels
+        · option value
+        · real options
+  [16] 'regret minimization'  ←  2 stage-1 labels
+        · regret minimization
+        · regret theory
+  [17] 'stable matching'  ←  2 stage-1 labels
+        · stable matching
+        · two sided matching
+  [18] 'status quo bias'  ←  2 stage-1 labels
+        · status quo bias
+        · statusquobias
+
+[Stage-2 renames] (key ≠ value, 36 entries; list first 80)
+  'absorbing state'  →  'absorbing markov chain'
+  'adverse selection'  →  'information asymmetry'
+  'belief revision'  →  'bayesian updating'
+  'budget constraint'  →  'constrained optimization'
+  'cheap talk'  →  'signaling game'
+  'closed loop control'  →  'feedback control'
+  'cognitive bias'  →  'cognitive heuristics and biases'
+  'cognitive heuristics'  →  'cognitive heuristics and biases'
+  'commitment'  →  'strategic commitment'
+  'coordination'  →  'coordination game'
+  'corner solution'  →  'constrained optimization'
+  'cost minimization'  →  'constrained optimization'
+  'costly signaling'  →  'signaling game'
+  'dominant strategy equilibrium'  →  'nash equilibrium'
+  'ebbinghaus forgetting curve'  →  'exponential decay'
+  'equilibrium'  →  'nash equilibrium'
+  'escalation of commitment'  →  'strategic commitment'
+  'hidden information'  →  'information asymmetry'
+  'incompleteinformationgame'  →  'incomplete information game'
+  'moral hazard'  →  'information asymmetry'
+  'multiple equilibria'  →  'nash equilibrium'
+  'option value'  →  'real options'
+  'pooling equilibrium'  →  'signaling game'
+  'portfolio optimization'  →  'modern portfolio theory'
+  'positive reinforcement'  →  'intermittent reinforcement'
+  'regret theory'  →  'regret minimization'
+  'secretary problem'  →  'optimal stopping'
+  'sender receiver game'  →  'signaling game'
+  'separating equilibrium'  →  'signaling game'
+  'sequential search'  →  'optimal stopping'
+  'stackelberg equilibrium'  →  'nash equilibrium'
+  'stag hunt game'  →  'coordination game'
+  'statusquobias'  →  'status quo bias'
+  'subgame perfect equilibrium'  →  'nash equilibrium'
+  'two sided matching'  →  'stable matching'
+  'utility maximization'  →  'constrained optimization'
+
+[Consistency with merge_map.json]
+  compared 215 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

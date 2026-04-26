@@ -1,0 +1,88 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:24
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Personal&Existential\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Personal&Existential\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\openai-gpt-5.4-mini\Personal&Existential\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     201
+  distinct stage-1 canonicals:  121
+  stage2 map entries (keys):    121
+  distinct stage-2 canonicals:  101
+  stage2 merge groups (|keys|>1 for same c2): 7 groups, 27 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1445
+  distinct c1 (weighted rows): 121
+  distinct c2 (weighted):      101
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'dynamical systems'  ←  9 stage-1 labels
+        · attractor
+        · bifurcation theory
+        · bistability
+        · dynamical system
+        · forced oscillation
+        · phase locking
+        · phase resetting
+        · potential well
+        · saddle node bifurcation
+  [ 2] 'feedback control'  ←  5 stage-1 labels
+        · control theory
+        · feedback
+        · feedback control
+        · linear quadratic regulator
+        · proportional integral derivative controller
+  [ 3] 'markov processes'  ←  3 stage-1 labels
+        · absorbing markov chain
+        · markov decision process
+        · markov processes
+  [ 4] 'reinforcement learning'  ←  3 stage-1 labels
+        · reinforcement learning
+        · reward shaping
+        · temporal difference learning
+  [ 5] 'survival analysis'  ←  3 stage-1 labels
+        · hazard model
+        · proportional hazards model
+        · survival analysis
+  [ 6] 'state space model'  ←  2 stage-1 labels
+        · kalman filter
+        · state space model
+  [ 7] 'threshold model'  ←  2 stage-1 labels
+        · threshold control
+        · threshold model
+
+[Stage-2 renames] (key ≠ value, 24 entries; list first 80)
+  'absorbing markov chain'  →  'markov processes'
+  'attractor'  →  'dynamical systems'
+  'bifurcation theory'  →  'dynamical systems'
+  'bistability'  →  'dynamical systems'
+  'capability opportunity motivation behavior model'  →  'com b model'
+  'control theory'  →  'feedback control'
+  'dynamical system'  →  'dynamical systems'
+  'feedback'  →  'feedback control'
+  'forced oscillation'  →  'dynamical systems'
+  'hazard model'  →  'survival analysis'
+  'kalman filter'  →  'state space model'
+  'linear quadratic regulator'  →  'feedback control'
+  'markov decision process'  →  'markov processes'
+  'phase locking'  →  'dynamical systems'
+  'phase resetting'  →  'dynamical systems'
+  'potential well'  →  'dynamical systems'
+  'principal agent'  →  'principal agent problem'
+  'proportional hazards model'  →  'survival analysis'
+  'proportional integral derivative controller'  →  'feedback control'
+  'reward shaping'  →  'reinforcement learning'
+  'saddle node bifurcation'  →  'dynamical systems'
+  'temporal difference learning'  →  'reinforcement learning'
+  'threshold control'  →  'threshold model'
+  '无合适映射'  →  'no suitable mapping'
+
+[Consistency with merge_map.json]
+  compared 201 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================

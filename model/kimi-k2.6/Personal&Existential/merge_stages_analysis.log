@@ -1,0 +1,270 @@
+==============================================================================
+Merge stages analysis — Stage1 (embedding+LLM) vs Stage2 (LLM re-merge)
+==============================================================================
+Generated: 2026-04-24T10:51:23
+
+[Input files]
+  stage1: E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Personal&Existential\merge_map_llm_stage1.json
+  stage2: E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Personal&Existential\merge_map_llm_stage2.json
+  final:  E:\college\postgraduate\llm_cognitive\model\kimi-k2.6\Personal&Existential\merge_map.json (consistency check)
+
+[Summary]
+  raw labels in stage1 map:     670
+  distinct stage-1 canonicals:  382
+  stage2 map entries (keys):    382
+  distinct stage-2 canonicals:  278
+  stage2 merge groups (|keys|>1 for same c2): 30 groups, 134 stage-1 labels merged into shared c2
+
+[Weighted by probe counts / 按探测频次加权]
+  total raw mentions: 1399
+  distinct c1 (weighted rows): 382
+  distinct c2 (weighted):      278
+
+[Largest stage-2 merge groups] (top 40, by number of stage-1 keys merged into one c2)
+  [ 1] 'control theory'  ←  18 stage-1 labels
+        · bifurcation control
+        · carver scheier control theory
+        · chaos control
+        · conant ashby good regulator theorem
+        · control theory
+        · controllability gramian
+        · cybernetic control
+        · decoupling control
+        · gain scheduling control
+        · internal model
+        · luenberger observer
+        · model based control
+        · … +6 more
+  [ 2] 'reinforcement learning'  ←  9 stage-1 labels
+        · active learning with exploration exploitation tradeoff
+        · actor critic
+        · bellman equation
+        · delayed reinforcement gradient
+        · epsilon greedy strategy
+        · model based reinforcement learning
+        · reinforcement learning
+        · reward shaping
+        · temporal difference learning
+  [ 3] 'bayesian inference'  ←  8 stage-1 labels
+        · bayesian inference
+        · bayesian inference with threat prior asymmetry
+        · bayesian narrative consistency
+        · bayesian regret
+        · bayesian surprise
+        · bayesian updating
+        · corrupted bayesian inference
+        · corrupted belief updating
+  [ 4] 'oscillator models'  ←  7 stage-1 labels
+        · arnold tongue
+        · coupled oscillators
+        · harmonic oscillator
+        · kuramoto model
+        · limit cycle oscillator
+        · limit cycle perturbation
+        · van der pol oscillator
+  [ 5] 'bifurcation theory'  ←  6 stage-1 labels
+        · andronov bifurcation
+        · bifurcation theory
+        · critical transition
+        · dynamical systems bifurcation
+        · hysteresis
+        · limit cycle bifurcation
+  [ 6] 'decision theory'  ←  6 stage-1 labels
+        · bounded rationality
+        · decision theory
+        · expected utility
+        · lexicographic optimization
+        · satisficing
+        · sequential probability ratio test
+  [ 7] 'game theory equilibria'  ←  6 stage-1 labels
+        · aumann's agreement theorem
+        · correlated equilibrium
+        · folk theorem
+        · nash equilibrium
+        · perfect bayesian equilibrium
+        · subgame perfect equilibrium
+  [ 8] 'network theory'  ←  6 stage-1 labels
+        · adaptive network rewiring
+        · cascading failures
+        · information cascade
+        · network robustness
+        · strength of weak ties
+        · temporal networks
+  [ 9] 'signaling game'  ←  6 stage-1 labels
+        · bayesian persuasion
+        · cheap talk
+        · crawford sobel cheap talk
+        · signaling game
+        · signaling theory
+        · spence signaling model
+  [10] 'dynamical systems'  ←  5 stage-1 labels
+        · differential equations
+        · dynamical systems
+        · poincare bendixson theorem
+        · poincare map
+        · state space
+  [11] 'operant conditioning'  ←  5 stage-1 labels
+        · counterconditioning
+        · extinction
+        · matching law
+        · operant conditioning
+        · variable ratio reinforcement
+  [12] 'optimal control'  ←  5 stage-1 labels
+        · bang bang control
+        · linear quadratic regulator
+        · optimal control
+        · pontryagin maximum principle
+        · stochastic optimal control
+  [13] 'principal agent model'  ←  5 stage-1 labels
+        · adverse selection
+        · bilateral monopoly under information revelation
+        · contract theory
+        · moral hazard
+        · principal agent model
+  [14] 'attractor dynamics'  ←  4 stage-1 labels
+        · attractor dynamics
+        · attractor landscape modification via noise injection
+        · attractor reconstruction
+        · metastability
+  [15] 'feedback control'  ←  4 stage-1 labels
+        · control loop
+        · delayed feedback control
+        · feedback control
+        · positive feedback loop disruption
+  [16] 'commitment device'  ←  3 stage-1 labels
+        · commitment device
+        · commitment devices
+        · commitment through incomplete contracts
+  [17] 'hyperbolic discounting'  ←  3 stage-1 labels
+        · beta delta model
+        · hyperbolic discounting
+        · temporal discounting
+  [18] 'kramers escape'  ←  3 stage-1 labels
+        · activation energy
+        · arrhenius equation
+        · kramers escape
+  [19] 'markov processes'  ←  3 stage-1 labels
+        · absorbing barrier with time dependent switching
+        · alternating renewal process
+        · markov processes
+  [20] 'catastrophe theory'  ←  2 stage-1 labels
+        · catastrophe theory
+        · cusp catastrophe
+  [21] 'constrained optimization'  ←  2 stage-1 labels
+        · constrained optimization
+        · karush kuhn tucker conditions
+  [22] 'free energy principle'  ←  2 stage-1 labels
+        · active inference
+        · free energy principle
+  [23] 'lotka volterra competition'  ←  2 stage-1 labels
+        · lotka volterra competition
+        · resource competition
+  [24] 'mechanism design'  ←  2 stage-1 labels
+        · mechanism design
+        · revelation principle
+  [25] 'multi armed bandit'  ←  2 stage-1 labels
+        · gittins index
+        · multi armed bandit
+  [26] 'optimal stopping'  ←  2 stage-1 labels
+        · optimal stopping
+        · real options
+  [27] 'predictive coding'  ←  2 stage-1 labels
+        · predictive coding
+        · predictive processing
+  [28] 'queueing theory'  ←  2 stage-1 labels
+        · jackson network
+        · queueing theory
+  [29] 'reliability theory'  ←  2 stage-1 labels
+        · redundancy allocation problem
+        · reliability block diagram
+  [30] 'system dynamics'  ←  2 stage-1 labels
+        · dissipative structures
+        · system dynamics
+
+[Stage-2 renames] (key ≠ value, 111 entries; list first 80)
+  'absorbing barrier with time dependent switching'  →  'markov processes'
+  'activation energy'  →  'kramers escape'
+  'active inference'  →  'free energy principle'
+  'active learning with exploration exploitation tradeoff'  →  'reinforcement learning'
+  'actor critic'  →  'reinforcement learning'
+  'adaptive network rewiring'  →  'network theory'
+  'adverse selection'  →  'principal agent model'
+  'alternating renewal process'  →  'markov processes'
+  'andronov bifurcation'  →  'bifurcation theory'
+  'arnold tongue'  →  'oscillator models'
+  'arrhenius equation'  →  'kramers escape'
+  'asymmetric paternalism via friction manipulation'  →  'asymmetric paternalism'
+  'attractor landscape modification via noise injection'  →  'attractor dynamics'
+  'attractor reconstruction'  →  'attractor dynamics'
+  "aumann's agreement theorem"  →  'game theory equilibria'
+  'bang bang control'  →  'optimal control'
+  'bayesian inference with threat prior asymmetry'  →  'bayesian inference'
+  'bayesian narrative consistency'  →  'bayesian inference'
+  'bayesian persuasion'  →  'signaling game'
+  'bayesian regret'  →  'bayesian inference'
+  'bayesian surprise'  →  'bayesian inference'
+  'bayesian updating'  →  'bayesian inference'
+  'bellman equation'  →  'reinforcement learning'
+  'beta delta model'  →  'hyperbolic discounting'
+  'bifurcation control'  →  'control theory'
+  'bilateral monopoly under information revelation'  →  'principal agent model'
+  'bounded rationality'  →  'decision theory'
+  'carver scheier control theory'  →  'control theory'
+  'cascading failures'  →  'network theory'
+  'chaos control'  →  'control theory'
+  'cheap talk'  →  'signaling game'
+  'commitment devices'  →  'commitment device'
+  'commitment through incomplete contracts'  →  'commitment device'
+  'conant ashby good regulator theorem'  →  'control theory'
+  'contract theory'  →  'principal agent model'
+  'control loop'  →  'feedback control'
+  'controllability gramian'  →  'control theory'
+  'coordination game equilibrium shift via outside option development'  →  'coordination game'
+  'correlated equilibrium'  →  'game theory equilibria'
+  'corrupted bayesian inference'  →  'bayesian inference'
+  'corrupted belief updating'  →  'bayesian inference'
+  'counterconditioning'  →  'operant conditioning'
+  'coupled oscillators'  →  'oscillator models'
+  'crawford sobel cheap talk'  →  'signaling game'
+  'critical transition'  →  'bifurcation theory'
+  'cusp catastrophe'  →  'catastrophe theory'
+  'cybernetic control'  →  'control theory'
+  'decoupling control'  →  'control theory'
+  'delayed feedback control'  →  'feedback control'
+  'delayed reinforcement gradient'  →  'reinforcement learning'
+  'differential equations'  →  'dynamical systems'
+  'differential game with information constraints'  →  'differential game'
+  'dissipative structures'  →  'system dynamics'
+  'dynamical systems bifurcation'  →  'bifurcation theory'
+  'epsilon greedy strategy'  →  'reinforcement learning'
+  'expected utility'  →  'decision theory'
+  'extinction'  →  'operant conditioning'
+  'folk theorem'  →  'game theory equilibria'
+  'gain scheduling control'  →  'control theory'
+  'gittins index'  →  'multi armed bandit'
+  'harmonic oscillator'  →  'oscillator models'
+  'hysteresis'  →  'bifurcation theory'
+  'information cascade'  →  'network theory'
+  'internal model'  →  'control theory'
+  'jackson network'  →  'queueing theory'
+  'karush kuhn tucker conditions'  →  'constrained optimization'
+  'kuramoto model'  →  'oscillator models'
+  'lexicographic optimization'  →  'decision theory'
+  'limit cycle bifurcation'  →  'bifurcation theory'
+  'limit cycle oscillator'  →  'oscillator models'
+  'limit cycle perturbation'  →  'oscillator models'
+  'linear quadratic regulator'  →  'optimal control'
+  'luenberger observer'  →  'control theory'
+  'matching law'  →  'operant conditioning'
+  'metastability'  →  'attractor dynamics'
+  'model based control'  →  'control theory'
+  'model based reinforcement learning'  →  'reinforcement learning'
+  'moral hazard'  →  'principal agent model'
+  'nash equilibrium'  →  'game theory equilibria'
+  'network robustness'  →  'network theory'
+  … 31 more
+
+[Consistency with merge_map.json]
+  compared 670 raw keys: 0 mismatch(es) vs compose(stage1, stage2) (0 = consistent)
+
+==============================================================================
